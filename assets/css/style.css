@@ -90,17 +90,35 @@ a:hover, svg a:hover > text {
     fill: #0090ff;
 }
 
-/* desktop only */
+
+/********** Pseudo responsive containers ***********/
+
+/* Desktop only */
 @media only screen and (min-width : 901px) {
-    
+    .container-desktop {
+        display: block;
+    }
+    .container-tablet, .container-mobile {
+        display: none;
+    }
 }
 
-/* tablet only */
+/* Tablet only */
 @media only screen and (min-width : 416px) and (max-width : 900px) {
-
+    .container-tablet {
+        display: block;
+    }
+    .container-desktop, .container-mobile {
+        display: none;
+    }
 }
 
-/* mobile only */
+/* Mobile only */
 @media only screen and (max-width : 415px) {
-    
+    .container-mobile {
+        display: block;
+    }
+    .container-desktop, .container-tablet {
+        display: none;
+    }
 }
