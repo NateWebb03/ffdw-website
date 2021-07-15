@@ -78,7 +78,18 @@ body {
 .main-svg {
   margin: 0 auto;
   display: block;
-  max-width: 115vw;
+}
+
+.container-desktop {
+    max-width: 1366px;
+}
+
+.container-tablet {
+    max-width: 900px;
+}
+
+.container-mobile {
+    max-width: 415px;
 }
 
 .linked-text {
