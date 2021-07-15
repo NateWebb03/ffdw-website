@@ -44,6 +44,9 @@ table {
   border-spacing: 0;
 }
 
+
+
+
 /********** Site specific ***********/
 
 /* Variables */
@@ -51,6 +54,7 @@ table {
 :root {
   --color-cod-black: #141414;
   --color-azure: #0090ff;
+  --color-aqua: #37fffe;
   --color-turbo: #ffe200;
 }
 
@@ -96,10 +100,18 @@ body {
     fill: white;
 }
 
-a:hover, svg a:hover > text {
-    color: #0090ff;
-    fill: #0090ff;
+a, text {
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
 }
+
+a:hover, svg a:hover > text {
+    color: var(--color-aqua);
+    fill: var(--color-aqua);
+}
+
 
 
 /********** Pseudo responsive containers ***********/
