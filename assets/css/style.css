@@ -72,7 +72,7 @@ html {
   }
 
 body { 
-  background: var(--color-cod-black);
+  background: var(--color-cod-black) url(../images/binary-pattern.svg) repeat right 18px / 172.5px;
 }
 
 .main-svg {
