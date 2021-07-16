@@ -82,24 +82,29 @@ body {
 .main-svg {
   margin: 0 auto;
   display: block;
+  text-align: center;
 }
 
-.container-desktop {
-    max-width: 1366px;
-}
+
+
 
 .container-tablet {
     max-width: 900px;
 }
+.container-tablet svg {
+  width: 144vw;
+  margin-left: -22vw;
+}
+
 
 .container-mobile {
     max-width: 415px;
 }
-
 .container-mobile svg {
-  /* width: 130vw;
-  margin-left: -15vw; */
+  width: 135vw;
+  margin-left: -17.5vw;
 }
+
 
 .linked-text {
     fill: white;
@@ -121,7 +126,17 @@ a:hover, svg a:hover > text {
 
 /********** Pseudo responsive containers ***********/
 
-/* Desktop only */
+
+/* Large-desktop only */
+@media only screen and (min-width : 1201px) {
+    .container-desktop svg {
+      max-width: 1366px;
+      width: auto;
+      margin: 0 auto;
+  }
+}
+
+/* Desktop and large desktop */
 @media only screen and (min-width : 901px) {
     .container-desktop {
         display: block;
@@ -129,6 +144,15 @@ a:hover, svg a:hover > text {
     .container-tablet, .container-mobile {
         display: none;
     }
+
+}
+
+/* Desktop only */
+@media only screen and (min-width : 901px) and (max-width : 1200px) {
+  .container-desktop svg {
+    width: 130vw;
+    margin-left: -15vw;
+  }
 }
 
 /* Tablet only */
