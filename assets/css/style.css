@@ -79,7 +79,8 @@ html {
   }
 
 body {
-  background: var(--color-cod-black) url(../images/binary-ffdw.svg) repeat right 0 / 284px;
+  background: var(--color-cod-black);
+  /* background: var(--color-cod-black) url(../images/binary-ffdw.svg) repeat right 0 / 284px; */
 }
 
 .main-svg {
