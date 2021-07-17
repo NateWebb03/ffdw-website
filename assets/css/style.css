@@ -50,8 +50,7 @@ table {
 /********** Site specific ***********/
 
 /* Typefaces */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Space+Grotesk:wght@500;700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Space+Grotesk:wght@500;700&display=swap'); */
 
 /* Variables */
 
@@ -80,7 +79,7 @@ html {
   }
 
 body {
-  background: var(--color-cod-black) url(../images/binary-pattern.svg) repeat right 18px / 172.5px;
+  background: var(--color-cod-black) url(../images/binary-ffdw.svg) repeat right 0 / 284px;
 }
 
 .main-svg {
