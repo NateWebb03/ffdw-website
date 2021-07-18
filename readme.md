@@ -7,7 +7,7 @@ In the interest of time, this current version simply reflects the design and is 
 ## Build
 
 - `develop` is the staging branch which deploys to [staging-mmfpfrmycb.ffdweb.org](//staging-mmfpfrmycb.ffdweb.org)
-- `main` is the staging production branch which _will_ deploy to [ffdweb.org](//ffdweb.org)
+- `main` is the production branch which deploys to [ffdweb.org](//ffdweb.org)
 
 No build necessary at the moment. This is a simple static site requiring no compilation.
 
