@@ -4,19 +4,19 @@
       <image width="7909" height="5275" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image6.jpg"/>
     </pattern>
     <pattern id="mobile-pattern-2" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 585 612">
-      <image width="585" height="612" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image14.png"/>
+      <image width="585" height="612" xlink:href="assets/images/desktop/FFDW-katherine-johnson.png"/>
     </pattern>
     <pattern id="mobile-pattern-3" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 946 625">
-      <image width="946" height="625" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image16.jpg"/>
+      <image width="946" height="625" xlink:href="assets/images/desktop/FFDW-susan-kare.jpg"/>
     </pattern>
     <pattern id="mobile-pattern-4" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 3765 2533">
-      <image width="3765" height="2533" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image22.png"/>
+      <image width="3765" height="2533" xlink:href="assets/images/desktop/FFDW-brewster-kahle.png"/>
     </pattern>
     <pattern id="mobile-pattern-5" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1280 720">
       <image width="1280" height="720" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image23.png"/>
     </pattern>
     <pattern id="mobile-pattern-6" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1824 1368">
-      <image width="1824" height="1368" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image25.png"/>
+      <image width="1824" height="1368" xlink:href="assets/images/desktop/FFDW-joe-lubin.png"/>
     </pattern>
     <pattern id="mobile-pattern-8" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1143 1143">
       <image width="1143" height="1143" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image27.png"/>
@@ -55,7 +55,7 @@
       <path id="mobile-Path_568" data-name="Path 568" d="M13565.084,6481v79.43h-40.994v24.548h28.687v103.855h25.077v99.634h188.123v-32.383h16.944v19.153h59.1v62.655h40.527V6567.073h-137.288v11.733h-12.563v-24.964h-65.682v-56.5h-82.544V6481Z" transform="translate(-12971.001 -3846)" fill="url(#mobile-pattern)"/>
     </clipPath>
     <pattern id="mobile-pattern-13" width="1" height="1" viewBox="170.683 -108.236 439.644 586.732">
-      <image preserveAspectRatio="xMidYMid slice" width="716.791" height="478.496" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image7.jpg"/>
+      <image preserveAspectRatio="xMidYMid slice" width="716.791" height="478.496" xlink:href="assets/images/desktop/FFDW-women-at-computer.jpg"/>
     </pattern>
     <pattern id="mobile-pattern-14" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 2462 1392">
       <image width="2462" height="1392" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image8.png"/>
@@ -93,7 +93,7 @@
     <clipPath id="mobile-clip-path-15">
       <ellipse id="mobile-Ellipse_55" data-name="Ellipse 55" cx="62.386" cy="83.729" rx="62.386" ry="83.729" transform="translate(0 0)" fill="#fff" stroke="#707070" stroke-width="1"/>
     </clipPath>
-    <image id="mobile-image" preserveAspectRatio="xMidYMid slice" width="332.639" height="219.767" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image16.jpg"/>
+    <image id="mobile-image" preserveAspectRatio="xMidYMid slice" width="332.639" height="219.767" xlink:href="assets/images/desktop/FFDW-susan-kare.jpg"/>
     <pattern id="mobile-pattern-19" width="1" height="1" viewBox="-10.154 0 283.55 187.335">
       <use transform="scale(0.852 0.852)" xlink:href="#mobile-image"/>
     </pattern>
@@ -125,7 +125,7 @@
       <rect id="mobile-Rectangle_268-3" data-name="Rectangle 268" width="138" height="138" transform="translate(0 0)" fill="url(#mobile-pattern-6)"/>
     </clipPath>
     <pattern id="mobile-pattern-27" width="1" height="1" viewBox="23.82 49.235 92.36 92.36">
-      <image preserveAspectRatio="none" width="140" height="140" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image26.png"/>
+      <image preserveAspectRatio="none" width="140" height="140" xlink:href="assets/images/desktop/FFDW-georgia-quinn.png"/>
     </pattern>
     <clipPath id="mobile-clip-path-24">
       <rect id="mobile-Rectangle_268-4" data-name="Rectangle 268" width="140" height="140" transform="translate(0 0)" fill="#fff"/>
@@ -163,7 +163,7 @@
     <pattern id="mobile-pattern-33" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 566 622">
       <image width="566" height="622" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image32.jpg"/>
     </pattern>
-    <image id="mobile-image-2" preserveAspectRatio="xMidYMid slice" width="507.983" height="338.92" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image2.jpg"/>
+    <image id="mobile-image-2" preserveAspectRatio="xMidYMid slice" width="507.983" height="338.92" xlink:href="assets/images/desktop/FFDW-tim-berners-lee.jpg"/>
     <pattern id="mobile-pattern-34" width="1" height="1" viewBox="113.551 0 409.185 357.77">
       <use xlink:href="#mobile-image-2"/>
     </pattern>
@@ -3659,7 +3659,7 @@ development of technologies that will enable decentralized file storage of human
     </g>
     <path id="mobile-Path_564" data-name="Path 564" d="M12431.544,2953.1v-130h7.3v15.617h69.781" transform="translate(-12192 -797.096)" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="2 10"/>
     <g id="mobile-Mask_Group_60" data-name="Mask Group 60" transform="translate(-5643 -1326.553)" clip-path="url(#mobile-clip-path-6)">
-      <image id="mobile-Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="349.399" height="391.527" transform="translate(5642.085 3501.104)" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image5.jpg"/>
+      <image id="mobile-Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="349.399" height="391.527" transform="translate(5642.085 3501.104)" xlink:href="assets/images/desktop/FFDW-melba-roy-mouton.jpg"/>
     </g>
     <g id="mobile-Mask_Group_61" data-name="Mask Group 61" transform="translate(-296.545 -297.584)" clip-path="url(#mobile-clip-path-7)">
       <path id="mobile-Path_566" data-name="Path 566" d="M358.541,0H0V478.5H358.541Z" transform="translate(553.004 2564.761)" fill="url(#mobile-pattern-13)"/>
@@ -3895,7 +3895,7 @@ Blockchain Association " transform="translate(343.958 3365.828)" fill="#fff" fo
       </g>
     </g>
     <g id="mobile-Mask_Group_62" data-name="Mask Group 62" transform="translate(142.658 3753.926)" clip-path="url(#mobile-clip-path-12)">
-      <image id="mobile-Image_41" data-name="Image 41" width="87.873" height="116.646" transform="translate(-0.323 -0.646)" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image13.png"/>
+      <image id="mobile-Image_41" data-name="Image 41" width="87.873" height="116.646" transform="translate(-0.323 -0.646)" xlink:href="assets/images/desktop/FFDW-ada-lovelace.png"/>
     </g>
     <g id="mobile-noun_Cursor_122767-2" data-name="noun_Cursor_122767" transform="matrix(0.485, 0.875, -0.875, 0.485, 154.922, 3887.664)">
       <rect id="mobile-Rectangle_28-2" data-name="Rectangle 28" width="1.56" height="1.56" transform="translate(6.24 6.24)"/>
@@ -3987,7 +3987,7 @@ JOHNSON" transform="translate(325.271 3917.255)" fill="#141414" font-size="7" fo
     <g id="mobile-Group_916" data-name="Group 916" transform="translate(-7.457 12)">
       <g id="mobile-Mask_Group_64" data-name="Mask Group 64" transform="translate(429.775 3784.926)" clip-path="url(#mobile-clip-path-14)">
         <rect id="mobile-Melba_Roy_-_Female_Computer_-_GPN-2000-001647-3" data-name="Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="196.12" height="219.767" transform="translate(-111.277 -19.752)" fill="url(#mobile-pattern-18)"/>
-        <image id="mobile-Margaret_Hamilton_1989" width="102.939" height="135.559" transform="translate(-2.941 -4.189)" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image17.jpg"/>
+        <image id="mobile-Margaret_Hamilton_1989" width="102.939" height="135.559" transform="translate(-2.941 -4.189)" xlink:href="assets/images/desktop/FFDW-margaret-hamilton.jpg"/>
       </g>
       <ellipse id="mobile-Ellipse_72" data-name="Ellipse 72" cx="43.043" cy="51.94" rx="43.043" ry="51.94" transform="translate(428.915 3784.176)" fill="#fff" style="mix-blend-mode: saturation;isolation: isolate"/>
     </g>

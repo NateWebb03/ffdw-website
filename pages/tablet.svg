@@ -4,16 +4,16 @@
       <image width="7909" height="5275" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image6.jpg"/>
     </pattern>
     <pattern id="tablet-pattern-2" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 585 612">
-      <image width="585" height="612" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image15.png"/>
+      <image width="585" height="612" xlink:href="assets/images/desktop/FFDW-katherine-johnson.png"/>
     </pattern>
     <pattern id="tablet-pattern-3" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 946 625">
-      <image width="946" height="625" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image18.jpg"/>
+      <image width="946" height="625" xlink:href="assets/images/desktop/FFDW-susan-kare.jpg"/>
     </pattern>
     <pattern id="tablet-pattern-4" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 3765 2533">
-      <image width="3765" height="2533" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image22.png"/>
+      <image width="3765" height="2533" xlink:href="assets/images/desktop/FFDW-brewster-kahle.png"/>
     </pattern>
     <pattern id="tablet-pattern-5" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1824 1368">
-      <image width="1824" height="1368" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image23.png"/>
+      <image width="1824" height="1368" xlink:href="assets/images/desktop/FFDW-joe-lubin.png"/>
     </pattern>
     <pattern id="tablet-pattern-7" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 353 353">
       <image width="353" height="353" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image25.jpg"/>
@@ -45,7 +45,7 @@
     <pattern id="tablet-pattern-12" width="1" height="1" viewBox="150.69 0 810.987 541.081">
       <use preserveAspectRatio="none" xlink:href="#tablet-image"/>
     </pattern>
-    <image id="tablet-image" preserveAspectRatio="none" width="810.987" height="541.081" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image2.jpg"/>
+    <image id="tablet-image" preserveAspectRatio="none" width="810.987" height="541.081" xlink:href="assets/images/desktop/FFDW-tim-berners-lee.jpg"/>
     <pattern id="tablet-pattern-13" width="1" height="1" viewBox="150.69 0 810.987 541.081">
       <use xlink:href="#tablet-image"/>
     </pattern>
@@ -65,7 +65,7 @@
       <path id="tablet-Path_124" data-name="Path 124" d="M13604.939,6481v156.861h-80.851v48.479h30.482v205.1h23.366V7088.2h423.205v-63.952h33.421v37.824h116.547V7185.8h79.927V6559.534h-314.244v40.589h-15.978v-67.1h-94.855v-19.755h-162.79V6481Z" transform="translate(-13524.089 -6481)" fill="url(#tablet-pattern)"/>
     </clipPath>
     <pattern id="tablet-pattern-15" width="1" height="1" viewBox="173.937 -294.121 1168.848 1561.987">
-      <image preserveAspectRatio="xMidYMid slice" width="1415.547" height="944.953" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image7.jpg"/>
+      <image preserveAspectRatio="xMidYMid slice" width="1415.547" height="944.953" xlink:href="assets/images/desktop/FFDW-women-at-computer.jpg"/>
     </pattern>
     <pattern id="tablet-pattern-16" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 2462 1392">
       <image width="2462" height="1392" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image8.png"/>
@@ -113,7 +113,7 @@
       <rect id="tablet-Rectangle_268-2" data-name="Rectangle 268" width="214" height="214" transform="translate(0 0.431)" fill="url(#tablet-pattern-5)"/>
     </clipPath>
     <pattern id="tablet-pattern-25" width="1" height="1" viewBox="37.091 76.315 143.818 143.158">
-      <image preserveAspectRatio="none" width="218" height="217" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image24.png"/>
+      <image preserveAspectRatio="none" width="218" height="217" xlink:href="assets/images/desktop/FFDW-georgia-quinn.png"/>
     </pattern>
     <clipPath id="tablet-clip-path-21">
       <rect id="tablet-Rectangle_268-3" data-name="Rectangle 268" width="213" height="213" transform="translate(0.103 0.13)" fill="#fff"/>
@@ -142,7 +142,7 @@
     <clipPath id="tablet-clip-path-27">
       <ellipse id="tablet-Ellipse_55" data-name="Ellipse 55" cx="85" cy="115.666" rx="85" ry="115.666" transform="translate(0 0)" fill="#fff" stroke="#707070" stroke-width="1"/>
     </clipPath>
-    <image id="tablet-image-2" preserveAspectRatio="xMidYMid slice" width="691.667" height="456.968" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image18.jpg"/>
+    <image id="tablet-image-2" preserveAspectRatio="xMidYMid slice" width="691.667" height="456.968" xlink:href="assets/images/desktop/FFDW-susan-kare.jpg"/>
     <pattern id="tablet-pattern-32" width="1" height="1" viewBox="-13.832 0 386.288 255.211">
       <use transform="scale(0.558 0.558)" xlink:href="#tablet-image-2"/>
     </pattern>
@@ -9635,7 +9635,7 @@ development of technologies that will enable decentralized file storage of human
     <path id="tablet-Path_626" data-name="Path 626" d="M0,0V208.86" transform="translate(281 2548)" fill="none" stroke="red" stroke-width="1"/>
     <path id="tablet-Path_627" data-name="Path 627" d="M0,0V201" transform="translate(101 2347)" fill="none" stroke="red" stroke-width="1"/>
     <g id="tablet-Mask_Group_70" data-name="Mask Group 70" transform="translate(0 2724.5)" clip-path="url(#tablet-clip-path-8)">
-      <image id="tablet-Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="716.038" height="802.373" transform="translate(-1.874)" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image5.jpg"/>
+      <image id="tablet-Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="716.038" height="802.373" transform="translate(-1.874)" xlink:href="assets/images/desktop/FFDW-melba-roy-mouton.jpg"/>
     </g>
     <path id="tablet-Path_629" data-name="Path 629" d="M13579.184,6481.684l1.24,161.46-60.432,1-1.642,42.978,60.281-.781v205.1h47.683V7088.2h339.99l-21.694-63.952h71.613v37.824h112.359V7185.8h77.057V6650.98H13944.61v23.171h-23.893v-49.3h-124.884V6513.266h-156.942V6481Z" transform="translate(-12925.641 -3386.779)" fill="#fff"/>
     <g id="tablet-Group_960" data-name="Group 960" transform="translate(242.773 3098.414)">
@@ -10038,7 +10038,7 @@ Blockchain Association " transform="translate(758.05 4714.533)" fill="#fff" fon
         </g>
       </g>
       <g id="tablet-Mask_Group_41" data-name="Mask Group 41" transform="translate(420.934 5296.785)" clip-path="url(#tablet-clip-path-14)">
-        <image id="tablet-Image_28" data-name="Image 28" width="172.543" height="229.04" transform="translate(-0.635 -1.269)" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image14.png"/>
+        <image id="tablet-Image_28" data-name="Image 28" width="172.543" height="229.04" transform="translate(-0.635 -1.269)" xlink:href="assets/images/desktop/FFDW-ada-lovelace.png"/>
       </g>
       <g id="tablet-Mask_Group_42" data-name="Mask Group 42" transform="translate(691.341 5441.246)" clip-path="url(#tablet-clip-path-15)">
         <rect id="tablet-Melba_Roy_-_Female_Computer_-_GPN-2000-001647-2" data-name="Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="245.316" height="274.894" transform="translate(-48.023 0)" fill="url(#tablet-pattern-2)"/>
@@ -10292,7 +10292,7 @@ Hamilton" transform="translate(849.068 5376.069)" fill="#141414" font-size="14" 
     </g>
     <g id="tablet-Mask_Group_71" data-name="Mask Group 71" transform="translate(894.583 5333.549)" clip-path="url(#tablet-clip-path-16)">
       <rect id="tablet-Melba_Roy_-_Female_Computer_-_GPN-2000-001647-3" data-name="Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="407.799" height="456.968" transform="translate(-231.382 -41.071)" fill="url(#tablet-pattern-20)"/>
-      <image id="tablet-Margaret_Hamilton_1989" width="214.045" height="281.873" transform="translate(-6.116 -8.711)" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image19.jpg"/>
+      <image id="tablet-Margaret_Hamilton_1989" width="214.045" height="281.873" transform="translate(-6.116 -8.711)" xlink:href="assets/images/desktop/FFDW-margaret-hamilton.jpg"/>
     </g>
     <ellipse id="tablet-Ellipse_74" data-name="Ellipse 74" cx="89.5" cy="108" rx="89.5" ry="108" transform="translate(895 5330.432)" fill="#fff" style="mix-blend-mode: saturation;isolation: isolate"/>
     <g id="tablet-Group_967" data-name="Group 967" transform="translate(1173.244 5051.528)">
