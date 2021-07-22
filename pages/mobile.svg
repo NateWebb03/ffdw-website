@@ -1,34 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 615 6620">
   <defs>
     <pattern id="mobile-pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 7909 5275">
-      <image width="7909" height="5275" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image6.jpg"/>
+      <image width="7909" height="5275" xlink:href="assets/images/desktop/FFDW-people-in-lab.jpg"/>
     </pattern>
     <pattern id="mobile-pattern-2" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 585 612">
-      <image width="585" height="612" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image14.png"/>
+      <image width="585" height="612" xlink:href="assets/images/desktop/FFDW-katherine-johnson.png"/>
     </pattern>
     <pattern id="mobile-pattern-3" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 946 625">
-      <image width="946" height="625" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image16.jpg"/>
+      <image width="946" height="625" xlink:href="assets/images/desktop/FFDW-susan-kare.jpg"/>
     </pattern>
     <pattern id="mobile-pattern-4" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 3765 2533">
-      <image width="3765" height="2533" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image22.png"/>
-    </pattern>
-    <pattern id="mobile-pattern-5" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1280 720">
-      <image width="1280" height="720" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image23.png"/>
+      <image width="3765" height="2533" xlink:href="assets/images/desktop/FFDW-brewster-kahle.png"/>
     </pattern>
     <pattern id="mobile-pattern-6" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1824 1368">
-      <image width="1824" height="1368" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image25.png"/>
+      <image width="1824" height="1368" xlink:href="assets/images/desktop/FFDW-joe-lubin.png"/>
     </pattern>
     <pattern id="mobile-pattern-8" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1143 1143">
-      <image width="1143" height="1143" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image27.png"/>
-    </pattern>
-    <pattern id="mobile-pattern-9" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1280 720">
-      <image width="1280" height="720" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image28.png"/>
-    </pattern>
-    <pattern id="mobile-pattern-10" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 6720 4480">
-      <image width="6720" height="4480" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image29.png"/>
+      <image width="1143" height="1143" xlink:href="assets/images/desktop/FFDW-sandra-ro.png"/>
     </pattern>
     <pattern id="mobile-pattern-11" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 353 353">
-      <image width="353" height="353" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image31.jpg"/>
+      <image width="353" height="353" xlink:href="assets/images/desktop/FFDW-alex-feerst.jpg"/>
     </pattern>
     <clipPath id="mobile-clip-path">
       <rect width="615" height="6620" fill="none"/>
@@ -55,10 +46,10 @@
       <path id="mobile-Path_568" data-name="Path 568" d="M13565.084,6481v79.43h-40.994v24.548h28.687v103.855h25.077v99.634h188.123v-32.383h16.944v19.153h59.1v62.655h40.527V6567.073h-137.288v11.733h-12.563v-24.964h-65.682v-56.5h-82.544V6481Z" transform="translate(-12971.001 -3846)" fill="url(#mobile-pattern)"/>
     </clipPath>
     <pattern id="mobile-pattern-13" width="1" height="1" viewBox="170.683 -108.236 439.644 586.732">
-      <image preserveAspectRatio="xMidYMid slice" width="716.791" height="478.496" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image7.jpg"/>
+      <image preserveAspectRatio="xMidYMid slice" width="716.791" height="478.496" xlink:href="assets/images/desktop/FFDW-women-at-computer.jpg"/>
     </pattern>
     <pattern id="mobile-pattern-14" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 2462 1392">
-      <image width="2462" height="1392" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image8.png"/>
+      <image width="2462" height="1392" xlink:href="assets/images/desktop/FFDW-starling-lab.png"/>
     </pattern>
     <clipPath id="mobile-clip-path-8">
       <path id="mobile-Path_513" data-name="Path 513" d="M-481.51,202.923V174.9h-28.018V133.811h0V91.783H-523.07V77.774h-14.009V64.232H-565.1V36.214h-27.551V8.2h-28.018V-19.356H-731.807v55.57h27.551V64.232h14.009V78.241h14.009V91.783h-27.551V119.8h27.551v13.372l-14,.179,0,14h-41.565v55.57H-717.8v14.009h14.009v14.009h13.542V244.95h14.009v13.542h69.112V272.5h14.009v41.561H-565.1v14.009h14.009V314.062h41.561v-55.57h55.57v-55.57Zm-97.6-69.579v.467h-14.009v13.542h-27.551V91.783h27.551V119.8h14.009Z" transform="translate(731.807 19.356)" fill="#fff"/>
@@ -70,7 +61,7 @@
       <rect id="mobile-rainey_2-2" data-name="rainey_2" width="109.213" height="134.493" transform="translate(0 0)" fill="#e4e4e4"/>
     </clipPath>
     <pattern id="mobile-pattern-15" width="1" height="1" viewBox="0 12.648 108.975 129.63">
-      <image preserveAspectRatio="xMidYMid slice" width="119.608" height="142.278" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image12.jpg"/>
+      <image preserveAspectRatio="xMidYMid slice" width="119.608" height="142.278" xlink:href="assets/images/desktop/FFDW-brian-behlendorf.jpg"/>
     </pattern>
     <clipPath id="mobile-clip-path-11">
       <rect width="46" height="108" fill="none"/>
@@ -82,7 +73,7 @@
       <ellipse id="mobile-Ellipse_70" data-name="Ellipse 70" cx="43.161" cy="52.082" rx="43.161" ry="52.082" stroke="#707070" stroke-width="1" fill="url(#mobile-pattern-2)"/>
     </clipPath>
     <pattern id="mobile-pattern-17" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 562 980">
-      <image width="562" height="980" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image15.png"/>
+      <image width="562" height="980" xlink:href="assets/images/desktop/FFDW-blocks.png"/>
     </pattern>
     <clipPath id="mobile-clip-path-14">
       <ellipse id="mobile-Ellipse_71" data-name="Ellipse 71" cx="42.422" cy="51.19" rx="42.422" ry="51.19" transform="translate(0 0)" fill="url(#mobile-pattern-3)"/>
@@ -93,18 +84,18 @@
     <clipPath id="mobile-clip-path-15">
       <ellipse id="mobile-Ellipse_55" data-name="Ellipse 55" cx="62.386" cy="83.729" rx="62.386" ry="83.729" transform="translate(0 0)" fill="#fff" stroke="#707070" stroke-width="1"/>
     </clipPath>
-    <image id="mobile-image" preserveAspectRatio="xMidYMid slice" width="332.639" height="219.767" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image16.jpg"/>
+    <image id="mobile-image" preserveAspectRatio="xMidYMid slice" width="332.639" height="219.767" xlink:href="assets/images/desktop/FFDW-susan-kare.jpg"/>
     <pattern id="mobile-pattern-19" width="1" height="1" viewBox="-10.154 0 283.55 187.335">
       <use transform="scale(0.852 0.852)" xlink:href="#mobile-image"/>
     </pattern>
     <pattern id="mobile-pattern-21" width="1" height="1" patternTransform="matrix(-1, 0, 0, 1, 114, 0)" viewBox="0 0 57 57">
-      <image preserveAspectRatio="none" width="57" height="57" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image19.png"/>
+      <image preserveAspectRatio="none" width="57" height="57" xlink:href="assets/images/desktop/FFDW-pixel-dog.png"/>
     </pattern>
     <clipPath id="mobile-clip-path-17">
       <rect id="mobile-Rectangle_458" data-name="Rectangle 458" width="28.134" height="37.018" transform="translate(0)" fill="#fff"/>
     </clipPath>
     <pattern id="mobile-pattern-22" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 640 420">
-      <image width="640" height="420" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image18.png"/>
+      <image width="640" height="420" xlink:href="assets/images/desktop/FFDW-computer-face.png"/>
     </pattern>
     <clipPath id="mobile-clip-path-18">
       <rect id="mobile-Rectangle_268" data-name="Rectangle 268" width="140" height="131" transform="translate(0)" fill="#fff"/>
@@ -119,13 +110,13 @@
       <rect id="mobile-Rectangle_269-2" data-name="Rectangle 269" width="140" height="137" transform="translate(0)" fill="url(#mobile-pattern-5)"/>
     </clipPath>
     <pattern id="mobile-pattern-24" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1500 1000">
-      <image width="1500" height="1000" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image24.jpg"/>
+      <image width="1500" height="1000" xlink:href="assets/images/desktop/FFDW-wendy-hanamura.jpg"/>
     </pattern>
     <clipPath id="mobile-clip-path-22">
       <rect id="mobile-Rectangle_268-3" data-name="Rectangle 268" width="138" height="138" transform="translate(0 0)" fill="url(#mobile-pattern-6)"/>
     </clipPath>
     <pattern id="mobile-pattern-27" width="1" height="1" viewBox="23.82 49.235 92.36 92.36">
-      <image preserveAspectRatio="none" width="140" height="140" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image26.png"/>
+      <image preserveAspectRatio="none" width="140" height="140" xlink:href="assets/images/desktop/FFDW-georgia-quinn.png"/>
     </pattern>
     <clipPath id="mobile-clip-path-24">
       <rect id="mobile-Rectangle_268-4" data-name="Rectangle 268" width="140" height="140" transform="translate(0 0)" fill="#fff"/>
@@ -134,16 +125,13 @@
       <rect id="mobile-Rectangle_269-4" data-name="Rectangle 269" width="140" height="140" transform="translate(0 0)" fill="url(#mobile-pattern-8)"/>
     </clipPath>
     <pattern id="mobile-pattern-28" width="1" height="1" viewBox="-37.667 19.226 256.225 170.759">
-      <image preserveAspectRatio="xMidYMid slice" width="209.21" height="209.21" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image27.png"/>
+      <image preserveAspectRatio="xMidYMid slice" width="209.21" height="209.21" xlink:href="assets/images/desktop/FFDW-sandra-ro.png"/>
     </pattern>
     <clipPath id="mobile-clip-path-26">
       <rect id="mobile-Rectangle_268-5" data-name="Rectangle 268" width="140" height="134" fill="url(#mobile-pattern-9)"/>
     </clipPath>
-    <pattern id="mobile-pattern-30" width="1" height="1" viewBox="-42.29 17.038 149.376 99.55">
-      <image preserveAspectRatio="xMidYMid slice" width="200.439" height="133.626" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image29.png"/>
-    </pattern>
     <pattern id="mobile-pattern-31" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 683 683">
-      <image width="683" height="683" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image30.png"/>
+      <image width="683" height="683" xlink:href="assets/images/desktop/FFDW-keyhole.png"/>
     </pattern>
     <clipPath id="mobile-clip-path-28">
       <rect id="mobile-Rectangle_268-6" data-name="Rectangle 268" width="140" height="140" fill="#fff"/>
@@ -152,7 +140,7 @@
       <rect id="mobile-Rectangle_269-6" data-name="Rectangle 269" width="140" height="140" fill="url(#mobile-pattern-11)"/>
     </clipPath>
     <pattern id="mobile-pattern-32" width="1" height="1" viewBox="-42.804 5.931 255.587 170.334">
-      <image preserveAspectRatio="xMidYMid slice" width="191.165" height="191.165" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image31.jpg"/>
+      <image preserveAspectRatio="xMidYMid slice" width="191.165" height="191.165" xlink:href="assets/images/desktop/FFDW-alex-feerst.jpg"/>
     </pattern>
     <clipPath id="mobile-clip-path-30">
       <rect width="196" height="109" fill="none"/>
@@ -161,17 +149,16 @@
       <rect id="mobile-Rectangle_552" data-name="Rectangle 552" width="139" height="139" transform="translate(0 0)" fill="#fff" style="mix-blend-mode: saturation;isolation: isolate"/>
     </clipPath>
     <pattern id="mobile-pattern-33" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 566 622">
-      <image width="566" height="622" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image32.jpg"/>
+      <image width="566" height="622" xlink:href="assets/images/desktop/FFDW-katie-biber.jpg"/>
     </pattern>
-    <image id="mobile-image-2" preserveAspectRatio="xMidYMid slice" width="507.983" height="338.92" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image2.jpg"/>
+    <image id="mobile-image-2" preserveAspectRatio="xMidYMid slice" width="507.983" height="338.92" xlink:href="assets/images/desktop/FFDW-tim-berners-lee.jpg"/>
     <pattern id="mobile-pattern-34" width="1" height="1" viewBox="113.551 0 409.185 357.77">
       <use xlink:href="#mobile-image-2"/>
     </pattern>
     <clipPath id="mobile-clip-FFDW_Mobile_MVP_-_415px">
       <rect width="615" height="6620"/>
     </clipPath>
-    <image id="mobile-image-3" width="93" height="61" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image18.png"/>
-    <image id="mobile-image-4" width="180.009" height="119.966" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image21.png"/>
+    <image id="mobile-image-3" width="93" height="61" xlink:href="assets/images/desktop/FFDW-computer-face.png"/>
   </defs>
   <g id="mobile-FFDW_Mobile_MVP_-_415px" data-name="FFDW Mobile MVP - 415px" clip-path="url(#mobile-clip-FFDW_Mobile_MVP_-_415px)">
     <rect width="615" height="6620" fill="#141414"/>
@@ -3343,7 +3330,7 @@ is a nonprofit organization committed to preserving humanity’s most important 
     <rect id="mobile-Rectangle_405" data-name="Rectangle 405" width="62" height="301" transform="translate(262 988)" fill="#fff"/>
     <rect id="mobile-Rectangle_406" data-name="Rectangle 406" width="123" height="319" transform="translate(262 1080)" fill="#fff"/>
     <g id="mobile-Group_901" data-name="Group 901" transform="matrix(0.966, 0.259, -0.259, 0.966, -1120.882, -3579.126)">
-      <image id="mobile-Image_26" data-name="Image 26" width="67.851" height="67.851" transform="translate(2137 3548)" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image.png"/>
+      <image id="mobile-Image_26" data-name="Image 26" width="67.851" height="67.851" transform="translate(2137 3548)" xlink:href="assets/images/desktop/FFDW-hourglass.png"/>
     </g>
     <g id="mobile-Repeat_Grid_10" data-name="Repeat Grid 10" transform="translate(13 274)" clip-path="url(#mobile-clip-path-3)">
       <g transform="translate(-1072 -401)">
@@ -3502,7 +3489,7 @@ development of technologies that will enable decentralized file storage of human
         <path id="mobile-Path_58" data-name="Path 58" d="M54.4,47.254a1.129,1.129,0,0,0-1.581.248L40.868,63.9V4.129a1.129,1.129,0,0,0-2.258,0V67.365a1.129,1.129,0,0,0,2.044.666l13.991-19.2a1.129,1.129,0,0,0-.248-1.581Z" transform="translate(-7.43 -2.943)"/>
       </g>
     </g>
-    <image id="mobile-brain_36763_lg" width="228.114" height="174.873" transform="translate(50.608 1741.451)" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image3.gif"/>
+    <image id="mobile-brain_36763_lg" width="228.114" height="174.873" transform="translate(50.608 1741.451)" xlink:href="assets/images/desktop/FFDW-brain.gif"/>
     <g id="mobile-noun_coding_2512494-158" data-name="noun_coding_2512494" transform="translate(235.98 1675.873)">
       <g id="mobile-Group_37-157" data-name="Group 37" transform="translate(23.232 15.676)">
         <path id="mobile-Path_92-157" data-name="Path 92" d="M5.818,16.453a.818.818,0,0,0,.818-.818V5.818A.818.818,0,1,0,5,5.818v9.817A.818.818,0,0,0,5.818,16.453Z" transform="translate(-5 -5)"/>
@@ -3523,7 +3510,7 @@ development of technologies that will enable decentralized file storage of human
       </g>
     </g>
     <g id="mobile-Mask_Group_59" data-name="Mask Group 59" transform="translate(-301.951 -577.806)" clip-path="url(#mobile-clip-path-4)">
-      <image id="mobile-factor27" width="112.389" height="112.694" transform="translate(411.512 2604.024)" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image4.png"/>
+      <image id="mobile-factor27" width="112.389" height="112.694" transform="translate(411.512 2604.024)" xlink:href="assets/images/desktop/FFDW-node-map.png"/>
     </g>
     <g id="mobile-noun_Cursor_122767" transform="matrix(-0.995, -0.105, 0.105, -0.995, 134.397, 1996.449)">
       <rect id="mobile-Rectangle_28" data-name="Rectangle 28" width="3.197" height="3.197" transform="translate(12.79 44.766)"/>
@@ -3659,7 +3646,7 @@ development of technologies that will enable decentralized file storage of human
     </g>
     <path id="mobile-Path_564" data-name="Path 564" d="M12431.544,2953.1v-130h7.3v15.617h69.781" transform="translate(-12192 -797.096)" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="2 10"/>
     <g id="mobile-Mask_Group_60" data-name="Mask Group 60" transform="translate(-5643 -1326.553)" clip-path="url(#mobile-clip-path-6)">
-      <image id="mobile-Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="349.399" height="391.527" transform="translate(5642.085 3501.104)" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image5.jpg"/>
+      <image id="mobile-Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="349.399" height="391.527" transform="translate(5642.085 3501.104)" xlink:href="assets/images/desktop/FFDW-melba-roy-mouton.jpg"/>
     </g>
     <g id="mobile-Mask_Group_61" data-name="Mask Group 61" transform="translate(-296.545 -297.584)" clip-path="url(#mobile-clip-path-7)">
       <path id="mobile-Path_566" data-name="Path 566" d="M358.541,0H0V478.5H358.541Z" transform="translate(553.004 2564.761)" fill="url(#mobile-pattern-13)"/>
@@ -3726,12 +3713,12 @@ Grants" transform="translate(9907.104 4281.164)" fill="#fff" font-size="30" font
     <g id="mobile-Group_910" data-name="Group 910" transform="translate(-51 -1221.979)">
       <g id="mobile-Mask_Group_53" data-name="Mask Group 53" transform="translate(141.542 4436)" clip-path="url(#mobile-clip-path-8)">
         <g id="mobile-Group_876" data-name="Group 876" transform="translate(0.205 2.735)">
-          <image id="mobile-rainey_2-3" data-name="rainey_2" width="109.022" height="139.625" transform="translate(118.873 70.742)" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image9.jpg"/>
+          <image id="mobile-rainey_2-3" data-name="rainey_2" width="109.022" height="139.625" transform="translate(118.873 70.742)" xlink:href="assets/images/desktop/FFDW-rainey-reitman.jpg"/>
           <g id="mobile-Mask_Group_51" data-name="Mask Group 51" transform="translate(0 0.074)" clip-path="url(#mobile-clip-path-9)">
-            <image id="mobile-belcher_marta" width="113.591" height="170.304" transform="translate(0.117 -4.445)" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image10.jpg"/>
+            <image id="mobile-belcher_marta" width="113.591" height="170.304" transform="translate(0.117 -4.445)" xlink:href="assets/images/desktop/FFDW-marta-belcher.jpg"/>
           </g>
           <g id="mobile-Mask_Group_52" data-name="Mask Group 52" transform="translate(118.931 215.971)" clip-path="url(#mobile-clip-path-10)">
-            <image id="mobile-ksmith-1" width="132.06" height="139.869" transform="translate(-8.828 0)" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image11.jpg"/>
+            <image id="mobile-ksmith-1" width="132.06" height="139.869" transform="translate(-8.828 0)" xlink:href="assets/images/desktop/FFDW-kristin-smith.jpg"/>
           </g>
           <rect id="mobile-rainey_2-4" data-name="rainey_2" width="109.213" height="134.493" transform="translate(118.931 215.971)" fill="#e4e4e4" style="mix-blend-mode: saturation;isolation: isolate"/>
           <rect id="mobile-rainey_2-5" data-name="rainey_2" width="109.213" height="138.855" transform="translate(118.931 71.512)" fill="#e4e4e4" style="mix-blend-mode: saturation;isolation: isolate"/>
@@ -3895,7 +3882,7 @@ Blockchain Association " transform="translate(343.958 3365.828)" fill="#fff" fo
       </g>
     </g>
     <g id="mobile-Mask_Group_62" data-name="Mask Group 62" transform="translate(142.658 3753.926)" clip-path="url(#mobile-clip-path-12)">
-      <image id="mobile-Image_41" data-name="Image 41" width="87.873" height="116.646" transform="translate(-0.323 -0.646)" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image13.png"/>
+      <image id="mobile-Image_41" data-name="Image 41" width="87.873" height="116.646" transform="translate(-0.323 -0.646)" xlink:href="assets/images/desktop/FFDW-ada-lovelace.png"/>
     </g>
     <g id="mobile-noun_Cursor_122767-2" data-name="noun_Cursor_122767" transform="matrix(0.485, 0.875, -0.875, 0.485, 154.922, 3887.664)">
       <rect id="mobile-Rectangle_28-2" data-name="Rectangle 28" width="1.56" height="1.56" transform="translate(6.24 6.24)"/>
@@ -3987,7 +3974,7 @@ JOHNSON" transform="translate(325.271 3917.255)" fill="#141414" font-size="7" fo
     <g id="mobile-Group_916" data-name="Group 916" transform="translate(-7.457 12)">
       <g id="mobile-Mask_Group_64" data-name="Mask Group 64" transform="translate(429.775 3784.926)" clip-path="url(#mobile-clip-path-14)">
         <rect id="mobile-Melba_Roy_-_Female_Computer_-_GPN-2000-001647-3" data-name="Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="196.12" height="219.767" transform="translate(-111.277 -19.752)" fill="url(#mobile-pattern-18)"/>
-        <image id="mobile-Margaret_Hamilton_1989" width="102.939" height="135.559" transform="translate(-2.941 -4.189)" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image17.jpg"/>
+        <image id="mobile-Margaret_Hamilton_1989" width="102.939" height="135.559" transform="translate(-2.941 -4.189)" xlink:href="assets/images/desktop/FFDW-margaret-hamilton.jpg"/>
       </g>
       <ellipse id="mobile-Ellipse_72" data-name="Ellipse 72" cx="43.043" cy="51.94" rx="43.043" ry="51.94" transform="translate(428.915 3784.176)" fill="#fff" style="mix-blend-mode: saturation;isolation: isolate"/>
     </g>
@@ -4288,7 +4275,7 @@ KARE
         <path id="mobile-Path_320" data-name="Path 320" d="M34.069,36.85V35.192h1.658V36.85Zm4.97-1.658H37.381v1.658h1.658Zm3.312,0H40.7v1.658h1.655Zm0,1.658v1.658h1.658v1.655h1.658v-4.97H44.009v1.658H42.351Zm0,1.658H40.7v1.655H39.039V38.508H37.381v1.655H35.727V38.508H34.069v1.655H32.411V41.82h11.6V40.162H42.352V38.508Zm-1.655,0V36.85H39.039v1.658Zm-3.316,0V36.85H35.726v1.658Zm-3.312,0V36.85H32.411V35.192H30.756v4.97h1.655V38.508h1.658Zm8.282-3.316h1.658V31.879H42.351Zm-8.282-3.312H32.411v3.312h1.658Zm8.282,0V30.225H40.7v1.655Zm-6.625-1.655H34.069V31.88h1.658Zm3.312,0H40.7V28.567H39.039Zm-1.658-1.658H35.726v1.658h1.655Zm3.316,0h1.655V26.909H40.7ZM34.069,26.91v1.658h1.658V26.91Zm8.282,0h1.658V23.6H42.351ZM34.069,23.6H32.411V26.91h1.658Zm9.94-4.97V23.6h1.658v-4.97Zm-11.6,0H30.756V23.6h1.655Zm11.6,0V16.972h-11.6v1.655Z" transform="translate(-30.756 -16.972)"/>
       </g>
       <g id="mobile-Mask_Group_65" data-name="Mask Group 65" transform="translate(161.198 5957.981)" clip-path="url(#mobile-clip-path-17)">
-        <image id="mobile-happy-mac-icon-19" width="306.881" height="306.881" transform="translate(-102.17 -15.177)" xlink:href="assets/images/mobile/FFDW%20Mobile%20MVP%20-%20415px-image20.png"/>
+        <image id="mobile-happy-mac-icon-19" width="306.881" height="306.881" transform="translate(-102.17 -15.177)" xlink:href="assets/images/desktop/FFDW-image-medley.png"/>
       </g>
       <path id="mobile-Path_595" data-name="Path 595" d="M107.115,143.7c-11.308-4.712-20.259-13.663-27.916-22.5l-2.356,2.238A74.067,74.067,0,0,0,86.5,134.863c1.178,1.178,1.649,1.885,1.649,2.945,0,1.178-1.885,2.591-3.062,2.591H54.11v7.774h30.86c2.12,0,3.062,1.178,3.062,2.356a5.163,5.163,0,0,1-1.649,3.3,94.631,94.631,0,0,0-9.659,11.308l2.356,2.238c7.774-8.952,16.726-17.668,28.033-22.5ZM41.86,148.173V140.4H11v7.774Z" transform="translate(267.373 5615.298) rotate(90)"/>
       <line id="mobile-Line_293" data-name="Line 293" x2="50.5" transform="translate(100 5563.644)" fill="none" stroke="#37fffe" stroke-width="1.5"/>

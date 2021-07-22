@@ -1,31 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 8948">
   <defs>
-    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1200 782">
-      <image width="1200" height="782" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image.png"/>
-    </pattern>
     <pattern id="pattern-2" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 585 612">
-      <image width="585" height="612" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image7.png"/>
+      <image width="585" height="612" xlink:href="assets/images/desktop/FFDW-katherine-johnson.png"/>
     </pattern>
     <pattern id="pattern-3" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 946 625">
-      <image width="946" height="625" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image10.jpg"/>
+      <image width="946" height="625" xlink:href="assets/images/desktop/FFDW-susan-kare.jpg"/>
     </pattern>
     <pattern id="pattern-4" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 3765 2533">
-      <image width="3765" height="2533" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image13.png"/>
+      <image width="3765" height="2533" xlink:href="assets/images/desktop/FFDW-brewster-kahle.png"/>
     </pattern>
     <pattern id="pattern-5" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 353 353">
-      <image width="353" height="353" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image14.jpg"/>
+      <image width="353" height="353" xlink:href="assets/images/desktop/FFDW-alex-feerst.jpg"/>
     </pattern>
     <pattern id="pattern-6" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1824 1368">
-      <image width="1824" height="1368" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image15.png"/>
+      <image width="1824" height="1368" xlink:href="assets/images/desktop/FFDW-joe-lubin.png"/>
     </pattern>
     <pattern id="pattern-12" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1143 1143">
-      <image width="1143" height="1143" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image17.png"/>
+      <image width="1143" height="1143" xlink:href="assets/images/desktop/FFDW-sandra-ro.png"/>
     </pattern>
     <pattern id="pattern-13" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 7909 5275">
-      <image width="7909" height="5275" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image22.jpg"/>
+      <image width="7909" height="5275" xlink:href="assets/images/desktop/FFDW-people-in-lab.jpg"/>
     </pattern>
     <pattern id="pattern-14" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1500 1000">
-      <image width="1500" height="1000" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image33.jpg"/>
+      <image width="1500" height="1000" xlink:href="assets/images/desktop/FFDW-wendy-hanamura.jpg"/>
     </pattern>
     <clipPath id="clip-path">
       <rect width="1345.331" height="8946.291" fill="none"/>
@@ -52,13 +49,13 @@
       <rect id="Rectangle_47" data-name="Rectangle 47" width="229" height="226" transform="translate(412 2605)" fill="#fff"/>
     </clipPath>
     <pattern id="pattern-16" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 737 739">
-      <image width="737" height="739" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image3.png"/>
+      <image width="737" height="739" xlink:href="assets/images/desktop/FFDW-node-map.png"/>
     </pattern>
     <clipPath id="clip-path-10">
       <path id="Path_185" data-name="Path 185" d="M6525,3530.625h174.078V3695h259.264v-27.27H7215v153.1h-93v161.72H7014V4053h-78v-70.46H6657v124.139H6525Z" transform="translate(-882 -29.521)" fill="#fff"/>
     </clipPath>
     <pattern id="pattern-17" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 640 420">
-      <image width="640" height="420" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image5.png"/>
+      <image width="640" height="420" xlink:href="assets/images/desktop/FFDW-computer-face.png"/>
     </pattern>
     <clipPath id="clip-path-11">
       <rect width="156.706" height="108.413" fill="none"/>
@@ -82,16 +79,16 @@
       <rect id="Rectangle_269" data-name="Rectangle 269" width="237" height="237" transform="translate(5993 6978)" fill="url(#pattern-4)"/>
     </clipPath>
     <pattern id="pattern-21" width="1" height="1" viewBox="-79.628 11.033 475.462 316.868">
-      <image preserveAspectRatio="xMidYMid slice" width="355.62" height="355.62" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image14.jpg"/>
+      <image preserveAspectRatio="xMidYMid slice" width="355.62" height="355.62" xlink:href="assets/images/desktop/FFDW-alex-feerst.jpg"/>
     </pattern>
     <pattern id="pattern-28" width="1" height="1" viewBox="40.324 83.348 156.352 156.352">
-      <image preserveAspectRatio="none" width="236.999" height="236.999" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image16.png"/>
+      <image preserveAspectRatio="none" width="236.999" height="236.999" xlink:href="assets/images/desktop/FFDW-georgia-quinn.png"/>
     </pattern>
     <pattern id="pattern-29" width="1" height="1" viewBox="-64.027 32.68 435.537 290.26">
-      <image preserveAspectRatio="xMidYMid slice" width="355.62" height="355.62" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image17.png"/>
+      <image preserveAspectRatio="xMidYMid slice" width="355.62" height="355.62" xlink:href="assets/images/desktop/FFDW-sandra-ro.png"/>
     </pattern>
     <pattern id="pattern-30" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 683 683">
-      <image width="683" height="683" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image18.png"/>
+      <image width="683" height="683" xlink:href="assets/images/desktop/FFDW-keyhole.png"/>
     </pattern>
     <clipPath id="clip-path-27">
       <path id="Path_505" data-name="Path 505" d="M14337,5004.971l-591.827-3v93.74H13597.13v-44.862h-65.99v-59.315h-79.189v184.655h-346.93v337.775H13541v103.979h218.565V5579.21H14337Z" transform="translate(-1446 -5209.534)" fill="#fff"/>
@@ -103,9 +100,9 @@
       <path id="Path_510" data-name="Path 510" d="M6476,4671.413h181v43.994h264v17.066h50.151v-86.066H7491v59.667h96V4661.3h114.033l-.287-50H7727v118.682l54-.267v110.907l-54,0v38.495h-45.335v353.624H7587v-39.539h-93v20.058H7195V4998.9H6843v39.556H6476Z" transform="translate(-6477.75 -845.744)" fill="#fff" stroke="#707070" stroke-width="1"/>
     </clipPath>
     <pattern id="pattern-33" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 2462 1392">
-      <image width="2462" height="1392" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image21.png"/>
+      <image width="2462" height="1392" xlink:href="assets/images/desktop/FFDW-starling-lab.png"/>
     </pattern>
-    <image id="image" preserveAspectRatio="none" width="824.428" height="550.057" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image19.jpg"/>
+    <image id="image" preserveAspectRatio="none" width="824.428" height="550.057" xlink:href="assets/images/desktop/FFDW-tim-berners-lee.jpg"/>
     <pattern id="pattern-34" width="1" height="1" viewBox="153.559 0 826.428 551.382">
       <use xlink:href="#image"/>
     </pattern>
@@ -119,15 +116,15 @@
       <path id="Path_124" data-name="Path 124" d="M13617.045,6481v180.109h-92.956v55.663h35.046v235.494H13586v225.923h486.575v-73.43H14111v43.43h134v142.07h91.9V6571.172h-361.3v46.605h-18.37V6540.73h-109.059v-22.682H13661V6481Z" transform="translate(-12971 -3846)" fill="url(#pattern-13)"/>
     </clipPath>
     <pattern id="pattern-38" width="1" height="1" viewBox="198.818 -337.711 1343.872 1793.482">
-      <image preserveAspectRatio="xMidYMid slice" width="1625.339" height="1085" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image23.jpg"/>
+      <image preserveAspectRatio="xMidYMid slice" width="1625.339" height="1085" xlink:href="assets/images/desktop/FFDW-women-at-computer.jpg"/>
     </pattern>
     <pattern id="pattern-40" width="1" height="1" patternTransform="matrix(-1, 0, 0, 1, 194, 0)" viewBox="0 0 97 97">
-      <image preserveAspectRatio="none" width="97" height="97" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image24.png"/>
+      <image preserveAspectRatio="none" width="97" height="97" xlink:href="assets/images/desktop/FFDW-pixel-dog.png"/>
     </pattern>
     <clipPath id="clip-path-32">
       <ellipse id="Ellipse_55" data-name="Ellipse 55" cx="104.5" cy="139" rx="104.5" ry="139" fill="#fff" stroke="#707070" stroke-width="1"/>
     </clipPath>
-    <image id="image-2" preserveAspectRatio="xMidYMid slice" width="691.667" height="456.968" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image10.jpg"/>
+    <image id="image-2" preserveAspectRatio="xMidYMid slice" width="691.667" height="456.968" xlink:href="assets/images/desktop/FFDW-susan-kare.jpg"/>
     <pattern id="pattern-41" width="1" height="1" viewBox="-16.937 0 473 312.5">
       <use transform="scale(0.684)" xlink:href="#image-2"/>
     </pattern>
@@ -138,16 +135,13 @@
       <rect id="Rectangle_388" data-name="Rectangle 388" width="76" height="100" transform="translate(12658 7896)" fill="#fff"/>
     </clipPath>
     <pattern id="pattern-43" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 580 580">
-      <image width="580" height="580" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image25.png"/>
+      <image width="580" height="580" xlink:href="assets/images/desktop/FFDW-image-medley.png"/>
     </pattern>
     <clipPath id="clip-path-36">
       <path id="Path_513" data-name="Path 513" d="M-195.807,456.644v-60h-60v-88h0v-90h-29v-30h-30v-29h-60v-60h-59v-60h-60v-59h-238v119h59v60h30v30h30v29h-59v60h59V307.9l-30-.254v30h-89v119h30v30h30v30h29v30h30v29h148v30h30v89h60v30h30v-30h89v-119h119v-119Zm-209-149v1h-30v29h-59v-119h59v60h30Z" transform="translate(13761.807 5257.356)" fill="#888"/>
     </clipPath>
     <pattern id="pattern-44" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1824 2336">
-      <image width="1824" height="2336" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image26.jpg"/>
-    </pattern>
-    <pattern id="pattern-45" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1280 1600">
-      <image width="1280" height="1600" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image27.jpg"/>
+      <image width="1824" height="2336" xlink:href="assets/images/desktop/FFDW-rainey-reitman.jpg"/>
     </pattern>
     <clipPath id="clip-path-37">
       <rect id="rainey_2" width="243.5" height="287.851" transform="translate(12989.189 5378.696)" fill="#888"/>
@@ -156,24 +150,23 @@
       <rect id="rainey_2-2" data-name="rainey_2" width="233.875" height="288.01" transform="translate(12695.189 5587.348)" fill="#888"/>
     </clipPath>
     <pattern id="pattern-46" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 860 1023">
-      <image width="860" height="1023" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image30.jpg"/>
+      <image width="860" height="1023" xlink:href="assets/images/desktop/FFDW-brian-behlendorf.jpg"/>
     </pattern>
     <clipPath id="clip-path-39">
       <rect id="Rectangle_340" data-name="Rectangle 340" width="237" height="239" transform="translate(563 6774)" fill="#fff" style="mix-blend-mode: saturation;isolation: isolate"/>
     </clipPath>
     <pattern id="pattern-47" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 6720 4480">
-      <image width="6720" height="4480" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image31.png"/>
+      <image width="6720" height="4480" xlink:href="assets/images/desktop/FFDW-sheila-warren.png"/>
     </pattern>
     <clipPath id="clip-path-40">
       <rect id="Rectangle_552" data-name="Rectangle 552" width="237" height="237" transform="translate(-6600 5341)" fill="#fff" style="mix-blend-mode: saturation;isolation: isolate"/>
     </clipPath>
     <pattern id="pattern-48" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 566 622">
-      <image width="566" height="622" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image32.jpg"/>
+      <image width="566" height="622" xlink:href="assets/images/desktop/FFDW-katie-biber.jpg"/>
     </pattern>
     <clipPath id="clip-FFDW_MVP_Site_Grants_Image_2">
       <rect width="1366" height="8948"/>
     </clipPath>
-    <image id="image-3" width="355.62" height="237" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image12.png"/>
   </defs>
   <g id="FFDW_MVP_Site_Grants_Image_2" data-name="FFDW MVP Site Grants Image 2" clip-path="url(#clip-FFDW_MVP_Site_Grants_Image_2)">
     <rect width="1366" height="8948" fill="#141414"/>
@@ -9912,7 +9905,7 @@ Tim Berners-Lee (above) in 1990, continues to inspire us." transform="translate(
         </g>
       </g>
       <path id="Path_77" data-name="Path 77" d="M13399.653,4641.047h50.354V4806.1h50.094v75.813l-.527,40.877v42.091h41.76v61.071H13497.1v87.833h414.387v169.856h156.238v-89.856h154.283v159.856h36.256v108.834h-20.789v39.211h20.617v255.786h-104.084V5718.8h-86.283v250.372H13802.96V5732.271h-204.344V5503.258H13461.53V5374.275h-84.553v-55.843h32.543V5093.8h40.486v-51.629h-40.486v-63.145h40.486v-67.038h-50.354v-54.274h32.525v-32.743h-32.525Z" transform="translate(-13469.227 -3202.047)" fill="#fff"/>
-      <image id="brain_36763_lg" width="466" height="357.236" transform="translate(209 2116.382)" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image2.gif"/>
+      <image id="brain_36763_lg" width="466" height="357.236" transform="translate(209 2116.382)" xlink:href="assets/images/desktop/FFDW-brain.gif"/>
       <g id="Group_31" data-name="Group 31" transform="translate(13097.768 7103.91) rotate(180)">
         <g id="Layer_5" data-name="Layer 5" transform="translate(12327.758 4592)">
           <path id="Path_57" data-name="Path 57" d="M35.466,3.039a1.786,1.786,0,0,0-2,.643L11.341,34.04a1.789,1.789,0,1,0,2.893,2.107L33.127,10.307v94.518a1.786,1.786,0,1,0,3.571,0v-100a1.786,1.786,0,0,0-1.232-1.786Z" transform="translate(-10.998 -2.95)"/>
@@ -10012,7 +10005,7 @@ Tim Berners-Lee (above) in 1990, continues to inspire us." transform="translate(
       </g>
     </g>
     <g id="Mask_Group_38" data-name="Mask Group 38" transform="translate(-5643 -803)" clip-path="url(#clip-path-10)">
-      <image id="Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="764.147" height="856.396" transform="translate(5641 3501.104)" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image4.jpg"/>
+      <image id="Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="764.147" height="856.396" transform="translate(5641 3501.104)" xlink:href="assets/images/desktop/FFDW-melba-roy-mouton.jpg"/>
     </g>
     <g id="Group_954" data-name="Group 954" transform="translate(61 67)">
       <g id="Group_666" data-name="Group 666" transform="translate(-0.896 2819.576)">
@@ -10334,7 +10327,7 @@ Tim Berners-Lee (above) in 1990, continues to inspire us." transform="translate(
         </g>
       </g>
       <g id="Mask_Group_41" data-name="Mask Group 41" transform="translate(449.216 5311.018)" clip-path="url(#clip-path-12)">
-        <image id="Image_28" data-name="Image 28" width="184.136" height="244.428" transform="translate(-0.678 -1.354)" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image6.png"/>
+        <image id="Image_28" data-name="Image 28" width="184.136" height="244.428" transform="translate(-0.678 -1.354)" xlink:href="assets/images/desktop/FFDW-ada-lovelace.png"/>
       </g>
       <g id="Mask_Group_42" data-name="Mask Group 42" transform="translate(741.932 5467.045)" clip-path="url(#clip-path-13)">
         <rect id="Melba_Roy_-_Female_Computer_-_GPN-2000-001647-2" data-name="Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="261.798" height="293.364" transform="translate(-51.25)" fill="url(#pattern-2)"/>
@@ -10378,7 +10371,7 @@ Tim Berners-Lee (above) in 1990, continues to inspire us." transform="translate(
         <rect id="Rectangle_43-4" data-name="Rectangle 43" width="3.048" height="6.095" transform="translate(12.19 36.571)"/>
       </g>
       <path id="Path_432" data-name="Path 432" d="M82.806,138.007C74.358,134.488,67.67,127.8,61.95,121.2l-1.76,1.672a55.334,55.334,0,0,0,7.216,8.536c.88.88,1.232,1.408,1.232,2.2,0,.88-1.408,1.936-2.288,1.936H43.207v5.808H66.262c1.584,0,2.288.88,2.288,1.76a3.857,3.857,0,0,1-1.232,2.464,70.7,70.7,0,0,0-7.216,8.448l1.76,1.672c5.808-6.688,12.5-13.2,20.943-16.807Zm-48.751,3.344v-5.808H11v5.808Z" transform="translate(331.018 5345.215)"/>
-      <image id="Image_27" data-name="Image 27" width="27.44" height="47.849" transform="translate(688.281 5620.469) rotate(-30)" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image8.png"/>
+      <image id="Image_27" data-name="Image 27" width="27.44" height="47.849" transform="translate(688.281 5620.469) rotate(-30)" xlink:href="assets/images/desktop/FFDW-blocks.png"/>
       <g id="Group_683" data-name="Group 683" transform="translate(506.434 5606.749)">
         <g id="noun_Boxed_Arrow_Upper_Right_1289202-2" data-name="noun_Boxed Arrow Upper Right_1289202" transform="translate(0 0)">
           <g id="Group_664-2" data-name="Group 664">
@@ -10406,7 +10399,7 @@ Tim Berners-Lee (above) in 1990, continues to inspire us." transform="translate(
 JOHNSON" transform="translate(790.254 5710.009)" fill="#141414" font-size="15" font-family="SpaceGrotesk-Medium, Space Grotesk" font-weight="500"><tspan x="0" y="0">KATHERINE </tspan><tspan x="0" y="19">JOHNSON</tspan></text>
       <text id="Margaret_Hamilton" data-name="Margaret
 Hamilton" transform="translate(913.351 5392.713)" fill="#141414" font-size="15" font-family="SpaceGrotesk-Medium, Space Grotesk" font-weight="500"><tspan x="0" y="0">MARGARET</tspan><tspan x="0" y="20">HAMILTON</tspan></text>
-      <image id="Image_24" data-name="Image 24" width="56.177" height="56.131" transform="translate(46.789 5414.713)" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image9.png"/>
+      <image id="Image_24" data-name="Image 24" width="56.177" height="56.131" transform="translate(46.789 5414.713)" xlink:href="assets/images/desktop/FFDW-bomb.png"/>
       <path id="Path_434" data-name="Path 434" d="M157.1,37.649C148.033,67.019,115.115,89.1,83.576,89.1,60.12,89.1,33.9,77.663,19.317,56.177c-.986-1.38-1.971-1.971-2.957-1.971-1.577,0-2.957,1.577-3.548,3.942C11.038,65.836,8.476,74.706,5.125,81.8L0,80.423A135.529,135.529,0,0,0,6.9,38.634,119.044,119.044,0,0,0,5.716,22.077l1.971-.986c16.558,11.827,35.283,17.937,54.6,21.288L61.3,47.5a124.578,124.578,0,0,1-24.639-3.745,27,27,0,0,0-3.154-.394c-2.168,0-2.76,1.183-2.76,3.548,0,6.5,10.25,14.586,14.981,18.134,9.659,7.293,25.428,11.038,38.24,11.038,26.216,0,53.812-18.529,60.908-42.774ZM113.735,18.332v9.856h-20.5V46.519H83.379V28.187h-20.5V18.332h20.5V0h9.856V18.332Z" transform="translate(1314.216 5661.36) rotate(180)"/>
       <g id="Group_684" data-name="Group 684" transform="translate(1195.608 5251.873)">
         <path id="Path_29-3" data-name="Path 29" d="M38.056,75.548l8.466,10.58L18.168,133.016,31.846,162,55.651,149.2l22.589-23.442,7.17,8.96,16.569-9.351L121.69,50.189l-9.75-26.216Zm45.132,49.23L71.194,109.789l-38.23,44.085-9.72-20.6L51.972,85.772l-7.431-9.288,60.3-42.093Z" transform="translate(-18.168 5.237)"/>
@@ -10569,7 +10562,7 @@ Hamilton" transform="translate(913.351 5392.713)" fill="#141414" font-size="15" 
       <path id="Path_435" data-name="Path 435" d="M25.966,47.563,11.6,38.858l-.028-3.9L29.92,46.14v2.873L11.6,60.221l.028-3.812Zm13.967,0L25.8,38.915l.028-3.84L44.087,46.169v2.845L25.767,60.165l.028-3.926ZM53.9,47.62,39.734,38.943l-.028-3.954L58,46.2v2.958L39.706,60.193V56.3Z" transform="translate(911.721 5431.454)"/>
       <g id="Mask_Group_47" data-name="Mask Group 47" transform="translate(993.383 5368.843)" clip-path="url(#clip-path-14)">
         <rect id="Melba_Roy_-_Female_Computer_-_GPN-2000-001647-3" data-name="Melba_Roy_-_Female_Computer_-_GPN-2000-001647" width="407.799" height="456.968" transform="translate(-231.382 -41.071)" fill="url(#pattern-19)"/>
-        <image id="Margaret_Hamilton_1989" width="214.045" height="281.873" transform="translate(-6.116 -8.711)" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image11.jpg"/>
+        <image id="Margaret_Hamilton_1989" width="214.045" height="281.873" transform="translate(-6.116 -8.711)" xlink:href="assets/images/desktop/FFDW-margaret-hamilton.jpg"/>
       </g>
     </g>
     <g id="Group_791" data-name="Group 791" transform="translate(-5428 -1033)">
@@ -10921,7 +10914,7 @@ Business Council" transform="translate(11795 7514)" fill="#fff" font-size="14" f
     <text id="_._" data-name=".*" transform="translate(42 794)" font-size="200" font-family="SpaceGrotesk-Regular, Space Grotesk"><tspan x="0" y="197">.*</tspan></text>
     <path id="Path_515" data-name="Path 515" d="M13757.6,5114.873l153.884-1.092v150.19h156.238v-89.453h194.283v141.349h36.256V5442.1h-30.789v34.671h30.617v293.015h-144.084v-60.715h-46.283l.5,131.557h29.5v206.354H13913.52l-.812,371.373H13802.96V5837.506h125.656l-.994-496.889-170.044.888Z" transform="translate(-14119.765 -834.281)" fill="#fff"/>
     <g id="Group_883" data-name="Group 883" transform="translate(-2082.549 -2878.312)">
-      <image id="Image_26" data-name="Image 26" width="107.437" height="107.437" transform="translate(2137 3548)" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image20.png"/>
+      <image id="Image_26" data-name="Image 26" width="107.437" height="107.437" transform="translate(2137 3548)" xlink:href="assets/images/desktop/FFDW-hourglass.png"/>
     </g>
     <rect id="Image_23" data-name="Image 23" width="121" height="79" transform="translate(1219 5344)" fill="url(#pattern-17)"/>
     <path id="Path_516" data-name="Path 516" d="M40.66,89.742V86.2H21.107L32.339,69.48,20.883,54.4H36.332V50.86H6.48v3.582l11.344,15.15L7,86.2v3.545ZM28.085,69.629,17,86.2H11l11.082-16.53L10.659,54.4h5.746Z" transform="translate(830.34 5245.878)"/>
@@ -11185,7 +11178,7 @@ KARE
       </g>
     </g>
     <g id="Mask_Group_57" data-name="Mask Group 57" transform="translate(-12154.243 130)" clip-path="url(#clip-path-34)">
-      <image id="happy-mac-icon-19" width="639" height="639" transform="translate(12636.243 7363)" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image25.png"/>
+      <image id="happy-mac-icon-19" width="639" height="639" transform="translate(12636.243 7363)" xlink:href="assets/images/desktop/FFDW-image-medley.png"/>
     </g>
     <g id="Mask_Group_58" data-name="Mask Group 58" transform="translate(-12464 339)" clip-path="url(#clip-path-35)">
       <rect id="happy-mac-icon-19-2" data-name="happy-mac-icon-19" width="830" height="829" transform="translate(12382 7855)" fill="url(#pattern-43)"/>
@@ -11367,10 +11360,10 @@ Questions" transform="translate(229.841 7271.596)" fill="#fff" font-size="50" fo
           <rect id="rainey_2-3" data-name="rainey_2" width="234" height="299" transform="translate(13263 5498.348)" fill="url(#pattern-44)"/>
           <path id="_42398878320_741f462d99_b" data-name="42398878320_741f462d99_b" d="M243.5,289.652h0Z" transform="translate(13008.439 5647.696)" fill="url(#pattern-45)"/>
           <g id="Mask_Group_51" data-name="Mask Group 51" transform="translate(19.25 -31.68)" clip-path="url(#clip-path-37)">
-            <image id="belcher_marta" width="243.25" height="364.697" transform="translate(12989.439 5369.178)" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image28.jpg"/>
+            <image id="belcher_marta" width="243.25" height="364.697" transform="translate(12989.439 5369.178)" xlink:href="assets/images/desktop/FFDW-marta-belcher.jpg"/>
           </g>
           <g id="Mask_Group_52" data-name="Mask Group 52" transform="translate(567.936 222)" clip-path="url(#clip-path-38)">
-            <image id="ksmith-1" width="282.801" height="299.524" transform="translate(12676.284 5587.348)" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image29.jpg"/>
+            <image id="ksmith-1" width="282.801" height="299.524" transform="translate(12676.284 5587.348)" xlink:href="assets/images/desktop/FFDW-kristin-smith.jpg"/>
           </g>
           <rect id="rainey_2-4" data-name="rainey_2" width="233.875" height="288.01" transform="translate(13263.125 5809.348)" fill="#888" style="mix-blend-mode: saturation;isolation: isolate"/>
           <rect id="rainey_2-5" data-name="rainey_2" width="233.875" height="297.353" transform="translate(13263.125 5499.995)" fill="#888" style="mix-blend-mode: saturation;isolation: isolate"/>
