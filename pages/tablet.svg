@@ -50,7 +50,7 @@
       <use xlink:href="#tablet-image"/>
     </pattern>
     <pattern id="tablet-pattern-14" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1024 785">
-      <image width="1024" height="785" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image3.gif"/>
+      <image width="1024" height="785" xlink:href="assets/images/desktop/FFDW-brain.gif"/>
     </pattern>
     <clipPath id="tablet-clip-path-6">
       <rect id="tablet-Rectangle_460" data-name="Rectangle 460" width="179.425" height="178.083" transform="translate(412 2605)" fill="#fff"/>
@@ -73,9 +73,6 @@
     <clipPath id="tablet-clip-path-10">
       <path id="tablet-Path_513" data-name="Path 513" d="M-205.9,447.683v-58.87h-58.87V302.469h0V214.163h-28.454V184.728h-29.435V156.274h-58.87V97.4h-57.889V38.533h-58.87V-19.356H-731.807V97.4h57.889v58.87h29.435v29.435h29.435v28.454h-57.889v58.87h57.889v29.383l-28-.494.282,29h-89.042v116.76h29.435v29.435h29.435v29.435h28.454v29.435h29.435v28.454h145.214v29.435H-440.4V681.2h58.87v29.435h29.435V681.2h87.324V564.442h116.76V447.683ZM-410.963,301.488v.981H-440.4v28.454h-57.889V214.163H-440.4v58.87h29.435Z" transform="translate(731.807 19.356)" fill="#fff"/>
     </clipPath>
-    <pattern id="tablet-pattern-17" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1280 1600">
-      <image width="1280" height="1600" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image10.jpg"/>
-    </pattern>
     <clipPath id="tablet-clip-path-11">
       <rect id="tablet-rainey_2" width="238.916" height="282.432" fill="#e4e4e4"/>
     </clipPath>
@@ -101,7 +98,7 @@
       <use preserveAspectRatio="xMidYMid slice" xlink:href="#tablet-image-2"/>
     </pattern>
     <pattern id="tablet-pattern-21" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 640 420">
-      <image width="640" height="420" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image20.png"/>
+      <image width="640" height="420" xlink:href="assets/images/desktop/FFDW-computer-face.png"/>
     </pattern>
     <clipPath id="tablet-clip-path-17">
       <rect id="tablet-Rectangle_268" data-name="Rectangle 268" width="215" height="215" transform="translate(0.272 0.272)" fill="#fff"/>
@@ -137,7 +134,7 @@
       <image preserveAspectRatio="xMidYMid slice" width="326.444" height="326.444" xlink:href="assets/images/desktop/FFDW-sandra-ro.png"/>
     </pattern>
     <pattern id="tablet-pattern-30" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 683 683">
-      <image width="683" height="683" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image28.png"/>
+      <image width="683" height="683" xlink:href="assets/images/desktop/FFDW-keyhole.png"/>
     </pattern>
     <clipPath id="tablet-clip-path-27">
       <ellipse id="tablet-Ellipse_55" data-name="Ellipse 55" cx="85" cy="115.666" rx="85" ry="115.666" transform="translate(0 0)" fill="#fff" stroke="#707070" stroke-width="1"/>
@@ -150,7 +147,7 @@
       <rect id="tablet-Rectangle_492" data-name="Rectangle 492" width="71" height="72.675" transform="translate(0 0)" fill="#fff"/>
     </clipPath>
     <pattern id="tablet-pattern-34" width="1" height="1" patternTransform="matrix(-1, 0, 0, 1, 152, 0)" viewBox="0 0 76 76">
-      <image preserveAspectRatio="none" width="76" height="76" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image30.png"/>
+      <image preserveAspectRatio="none" width="76" height="76" xlink:href="assets/images/desktop/FFDW-pixel-dog.png"/>
     </pattern>
     <clipPath id="tablet-clip-path-30">
       <rect id="tablet-Rectangle_493" data-name="Rectangle 493" width="54" height="72.675" transform="translate(0 0)" fill="#fff"/>
@@ -170,8 +167,7 @@
     <clipPath id="tablet-clip-FFDW_Mobile_Tablet_MVP_-_850px_">
       <rect width="1280" height="8914"/>
     </clipPath>
-    <image id="tablet-image-3" width="323.355" height="215.497" xlink:href="assets/images/desktop/FFDW%20MVP%20Site%20Grants%20Image%202-image12.png"/>
-    <image id="tablet-image-4" width="521" height="521" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image29.png"/>
+    <image id="tablet-image-4" width="521" height="521" xlink:href="assets/images/desktop/FFDW-image-medley.png"/>
   </defs>
   <g id="tablet-FFDW_Mobile_Tablet_MVP_-_850px_" data-name="FFDW Mobile Tablet MVP - 850px " clip-path="url(#tablet-clip-FFDW_Mobile_Tablet_MVP_-_850px_)">
     <rect width="1280" height="8914" fill="#fff"/>
@@ -8183,7 +8179,7 @@ Decentralized Web" transform="translate(215 93)" fill="#fff" font-size="30" font
     <path id="tablet-Path_437" data-name="Path 437" d="M58.083,22.025A76.592,76.592,0,0,1,26.424,7.734a68.319,68.319,0,0,1-7.146-6.626c-1.447-1.492-2.465-1.606-1.9.452C20.839,14.133,16.746,29.4,9.261,40c-1.153,1.628,11.171-2.261,15.219-4.884A75.664,75.664,0,0,1,12.156,95.134,71.736,71.736,0,0,1,2.07,106.621c-3.98,2.94-1.786,6.784,2.894,3.1a126.5,126.5,0,0,0,26.05-25.01A72.114,72.114,0,0,0,45.646,48.641a54.431,54.431,0,0,0-1.673-19.764C48,27.611,61.9,22.772,58.083,22.025Z" transform="translate(454.236 761.686) rotate(60)"/>
     <text id="tablet-_._" data-name=".*" transform="translate(36 812)" font-size="200" font-family="SpaceGrotesk-Regular, Space Grotesk"><tspan x="0" y="197">.*</tspan></text>
     <g id="tablet-Group_951" data-name="Group 951" transform="translate(-2562.491 -2578.496) rotate(-8)">
-      <image id="tablet-Image_26" data-name="Image 26" width="107.437" height="107.437" transform="translate(2137 3548)" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image.png"/>
+      <image id="tablet-Image_26" data-name="Image 26" width="107.437" height="107.437" transform="translate(2137 3548)" xlink:href="assets/images/desktop/FFDW-hourglass.png"/>
     </g>
     <g id="tablet-Repeat_Grid_13" data-name="Repeat Grid 13" transform="translate(14 295)" clip-path="url(#tablet-clip-path-2)">
       <g transform="translate(-1072 -401)">
@@ -9423,7 +9419,7 @@ development of technologies that will enable decentralized file storage of human
       </g>
     </g>
     <g id="tablet-Mask_Group_69" data-name="Mask Group 69" transform="translate(-101.607 -52.125)" clip-path="url(#tablet-clip-path-6)">
-      <image id="tablet-factor27" width="182.213" height="182.708" transform="translate(411.211 2603.375)" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image4.png"/>
+      <image id="tablet-factor27" width="182.213" height="182.708" transform="translate(411.211 2603.375)" xlink:href="assets/images/desktop/FFDW-node-map.png"/>
     </g>
     <g id="tablet-noun_Cursor_122767-2" data-name="noun_Cursor_122767" transform="matrix(-0.891, -0.454, 0.454, -0.891, 192.94, 2536.771)">
       <rect id="tablet-Rectangle_28-2" data-name="Rectangle 28" width="5.726" height="5.725" transform="translate(22.906 80.173)"/>
@@ -10082,7 +10078,7 @@ Blockchain Association " transform="translate(758.05 4714.533)" fill="#fff" fon
         <rect id="tablet-Rectangle_43-3" data-name="Rectangle 43" width="2.856" height="5.711" transform="translate(11.423 34.268)"/>
       </g>
       <path id="tablet-Path_432" data-name="Path 432" d="M78.285,136.949c-7.916-3.3-14.183-9.565-19.542-15.749l-1.649,1.567a51.851,51.851,0,0,0,6.761,8c.825.825,1.154,1.319,1.154,2.061,0,.825-1.319,1.814-2.144,1.814H41.179v5.442h21.6c1.484,0,2.144.825,2.144,1.649a3.615,3.615,0,0,1-1.154,2.309,66.247,66.247,0,0,0-6.761,7.916l1.649,1.567c5.442-6.267,11.709-12.369,19.625-15.749ZM32.6,140.083v-5.442H11v5.442Z" transform="translate(309.485 5321.198)"/>
-      <image id="tablet-Image_27" data-name="Image 27" width="25.712" height="44.836" transform="translate(644.949 5586.754) rotate(-30)" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image16.png"/>
+      <image id="tablet-Image_27" data-name="Image 27" width="25.712" height="44.836" transform="translate(644.949 5586.754) rotate(-30)" xlink:href="assets/images/desktop/FFDW-blocks.png"/>
       <g id="tablet-Group_683" data-name="Group 683" transform="translate(474.55 5573.897)">
         <g id="tablet-noun_Boxed_Arrow_Upper_Right_1289202" data-name="noun_Boxed Arrow Upper Right_1289202">
           <g id="tablet-Group_664" data-name="Group 664" transform="translate(0 0)">
@@ -10270,7 +10266,7 @@ Hamilton" transform="translate(849.068 5376.069)" fill="#141414" font-size="14" 
         </g>
       </g>
       <path id="tablet-Path_435" data-name="Path 435" d="M25.06,46.769,11.6,38.613l-.027-3.652L28.765,45.437v2.692L11.6,58.631l.027-3.572Zm13.088,0L24.9,38.666l.027-3.6,17.113,10.4v2.666L24.873,58.578,24.9,54.9Zm13.088.053-13.274-8.13-.027-3.705,17.14,10.5v2.772L37.935,58.6V54.953Z" transform="translate(830.494 5394.45)"/>
-      <image id="tablet-Image_24" data-name="Image 24" width="56.177" height="56.131" transform="translate(42.788 5392.22)" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image17.png"/>
+      <image id="tablet-Image_24" data-name="Image 24" width="56.177" height="56.131" transform="translate(42.788 5392.22)" xlink:href="assets/images/desktop/FFDW-bomb.png"/>
       <g id="tablet-Group_37-418" data-name="Group 37" transform="translate(612.16 5481.844)">
         <path id="tablet-Path_92-418" data-name="Path 92" d="M6.114,20.59a1.114,1.114,0,0,0,1.114-1.114V6.114A1.114,1.114,0,1,0,5,6.114V19.476A1.114,1.114,0,0,0,6.114,20.59Z" transform="translate(-5 -5)"/>
         <path id="tablet-Path_93-418" data-name="Path 93" d="M28.645,5a1.114,1.114,0,0,0-1.114,1.114V19.476a1.114,1.114,0,1,0,2.227,0V6.114A1.114,1.114,0,0,0,28.645,5Z" transform="translate(-2.442 -5)"/>
@@ -10820,7 +10816,7 @@ Questions" transform="translate(229.841 7271.596)" fill="#fff" font-size="50" fo
         <use id="tablet-happy-mac-icon-19" transform="translate(-7 -443.216)" xlink:href="#tablet-image-4"/>
       </g>
       <path id="tablet-Path_652" data-name="Path 652" d="M4.589-7.579,7.052-17.663H.417l.555-2.816H7.739l1.93-7.835H2.481l.555-2.793h7.3L12.82-41.191h2.818L13.175-31.108H19.01l2.463-10.084h2.84L21.85-31.108h6.634l-.532,2.793H21.163l-1.93,7.835h7.189l-.555,2.816h-7.3L16.1-7.579h-2.84l2.463-10.084H9.891L7.429-7.579Zm5.991-12.9h5.835l1.93-7.835H12.487Zm36.1-12.615v-3.189H34.208v3.189H31.089v22.326h3.119v3.189H46.675v-3.189h3.119V-33.094Zm-3.116,0v6.379H40.443v3.189H37.324v-9.568ZM37.324-10.769v-6.379h3.119v-3.189h3.116v9.568ZM69.94-33.094v-3.189H57.473v3.189H54.354v22.326h3.119v3.189H69.94v-3.189h3.119V-33.094Zm-3.116,0v6.379H63.708v3.189H60.589v-9.568ZM60.589-10.769v-6.379h3.119v-3.189h3.116v9.568ZM93.208-33.094v-3.189H80.739v3.189H77.62v12.758h3.119v3.189h9.351v3.189H86.973v3.189H80.739v3.189h9.351v-3.189h3.119v-3.189h3.116V-33.094ZM83.854-20.337V-33.094h6.235v12.758Zm32.57-12.758v-3.189H103.958v3.189h-3.119v22.326h3.119v3.189h12.467v-3.189h3.119V-33.094Zm-3.116,0v6.379h-3.116v3.189h-3.119v-9.568Zm-6.235,22.326v-6.379h3.119v-3.189h3.116v9.568ZM124.1-36.284v28.7h6.232V-20.337h6.232v-3.189h-6.232v-9.568h9.348v-3.189Zm20.13,0v28.7h6.232V-20.337H156.7v-3.189h-6.232v-9.568h9.348v-3.189Z" transform="translate(293.108 8027.974)" fill="#141414"/>
-      <image id="tablet-Image_23-2" data-name="Image 23" width="188.85" height="123.933" transform="translate(427.905 8372.633)" xlink:href="assets/images/tablet/FFDW%20Mobile%20Tablet%20MVP%20-%20850px-image20.png"/>
+      <image id="tablet-Image_23-2" data-name="Image 23" width="188.85" height="123.933" transform="translate(427.905 8372.633)" xlink:href="assets/images/desktop/FFDW-computer-face.png"/>
       <rect id="tablet-clarus__apple_icon" data-name="clarus_ apple icon" width="76" height="76" transform="translate(591 8429.832)" fill="url(#tablet-pattern-34)"/>
       <path id="tablet-Path_653" data-name="Path 653" d="M27.129-18.945v-3.413H23.788v3.413Zm-3.341-23.9v13.66h3.341v-13.66Zm-16.7-3.417v3.417h16.7v-3.417Zm13.358,6.83H13.771v3.417h3.338v6.83H13.771v-6.83H10.429v10.243H23.788v-3.413H20.45Zm3.338,23.907v-3.417H7.091v3.417ZM3.75-18.945H7.091v-23.9H3.75Z" transform="translate(692.999 8525.201)" fill="#141414"/>
       <g id="tablet-noun_Cursor_3617637-2" data-name="noun_Cursor_3617637" transform="translate(333.209 8438.48) rotate(-82)">
