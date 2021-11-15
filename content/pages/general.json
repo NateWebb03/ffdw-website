@@ -1,0 +1,92 @@
+{
+  "seo": {
+    "title": "Filecoin Foundation for the Decentralized Web",
+    "description": ""
+  },
+  "og": {
+    "site_name": "Filecoin Foundation for the Decentralized Web",
+    "url": "",
+    "type": "website",
+    "image": "/images/open-graph.png"
+  },
+  "social": [
+    {
+      "type": "X",
+      "action": "a",
+      "target": "_blank",
+      "url": "",
+      "component": "GithubIcon",
+      "label": "GitHub"
+    },
+    {
+      "type": "X",
+      "action": "a",
+      "target": "_blank",
+      "url": "",
+      "component": "RedditIcon",
+      "label": "Reddit"
+    },
+    {
+      "type": "X",
+      "action": "a",
+      "target": "_blank",
+      "url": "",
+      "component": "TwitterIcon",
+      "label": "Twitter"
+    },
+    {
+      "type": "X",
+      "action": "a",
+      "target": "_blank",
+      "url": "",
+      "component": "LinkedInIcon",
+      "label": "LinkedIn"
+    },
+    {
+      "type": "X",
+      "action": "a",
+      "target": "_blank",
+      "url": "",
+      "component": "YoutubeIcon",
+      "label": "YouTube"
+    }
+  ],
+  "navigation": [
+    {
+      "type": "C",
+      "theme": "light",
+      "action": "nuxt-link",
+      "url": "/about",
+      "text": "About"
+    },
+    {
+      "type": "C",
+      "theme": "light",
+      "action": "nuxt-link",
+      "url": "/governance",
+      "text": "Governance"
+    },
+    {
+      "type": "C",
+      "theme": "light",
+      "action": "nuxt-link",
+      "url": "/ecosystem",
+      "text": "Ecosystem"
+    },
+    {
+      "type": "C",
+      "theme": "light",
+      "action": "nuxt-link",
+      "url": "/grants",
+      "text": "Grants"
+    },
+    {
+      "type": "C",
+      "theme": "light",
+      "action": "nuxt-link",
+      "url": "/get-involved",
+      "text": "Get Involved"
+    }
+  ],
+  "footer": {}
+}
