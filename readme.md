@@ -35,7 +35,6 @@ To build this site locally
     - See the `content/pages/` directory
     - _(As a future step these data structures will be integrated into a CMS)_
 
-
 ## Components
 
 **Example Data Structure**
