@@ -140,14 +140,14 @@ $backgroundLayer__Height: 12.25rem;
   }
   a {
     @include fontWeight_Semibold;
-    color: $azureRadiance;
+    color: blue;
   }
 }
 
 // ////////////////////////////////////////////////////// [Footer Content] Right
 .footer-nav-link {
   @include leading_Regular;
-  color: $azureRadiance;
+  color: blue;
   &:not(:last-child) {
     margin-bottom: 1rem;
   }

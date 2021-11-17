@@ -53,5 +53,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// ///////////////////////////////////////////////////////////////////// General
+// /////////////////////////////////////////////////////////////////// Specifics
+::v-deep #intro_1 {
+  padding: 0;
+  .image-block {
+    padding: 0 3rem;
+  }
+}
+
+::v-deep #intro_2 {
+  padding-top: 2rem;
+}
+
+::v-deep #accordion_1 {
+  padding: 0;
+}
+
+::v-deep #grants {
+  .text-block {
+    padding: 0 2rem;
+  }
+}
 </style>

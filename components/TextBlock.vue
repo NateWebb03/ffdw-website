@@ -70,7 +70,7 @@ export default {
 
   computed: {
     format () {
-      return this.block.format
+      return this.block.format || 'medium'
     },
     theme () {
       return this.block.theme || 'dark'
@@ -135,6 +135,11 @@ export default {
 // }
 
 // ///////////////////////////////////////////////////////////////////// Formats
+.format__medium {
+  .description {
+    padding-right: 10rem;
+  }
+}
 
 // ///////////////////////////////////////////////////////////////////// Content
 .label {
@@ -153,7 +158,7 @@ export default {
 //   margin-bottom: 1rem;
 //   a {
 //     @include fontWeight_Semibold;
-//     color: $azureRadiance;
+//     color: blue;
 //   }
 // }
 </style>

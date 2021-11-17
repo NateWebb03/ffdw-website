@@ -152,7 +152,7 @@ export default {
           left: 0;
           width: 100vw;
           height: 100%;
-          background-color: $kleinBlue;
+          background-color: blue;
           border-radius: 4rem 0 0 4rem;
           z-index: -1;
           @include small {

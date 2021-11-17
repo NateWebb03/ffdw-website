@@ -241,7 +241,7 @@ export default {
       left: -1.5rem;
       width: calc(100% + 3rem);
       height: calc(100% + 3rem);
-      border: 6px solid $azureRadiance;
+      border: 6px solid blue;
       border-radius: 1.5rem;
       opacity: 0;
       transition: 250ms ease-out;
@@ -250,7 +250,7 @@ export default {
   .title {
     @include fontWeight_Semibold;
     @include leading_Regular;
-    color: $azureRadiance;
+    color: blue;
   }
   ::v-deep .description {
     color: white;
@@ -291,7 +291,7 @@ export default {
     margin-top: 1.875rem;
     @include fontSize_Regular;
     @include fontWeight_Semibold;
-    color: $kleinBlue;
+    color: blue;
     text-align: center;
     @include tiny {
       @include fontSize_Small;
@@ -323,7 +323,7 @@ export default {
     height: 61%;
     left: 0;
     top: 39%;
-    background-color: $kleinBlue;
+    background-color: blue;
     z-index: -1;
     border-radius: 0 0 calc(11.375rem + 26px) calc(11.375rem + 26px);
     filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.2));
@@ -386,7 +386,7 @@ export default {
   height: 36rem;
   padding: 0.25rem;
   color: white;
-  background-color: $azureRadiance;
+  background-color: blue;
   &:not(.with-image) {
     display: flex;
     flex-direction: column;
@@ -458,7 +458,7 @@ export default {
   margin: 0 1rem 3rem 0 !important;
   width: calc(33% - 1rem);
   padding: 0.75rem;
-  color: $blackPearl;
+  color: black;
   background-color: $white;
   @include small {
     width: calc(50% - 1rem);
@@ -514,7 +514,7 @@ export default {
     @include fontWeight_Semibold;
     @include leading_Regular;
     letter-spacing: $letterSpacing_Large;
-    color: $kleinBlue;
+    color: blue;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;

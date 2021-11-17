@@ -7,7 +7,7 @@
     "site_name": "Home - Filecoin Foundation for the Decentralized Web",
     "url": "",
     "type": "website",
-    "image": "/images/index/open-graph.png"
+    "image": "/images/page-index/open-graph.png"
   },
   "page_content": {
     "about_1": {
@@ -28,7 +28,7 @@
           "num": "col-10",
           "push_left": "off-1"
         },
-        "src": "/images/index/long-arrow-right.svg"
+        "src": "/images/page-index/long-arrow-right.svg"
       }
     },
     "intro_2": {
@@ -38,7 +38,7 @@
         "cols": {
           "num": "col-3"
         },
-        "src": "/images/index/newtwork-image-1.svg",
+        "src": "/images/page-index/newtwork-image-1.svg",
         "label": "Centralized"
       },
       "col_2": {
@@ -57,7 +57,7 @@
           "num": "col-3",
           "push_left": "off-1"
         },
-        "src": "/images/index/newtwork-image-2.svg",
+        "src": "/images/page-index/newtwork-image-2.svg",
         "label": "Decentralized"
       }
     },
@@ -67,9 +67,10 @@
         "cols": {
           "num": "col-7"
         },
+        "format": "medium",
         "label": "Explore the Dweb",
-        "heading": "Veritatis et quasi architecto beatae vitae",
-        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+        "heading": "Welcome to the next generation of the web",
+        "description": "We support programs that educate the public about how the internet works and what a decentralized future means for business, governments, and consumers alike. Learn more about the benefits of decentralization and the promise of Web3, through interactive tutorials, white papers, video resources, and more."
       },
       "col_2": {
         "type": "image_block",
@@ -77,15 +78,14 @@
           "num": "col-4",
           "push_left": "off-1"
         },
-        "src": "/images/index/woman-speaking-into-a-microphone.jpeg",
-        "label": "Decentralized"
+        "src": "/images/page-index/woman-speaking-into-a-microphone.jpeg"
       }
     },
     "accordion_1": {
       "col_1": {
-        "type": "accordion",
+        "type": "accordion_block",
         "cols": {
-          "num": "col-4",
+          "num": "col-9",
           "push_left": "off-3"
         },
         "sections": [
@@ -114,7 +114,8 @@
       "col_2": {
         "type": "text_block",
         "cols": {
-          "num": "col"
+          "num": "col-9",
+          "push_left": "off-3"
         },
         "ctas": [
           {
@@ -125,6 +126,61 @@
             "url": "/"
           }
         ]
+      }
+    },
+    "grants": {
+      "grid": ["middle"],
+      "col_1": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-3"
+        },
+        "src": "/images/page-index/woman-outside-holding-an-ipad-on-a-sunny-day.jpg"
+      },
+      "col_2": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-6"
+        },
+        "format": "small",
+        "label": "Grants",
+        "heading": "We exist to ensure the power of humanity’s most important information is never compromised, abused, or ruled by any single entity.",
+        "description": "If you’re working on a project that will help create a better DWeb, <a href=''>we want to hear from you</a>."
+      },
+      "col_3": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-3"
+        },
+        "src": "/images/page-index/man-outside-holding-a-coffee-on-a-sunny-day.jpg"
+      }
+    },
+    "spotlight": {
+      "col_1": {
+        "type": "video_block",
+        "tint": true,
+        "cols": {
+          "num": "col-7"
+        },
+        "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
+        "url": "https://youtu.be/Sakannch1Dw",
+        "subtext": {
+          "type": "D",
+          "action": "video",
+          "icon": "play",
+          "text": "Watch: introducting The Starling Lab",
+          "url": "https://youtu.be/6OY4xAs3Grg"
+        }
+      },
+      "col_2": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-4",
+          "push_left": "off-1"
+        },
+        "format": "small",
+        "heading": "The Starling Lab Grant Spotlight",
+        "description": "The Filecoin Foundation for the Decentralized Web announces a multi-year commitment to <a href='/'>The Starling Lab</a>, a research center developing a comprehensive set of tools and principles that empower organizations to securely capture, store, and verify human history."
       }
     }
   }

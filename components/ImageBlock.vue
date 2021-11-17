@@ -3,6 +3,12 @@
 
     <img :src="src" class="image" />
 
+    <div
+      v-if="label"
+      class="label">
+      {{ label }}
+    </div>
+
   </div>
 </template>
 
@@ -21,6 +27,9 @@ export default {
   computed: {
     src () {
       return this.block.src
+    },
+    label () {
+      return this.block.label
     }
   }
 }
@@ -31,5 +40,11 @@ export default {
 .image {
   display: block;
   width: 100%;
+}
+
+.label {
+  @include label_2;
+  text-align: center;
+  margin-top: 2rem;
 }
 </style>

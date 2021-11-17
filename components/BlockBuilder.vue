@@ -51,7 +51,8 @@
 // ====================================================================== Import
 import TextBlock from '@/components/TextBlock'
 import ImageBlock from '@/components/ImageBlock'
-// import VideoBlock from '@/components/VideoBlock'
+import VideoBlock from '@/components/VideoBlock'
+import AccordionBlock from '@/components/AccordionBlock'
 // import SliderBlock from '@/components/SliderBlock'
 // import CardListBlock from '@/components/CardListBlock'
 // import SocialIcons from '@/components/SocialIcons'
@@ -65,7 +66,8 @@ export default {
   components: {
     TextBlock,
     ImageBlock,
-    // VideoBlock,
+    VideoBlock,
+    AccordionBlock,
     // SliderBlock,
     // CardListBlock,
     // SocialIcons,
@@ -104,8 +106,9 @@ export default {
         case 'text_block' : name = 'TextBlock'; break
         case 'image_block' : name = 'ImageBlock'; break
         case 'video_block' : name = 'VideoBlock'; break
-        case 'slider_block' : name = 'SliderBlock'; break
-        case 'card_list_block' : name = 'CardListBlock'; break
+        case 'accordion_block' : name = 'AccordionBlock'; break
+        // case 'slider_block' : name = 'SliderBlock'; break
+        // case 'card_list_block' : name = 'CardListBlock'; break
         case 'custom' : name = block.component; break
       }
       return name
@@ -117,24 +120,6 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 .sectional {
-  margin: 12rem 0;
+  padding: 6rem 0;
 }
-
-// .page-content {
-//   position: relative;
-//   z-index: 5;
-// }
-//
-// .content-section {
-//   padding: 5rem 0;
-// }
-//
-// .column-content {
-//   position: relative;
-// }
-//
-// .blocks {
-//   position: relative;
-//   z-index: 10;
-// }
 </style>

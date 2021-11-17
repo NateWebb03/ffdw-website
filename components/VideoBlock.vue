@@ -78,7 +78,7 @@ $borderWidth__Mini: 0.5rem;
   @include borderRadius_Medium;
   position: relative;
   padding: $borderWidth__Large;
-  background-color: $hawkesBlue;
+  background-color: blue;
   box-shadow: 3px 3px 6px rgb(0 0 0 / 10%) inset;
   cursor: pointer;
   @include mini {
@@ -157,7 +157,7 @@ $borderWidth__Mini: 0.5rem;
     .icon {
       svg {
         .icon__play__triangle-inner {
-          fill: $azureRadiance;
+          fill: blue;
         }
       }
     }
@@ -165,13 +165,13 @@ $borderWidth__Mini: 0.5rem;
   .icon {
     svg {
       .icon__play__triangle-outer {
-        fill: $azureRadiance;
+        fill: blue;
       }
     }
   }
   .text {
     @include fontSize_Regular;
-    color: $azureRadiance;
+    color: blue;
   }
 }
 </style>

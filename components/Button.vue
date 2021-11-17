@@ -158,7 +158,7 @@ $layerOffset: 0.25rem;
       transition: 250ms ease-in;
     }
     &:before {
-      background-color: $kleinBlue;
+      background-color: blue;
     }
     &:after {
       box-shadow: 0 0 6px rgba(214, 234, 251, 1) inset, 0 0 6px rgba(14, 29, 126, 1);
@@ -176,7 +176,7 @@ $layerOffset: 0.25rem;
     height: calc(100% + #{$layerOffset * 4});
     top: -$layerOffset * 2;
     left: -$layerOffset * 2;
-    background-color: $hawkesBlue;
+    background-color: blue;
     box-shadow: 0 0 6px rgba(112, 180, 240, 1) inset;
     z-index: 5;
   }
@@ -185,29 +185,29 @@ $layerOffset: 0.25rem;
     height: calc(100% + #{$layerOffset * 2});
     top: -$layerOffset;
     left: -$layerOffset;
-    background-color: $polar;
+    background-color: white;
     box-shadow: 0 0 6px rgba(214, 234, 251, 1) inset, 0 0 6px rgba(178, 215, 248, 1);
     z-index: 10;
   }
   &.theme__dark {
     &:hover {
       &:before {
-        background-color: $kleinBlue;
+        background-color: blue;
       }
       &:after {
-        background-color: $denim;
+        background-color: blue;
       }
     }
     &:before {
-      background-color: $deepCove;
+      background-color: blue;
       box-shadow: 0 0 6px rgba(0, 9, 110, 0.45) inset;
     }
     &:after {
-      background-color: $kleinBlue;
+      background-color: blue;
       box-shadow: 0 0 6px rgba(6, 33, 164, 0.5) inset, 0 0 6px rgba(6, 9, 78, 0.55);
     }
     .text {
-      background-color: $denim;
+      background-color: blue;
       color: white;
       box-shadow: 0 0 6px rgba(6, 9, 78, 1);
     }
@@ -218,7 +218,7 @@ $layerOffset: 0.25rem;
   .text {
     padding: 10px 1.25rem 9px;
     background-color: white;
-    color: $kleinBlue;
+    color: blue;
     box-shadow: 0 0 6px rgba(178, 215, 248, 1);
     border-radius: inherit;
   }
@@ -237,20 +237,20 @@ $layerOffset: 0.25rem;
           fill: white;
         }
         .icon__info__letter-i {
-          fill: $kleinBlue;
+          fill: blue;
         }
       }
     }
   }
   &.theme__dark {
-    color: $kleinBlue;
-    border-color: $kleinBlue;
+    color: blue;
+    border-color: blue;
     &:hover {
       ::v-deep .icon {
         svg {
           .icon__play__triangle-inner,
           .icon__info__circle-inner {
-            fill: $kleinBlue;
+            fill: blue;
           }
           .icon__info__letter-i {
             fill: white;
@@ -263,10 +263,10 @@ $layerOffset: 0.25rem;
         .icon__play__triangle-outer,
         .icon__info__circle-outer,
         .icon__info__letter-i {
-          fill: $kleinBlue;
+          fill: blue;
         }
         .icon__plus__line {
-          stroke: $kleinBlue;
+          stroke: blue;
         }
       }
     }
@@ -325,7 +325,7 @@ $layerOffset: 0.25rem;
   @include fontWeight_Semibold;
   color: white;
   &.theme__dark {
-    color: $blackPearl;
+    color: black;
   }
   .icon {
     display: none;
@@ -340,7 +340,7 @@ $layerOffset: 0.25rem;
   position: relative;
   margin: 0.5rem;
   padding: 1.25rem 2.25rem;
-  background-color: $kleinBlue;
+  background-color: blue;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15) inset;
   &:before {
     @include borderRadius_Large;
@@ -350,7 +350,7 @@ $layerOffset: 0.25rem;
     height: calc(100% - 0.5rem * 2);
     top: 0.5rem;
     left: 0.5rem;
-    background-color: $denim;
+    background-color: blue;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15) inset;
     z-index: 5;
   }
@@ -396,7 +396,7 @@ $layerOffset: 0.25rem;
     left: 0;
     width: 100%;
     height: 0.25rem;
-    background-color: $denim;
+    background-color: blue;
     border-radius: 0.25rem;
     transform: translateY(0.5rem);
     opacity: 0;
@@ -422,7 +422,7 @@ $layerOffset: 0.25rem;
 .type__H {
   @include fontSize_Small;
   @include fontWeight_Semibold;
-  color: $kleinBlue;
+  color: blue;
 }
 
 </style>

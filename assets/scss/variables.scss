@@ -24,15 +24,13 @@ $gray700: #616161;
 $gray800: #424242;
 $gray900: #212121;
 
-$white: #FFFFFF;
-$polar: #EFF6FC;
-$hawkesBlue: #D8EBFB;
-$jordyBlue: #73B4ED;
-$azureRadiance: #0090FF;
-$denim: #154ED9;
-$kleinBlue: #0621A4;
-$deepCove: #06094E;
-$blackPearl: #08072E;
+$cararra: #E8E7E1; // very pale matte gray (text color)
+$haiti: #070517; // almost black purple (site bg-color)
+
+// Gradients
+$perfume: #B5B5FA; // pale purple
+$greenYellow: #BAFE36; // lime green
+$coralRed: #FB383F; // bright red
 
 // ----------------------------------------------------------------- Breakpoints
 $breakpoint_Tiny: 25.9375rem; // 415px
@@ -42,6 +40,11 @@ $breakpoint_Medium: 64rem; // 1024px
 $breakpoint_Large: 75rem; // 1200px
 $breakpoint_Xlarge: 90rem; // 1440px
 $breakpoint_UltraLarge: 140.625rem; // 2250px
+
+// ------------------------------------------------------------------- Gradients
+$gradient_PurpleGreen: linear-gradient(to right, $perfume, $greenYellow);
+$gradient_RedPurple: linear-gradient(to right, $coralRed, $perfume);
+$gradient_RedGreen: linear-gradient(to right, $coralRed, $greenYellow);
 
 // ////////////////////////////////////////////////////////////////////// Mixins
 // =============================================================================
@@ -89,6 +92,10 @@ $breakpoint_UltraLarge: 140.625rem; // 2250px
 @mixin borderRadius_Medium { border-radius: $borderRadius_Medium; }
 @mixin borderRadius_Large { border-radius: $borderRadius_Large; }
 @mixin borderRadius_ExtraLarge { border-radius: $borderRadius_ExtraLarge; }
+
+@mixin gradient_Background_PurpleGreen { background: $gradient_PurpleGreen; }
+@mixin gradient_Background_RedPurple { background: $gradient_RedPurple; }
+@mixin gradient_Background_RedGreen { background: $gradient_RedGreen; }
 
 // --------------------------------------------------------------------- General
 @mixin optional-at-root($sel) { @at-root #{if(not &, $sel, selector-append(&, $sel))} { @content; } }

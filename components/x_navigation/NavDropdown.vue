@@ -367,7 +367,7 @@ li {
     left: 0;
     width: calc(100% - 10px);
     height: calc(100% - 20px);
-    background: $deepCove;
+    background: blue;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 71px;
     z-index: 1;
@@ -455,28 +455,28 @@ li {
           transform: translate(-2px, -2px);
           z-index: 0;
           &:after {
-            background-color: $azureRadiance;
+            background-color: blue;
           }
         }
         &:nth-child(2) {
           transform: translate(2px, 2px);
           z-index: 1;
           &:after {
-            background-color: $denim;
+            background-color: blue;
           }
         }
         &:nth-child(3) {
           transform: translate(6px, 6px);
           z-index: 2;
           &:after {
-            background-color: $kleinBlue;
+            background-color: blue;
           }
         }
         &:last-child {
           transform: translate(9px, 9px);
           z-index: 3;
           &:after {
-            background-color: $blackPearl;
+            background-color: black;
           }
         }
       }
