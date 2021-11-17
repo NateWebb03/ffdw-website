@@ -6,11 +6,10 @@
       :id="sectionId"
       :key="sectionId"
       class="sectional">
-      <div :class="['grid', getGridClasses(section.grid), section.classNames]">
+      <div :class="[getGridClasses(section.grid), section.classNames]">
         <template v-for="(block, blockId) in section">
           <div
             v-if="blockAllowed(blockId)"
-            :id="`${sectionId}__${blockId}`"
             :key="blockId"
             :class="getColumnCount(block)"
             :data-push-left="getColumnPushCount(block, 'left')"
@@ -23,6 +22,7 @@
                   :is="component.name"
                   v-for="(component, componentKey) in block.customizations"
                   :key="componentKey"
+                  :class="`block__${blockId}`"
                   v-bind="component.props" />
               </template>
 
@@ -30,6 +30,7 @@
               <component
                 :is="getComponentName(block)"
                 v-else-if="block.type !== 'sectional'"
+                :class="`block__${blockId}`"
                 v-bind="{ block }" />
 
               <!-- ======================= Recursive Sectional/Block imports -->

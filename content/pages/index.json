@@ -22,7 +22,7 @@
       }
     },
     "intro_1": {
-      "col_2": {
+      "col_1": {
         "type": "image_block",
         "cols": {
           "num": "col-10",
