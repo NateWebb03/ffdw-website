@@ -182,7 +182,7 @@ export default {
       }
       .label {
         @include fontSize_ExtraLarge;
-        @include fontWeight_Medium;
+        @include fontWeight_Semibold;
         padding-left: 4.375rem;
         @include small {
           visibility: hidden;
@@ -212,7 +212,7 @@ export default {
         .label {
           margin: 1rem 0;
           @include fontSize_ExtraLarge;
-          @include fontWeight_Medium;
+          @include fontWeight_Semibold;
           @include leading_Regular;
         }
         .description {

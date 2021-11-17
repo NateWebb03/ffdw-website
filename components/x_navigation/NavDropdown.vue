@@ -323,7 +323,7 @@ li {
     z-index: 10;
   }
   .title {
-    @include fontWeight_Medium;
+    @include fontWeight_Semibold;
     display: inline-block;
     margin-bottom: 1rem;
   }
@@ -344,7 +344,7 @@ li {
     }
     .label {
       @include fontSize_Small;
-      @include fontWeight_SemiBold;
+      @include fontWeight_Semibold;
       display: block;
     }
   }
@@ -376,7 +376,7 @@ li {
     position: relative;
     z-index: 2;
     .panel-right-title {
-      @include fontWeight_Medium;
+      @include fontWeight_Semibold;
       margin-bottom: 1rem;
       white-space: nowrap;
     }

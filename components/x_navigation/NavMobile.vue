@@ -128,7 +128,7 @@ export default {
       width: 2rem;
     }
     .title {
-      @include fontWeight_Medium;
+      @include fontWeight_Semibold;
       padding-left: 3.25rem;
     }
     .text {
@@ -154,7 +154,7 @@ export default {
       list-style: none;
     }
     li {
-      @include fontWeight_Medium;
+      @include fontWeight_Semibold;
       font-size: 0.875rem;
       letter-spacing: $letterSpacing_Large;
       &:not(:last-child) {

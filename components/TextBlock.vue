@@ -1,5 +1,5 @@
 <template>
-  <div :class="['block text-block', `layout__${layout}`, `theme__${theme}`]" :data-id="dataIdAttribute">
+  <div :class="['block text-block', `format__${format}`, `theme__${theme}`]" :data-id="dataIdAttribute">
 
     <div v-if="label" class="label">
       <span
@@ -69,8 +69,8 @@ export default {
   },
 
   computed: {
-    layout () {
-      return this.block.layout
+    format () {
+      return this.block.format
     },
     theme () {
       return this.block.theme || 'dark'
@@ -94,12 +94,13 @@ export default {
       return this.block.heading
     },
     headingLevel () {
-      const layout = this.layout
+      const format = this.format
       let size
-      switch (layout) {
-        case 'large' : size = 'h1'; break
+      switch (format) {
+        case 'header' : size = 'h1'; break
         case 'medium' : size = 'h2'; break
-        case 'compact' : size = 'h2'; break
+        case 'small' : size = 'h3'; break
+        default : size = 'h2'
       }
       return size
     },
@@ -122,49 +123,37 @@ export default {
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
-.text-block {
-  &.theme__light {
-    color: white;
-    ::v-deep .subheading {
-      a {
-        color: white;
-      }
-    }
-  }
-}
+// .text-block {
+//   &.theme__light {
+//     color: white;
+//     ::v-deep .subheading {
+//       a {
+//         color: white;
+//       }
+//     }
+//   }
+// }
 
-// ///////////////////////////////////////////////////////////////////// Layouts
-.layout__compact {
-  .description {
-    @include fontSize_Large;
-    @include leading_Regular;
-    @include mini {
-      @include fontSize_Medium;
-    }
-  }
-}
+// ///////////////////////////////////////////////////////////////////// Formats
 
 // ///////////////////////////////////////////////////////////////////// Content
 .label {
-  @include label;
-  margin-bottom: 0.5rem;
+  @include label_2;
+  margin-bottom: 7rem;
 }
 
 .heading {
-  &.h1 {
-    margin-bottom: 1rem;
-  }
-  &.h2 {
-    margin-bottom: 0.5rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }
 
-::v-deep .subheading {
-  @include subheading;
-  margin-bottom: 1rem;
-  a {
-    @include fontWeight_SemiBold;
-    color: $azureRadiance;
-  }
-}
+// ::v-deep .subheading {
+//   @include subheading;
+//   margin-bottom: 1rem;
+//   a {
+//     @include fontWeight_Semibold;
+//     color: $azureRadiance;
+//   }
+// }
 </style>

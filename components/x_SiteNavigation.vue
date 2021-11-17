@@ -256,7 +256,7 @@ export default {
 ::v-deep .nav-link {
   color: $white;
   &.first-level {
-    @include fontWeight_Medium;
+    @include fontWeight_Semibold;
     transition: 250ms ease-in-out;
   }
 }

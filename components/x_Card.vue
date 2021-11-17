@@ -248,7 +248,7 @@ export default {
     }
   }
   .title {
-    @include fontWeight_Medium;
+    @include fontWeight_Semibold;
     @include leading_Regular;
     color: $azureRadiance;
   }
@@ -290,7 +290,7 @@ export default {
     transform: translateX(-50%);
     margin-top: 1.875rem;
     @include fontSize_Regular;
-    @include fontWeight_SemiBold;
+    @include fontWeight_Semibold;
     color: $kleinBlue;
     text-align: center;
     @include tiny {
@@ -429,14 +429,14 @@ export default {
   }
   .date-large {
     @include fontWeight_Bold;
-    @include fontSize_ExtraExtraLarge;
+    @include fontSize_ExtraLarge;
     padding: 3.5rem;
     margin-bottom: 1.5rem;
     line-height: 1;
   }
   .title {
     @include fontSize_Large;
-    @include fontWeight_Medium;
+    @include fontWeight_Semibold;
     @include leading_Small;
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -505,13 +505,13 @@ export default {
   }
   .date-large {
     @include fontWeight_Bold;
-    @include fontSize_ExtraExtraLarge;
+    @include fontSize_ExtraLarge;
     display: block;
     height: 12.875rem;
   }
   .title {
     @include fontSize_Regular;
-    @include fontWeight_SemiBold;
+    @include fontWeight_Semibold;
     @include leading_Regular;
     letter-spacing: $letterSpacing_Large;
     color: $kleinBlue;

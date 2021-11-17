@@ -128,7 +128,7 @@ $backgroundLayer__Height: 12.25rem;
   @include fontSize_Large;
   @include leading_Medium;
   &:first-child {
-    @include fontWeight_SemiBold;
+    @include fontWeight_Semibold;
   }
   &:not(:last-child) {
     margin-bottom: 1.25rem;
@@ -139,7 +139,7 @@ $backgroundLayer__Height: 12.25rem;
     }
   }
   a {
-    @include fontWeight_SemiBold;
+    @include fontWeight_Semibold;
     color: $azureRadiance;
   }
 }
@@ -205,7 +205,7 @@ $backgroundLayer__Height: 12.25rem;
     margin-top: 2rem;
   }
   a {
-    @include fontWeight_SemiBold;
+    @include fontWeight_Semibold;
   }
 }
 

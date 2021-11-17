@@ -127,7 +127,7 @@ $layerOffset: 0.25rem;
 
 // ///////////////////////////////////////////////////////////////////// General
 .button {
-  @include leading_Tiny;
+  @include leading_Small;
   display: inline-flex;
   flex-direction: row;
 }
@@ -148,7 +148,7 @@ $layerOffset: 0.25rem;
 // -------------------------------------------------------------------- [Type] A
 .type__A {
   @include fontSize_Small;
-  @include fontWeight_SemiBold;
+  @include fontWeight_Semibold;
   position: relative;
   margin: 0.5rem;
   border-radius: 3rem;
@@ -227,7 +227,7 @@ $layerOffset: 0.25rem;
 // ---------------------------------------------------------------- [Type] B & D
 .type__B,
 .type__D {
-  @include fontWeight_Medium;
+  @include fontWeight_Semibold;
   color: white;
   &:hover {
     ::v-deep .icon {
@@ -322,7 +322,7 @@ $layerOffset: 0.25rem;
 // -------------------------------------------------------------------- [Type] C
 .type__C {
   @include fontSize_Medium;
-  @include fontWeight_Medium;
+  @include fontWeight_Semibold;
   color: white;
   &.theme__dark {
     color: $blackPearl;
@@ -336,7 +336,7 @@ $layerOffset: 0.25rem;
 .type__E {
   @include borderRadius_ExtraLarge;
   @include fontSize_Small;
-  @include fontWeight_SemiBold;
+  @include fontWeight_Semibold;
   position: relative;
   margin: 0.5rem;
   padding: 1.25rem 2.25rem;
@@ -373,9 +373,9 @@ $layerOffset: 0.25rem;
 
 // -------------------------------------------------------------------- [Type] G
 .type__G {
-  @include fontSize_ExtraExtraLarge;
-  @include fontWeight_Medium;
-  @include leading_Tiny;
+  @include fontSize_ExtraLarge;
+  @include fontWeight_Semibold;
+  @include leading_Small;
   position: relative;
   align-items: center;
   opacity: 0.5;
@@ -421,7 +421,7 @@ $layerOffset: 0.25rem;
 // -------------------------------------------------------------------- [Type] H
 .type__H {
   @include fontSize_Small;
-  @include fontWeight_SemiBold;
+  @include fontWeight_Semibold;
   color: $kleinBlue;
 }
 
