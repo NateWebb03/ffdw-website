@@ -152,7 +152,7 @@ export default {
           left: 0;
           width: 100vw;
           height: 100%;
-          background-color: $kleinBlue;
+          background-color: blue;
           border-radius: 4rem 0 0 4rem;
           z-index: -1;
           @include small {
@@ -182,7 +182,7 @@ export default {
       }
       .label {
         @include fontSize_ExtraLarge;
-        @include fontWeight_Medium;
+        @include fontWeight_Semibold;
         padding-left: 4.375rem;
         @include small {
           visibility: hidden;
@@ -212,7 +212,7 @@ export default {
         .label {
           margin: 1rem 0;
           @include fontSize_ExtraLarge;
-          @include fontWeight_Medium;
+          @include fontWeight_Semibold;
           @include leading_Regular;
         }
         .description {

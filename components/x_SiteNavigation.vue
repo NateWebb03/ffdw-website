@@ -256,7 +256,7 @@ export default {
 ::v-deep .nav-link {
   color: $white;
   &.first-level {
-    @include fontWeight_Medium;
+    @include fontWeight_Semibold;
     transition: 250ms ease-in-out;
   }
 }
@@ -270,8 +270,8 @@ export default {
       left: 5px;
       width: calc(100% - 20px);
       height: calc(100% - 20px);
-      background-color: $blackPearl;
-      border: 5px solid $kleinBlue;
+      background-color: black;
+      border: 5px solid blue;
       border-radius: 0.625rem 0.625rem 4.75rem 4.75rem;
     }
   }
@@ -281,8 +281,8 @@ export default {
   .nav-dropdown,
   .mega-menu {
     // padding: 2rem 3.375rem 2rem 5.375rem;
-    background-color: $denim;
-    border: 5px solid $azureRadiance;
+    background-color: blue;
+    border: 5px solid blue;
     border-radius: 0.875rem 0.875rem 5.25rem 5.25rem;
     color: $white;
     .extras {
@@ -384,7 +384,7 @@ export default {
 // ////////////////////////////////////////////////////// mobile navigation menu
 ::v-deep .site-nav {
   @include small {
-    background-color: $blackPearl;
+    background-color: black;
   }
 }
 
@@ -394,15 +394,15 @@ export default {
   background-color: transparent;
   &.top-open {
     @include small {
-      background-color: $blackPearl;
+      background-color: black;
     }
   }
 }
 
 ::v-deep .mega-menu {
   left: 0;
-  background-color: $denim;
-  border: 5px solid $azureRadiance;
+  background-color: blue;
+  border: 5px solid blue;
   border-radius: 0.875rem 0.875rem 5.25rem 5.25rem;
   color: $white;
 }
@@ -416,8 +416,8 @@ export default {
   left: 5px;
   top: -5px;
   padding: $navigationHeight 2.5rem 2.5rem 2.5rem;
-  background-color: $blackPearl;
-  border: 5px solid $kleinBlue;
+  background-color: black;
+  border: 5px solid blue;
   border-radius: 0.625rem 0.625rem 4.75rem 4.75rem;
   &:after {
     content: '';
@@ -426,7 +426,7 @@ export default {
     left: 0;
     width: 100%;
     height: 3rem;
-    background-color: $blackPearl;
+    background-color: black;
     z-index: 100;
   }
 }

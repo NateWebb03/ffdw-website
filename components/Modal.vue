@@ -131,7 +131,7 @@ export default {
 }
 
 .close-button {
-  @include fontWeight_SemiBold;
+  @include fontWeight_Semibold;
   color: white;
   padding: 0.5rem 1rem;
 }
