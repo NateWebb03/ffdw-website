@@ -325,7 +325,7 @@ $layerOffset: 0.25rem;
   @include fontWeight_Semibold;
   color: white;
   &.theme__dark {
-    color: black;
+    color: $haiti;
   }
   .icon {
     display: none;

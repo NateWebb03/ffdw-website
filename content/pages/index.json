@@ -10,10 +10,19 @@
     "image": "/images/page-index/open-graph.png"
   },
   "page_content": {
+    "nav_1": {
+      "col_1": {
+        "type": "nav_block",
+        "format": "header",
+        "cols": {
+          "num": "col-12"
+        }
+      }
+    },
     "header_1": {
       "col_1": {
         "type": "header_block",
-        "format":"header",
+        "format": "header",
         "cols": {
           "num": "col-12"
         },
