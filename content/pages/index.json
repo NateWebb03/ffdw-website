@@ -10,6 +10,25 @@
     "image": "/images/page-index/open-graph.png"
   },
   "page_content": {
+    "header_1": {
+      "col_1": {
+        "type": "header_block",
+        "format":"header",
+        "cols": {
+          "num": "col-12"
+        },
+        "background": "linear-gradient(90deg, rgba(181,181,250,1) 0%, rgba(186,254,54,1) 100%);",
+        "artifacts": [
+          {
+            "left": "10rem",
+            "src": "Info"
+          },
+          {
+            "src": "Ticket"
+          }
+        ]
+      }
+    },
     "about_1": {
       "col_1": {
         "type": "text_block",
