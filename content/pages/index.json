@@ -29,12 +29,21 @@
         "background": "linear-gradient(90deg, rgba(181,181,250,1) 0%, rgba(186,254,54,1) 100%);",
         "artifacts": [
           {
-            "left": "10rem",
-            "src": "Info"
+            "left": "0",
+            "top": "calc(100% - 6.313rem)",
+            "height": "6.313rem",
+            "width": "11rem"
           },
           {
-            "src": "Ticket"
+            "left": "11rem",
+            "top": "calc(100% - 3.188rem)",
+            "height": "3.188rem",
+            "width": "3.063rem"
           }
+        ],
+        "images":[
+          "images/component-header/man-sitting-with-laptop.png",
+          "images/component-header/woman-painting-black-and-white.png"
         ]
       }
     },

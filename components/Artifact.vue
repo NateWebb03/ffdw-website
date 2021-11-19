@@ -1,27 +1,22 @@
 <template>
-  <component class="artifact" :is="src" :style="{ left, top, width, height }" />
+  <div class="artifact" :style="{ left, top, width, height, 'background-color': color }" />
 </template>
 
 <script>
 // ====================================================================== Import
-import Info from '@/components/icons/Info'
-import Ticket from '@/components/icons/Ticket'
 
 // ====================================================================== Export
 const computedDefaults = {
   left: 0,
-  right: 0,
+  top: 0,
   width: '1rem',
   height: '1rem',
-  src: null
+  color: undefined,
+  componentName: undefined
 }
 
 export default {
-  name: 'Artifact',
-  components: {
-    Info,
-    Ticket
-  },
+  
   props: {
     block: {
       type: Object,
@@ -41,6 +36,7 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 .artifact {
   position: absolute;
+  background-color: $haiti;
 }
 
 </style>
