@@ -119,8 +119,8 @@
         },
         "ctas": [
           {
-            "type": "",
-            "theme": "",
+            "type": "A",
+            "theme": "purple-green",
             "action": "nuxt-link",
             "text": "Explore the Dweb",
             "url": "/"
@@ -130,24 +130,25 @@
     },
     "grants": {
       "grid": ["middle"],
-      "col_1": {
+      "image_left": {
         "type": "image_block",
         "cols": {
           "num": "col-3"
         },
         "src": "/images/page-index/woman-outside-holding-an-ipad-on-a-sunny-day.jpg"
       },
-      "col_2": {
+      "text": {
         "type": "text_block",
         "cols": {
           "num": "col-6"
         },
         "format": "small",
+        "theme": "green-purple",
         "label": "Grants",
         "heading": "We exist to ensure the power of humanity’s most important information is never compromised, abused, or ruled by any single entity.",
         "description": "If you’re working on a project that will help create a better DWeb, <a href=''>we want to hear from you</a>."
       },
-      "col_3": {
+      "image_right": {
         "type": "image_block",
         "cols": {
           "num": "col-3"
@@ -156,6 +157,7 @@
       }
     },
     "spotlight": {
+      "grid": ["middle"],
       "col_1": {
         "type": "video_block",
         "tint": true,
@@ -179,8 +181,30 @@
           "push_left": "off-1"
         },
         "format": "small",
+        "theme": "green-purple",
         "heading": "The Starling Lab Grant Spotlight",
         "description": "The Filecoin Foundation for the Decentralized Web announces a multi-year commitment to <a href='/'>The Starling Lab</a>, a research center developing a comprehensive set of tools and principles that empower organizations to securely capture, store, and verify human history."
+      }
+    },
+    "callout": {
+      "grid": ["center"],
+      "classNames": "full",
+      "col_1": {
+        "type": "custom",
+        "cols": {
+          "num": "col"
+        },
+        "customizations": {
+          "careers": {
+            "name": "HomeCallout",
+            "props": {
+              "img_left": "/images/page-index/man-sitting-in-a-boardroom-looking-in-the-camera.jpeg",
+              "label": "Get Involved",
+              "text_1": "Join the conversation and build a better Internet.",
+              "text_2": "Or, sign up to hear from us"
+            }
+          }
+        }
       }
     }
   }
