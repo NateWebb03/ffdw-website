@@ -12,14 +12,14 @@
 // ====================================================================== Import
 import { mapGetters } from 'vuex'
 
-import IndexPageData from '@/content/pages/index.json'
+import GrantsPageData from '@/content/pages/grants.json'
 
 import Modal from '@/components/Modal'
 import BlockBuilder from '@/components/BlockBuilder'
 
 // ====================================================================== Export
 export default {
-  name: 'PageIndex',
+  name: 'PageGrants',
 
   components: {
     Modal,
@@ -28,13 +28,13 @@ export default {
 
   data () {
     return {
-      tag: 'index'
+      tag: 'grants'
     }
   },
 
   async fetch ({ store }) {
     await store.dispatch('global/getBaseData', 'general')
-    await store.dispatch('global/getBaseData', { key: 'index', data: IndexPageData })
+    await store.dispatch('global/getBaseData', { key: 'grants', data: GrantsPageData })
   },
 
   head () {
@@ -54,24 +54,4 @@ export default {
 
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
-::v-deep #intro_1 {
-  padding: 0;
-  .image-block {
-    padding: 0 3rem;
-  }
-}
-
-::v-deep #intro_2 {
-  padding-top: 2rem;
-}
-
-::v-deep #accordion_1 {
-  padding: 0;
-}
-
-::v-deep #grants {
-  .text-block {
-    padding: 0 2rem;
-  }
-}
 </style>
