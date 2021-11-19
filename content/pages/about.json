@@ -202,33 +202,7 @@
         ]
       }
     },
-    "careers_1": {
-      "col_1": {
-        "type": "text_block",
-        "cols": {
-          "num": "col"
-        },
-        "format": "header",
-        "label": "Careers",
-        "heading": "The Filecoin Foundation for the Decentralized Web is hiring for roles as we build, support, and fund projects advancing the Dweb. Check out our open roles."
-      },
-      "col_2": {
-        "type": "text_block",
-        "cols": {
-          "num": "col"
-        },
-        "ctas": [
-          {
-            "type": "",
-            "theme": "",
-            "action": "nuxt-link",
-            "text": "Get In Touch",
-            "url": "/"
-          }
-        ]
-      }
-    },
-    "careers_2": {
+    "careers_block": {
       "col_1": {
         "type": "custom",
         "cols": {
@@ -238,7 +212,19 @@
           "careers": {
             "name": "FeaturedCareersList",
             "props": {
-              "img": "/images/about/two-women-on-a-laptop-and-a-tablet.jpeg"
+              "label": "Careers",
+              "heading": "The Filecoin Foundation for the Decentralized Web is hiring for roles as we build, support, and fund projects advancing the Dweb. Check out our open roles.",
+              "img": "/images/about/two-women-on-a-laptop-and-a-tablet.jpeg",
+              "careers-list": [],
+              "ctas": [
+                {
+                  "type": "",
+                  "theme": "",
+                  "action": "nuxt-link",
+                  "text": "Get In Touch",
+                  "url": "/"
+                }
+              ]
             }
           }
         }

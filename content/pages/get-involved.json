@@ -9,5 +9,208 @@
     "type": "website",
     "image": "/images/page-index/open-graph.png"
   },
-  "page_content": {}
+  "page_content": {
+    "intro_1": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-8"
+        },
+        "format": "header",
+        "label": "Get Involved",
+        "heading": "Working with the community to advance Web3 through education, research, and development."
+      },
+      "col_2": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-3",
+          "push_left": "off-1"
+        },
+        "src": "/images/page-about/woman-speaking-into-microphone.jpeg"
+      }
+    },
+    "intro_2": {
+      "col_1": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-6"
+        },
+        "src": "/images/page-get-involved/man-presenting-slideshow-to-a-group.jpeg"
+      },
+      "col_2": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-5",
+          "push_left": "off-1"
+        },
+        "description": "FFDW’s mission is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open-source software and open protocols for decentralized data storage and retrieval networks. We work to build and support the decentralized web community, fund research and development, and educate the public about the decentralized web, in order to preserve humanity’s most important information."
+      }
+    },
+    "intro_3": {
+      "col_1": {
+        "type": "card_list_block",
+        "cols": {
+          "num": "col"
+        },
+        "layout": "double",
+        "cards": [
+          {
+            "type": "C",
+            "title": "Join our team",
+            "description": "If you’re passionate about decentralization, check out our open roles.",
+            "icon": "",
+            "ctas": [
+              {
+                "type": "",
+                "action": "",
+                "text": "View open Roles",
+                "url": "/"
+              }
+            ]
+          },
+          {
+            "type": "C",
+            "title": "Follow us on social media",
+            "description": "Learn more about our hosted and sponsored events, and catch our latest announcements.",
+            "icon": "",
+            "ctas": [
+              {
+                "type": "",
+                "action": "",
+                "text": "Follow us",
+                "url": "/"
+              }
+            ]
+          },
+          {
+            "type": "C",
+            "title": "Apply for a grant",
+            "description": "FFDW currently reviews grant and project applications quarterly. Proposals should be submitted as attachments to an email.",
+            "icon": "",
+            "ctas": [
+              {
+                "type": "",
+                "action": "",
+                "text": "Learn more about grants",
+                "url": "/"
+              }
+            ]
+          },
+          {
+            "type": "C",
+            "title": "Explore our educational resources",
+            "description": "From videos to podcasts, Github repos to self-guided tutorials, we have the resources you need to dive into Web3.",
+            "icon": "",
+            "ctas": [
+              {
+                "type": "",
+                "action": "",
+                "text": "Explore the Dweb",
+                "url": "/"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "grants_callout": {
+      "grid": ["center"],
+      "classNames": "full",
+      "col_1": {
+        "type": "custom",
+        "cols": {
+          "num": "col"
+        },
+        "customizations": {
+          "careers": {
+            "name": "GetInvolvedCallout",
+            "props": {
+              "img_left": "/images/page-get-involved/man-on-laptop-in-office.jpeg",
+              "label": "Grants and Project Proposals",
+              "img-right": "/images/page-get-involved/",
+              "ctas": [
+                {
+                  "type": "",
+                  "action": "",
+                  "text": "Explore the Dweb",
+                  "url": "/"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "grants_1": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-6"
+        },
+        "format": "header",
+        "label": "Apply for a Grant or Project Proposals",
+        "heading": "We’re here to build Web3 with you.",
+        "description": "FFDW collaborates with organizations that accelerate the adoption of open, decentralized technologies, help build communities that support and sustain open, decentralized technologies, and communicate to wider audiences the benefits of adopting open, decentralized technologies."
+      },
+      "col_2": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-4",
+          "push_left": "off-2"
+        },
+        "src": "/images/page-get-involved/boy-on-laptop-showing-something-to-person-sitting-beside-him.jpeg"
+      }
+    },
+    "grants_accordion": {
+      "col_1": {
+        "type": "accordion_block",
+        "cols": {
+          "num": "col-9",
+          "push_left": "off-3"
+        },
+        "sections": [
+          {
+            "label": "Education",
+            "content": "Projects that educate the public about how the internet works and how a decentralized web is a better web for businesses, citizens, and governments."
+          },
+          {
+            "label": "Research",
+            "content": "Projects that support efforts to store research data using decentralized web storage and make that data easily shared and accessed."
+          },
+          {
+            "label": "Development",
+            "content": "Projects that drive the creation and development of technologies that will enable decentralized file storage of humanity’s most important information."
+          }
+        ]
+      }
+    },
+    "careers_block": {
+      "col_1": {
+        "type": "custom",
+        "cols": {
+          "num": "col"
+        },
+        "customizations": {
+          "careers": {
+            "name": "FeaturedCareersList",
+            "props": {
+              "label": "Careers",
+              "heading": "The Filecoin Foundation for the Decentralized Web is hiring for roles as we build, support, and fund projects advancing the Dweb. Check out our open roles.",
+              "img": "/images/about/two-women-on-a-laptop-and-a-tablet.jpeg",
+              "careers-list": [],
+              "ctas": [
+                {
+                  "type": "",
+                  "theme": "",
+                  "action": "nuxt-link",
+                  "text": "Get In Touch",
+                  "url": "/"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
 }
