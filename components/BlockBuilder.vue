@@ -58,6 +58,8 @@ import AccordionBlock from '@/components/AccordionBlock'
 // import SocialIcons from '@/components/SocialIcons'
 // import TabbedSlider from '@/components/TabbedSlider'
 import BlockBuilder from '@/components/BlockBuilder'
+import FeaturedCareersList from '@/components/FeaturedCareersList'
+import GetInvolvedCallout from '@/components/GetInvolvedCallout'
 
 // ====================================================================== Export
 export default {
@@ -72,7 +74,9 @@ export default {
     // CardListBlock,
     // SocialIcons,
     // TabbedSlider,
-    BlockBuilder
+    BlockBuilder,
+    FeaturedCareersList,
+    GetInvolvedCallout
   },
 
   props: {
