@@ -1,7 +1,11 @@
 <template>
-  <div class="block header-container">
-    <div class="bg" :style="{ background }">
+  <div class="block header-container" :style="{ height }">
+    <div class="bg" :style="{ background, height }">
       <Artifact v-for="(artifact, artifactKey) in artifacts" :key="artifactKey" v-bind="{ block: artifact}" />
+    </div>
+
+    <div class="grid">
+      
     </div>
   </div>
 </template>
@@ -9,6 +13,15 @@
 <script>
 // ====================================================================== Import
 import Artifact from '@/components/Artifact'
+
+// ====================================================================== Variables
+const computedDefaults = {
+  background: undefined,
+  artifacts: undefined,
+  images: undefined,
+  height: '49.5rem',
+  title: 'Lorem Ipsum'
+}
 
 // ====================================================================== Export
 export default {
@@ -27,7 +40,8 @@ export default {
 
   computed: {
     // Simple mapped variables
-    ...['background', 'artifacts'].reduce((acc, val) => (acc[val] = function () { return this.block[val] }) && acc, {})
+    ...Object.keys(computedDefaults)
+      .reduce((acc, key) => (acc[key] = function () { return this.block[key] || computedDefaults[key] }) && acc, {})
   }
 }
 </script>
@@ -35,11 +49,10 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 .header-container {
-  height: 49.5rem;
   width: 100%;
 
   .bg {
-    height: 49.5rem;
+    background: $haiti;
     width: 100vw;
     position: absolute;
     top: 0;
