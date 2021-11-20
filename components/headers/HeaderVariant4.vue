@@ -109,7 +109,7 @@ img {
     top: 100%;
   }
   &:before {
-    width: calc(100vw / 2);
+    width: calcToEdge(50%);
     height: $artifact_square_dimension_2;
     right: 50%;
   }
@@ -129,7 +129,7 @@ img {
     top: -$artifact_square_dimension_1;
   }
   &:after {
-    width: calc(100vw / 2);
+    width: calcToEdge(45%);
     height: $artifact_square_dimension_2;
     top: -$artifact_square_dimension_2;
     left: 55%;
@@ -145,7 +145,7 @@ img {
   }
   &:after {
     height: $artifact_rectangle_height;
-    width: calc(100vw / 3);
+    width: calcToEdge(calc(25% - #{$artifact_square_dimension_2}));
     top: -($artifact_square_dimension_2 + $artifact_rectangle_height);
     left: calc(75% + #{$artifact_square_dimension_2});
   }
