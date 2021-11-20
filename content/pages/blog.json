@@ -1,0 +1,24 @@
+{
+  "seo": {
+    "title": "Blog - Filecoin Foundation for the Decentralized Web",
+    "description": ""
+  },
+  "og": {
+    "site_name": "Blog - Filecoin Foundation for the Decentralized Web",
+    "url": "",
+    "type": "website",
+    "image": "/images/page-index/open-graph.png"
+  },
+  "page_content": {
+    "intro": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-10",
+          "push_left": "off-1"
+        },
+        "src": "/images/page-index/long-arrow-right.svg"
+      }
+    }
+  }
+}
