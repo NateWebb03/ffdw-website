@@ -54,7 +54,6 @@ import ImageBlock from '@/components/ImageBlock'
 import VideoBlock from '@/components/VideoBlock'
 import AccordionBlock from '@/components/AccordionBlock'
 import HeaderBlock from '@/components/HeaderBlock'
-// import NavBlock from '@/components/NavBlock'
 // import SliderBlock from '@/components/SliderBlock'
 // import CardListBlock from '@/components/CardListBlock'
 // import SocialIcons from '@/components/SocialIcons'
@@ -74,7 +73,6 @@ export default {
     VideoBlock,
     AccordionBlock,
     HeaderBlock,
-    // NavBlock,
     // SliderBlock,
     // CardListBlock,
     // SocialIcons,
@@ -118,7 +116,6 @@ export default {
         case 'video_block' : name = 'VideoBlock'; break
         case 'accordion_block' : name = 'AccordionBlock'; break
         case 'header_block' : name = 'HeaderBlock'; break
-        // case 'nav_block' : name = 'NavBlock'; break
         // case 'slider_block' : name = 'SliderBlock'; break
         // case 'card_list_block' : name = 'CardListBlock'; break
         case 'custom' : name = block.component; break
