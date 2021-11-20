@@ -37,6 +37,10 @@ export default {
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
+.image-block {
+  position: relative;
+}
+
 .image {
   display: block;
   width: 100%;

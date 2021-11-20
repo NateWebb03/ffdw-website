@@ -11,7 +11,7 @@
           <div
             v-if="blockAllowed(blockId)"
             :key="blockId"
-            :class="getColumnCount(block)"
+            :class="[getColumnCount(block), blockId]"
             :data-push-left="getColumnPushCount(block, 'left')"
             :data-push-right="getColumnPushCount(block, 'right')">
             <div class="column-content">
@@ -60,6 +60,7 @@ import CardListBlock from '@/components/CardListBlock'
 import BlockBuilder from '@/components/BlockBuilder'
 import FeaturedCareersList from '@/components/FeaturedCareersList'
 import GetInvolvedCallout from '@/components/GetInvolvedCallout'
+import HomeCallout from '@/components/HomeCallout'
 
 // ====================================================================== Export
 export default {
@@ -76,7 +77,8 @@ export default {
     // TabbedSlider,
     BlockBuilder,
     FeaturedCareersList,
-    GetInvolvedCallout
+    GetInvolvedCallout,
+    HomeCallout
   },
 
   props: {

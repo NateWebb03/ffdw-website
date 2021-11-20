@@ -72,8 +72,8 @@ export default {
     format () {
       return this.block.format || 'medium'
     },
-    theme () {
-      return this.block.theme || 'dark'
+    theme () { // 'purple-green', 'green-purple', 'red-purple', 'red-green'
+      return this.block.theme || 'purple-green'
     },
     buttonTheme () {
       return this.block.button_theme
@@ -122,17 +122,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// ///////////////////////////////////////////////////////////////////// General
-// .text-block {
-//   &.theme__light {
-//     color: white;
-//     ::v-deep .subheading {
-//       a {
-//         color: white;
-//       }
-//     }
-//   }
-// }
+// //////////////////////////////////////////////////////////// General & Themes
+.text-block {
+  position: relative;
+  &.theme__green-purple {
+    ::v-deep .description {
+      a {
+        @include gradient_Background_GreenPurple;
+        @include fontWeight_Bold;
+        background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        text-fill-color: transparent;
+      }
+    }
+  }
+}
 
 // ///////////////////////////////////////////////////////////////////// Formats
 .format__medium {
@@ -153,12 +159,7 @@ export default {
   }
 }
 
-// ::v-deep .subheading {
-//   @include subheading;
-//   margin-bottom: 1rem;
-//   a {
-//     @include fontWeight_Semibold;
-//     color: blue;
-//   }
-// }
+::v-deep .description {
+  @include p3;
+}
 </style>
