@@ -43,6 +43,7 @@ $breakpoint_UltraLarge: 140.625rem; // 2250px
 
 // ------------------------------------------------------------------- Gradients
 $gradient_PurpleGreen: linear-gradient(to right, $perfume, $greenYellow);
+$gradient_GreenPurple: linear-gradient(to right, $greenYellow, $perfume);
 $gradient_RedPurple: linear-gradient(to right, $coralRed, $perfume);
 $gradient_RedGreen: linear-gradient(to right, $coralRed, $greenYellow);
 
@@ -94,6 +95,7 @@ $gradient_RedGreen: linear-gradient(to right, $coralRed, $greenYellow);
 @mixin borderRadius_ExtraLarge { border-radius: $borderRadius_ExtraLarge; }
 
 @mixin gradient_Background_PurpleGreen { background: $gradient_PurpleGreen; }
+@mixin gradient_Background_GreenPurple { background: $gradient_GreenPurple; }
 @mixin gradient_Background_RedPurple { background: $gradient_RedPurple; }
 @mixin gradient_Background_RedGreen { background: $gradient_RedGreen; }
 

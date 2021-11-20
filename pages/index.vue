@@ -54,6 +54,29 @@ export default {
 
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
+::v-deep #about_1 {
+  .text-block {
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2.5rem;
+    }
+    &:before {
+      width: 2.5rem;
+      top: 1rem;
+      left: 100%;
+      background-color: $perfume;
+    }
+    &:after {
+      width: 20rem;
+      top: 3.5rem;
+      left: calc(100% + 2.5rem);
+      background-color: $greenYellow;
+    }
+  }
+}
+
 ::v-deep #intro_1 {
   padding: 0;
   .image-block {
@@ -67,11 +90,53 @@ export default {
 
 ::v-deep #accordion_1 {
   padding: 0;
+  .accordion-block {
+    &:before {
+      content: '';
+      position: absolute;
+      width: 20rem;
+      height: 7rem;
+      top: 20%;
+      right: calc(100% + #{math.div($containerWidth, 12) * 3} - 2rem);
+      background-color: $perfume;
+    }
+  }
+  .text-block {
+    .button-row {
+      justify-content: flex-end;
+    }
+  }
 }
 
 ::v-deep #grants {
+  .image_left {
+    .image-block {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 2.5rem;
+        height: calc(50% + 3rem);
+        top: -3rem;
+        right: 100%;
+        background-color: $greenYellow;
+      }
+    }
+  }
   .text-block {
-    padding: 0 2rem;
+    padding: 0 2.25rem;
+  }
+  .image_right {
+    .image-block {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 2.5rem;
+        height: calc(20% + 4rem);
+        bottom: -4rem;
+        left: 100%;
+        background-color: $perfume;
+      }
+    }
   }
 }
 </style>

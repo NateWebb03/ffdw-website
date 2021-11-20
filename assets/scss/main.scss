@@ -138,20 +138,20 @@ h3, .h3 {
   }
 }
 
-// .button-row {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   margin-top: 1rem;
-//   @include tiny {
-//     margin-top: 1.25rem;
-//   }
-//   .button {
-//     &:not(:last-child) {
-//       margin-right: 1rem;
-//     }
-//   }
-// }
+.button-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+  @include tiny {
+    margin-top: 1.25rem;
+  }
+  .button {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
 
 // ///////////////////////////////////////////////////////////// Basic Templates
 // -----------------------------------------------------------------------------
