@@ -57,6 +57,7 @@ export default {
   props: {
     /*
       (A) → Primary CTA, usually with gradients (ex: Accordion on Home page)
+      (B) → Same as the Primary CTA except black artifacts (ex: CTA in Header of Home page)
       (B) → Secondary CTA, usually clear with a white border (ex: just above Footer on Home page)
     */
     button: {
