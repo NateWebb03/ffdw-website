@@ -1,20 +1,38 @@
 <template>
-  <div class="block nav-container">
-    <div class="nav-content">
-      <FFDWLogo />
-      <nav class="nav-links">
-        <Button
-          v-for="(link, index) in links"
-          :key="`nav-link-${index}`"
-          :button="link"
-          class="nav-link">
-          {{ link.text }}
-        </Button>
-      </nav>
+  <div class="nav-container">
+
+    <div class="grid">
+      <div class="col">
+
+        <div class="content">
+
+          <FFDWLogo />
+
+          <nav class="links">
+            <Button
+              v-for="(link, index) in links"
+              :key="`nav-link-${index}`"
+              :button="link"
+              class="nav-link">
+              {{ link.text }}
+            </Button>
+          </nav>
+
+        </div>
+
+      </div>
     </div>
-    <div class="nav-breadcrumbs">
-      Home > Lorem Ipsum
+
+    <div class="grid">
+      <div class="col-6">
+
+        <div class="breadcrumbs">
+          Home > Lorem Ipsum
+        </div>
+
+      </div>
     </div>
+
   </div>
 </template>
 
@@ -34,13 +52,6 @@ export default {
     Button
   },
 
-  props: {
-    block: {
-      type: Object,
-      required: true
-    }
-  },
-
   computed: {
     // Simple mapped variables
     ...[].reduce((acc, val) => (acc[val] = function () { return this.block[val] }) && acc, {}),
@@ -57,33 +68,27 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 .nav-container {
-  width: 100%;
-  max-width: 58.75rem;
-  position: absolute;
-  z-index: 1;
-  top: 2.313rem;
+  position: relative;
+  padding: 2.5rem 0;
   color: $haiti;
+  z-index: 1;
+}
 
-  .nav-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    
-    a {
-      @include fontSize_Mini;
-      padding-top: 1.625rem;
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
-      &:not(:last-child) {
-        margin-right: 1.875rem;
-      }
-    }
-  }
-
-  .nav-breadcrumbs {
-    @include fontSize_Tiny;
-    padding-top: 1.438rem;
+.nav-link {
+  @include fontSize_Mini;
+  &:not(:last-child) {
+    margin-right: 1.875rem;
   }
 }
 
+.breadcrumbs {
+  margin-top: 1rem;
+}
 </style>

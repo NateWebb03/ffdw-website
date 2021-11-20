@@ -82,7 +82,7 @@
 import Artifact from '@/components/Artifact'
 import ContactText from '@/components/icons/ContactText'
 
-// ====================================================================== Variables
+// =================================================================== Variables
 const computedDefaults = {
   // When undefined, the default background is $haiti
   background: undefined,

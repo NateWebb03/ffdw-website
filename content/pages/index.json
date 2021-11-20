@@ -9,44 +9,14 @@
     "type": "website",
     "image": "/images/page-index/open-graph.png"
   },
+  "header": {
+    "type": "variant_1",
+    "theme": "red-purple",
+    "heading": "Lorem ipsum dolor sit amet",
+    "image_1": "images/component-header/man-sitting-with-laptop.png",
+    "image_2": "images/component-header/woman-painting-black-and-white.png"
+  },
   "page_content": {
-    "nav_1": {
-      "col_1": {
-        "type": "nav_block",
-        "format": "header",
-        "cols": {
-          "num": "col-12"
-        }
-      }
-    },
-    "header_1": {
-      "col_1": {
-        "type": "header_block",
-        "format": "header",
-        "cols": {
-          "num": "col-12"
-        },
-        "background": "linear-gradient(90deg, rgba(251,56,63,1) 0%, rgba(181,181,250,1) 100%);",
-        "artifacts": [
-          {
-            "left": "0",
-            "top": "calc(100% - 6.313rem)",
-            "height": "6.313rem",
-            "width": "11rem"
-          },
-          {
-            "left": "11rem",
-            "top": "calc(100% - 3.188rem)",
-            "height": "3.188rem",
-            "width": "3.063rem"
-          }
-        ],
-        "images":[
-          "images/component-header/man-sitting-with-laptop.png",
-          "images/component-header/woman-painting-black-and-white.png"
-        ]
-      }
-    },
     "about_1": {
       "col_1": {
         "type": "text_block",

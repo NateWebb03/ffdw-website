@@ -1,8 +1,6 @@
 <template>
   <div class="master-container">
 
-    <!-- <SiteNavigation /> -->
-
     <nuxt />
 
     <!-- <SiteFooter /> -->
@@ -12,7 +10,6 @@
 
 <script>
 // ===================================================================== Imports
-// import SiteNavigation from '@/components/SiteNavigation'
 // import SiteFooter from '@/components/SiteFooter'
 
 // ====================================================================== Export
@@ -20,7 +17,6 @@ export default {
   name: 'LayoutDefault',
 
   components: {
-    // SiteNavigation,
     // SiteFooter
   },
 
