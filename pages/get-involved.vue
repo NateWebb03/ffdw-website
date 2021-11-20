@@ -12,14 +12,14 @@
 // ====================================================================== Import
 import { mapGetters } from 'vuex'
 
-import ContactPageData from '@/content/pages/contact.json'
+import GetInvolvedPageData from '@/content/pages/get-involved.json'
 
 import Modal from '@/components/Modal'
 import BlockBuilder from '@/components/BlockBuilder'
 
 // ====================================================================== Export
 export default {
-  name: 'PageContact',
+  name: 'PageGetInvolved',
 
   components: {
     Modal,
@@ -28,13 +28,13 @@ export default {
 
   data () {
     return {
-      tag: 'contact'
+      tag: 'get-involved'
     }
   },
 
   async fetch ({ store }) {
     await store.dispatch('global/getBaseData', 'general')
-    await store.dispatch('global/getBaseData', { key: 'contact', data: ContactPageData })
+    await store.dispatch('global/getBaseData', { key: 'get-involved', data: GetInvolvedPageData })
   },
 
   head () {

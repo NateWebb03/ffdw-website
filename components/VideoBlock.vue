@@ -70,32 +70,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$borderWidth__Large: 1rem;
-$borderWidth__Mini: 0.5rem;
-
 // ///////////////////////////////////////////////////////////////////// General
 .preview-container {
-  @include borderRadius_Medium;
   position: relative;
-  padding: $borderWidth__Large;
-  background-color: blue;
-  box-shadow: 3px 3px 6px rgb(0 0 0 / 10%) inset;
   cursor: pointer;
-  @include mini {
-    padding: $borderWidth__Mini;
-  }
   &:hover {
-    .overlay {
-      transition: 250ms ease-in;
-      background-color: rgba(0, 0, 0, 0.3);
-    }
     ::v-deep .play-icon {
       transition: 250ms ease-in;
       transform: scale(1.1);
-      .icon__play__triangle-inner {
-        fill: white;
-      }
     }
+  }
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    right: 100%;
+    width: 2.5rem;
+  }
+  &:before {
+    top: 30%;
+    height: 2.5rem;
+    background-color: $greenYellow;
+  }
+  &:after {
+    bottom: -5rem;
+    height: calc(50%);
+    background-color: $perfume;
   }
 }
 
@@ -110,68 +110,38 @@ $borderWidth__Mini: 0.5rem;
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: inherit;
-  background-color: rgba(0, 0, 0, 0);
   z-index: 15;
   transition: 250ms ease-out;
 }
 
 ::v-deep .play-icon {
-  width: 3rem;
+  width: 3.75rem;
   transition: 250ms ease-out;
 }
 
 // /////////////////////////////////////////////////////////////// Preview Image
 .tint {
   position: absolute;
-  top: $borderWidth__Large;
-  left: $borderWidth__Large;
-  width: calc(100% - #{$borderWidth__Large * 2});
-  height: calc(100% - #{$borderWidth__Large * 2});
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: inherit;
-  background-color: #00437C;
-  opacity: 0.075;
+  background-color: $haiti;
+  opacity: 0.3;
   z-index: 10;
-  @include mini {
-    top: $borderWidth__Mini;
-    left: $borderWidth__Mini;
-    width: calc(100% - #{$borderWidth__Mini * 2});
-    height: calc(100% - #{$borderWidth__Mini * 2});
-  }
 }
 
 .preview-image {
   position: relative;
   display: block;
   width: 100%;
-  border-radius: inherit;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
   z-index: 5;
 }
 
 // ///////////////////////////////////////////////////////////////////// Subtext
-::v-deep .subtext {
-  margin-top: 0.75rem;
-  margin-left: 1.5rem;
-  &:hover {
-    .icon {
-      svg {
-        .icon__play__triangle-inner {
-          fill: blue;
-        }
-      }
-    }
-  }
-  .icon {
-    svg {
-      .icon__play__triangle-outer {
-        fill: blue;
-      }
-    }
-  }
-  .text {
-    @include fontSize_Regular;
-    color: blue;
-  }
+.subtext {
+  @include label_3;
+  padding: 0.5rem 0 0 0.5rem;
 }
 </style>

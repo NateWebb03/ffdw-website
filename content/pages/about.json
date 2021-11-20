@@ -1,0 +1,234 @@
+{
+  "seo": {
+    "title": "About - Filecoin Foundation for the Decentralized Web",
+    "description": ""
+  },
+  "og": {
+    "site_name": "About - Filecoin Foundation for the Decentralized Web",
+    "url": "",
+    "type": "website",
+    "image": "/images/page-index/open-graph.png"
+  },
+  "page_content": {
+    "intro_1": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-7"
+        },
+        "format": "header",
+        "label": "About FFDW",
+        "heading": "Building and supporting the decentralized community"
+      },
+      "col_2": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-3",
+          "push_left": "off-1"
+        },
+        "src": "/images/page-about/woman-speaking-into-microphone.jpeg"
+      }
+    },
+    "intro_2": {
+      "col_1": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-6"
+        },
+        "src": "/images/page-about/people-sitting-in-front-of-laptops.jpeg"
+      },
+      "col_2": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-5",
+          "push_left": "off-1"
+        },
+        "description": "Fileocin Foundation for the Decentralized Web (FFDW) is a 501(c)(3) non-profit whose mission is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open-source software and open protocols for decentralized data storage and retrieval networks."
+      }
+    },
+    "vision_1": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col"
+        },
+        "format": "header",
+        "label": "Promise > Vision",
+        "heading": "We exist to advance humankind by bringing Web3 to life through education, research, and development."
+      }
+    },
+    "vision_2": {
+      "col_1": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-3"
+        },
+        "src": "/images/page-about/man-on-a-laptop.jpeg"
+      },
+      "col_2": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-6"
+        },
+        "format": "small",
+        "heading": "Where open minds, open source, and open protocols, meet.",
+        "description": "On today’s centralized web, a handful of corporations own the majority of the global cloud data storage market. But humanity’s most important information should never be compromised, abused, or ruled by any single entity.<br />We want the web to continue to grow and flourish and we believe that the more people, teams, organizations, supporting a project, the more likely it is to succeed. FFDW sees Filecoin as a foundational technology for the broader decentralized web ecosystem and seeks to support that entire decentralized web community."
+      },
+      "col_3": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-3"
+        },
+        "src": "/images/page-about/woman-writing-in-a-notebook.jpeg"
+      }
+    },
+    "board_1": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col"
+        },
+        "format": "header",
+        "label": "FFDW Board",
+        "heading": "Meet our board"
+      }
+    },
+    "board_2": {
+      "grid": ["center"],
+      "classNames": "full",
+      "col_1": {
+        "type": "card_list_block",
+        "cols": {
+          "num": "col"
+        },
+        "layout": "single",
+        "cards": [
+          {
+            "type": "A",
+            "img": "/images/board/",
+            "title": ">> Marta Belcher",
+            "subtitle": "General Counsel, Protocol Labs"
+          },
+          {
+            "type": "A",
+            "img": "/images/board/",
+            "title": ">> Rainey Reitman",
+            "subtitle": "General Counsel, Protocol Labs"
+          },
+          {
+            "type": "A",
+            "img": "/images/board/",
+            "title": ">> Brian Behlendorf",
+            "subtitle": "General Counsel, Protocol Labs"
+          },
+          {
+            "type": "A",
+            "img": "/images/board/",
+            "title": ">> Kristin Smith",
+            "subtitle": "General Counsel, Protocol Labs"
+          }
+        ]
+      }
+    },
+    "advisors_1": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col"
+        },
+        "format": "header",
+        "label": "Advisors",
+        "heading": "Determined to bring Web3 to life, FFDW has assembled an outstanding group of advisors for guidance and support."
+      }
+    },
+    "advisors_2": {
+      "grid": ["center"],
+      "classNames": "full",
+      "col_1": {
+        "type": "card_list_block",
+        "cols": {
+          "num": "col"
+        },
+        "layout": "double",
+        "cards": [
+          {
+            "type": "B",
+            "img": "/images/board/",
+            "title": ">> Sheila Warren",
+            "subtitle": "General Counsel, Protocol Labs"
+          },
+          {
+            "type": "B",
+            "img": "/images/board/",
+            "title": ">> Brewster Kahle",
+            "subtitle": "General Counsel, Protocol Labs"
+          },
+          {
+            "type": "B",
+            "img": "/images/board/",
+            "title": ">> Joe Lubin",
+            "subtitle": "General Counsel, Protocol Labs"
+          },
+          {
+            "type": "B",
+            "img": "/images/board/",
+            "title": ">> Wendy Hanamura",
+            "subtitle": "General Counsel, Protocol Labs"
+          },
+          {
+            "type": "B",
+            "img": "/images/board/",
+            "title": ">> Georgia Quinn",
+            "subtitle": "General Counsel, Protocol Labs"
+          },
+          {
+            "type": "B",
+            "img": "/images/board/",
+            "title": ">> Alex Feerst",
+            "subtitle": "General Counsel, Protocol Labs"
+          },
+          {
+            "type": "B",
+            "img": "/images/board/",
+            "title": ">> Sandra Ro",
+            "subtitle": "General Counsel, Protocol Labs"
+          },
+          {
+            "type": "B",
+            "img": "/images/board/",
+            "title": ">> Katie Biber",
+            "subtitle": "General Counsel, Protocol Labs"
+          }
+        ]
+      }
+    },
+    "careers_block": {
+      "col_1": {
+        "type": "custom",
+        "cols": {
+          "num": "col"
+        },
+        "customizations": {
+          "careers": {
+            "name": "FeaturedCareersList",
+            "props": {
+              "label": "Careers",
+              "heading": "The Filecoin Foundation for the Decentralized Web is hiring for roles as we build, support, and fund projects advancing the Dweb. Check out our open roles.",
+              "img": "/images/about/two-women-on-a-laptop-and-a-tablet.jpeg",
+              "careers-list": [],
+              "ctas": [
+                {
+                  "type": "",
+                  "theme": "",
+                  "action": "nuxt-link",
+                  "text": "Get In Touch",
+                  "url": "/"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

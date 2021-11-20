@@ -7,7 +7,7 @@
     :class="['button', `type__${type}`, `action__${action}`, `theme__${theme}`, { selected }]"
     @click="openModal">
 
-    <div
+    <!-- <div
       v-if="type !== 'X' && icon"
       :class="['icon', icon]">
       <IconPlay v-if="icon === 'play'" />
@@ -15,13 +15,19 @@
       <IconPlus v-if="icon === 'plus'" />
       <IconCode v-if="icon === 'code'" />
       <IconTicket v-if="icon === 'ticket'" />
-    </div>
+    </div> -->
 
-    <span v-if="type !== 'X'" class="text">
+    <template v-if="type === 'A'">
+      <div class="artifact artifact-1"></div>
+      <div class="artifact artifact-2"></div>
+      <div class="artifact artifact-3"></div>
+    </template>
+
+    <span class="text">
       {{ text }}
     </span>
 
-    <slot v-if="type === 'X'" />
+    <!-- <slot v-if="type === 'X'" /> -->
 
   </component>
 </template>
@@ -30,35 +36,29 @@
 // ====================================================================== Import
 import { mapActions } from 'vuex'
 
-import IconPlay from '@/components/icons/Play'
-import IconInfo from '@/components/icons/Info'
-import IconPlus from '@/components/icons/Plus'
-import IconCode from '@/components/icons/Code'
-import IconTicket from '@/components/icons/Ticket'
+// import IconPlay from '@/components/icons/Play'
+// import IconInfo from '@/components/icons/Info'
+// import IconPlus from '@/components/icons/Plus'
+// import IconCode from '@/components/icons/Code'
+// import IconTicket from '@/components/icons/Ticket'
 
 // ====================================================================== Export
 export default {
   name: 'Button',
 
-  components: {
-    IconPlay,
-    IconInfo,
-    IconPlus,
-    IconCode,
-    IconTicket
-  },
+  // components: {
+  //   IconPlay,
+  //   IconInfo,
+  //   IconPlus,
+  //   IconCode,
+  //   IconTicket
+  // },
 
   props: {
     /*
-      (A) → Tier 1
-      (B) → Tier 2
-      (C) → Site navigation
-      (D) → Tier 2 w/o border
-      (E) → Load more
-      (F) → Footer
-      (G) → Events & Hackathons navigation
-      (H) → Blog post card
-      (X) → No styling + slot
+      (A) → Primary CTA, usually with gradients (ex: Accordion on Home page)
+      (B) → Same as the Primary CTA except black artifacts (ex: CTA in Header of Home page)
+      (B) → Secondary CTA, usually clear with a white border (ex: just above Footer on Home page)
     */
     button: {
       type: Object,
@@ -100,8 +100,8 @@ export default {
     url () {
       return this.button.url
     },
-    theme () {
-      return this.button.theme || 'light'
+    theme () { // 'purple-green', 'red-purple', 'red-green', 'black'
+      return this.button.theme || 'purple-green'
     }
   },
 
@@ -123,13 +123,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$layerOffset: 0.25rem;
-
 // ///////////////////////////////////////////////////////////////////// General
 .button {
   @include leading_Small;
   display: inline-flex;
   flex-direction: row;
+  position: relative;
 }
 
 .icon {
@@ -147,282 +146,47 @@ $layerOffset: 0.25rem;
 // ////////////////////////////////////////////////////////////////// Variations
 // -------------------------------------------------------------------- [Type] A
 .type__A {
-  @include fontSize_Small;
-  @include fontWeight_Semibold;
-  position: relative;
-  margin: 0.5rem;
-  border-radius: 3rem;
-  &:hover {
-    &:before,
-    &:after {
-      transition: 250ms ease-in;
-    }
-    &:before {
-      background-color: blue;
-    }
-    &:after {
-      box-shadow: 0 0 6px rgba(214, 234, 251, 1) inset, 0 0 6px rgba(14, 29, 126, 1);
-    }
+  @include fontSize_Tiny;
+  @include fontWeight_Bold;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: $haiti;
+  padding: 1rem 2.5rem 2.5rem 2.5rem;
+  &.theme__purple-green {
+    @include gradient_Background_PurpleGreen;
   }
-  &:before,
-  &:after {
-    content: '';
+  &.theme__red-purple {
+    @include gradient_Background_RedPurple;
+  }
+  &.theme__red-green {
+    @include gradient_Background_RedGreen;
+  }
+  .artifact {
     position: absolute;
-    border-radius: inherit;
-    transition: 250ms ease-out;
+    background-color: $haiti;
   }
-  &:before {
-    width: calc(100% + #{$layerOffset * 4});
-    height: calc(100% + #{$layerOffset * 4});
-    top: -$layerOffset * 2;
-    left: -$layerOffset * 2;
-    background-color: blue;
-    box-shadow: 0 0 6px rgba(112, 180, 240, 1) inset;
-    z-index: 5;
-  }
-  &:after {
-    width: calc(100% + #{$layerOffset * 2});
-    height: calc(100% + #{$layerOffset * 2});
-    top: -$layerOffset;
-    left: -$layerOffset;
-    background-color: white;
-    box-shadow: 0 0 6px rgba(214, 234, 251, 1) inset, 0 0 6px rgba(178, 215, 248, 1);
-    z-index: 10;
-  }
-  &.theme__dark {
-    &:hover {
-      &:before {
-        background-color: blue;
-      }
-      &:after {
-        background-color: blue;
-      }
-    }
-    &:before {
-      background-color: blue;
-      box-shadow: 0 0 6px rgba(0, 9, 110, 0.45) inset;
-    }
-    &:after {
-      background-color: blue;
-      box-shadow: 0 0 6px rgba(6, 33, 164, 0.5) inset, 0 0 6px rgba(6, 9, 78, 0.55);
-    }
-    .text {
-      background-color: blue;
-      color: white;
-      box-shadow: 0 0 6px rgba(6, 9, 78, 1);
-    }
-  }
-  .icon {
-    display: none;
-  }
-  .text {
-    padding: 10px 1.25rem 9px;
-    background-color: white;
-    color: blue;
-    box-shadow: 0 0 6px rgba(178, 215, 248, 1);
-    border-radius: inherit;
-  }
-}
-
-// ---------------------------------------------------------------- [Type] B & D
-.type__B,
-.type__D {
-  @include fontWeight_Semibold;
-  color: white;
-  &:hover {
-    ::v-deep .icon {
-      svg {
-        .icon__play__triangle-inner,
-        .icon__info__circle-inner {
-          fill: white;
-        }
-        .icon__info__letter-i {
-          fill: blue;
-        }
-      }
-    }
-  }
-  &.theme__dark {
-    color: blue;
-    border-color: blue;
-    &:hover {
-      ::v-deep .icon {
-        svg {
-          .icon__play__triangle-inner,
-          .icon__info__circle-inner {
-            fill: blue;
-          }
-          .icon__info__letter-i {
-            fill: white;
-          }
-        }
-      }
-    }
-    ::v-deep .icon {
-      svg {
-        .icon__play__triangle-outer,
-        .icon__info__circle-outer,
-        .icon__info__letter-i {
-          fill: blue;
-        }
-        .icon__plus__line {
-          stroke: blue;
-        }
-      }
-    }
-  }
-  ::v-deep .icon {
-    margin-right: 0.5rem;
-    &.play {
-      width: 0.875rem;
-    }
-    &.info {
-      width: 1rem;
-    }
-  }
-}
-
-.type__B {
-  @include fontSize_Small;
-  padding: 10px 1.125rem;
-  border-width: 2px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 3rem;
-  .text {
-    padding-top: 1px;
-  }
-  ::v-deep .icon {
-    &.plus {
-      width: 0.75rem;
-    }
-    &.ticket {
-      width: 1.125rem;
-    }
-  }
-}
-
-.type__D {
-  @include fontSize_Large;
-  @include leading_Small;
-  align-items: center;
-  ::v-deep .icon {
-    &.plus {
-      width: 1rem;
-    }
-    &.ticket {
-      width: 1.375rem;
-    }
-  }
-  .text {
-    text-align: left;
-  }
-}
-
-// -------------------------------------------------------------------- [Type] C
-.type__C {
-  @include fontSize_Medium;
-  @include fontWeight_Semibold;
-  color: white;
-  &.theme__dark {
-    color: $haiti;
-  }
-  .icon {
-    display: none;
-  }
-}
-
-// -------------------------------------------------------------------- [Type] E
-.type__E {
-  @include borderRadius_ExtraLarge;
-  @include fontSize_Small;
-  @include fontWeight_Semibold;
-  position: relative;
-  margin: 0.5rem;
-  padding: 1.25rem 2.25rem;
-  background-color: blue;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15) inset;
-  &:before {
-    @include borderRadius_Large;
-    content: '';
-    position: absolute;
-    width: calc(100% - 0.5rem * 2);
-    height: calc(100% - 0.5rem * 2);
-    top: 0.5rem;
-    left: 0.5rem;
-    background-color: blue;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15) inset;
-    z-index: 5;
-  }
-  .icon {
-    display: none;
-  }
-}
-
-// -------------------------------------------------------------------- [Type] F
-.type__F {
-  @include fontSize_Small;
-  opacity: 0.85;
-  @include small {
-    @include fontSize_Regular;
-  }
-  &:hover {
-    opacity: 1;
-  }
-}
-
-// -------------------------------------------------------------------- [Type] G
-.type__G {
-  @include fontSize_ExtraLarge;
-  @include fontWeight_Semibold;
-  @include leading_Small;
-  position: relative;
-  align-items: center;
-  opacity: 0.5;
-  @include mini {
-    @include fontSize_ExtraLarge;
-  }
-  @include tiny {
-    @include fontSize_Large;
-  }
-  &:hover,
-  &.selected {
-    opacity: 1;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    top: 100%;
+  .artifact-1 {
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 0.25rem;
-    background-color: blue;
-    border-radius: 0.25rem;
-    transform: translateY(0.5rem);
-    opacity: 0;
-    pointer-eventS: none;
+    width: 1.5rem;
+    height: 3rem;
   }
-  &.selected {
-    &:after {
-      opacity: 1;
-    }
+  .artifact-2 {
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 1.5rem);
+    height: 1.5rem;
   }
-  .icon {
-    margin-right: 0.5rem;
-    &.code {
-      width: 2.25rem;
-      @include mini {
-        width: 1.5rem;
-      }
-    }
+  .artifact-3 {
+    top: 0;
+    right: 0;
+    width: 1.5rem;
+    height: 3rem;
   }
 }
 
-// -------------------------------------------------------------------- [Type] H
-.type__H {
-  @include fontSize_Small;
-  @include fontWeight_Semibold;
-  color: blue;
-}
+// -------------------------------------------------------------------- [Type] B
+.type__B {
 
+}
 </style>

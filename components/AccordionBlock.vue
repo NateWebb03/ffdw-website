@@ -11,6 +11,7 @@
           <div class="label">
             {{ section.label }}
           </div>
+          <IconArrowDown class="icon" />
         </Zero_Core__Accordion_Header>
 
         <Zero_Core__Accordion_Content>
@@ -24,9 +25,16 @@
 </template>
 
 <script>
+// ===================================================================== Imports
+import IconArrowDown from '@/components/icons/ArrowDown'
+
 // ====================================================================== Export
 export default {
   name: 'AccordionBlock',
+
+  components: {
+    IconArrowDown
+  },
 
   props: {
     block: {
@@ -47,6 +55,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// ///////////////////////////////////////////////////////////////////// General
+.accordion-block {
+  position: relative;
+}
+
 // ////////////////////////////////////////////////////////////////////// Themes
 .theme__purple-green {
   .accordion-section {
@@ -92,6 +105,11 @@ export default {
   &:after {
     content: '';
   }
+  &.open {
+    .icon {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 // ////////////////////////////////////////////////////////////////////// Header
@@ -100,8 +118,18 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem 2rem 2rem 0;
   cursor: pointer;
+}
+
+.label {
+  @include p1;
+}
+
+.icon {
+  width: 1rem;
+  transition: 250ms ease-in-out;
 }
 
 // ///////////////////////////////////////////////////////////////////// Content
