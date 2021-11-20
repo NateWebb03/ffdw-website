@@ -12,6 +12,10 @@
       :class="['top-divider', `gradient_${gradient}`]">
     </div>
 
+    <div
+      :class="['background', `gradient_${gradient}`]">
+    </div>
+
     <div :class="['content', direction]">
       <div class="panel-image">
         <div class="image-wrapper">
@@ -31,25 +35,28 @@
           </span>
         </div>
 
-        <div class="info">
+        <div class="info-wrapper">
+          <div class="info">
 
-          <div
-            v-if="date"
-            class="date"
-            v-html="getDate('small')">
-          </div>
-
-          <span v-if="tags" class="bar">|</span>
-
-          <div
-            v-if="tags"
-            class="tags-list">
             <div
-              v-for="tag in tags"
-              :key="tag"
-              :class="['tag', `gradient_${gradient}`]">
-              {{ tag }}
+              v-if="date"
+              class="date"
+              v-html="getDate('small')">
             </div>
+
+            <span v-if="tags" class="bar">|</span>
+
+            <div
+              v-if="tags"
+              class="tags-list">
+              <div
+                v-for="tag in tags"
+                :key="tag"
+                :class="['tag', `gradient_${gradient}`]">
+                {{ tag }}
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -201,6 +208,9 @@ export default {
 .content {
   display: flex;
   flex-direction: row;
+  &.reverse {
+    flex-direction: row-reverse;
+  }
 }
 
 .image {
@@ -230,6 +240,7 @@ export default {
 }
 
 .top-divider,
+.background,
 .bottom-divider {
   &.gradient_red-purple,
   &.gradient_purple-green,
@@ -237,14 +248,14 @@ export default {
     position: absolute;
     width: calc(100% + 20rem);
     height: 4px;
-    left: -10rem;
+    left: -9.75rem;
     z-index: 1;
     &:before,
     &:after {
       content: '';
       position: absolute;
       width: inherit;
-      height: 4px;
+      height: 100%;
       left: 0;
       top: 0;
       z-index: 0;
@@ -253,7 +264,7 @@ export default {
       transform: translateX(-100%);
     }
     &:after {
-      transform: translateX(calc(100% - 20rem));
+      transform: translateX(calc(100% - 20.25rem));
     }
   }
 
@@ -288,10 +299,18 @@ export default {
   }
 }
 
+.background {
+  transition: 350ms ease;
+  opacity: 0;
+  z-index: -1 !important;
+}
+
 // ////////////////////////////////////////////////////////////////// Variations
 // -------------------------------------------------------------------- [Type] A
 
 .card.type__B {
+  color: white;
+  transition: 350ms ease;
   .title {
     @include h3;
   }
@@ -304,6 +323,12 @@ export default {
     width: 12.5rem;
     height: 12.5rem;
     overflow: hidden;
+  }
+  .reverse {
+    .image-wrapper {
+      margin-right: 0;
+      margin-left: 8.125rem;
+    }
   }
   .image {
     position: absolute;
@@ -318,6 +343,17 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &:after {
+      height: 0;
+      content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='560.5' height='25' viewBox='0 0 560.5 25'%3e%3cg id='Group_1573' data-name='Group 1573' transform='translate(-217.5 -1079.359)'%3e%3cline id='Line_17' data-name='Line 17' x2='556' transform='translate(217.5 1091.859)' fill='none' stroke='%23070517' stroke-width='5'/%3e%3crect id='Rectangle_1279' data-name='Rectangle 1279' width='5' height='5' transform='translate(758 1079.359)' fill='%23090015'/%3e%3crect id='Rectangle_1280' data-name='Rectangle 1280' width='5' height='5' transform='translate(763 1084.359)' fill='%23090015'/%3e%3crect id='Rectangle_1281' data-name='Rectangle 1281' width='5' height='5' transform='translate(763 1094.359)' fill='%23090015'/%3e%3crect id='Rectangle_1282' data-name='Rectangle 1282' width='5' height='5' transform='translate(768 1092.359)' fill='%23090015'/%3e%3crect id='Rectangle_1283' data-name='Rectangle 1283' width='5' height='5' transform='translate(773 1089.359)' fill='%23090015'/%3e%3crect id='Rectangle_1284' data-name='Rectangle 1284' width='5' height='5' transform='translate(768 1087.359)' fill='%23090015'/%3e%3crect id='Rectangle_1285' data-name='Rectangle 1285' width='5' height='5' transform='translate(758 1099.359)' fill='%23090015'/%3e%3c/g%3e%3c/svg%3e");
+      position: relative;
+      transition: 350ms ease;
+    }
   }
   .info {
     display: flex;
@@ -336,20 +372,37 @@ export default {
   }
   .tag {
     display: inline;
-    background-size: 100%;
+    background-size: 200%;
+    background-position: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+    transition: 350ms ease;
     &.gradient_purple-green {
-      background-image: $gradient_PurpleGreen;
+      background-image: linear-gradient(90deg, $coralRed 0%, #7d7df0 50%, $greenYellow 100%);
     }
     &.gradient_red-purple {
-      background-image: $gradient_RedPurple;
+      background-image: linear-gradient(90deg, $greenYellow 0%, $coralRed 50%, $perfume 100%);
     }
     &.gradient_red-green {
-      background-image: $gradient_RedGreen;
+      background-image: linear-gradient(90deg, $perfume 0%, $coralRed 50%, $greenYellow 100%);
+    }
+  }
+  &:hover {
+    color: $haiti;
+    .background {
+      height: 100%;
+      opacity: 1;
+    }
+    .info-wrapper {
+      &:after {
+        height: 100%;
+      }
+    }
+    .tag {
+      background-position: 0%;
     }
   }
 }

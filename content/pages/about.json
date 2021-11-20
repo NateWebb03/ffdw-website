@@ -103,18 +103,28 @@
         "layout": "single",
         "cards": [
           {
-            "type": "B",
-            "img": "/images/test-image.png",
-            "title": "FFDW and OpenArchive Collaborate to Deploy Decentralized Archive for Human Rights Data",
-            "date": "November 18, 2021",
-            "tags": [
-              "Tag Number One"
-            ],
-            "divider": {
-              "top": true,
-              "bottom": true
-            },
-            "gradient": "purple-green"
+            "type": "A",
+            "img": "/images/board/",
+            "title": ">> Marta Belcher",
+            "subtitle": "General Counsel, Protocol Labs"
+          },
+          {
+            "type": "A",
+            "img": "/images/board/",
+            "title": ">> Rainey Reitman",
+            "subtitle": "General Counsel, Protocol Labs"
+          },
+          {
+            "type": "A",
+            "img": "/images/board/",
+            "title": ">> Brian Behlendorf",
+            "subtitle": "General Counsel, Protocol Labs"
+          },
+          {
+            "type": "A",
+            "img": "/images/board/",
+            "title": ">> Kristin Smith",
+            "subtitle": "General Counsel, Protocol Labs"
           }
         ]
       }
