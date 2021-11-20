@@ -1,8 +1,23 @@
 <template>
   <svg xmlns="http://www.w3.org/2000/svg" width="852" height="416.941">
-    <text id="Here_s_where_you_can_find_us" data-name="Here’s where
-you          can
-                        find us" transform="translate(0 62)" fill="#070517" font-size="81" font-family="Helvetica" letter-spacing="0.03em"><tspan x="0" y="0">Here’s where</tspan><tspan x="0" y="104" xml:space="preserve">you          can</tspan><tspan x="0" y="208" xml:space="preserve">                        find us</tspan></text>
+    <text
+      id="Here_s_where_you_can_find_us"
+      data-name="`Here’s where you can find us`"
+      transform="translate(0 62)"
+      fill="#070517"
+      font-size="81"
+      font-family="Helvetica"
+      letter-spacing="0.03em">
+      <tspan x="0" y="0">
+        {{ "Here’s where" }}
+      </tspan>
+      <tspan x="0" y="104">
+        {{ "you&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can" }}
+      </tspan>
+      <tspan x="0" y="208">
+        {{ "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;find us" }}
+      </tspan>
+    </text>
     <g>
       <g>
         <g>

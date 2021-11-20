@@ -1,5 +1,5 @@
 <template>
-  <div :class="[`header-selector theme__${theme}`]">
+  <div :class="[`header-selector theme__${theme} fontTheme__${fontTheme}`]">
 
     <NavBlock />
 
@@ -14,7 +14,7 @@
 // ===================================================================== Imports
 import NavBlock from '@/components/NavBlock'
 import HeaderVariant1 from '@/components/headers/HeaderVariant1'
-// import HeaderVariant2 from '@/components/headers/HeaderVariant2'
+import HeaderVariant2 from '@/components/headers/HeaderVariant2'
 // import HeaderVariant3 from '@/components/headers/HeaderVariant3'
 // import HeaderVariant4 from '@/components/headers/HeaderVariant4'
 // import HeaderVariant5 from '@/components/headers/HeaderVariant5'
@@ -26,8 +26,8 @@ export default {
 
   components: {
     NavBlock,
-    HeaderVariant1
-    // HeaderVariant2,
+    HeaderVariant1,
+    HeaderVariant2
     // HeaderVariant3,
     // HeaderVariant4,
     // HeaderVariant5,
@@ -47,6 +47,10 @@ export default {
     },
     theme () { // 'purple-green', 'red-purple', 'red-green'
       return this.header.theme || 'purple-green'
+    },
+
+    fontTheme () { // 'dark', 'light'
+      return this.header.fontTheme || 'dark'
     }
   }
 }
@@ -55,7 +59,6 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 .header-selector {
-  color: $haiti;
   &.theme__purple-green {
     @include gradient_Background_PurpleGreen;
   }
@@ -64,6 +67,12 @@ export default {
   }
   &.theme__red-green {
     @include gradient_Background_RedGreen;
+  }
+  &.fontTheme__dark {
+    color: $haiti;
+  }
+  &.fontTheme__light {
+    color: $cararra;
   }
 }
 </style>
