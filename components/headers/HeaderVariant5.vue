@@ -87,7 +87,7 @@ $artifact_rectangle_height: 7rem;
   &:after {
     width: $artifact_square_dimension_1;
     height: $artifact_square_dimension_1;
-    right: calc(82.5% - $artifact_square_dimension_1);
+    right: calc(82.5% - #{$artifact_square_dimension_1});
     top: -$artifact_square_dimension_1;
   }
 }
