@@ -208,6 +208,7 @@ export default {
 .content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   &.reverse {
     flex-direction: row-reverse;
   }
@@ -313,6 +314,10 @@ export default {
   transition: 350ms ease;
   .title {
     @include h3;
+    margin-bottom: 1rem;
+    @include small {
+      @include fontSize_Medium;
+    }
   }
   .panel-image {
     padding: 3.375rem 0;
@@ -320,7 +325,9 @@ export default {
   }
   .image-wrapper {
     position: relative;
-    margin-right: 8.125rem;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: auto;
     width: 12.5rem;
     height: 12.5rem;
     overflow: hidden;
@@ -328,7 +335,7 @@ export default {
   .reverse {
     .image-wrapper {
       margin-right: 0;
-      margin-left: 8.125rem;
+      margin-left: auto;
     }
   }
   .image {
@@ -345,14 +352,22 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     width: 66%;
+    @include small {
+      width: 50%;
+    }
   }
   .info-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     &:after {
+      content: '';
       height: 0;
-      content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='560.5' height='25' viewBox='0 0 560.5 25'%3e%3cg id='Group_1573' data-name='Group 1573' transform='translate(-217.5 -1079.359)'%3e%3cline id='Line_17' data-name='Line 17' x2='556' transform='translate(217.5 1091.859)' fill='none' stroke='%23070517' stroke-width='5'/%3e%3crect id='Rectangle_1279' data-name='Rectangle 1279' width='5' height='5' transform='translate(758 1079.359)' fill='%23090015'/%3e%3crect id='Rectangle_1280' data-name='Rectangle 1280' width='5' height='5' transform='translate(763 1084.359)' fill='%23090015'/%3e%3crect id='Rectangle_1281' data-name='Rectangle 1281' width='5' height='5' transform='translate(763 1094.359)' fill='%23090015'/%3e%3crect id='Rectangle_1282' data-name='Rectangle 1282' width='5' height='5' transform='translate(768 1092.359)' fill='%23090015'/%3e%3crect id='Rectangle_1283' data-name='Rectangle 1283' width='5' height='5' transform='translate(773 1089.359)' fill='%23090015'/%3e%3crect id='Rectangle_1284' data-name='Rectangle 1284' width='5' height='5' transform='translate(768 1087.359)' fill='%23090015'/%3e%3crect id='Rectangle_1285' data-name='Rectangle 1285' width='5' height='5' transform='translate(758 1099.359)' fill='%23090015'/%3e%3c/g%3e%3c/svg%3e");
+      width: 100%;
+      display: block;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='560.5' height='25' viewBox='0 0 560.5 25'%3e%3cg id='Group_1573' data-name='Group 1573' transform='translate(-217.5 -1079.359)'%3e%3cline id='Line_17' data-name='Line 17' x2='556' transform='translate(217.5 1091.859)' fill='none' stroke='%23070517' stroke-width='5'/%3e%3crect id='Rectangle_1279' data-name='Rectangle 1279' width='5' height='5' transform='translate(758 1079.359)' fill='%23090015'/%3e%3crect id='Rectangle_1280' data-name='Rectangle 1280' width='5' height='5' transform='translate(763 1084.359)' fill='%23090015'/%3e%3crect id='Rectangle_1281' data-name='Rectangle 1281' width='5' height='5' transform='translate(763 1094.359)' fill='%23090015'/%3e%3crect id='Rectangle_1282' data-name='Rectangle 1282' width='5' height='5' transform='translate(768 1092.359)' fill='%23090015'/%3e%3crect id='Rectangle_1283' data-name='Rectangle 1283' width='5' height='5' transform='translate(773 1089.359)' fill='%23090015'/%3e%3crect id='Rectangle_1284' data-name='Rectangle 1284' width='5' height='5' transform='translate(768 1087.359)' fill='%23090015'/%3e%3crect id='Rectangle_1285' data-name='Rectangle 1285' width='5' height='5' transform='translate(758 1099.359)' fill='%23090015'/%3e%3c/g%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-size: contain;
       position: relative;
       transition: 350ms ease;
     }
@@ -394,13 +409,14 @@ export default {
   }
   &:hover {
     color: $haiti;
+    cursor: pointer;
     .background {
       height: 100%;
       opacity: 1;
     }
     .info-wrapper {
       &:after {
-        height: 100%;
+        height: 25px;
       }
     }
     .tag {
