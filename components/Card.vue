@@ -392,6 +392,7 @@ export default {
   }
   &:hover {
     color: $haiti;
+    cursor: pointer;
     .background {
       height: 100%;
       opacity: 1;

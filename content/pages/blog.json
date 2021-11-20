@@ -14,10 +14,19 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-10",
+          "num": "col-7"
+        },
+        "format": "header",
+        "label": "FFDW Blog",
+        "heading": "Updates from our organization and across the Web3 universe."
+      },
+      "col_2": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-4",
           "push_left": "off-1"
         },
-        "src": "/images/page-index/long-arrow-right.svg"
+        "src": "/images/page-blog/blog-header-image.png"
       }
     }
   }
