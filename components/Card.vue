@@ -316,6 +316,7 @@ export default {
   }
   .panel-image {
     padding: 3.375rem 0;
+    width: 33%;
   }
   .image-wrapper {
     position: relative;
@@ -343,6 +344,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 66%;
   }
   .info-wrapper {
     display: flex;
