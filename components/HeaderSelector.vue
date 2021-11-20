@@ -15,7 +15,7 @@
 import NavBlock from '@/components/NavBlock'
 import HeaderVariant1 from '@/components/headers/HeaderVariant1'
 import HeaderVariant2 from '@/components/headers/HeaderVariant2'
-// import HeaderVariant3 from '@/components/headers/HeaderVariant3'
+import HeaderVariant3 from '@/components/headers/HeaderVariant3'
 // import HeaderVariant4 from '@/components/headers/HeaderVariant4'
 // import HeaderVariant5 from '@/components/headers/HeaderVariant5'
 // import HeaderVariant6 from '@/components/headers/HeaderVariant6'
@@ -27,8 +27,8 @@ export default {
   components: {
     NavBlock,
     HeaderVariant1,
-    HeaderVariant2
-    // HeaderVariant3,
+    HeaderVariant2,
+    HeaderVariant3
     // HeaderVariant4,
     // HeaderVariant5,
     // HeaderVariant6
@@ -46,7 +46,7 @@ export default {
       return `HeaderVariant${this.header.type.split('_')[1]}`
     },
     theme () { // 'purple-green', 'red-purple', 'red-green'
-      return this.header.theme || 'purple-green'
+      return this.header.theme
     },
 
     fontTheme () { // 'dark', 'light'

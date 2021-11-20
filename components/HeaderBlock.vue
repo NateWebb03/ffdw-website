@@ -1,5 +1,5 @@
 <template>
-  <div class="block header-container" :style="{ height }">
+  <div :class="['block header-container', `theme__${theme}`]" :style="{ height }">
     <div class="bg" :style="{ background, height }">
       <Artifact
         v-for="(artifact, artifactKey) in artifacts"
@@ -63,8 +63,33 @@
       </div>
     </div>
 
+    {{ /** HEADER OPTION 3 */ }}
     <div v-if="variant === 'header3'" class="grid header header-3 col-12">
-      header 3
+      <TextBlock
+        v-bind="{
+          block: {
+            format: 'header',
+            label: title,
+            heading: titleSecondary
+          }
+        }"
+        class="col-6" />
+      <div data-push-left="off-2" class="grid images-container col-4">
+        <div v-if="!!images[0]" class="image-1 col-12">
+          <img :src="images[0]" />
+          <Artifact
+            class="artifact"
+            v-bind="{
+              block: {
+                width: '2.313rem',
+                height: '2.313rem',
+                top: '-2.375rem',
+                left: 'calc(100% - .45rem)',
+              },
+            }" />
+        </div>
+      </div>
+      <div class="divider col-4" />
     </div>
 
     <div v-if="variant === 'header4'" class="grid header header-4 col-12">
@@ -80,6 +105,7 @@
 <script>
 // ====================================================================== Import
 import Artifact from '@/components/Artifact'
+import TextBlock from '@/components/TextBlock'
 import ContactText from '@/components/icons/ContactText'
 
 // =================================================================== Variables
@@ -94,8 +120,12 @@ const computedDefaults = {
   height: '39.938rem',
   // Title of the header, interpreted differently depending on the header variant, e.g. header1 is a simple text block
   title: 'Lorem ipsum dolor sit amet',
+  // A secondary bit of text for the title, used mainly in variants header3/header4/header5
+  titleSecondary: '', // TODO: Potentially better naming of variable
   // Corresponds directly to the  header options in the XD design
-  variant: 'header1' // header1 | header2 | header3 | header4 | header5
+  variant: 'header1', // header1 | header2 | header3 | header4 | header5
+  // The color theme of the header
+  theme: 'dark' // dark | light
 }
 
 // ====================================================================== Export
@@ -104,7 +134,8 @@ export default {
 
   components: {
     Artifact,
-    ContactText
+    ContactText,
+    TextBlock
   },
 
   props: {
@@ -147,7 +178,14 @@ export default {
   }
 
   .header {
-    color: $haiti;
+    &.theme {
+      &__dark {
+        color: $haiti;
+      }
+      &__light {
+        color: $cararra;
+      }
+    }
 
     .images-container {
       > * {
@@ -202,6 +240,17 @@ export default {
             max-height: 14rem;
           }
         }
+      }
+    }
+
+    &-3 {
+      .artifact {
+        background-color: $greenYellow;
+      }
+
+      .divider {
+        border-bottom: 0.313rem solid $cararra;
+        margin-left: 0.5rem;
       }
     }
   }

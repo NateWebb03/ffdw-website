@@ -1,0 +1,20 @@
+{
+  "seo": {
+    "title": "FFDW Blog  - Filecoin Foundation for the Decentralized Web",
+    "description": ""
+  },
+  "og": {
+    "site_name": "FFDW Blog  - Filecoin Foundation for the Decentralized Web",
+    "url": "",
+    "type": "website",
+    "image": "/images/page-index/open-graph.png"
+  },
+  "header": {
+    "type": "variant_3",
+    "heading": "FFDW Blog",
+    "subheading": "Incididunt ut labore et dolore magna aliqua.",
+    "image_1": "images/component-header/man-sitting-with-laptop.png",
+    "fontTheme": "light"
+  },
+  "page_content": {}
+}

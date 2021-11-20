@@ -70,7 +70,6 @@ export default {
 .nav-container {
   position: relative;
   padding: 2.5rem 0;
-  color: $haiti;
   z-index: 1;
 }
 
