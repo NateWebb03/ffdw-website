@@ -42,7 +42,8 @@ export default {
     subheading () {
       return this.header.subheading
     },
-    subTheme () { // 'purple-green', 'red-purple', 'red-green'
+    subTheme () {
+      // 'purple-green', 'red-purple', 'red-green'
       return this.header.subTheme || 'purple-green'
     },
     image_1 () {
@@ -146,7 +147,7 @@ img {
     height: $artifact_rectangle_height;
     width: calc(100vw / 3);
     top: -($artifact_square_dimension_2 + $artifact_rectangle_height);
-    left: calc(75% + $artifact_square_dimension_2);
+    left: calc(75% + #{$artifact_square_dimension_2});
   }
 }
 
