@@ -105,7 +105,7 @@ export default {
     morePosts () {
       const sections = CloneDeep(this.siteContent.blog.page_content)
       delete sections.intro
-      sections['recommended_posts'] = {
+      sections.recommended_posts = {
         col_1: {
           type: 'card_list_block',
           cols: {
@@ -234,16 +234,13 @@ export default {
   }
   li {
     margin-bottom: 1.5rem;
-    padding-left: 0.875rem;
-    // @include fontSize_Large;
-    // @include leading_Regular;
-    // letter-spacing: $letterSpacing_Large;
+    padding-left: 2.875rem;
     list-style-type: none;
     position: relative;
     &:before {
       content: '';
       position: absolute;
-      left: -2rem;
+      left: 0rem;
       top: 0.625rem;
       width: 0.625rem;
       height: 0.625rem;
