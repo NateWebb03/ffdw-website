@@ -77,7 +77,7 @@
 <script>
 // ====================================================================== Export
 export default {
-  name: 'IconCode'
+  name: 'ContactText'
 }
 </script>
 

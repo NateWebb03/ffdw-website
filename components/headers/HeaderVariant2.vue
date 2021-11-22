@@ -41,9 +41,6 @@ export default {
     type () {
       return this.header.type
     },
-    heading () {
-      return this.header.heading
-    },
     headingComponentName () {
       return this.header.headingComponentName
     },
