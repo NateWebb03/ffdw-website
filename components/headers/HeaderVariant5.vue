@@ -1,16 +1,22 @@
 <template>
-  <header :class="['header', type, `subTheme__${subTheme}`, 'grid']">
-    <TextBlock
-      class="content col-9"
-      data-push-left="off-1"
-      v-bind="{
-        block: {
-          heading,
-          description,
-          format: 'header',
-        },
-      }" />
-    <div class="artifact-gradient col-3" />
+  <header :class="['header', type, `subTheme__${subTheme}`]">
+    <div class="grid">
+      <div class="col-9">
+        <div class="inner-wrapper">
+          <TextBlock
+            data-push-left="off-1"
+            class="content"
+            v-bind="{
+              block: {
+                heading,
+                description,
+                format: 'header',
+              },
+            }" />
+          <div class="artifact-gradient" />
+        </div>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -53,7 +59,10 @@ export default {
 
 <style lang="scss" scoped>
 $artifact_square_dimension_1: 2.5rem;
-$artifact_rectangle_height: 7rem;
+$artifact_rectangle_gap: 7.125rem;
+$artifact_rectangle_width_1: $artifact_square_dimension_1 * 4 + 1rem;
+$artifact_gradient_height: 7rem;
+$artifact_gradient_width: $artifact_rectangle_gap - $artifact_square_dimension_1 - 0.5rem;
 
 // ///////////////////////////////////////////////////////////////////// General
 .header {
@@ -61,34 +70,36 @@ $artifact_rectangle_height: 7rem;
   position: relative;
 }
 
-.content {
+.content,
+.inner-wrapper,
+.artifact-gradient {
   position: relative;
 }
 
 // /////////////////////////////////////////////////////////////////// Artifacts
 .content:before,
 .content:after,
-.header:before,
-.header:after,
+.inner-wrapper:before,
+.inner-wrapper:after,
 .artifact-gradient:before {
   position: absolute;
   content: "";
 }
 
-.header {
+.inner-wrapper {
   &:before {
-    width: calcToEdge(17.5%);
-    min-width: 17.5%;
+    width: calcToEdge(calc(10% + 0.5rem));
+    min-width: 10%;
     height: $artifact_square_dimension_1;
-    right: 82.5%;
-    top: 0;
+    right: 90%;
+    bottom: calc(100% + #{$artifact_square_dimension_1});
   }
 
   &:after {
     width: $artifact_square_dimension_1;
     height: $artifact_square_dimension_1;
-    right: calc(82.5% - #{$artifact_square_dimension_1});
-    top: -$artifact_square_dimension_1;
+    right: calc(90% - #{$artifact_square_dimension_1});
+    top: -$artifact_square_dimension_1 * 3;
   }
 }
 
@@ -97,34 +108,34 @@ $artifact_rectangle_height: 7rem;
     width: $artifact_square_dimension_1;
     height: $artifact_square_dimension_1;
     right: -$artifact_square_dimension_1 * 2;
-    bottom: -$artifact_square_dimension_1;
+    bottom: -$artifact_square_dimension_1 * 2;
   }
   &:after {
-    width: calcToEdge($artifact_square_dimension_1 * 2 + 1rem);
+    width: calcToEdge($artifact_rectangle_width_1);
+    min-width: $artifact_rectangle_width_1;
     height: $artifact_square_dimension_1;
     left: calc(100% + #{$artifact_square_dimension_1 * 2});
-    bottom: 0;
   }
 }
 
 .artifact-gradient:before {
-  width: calcToEdge(-$artifact_square_dimension_1 * 2);
-  min-width: 17.5%;
-  height: $artifact_rectangle_height * 2;
-  left: calc(100% + #{$artifact_square_dimension_1 * 2});
-  bottom: $artifact_square_dimension_1 * 3;
+  width: calcToEdge($artifact_gradient_width);
+  min-width: $artifact_gradient_width;
+  height: $artifact_gradient_height;
+  left: calc(100% + #{$artifact_square_dimension_1 * 2 + $artifact_rectangle_gap});
+  top: -$artifact_gradient_height;
 }
 
 // ///////////////////////////////////////////////////////////////////// Content
 
 .header {
   &.subTheme__purple-green {
-    &:before,
+    .inner-wrapper:before,
     .content:after {
       background-color: $greenYellow;
     }
 
-    &:after,
+    .inner-wrapper:after,
     .content:before {
       background-color: $perfume;
     }
@@ -134,12 +145,12 @@ $artifact_rectangle_height: 7rem;
     }
   }
   &.subTheme__red-green {
-    &:before,
+    .inner-wrapper:before,
     .content:after {
       background-color: $greenYellow;
     }
 
-    &:after,
+    .inner-wrapper:after,
     .content:before {
       background-color: $coralRed;
     }

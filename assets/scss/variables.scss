@@ -161,6 +161,8 @@ $gradient_GreenRed: linear-gradient(to right, $greenYellow, $coralRed);
 }
 
 // --------------------------------------------------------------------- Calculations
+
+// TODO: support $addGridGutterOffset
 @function calcToEdge($offset) {
   @return calc(#{$offset} + 100vw / 2  - #{math.div($containerWidth, 2)});// offset, plus half of page width, minus half of container width
 }
