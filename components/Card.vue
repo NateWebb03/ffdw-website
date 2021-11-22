@@ -263,7 +263,7 @@ export default {
       z-index: 0;
     }
     &:before {
-      transform: translateX(-100%);
+      transform: translateX(calc(-100% + 0.25rem));
     }
     &:after {
       transform: translateX(calc(100% - 20.25rem));
@@ -412,7 +412,7 @@ export default {
     color: $haiti;
     cursor: pointer;
     .background {
-      height: 100%;
+      height: calc(100% + 0.125rem);
       opacity: 1;
     }
     .info-wrapper {
