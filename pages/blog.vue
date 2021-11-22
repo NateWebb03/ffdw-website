@@ -6,6 +6,18 @@
     <BlockBuilder :sections="sections" />
 
     <section id="section_search">
+      <div class="grid">
+        <div class="col-8_mi-9_ti-10" data-push-left="off-0_md-1_sm-2_ti-1">
+          <Zero_Core__FilterBar
+            id="zero-filter-bar"
+            :filter-value="filterValue"
+            action="store">
+            <template #icon>
+              <!-- <img src="~assets/svgs/searchicon.svg" /> -->
+            </template>
+          </Zero_Core__FilterBar>
+        </div>
+      </div>
     </section>
 
     <BlockBuilder :sections="blogPosts" />
@@ -45,6 +57,7 @@ export default {
 
   async fetch ({ store }) {
     await store.dispatch('global/getBaseData', 'general')
+    await store.dispatch('global/getBaseData', 'settings')
     await store.dispatch('global/getBaseData', { key: 'blog', data: BlogPageData })
   },
 
@@ -54,10 +67,15 @@ export default {
 
   computed: {
     ...mapGetters({
-      siteContent: 'global/siteContent'
+      siteContent: 'global/siteContent',
+      routeQuery: 'filters/routeQuery',
+      filterValue: 'core/filterValue'
     }),
     sections () {
       return this.siteContent[this.tag].page_content
+    },
+    display () {
+      return this.routeQuery.results
     },
     posts () {
       const arr = []
@@ -74,7 +92,7 @@ export default {
           ],
           divider: {
             top: true,
-            bottom: (i === len - 1)
+            bottom: (i === len - 1) || i === (this.display - 1)
           },
           gradient: 'purple-green',
           direction: i % 2 ? 'reverse' : 'forward'
@@ -87,11 +105,12 @@ export default {
       return {
         blog_posts: {
           col_1: {
-            type: 'card_list_block',
+            type: 'paginated_cards',
             cols: {
               num: 'col-12'
             },
-            cards: this.posts
+            cards: this.posts,
+            displayControls: true
           }
         }
       }
