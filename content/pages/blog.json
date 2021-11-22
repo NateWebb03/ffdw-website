@@ -28,6 +28,17 @@
         },
         "src": "/images/page-blog/blog-header-image.png"
       }
+    },
+    "singular_page_more": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-9"
+        },
+        "format": "header",
+        "label": "Latest news from FFDW",
+        "heading": "Updates from our organization and across the Web3 universe."
+      }
     }
   }
 }

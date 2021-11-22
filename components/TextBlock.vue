@@ -15,6 +15,13 @@
 
     <div v-if="date" class="date">
       {{ date }}
+      <div v-if="tags.length" class="tags">
+        <span
+          v-for="tag in tags"
+          :key="tag">
+          {{ tag }}
+        </span>
+      </div>
     </div>
 
     <component
@@ -89,6 +96,9 @@ export default {
         return `${date.format('MMMM D YYYY')}`
       }
       return false
+    },
+    tags () {
+      return Array.isArray(this.block.tags) ? this.block.tags : []
     },
     heading () {
       return this.block.heading

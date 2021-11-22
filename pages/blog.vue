@@ -3,7 +3,7 @@
 
     <Modal />
 
-    <BlockBuilder :sections="sections" />
+    <BlockBuilder :sections="header" />
 
     <section id="section_search">
       <div class="grid">
@@ -38,6 +38,7 @@
 <script>
 // ====================================================================== Import
 import { mapGetters } from 'vuex'
+import CloneDeep from 'lodash/cloneDeep'
 
 import BlogPageData from '@/content/pages/blog.json'
 
@@ -80,8 +81,10 @@ export default {
       siteContent: 'global/siteContent',
       filterValue: 'core/filterValue'
     }),
-    sections () {
-      return this.siteContent[this.tag].page_content
+    header () {
+      const sections = CloneDeep(this.siteContent.blog.page_content)
+      delete sections.singular_page_more
+      return sections
     },
     searchString () {
       return this.filterValue ? `'${this.filterValue}'` : ''
@@ -93,12 +96,12 @@ export default {
         const post = this.markdownFiles[i]
         const card = {
           type: 'B',
+          action: 'nuxt-link',
+          url: `/${post.slug}`,
           img: post.image,
           title: post.title,
           date: post.date || post.updatedAt,
-          tags: [
-            'Tag Number One'
-          ],
+          tags: post.tags,
           divider: {
             top: true,
             bottom: (i === len - 1)
