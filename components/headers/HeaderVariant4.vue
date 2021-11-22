@@ -3,16 +3,18 @@
     <div class="content grid-middle">
       <div
         data-push-left="off-1"
-        class="background col-10"
-        :style="{ backgroundImage: `url('${image_1}')` }">
-        <div class="background-single-artifact" />
+        class="col-10">
+        <div class="background-double-artifacts">
+          <img :src="image_1" />
+          <div class="background-single-artifact" />
+          <div class="subheading-double-artifact" />
+        </div>
       </div>
-      <div class="heading-1 col-4">
+      <div class="heading-1">
         {{ heading }}
       </div>
-      <div data-push-left="off-8" class="heading-2 col-4">
+      <div data-push-left="off-8" class="heading-2">
         {{ subheading }}
-        <div class="subheading-double-artifact" />
       </div>
     </div>
   </header>
@@ -64,17 +66,11 @@ $artifact_rectangle_height: 7rem;
   padding-bottom: 4rem;
 }
 
-.content {
+.content,
+.background-double-artifacts,
+.background-single-artifact,
+.subheading-double-artifact {
   position: relative;
-}
-
-.background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
 }
 
 img {
@@ -89,8 +85,8 @@ img {
 .heading-2:after,
 .subheading-double-artifact:before,
 .subheading-double-artifact:after,
-.background:before,
-.background:after,
+.background-double-artifacts:before,
+.background-double-artifacts:after,
 .background-single-artifact:before {
   position: absolute;
   content: "";
@@ -98,8 +94,8 @@ img {
 
 .heading-1:after,
 .heading-2:before,
-.background:before,
-.background:after {
+.background-double-artifacts:before,
+.background-double-artifacts:after {
   background: $haiti;
 }
 
@@ -109,9 +105,9 @@ img {
     top: 100%;
   }
   &:before {
-    width: calcToEdge(50%);
+    width: calcToEdge(66%);
     height: $artifact_square_dimension_2;
-    right: 50%;
+    right: 34%;
   }
 
   &:after {
@@ -129,14 +125,16 @@ img {
     top: -$artifact_square_dimension_1;
   }
   &:after {
-    width: calcToEdge(45%);
+    width: calcToEdge(calc(45% + 0.5rem));
     height: $artifact_square_dimension_2;
     top: -$artifact_square_dimension_2;
-    left: 55%;
+    left: calc(55%);
   }
 }
 
 .subheading-double-artifact {
+  left: 25%;
+  bottom: 5.4375rem;
   &:before {
     height: $artifact_square_dimension_2;
     width: $artifact_square_dimension_2;
@@ -151,7 +149,7 @@ img {
   }
 }
 
-.background {
+.background-double-artifacts {
   &:before {
     width: $artifact_square_dimension_2;
     height: $artifact_square_dimension_2;
@@ -177,11 +175,10 @@ img {
 .heading-1,
 .heading-2 {
   @include title;
-  position: relative;
+  position: absolute;
   background: $haiti;
   padding-bottom: 0;
 }
-
 .header {
   &.subTheme__purple-green {
     .heading-1:before,
@@ -233,8 +230,12 @@ img {
     }
   }
 }
+.heading-1 {
+  top: 0;
+  padding-right: 1rem;
+}
 .heading-2 {
-  margin-top: 14rem;
+  bottom: 0;
   padding-left: 1rem;
 }
 </style>
