@@ -86,7 +86,7 @@ img {
 .image-2 {
   position: absolute;
   top: -2rem;
-  left: 16.7rem;
+  left: 16.5rem;
   max-height: 14rem;
   overflow: hidden;
 

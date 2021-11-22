@@ -48,7 +48,6 @@ export default {
     theme () { // 'purple-green', 'red-purple', 'red-green'
       return this.header.theme
     },
-
     fontTheme () { // 'dark', 'light'
       return this.header.fontTheme || 'dark'
     }

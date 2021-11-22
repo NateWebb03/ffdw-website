@@ -2,18 +2,14 @@
   <header :class="['header', type]">
     <div class="grid-middle">
       <TextBlock
-        v-bind="{
-          block: {
-            format: 'header',
-            label: heading,
-            heading: subheading,
-          },
-        }"
+        :block="textBlock"
         class="col-6" />
       <div data-push-left="off-2" class="image-1-container col-4">
         <img :src="image_1" />
       </div>
-      <div class="divider col-4" />
+      <div class="col-4">
+        <div class="divider" />
+      </div>
     </div>
   </header>
 </template>
@@ -41,11 +37,12 @@ export default {
     type () {
       return this.header.type
     },
-    heading () {
-      return this.header.heading
-    },
-    subheading () {
-      return this.header.subheading
+    textBlock () {
+      return {
+        format: 'header',
+        label: this.header.heading,
+        heading: this.header.subheading
+      }
     },
     image_1 () {
       return this.header.image_1
@@ -71,7 +68,7 @@ $artifact_square_dimension: 2.5rem;
     height: $artifact_square_dimension;
     width: $artifact_square_dimension;
     background-color: $greenYellow;
-    content: '';
+    content: "";
   }
   &:after {
     top: -#{$artifact_square_dimension};
@@ -84,7 +81,6 @@ img {
 }
 
 .divider {
-  border-bottom: 0.313rem solid $cararra;
-  margin-left: 0.5rem;
+  border-bottom: 0.3125rem solid $cararra;
 }
 </style>
