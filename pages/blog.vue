@@ -7,16 +7,26 @@
 
     <section id="section_search">
       <div class="grid">
-        <div class="col-8_mi-9_ti-10" data-push-left="off-0_md-1_sm-2_ti-1">
+
+        <div class="col-6_sm-5">
+          <div class="search-query">
+            <span v-if="filterValue">Showing results for </span>
+            {{ searchString }}
+          </div>
+        </div>
+
+        <div class="col-5_sm-6" data-push-left="off-1">
           <Zero_Core__FilterBar
             id="zero-filter-bar"
             :filter-value="filterValue"
+            placeholder="SEARCH"
             action="store">
             <template #icon>
-              <!-- <img src="~assets/svgs/searchicon.svg" /> -->
+              <div class="search-icon"></div>
             </template>
           </Zero_Core__FilterBar>
         </div>
+
       </div>
     </section>
 
@@ -72,6 +82,9 @@ export default {
     }),
     sections () {
       return this.siteContent[this.tag].page_content
+    },
+    searchString () {
+      return this.filterValue ? `'${this.filterValue}'` : ''
     },
     posts () {
       const arr = []
@@ -135,18 +148,84 @@ export default {
     }
   }
 }
-//
-// ::v-deep #intro_2 {
-//   padding-top: 2rem;
-// }
-//
-// ::v-deep #accordion_1 {
-//   padding: 0;
-// }
-//
-// ::v-deep #grants {
-//   .text-block {
-//     padding: 0 2rem;
-//   }
-// }
+
+.search-query {
+  color: $cararra;
+  @include fontWeight_Semibold;
+  @include fontSize_Medium;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+::v-deep #zero-filter-bar {
+  background-color: $haiti;
+  border: solid 0.125rem white;
+  padding: 0.25rem 0.5rem;
+  height: unset;
+  width: 50%;
+  right: 0;
+  position: relative;
+  margin-left: auto;
+  margin-right: 0 !important;
+  transition: 250ms ease;
+  &.focused {
+    width: 100%;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: -0.125rem;
+    left: -1.5rem;
+    width: 1.5rem;
+    height: calc(50% + 0.125rem);
+    background-color: $haiti;
+    border: inherit;
+    border-right: none;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    right: -1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: inherit;
+  }
+}
+
+::v-deep .input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  background-color: $haiti;
+  outline: 0;
+  color: $cararra;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  @include fontWeight_Bold;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  &::placeholder {
+    font-size: 14px;
+    color: $cararra;
+    @include fontWeight_Bold;
+    letter-spacing: 0.05em;
+  }
+}
+
+::v-deep .search-icon {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='21.414' height='21.414' viewBox='0 0 21.414 21.414'%3e%3cg fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-width='2'%3e%3ccircle cx='8.5' cy='8.5' r='8.5' stroke='none'/%3e%3ccircle cx='8.5' cy='8.5' r='7.5' fill='none'/%3e%3c/g%3e%3cline x2='6' y2='6' transform='translate(14 14)' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-width='2'/%3e%3c/svg%3e");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.125rem;
+  background-color: $haiti;
+  width: 100%;
+  height: 100%;
+}
+
+::v-deep #blog_posts {
+  padding-top: 2rem;
+}
+
 </style>
