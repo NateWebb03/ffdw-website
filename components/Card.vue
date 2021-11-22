@@ -64,10 +64,7 @@
       </div>
     </div>
 
-    <div
-      v-if="divider.bottom"
-      :class="['bottom-divider', `gradient_${gradient}`]">
-    </div>
+    <div :class="['bottom-divider', { visible: divider.bottom }, `gradient_${gradient}`]"></div>
 
   </component>
 </template>
@@ -237,7 +234,11 @@ export default {
 }
 
 .bottom-divider {
+  display: none;
   bottom: 0;
+  &.visible {
+    display: block;
+  }
 }
 
 .top-divider,
@@ -262,7 +263,7 @@ export default {
       z-index: 0;
     }
     &:before {
-      transform: translateX(-100%);
+      transform: translateX(calc(-100% + 0.25rem));
     }
     &:after {
       transform: translateX(calc(100% - 20.25rem));
@@ -367,7 +368,7 @@ export default {
       display: block;
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='560.5' height='25' viewBox='0 0 560.5 25'%3e%3cg id='Group_1573' data-name='Group 1573' transform='translate(-217.5 -1079.359)'%3e%3cline id='Line_17' data-name='Line 17' x2='556' transform='translate(217.5 1091.859)' fill='none' stroke='%23070517' stroke-width='5'/%3e%3crect id='Rectangle_1279' data-name='Rectangle 1279' width='5' height='5' transform='translate(758 1079.359)' fill='%23090015'/%3e%3crect id='Rectangle_1280' data-name='Rectangle 1280' width='5' height='5' transform='translate(763 1084.359)' fill='%23090015'/%3e%3crect id='Rectangle_1281' data-name='Rectangle 1281' width='5' height='5' transform='translate(763 1094.359)' fill='%23090015'/%3e%3crect id='Rectangle_1282' data-name='Rectangle 1282' width='5' height='5' transform='translate(768 1092.359)' fill='%23090015'/%3e%3crect id='Rectangle_1283' data-name='Rectangle 1283' width='5' height='5' transform='translate(773 1089.359)' fill='%23090015'/%3e%3crect id='Rectangle_1284' data-name='Rectangle 1284' width='5' height='5' transform='translate(768 1087.359)' fill='%23090015'/%3e%3crect id='Rectangle_1285' data-name='Rectangle 1285' width='5' height='5' transform='translate(758 1099.359)' fill='%23090015'/%3e%3c/g%3e%3c/svg%3e");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: auto;
       position: relative;
       transition: 350ms ease;
     }
@@ -411,7 +412,7 @@ export default {
     color: $haiti;
     cursor: pointer;
     .background {
-      height: 100%;
+      height: calc(100% + 0.125rem);
       opacity: 1;
     }
     .info-wrapper {
@@ -421,6 +422,11 @@ export default {
     }
     .tag {
       background-position: 0%;
+    }
+  }
+  &:last-child {
+    .bottom-divider {
+      display: block;
     }
   }
 }
