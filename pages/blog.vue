@@ -68,14 +68,10 @@ export default {
   computed: {
     ...mapGetters({
       siteContent: 'global/siteContent',
-      routeQuery: 'filters/routeQuery',
       filterValue: 'core/filterValue'
     }),
     sections () {
       return this.siteContent[this.tag].page_content
-    },
-    display () {
-      return this.routeQuery.results
     },
     posts () {
       const arr = []
@@ -92,7 +88,7 @@ export default {
           ],
           divider: {
             top: true,
-            bottom: (i === len - 1) || i === (this.display - 1)
+            bottom: (i === len - 1)
           },
           gradient: 'purple-green',
           direction: i % 2 ? 'reverse' : 'forward'

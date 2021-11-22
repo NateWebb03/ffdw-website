@@ -64,10 +64,7 @@
       </div>
     </div>
 
-    <div
-      v-if="divider.bottom"
-      :class="['bottom-divider', `gradient_${gradient}`]">
-    </div>
+    <div :class="['bottom-divider', { visible: divider.bottom }, `gradient_${gradient}`]"></div>
 
   </component>
 </template>
@@ -237,7 +234,11 @@ export default {
 }
 
 .bottom-divider {
+  display: none;
   bottom: 0;
+  &.visible {
+    display: block;
+  }
 }
 
 .top-divider,
@@ -421,6 +422,11 @@ export default {
     }
     .tag {
       background-position: 0%;
+    }
+  }
+  &:last-child {
+    .bottom-divider {
+      display: block;
     }
   }
 }
