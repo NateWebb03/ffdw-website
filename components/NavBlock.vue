@@ -27,7 +27,7 @@
       <div class="col-6">
 
         <div class="breadcrumbs">
-          Home > Lorem Ipsum {{currentPage}}
+          Home > Lorem Ipsum
         </div>
 
       </div>

@@ -75,33 +75,4 @@ export default {
 // /////////////////////////////////////////////////////////////////// Artifacts
 
 // ///////////////////////////////////////////////////////////////////// Content
-img {
-  width: 100%;
-}
-
-.images-container {
-  position: relative;
-  top: -20rem;
-}
-
-.image-1 {
-  position: absolute;
-  top: -3.5rem;
-  left: -17%;
-  width: 32.1875rem;
-}
-
-.image-2 {
-  position: absolute;
-  top: 13.75rem;
-  left: 26.5rem;
-  width: 6.25rem;
-}
-
-.image-3 {
-  position: absolute;
-  top: 0;
-  left: 49rem;
-  width: 10.375rem;
-}
 </style>
