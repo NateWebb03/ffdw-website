@@ -10,11 +10,10 @@
     "image": "/images/page-index/open-graph.png"
   },
   "header": {
-    "type": "variant_1",
-    "theme": "red-purple",
-    "heading": "Lorem ipsum dolor sit amet",
-    "image_1": "images/component-header/man-sitting-with-laptop.png",
-    "image_2": "images/component-header/woman-painting-black-and-white.png"
+    "type": "variant_6",
+    "theme": "purple-green",
+    "headingComponentName": "HomeText",
+    "image_1": "images/component-header/woman-on-phone.png"
   },
   "page_content": {
     "about_1": {

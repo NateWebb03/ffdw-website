@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-container">
+  <div :class="['block nav-container']">
 
     <div class="grid">
       <div class="col">
@@ -23,11 +23,11 @@
       </div>
     </div>
 
-    <div class="grid">
+    <div v-if="!!currentPage" class="grid">
       <div class="col-6">
 
         <div class="breadcrumbs">
-          Home > Lorem Ipsum
+          Home > Lorem Ipsum {{currentPage}}
         </div>
 
       </div>
@@ -52,6 +52,13 @@ export default {
     Button
   },
 
+  props: {
+    block: {
+      type: Object,
+      required: true
+    }
+  },
+
   computed: {
     // Simple mapped variables
     ...[].reduce((acc, val) => (acc[val] = function () { return this.block[val] }) && acc, {}),
@@ -60,6 +67,9 @@ export default {
     }),
     links () {
       return this.siteContent.general.navigation
+    },
+    currentPage () {
+      return this.block.currentPage
     }
   }
 }

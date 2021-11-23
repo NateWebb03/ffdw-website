@@ -1,12 +1,8 @@
 <template>
   <div :class="[`header-selector theme__${theme} fontTheme__${fontTheme}`]">
+    <NavBlock :block="navBlock" />
 
-    <NavBlock />
-
-    <component
-      :is="headerVariant"
-      :header="header" />
-
+    <component :is="headerVariant" :header="header" />
   </div>
 </template>
 
@@ -18,7 +14,7 @@ import HeaderVariant2 from '@/components/headers/HeaderVariant2'
 import HeaderVariant3 from '@/components/headers/HeaderVariant3'
 import HeaderVariant4 from '@/components/headers/HeaderVariant4'
 import HeaderVariant5 from '@/components/headers/HeaderVariant5'
-// import HeaderVariant6 from '@/components/headers/HeaderVariant6'
+import HeaderVariant6 from '@/components/headers/HeaderVariant6'
 
 // ====================================================================== Export
 export default {
@@ -30,8 +26,8 @@ export default {
     HeaderVariant2,
     HeaderVariant3,
     HeaderVariant4,
-    HeaderVariant5
-    // HeaderVariant6
+    HeaderVariant5,
+    HeaderVariant6
   },
 
   props: {
@@ -45,11 +41,16 @@ export default {
     headerVariant () {
       return `HeaderVariant${this.header.type.split('_')[1]}`
     },
-    theme () { // 'purple-green', 'red-purple', 'red-green'
+    theme () {
+      // 'purple-green', 'red-purple', 'red-green'
       return this.header.theme
     },
-    fontTheme () { // 'dark', 'light'
+    fontTheme () {
+      // 'dark', 'light'
       return this.header.fontTheme || 'dark'
+    },
+    navBlock () {
+      return { currentPage: this.header.currentPage }
     }
   }
 }
