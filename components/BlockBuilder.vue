@@ -61,6 +61,7 @@ import BlockBuilder from '@/components/BlockBuilder'
 import FeaturedCareersList from '@/components/FeaturedCareersList'
 import GetInvolvedCallout from '@/components/GetInvolvedCallout'
 import HomeCallout from '@/components/HomeCallout'
+import ContactForm from '@/components/ContactForm'
 
 // ====================================================================== Export
 export default {
@@ -78,7 +79,8 @@ export default {
     BlockBuilder,
     FeaturedCareersList,
     GetInvolvedCallout,
-    HomeCallout
+    HomeCallout,
+    ContactForm
   },
 
   props: {

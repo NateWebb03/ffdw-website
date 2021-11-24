@@ -21,42 +21,42 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num":"col-7",
-          "push_left":"off-7"
+          "num": "col-7",
+          "push_left": "off-7"
         },
-        "description":"We support and fund research and development, and educate people about the decentralized web, in order to preserve humanity’s most important information. Interested in joining us in this mission? Reach out.",
-        "format":"medium"
+        "description": "We support and fund research and development, and educate people about the decentralized web, in order to preserve humanity’s most important information. Interested in joining us in this mission? Reach out.",
+        "format": "medium"
       }
     },
     "learn_1": {
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num":"col-4"
+          "num": "col-4"
         },
-        "heading":"Contact",
-        "description":"Questions? Ideas? Drop us a line hello@ffweb.org",
-        "format":"small",
+        "heading": "Contact",
+        "description": "Questions? Ideas? Drop us a line hello@ffweb.org",
+        "format": "small",
         "icon": "Phonebook"
       },
       "col_2": {
         "type": "text_block",
         "cols": {
-          "num":"col-4"
+          "num": "col-4"
         },
-        "heading":"Social",
-        "description":"FAQ\nTwitter\nLinkedIn\nBlog\nYouTube",
-        "format":"small",
+        "heading": "Social",
+        "description": "FAQ\nTwitter\nLinkedIn\nBlog\nYouTube",
+        "format": "small",
         "icon": "Social"
       },
       "col_3": {
         "type": "text_block",
         "cols": {
-          "num":"col-4"
+          "num": "col-4"
         },
-        "heading":"Careers",
-        "description":"Our team of thinkers and doers is growing. If you’re passionate about advancing technology forward, we want to hear from you.",
-        "format":"small",
+        "heading": "Careers",
+        "description": "Our team of thinkers and doers is growing. If you’re passionate about advancing technology forward, we want to hear from you.",
+        "format": "small",
         "icon": "Box",
         "ctas": [
           {
@@ -73,20 +73,60 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num":"col-7"
+          "num": "col-7"
         },
-        "label":"Reach out",
-        "heading":"We’re working to foster and expand the decentralized web.",
-        "format":"header"
+        "label": "Reach out",
+        "heading": "We’re working to foster and expand the decentralized web.",
+        "format": "header"
       },
       "col_2": {
         "type": "image_block",
         "cols": {
-          "num":"col-4",
+          "num": "col-4",
           "push_left": "off-1"
         },
         "src": "/images/page-contact/person-with-laptop.png"
       }
+    },
+    "form": {
+      "col_1": {
+        "type": "custom",
+        "cols": {
+          "num": "col-8",
+          "push_left": "off-4"
+        },
+        "customizations": {
+          "contactForm": {
+            "name": "ContactForm",
+            "props": {
+              "fields": [
+                { "label": "Name", "for": "name" },
+                { "label": "Subject", "for": "subject" },
+                {
+                  "label": "Email",
+                  "for": "email",
+                  "cols": {
+                    "num": "col-6"
+                  }
+                },
+                {
+                  "label": "Phone",
+                  "for": "phone",
+                  "cols": {
+                    "num": "col-6"
+                  }
+                },
+                {
+                  "label": "Message",
+                  "for": "message",
+                  "component": "textarea"
+                }
+              ],
+              "submit": "Submit >"
+            }
+          }
+        }
+      }
     }
   }
-} 
+}
