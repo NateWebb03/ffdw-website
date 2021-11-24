@@ -9,5 +9,65 @@
     "type": "website",
     "image": "/images/page-index/open-graph.png"
   },
-  "page_content": {}
-}
+  "header": {
+    "type": "variant_1",
+    "theme": "red-purple",
+    "headingComponentName": "ContactText",
+    "image_1": "images/component-header/women-talking-with-computers.png",
+    "image_2": "images/component-header/open-laptop.png"
+  },
+  "page_content": {
+    "contact_1": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num":"col-7",
+          "push_left":"off-7"
+        },
+        "description":"We support and fund research and development, and educate people about the decentralized web, in order to preserve humanity’s most important information. Interested in joining us in this mission? Reach out.",
+        "format":"medium"
+      }
+    },
+    "learn_1": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num":"col-4"
+        },
+        "heading":"Contact",
+        "description":"Questions? Ideas? Drop us a line hello@ffweb.org ",
+        "format":"small",
+        "icon": "Phonebook"
+      },
+      "col_2": {
+        "type": "text_block",
+        "cols": {
+          "num":"col-4"
+        },
+        "heading":"Social",
+        "description":"FAQ\nTwitter\nLinkedIn\nBlog\nYouTube",
+        "format":"small",
+        "icon": "Social"
+      },
+      "col_3": {
+        "type": "text_block",
+        "cols": {
+          "num":"col-4"
+        },
+        "heading":"Careers",
+        "description":"Our team of thinkers and doers is growing. If you’re passionate about advancing technology forward, we want to hear from you.",
+        "format":"small",
+        "icon": "Box",
+        "ctas": [
+          {
+            "type": "A",
+            "theme": "red-purple",
+            "action": "nuxt-link",
+            "text": "Learn More",
+            "url": "/"
+          }
+        ]
+      }
+    }
+  }
+} 
