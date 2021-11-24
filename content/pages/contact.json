@@ -35,7 +35,7 @@
           "num":"col-4"
         },
         "heading":"Contact",
-        "description":"Questions? Ideas? Drop us a line hello@ffweb.org ",
+        "description":"Questions? Ideas? Drop us a line hello@ffweb.org",
         "format":"small",
         "icon": "Phonebook"
       },
@@ -67,6 +67,25 @@
             "url": "/"
           }
         ]
+      }
+    },
+    "reach_1": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num":"col-7"
+        },
+        "label":"Reach out",
+        "heading":"We’re working to foster and expand the decentralized web.",
+        "format":"header"
+      },
+      "col_2": {
+        "type": "image_block",
+        "cols": {
+          "num":"col-4",
+          "push_left": "off-1"
+        },
+        "src": "/images/page-contact/person-with-laptop.png"
       }
     }
   }
