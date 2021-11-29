@@ -199,6 +199,7 @@ $artifact_b_size_2: 1.25rem;
   background-color: $haiti;
   padding: 0.5rem 1.125rem 0.5rem 1.5625rem;
   color: $cararra;
+  border: 2px solid white;
 
   &:before,
   &:after {

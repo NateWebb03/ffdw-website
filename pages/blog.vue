@@ -5,8 +5,6 @@
 
     <HeaderSelector :header="header" />
 
-    <BlockBuilder />
-
     <section id="section_search">
       <div class="grid">
 
@@ -32,7 +30,7 @@
       </div>
     </section>
 
-    <BlockBuilder :sections="blogPosts" />
+    <BlockBuilder :sections="paginatedCardsBlock" />
 
   </div>
 </template>
@@ -42,6 +40,7 @@
 import { mapGetters } from 'vuex'
 // import CloneDeep from 'lodash/cloneDeep'
 
+import SettingsData from '@/content/data/settings.json'
 import BlogPageData from '@/content/pages/blog.json'
 
 import Modal from '@/components/Modal'
@@ -59,19 +58,23 @@ export default {
   },
 
   async asyncData ({ $content }) {
-    const markdownFiles = await $content('blog').without(['body']).fetch()
-    markdownFiles.sort((a, b) => { return a.updatedAt.localeCompare(b.updatedAt) })
-    return { markdownFiles }
+    const blogPosts = await $content('blog')
+      .without(['body'])
+      .sortBy('updatedAt', 'desc')
+      .fetch()
+    return { blogPosts }
   },
 
   data () {
     return {
-      tag: 'blog'
+      tag: 'blog',
+      blogPosts: []
     }
   },
 
   async fetch ({ store }) {
     await store.dispatch('global/getBaseData', 'general')
+    await store.dispatch('global/getBaseData', { key: 'settings', data: SettingsData })
     await store.dispatch('global/getBaseData', { key: 'blog', data: BlogPageData })
   },
 
@@ -98,9 +101,9 @@ export default {
     },
     posts () {
       const arr = []
-      const len = this.markdownFiles.length
+      const len = this.blogPosts.length
       for (let i = 0; i < len; i++) {
-        const post = this.markdownFiles[i]
+        const post = this.blogPosts[i]
         const card = {
           type: 'B',
           action: 'nuxt-link',
@@ -120,7 +123,7 @@ export default {
       }
       return arr
     },
-    blogPosts () {
+    paginatedCardsBlock () {
       return {
         blog_posts: {
           col_1: {

@@ -1,8 +1,10 @@
 <template>
   <div :class="[`header-selector theme__${theme} fontTheme__${fontTheme}`]">
+
     <NavBlock :block="navBlock" />
 
     <component :is="headerVariant" :header="header" />
+
   </div>
 </template>
 

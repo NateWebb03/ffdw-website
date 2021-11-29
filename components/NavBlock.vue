@@ -92,6 +92,7 @@ export default {
 
 .nav-link {
   @include fontSize_Mini;
+  @include fontWeight_Semibold;
   &:not(:last-child) {
     margin-right: 1.875rem;
   }

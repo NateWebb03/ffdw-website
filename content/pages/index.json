@@ -212,6 +212,16 @@
           }
         }
       }
+    },
+    "latest_news": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-9"
+        },
+        "label": "Latest News From FFDW",
+        "heading": "Updates from our organization and across the Web3 universe."
+      }
     }
   }
 }
