@@ -95,11 +95,10 @@
     },
     "board_2": {
       "grid": ["center"],
-      "classNames": "full",
       "col_1": {
         "type": "card_list_block",
         "cols": {
-          "num": "col"
+          "num": "col-12"
         },
         "layout": "single",
         "cards": [
