@@ -139,4 +139,12 @@ export default {
     }
   }
 }
+
+::v-deep #callout {
+  [class~="grid"],
+  [class*="grid-"],
+  [class*="grid_"] {
+    padding: 0;
+  }
+}
 </style>

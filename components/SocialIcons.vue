@@ -24,22 +24,18 @@ import { mapGetters } from 'vuex'
 
 import Button from '@/components/Button'
 
-import GithubIcon from '@/components/icons/Github'
-import RedditIcon from '@/components/icons/Reddit'
 import TwitterIcon from '@/components/icons/Twitter'
-import LinkedInIcon from '@/components/icons/LinkedIn'
 import YoutubeIcon from '@/components/icons/Youtube'
+import LinkedInIcon from '@/components/icons/LinkedIn'
 
 // ====================================================================== Export
 export default {
   name: 'SocialIcons',
 
   components: {
-    GithubIcon,
-    RedditIcon,
     TwitterIcon,
-    LinkedInIcon,
     YoutubeIcon,
+    LinkedInIcon,
     Button
   },
 
@@ -56,7 +52,7 @@ export default {
       siteContent: 'global/siteContent'
     }),
     icons () {
-      return this.forceList.length ? this.forceList : this.siteContent.general.social
+      return this.forceList.length > 0 ? this.forceList : this.siteContent.general.social
     }
   }
 }
@@ -67,13 +63,25 @@ export default {
 .social-icons {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .social-icon {
-  width: 2rem;
   &:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 2.5rem;
   }
+}
+
+.svg-twitter {
+  width: 2.9375rem;
+}
+
+.svg-youtube {
+  width: 3rem;
+}
+
+.svg-linkedin {
+  width: 2.5625rem;
 }
 
 .label {

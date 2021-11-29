@@ -187,7 +187,7 @@
       }
     },
     "callout": {
-      "grid": ["center"],
+      "grid": ["center", "noGutter"],
       "classNames": "full",
       "col_1": {
         "type": "custom",
@@ -198,7 +198,7 @@
           "careers": {
             "name": "HomeCallout",
             "props": {
-              "img_left": "/images/page-index/man-sitting-in-a-boardroom-looking-in-the-camera.jpeg",
+              "img_left": "/images/page-index/man-sitting-in-a-boardroom-looking-in-the-camera.jpg",
               "label": "Get Involved",
               "text_1": "Join the conversation and build a better Internet.",
               "text_2": "Or, sign up to hear from us"
