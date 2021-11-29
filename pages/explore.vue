@@ -3,6 +3,8 @@
 
     <Modal />
 
+    <HeaderSelector :header="header" />
+
     <BlockBuilder :sections="sections" />
 
   </div>
@@ -15,6 +17,7 @@ import { mapGetters } from 'vuex'
 import ExplorePageData from '@/content/pages/explore.json'
 
 import Modal from '@/components/Modal'
+import HeaderSelector from '@/components/HeaderSelector'
 import BlockBuilder from '@/components/BlockBuilder'
 
 // ====================================================================== Export
@@ -23,7 +26,8 @@ export default {
 
   components: {
     Modal,
-    BlockBuilder
+    BlockBuilder,
+    HeaderSelector
   },
 
   data () {
@@ -45,8 +49,14 @@ export default {
     ...mapGetters({
       siteContent: 'global/siteContent'
     }),
+    pageData () {
+      return this.siteContent[this.tag]
+    },
     sections () {
       return this.siteContent[this.tag].page_content
+    },
+    header () {
+      return this.pageData.header
     }
   }
 }
