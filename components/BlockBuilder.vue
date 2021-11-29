@@ -57,6 +57,7 @@ import AccordionBlock from '@/components/AccordionBlock'
 import CardListBlock from '@/components/CardListBlock'
 // import SocialIcons from '@/components/SocialIcons'
 // import TabbedSlider from '@/components/TabbedSlider'
+import PaginatedCards from '@/components/PaginatedCards'
 import BlockBuilder from '@/components/BlockBuilder'
 import FeaturedCareersList from '@/components/FeaturedCareersList'
 import GetInvolvedCallout from '@/components/GetInvolvedCallout'
@@ -75,6 +76,7 @@ export default {
     CardListBlock,
     // SocialIcons,
     // TabbedSlider,
+    PaginatedCards,
     BlockBuilder,
     FeaturedCareersList,
     GetInvolvedCallout,
@@ -115,6 +117,7 @@ export default {
         case 'accordion_block' : name = 'AccordionBlock'; break
         // case 'slider_block' : name = 'SliderBlock'; break
         case 'card_list_block' : name = 'CardListBlock'; break
+        case 'paginated_cards' : name = 'PaginatedCards'; break
         case 'custom' : name = block.component; break
       }
       return name
