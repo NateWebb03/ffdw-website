@@ -124,6 +124,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$artifact_b_size_1: 1.4375rem;
+$artifact_b_size_2: 1.25rem;
+
 // ///////////////////////////////////////////////////////////////////// General
 .button {
   @include leading_Small;
@@ -148,6 +151,7 @@ export default {
 // -------------------------------------------------------------------- [Type] A
 .type__A {
   @include fontSize_Tiny;
+  @include leading_Small;
   @include fontWeight_Bold;
   line-height: 1rem;
   text-transform: uppercase;
@@ -188,6 +192,31 @@ export default {
 
 // -------------------------------------------------------------------- [Type] B
 .type__B {
+  @include fontSize_Tiny;
+  @include leading_Small;
+  @include fontWeight_Bold;
+  text-transform: uppercase;
+  background-color: $haiti;
+  padding: 0.5rem 1.125rem 0.5rem 1.5625rem;
+  color: $cararra;
 
+  &:before,
+  &:after {
+    position: absolute;
+    content: "";
+    background-color: $haiti;
+    width: $artifact_b_size_1;
+  }
+
+  &:before {
+    height: $artifact_b_size_2;
+    left: -$artifact_b_size_1;
+    top: 0;
+  }
+  &:after {
+    height: $artifact_b_size_1;
+    left: 100%;
+    bottom: -$artifact_b_size_1;
+  }
 }
 </style>

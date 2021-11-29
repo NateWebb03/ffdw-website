@@ -9,6 +9,12 @@
     "type": "website",
     "image": "/images/page-index/open-graph.png"
   },
+  "header": {
+    "type": "variant_6",
+    "theme": "purple-green",
+    "headingComponentName": "HomeText",
+    "image_1": "images/component-header/woman-on-phone.png"
+  },
   "page_content": {
     "about_1": {
       "col_1": {

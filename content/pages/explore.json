@@ -9,5 +9,13 @@
     "type": "website",
     "image": "/images/page-index/open-graph.png"
   },
+  "header": {
+    "type": "variant_4",
+    "heading": "Explore",
+    "subheading": "The DWeb",
+    "image_1": "images/component-header/engineer-coding.png",
+    "fontTheme": "light",
+    "currentPage": "explore"
+  },
   "page_content": {}
 }

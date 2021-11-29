@@ -1,0 +1,20 @@
+{
+  "seo": {
+    "title": "Terms of Use - Filecoin Foundation for the Decentralized Web",
+    "description": ""
+  },
+  "og": {
+    "site_name": "Terms of Use - Filecoin Foundation for the Decentralized Web",
+    "url": "",
+    "type": "website",
+    "image": "/images/page-index/open-graph.png"
+  },
+  "header": {
+    "type": "variant_5",
+    "heading": "Magni dolores eos qui ratione voluptatem sequi nesciunt",
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.",
+    "fontTheme": "light",
+    "currentPage": "terms"
+  },
+  "page_content": {}
+}

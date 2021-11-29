@@ -14,7 +14,7 @@
 // ====================================================================== Import
 import { mapGetters } from 'vuex'
 
-import ContactPageData from '@/content/pages/contact.json'
+import TermsPageData from '@/content/pages/terms.json'
 
 import Modal from '@/components/Modal'
 import HeaderSelector from '@/components/HeaderSelector'
@@ -22,7 +22,7 @@ import BlockBuilder from '@/components/BlockBuilder'
 
 // ====================================================================== Export
 export default {
-  name: 'PageContact',
+  name: 'PageTerms',
 
   components: {
     Modal,
@@ -32,13 +32,13 @@ export default {
 
   data () {
     return {
-      tag: 'contact'
+      tag: 'terms'
     }
   },
 
   async fetch ({ store }) {
     await store.dispatch('global/getBaseData', 'general')
-    await store.dispatch('global/getBaseData', { key: 'contact', data: ContactPageData })
+    await store.dispatch('global/getBaseData', { key: 'terms', data: TermsPageData })
   },
 
   head () {

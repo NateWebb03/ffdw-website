@@ -38,38 +38,31 @@
   "navigation": [
     {
       "type": "C",
-      "theme": "light",
+      "theme": "dark",
       "action": "nuxt-link",
       "url": "/about",
-      "text": "About"
+      "text": "About FFDW"
     },
     {
       "type": "C",
-      "theme": "light",
+      "theme": "dark",
       "action": "nuxt-link",
-      "url": "/governance",
-      "text": "Governance"
+      "url": "/explore",
+      "text": "Explore"
     },
     {
       "type": "C",
-      "theme": "light",
-      "action": "nuxt-link",
-      "url": "/ecosystem",
-      "text": "Ecosystem"
-    },
-    {
-      "type": "C",
-      "theme": "light",
-      "action": "nuxt-link",
-      "url": "/grants",
-      "text": "Grants"
-    },
-    {
-      "type": "C",
-      "theme": "light",
+      "theme": "dark",
       "action": "nuxt-link",
       "url": "/get-involved",
       "text": "Get Involved"
+    },
+    {
+      "type": "C",
+      "theme": "dark",
+      "action": "nuxt-link",
+      "url": "/grants",
+      "text": "Grants"
     }
   ],
   "footer": {}
