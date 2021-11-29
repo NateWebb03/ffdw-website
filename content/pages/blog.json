@@ -9,6 +9,14 @@
     "type": "website",
     "image": "/images/page-index/open-graph.png"
   },
+  "header": {
+    "type": "variant_3",
+    "heading": "FFDW Blog",
+    "subheading": "Incididunt ut labore et dolore magna aliqua.",
+    "image_1": "images/component-header/man-sitting-with-laptop.png",
+    "fontTheme": "light",
+    "currentPage": "blog"
+  },
   "page_content": {
     "intro": {
       "col_1": {
@@ -27,17 +35,6 @@
           "push_left": "off-1"
         },
         "src": "/images/page-blog/blog-header-image.png"
-      }
-    },
-    "singular_page_more": {
-      "col_1": {
-        "type": "text_block",
-        "cols": {
-          "num": "col-9"
-        },
-        "format": "header",
-        "label": "Latest news from FFDW",
-        "heading": "Updates from our organization and across the Web3 universe."
       }
     }
   }

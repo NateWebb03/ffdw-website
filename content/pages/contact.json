@@ -9,5 +9,13 @@
     "type": "website",
     "image": "/images/page-index/open-graph.png"
   },
+  "header": {
+    "type": "variant_2",
+    "theme": "red-purple",
+    "headingComponentName": "ContactText",
+    "image_1": "images/component-header/man-sitting-with-laptop.png",
+    "image_2": "images/component-header/man-sitting-with-laptop.png",
+    "currentPage": "contact"
+  },
   "page_content": {}
-}
+} 

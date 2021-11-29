@@ -3,7 +3,9 @@
 
     <Modal />
 
-    <BlockBuilder :sections="header" />
+    <HeaderSelector :header="header" />
+
+    <BlockBuilder />
 
     <section id="section_search">
       <div class="grid">
@@ -38,12 +40,13 @@
 <script>
 // ====================================================================== Import
 import { mapGetters } from 'vuex'
-import CloneDeep from 'lodash/cloneDeep'
+// import CloneDeep from 'lodash/cloneDeep'
 
 import BlogPageData from '@/content/pages/blog.json'
 
 import Modal from '@/components/Modal'
 import BlockBuilder from '@/components/BlockBuilder'
+import HeaderSelector from '@/components/HeaderSelector'
 
 // ====================================================================== Export
 export default {
@@ -51,7 +54,8 @@ export default {
 
   components: {
     Modal,
-    BlockBuilder
+    BlockBuilder,
+    HeaderSelector
   },
 
   async asyncData ({ $content }) {
@@ -68,7 +72,6 @@ export default {
 
   async fetch ({ store }) {
     await store.dispatch('global/getBaseData', 'general')
-    await store.dispatch('global/getBaseData', 'settings')
     await store.dispatch('global/getBaseData', { key: 'blog', data: BlogPageData })
   },
 
@@ -81,10 +84,14 @@ export default {
       siteContent: 'global/siteContent',
       filterValue: 'core/filterValue'
     }),
+    pageData () {
+      return this.siteContent[this.tag]
+    },
+    sections () {
+      return this.pageData.page_content
+    },
     header () {
-      const sections = CloneDeep(this.siteContent.blog.page_content)
-      delete sections.singular_page_more
-      return sections
+      return this.pageData.header
     },
     searchString () {
       return this.filterValue ? `'${this.filterValue}'` : ''
@@ -230,5 +237,4 @@ export default {
 ::v-deep #blog_posts {
   padding-top: 2rem;
 }
-
 </style>
