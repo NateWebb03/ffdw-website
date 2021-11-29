@@ -45,7 +45,9 @@ $breakpoint_UltraLarge: 140.625rem; // 2250px
 $gradient_PurpleGreen: linear-gradient(to right, $perfume, $greenYellow);
 $gradient_GreenPurple: linear-gradient(to right, $greenYellow, $perfume);
 $gradient_RedPurple: linear-gradient(to right, $coralRed, $perfume);
+$gradient_PurpleRed: linear-gradient(to right, $perfume, $coralRed);
 $gradient_RedGreen: linear-gradient(to right, $coralRed, $greenYellow);
+$gradient_GreenRed: linear-gradient(to right, $greenYellow, $coralRed);
 
 // ////////////////////////////////////////////////////////////////////// Mixins
 // =============================================================================
@@ -97,7 +99,9 @@ $gradient_RedGreen: linear-gradient(to right, $coralRed, $greenYellow);
 @mixin gradient_Background_PurpleGreen { background: $gradient_PurpleGreen; }
 @mixin gradient_Background_GreenPurple { background: $gradient_GreenPurple; }
 @mixin gradient_Background_RedPurple { background: $gradient_RedPurple; }
+@mixin gradient_Background_PurpleRed { background: $gradient_PurpleRed; }
 @mixin gradient_Background_RedGreen { background: $gradient_RedGreen; }
+@mixin gradient_Background_GreenRed { background: $gradient_GreenRed; }
 
 // --------------------------------------------------------------------- General
 @mixin optional-at-root($sel) { @at-root #{if(not &, $sel, selector-append(&, $sel))} { @content; } }
@@ -154,6 +158,13 @@ $gradient_RedGreen: linear-gradient(to right, $coralRed, $greenYellow);
 
 @mixin everythingExceptIOS {
   @supports not (-webkit-overflow-scrolling: touch) { @content; }
+}
+
+// --------------------------------------------------------------------- Calculations
+
+// TODO: support $addGridGutterOffset
+@function calcToEdge($offset) {
+  @return calc(#{$offset} + 100vw / 2  - #{math.div($containerWidth, 2)});// offset, plus half of page width, minus half of container width
 }
 
 // --------------------------------------------------------------------- Styling

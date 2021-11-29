@@ -111,14 +111,14 @@ $letterSpacing_Large: 0.03em;
 }
 
 @mixin h1 {
-  @include fontSize_MediumLarge;
-  @include leading_MediumLarge;
+  @include fontSize_ExtraLarge;
+  @include leading_ExtraLarge;
   @include fontWeight_Semibold;
 }
 
 @mixin h2 {
-  @include fontSize_ExtraLarge;
-  @include leading_ExtraLarge;
+  @include fontSize_MediumLarge;
+  @include leading_MediumLarge;
   @include fontWeight_Semibold;
 }
 

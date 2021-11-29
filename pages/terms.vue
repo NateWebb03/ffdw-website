@@ -14,7 +14,7 @@
 // ====================================================================== Import
 import { mapGetters } from 'vuex'
 
-import ContactPageData from '@/content/pages/contact.json'
+import TermsPageData from '@/content/pages/terms.json'
 
 import Modal from '@/components/Modal'
 import HeaderSelector from '@/components/HeaderSelector'
@@ -22,7 +22,7 @@ import BlockBuilder from '@/components/BlockBuilder'
 
 // ====================================================================== Export
 export default {
-  name: 'PageContact',
+  name: 'PageTerms',
 
   components: {
     Modal,
@@ -32,13 +32,13 @@ export default {
 
   data () {
     return {
-      tag: 'contact'
+      tag: 'terms'
     }
   },
 
   async fetch ({ store }) {
     await store.dispatch('global/getBaseData', 'general')
-    await store.dispatch('global/getBaseData', { key: 'contact', data: ContactPageData })
+    await store.dispatch('global/getBaseData', { key: 'terms', data: TermsPageData })
   },
 
   head () {
@@ -64,24 +64,4 @@ export default {
 
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
-::v-deep #learn_1 .grid {
-  > :not(:first-child) {
-    padding-left: 5.1875rem;
-    padding-right: 0;
-  }
-
-  > :not(:last-child) {
-    border-right: 0.25rem solid $cararra;
-    padding-right: 7.5rem;
-  }
-}
-
-::v-deep .description {
-  @include fontSize_Small;
-}
-
-::v-deep #learn_1 .button {
-  position: absolute;
-  top: calc(100% - 0.4375rem);
-}
 </style>
