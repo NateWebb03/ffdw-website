@@ -15,22 +15,6 @@
       "action": "a",
       "target": "_blank",
       "url": "",
-      "component": "GithubIcon",
-      "label": "GitHub"
-    },
-    {
-      "type": "X",
-      "action": "a",
-      "target": "_blank",
-      "url": "",
-      "component": "RedditIcon",
-      "label": "Reddit"
-    },
-    {
-      "type": "X",
-      "action": "a",
-      "target": "_blank",
-      "url": "",
       "component": "TwitterIcon",
       "label": "Twitter"
     },
@@ -39,16 +23,16 @@
       "action": "a",
       "target": "_blank",
       "url": "",
-      "component": "LinkedInIcon",
-      "label": "LinkedIn"
+      "component": "YoutubeIcon",
+      "label": "YouTube"
     },
     {
       "type": "X",
       "action": "a",
       "target": "_blank",
       "url": "",
-      "component": "YoutubeIcon",
-      "label": "YouTube"
+      "component": "LinkedInIcon",
+      "label": "LinkedIn"
     }
   ],
   "navigation": [

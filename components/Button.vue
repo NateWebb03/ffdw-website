@@ -27,7 +27,7 @@
       {{ text }}
     </span>
 
-    <!-- <slot v-if="type === 'X'" /> -->
+    <slot v-if="type === 'X'" />
 
   </component>
 </template>
@@ -59,6 +59,7 @@ export default {
       (A) → Primary CTA, usually with gradients (ex: Accordion on Home page)
       (B) → Same as the Primary CTA except black artifacts (ex: CTA in Header of Home page)
       (B) → Secondary CTA, usually clear with a white border (ex: just above Footer on Home page)
+      (X) → No styling + slot
     */
     button: {
       type: Object,
@@ -198,6 +199,7 @@ $artifact_b_size_2: 1.25rem;
   background-color: $haiti;
   padding: 0.5rem 1.125rem 0.5rem 1.5625rem;
   color: $cararra;
+  border: 2px solid white;
 
   &:before,
   &:after {

@@ -1,24 +1,23 @@
 <template>
   <header :class="['header', type]">
-    <div class="grid-middle">
-      <div class="col-7">
-        <img :src="image_1" />
-      </div>
-      <div data-push-left="off-5" class="col-7">
-        <div class="grid-middle">
-          <component :is="headingComponentName" class="col-12" />
-          <div data-push-left="off-6" class="col-4">
-            <Button :button="buttonBlock" />
-          </div>
-        </div>
+
+    <div class="panel-left">
+      <img :src="image_1" />
+    </div>
+
+    <div class="panel-right">
+      <div class="panel-right-inner-content">
+        <component :is="headingComponentName" />
+        <Button :button="buttonBlock" />
       </div>
     </div>
+
   </header>
 </template>
 
 <script>
 // ===================================================================== Imports
-import HomeText from '@/components/icons/HomeText'
+import HomeText from '@/components/HomeText'
 import Button from '@/components/Button'
 
 // ====================================================================== Export
@@ -68,8 +67,25 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 .header {
-  padding-top: 2rem;
-  padding-bottom: 1.875rem;
+  display: flex;
+  flex-direction: row;
+  max-width: 90rem;
+  margin: 0 auto;
+  color: $haiti;
+}
+
+.panel-left {
+  width: 37%;
+  margin-bottom: -3rem;
+  img {
+    width: 100%;
+  }
+}
+
+.panel-right {
+  width: calc(100% - 37%);
+  padding-left: calc(#{math.div($containerWidth, 12)});
+  padding-right: calc((100vw - #{$containerWidth}) / 2);
 }
 
 // /////////////////////////////////////////////////////////////////// Artifacts

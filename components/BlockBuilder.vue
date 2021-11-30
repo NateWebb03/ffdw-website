@@ -11,7 +11,8 @@
           <div
             v-if="blockAllowed(blockId)"
             :key="blockId"
-            :class="[getColumnCount(block), blockId]"
+            :class="[getColumnCount(block)]"
+            :data-block-id="blockId"
             :data-push-left="getColumnPushCount(block, 'left')"
             :data-push-right="getColumnPushCount(block, 'right')">
             <div class="column-content">
@@ -22,7 +23,6 @@
                   :is="component.name"
                   v-for="(component, componentKey) in block.customizations"
                   :key="componentKey"
-                  :class="`block__${blockId}`"
                   v-bind="component.props" />
               </template>
 
@@ -30,7 +30,6 @@
               <component
                 :is="getComponentName(block)"
                 v-else-if="block.type !== 'sectional'"
-                :class="`block__${blockId}`"
                 v-bind="{ block }" />
 
               <!-- ======================= Recursive Sectional/Block imports -->

@@ -19,7 +19,7 @@
 
 <script>
 // ===================================================================== Imports
-import ContactText from '@/components/icons/ContactText'
+import ContactText from '@/components/ContactText'
 
 // ====================================================================== Export
 export default {
