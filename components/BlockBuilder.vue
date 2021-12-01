@@ -56,7 +56,7 @@ import AccordionBlock from '@/components/AccordionBlock'
 import CardListBlock from '@/components/CardListBlock'
 // import SocialIcons from '@/components/SocialIcons'
 // import TabbedSlider from '@/components/TabbedSlider'
-import PaginatedCards from '@/components/PaginatedCards'
+// import PaginatedCards from '@/components/PaginatedCards'
 import BlockBuilder from '@/components/BlockBuilder'
 // import GetInvolvedCallout from '@/components/GetInvolvedCallout'
 import HomeCallout from '@/components/HomeCallout'
@@ -75,7 +75,7 @@ export default {
     CardListBlock,
     // SocialIcons,
     // TabbedSlider,
-    PaginatedCards,
+    // PaginatedCards,
     BlockBuilder,
     // GetInvolvedCallout,
     HomeCallout,

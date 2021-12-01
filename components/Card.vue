@@ -65,10 +65,21 @@
         </div>
 
         <div class="info-wrapper">
-          <div
-            v-if="date"
-            class="date"
-            v-html="getDate(date, 'long')" />
+          <div class="metadata">
+            <span
+              v-if="date"
+              class="date"
+              v-html="getDate(date, 'long')" />
+            <template v-if="tags">
+              <span class="bar">|</span>
+              <span
+                v-for="tag in tags"
+                :key="tag"
+                class="tag">
+                {{ tag }}
+              </span>
+            </template>
+          </div>
           <div class="long-arrow-right">
             <IconLongArrowRight />
           </div>
@@ -253,13 +264,15 @@ export default {
 .card {
   &.theme__purple-green {
     &:before, &:after,
-    .background {
+    .background,
+    .tag {
       @include gradient_Background_PurpleGreen;
     }
   }
   &.theme__red-purple {
     &:before, &:after,
-    .background {
+    .background,
+    .tag {
       @include gradient_Background_RedPurple;
     }
   }
@@ -281,6 +294,8 @@ export default {
     }
     .title,
     .date,
+    .bar,
+    .tag,
     .image {
       transition: 250ms ease-in-out;
     }
@@ -338,7 +353,6 @@ export default {
   }
   .content {
     align-items: center;
-    // animation: marquee 10s linear infinite;
     &.forward {
       justify-content: flex-start;
     }
@@ -363,6 +377,11 @@ export default {
 // -------------------------------------------------------------------- [Type] B
 .card.type__B {
   &:hover {
+    &.theme__purple-green {
+      .tag {
+        @include gradient_Background_RedPurple;
+      }
+    }
     .image {
       width: 19.5rem;
     }
@@ -400,8 +419,24 @@ export default {
     @include h3;
     margin-bottom: 1.5rem;
   }
-  .date {
+  .metadata {
     @include label_2;
+  }
+  .bar {
+    margin: 0 0.5rem;
+  }
+  .tag {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    -moz-background-clip: text !important;
+    -moz-text-fill-color: transparent !important;
+    &:not(:last-child) {
+      &:after {
+        content: ',';
+        margin-left: -1px;
+        margin-right: 0.25rem;
+      }
+    }
   }
   .long-arrow-right {
     display: block;
