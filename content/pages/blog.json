@@ -13,7 +13,7 @@
     "type": "variant_3",
     "heading": "FFDW Blog",
     "subheading": "Incididunt ut labore et dolore magna aliqua.",
-    "image_1": "images/component-header/man-sitting-with-laptop.png",
+    "image_1": "/images/component-header/man-sitting-with-laptop.png",
     "fontTheme": "light",
     "currentPage": "blog"
   },

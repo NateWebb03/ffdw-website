@@ -11,9 +11,9 @@
   },
   "header": {
     "type": "variant_6",
-    "theme": "purple-green",
+    "theme": "purple-green-b",
     "headingComponentName": "HomeText",
-    "image_1": "images/component-header/woman-on-phone.png"
+    "image_1": "/images/component-header/woman-on-phone.png"
   },
   "page_content": {
     "about_1": {
@@ -71,7 +71,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-7"
+          "num": "col-6"
         },
         "format": "medium",
         "label": "Explore the Dweb",
@@ -82,7 +82,7 @@
         "type": "image_block",
         "cols": {
           "num": "col-4",
-          "push_left": "off-1"
+          "push_left": "off-2"
         },
         "src": "/images/page-index/woman-speaking-into-a-microphone.jpeg"
       }

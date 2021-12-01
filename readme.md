@@ -20,7 +20,7 @@ To build this site locally
     - Run `npm ci && npm run generate`
     - A directory `dist` is created, which contains the static site output
 - To run locally, for features like hot reload
-    - Run `npm ci && npm run dev` 
+    - Run `npm ci && npm run dev`
     - The site will be available in real time via a localhost URL
 
 ## URLs

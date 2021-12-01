@@ -58,8 +58,7 @@ import CardListBlock from '@/components/CardListBlock'
 // import TabbedSlider from '@/components/TabbedSlider'
 import PaginatedCards from '@/components/PaginatedCards'
 import BlockBuilder from '@/components/BlockBuilder'
-import FeaturedCareersList from '@/components/FeaturedCareersList'
-import GetInvolvedCallout from '@/components/GetInvolvedCallout'
+// import GetInvolvedCallout from '@/components/GetInvolvedCallout'
 import HomeCallout from '@/components/HomeCallout'
 
 // ====================================================================== Export
@@ -77,8 +76,7 @@ export default {
     // TabbedSlider,
     PaginatedCards,
     BlockBuilder,
-    FeaturedCareersList,
-    GetInvolvedCallout,
+    // GetInvolvedCallout,
     HomeCallout
   },
 
