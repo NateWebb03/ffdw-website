@@ -1,11 +1,11 @@
 <template>
   <div :class="['block text-block', `format__${format}`, `theme__${theme}`]" :data-id="dataIdAttribute">
-    
+
     <component
       :is="icon"
       v-if="!!icon"
       class="icon" />
-      
+
     <div v-if="label" class="label">
       <span
         v-if="typeof label === 'string'"
@@ -121,6 +121,7 @@ export default {
         case 'header' : size = 'h1'; break
         case 'medium' : size = 'h2'; break
         case 'small' : size = 'h3'; break
+        case 'tiny' : size = 'h4'; break
         default : size = 'h2'
       }
       return size

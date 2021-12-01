@@ -1,5 +1,5 @@
-<template>
-  <header :class="['header', type, `subTheme__${subTheme}`]">
+sub-theme__<template>
+  <header :class="['header', type, `sub-theme__${subTheme}`]">
     <div class="content grid-middle">
       <div
         data-push-left="off-1"
@@ -46,7 +46,7 @@ export default {
     },
     subTheme () {
       // 'purple-green', 'red-purple', 'red-green'
-      return this.header.subTheme || 'purple-green'
+      return this.header.sub_theme || 'purple-green'
     },
     image_1 () {
       return this.header.image_1
@@ -180,7 +180,7 @@ img {
   padding-bottom: 0;
 }
 .header {
-  &.subTheme__purple-green {
+  &.sub-theme__purple-green {
     .heading-1:before,
     .heading-2:after {
       background-color: $greenYellow;
@@ -196,7 +196,7 @@ img {
     }
   }
 
-  &.subTheme__red-purple {
+  &.sub-theme__red-purple {
     .heading-2:after {
       background-color: $perfume;
     }

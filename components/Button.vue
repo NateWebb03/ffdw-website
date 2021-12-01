@@ -336,6 +336,9 @@ $artifact_b_dimension: 1.5rem;
   &.theme__purple {
     color: $perfume;
   }
+  &.theme__red {
+    color: $coralRed;
+  }
   .text {
     margin-right: 1rem;
   }
