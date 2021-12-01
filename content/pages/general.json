@@ -37,28 +37,28 @@
   ],
   "navigation": [
     {
-      "type": "C",
+      "type": "X",
       "theme": "dark",
       "action": "nuxt-link",
       "url": "/about",
       "text": "About FFDW"
     },
     {
-      "type": "C",
+      "type": "X",
       "theme": "dark",
       "action": "nuxt-link",
       "url": "/explore",
       "text": "Explore"
     },
     {
-      "type": "C",
+      "type": "X",
       "theme": "dark",
       "action": "nuxt-link",
       "url": "/get-involved",
       "text": "Get Involved"
     },
     {
-      "type": "C",
+      "type": "X",
       "theme": "dark",
       "action": "nuxt-link",
       "url": "/grants",

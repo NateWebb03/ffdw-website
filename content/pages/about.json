@@ -9,6 +9,13 @@
     "type": "website",
     "image": "/images/page-index/open-graph.png"
   },
+  "header": {
+    "type": "variant_1",
+    "theme": "red-purple",
+    "heading": "Nurturing the growth of the decentralized web",
+    "image_1": "images/component-header/woman-on-phone.png",
+    "image_2": "images/component-header/woman-painting-black-and-white.png"
+  },
   "page_content": {
     "intro_1": {
       "col_1": {
@@ -30,6 +37,7 @@
       }
     },
     "intro_2": {
+      "grid": ["middle"],
       "col_1": {
         "type": "image_block",
         "cols": {
@@ -72,7 +80,7 @@
         },
         "format": "small",
         "heading": "Where open minds, open source, and open protocols, meet.",
-        "description": "On today’s centralized web, a handful of corporations own the majority of the global cloud data storage market. But humanity’s most important information should never be compromised, abused, or ruled by any single entity.<br />We want the web to continue to grow and flourish and we believe that the more people, teams, organizations, supporting a project, the more likely it is to succeed. FFDW sees Filecoin as a foundational technology for the broader decentralized web ecosystem and seeks to support that entire decentralized web community."
+        "description": "On today’s centralized web, a handful of corporations own the majority of the global cloud data storage market. But humanity’s most important information should never be compromised, abused, or ruled by any single entity.<br /><br />We want the web to continue to grow and flourish and we believe that the more people, teams, organizations support a project, the more likely it is to succeed. FFDW sees Filecoin as a foundational technology for the broader decentralized web ecosystem and seeks to support that entire decentralized web community."
       },
       "col_3": {
         "type": "image_block",
@@ -90,11 +98,12 @@
         },
         "format": "header",
         "label": "FFDW Board",
-        "heading": "Meet our board"
+        "heading": "Determined to bring Web3 to life, FFDW’s board brings a wealth of experience and expertise to guide our work."
       }
     },
     "board_2": {
-      "grid": ["center"],
+      "grid": ["center", "noGutter"],
+      "classNames": "full",
       "col_1": {
         "type": "card_list_block",
         "cols": {
@@ -104,27 +113,34 @@
         "cards": [
           {
             "type": "A",
-            "img": "/images/board/",
+            "theme": "red-purple",
+            "img": "/images/component-header/man-with-laptop.png",
             "title": ">> Marta Belcher",
+            "title_suffix": "General Counsel, Protocol Labs",
             "subtitle": "General Counsel, Protocol Labs"
           },
           {
             "type": "A",
-            "img": "/images/board/",
+            "theme": "red-purple",
+            "img": "/images/component-header/man-with-laptop.png",
             "title": ">> Rainey Reitman",
-            "subtitle": "General Counsel, Protocol Labs"
+            "title_suffix": "General Counsel, Protocol Labs",
+            "direction": "reverse"
           },
           {
             "type": "A",
-            "img": "/images/board/",
+            "theme": "red-purple",
+            "img": "/images/component-header/man-with-laptop.png",
             "title": ">> Brian Behlendorf",
-            "subtitle": "General Counsel, Protocol Labs"
+            "title_suffix": "General Counsel, Protocol Labs"
           },
           {
             "type": "A",
-            "img": "/images/board/",
+            "theme": "red-purple",
+            "img": "/images/component-header/man-with-laptop.png",
             "title": ">> Kristin Smith",
-            "subtitle": "General Counsel, Protocol Labs"
+            "title_suffix": "General Counsel, Protocol Labs",
+            "direction": "reverse"
           }
         ]
       }
@@ -141,8 +157,8 @@
       }
     },
     "advisors_2": {
-      "grid": ["center"],
-      "classNames": "full",
+      "grid": ["center", "noGutter"],
+      "classNames": "full no-padding",
       "col_1": {
         "type": "card_list_block",
         "cols": {
@@ -151,82 +167,74 @@
         "layout": "double",
         "cards": [
           {
-            "type": "B",
-            "img": "/images/board/",
+            "type": "A",
+            "size": "compact",
+            "theme": "red-purple",
+            "img": "/images/component-header/man-with-laptop.png",
             "title": ">> Sheila Warren",
             "subtitle": "General Counsel, Protocol Labs"
           },
           {
-            "type": "B",
-            "img": "/images/board/",
+            "type": "A",
+            "size": "compact",
+            "theme": "red-purple",
+            "img": "/images/component-header/man-with-laptop.png",
             "title": ">> Brewster Kahle",
             "subtitle": "General Counsel, Protocol Labs"
           },
           {
-            "type": "B",
-            "img": "/images/board/",
+            "type": "A",
+            "size": "compact",
+            "theme": "red-purple",
+            "direction": "reverse",
+            "img": "/images/component-header/man-with-laptop.png",
             "title": ">> Joe Lubin",
             "subtitle": "General Counsel, Protocol Labs"
           },
           {
-            "type": "B",
-            "img": "/images/board/",
+            "type": "A",
+            "size": "compact",
+            "theme": "red-purple",
+            "direction": "reverse",
+            "img": "/images/component-header/man-with-laptop.png",
             "title": ">> Wendy Hanamura",
             "subtitle": "General Counsel, Protocol Labs"
           },
           {
-            "type": "B",
-            "img": "/images/board/",
+            "type": "A",
+            "size": "compact",
+            "theme": "red-purple",
+            "img": "/images/component-header/man-with-laptop.png",
             "title": ">> Georgia Quinn",
             "subtitle": "General Counsel, Protocol Labs"
           },
           {
-            "type": "B",
-            "img": "/images/board/",
+            "type": "A",
+            "size": "compact",
+            "theme": "red-purple",
+            "img": "/images/component-header/man-with-laptop.png",
             "title": ">> Alex Feerst",
             "subtitle": "General Counsel, Protocol Labs"
           },
           {
-            "type": "B",
-            "img": "/images/board/",
+            "type": "A",
+            "size": "compact",
+            "theme": "red-purple",
+            "direction": "reverse",
+            "img": "/images/component-header/man-with-laptop.png",
             "title": ">> Sandra Ro",
             "subtitle": "General Counsel, Protocol Labs"
           },
           {
-            "type": "B",
-            "img": "/images/board/",
+            "type": "A",
+            "size": "compact",
+            "theme": "red-purple",
+            "direction": "reverse",
+            "img": "/images/component-header/man-with-laptop.png",
             "title": ">> Katie Biber",
             "subtitle": "General Counsel, Protocol Labs"
           }
         ]
-      }
-    },
-    "careers_block": {
-      "col_1": {
-        "type": "custom",
-        "cols": {
-          "num": "col"
-        },
-        "customizations": {
-          "careers": {
-            "name": "FeaturedCareersList",
-            "props": {
-              "label": "Careers",
-              "heading": "The Filecoin Foundation for the Decentralized Web is hiring for roles as we build, support, and fund projects advancing the Dweb. Check out our open roles.",
-              "img": "/images/about/two-women-on-a-laptop-and-a-tablet.jpeg",
-              "careers-list": [],
-              "ctas": [
-                {
-                  "type": "",
-                  "theme": "",
-                  "action": "nuxt-link",
-                  "text": "Get In Touch",
-                  "url": "/"
-                }
-              ]
-            }
-          }
-        }
       }
     }
   }

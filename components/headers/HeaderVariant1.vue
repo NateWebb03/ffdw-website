@@ -65,6 +65,7 @@ $artifact_square_dimension: 2.5rem;
 // ///////////////////////////////////////////////////////////////////// General
 .header {
   position: relative;
+  padding-top: 3rem;
   padding-bottom: 4rem;
 }
 

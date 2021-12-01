@@ -61,8 +61,12 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 .header-selector {
-  &.theme__purple-green {
+  position: relative;
+  &.theme__purple-green-a {
     @include gradient_Background_PurpleGreen;
+  }
+  &.theme__purple-green-b {
+    background: linear-gradient(to right, $perfume 40%, $greenYellow);
   }
   &.theme__red-purple {
     @include gradient_Background_RedPurple;

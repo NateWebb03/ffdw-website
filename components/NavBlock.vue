@@ -13,9 +13,7 @@
               v-for="(link, index) in links"
               :key="`nav-link-${index}`"
               :button="link"
-              class="nav-link">
-              {{ link.text }}
-            </Button>
+              class="nav-link" />
           </nav>
 
         </div>

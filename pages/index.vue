@@ -8,12 +8,8 @@
     <BlockBuilder :sections="sections" />
 
     <section id="featured-post-list">
-      <div class="grid">
-        <div class="col">
-          <CardListBlock :block="{ cards: featuredPosts }" />
-          <Button :button="viewAllButton" />
-        </div>
-      </div>
+      <CardListBlock :block="{ cards: featuredPosts }" />
+      <Button :button="viewAllButton" />
     </section>
 
   </div>
@@ -96,11 +92,7 @@ export default {
           title: post.title,
           date: post.date || post.updatedAt,
           tags: post.tags,
-          divider: {
-            top: true,
-            bottom: (i === len - 1)
-          },
-          gradient: 'purple-green',
+          theme: 'purple-green',
           direction: i % 2 ? 'reverse' : 'forward'
         }
         arr.push(card)
@@ -109,7 +101,7 @@ export default {
     },
     viewAllButton () {
       return {
-        type: 'B',
+        type: 'C',
         action: 'nuxt-link',
         text: 'View All',
         url: '/blog'
@@ -122,7 +114,7 @@ export default {
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
 ::v-deep #about_1 {
-  padding-top: 8rem;
+  padding-top: 12rem;
   .text-block {
     &:before,
     &:after {
@@ -218,8 +210,11 @@ export default {
 }
 
 ::v-deep #featured-post-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .button {
-    margin: 5rem 0;
+    margin-top: 3rem;
   }
 }
 </style>
