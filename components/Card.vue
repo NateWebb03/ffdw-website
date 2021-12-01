@@ -4,67 +4,81 @@
     :to="element === 'nuxt-link' ? url : undefined"
     :href="element === 'a' ? url : undefined"
     :target="target"
-    :class="['card', `type__${type}`, { 'with-image': img, 'is-link': element !== 'div' }]"
-    :data-id="dataIdAttribute">
+    :class="[`card type__${type} theme__${theme} size__${size}`, { 'with-image': img, 'is-link': element !== 'div' }]">
 
-    <div
-      v-if="divider.top"
-      :class="['top-divider', `gradient_${gradient}`]">
-    </div>
+    <!-- =============================== Only used for marquee functionality -->
+    <!-- ========================== Must be a copy of the base content block -->
+    <!-- <div v-if="type === 'B'" :class="['content', direction]">
 
-    <div
-      :class="['background', `gradient_${gradient}`]">
-    </div>
+      <img :src="img" class="image" />
 
-    <div :class="['content', direction]">
-      <div class="panel-image">
-        <div class="image-wrapper">
-          <img
-            v-if="img && imgType !== 'background_image' && imgType !== 'nuxt_link'"
-            :src="img"
-            :class="['image', `size-${imgSize}`]" />
+      <div class="panel-text">
+        <div v-if="title" class="title">
+          {{ title }}
+          <span v-if="titleSuffix" class="title-suffix">
+            {{ titleSuffix }}
+          </span>
+        </div>
+        <div class="info-wrapper">
+          <div v-if="date" class="date" v-html="getDate('small')" />
+          <div class="long-arrow-right">
+            <IconLongArrowRight />
+          </div>
         </div>
       </div>
+
+    </div> -->
+
+    <!-- =========================================================== Content -->
+    <div :class="['content', direction]">
+
+      <img :src="img" class="image" />
 
       <div class="panel-text">
 
+        <div
+          v-if="dateBefore"
+          class="date-before"
+          v-html="getDate(dateBefore, 'short')" />
+
         <div v-if="title" class="title">
           {{ title }}
-          <span v-if="additionalInfo">
-            {{ additionalInfo }}
+          <span v-if="titleSuffix" class="title-suffix">
+            {{ titleSuffix }}
           </span>
         </div>
 
-        <div class="info-wrapper">
-          <div class="info">
+        <div
+          v-if="description"
+          class="description"
+          v-html="description" />
 
-            <div
-              v-if="date"
-              class="date"
-              v-html="getDate('small')">
-            </div>
+        <div
+          v-if="ctas && Array.isArray(ctas)"
+          class="button-row">
 
-            <span v-if="tags" class="bar">|</span>
-
-            <div
-              v-if="tags"
-              class="tags-list">
-              <div
-                v-for="tag in tags"
-                :key="tag"
-                :class="['tag', `gradient_${gradient}`]">
-                {{ tag }}
-              </div>
-            </div>
-
-          </div>
+          <Button
+            v-for="(cta, index) in ctas"
+            :key="index"
+            :button="cta" />
 
         </div>
 
+        <div class="info-wrapper">
+          <div
+            v-if="date"
+            class="date"
+            v-html="getDate(date, 'long')" />
+          <div class="long-arrow-right">
+            <IconLongArrowRight />
+          </div>
+        </div>
+
       </div>
+
     </div>
 
-    <div :class="['bottom-divider', { visible: divider.bottom }, `gradient_${gradient}`]"></div>
+    <div class="background"></div>
 
   </component>
 </template>
@@ -72,13 +86,15 @@
 <script>
 // ====================================================================== Import
 import Button from '@/components/Button'
+import IconLongArrowRight from '@/components/icons/LongArrowRight'
 
 // ====================================================================== Export
 export default {
   name: 'Card',
 
   components: {
-    Button
+    Button,
+    IconLongArrowRight
   },
 
   props: {
@@ -97,6 +113,9 @@ export default {
     type () {
       return this.card.type
     },
+    size () { // 'full' or 'compact'
+      return this.card.size || 'full'
+    },
     action () {
       return this.card.action || 'div'
     },
@@ -111,7 +130,7 @@ export default {
       return tag
     },
     target () {
-      return this.card.target
+      return this.card.target || false
     },
     url () {
       return this.card.url
@@ -119,19 +138,11 @@ export default {
     img () {
       return this.card.img
     },
-    imgSize () {
-      return this.card.img_size || 'full'
-    },
-    imgType () {
-      const force = this.forceImageType
-      if (force !== 'img') { return force }
-      return this.card.img_type
-    },
-    imgBackgroundPosition () {
-      return this.card.img_background_position || 'center center'
-    },
     title () {
       return this.card.title
+    },
+    titleSuffix () {
+      return this.card.title_suffix
     },
     description () {
       return this.card.description
@@ -139,50 +150,30 @@ export default {
     date () {
       return this.card.date
     },
-    label () {
-      return this.card.label
-    },
-    dataIdAttribute () {
-      return this.card.data_id
+    dateBefore () {
+      return this.card.date_before
     },
     direction () {
       return this.card.direction || 'forward'
     },
-    gradient () {
-      return this.card.gradient
+    theme () {
+      return this.card.theme
     },
     tags () {
-      return Array.isArray(this.card.tags) ? this.card.tags : false
+      const tags = this.card.tags
+      return tags && Array.isArray(tags) ? tags : false
     },
-    additionalInfo () {
-      return this.card.additional_info
-    },
-    divider () {
-      return this.card.divider || {}
+    ctas () {
+      return this.card.ctas
     }
   },
 
   methods: {
-    getDate (format) {
-      const date = this.date
-      const start = Array.isArray(date) ? this.$moment.utc(new Date(date[0])) : this.$moment.utc(new Date(date))
-      const end = Array.isArray(date) ? this.$moment.utc(new Date(date[1])) : false
-      if (format === 'large') { // big date
-        return `${start.format('MM/DD')}<br />${start.format('YYYY')}`
-      }
-      let isPast = this.$moment.utc(new Date()).isAfter(start, 'day')
-      let pastTag = isPast ? '(Past) ' : ''
-      if (end) { // range, two dates
-        isPast = this.$moment.utc(new Date()).isAfter(end, 'day')
-        pastTag = isPast ? '(Past) ' : ''
-        if (start.year() === end.year()) { // same year
-          return `${pastTag}${start.format('MMM D')} - ${end.format('MMM D YYYY')}`
-        } else { // different years
-          return `${pastTag}${start.format('MMM D YYYY')} - ${end.format('MMM D YYYY')}`
-        }
-      } else {
-        return `${start.format('MMMM D YYYY')}`
-      }
+    getDate (date, format) {
+      const start = this.$moment.utc(new Date(date))
+      if (format === 'long') { return `${start.format('MMMM DD YYYY')}` }
+      if (format === 'short') { return `${start.format('MM/D/YYYY')}` }
+      return ''
     },
     shortenString (string, n) {
       const chars = string.split('')
@@ -200,235 +191,253 @@ export default {
 // ///////////////////////////////////////////////////////////////////// Content
 .card {
   position: relative;
+  display: block;
+  &:first-child:before,
+  &:last-child:after {
+    height: 4px;
+  }
+  &:first-child:before {
+    top: -2px;
+  }
+  &:last-child:after {
+    bottom: -2px;
+  }
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+  }
+  &:before {
+    top: 0;
+  }
+  &:after {
+    bottom: 0;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0;
+  transition: 250ms ease-in-out;
 }
 
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  position: relative;
+  z-index: 10;
   &.reverse {
     flex-direction: row-reverse;
   }
 }
 
-.image {
-  // margin-bottom: 0.5rem;
-  &.size-full {
-    width: 100%;
-  }
-  &.size-regular {
-    width: 2.5rem;
-  }
-  &.size-mini {
-    width: 1.375rem;
-  }
-  &.background-image {
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+.panel-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-// //////////////////////////////////////////////////////////////////// Dividers
-.top-divider {
-  top: 0;
-}
-
-.bottom-divider {
+.long-arrow-right {
   display: none;
-  bottom: 0;
-  &.visible {
-    display: block;
-  }
 }
 
-.top-divider,
-.background,
-.bottom-divider {
-  &.gradient_red-purple,
-  &.gradient_purple-green,
-  &.gradient_red-green {
-    position: absolute;
-    width: calc(100% + 20rem);
-    height: 4px;
-    left: -9.75rem;
-    z-index: 1;
-    &:before,
-    &:after {
-      content: '';
-      position: absolute;
-      width: inherit;
-      height: 100%;
-      left: 0;
-      top: 0;
-      z-index: 0;
-    }
-    &:before {
-      transform: translateX(calc(-100% + 0.25rem));
-    }
-    &:after {
-      transform: translateX(calc(100% - 20.25rem));
+// ////////////////////////////////////////////////////////////////////// Themes
+.card {
+  &.theme__purple-green {
+    &:before, &:after,
+    .background {
+      @include gradient_Background_PurpleGreen;
     }
   }
-
-  &.gradient_red-purple {
-    background: $gradient_RedPurple;
-    &:before {
-      background-color: $coralRed;
-    }
-    &:after {
-      background-color: $perfume;
+  &.theme__red-purple {
+    &:before, &:after,
+    .background {
+      @include gradient_Background_RedPurple;
     }
   }
-
-  &.gradient_purple-green {
-    background: $gradient_PurpleGreen;
-    &:before {
-      background-color: $perfume;
-    }
-    &:after {
-      background-color: $greenYellow;
-    }
-  }
-
-  &.gradient_red-green {
-    background: $gradient_RedGreen;
-    &:before {
-      background-color: $coralRed;
-    }
-    &:after {
-      background-color: $greenYellow;
-    }
-  }
-}
-
-.background {
-  transition: 350ms ease;
-  opacity: 0;
-  z-index: -1 !important;
 }
 
 // ////////////////////////////////////////////////////////////////// Variations
-// -------------------------------------------------------------------- [Type] A
-
-.card.type__B {
-  color: white;
-  transition: 350ms ease;
-  .title {
-    @include h3;
-    margin-bottom: 1rem;
-    @include small {
-      @include fontSize_Medium;
-    }
-  }
-  .panel-image {
-    padding: 3.375rem 0;
-    width: 33%;
-  }
-  .image-wrapper {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-right: auto;
-    width: 12.5rem;
-    height: 12.5rem;
-    overflow: hidden;
-  }
-  .reverse {
-    .image-wrapper {
-      margin-right: 0;
-      margin-left: auto;
-    }
-  }
-  .image {
-    position: absolute;
-    top: -1000px;
-    bottom: -1000px;
-    left: -1000px;
-    right: -1000px;
-    margin: auto;
-  }
-  .panel-text {
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 66%;
-    @include small {
-      width: 50%;
-    }
-  }
-  .info-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    &:after {
-      content: '';
-      height: 0;
-      width: 100%;
-      display: block;
-      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='560.5' height='25' viewBox='0 0 560.5 25'%3e%3cg id='Group_1573' data-name='Group 1573' transform='translate(-217.5 -1079.359)'%3e%3cline id='Line_17' data-name='Line 17' x2='556' transform='translate(217.5 1091.859)' fill='none' stroke='%23070517' stroke-width='5'/%3e%3crect id='Rectangle_1279' data-name='Rectangle 1279' width='5' height='5' transform='translate(758 1079.359)' fill='%23090015'/%3e%3crect id='Rectangle_1280' data-name='Rectangle 1280' width='5' height='5' transform='translate(763 1084.359)' fill='%23090015'/%3e%3crect id='Rectangle_1281' data-name='Rectangle 1281' width='5' height='5' transform='translate(763 1094.359)' fill='%23090015'/%3e%3crect id='Rectangle_1282' data-name='Rectangle 1282' width='5' height='5' transform='translate(768 1092.359)' fill='%23090015'/%3e%3crect id='Rectangle_1283' data-name='Rectangle 1283' width='5' height='5' transform='translate(773 1089.359)' fill='%23090015'/%3e%3crect id='Rectangle_1284' data-name='Rectangle 1284' width='5' height='5' transform='translate(768 1087.359)' fill='%23090015'/%3e%3crect id='Rectangle_1285' data-name='Rectangle 1285' width='5' height='5' transform='translate(758 1099.359)' fill='%23090015'/%3e%3c/g%3e%3c/svg%3e");
-      background-repeat: no-repeat;
-      background-size: auto;
-      position: relative;
-      transition: 350ms ease;
-    }
-  }
-  .info {
-    display: flex;
-    flex-direction: row;
-  }
-  .info,
-  .date,
-  .tag {
-    @include fontSize_Small;
-    @include fontWeight_Semibold;
-    line-height: 1.6;
-    letter-spacing: $letterSpacing_Large;
-  }
-  .bar {
-    margin: 0 0.5rem;
-  }
-  .tag {
-    display: inline;
-    background-size: 200%;
-    background-position: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    transition: 350ms ease;
-    &.gradient_purple-green {
-      background-image: linear-gradient(90deg, $coralRed 0%, #7d7df0 50%, $greenYellow 100%);
-    }
-    &.gradient_red-purple {
-      background-image: linear-gradient(90deg, $greenYellow 0%, $coralRed 50%, $perfume 100%);
-    }
-    &.gradient_red-green {
-      background-image: linear-gradient(90deg, $perfume 0%, $coralRed 50%, $greenYellow 100%);
-    }
-  }
-  &:hover {
-    color: $haiti;
-    cursor: pointer;
-    .background {
-      height: calc(100% + 0.125rem);
-      opacity: 1;
-    }
-    .info-wrapper {
-      &:after {
-        height: 25px;
+// --------------------------------------------------------------- [Type] Common
+.card {
+  &.type__A,
+  &.type__B {
+    &:hover {
+      color: $haiti;
+      .background {
+        opacity: 1;
       }
     }
-    .tag {
-      background-position: 0%;
+    .content {
+      padding: 1rem calc((100% - #{$containerWidth}) / 2 + 0.5rem);
     }
-  }
-  &:last-child {
-    .bottom-divider {
-      display: block;
+    .title,
+    .date,
+    .image {
+      transition: 250ms ease-in-out;
     }
   }
 }
 
+// -------------------------------------------------------------------- [Type] A
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.card.type__A {
+  &.size__compact {
+    width: 50%;
+    float: left;
+    &:nth-child(odd) {
+      &:before,
+      &:after {
+        width: 100vw;
+      }
+    }
+    &:first-child {
+      .content {
+        padding-left: calc((100vw - #{$containerWidth}) / 2 + 0.5rem);
+      }
+    }
+    &:last-child {
+      .content {
+        padding-right: calc((100vw - #{$containerWidth}) / 2 + 0.5rem);
+      }
+    }
+    .content {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      &.reverse {
+        .image {
+          margin-right: 0;
+          margin-left: 2rem;
+        }
+      }
+    }
+    .image {
+      width: 9rem;
+      height: 9rem;
+      margin-right: 2rem;
+    }
+    .title {
+      @include p1;
+    }
+  }
+  .content {
+    align-items: center;
+    // animation: marquee 10s linear infinite;
+    &.forward {
+      justify-content: flex-start;
+    }
+    &.reverse {
+      .image {
+        margin-right: 0;
+        margin-left: 3rem;
+      }
+    }
+  }
+  .image {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin-right: 3rem;
+  }
+  .title {
+    @include h1;
+    white-space: nowrap;
+  }
+}
+
+// -------------------------------------------------------------------- [Type] B
+.card.type__B {
+  &:hover {
+    .image {
+      width: 19.5rem;
+    }
+    .long-arrow-right {
+      margin-top: 2rem;
+      margin-bottom: 0;
+      opacity: 1;
+    }
+  }
+  .content {
+    &.reverse {
+      .image {
+        margin-right: 0;
+        margin-left: 3rem;
+      }
+      .long-arrow-right {
+        svg {
+          left: auto;
+          right: 0;
+          transform: none;
+        }
+      }
+    }
+  }
+  .image {
+    align-self: center;
+    width: 14.5rem;
+    margin-right: 3rem;
+  }
+  .panel-text {
+    flex: 1;
+    padding: 1rem 0;
+  }
+  .title {
+    @include h3;
+    margin-bottom: 1.5rem;
+  }
+  .date {
+    @include label_2;
+  }
+  .long-arrow-right {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 1.5625rem;
+    margin-bottom: -1.5625rem;
+    opacity: 0;
+    overflow: hidden;
+    transition: 250ms ease-in-out;
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+// -------------------------------------------------------------------- [Type] C
+.card.type__C {
+  .date-before,
+  .title,
+  .description {
+    margin-bottom: 0.5rem;
+  }
+  .date-before {
+    @include fontWeight_Extrabold;
+    font-size: 0.75rem;
+  }
+  .title {
+    @include label_2;
+  }
+  .description {
+    @include label_3;
+  }
+}
 </style>

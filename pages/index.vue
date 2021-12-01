@@ -7,6 +7,11 @@
 
     <BlockBuilder :sections="sections" />
 
+    <section id="featured-post-list">
+      <CardListBlock :block="{ cards: featuredPosts }" />
+      <Button :button="viewAllButton" />
+    </section>
+
   </div>
 </template>
 
@@ -14,11 +19,14 @@
 // ====================================================================== Import
 import { mapGetters } from 'vuex'
 
+import SettingsData from '@/content/data/settings.json'
 import IndexPageData from '@/content/pages/index.json'
 
 import Modal from '@/components/Modal'
 import HeaderSelector from '@/components/HeaderSelector'
 import BlockBuilder from '@/components/BlockBuilder'
+import CardListBlock from '@/components/CardListBlock'
+import Button from '@/components/Button'
 
 // ====================================================================== Export
 export default {
@@ -27,17 +35,30 @@ export default {
   components: {
     Modal,
     HeaderSelector,
-    BlockBuilder
+    BlockBuilder,
+    CardListBlock,
+    Button
+  },
+
+  async asyncData ({ $content }) {
+    const blogPosts = await $content('blog')
+      .without(['body'])
+      .sortBy('updatedAt', 'desc')
+      .limit(3)
+      .fetch()
+    return { blogPosts }
   },
 
   data () {
     return {
-      tag: 'index'
+      tag: 'index',
+      blogPosts: []
     }
   },
 
-  async fetch ({ store }) {
+  async fetch ({ store, $content }) {
     await store.dispatch('global/getBaseData', 'general')
+    await store.dispatch('global/getBaseData', { key: 'settings', data: SettingsData })
     await store.dispatch('global/getBaseData', { key: 'index', data: IndexPageData })
   },
 
@@ -57,6 +78,34 @@ export default {
     },
     header () {
       return this.pageData.header
+    },
+    featuredPosts () {
+      const arr = []
+      const len = this.blogPosts.length
+      for (let i = 0; i < len; i++) {
+        const post = this.blogPosts[i]
+        const card = {
+          type: 'B',
+          action: 'nuxt-link',
+          url: `/${post.slug}`,
+          img: post.image,
+          title: post.title,
+          date: post.date || post.updatedAt,
+          tags: post.tags,
+          theme: 'purple-green',
+          direction: i % 2 ? 'reverse' : 'forward'
+        }
+        arr.push(card)
+      }
+      return arr
+    },
+    viewAllButton () {
+      return {
+        type: 'C',
+        action: 'nuxt-link',
+        text: 'View All',
+        url: '/blog'
+      }
     }
   }
 }
@@ -65,6 +114,7 @@ export default {
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
 ::v-deep #about_1 {
+  padding-top: 12rem;
   .text-block {
     &:before,
     &:after {
@@ -119,8 +169,9 @@ export default {
 }
 
 ::v-deep #grants {
-  .image_left {
+  [data-block-id="image_left"] {
     .image-block {
+      background: teal;
       &:before {
         content: '';
         position: absolute;
@@ -135,7 +186,7 @@ export default {
   .text-block {
     padding: 0 2.25rem;
   }
-  .image_right {
+  [data-block-id="image_right"] {
     .image-block {
       &:before {
         content: '';
@@ -147,6 +198,23 @@ export default {
         background-color: $perfume;
       }
     }
+  }
+}
+
+::v-deep #callout {
+  [class~="grid"],
+  [class*="grid-"],
+  [class*="grid_"] {
+    padding: 0;
+  }
+}
+
+::v-deep #featured-post-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .button {
+    margin-top: 3rem;
   }
 }
 </style>

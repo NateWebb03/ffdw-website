@@ -11,7 +11,8 @@
           <div
             v-if="blockAllowed(blockId)"
             :key="blockId"
-            :class="[getColumnCount(block), blockId]"
+            :class="[getColumnCount(block)]"
+            :data-block-id="blockId"
             :data-push-left="getColumnPushCount(block, 'left')"
             :data-push-right="getColumnPushCount(block, 'right')">
             <div class="column-content">
@@ -22,7 +23,6 @@
                   :is="component.name"
                   v-for="(component, componentKey) in block.customizations"
                   :key="componentKey"
-                  :class="`block__${blockId}`"
                   v-bind="component.props" />
               </template>
 
@@ -30,7 +30,6 @@
               <component
                 :is="getComponentName(block)"
                 v-else-if="block.type !== 'sectional'"
-                :class="`block__${blockId}`"
                 v-bind="{ block }" />
 
               <!-- ======================= Recursive Sectional/Block imports -->
@@ -59,8 +58,7 @@ import CardListBlock from '@/components/CardListBlock'
 // import TabbedSlider from '@/components/TabbedSlider'
 import PaginatedCards from '@/components/PaginatedCards'
 import BlockBuilder from '@/components/BlockBuilder'
-import FeaturedCareersList from '@/components/FeaturedCareersList'
-import GetInvolvedCallout from '@/components/GetInvolvedCallout'
+// import GetInvolvedCallout from '@/components/GetInvolvedCallout'
 import HomeCallout from '@/components/HomeCallout'
 import ContactForm from '@/components/ContactForm'
 
@@ -79,8 +77,7 @@ export default {
     // TabbedSlider,
     PaginatedCards,
     BlockBuilder,
-    FeaturedCareersList,
-    GetInvolvedCallout,
+    // GetInvolvedCallout,
     HomeCallout,
     ContactForm
   },

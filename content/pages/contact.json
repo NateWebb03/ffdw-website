@@ -13,8 +13,8 @@
     "type": "variant_1",
     "theme": "red-purple",
     "headingComponentName": "ContactText",
-    "image_1": "images/component-header/women-talking-with-computers.png",
-    "image_2": "images/component-header/open-laptop.png"
+    "image_1": "/images/component-header/man-sitting-with-laptop.png",
+    "image_2": "/images/component-header/man-sitting-with-laptop.png"
   },
   "page_content": {
     "contact_1": {

@@ -13,9 +13,8 @@
     "type": "variant_4",
     "heading": "Explore",
     "subheading": "The DWeb",
-    "image_1": "images/component-header/engineer-coding.png",
-    "fontTheme": "light",
-    "currentPage": "explore"
+    "image_1": "/images/component-header/engineer-coding.png",
+    "font_theme": "light"
   },
   "page_content": {}
 }

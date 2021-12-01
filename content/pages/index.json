@@ -11,9 +11,9 @@
   },
   "header": {
     "type": "variant_6",
-    "theme": "purple-green",
+    "theme": "purple-green-b",
     "headingComponentName": "HomeText",
-    "image_1": "images/component-header/woman-on-phone.png"
+    "image_1": "/images/component-header/woman-on-phone.png"
   },
   "page_content": {
     "about_1": {
@@ -71,7 +71,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-7"
+          "num": "col-6"
         },
         "format": "medium",
         "label": "Explore the Dweb",
@@ -82,7 +82,7 @@
         "type": "image_block",
         "cols": {
           "num": "col-4",
-          "push_left": "off-1"
+          "push_left": "off-2"
         },
         "src": "/images/page-index/woman-speaking-into-a-microphone.jpeg"
       }
@@ -193,7 +193,7 @@
       }
     },
     "callout": {
-      "grid": ["center"],
+      "grid": ["center", "noGutter"],
       "classNames": "full",
       "col_1": {
         "type": "custom",
@@ -204,13 +204,23 @@
           "careers": {
             "name": "HomeCallout",
             "props": {
-              "img_left": "/images/page-index/man-sitting-in-a-boardroom-looking-in-the-camera.jpeg",
+              "img_left": "/images/page-index/man-sitting-in-a-boardroom-looking-in-the-camera.jpg",
               "label": "Get Involved",
               "text_1": "Join the conversation and build a better Internet.",
               "text_2": "Or, sign up to hear from us"
             }
           }
         }
+      }
+    },
+    "latest_news": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-9"
+        },
+        "label": "Latest News From FFDW",
+        "heading": "Updates from our organization and across the Web3 universe."
       }
     }
   }

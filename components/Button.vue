@@ -5,29 +5,27 @@
     :href="tag === 'a' ? url : undefined"
     :target="target"
     :class="['button', `type__${type}`, `action__${action}`, `theme__${theme}`, { selected }]"
+    :data-text="text"
     @click="openModal">
 
-    <!-- <div
-      v-if="type !== 'X' && icon"
-      :class="['icon', icon]">
-      <IconPlay v-if="icon === 'play'" />
-      <IconInfo v-if="icon === 'info'" />
-      <IconPlus v-if="icon === 'plus'" />
-      <IconCode v-if="icon === 'code'" />
-      <IconTicket v-if="icon === 'ticket'" />
-    </div> -->
-
-    <template v-if="type === 'A'">
-      <div class="artifact artifact-1"></div>
-      <div class="artifact artifact-2"></div>
-      <div class="artifact artifact-3"></div>
+    <template v-if="artifacts">
+      <div
+        v-for="(artifact, index) in artifacts"
+        :key="index"
+        :class="`artifact artifact-${index + 1}`" />
     </template>
 
     <span class="text">
       {{ text }}
     </span>
 
-    <!-- <slot v-if="type === 'X'" /> -->
+    <slot />
+
+    <div
+      v-if="iconAfter"
+      :class="['icon', iconAfter]">
+      <IconArrowDown v-if="iconAfter === 'arrow-down'" />
+    </div>
 
   </component>
 </template>
@@ -36,29 +34,23 @@
 // ====================================================================== Import
 import { mapActions } from 'vuex'
 
-// import IconPlay from '@/components/icons/Play'
-// import IconInfo from '@/components/icons/Info'
-// import IconPlus from '@/components/icons/Plus'
-// import IconCode from '@/components/icons/Code'
-// import IconTicket from '@/components/icons/Ticket'
+import IconArrowDown from '@/components/icons/ArrowDown'
 
 // ====================================================================== Export
 export default {
   name: 'Button',
 
-  // components: {
-  //   IconPlay,
-  //   IconInfo,
-  //   IconPlus,
-  //   IconCode,
-  //   IconTicket
-  // },
+  components: {
+    IconArrowDown
+  },
 
   props: {
     /*
-      (A) → Primary CTA, usually with gradients (ex: Accordion on Home page)
+      (A) → Primary CTA, with gradients (ex: Accordion on Home page)
       (B) → Same as the Primary CTA except black artifacts (ex: CTA in Header of Home page)
-      (B) → Secondary CTA, usually clear with a white border (ex: just above Footer on Home page)
+      (C) → Secondary CTA, usually clear with a white border (ex: just above Footer on Home page)
+      (D) → Tertiary CTA, almost no styling except font-weight and color (ex: careers list)
+      (X) → No styling + slot
     */
     button: {
       type: Object,
@@ -91,8 +83,8 @@ export default {
     target () {
       return this.button.target
     },
-    icon () {
-      return this.button.icon
+    iconAfter () {
+      return this.button.icon_after
     },
     text () {
       return this.button.text
@@ -102,6 +94,13 @@ export default {
     },
     theme () { // 'purple-green', 'red-purple', 'red-green', 'black'
       return this.button.theme || 'purple-green'
+    },
+    artifacts () {
+      const type = this.type
+      if (type === 'A') { return [1, 2, 3, 4, 5, 6] }
+      if (type === 'B') { return [1, 2, 3, 4] }
+      if (type === 'C') { return [1, 2, 3, 4] }
+      return false
     }
   },
 
@@ -144,78 +143,204 @@ $artifact_b_size_2: 1.25rem;
   display: block;
   position: relative;
   z-index: 15;
+  transition: 250ms ease-in-out;
 }
 
 // ////////////////////////////////////////////////////////////////// Variations
 // -------------------------------------------------------------------- [Type] A
 .type__A {
   @include fontSize_Tiny;
-  @include leading_Small;
   @include fontWeight_Bold;
-  line-height: 1rem;
+  line-height: 1;
   text-transform: uppercase;
+  padding: 1rem 43px 46px 2.8125rem;
   color: $haiti;
-  padding: 1rem 2.5rem 2.5rem 2.5rem;
+  transition: 250ms ease-in-out;
+  &:hover {
+    &:after,
+    .artifact-1,
+    .artifact-2,
+    .artifact-6 {
+      opacity: 1;
+    }
+    .text {
+      opacity: 0;
+    }
+  }
+  &:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 16px;
+    left: 45px;
+    color: $cararra;
+    opacity: 0;
+    z-index: 25;
+    transition: 250ms ease-in-out;
+  }
   &.theme__purple-green {
     @include gradient_Background_PurpleGreen;
+    &:after {
+      color: $greenYellow;
+    }
   }
   &.theme__red-purple {
     @include gradient_Background_RedPurple;
+    &:after {
+      color: $perfume;
+    }
   }
   &.theme__red-green {
     @include gradient_Background_RedGreen;
+    &:after {
+      color: $greenYellow;
+    }
   }
   .artifact {
     position: absolute;
     background-color: $haiti;
+    z-index: 20;
+    transition: 250ms ease-in-out;
+  }
+  .artifact-1,
+  .artifact-2,
+  .artifact-6 {
+    opacity: 0;
   }
   .artifact-1 {
-    bottom: 0;
-    left: 0;
-    width: 1.5rem;
-    height: 3rem;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 1.5rem - 8px);
+    height: calc(33.333% - 6px);
   }
   .artifact-2 {
-    bottom: 0;
-    left: 0;
-    width: calc(100% - 1.5rem);
-    height: 1.5rem;
+    top: calc(33.333% - 4px);
+    left: calc(1.5rem + 4px);
+    width: calc(100% - 3rem - 10px);
+    height: calc(33.333%);
   }
   .artifact-3 {
+    bottom: 0;
+    left: calc(1.5rem + 2px);
+    width: calc(100% - 3rem - 6px);
+    height: calc(33.333% + 2px);
+  }
+  .artifact-4 {
+    bottom: 0;
+    left: 0;
+    width: calc(1.5rem + 2px);
+    height: calc(66.666% + 2px);
+  }
+  .artifact-5 {
     top: 0;
     right: 0;
+    width: calc(1.5rem + 4px);
+    height: calc(66.666% - 2px);
+  }
+  .artifact-6 {
+    bottom: 2px;
+    right: 2px;
     width: 1.5rem;
-    height: 3rem;
+    height: 1.5rem;
   }
 }
 
-// -------------------------------------------------------------------- [Type] B
-.type__B {
+// ---------------------------------------------------------------- [Type] B & C
+$artifact_b_dimension: 1.5rem;
+
+.type__B,
+.type__C {
   @include fontSize_Tiny;
-  @include leading_Small;
   @include fontWeight_Bold;
-  text-transform: uppercase;
-  background-color: $haiti;
-  padding: 0.5rem 1.125rem 0.5rem 1.5625rem;
+  line-height: 1;
   color: $cararra;
-
-  &:before,
-  &:after {
+  text-transform: uppercase;
+  padding: 1rem 1.3125rem;
+  margin: 0 $artifact_b_dimension $artifact_b_dimension $artifact_b_dimension;
+  transition: 250ms ease-in-out;
+  &:hover {
+    color: $haiti;
+  }
+  .artifact {
     position: absolute;
-    content: "";
     background-color: $haiti;
-    width: $artifact_b_size_1;
+    border-width: 2px;
+    border-style: solid;
+    transition: 250ms ease-in-out;
   }
-
-  &:before {
-    height: $artifact_b_size_2;
-    left: -$artifact_b_size_1;
+  .artifact-1,
+  .artifact-2 {
+    height: 50%;
+  }
+  .artifact-3,
+  .artifact-4 {
+    width: $artifact_b_dimension;
+    height: $artifact_b_dimension;
+  }
+  .artifact-1 {
+    left: 2px;
     top: 0;
+    width: calc(100% - 2px);
+    border-left: 0;
+    border-bottom: 0;
   }
-  &:after {
-    height: $artifact_b_size_1;
+  .artifact-2 {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 0;
+  }
+  .artifact-3 {
+    top: 0;
+    right: calc(100% - 2px);
+    border-right: 0;
+  }
+  .artifact-4 {
+    top: 100%;
     left: 100%;
-    bottom: -$artifact_b_size_1;
+  }
+}
+
+.type__B {
+  &:hover {
+    .artifact {
+      background-color: transparent;
+    }
+  }
+  .artifact {
+    border-color: $haiti;
+  }
+}
+
+.type__C {
+  &:hover {
+    .artifact {
+      background-color: $cararra;
+    }
+  }
+  .artifact {
+    border-color: $cararra;
+  }
+}
+
+// -------------------------------------------------------------------- [Type] D
+.type__D {
+  @include fontSize_Tiny;
+  @include fontWeight_Extrabold;
+  align-items: center;
+  text-transform: uppercase;
+  &:hover {
+    .icon {
+      transform: translateX(2rem);
+    }
+  }
+  &.theme__purple {
+    color: $perfume;
+  }
+  .text {
+    margin-right: 1rem;
+  }
+  .icon {
+    transition: 250ms ease-in-out;
   }
 }
 </style>

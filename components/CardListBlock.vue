@@ -1,12 +1,11 @@
 <template>
   <div class="block card-list-block">
 
-    <div class="card-column">
-      <Card
-        v-for="(card, index) in cards"
-        :key="index"
-        :card="card" />
-    </div>
+    <Card
+      v-for="(card, index) in cards"
+      :key="index"
+      :card="card"
+      :style="{ zIndex: totalNumCards - index }" />
 
   </div>
 </template>
@@ -33,6 +32,9 @@ export default {
   computed: {
     cards () {
       return this.block.cards
+    },
+    totalNumCards () {
+      return this.cards.length
     }
   }
 }
@@ -40,8 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
-.card-column {
-  display: flex;
-  flex-direction: column;
+.card {
+  width: 100%;
 }
 </style>

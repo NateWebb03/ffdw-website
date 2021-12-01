@@ -65,12 +65,10 @@ export default {
   // /////////////////////////////////////////////////////////// Nuxt.js Modules
   // ---------------------------------------------------------------------------
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources',
     // Doc: https://github.com/agency-undone/au-nuxt-module-zero
-    'au-nuxt-module-zero',
+    '@agency-undone/au-nuxt-module-zero',
     // Doc: https://sitemap.nuxtjs.org
     // '@nuxtjs/sitemap',
     // Doc: https://content.nuxtjs.org
@@ -108,9 +106,6 @@ export default {
     timezone: true,
     defaultTimezone: 'UTC'
   },
-  // //////////////////////////////////////////////////////////// [Module] Axios
-  // -------------------------------------- See https://axios.nuxtjs.org/options
-  axios: {},
   // ///////////////////////////////////////////////////////////// [Module] Zero
   // ------------------------------------------- Dox: https://sitemap.nuxtjs.org
   sitemap: {

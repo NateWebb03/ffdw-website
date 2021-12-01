@@ -1,8 +1,10 @@
 <template>
-  <div :class="[`header-selector theme__${theme} fontTheme__${fontTheme}`]">
-    <NavBlock :block="navBlock" />
+  <div :class="[`header-selector theme__${theme} font-theme__${fontTheme}`]">
+
+    <NavBlock />
 
     <component :is="headerVariant" :header="header" />
+
   </div>
 </template>
 
@@ -41,16 +43,11 @@ export default {
     headerVariant () {
       return `HeaderVariant${this.header.type.split('_')[1]}`
     },
-    theme () {
-      // 'purple-green', 'red-purple', 'red-green'
+    theme () { // 'purple-green', 'red-purple', 'red-green'
       return this.header.theme
     },
-    fontTheme () {
-      // 'dark', 'light'
-      return this.header.fontTheme || 'dark'
-    },
-    navBlock () {
-      return { currentPage: this.header.currentPage }
+    fontTheme () { // 'dark', 'light'
+      return this.header.font_theme || 'dark'
     }
   }
 }
@@ -59,8 +56,12 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 .header-selector {
-  &.theme__purple-green {
+  position: relative;
+  &.theme__purple-green-a {
     @include gradient_Background_PurpleGreen;
+  }
+  &.theme__purple-green-b {
+    background: linear-gradient(to right, $perfume 40%, $greenYellow);
   }
   &.theme__red-purple {
     @include gradient_Background_RedPurple;
@@ -68,10 +69,10 @@ export default {
   &.theme__red-green {
     @include gradient_Background_RedGreen;
   }
-  &.fontTheme__dark {
+  &.font-theme__dark {
     color: $haiti;
   }
-  &.fontTheme__light {
+  &.font-theme__light {
     color: $cararra;
   }
 }
