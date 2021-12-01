@@ -13,7 +13,7 @@
     "type": "variant_6",
     "theme": "purple-green-b",
     "headingComponentName": "HomeText",
-    "image_1": "images/component-header/woman-on-phone.png"
+    "image_1": "/images/component-header/woman-on-phone.png"
   },
   "page_content": {
     "about_1": {

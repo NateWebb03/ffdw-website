@@ -13,8 +13,8 @@
     "type": "variant_1",
     "theme": "red-purple",
     "heading": "Nurturing the growth of the decentralized web",
-    "image_1": "images/component-header/woman-on-phone.png",
-    "image_2": "images/component-header/woman-painting-black-and-white.png"
+    "image_1": "/images/component-header/woman-on-phone.png",
+    "image_2": "/images/component-header/woman-painting-black-and-white.png"
   },
   "page_content": {
     "intro_1": {
