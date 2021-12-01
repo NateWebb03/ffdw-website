@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div v-if="!!currentPage" class="grid">
+    <!-- <div v-if="!!currentPage" class="grid">
       <div class="col-6">
 
         <div class="breadcrumbs">
@@ -29,7 +29,7 @@
         </div>
 
       </div>
-    </div>
+    </div> -->
 
   </div>
 </template>
@@ -50,13 +50,6 @@ export default {
     Button
   },
 
-  props: {
-    block: {
-      type: Object,
-      required: true
-    }
-  },
-
   computed: {
     // Simple mapped variables
     ...[].reduce((acc, val) => (acc[val] = function () { return this.block[val] }) && acc, {}),
@@ -65,9 +58,6 @@ export default {
     }),
     links () {
       return this.siteContent.general.navigation
-    },
-    currentPage () {
-      return this.block.currentPage
     }
   }
 }

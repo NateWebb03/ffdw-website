@@ -1,6 +1,11 @@
 <template>
   <div :class="['block text-block', `format__${format}`, `theme__${theme}`]" :data-id="dataIdAttribute">
-
+    
+    <component
+      :is="icon"
+      v-if="!!icon"
+      class="icon" />
+      
     <div v-if="label" class="label">
       <span
         v-if="typeof label === 'string'"
@@ -59,13 +64,19 @@
 <script>
 // ====================================================================== Import
 import Button from '@/components/Button'
+import Box from '@/components/icons/Box'
+import Social from '@/components/icons/Social'
+import Phonebook from '@/components/icons/Phonebook'
 
 // ====================================================================== Export
 export default {
   name: 'TextBlock',
 
   components: {
-    Button
+    Button,
+    Box,
+    Social,
+    Phonebook
   },
 
   props: {
@@ -126,6 +137,9 @@ export default {
     },
     dataIdAttribute () {
       return this.block.data_id
+    },
+    icon () {
+      return this.block.icon
     }
   }
 }
@@ -164,5 +178,11 @@ export default {
 
 ::v-deep .description {
   @include p3;
+}
+
+.icon {
+  color: $cararra;
+  margin-bottom: 1.75rem;
+  margin-top: 0.875rem;
 }
 </style>

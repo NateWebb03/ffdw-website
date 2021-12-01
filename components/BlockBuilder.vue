@@ -60,6 +60,7 @@ import PaginatedCards from '@/components/PaginatedCards'
 import BlockBuilder from '@/components/BlockBuilder'
 // import GetInvolvedCallout from '@/components/GetInvolvedCallout'
 import HomeCallout from '@/components/HomeCallout'
+import ContactForm from '@/components/ContactForm'
 
 // ====================================================================== Export
 export default {
@@ -77,7 +78,8 @@ export default {
     PaginatedCards,
     BlockBuilder,
     // GetInvolvedCallout,
-    HomeCallout
+    HomeCallout,
+    ContactForm
   },
 
   props: {
