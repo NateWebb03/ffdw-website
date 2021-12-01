@@ -10,24 +10,14 @@
     "image": "/images/page-index/open-graph.png"
   },
   "header": {
-    "type": "variant_1",
+    "type": "variant_2",
     "theme": "red-purple",
-    "headingComponentName": "ContactText",
+    "headingComponentName": "ContactHeaderSvg",
     "image_1": "/images/component-header/man-sitting-with-laptop.png",
-    "image_2": "/images/component-header/man-sitting-with-laptop.png"
+    "image_2": "/images/component-header/man-sitting-with-laptop.png",
+    "description": "We support and fund research and development, and educate people about the decentralized web, in order to preserve humanity’s most important information. Interested in joining us in this mission? Reach out."
   },
   "page_content": {
-    "contact_1": {
-      "col_1": {
-        "type": "text_block",
-        "cols": {
-          "num": "col-7",
-          "push_left": "off-7"
-        },
-        "description": "We support and fund research and development, and educate people about the decentralized web, in order to preserve humanity’s most important information. Interested in joining us in this mission? Reach out.",
-        "format": "medium"
-      }
-    },
     "learn_1": {
       "col_1": {
         "type": "text_block",

@@ -21,7 +21,7 @@
 
 <script>
 // ===================================================================== Imports
-import HomeText from '@/components/HomeText'
+import HomeHeaderSvg from '@/components/svgs/HomeHeader'
 import Button from '@/components/Button'
 
 // ====================================================================== Export
@@ -29,7 +29,7 @@ export default {
   name: 'HeaderVariant6',
 
   components: {
-    HomeText,
+    HomeHeaderSvg,
     Button
   },
 

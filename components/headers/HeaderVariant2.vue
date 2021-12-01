@@ -1,32 +1,41 @@
 <template>
   <header :class="['header', type]">
+
     <div class="grid-middle">
-      <component
-        :is="headingComponentName"
-        data-push-left="off-1" />
+      <div class="col" data-push-left="off-1">
+        <component :is="headingComponentName" />
+      </div>
     </div>
 
-    <div class="grid-middle images-container">
-      <div class="image-1 col-6">
-        <img :src="image_1" />
+    <section class="panel-bottom">
+      <div class="grid-middle">
+
+        <div class="col-5">
+          <img :src="image_1" class="image" />
+        </div>
+
+        <div class="col-5" data-push-left="off-2">
+          <TextBlock :block="{ description, format: 'medium' }" />
+        </div>
+
       </div>
-      <div class="image-2 col-3" data-push-left="off-6">
-        <img :src="image_2" />
-      </div>
-    </div>
+    </section>
+
   </header>
 </template>
 
 <script>
 // ===================================================================== Imports
-import ContactText from '@/components/ContactText'
+import TextBlock from '@/components/TextBlock'
+import ContactHeaderSvg from '@/components/svgs/ContactHeader'
 
 // ====================================================================== Export
 export default {
   name: 'HeaderVariant2',
 
   components: {
-    ContactText
+    TextBlock,
+    ContactHeaderSvg
   },
 
   props: {
@@ -48,6 +57,9 @@ export default {
     },
     image_2 () {
       return this.header.image_2
+    },
+    description () {
+      return this.header.description
     }
   }
 }
@@ -58,37 +70,20 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 .header {
   padding-top: 2rem;
-  padding-bottom: 1.875rem;
 }
 
-// /////////////////////////////////////////////////////////////////// Artifacts
+.panel-bottom {
+  background-color: $haiti;
+  color: $cararra;
+}
 
 // ///////////////////////////////////////////////////////////////////// Content
-img {
+.image {
   width: 100%;
+  margin-top: -10rem;
 }
 
-.images-container {
-  position: relative;
-  top: -27.65rem;
+.text-block {
+  margin-top: 7rem;
 }
-
-.image-1 {
-  position: absolute;
-  top: 18rem;
-  max-width: 26.5rem;
-}
-
-.image-2 {
-  position: absolute;
-  top: -2rem;
-  left: 16.5rem;
-  max-height: 14rem;
-  overflow: hidden;
-
-  > img {
-    height: 100%;
-  }
-}
-
 </style>

@@ -64,24 +64,37 @@ export default {
 
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
-::v-deep #learn_1 .grid {
-  > :not(:first-child) {
-    padding-left: 5.1875rem;
-    padding-right: 0;
+::v-deep #learn_1 {
+  padding-top: 10rem;
+  [class~="grid"],
+  [class*="grid-"],
+  [class*="grid_"] {
+    > :not(:first-child) {
+      padding-left: 5.1875rem;
+      padding-right: 0;
+    }
+    > :not(:last-child) {
+      border-right: 0.25rem solid $cararra;
+      padding-right: 7.5rem;
+    }
   }
-
-  > :not(:last-child) {
-    border-right: 0.25rem solid $cararra;
-    padding-right: 7.5rem;
+  .description {
+    @include fontSize_Small;
+  }
+  .button-row {
+    margin-top: 2rem;
+  }
+  .button {
+    margin-bottom: -4rem;
   }
 }
 
-::v-deep .description {
-  @include fontSize_Small;
+::v-deep #reach_1 {
+  padding-top: 2rem;
+  padding-bottom: 0;
 }
 
-::v-deep #learn_1 .button {
-  position: absolute;
-  top: calc(100% - 0.4375rem);
+::v-deep #form {
+  padding-top: 3rem;
 }
 </style>
