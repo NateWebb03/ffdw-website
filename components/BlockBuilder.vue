@@ -54,7 +54,7 @@ import VideoBlock from '@/components/VideoBlock'
 import AccordionBlock from '@/components/AccordionBlock'
 // import SliderBlock from '@/components/SliderBlock'
 import CardListBlock from '@/components/CardListBlock'
-// import SocialIcons from '@/components/SocialIcons'
+// import SocialBar from '@/components/SocialBar'
 // import TabbedSlider from '@/components/TabbedSlider'
 // import PaginatedCards from '@/components/PaginatedCards'
 import BlockBuilder from '@/components/BlockBuilder'
@@ -73,7 +73,7 @@ export default {
     AccordionBlock,
     // SliderBlock,
     CardListBlock,
-    // SocialIcons,
+    // SocialBar,
     // TabbedSlider,
     // PaginatedCards,
     BlockBuilder,

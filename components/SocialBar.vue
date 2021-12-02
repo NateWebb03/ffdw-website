@@ -1,15 +1,19 @@
 <template>
-  <div class="social-icons">
+  <div class="social-bar">
 
     <Button
       v-for="(icon, index) in icons"
       :key="index"
       :button="icon"
-      class="social-icon">
+      :class="['social-icon', { 'show-button-icons': showButtonIcons }]">
 
-      <component :is="icon.component" />
+      <component
+        :is="icon.component"
+        v-if="!hideSocialIcons" />
 
-      <div class="label">
+      <div
+        v-if="icon.label && showLabels"
+        class="label">
         {{ icon.label }}
       </div>
 
@@ -30,7 +34,7 @@ import LinkedInIcon from '@/components/icons/LinkedIn'
 
 // ====================================================================== Export
 export default {
-  name: 'SocialIcons',
+  name: 'SocialBar',
 
   components: {
     TwitterIcon,
@@ -44,6 +48,21 @@ export default {
       type: Array,
       required: false,
       default: () => []
+    },
+    hideSocialIcons: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
+    showButtonIcons: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
+    showLabels: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   },
 
@@ -60,15 +79,33 @@ export default {
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
-.social-icons {
+.social-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.social-icon {
+::v-deep .social-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   &:not(:last-child) {
     margin-right: 2.5rem;
+  }
+  &:not(.show-button-icons) {
+    .icon-after {
+      display: none;
+    }
+  }
+  .icon-after.arrow-down {
+    margin-left: 0.5rem;
+    svg {
+      width: 0.5rem;
+      transform: rotate(-90deg);
+      rect {
+        fill: $haiti;
+      }
+    }
   }
 }
 
@@ -82,9 +119,5 @@ export default {
 
 .svg-linkedin {
   width: 2.5625rem;
-}
-
-.label {
-  display: none;
 }
 </style>

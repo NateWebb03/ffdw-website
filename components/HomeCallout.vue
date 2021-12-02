@@ -8,7 +8,7 @@
     <div class="panel-right">
       <div class="panel-right-inner-content">
         <TextBlock :block="textBlock" />
-        <SocialIcons />
+        <SocialBar />
         <h2 class="subheading">
           {{ text_2 }}
         </h2>
@@ -21,7 +21,7 @@
 <script>
 // ===================================================================== Imports
 import TextBlock from '@/components/TextBlock'
-import SocialIcons from '@/components/SocialIcons'
+import SocialBar from '@/components/SocialBar'
 
 // ====================================================================== Export
 export default {
@@ -29,7 +29,7 @@ export default {
 
   components: {
     TextBlock,
-    SocialIcons
+    SocialBar
   },
 
   props: {
