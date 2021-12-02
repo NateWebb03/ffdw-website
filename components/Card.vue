@@ -89,7 +89,7 @@
 
     </div>
 
-    <div class="background"></div>
+    <div class="background" />
 
   </component>
 </template>

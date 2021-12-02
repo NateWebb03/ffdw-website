@@ -19,7 +19,7 @@
       "type": "X",
       "action": "a",
       "target": "_blank",
-      "url": "",
+      "url": "/",
       "component": "TwitterIcon",
       "label": "Twitter",
       "icon_after": "arrow-down"
@@ -28,7 +28,7 @@
       "type": "X",
       "action": "a",
       "target": "_blank",
-      "url": "",
+      "url": "/",
       "component": "YoutubeIcon",
       "label": "YouTube",
       "icon_after": "arrow-down"
@@ -37,7 +37,7 @@
       "type": "X",
       "action": "a",
       "target": "_blank",
-      "url": "",
+      "url": "/",
       "component": "LinkedInIcon",
       "label": "LinkedIn",
       "icon_after": "arrow-down"
