@@ -57,7 +57,7 @@ import ImageBlock from '@/components/ImageBlock'
 import VideoBlock from '@/components/VideoBlock'
 import SliderBlock from '@/components/SliderBlock'
 import CardListBlock from '@/components/CardListBlock'
-import SocialIcons from '@/components/SocialIcons'
+import SocialBar from '@/components/SocialBar'
 import TabbedSlider from '@/components/TabbedSlider'
 
 // ====================================================================== Export
@@ -70,7 +70,7 @@ export default {
     VideoBlock,
     SliderBlock,
     CardListBlock,
-    SocialIcons,
+    SocialBar,
     TabbedSlider
   },
 

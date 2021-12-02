@@ -14,6 +14,7 @@
   "cards": [
     {
       "type": "C",
+      "action": "nuxt-link",
       "theme": "purple",
       "title": "Program Manager, Social Impact ",
       "description": "We’re hiring a program manager to help drive collaborative initiatives with our outside project partners. We aim to be active participants with these partners, so we help them with program design, technical support, project management, external communications, as well as other efforts.",
@@ -21,6 +22,7 @@
     },
     {
       "type": "C",
+      "action": "nuxt-link",
       "theme": "purple",
       "title": "Communications Associate",
       "description": "We’re looking for a communications associate to help with developing and executing the organization’s growth and outreach strategy.",

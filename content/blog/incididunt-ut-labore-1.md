@@ -6,7 +6,7 @@ author: Filecoin Foundation
 date: November 20 2021
 image: '/images/page-blog/blog-post-placeholder-image.png'
 recommendedPosts: ['announcing-the-starling-lab', 'ffdw-and-witness', 'incididunt-ut-labore-2']
-tags: ['Tag Number One']
+tags: ['Tag Number One', 'Tag Number Two']
 ---
 ![image alt left](/images/page-blog/post-placeholder-image.png)
 

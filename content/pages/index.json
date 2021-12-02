@@ -12,7 +12,7 @@
   "header": {
     "type": "variant_6",
     "theme": "purple-green-b",
-    "headingComponentName": "HomeText",
+    "headingComponentName": "HomeHeaderSvg",
     "image_1": "/images/component-header/woman-on-phone.png"
   },
   "page_content": {

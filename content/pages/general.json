@@ -9,6 +9,11 @@
     "type": "website",
     "image": "/images/open-graph.png"
   },
+  "logo_button": {
+    "type": "X",
+    "action": "nuxt-link",
+    "url": "/"
+  },
   "social": [
     {
       "type": "X",
@@ -16,7 +21,8 @@
       "target": "_blank",
       "url": "",
       "component": "TwitterIcon",
-      "label": "Twitter"
+      "label": "Twitter",
+      "icon_after": "arrow-down"
     },
     {
       "type": "X",
@@ -24,7 +30,8 @@
       "target": "_blank",
       "url": "",
       "component": "YoutubeIcon",
-      "label": "YouTube"
+      "label": "YouTube",
+      "icon_after": "arrow-down"
     },
     {
       "type": "X",
@@ -32,38 +39,120 @@
       "target": "_blank",
       "url": "",
       "component": "LinkedInIcon",
-      "label": "LinkedIn"
+      "label": "LinkedIn",
+      "icon_after": "arrow-down"
     }
   ],
   "navigation": [
     {
-      "type": "X",
+      "type": "E",
       "theme": "dark",
       "action": "nuxt-link",
       "url": "/about",
-      "text": "About FFDW"
+      "text": "About FFDW",
+      "icon_before": "star",
+      "icon_after": "finger-up"
     },
     {
-      "type": "X",
+      "type": "E",
       "theme": "dark",
       "action": "nuxt-link",
       "url": "/explore",
-      "text": "Explore"
+      "text": "Explore",
+      "icon_before": "star",
+      "icon_after": "finger-up"
     },
     {
-      "type": "X",
+      "type": "E",
       "theme": "dark",
       "action": "nuxt-link",
       "url": "/get-involved",
-      "text": "Get Involved"
+      "text": "Get Involved",
+      "icon_before": "star",
+      "icon_after": "finger-up"
     },
     {
-      "type": "X",
+      "type": "E",
       "theme": "dark",
       "action": "nuxt-link",
       "url": "/grants",
-      "text": "Grants"
+      "text": "Grants",
+      "icon_before": "star",
+      "icon_after": "finger-up"
     }
   ],
-  "footer": {}
+  "footer": {
+    "links_primary": [
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/explore",
+        "text": "Explore the DWeb",
+        "icon_before": "finger-up",
+        "orientation": "horizontal"
+      },
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/about",
+        "text": "About FFDW",
+        "icon_before": "finger-up",
+        "orientation": "horizontal"
+      },
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/get-involved",
+        "text": "Get Involved",
+        "icon_before": "finger-up",
+        "orientation": "horizontal"
+      },
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/blog",
+        "text": "Blog",
+        "icon_before": "finger-up",
+        "orientation": "horizontal"
+      },
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/grants",
+        "text": "Grants",
+        "icon_before": "finger-up",
+        "orientation": "horizontal"
+      },
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/contact",
+        "text": "Contact Us",
+        "icon_before": "finger-up",
+        "orientation": "horizontal"
+      }
+    ],
+    "links_secondary": [
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/privacy",
+        "text": "Privacy Policy"
+      },
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/terms",
+        "text": "Terms of Use"
+      }
+    ]
+  }
 }

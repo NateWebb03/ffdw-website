@@ -5,7 +5,7 @@
 
     <HeaderSelector :header="header" />
 
-    <section id="section_search">
+    <section id="section-search">
       <div class="grid">
 
         <div class="col-6_sm-5">
@@ -30,7 +30,9 @@
       </div>
     </section>
 
-    <BlockBuilder :sections="paginatedCardsBlock" />
+    <section id="post-list">
+      <PaginatedCards :block="paginatedCardsBlock" />
+    </section>
 
   </div>
 </template>
@@ -38,13 +40,12 @@
 <script>
 // ====================================================================== Import
 import { mapGetters } from 'vuex'
-// import CloneDeep from 'lodash/cloneDeep'
 
 import SettingsData from '@/content/data/settings.json'
 import BlogPageData from '@/content/pages/blog.json'
 
 import Modal from '@/components/Modal'
-import BlockBuilder from '@/components/BlockBuilder'
+import PaginatedCards from '@/components/PaginatedCards'
 import HeaderSelector from '@/components/HeaderSelector'
 
 // ====================================================================== Export
@@ -53,7 +54,7 @@ export default {
 
   components: {
     Modal,
-    BlockBuilder,
+    PaginatedCards,
     HeaderSelector
   },
 
@@ -112,11 +113,7 @@ export default {
           title: post.title,
           date: post.date || post.updatedAt,
           tags: post.tags,
-          divider: {
-            top: true,
-            bottom: (i === len - 1)
-          },
-          gradient: 'purple-green',
+          theme: 'purple-green',
           direction: i % 2 ? 'reverse' : 'forward'
         }
         arr.push(card)
@@ -125,16 +122,8 @@ export default {
     },
     paginatedCardsBlock () {
       return {
-        blog_posts: {
-          col_1: {
-            type: 'paginated_cards',
-            cols: {
-              num: 'col-12'
-            },
-            cards: this.posts,
-            displayControls: true
-          }
-        }
+        cards: this.posts,
+        displayControls: true
       }
     }
   }
@@ -162,10 +151,14 @@ export default {
   }
 }
 
+#section-search {
+  margin-top: 7.5rem;
+}
+
 .search-query {
-  color: $cararra;
   @include fontWeight_Semibold;
   @include fontSize_Medium;
+  color: $cararra;
   line-height: 1.6;
   margin-top: 1rem;
 }
@@ -180,6 +173,7 @@ export default {
   position: relative;
   margin-left: auto;
   margin-right: 0 !important;
+  margin-bottom: 2rem;
   transition: 250ms ease;
   &.focused {
     width: 100%;
@@ -235,9 +229,5 @@ export default {
   background-color: $haiti;
   width: 100%;
   height: 100%;
-}
-
-::v-deep #blog_posts {
-  padding-top: 2rem;
 }
 </style>

@@ -129,6 +129,12 @@ $letterSpacing_Large: 0.03em;
   @include fontWeight_Semibold;
 }
 
+@mixin h4 {
+  @include fontSize_Medium;
+  @include leading_Medium;
+  @include fontWeight_Semibold;
+}
+
 @mixin p1 {
   @include fontSize_Medium;
   @include leading_Medium;

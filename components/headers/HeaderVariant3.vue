@@ -1,15 +1,17 @@
 <template>
   <header :class="['header', type]">
-    <div class="grid-middle">
-      <TextBlock
-        :block="textBlock"
-        class="col-6" />
-      <div data-push-left="off-2" class="image-1-container col-4">
-        <img :src="image_1" />
+    <div class="grid">
+
+      <div class="col">
+        <TextBlock :block="textBlock" />
       </div>
-      <div class="col-4">
-        <div class="divider" />
+
+      <div class="col-4" data-push-left="off-2">
+        <div class="panel-right">
+          <img :src="image_1" />
+        </div>
       </div>
+
     </div>
   </header>
 </template>
@@ -53,34 +55,29 @@ export default {
 
 <style lang="scss" scoped>
 $artifact_square_dimension: 2.5rem;
+$offset: calc(7rem + 35px); // margin-bottom + line-height from .text-block label
 
 // ///////////////////////////////////////////////////////////////////// General
 .header {
   padding-top: 3rem;
 }
 
-// /////////////////////////////////////////////////////////////////// Artifacts
-.image-1-container {
+.panel-right {
   position: relative;
-
+  padding-top: $offset;
   &:after {
+    content: '';
     position: absolute;
+    bottom: calc(100% - #{$offset});
+    left: 100%;
     height: $artifact_square_dimension;
     width: $artifact_square_dimension;
     background-color: $greenYellow;
-    content: "";
-  }
-  &:after {
-    top: -#{$artifact_square_dimension};
-    left: calc(100% - 0.5rem); // far-right, -0.5rem for padding
   }
 }
+
 // ///////////////////////////////////////////////////////////////////// Content
 img {
   width: 100%;
-}
-
-.divider {
-  border-bottom: 0.3125rem solid $cararra;
 }
 </style>

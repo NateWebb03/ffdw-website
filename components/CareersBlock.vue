@@ -140,7 +140,7 @@ export default {
   &:not(:last-child) {
     margin-bottom: 2rem;
   }
-  .icon.arrow-down {
+  .icon-after.arrow-down {
     svg {
       width: 0.75rem;
       transform: rotate(-90deg);

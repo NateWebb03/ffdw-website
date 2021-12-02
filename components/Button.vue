@@ -4,7 +4,7 @@
     :to="tag === 'nuxt-link' ? url : undefined"
     :href="tag === 'a' ? url : undefined"
     :target="target"
-    :class="['button', `type__${type}`, `action__${action}`, `theme__${theme}`, { selected }]"
+    :class="[`button type__${type} action__${action} theme__${theme} orientation__${orientation}`]"
     :data-text="text"
     @click="openModal">
 
@@ -15,7 +15,14 @@
         :class="`artifact artifact-${index + 1}`" />
     </template>
 
-    <span class="text">
+    <div
+      v-if="iconBefore"
+      :class="['icon-before', iconBefore]">
+      <IconFingerUp v-if="iconBefore === 'finger-up'" />
+      <IconStar v-if="iconBefore === 'star'" />
+    </div>
+
+    <span v-if="text" class="text">
       {{ text }}
     </span>
 
@@ -23,8 +30,9 @@
 
     <div
       v-if="iconAfter"
-      :class="['icon', iconAfter]">
+      :class="['icon-after', iconAfter]">
       <IconArrowDown v-if="iconAfter === 'arrow-down'" />
+      <IconFingerUp v-if="iconAfter === 'finger-up'" />
     </div>
 
   </component>
@@ -35,13 +43,17 @@
 import { mapActions } from 'vuex'
 
 import IconArrowDown from '@/components/icons/ArrowDown'
+import IconFingerUp from '@/components/icons/IconFingerUp'
+import IconStar from '@/components/icons/Star'
 
 // ====================================================================== Export
 export default {
   name: 'Button',
 
   components: {
-    IconArrowDown
+    IconArrowDown,
+    IconFingerUp,
+    IconStar
   },
 
   props: {
@@ -50,16 +62,12 @@ export default {
       (B) → Same as the Primary CTA except black artifacts (ex: CTA in Header of Home page)
       (C) → Secondary CTA, usually clear with a white border (ex: just above Footer on Home page)
       (D) → Tertiary CTA, almost no styling except font-weight and color (ex: careers list)
+      (E) → Navigation (Nav + Footer)
       (X) → No styling + slot
     */
     button: {
       type: Object,
       required: true
-    },
-    selected: {
-      type: Boolean,
-      required: false,
-      default: false
     }
   },
 
@@ -82,6 +90,12 @@ export default {
     },
     target () {
       return this.button.target
+    },
+    orientation () {
+      return this.button.orientation || 'vertical'
+    },
+    iconBefore () {
+      return this.button.icon_before
     },
     iconAfter () {
       return this.button.icon_after
@@ -131,19 +145,22 @@ $artifact_b_size_2: 1.25rem;
   display: inline-flex;
   flex-direction: row;
   position: relative;
-}
-
-.icon {
-  svg {
-    display: block;
-  }
+  transition: 250ms ease-in-out;
 }
 
 .text {
   display: block;
   position: relative;
   z-index: 15;
+}
+
+.icon-before,
+.icon-after {
+  pointer-events: none;
   transition: 250ms ease-in-out;
+  svg {
+    display: block;
+  }
 }
 
 // ////////////////////////////////////////////////////////////////// Variations
@@ -155,7 +172,6 @@ $artifact_b_size_2: 1.25rem;
   text-transform: uppercase;
   padding: 1rem 43px 46px 2.8125rem;
   color: $haiti;
-  transition: 250ms ease-in-out;
   &:hover {
     &:after,
     .artifact-1,
@@ -256,7 +272,6 @@ $artifact_b_dimension: 1.5rem;
   text-transform: uppercase;
   padding: 1rem 1.3125rem;
   margin: 0 $artifact_b_dimension $artifact_b_dimension $artifact_b_dimension;
-  transition: 250ms ease-in-out;
   &:hover {
     color: $haiti;
   }
@@ -329,18 +344,34 @@ $artifact_b_dimension: 1.5rem;
   align-items: center;
   text-transform: uppercase;
   &:hover {
-    .icon {
+    .icon-after {
       transform: translateX(2rem);
     }
   }
   &.theme__purple {
     color: $perfume;
   }
+  &.theme__red {
+    color: $coralRed;
+  }
   .text {
     margin-right: 1rem;
   }
-  .icon {
-    transition: 250ms ease-in-out;
+}
+
+// -------------------------------------------------------------------- [Type] E
+.type__E {
+  @include fontSize_Tiny;
+  @include fontWeight_Semibold;
+  @include leading_Regular;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  &.orientation__horizontal {
+    flex-direction: row;
+  }
+  .icon-before {
+    position: relative;
   }
 }
 </style>

@@ -3,21 +3,21 @@
 
     <nuxt />
 
-    <!-- <SiteFooter /> -->
+    <SiteFooter />
 
   </div>
 </template>
 
 <script>
 // ===================================================================== Imports
-// import SiteFooter from '@/components/SiteFooter'
+import SiteFooter from '@/components/SiteFooter'
 
 // ====================================================================== Export
 export default {
   name: 'LayoutDefault',
 
   components: {
-    // SiteFooter
+    SiteFooter
   },
 
   mounted () {

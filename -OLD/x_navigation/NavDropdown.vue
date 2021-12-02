@@ -76,7 +76,7 @@
           <div class="panel-right-title">
             Community Links
           </div>
-          <SocialIcons />
+          <SocialBar />
         </div>
       </div>
 
@@ -89,7 +89,7 @@
 // ===================================================================== Imports
 import Throttle from 'lodash/throttle'
 
-import SocialIcons from '@/components/SocialIcons'
+import SocialBar from '@/components/SocialBar'
 import Button from '@/components/Button'
 
 // =================================================================== Functions
@@ -117,7 +117,7 @@ export default {
   name: 'NavDropdown',
 
   components: {
-    SocialIcons,
+    SocialBar,
     Button
   },
 
