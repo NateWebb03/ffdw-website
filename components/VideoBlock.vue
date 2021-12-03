@@ -9,6 +9,23 @@
       <img :src="preview_image" class="preview-image" />
     </div>
 
+    <div v-if="date" class="metadata">
+      <span class="date" v-html="getDate(date)" />
+      <template v-if="tags">
+        <span class="bar">|</span>
+        <span
+          v-for="tag in tags"
+          :key="tag"
+          class="tag">
+          {{ tag }}
+        </span>
+      </template>
+    </div>
+
+    <div v-if="title" class="title">
+      {{ title }}
+    </div>
+
     <Button
       v-if="subtext"
       :button="subtext"
@@ -52,6 +69,16 @@ export default {
     },
     subtext () {
       return this.block.subtext
+    },
+    date () {
+      return this.block.date
+    },
+    tags () {
+      const tags = this.block.tags
+      return tags && Array.isArray(tags) ? tags : false
+    },
+    title () {
+      return this.block.title
     }
   },
 
@@ -64,6 +91,10 @@ export default {
         action: 'video',
         url: this.url
       })
+    },
+    getDate (date) {
+      const start = this.$moment.utc(new Date(date))
+      return `${start.format('MMMM DD YYYY')}`
     }
   }
 }
@@ -79,23 +110,6 @@ export default {
       transition: 250ms ease-in;
       transform: scale(1.1);
     }
-  }
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    right: 100%;
-    width: 2.5rem;
-  }
-  &:before {
-    top: 30%;
-    height: 2.5rem;
-    background-color: $greenYellow;
-  }
-  &:after {
-    bottom: -5rem;
-    height: calc(50%);
-    background-color: $perfume;
   }
 }
 
@@ -139,9 +153,22 @@ export default {
   z-index: 5;
 }
 
-// ///////////////////////////////////////////////////////////////////// Subtext
+// ///////////////////////////////////////////////////////////////////// Content
 .subtext {
   @include label_3;
   padding: 0.5rem 0 0 0.5rem;
+}
+
+.metadata {
+  @include label_2;
+  margin-top: 1rem;
+  .bar {
+    margin: 0 0.25rem;
+  }
+}
+
+.title {
+  @include p1;
+  margin-top: 1rem;
 }
 </style>

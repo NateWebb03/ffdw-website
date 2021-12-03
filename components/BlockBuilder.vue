@@ -60,6 +60,7 @@ import CardListBlock from '@/components/CardListBlock'
 import BlockBuilder from '@/components/BlockBuilder'
 // import GetInvolvedCallout from '@/components/GetInvolvedCallout'
 import HomeCallout from '@/components/HomeCallout'
+import ExploreCallout from '@/components/ExploreCallout'
 import ContactForm from '@/components/ContactForm'
 
 // ====================================================================== Export
@@ -79,6 +80,7 @@ export default {
     BlockBuilder,
     // GetInvolvedCallout,
     HomeCallout,
+    ExploreCallout,
     ContactForm
   },
 

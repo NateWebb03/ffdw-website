@@ -194,7 +194,7 @@
     },
     "callout": {
       "grid": ["center", "noGutter"],
-      "classNames": "full",
+      "classNames": "full no-padding",
       "col_1": {
         "type": "custom",
         "cols": {
