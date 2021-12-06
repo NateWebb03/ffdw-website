@@ -41,6 +41,10 @@
           class="date-before"
           v-html="getDate(dateBefore, 'short')" />
 
+        <div v-if="label" class="label">
+          {{ label }}
+        </div>
+
         <div v-if="title" class="title">
           {{ title }}
           <span v-if="titleSuffix" class="title-suffix">
@@ -148,6 +152,9 @@ export default {
     },
     img () {
       return this.card.img
+    },
+    label () {
+      return this.card.label
     },
     title () {
       return this.card.title
@@ -274,6 +281,13 @@ export default {
     .background,
     .tag {
       @include gradient_Background_RedPurple;
+    }
+  }
+  &.theme__red-green {
+    &:before, &:after,
+    .background,
+    .tag {
+      @include gradient_Background_RedGreen;
     }
   }
 }
@@ -467,6 +481,15 @@ export default {
   .date-before {
     @include fontWeight_Extrabold;
     font-size: 0.75rem;
+  }
+  .label {
+    @include label_3;
+    @include fontWeight_Semibold;
+    align-self: flex-start;
+    border: 2px solid $cararra;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
   }
   .title {
     @include label_2;

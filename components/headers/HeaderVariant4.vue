@@ -213,7 +213,7 @@ img {
     }
   }
 
-  &.subTheme__red-green {
+  &.sub-theme__red-green {
     .heading-2:after {
       background-color: $greenYellow;
     }

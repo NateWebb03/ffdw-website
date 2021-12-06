@@ -354,6 +354,9 @@ $artifact_b_dimension: 1.5rem;
   &.theme__red {
     color: $coralRed;
   }
+  &.theme__green {
+    color: $greenYellow;
+  }
   .text {
     margin-right: 1rem;
   }

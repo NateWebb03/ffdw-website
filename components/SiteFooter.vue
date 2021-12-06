@@ -114,6 +114,7 @@ $iconFingerDimension: 1.5rem;
   position: relative;
   color: $haiti;
   padding-top: 2.5rem;
+  margin-top: 5rem;
 }
 
 .panel-top,

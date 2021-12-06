@@ -7,6 +7,11 @@
 
     <BlockBuilder :sections="sections" />
 
+    <section id="featured-post-list">
+      <CardListBlock :block="{ cards: featuredPosts }" />
+      <Button :button="viewAllButton" />
+    </section>
+
   </div>
 </template>
 
@@ -14,11 +19,14 @@
 // ====================================================================== Import
 import { mapGetters } from 'vuex'
 
+import SettingsData from '@/content/data/settings.json'
 import ExplorePageData from '@/content/pages/explore.json'
 
 import Modal from '@/components/Modal'
 import HeaderSelector from '@/components/HeaderSelector'
 import BlockBuilder from '@/components/BlockBuilder'
+import CardListBlock from '@/components/CardListBlock'
+import Button from '@/components/Button'
 
 // ====================================================================== Export
 export default {
@@ -27,17 +35,30 @@ export default {
   components: {
     Modal,
     BlockBuilder,
-    HeaderSelector
+    HeaderSelector,
+    CardListBlock,
+    Button
+  },
+
+  async asyncData ({ $content }) {
+    const blogPosts = await $content('blog')
+      .without(['body'])
+      .sortBy('updatedAt', 'desc')
+      .limit(3)
+      .fetch()
+    return { blogPosts }
   },
 
   data () {
     return {
-      tag: 'explore'
+      tag: 'explore',
+      blogPosts: []
     }
   },
 
   async fetch ({ store }) {
     await store.dispatch('global/getBaseData', 'general')
+    await store.dispatch('global/getBaseData', { key: 'settings', data: SettingsData })
     await store.dispatch('global/getBaseData', { key: 'explore', data: ExplorePageData })
   },
 
@@ -57,11 +78,250 @@ export default {
     },
     header () {
       return this.pageData.header
+    },
+    featuredPosts () {
+      const arr = []
+      const len = this.blogPosts.length
+      for (let i = 0; i < len; i++) {
+        const post = this.blogPosts[i]
+        const card = {
+          type: 'B',
+          action: 'nuxt-link',
+          url: `/${post.slug}`,
+          img: post.image,
+          title: post.title,
+          date: post.date || post.updatedAt,
+          tags: post.tags,
+          theme: 'red-green',
+          direction: i % 2 ? 'reverse' : 'forward'
+        }
+        arr.push(card)
+      }
+      return arr
+    },
+    viewAllButton () {
+      return {
+        type: 'C',
+        action: 'nuxt-link',
+        text: 'View All',
+        url: '/blog'
+      }
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+$gutter: calc((100% - #{$containerWidth}) / 2);
+
 // /////////////////////////////////////////////////////////////////// Specifics
+::v-deep #learn_1 {
+  padding-bottom: 0;
+}
+
+::v-deep #learn_2 {
+  padding-bottom: 0;
+  [data-block-id="image_left"] {
+    .image-block {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 2.5rem;
+        height: calc(50% + 3rem);
+        top: -3rem;
+        right: 100%;
+        background-color: $greenYellow;
+      }
+    }
+  }
+  .text-block {
+    padding: 0 2.25rem;
+  }
+  [data-block-id="image_right"] {
+    .image-block {
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        width: 2.5rem;
+      }
+      &:before {
+        height: calc(20% + 4rem);
+        bottom: -4rem;
+        left: 100%;
+        background-color: $coralRed;
+      }
+      &:after {
+        height: 2.5rem;
+        bottom: 0;
+        right: 0;
+        background-color: $haiti;
+      }
+    }
+  }
+}
+
+::v-deep #learn_3 {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+::v-deep #videos_2 {
+  .card-list-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 100%;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: $greenYellow;
+      z-index: 10;
+    }
+  }
+  .video-block {
+    position: relative;
+    margin-bottom: 5.625rem;
+    width: calc(50% - 0.5rem);
+    &:after {
+      content: '';
+      position: absolute;
+      top: calc(100% + 1rem);
+      left: 0;
+      width: 10rem;
+      height: 5px;
+      background-color: $cararra;
+    }
+    &:nth-child(odd) {
+      margin-right: 1rem;
+    }
+    &:nth-child(4n+1),
+    &:nth-child(4n+2),
+    &:nth-child(4n+3) {
+      .preview-container:before {
+        opacity: 1;
+      }
+    }
+    &:nth-child(4n+1) {
+      .preview-container:before {
+        top: 0;
+        left: 0;
+      }
+    }
+    &:nth-child(4n+2) {
+      .preview-container:before {
+        bottom: 0;
+        right: 0;
+      }
+    }
+    &:nth-child(4n+3) {
+      .preview-container:before {
+        top: 0;
+        right: 0;
+      }
+    }
+    &:nth-child(even):last-child {
+      .preview-container {
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 100%;
+          width: 2.5rem;
+          height: 2.5rem;
+          background-color: $coralRed;
+        }
+      }
+    }
+    .preview-container {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: $haiti;
+        opacity: 0;
+        z-index: 10;
+      }
+    }
+  }
+}
+
+::v-deep #callout {
+  padding-bottom: 0;
+}
+
+::v-deep #tutorials_1 {
+  padding-top: 0;
+  .text-block {
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2.5rem;
+    }
+    &:before {
+      left: calc(100% + 5rem);
+      bottom: 2.5rem;
+      width: 2.5rem;
+      background-color: $coralRed;
+    }
+    &:after {
+      left: calc(100% + 5rem + 2.5rem);
+      bottom: 0;
+      width: 25rem;
+      background-color: $greenYellow;
+    }
+  }
+}
+
+::v-deep #tutorials_2 {
+  .card-list-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    margin-bottom: 5rem;
+    width: calc(50% - #{math.div($containerWidth, 12)});
+    &:nth-child(odd) {
+      margin-right: math.div($containerWidth, 6);
+    }
+    .icon-after.arrow-down {
+      svg {
+        width: 0.75rem;
+        transform: rotate(-90deg);
+        rect {
+          fill: $greenYellow;
+        }
+      }
+    }
+  }
+}
+
+::v-deep #latest_news {
+  position: relative;
+  &:before {
+    @include gradient_Background_RedGreen;
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: calc(50% - #{math.div($containerWidth, 2)} - #{$gutter});
+    width: $gutter;
+    height: 7rem;
+  }
+}
+
+::v-deep #featured-post-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .button {
+    margin-top: 3rem;
+  }
+}
 </style>

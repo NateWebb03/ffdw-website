@@ -171,7 +171,6 @@ export default {
 ::v-deep #grants {
   [data-block-id="image_left"] {
     .image-block {
-      background: teal;
       &:before {
         content: '';
         position: absolute;
@@ -188,24 +187,49 @@ export default {
   }
   [data-block-id="image_right"] {
     .image-block {
-      &:before {
+      &:before,
+      &:after {
         content: '';
         position: absolute;
         width: 2.5rem;
+      }
+      &:before {
         height: calc(20% + 4rem);
         bottom: -4rem;
         left: 100%;
         background-color: $perfume;
       }
+      &:after {
+        height: 2.5rem;
+        bottom: 0;
+        right: 0;
+        background-color: $haiti;
+      }
     }
   }
 }
 
-::v-deep #callout {
-  [class~="grid"],
-  [class*="grid-"],
-  [class*="grid_"] {
-    padding: 0;
+::v-deep #spotlight {
+  .video-block {
+    .preview-container {
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        right: 100%;
+        width: 2.5rem;
+      }
+      &:before {
+        top: 30%;
+        height: 2.5rem;
+        background-color: $greenYellow;
+      }
+      &:after {
+        bottom: -5rem;
+        height: calc(50%);
+        background-color: $perfume;
+      }
+    }
   }
 }
 
