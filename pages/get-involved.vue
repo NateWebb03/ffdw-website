@@ -3,7 +3,11 @@
 
     <Modal />
 
+    <HeaderSelector :header="header" />
+
     <BlockBuilder :sections="sections" />
+
+    <CareersBlock theme="red-green" />
 
   </div>
 </template>
@@ -13,9 +17,12 @@
 import { mapGetters } from 'vuex'
 
 import GetInvolvedPageData from '@/content/pages/get-involved.json'
+import CareersData from '@/content/data/careers.json'
 
 import Modal from '@/components/Modal'
+import HeaderSelector from '@/components/HeaderSelector'
 import BlockBuilder from '@/components/BlockBuilder'
+import CareersBlock from '@/components/CareersBlock'
 
 // ====================================================================== Export
 export default {
@@ -23,7 +30,9 @@ export default {
 
   components: {
     Modal,
-    BlockBuilder
+    HeaderSelector,
+    BlockBuilder,
+    CareersBlock
   },
 
   data () {
@@ -35,6 +44,7 @@ export default {
   async fetch ({ store }) {
     await store.dispatch('global/getBaseData', 'general')
     await store.dispatch('global/getBaseData', { key: 'get-involved', data: GetInvolvedPageData })
+    await store.dispatch('global/getBaseData', { key: 'careers_data', data: CareersData })
   },
 
   head () {
@@ -45,8 +55,14 @@ export default {
     ...mapGetters({
       siteContent: 'global/siteContent'
     }),
+    pageData () {
+      return this.siteContent[this.tag]
+    },
     sections () {
-      return this.siteContent[this.tag].page_content
+      return this.pageData.page_content
+    },
+    header () {
+      return this.pageData.header
     }
   }
 }
@@ -54,4 +70,53 @@ export default {
 
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
+::v-deep #intro_1 {
+  padding-top: 7rem;
+  padding-bottom: 0;
+}
+
+::v-deep #intro_2 {
+  padding-top: 3rem;
+}
+
+::v-deep #intro_3 {
+  padding: 0;
+  .card-list-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    margin-bottom: 5rem;
+    width: calc(50% - #{math.div($containerWidth, 24)});
+    &:nth-child(odd) {
+      margin-right: math.div($containerWidth, 12);
+    }
+    .title {
+      @include fontSize_Medium;
+      margin-bottom: 1rem;
+    }
+    .icon-after.arrow-down {
+      svg {
+        width: 0.75rem;
+        transform: rotate(-90deg);
+        rect {
+          fill: $greenYellow;
+        }
+      }
+    }
+  }
+}
+
+::v-deep #callout {
+  padding-bottom: 0;
+}
+
+::v-deep #grants_1 {
+  padding: 0;
+}
+
+::v-deep #grants_accordion {
+  padding-bottom: 7rem;
+}
 </style>

@@ -46,7 +46,15 @@
         </div>
 
         <div v-if="title" class="title">
-          {{ title }}
+          <div v-if="icon" class="icon">
+            <IconPixelHeart v-if="icon === 'pixel-heart'" />
+            <IconPixelTwitter v-if="icon === 'pixel-twitter'" />
+            <IconPixelGhost v-if="icon === 'pixel-ghost'" />
+            <IconPixelDino v-if="icon === 'pixel-dino'" />
+          </div>
+          <span class="title-text">
+            {{ title }}
+          </span>
           <span v-if="titleSuffix" class="title-suffix">
             {{ titleSuffix }}
           </span>
@@ -101,7 +109,12 @@
 <script>
 // ====================================================================== Import
 import Button from '@/components/Button'
+
 import IconLongArrowRight from '@/components/icons/LongArrowRight'
+import IconPixelHeart from '@/components/icons/PixelHeart'
+import IconPixelTwitter from '@/components/icons/PixelTwitter'
+import IconPixelGhost from '@/components/icons/PixelGhost'
+import IconPixelDino from '@/components/icons/PixelDino'
 
 // ====================================================================== Export
 export default {
@@ -109,7 +122,11 @@ export default {
 
   components: {
     Button,
-    IconLongArrowRight
+    IconLongArrowRight,
+    IconPixelHeart,
+    IconPixelTwitter,
+    IconPixelGhost,
+    IconPixelDino
   },
 
   props: {
@@ -155,6 +172,9 @@ export default {
     },
     label () {
       return this.card.label
+    },
+    icon () {
+      return this.card.icon
     },
     title () {
       return this.card.title
@@ -295,6 +315,22 @@ export default {
 // ////////////////////////////////////////////////////////////////// Variations
 // --------------------------------------------------------------- [Type] Common
 .card {
+  &.type__A,
+  &.type__B,
+  &.type__C {
+    .title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .icon {
+        width: 1.5rem;
+        margin-right: 1rem;
+        svg {
+          display: block;
+        }
+      }
+    }
+  }
   &.type__A,
   &.type__B {
     &:hover {
@@ -493,6 +529,9 @@ export default {
   }
   .title {
     @include label_2;
+  }
+  .title-text {
+    flex: 1;
   }
   .description {
     @include label_3;
