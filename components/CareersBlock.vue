@@ -8,7 +8,7 @@
     </div>
 
     <section class="section-bottom">
-      <div class="grid">
+      <div class="grid-middle">
 
         <div class="col-6">
           <div class="panel-left">
@@ -116,6 +116,17 @@ export default {
       }
     }
   }
+  &.theme__red-green {
+    ::v-deep .card {
+      .icon.arrow-down {
+        svg {
+          rect {
+            fill: $greenYellow;
+          }
+        }
+      }
+    }
+  }
 }
 
 .panel-right {
@@ -133,7 +144,7 @@ export default {
 // ///////////////////////////////////////////////////////////////////// Content
 .image {
   width: 100%;
-  padding: 0 2rem;
+  padding-left: 2rem;
 }
 
 ::v-deep .card {
