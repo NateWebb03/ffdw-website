@@ -96,5 +96,6 @@ export default {
 
 ::v-deep #form {
   padding-top: 3rem;
+  padding-bottom: 0;
 }
 </style>

@@ -64,6 +64,7 @@ import Button from '@/components/Button'
 import Box from '@/components/icons/Box'
 import Social from '@/components/icons/Social'
 import Phonebook from '@/components/icons/Phonebook'
+import IconPixelTwitter from '@/components/icons/PixelTwitter'
 
 // ====================================================================== Export
 export default {
@@ -73,7 +74,8 @@ export default {
     Button,
     Box,
     Social,
-    Phonebook
+    Phonebook,
+    IconPixelTwitter
   },
 
   props: {
@@ -180,6 +182,7 @@ export default {
 
 .icon {
   color: $cararra;
+  width: 2.5rem;
   margin-bottom: 1.75rem;
   margin-top: 0.875rem;
 }

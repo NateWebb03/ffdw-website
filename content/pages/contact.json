@@ -14,7 +14,6 @@
     "theme": "red-purple",
     "headingComponentName": "ContactHeaderSvg",
     "image_1": "/images/component-header/man-sitting-with-laptop.png",
-    "image_2": "/images/component-header/man-sitting-with-laptop.png",
     "description": "We support and fund research and development, and educate people about the decentralized web, in order to preserve humanity’s most important information. Interested in joining us in this mission? Reach out."
   },
   "page_content": {
@@ -25,7 +24,7 @@
           "num": "col-4"
         },
         "heading": "Contact",
-        "description": "Questions? Ideas? Drop us a line hello@ffweb.org",
+        "description": "Questions? Ideas? Drop us a line <a href='mailto:hello@ffweb.org'>hello@ffweb.org</a>",
         "format": "small",
         "icon": "Phonebook"
       },
@@ -35,9 +34,9 @@
           "num": "col-4"
         },
         "heading": "Social",
-        "description": "FAQ\nTwitter\nLinkedIn\nBlog\nYouTube",
+        "description": "<a href='' target='_blank'>FAQ</a><br /><a href='' target='_blank'>Twitter</a><br /><a href='' target='_blank'>LinkedIn</a><br /><a href='' target='_blank'>Blog</a><br /><a href='' target='_blank'>YouTube</a>",
         "format": "small",
-        "icon": "Social"
+        "icon": "IconPixelTwitter"
       },
       "col_3": {
         "type": "text_block",
