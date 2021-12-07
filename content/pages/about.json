@@ -13,8 +13,8 @@
     "type": "variant_1",
     "theme": "red-purple",
     "heading": "Nurturing the growth of the decentralized web",
-    "image_1": "/images/component-header/woman-on-phone.png",
-    "image_2": "/images/component-header/woman-painting-black-and-white.png",
+    "image_1": "/images/page-about/people-showing-each-other-things-on-laptops.png",
+    "image_2": "/images/page-about/ada-lovelace.png",
     "cta": {
       "type": "D",
       "theme": "white",
@@ -45,7 +45,7 @@
           "num": "col-3",
           "push_left": "off-1"
         },
-        "src": "/images/page-about/woman-speaking-into-microphone.jpeg"
+        "src": "/images/page-about/person-speaking-into-microphone.png"
       }
     },
     "intro_2": {
@@ -55,7 +55,7 @@
         "cols": {
           "num": "col-6"
         },
-        "src": "/images/page-about/people-sitting-in-front-of-laptops.jpeg"
+        "src": "/images/page-about/people-sitting-in-office-a-same-desk-on-laptops.png"
       },
       "col_2": {
         "type": "text_block",
@@ -63,7 +63,7 @@
           "num": "col-5",
           "push_left": "off-1"
         },
-        "description": "Fileocin Foundation for the Decentralized Web (FFDW) is a 501(c)(3) non-profit whose mission is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open-source software and open protocols for decentralized data storage and retrieval networks."
+        "description": "Filecoin Foundation for the Decentralized Web (FFDW) is a 501(c)(3) non-profit whose mission is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open-source software and open protocols for decentralized data storage and retrieval networks."
       }
     },
     "vision_1": {
@@ -83,7 +83,7 @@
         "cols": {
           "num": "col-3"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpeg"
+        "src": "/images/page-about/person-working-on-laptop.png"
       },
       "col_2": {
         "type": "text_block",
@@ -99,7 +99,7 @@
         "cols": {
           "num": "col-3"
         },
-        "src": "/images/page-about/woman-writing-in-a-notebook.jpeg"
+        "src": "/images/page-about/person-writing-in-notebook.png"
       }
     },
     "board_1": {
@@ -109,7 +109,7 @@
           "num": "col"
         },
         "format": "header",
-        "label": "FFDW Board",
+        "label": "Board of Directors",
         "heading": "Determined to bring Web3 to life, FFDW’s board brings a wealth of experience and expertise to guide our work."
       }
     },
@@ -126,7 +126,7 @@
           {
             "type": "A",
             "theme": "red-purple",
-            "img": "/images/component-header/man-with-laptop.png",
+            "img": "/images/page-about/marta-belcher.png",
             "title": ">> Marta Belcher",
             "title_suffix": "General Counsel, Protocol Labs",
             "subtitle": "General Counsel, Protocol Labs"
@@ -134,7 +134,7 @@
           {
             "type": "A",
             "theme": "red-purple",
-            "img": "/images/component-header/man-with-laptop.png",
+            "img": "/images/page-about/rainey-reitman.png",
             "title": ">> Rainey Reitman",
             "title_suffix": "General Counsel, Protocol Labs",
             "direction": "reverse"
@@ -142,14 +142,14 @@
           {
             "type": "A",
             "theme": "red-purple",
-            "img": "/images/component-header/man-with-laptop.png",
+            "img": "/images/page-about/brian-behlendorf.png",
             "title": ">> Brian Behlendorf",
             "title_suffix": "General Counsel, Protocol Labs"
           },
           {
             "type": "A",
             "theme": "red-purple",
-            "img": "/images/component-header/man-with-laptop.png",
+            "img": "/images/page-about/kristin-smith.png",
             "title": ">> Kristin Smith",
             "title_suffix": "General Counsel, Protocol Labs",
             "direction": "reverse"
@@ -165,7 +165,7 @@
         },
         "format": "header",
         "label": "Advisors",
-        "heading": "Determined to bring Web3 to life, FFDW has assembled an outstanding group of advisors for guidance and support."
+        "heading": "FFDW has assembled an outstanding group of advisors."
       }
     },
     "advisors_2": {
@@ -182,7 +182,7 @@
             "type": "A",
             "size": "compact",
             "theme": "red-purple",
-            "img": "/images/component-header/man-with-laptop.png",
+            "img": "/images/page-about/sheila-warren.png",
             "title": ">> Sheila Warren",
             "subtitle": "General Counsel, Protocol Labs"
           },
@@ -190,7 +190,7 @@
             "type": "A",
             "size": "compact",
             "theme": "red-purple",
-            "img": "/images/component-header/man-with-laptop.png",
+            "img": "/images/page-about/brewster-kahle.png",
             "title": ">> Brewster Kahle",
             "subtitle": "General Counsel, Protocol Labs"
           },
@@ -199,7 +199,7 @@
             "size": "compact",
             "theme": "red-purple",
             "direction": "reverse",
-            "img": "/images/component-header/man-with-laptop.png",
+            "img": "/images/page-about/joe-lubin.png",
             "title": ">> Joe Lubin",
             "subtitle": "General Counsel, Protocol Labs"
           },
@@ -208,7 +208,7 @@
             "size": "compact",
             "theme": "red-purple",
             "direction": "reverse",
-            "img": "/images/component-header/man-with-laptop.png",
+            "img": "/images/page-about/wendy-hanamura.png",
             "title": ">> Wendy Hanamura",
             "subtitle": "General Counsel, Protocol Labs"
           },
@@ -216,7 +216,7 @@
             "type": "A",
             "size": "compact",
             "theme": "red-purple",
-            "img": "/images/component-header/man-with-laptop.png",
+            "img": "/images/page-about/georgia-quinn.png",
             "title": ">> Georgia Quinn",
             "subtitle": "General Counsel, Protocol Labs"
           },
@@ -224,7 +224,7 @@
             "type": "A",
             "size": "compact",
             "theme": "red-purple",
-            "img": "/images/component-header/man-with-laptop.png",
+            "img": "/images/page-about/alex-feerst.png",
             "title": ">> Alex Feerst",
             "subtitle": "General Counsel, Protocol Labs"
           },
@@ -233,7 +233,7 @@
             "size": "compact",
             "theme": "red-purple",
             "direction": "reverse",
-            "img": "/images/component-header/man-with-laptop.png",
+            "img": "/images/page-about/sandra-ro.png",
             "title": ">> Sandra Ro",
             "subtitle": "General Counsel, Protocol Labs"
           },
@@ -242,7 +242,7 @@
             "size": "compact",
             "theme": "red-purple",
             "direction": "reverse",
-            "img": "/images/component-header/man-with-laptop.png",
+            "img": "/images/page-about/katie-biber.png",
             "title": ">> Katie Biber",
             "subtitle": "General Counsel, Protocol Labs"
           }

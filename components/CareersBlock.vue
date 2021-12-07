@@ -119,7 +119,7 @@ export default {
   position: relative;
   &.theme__purple {
     ::v-deep .card {
-      .icon.arrow-down {
+      .icon-after.arrow-down {
         svg {
           rect {
             fill: $perfume;
@@ -130,7 +130,7 @@ export default {
   }
   &.theme__green {
     ::v-deep .card {
-      .icon.arrow-down {
+      .icon-after.arrow-down {
         svg {
           rect {
             fill: $greenYellow;

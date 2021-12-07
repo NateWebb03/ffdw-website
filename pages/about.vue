@@ -71,7 +71,7 @@ export default {
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
 ::v-deep #intro_1 {
-  padding-top: 12rem;
+  padding-top: 9rem;
   .text-block {
     .heading {
       font-size: 3.0625rem;
@@ -91,7 +91,7 @@ export default {
 }
 
 ::v-deep #vision_1 {
-  padding-top: 0;
+  padding: 0;
 }
 
 ::v-deep #vision_2 {
@@ -132,5 +132,10 @@ export default {
       }
     }
   }
+}
+
+::v-deep #board_1,
+::v-deep #advisors_1 {
+  padding: 0;
 }
 </style>
