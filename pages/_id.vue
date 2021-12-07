@@ -202,6 +202,7 @@ export default {
     width: 45%;
     margin: 0 0 1.5rem 9%;
   }
+  img,
   img[alt$="center"] {
     width: 100%;
     margin: 4.75rem 0;
