@@ -7,7 +7,9 @@
 
     <BlockBuilder :sections="sections" />
 
-    <CareersBlock theme="red-green" />
+    <CareersBlock
+      :theme="careersTheme"
+      :force-heading="careersHeading" />
 
   </div>
 </template>
@@ -63,6 +65,15 @@ export default {
     },
     header () {
       return this.pageData.header
+    },
+    careers () {
+      return this.pageData.careers
+    },
+    careersTheme () {
+      return this.careers.theme
+    },
+    careersHeading () {
+      return this.careers.heading || false
     }
   }
 }
@@ -71,8 +82,11 @@ export default {
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
 ::v-deep #intro_1 {
-  padding-top: 7rem;
+  padding-top: 12rem;
   padding-bottom: 0;
+  .text-block {
+    margin-top: -10rem;
+  }
 }
 
 ::v-deep #intro_2 {
@@ -96,6 +110,9 @@ export default {
       @include fontSize_Medium;
       margin-bottom: 1rem;
     }
+    .description {
+      @include p3;
+    }
     .icon-after.arrow-down {
       svg {
         width: 0.75rem;
@@ -113,7 +130,7 @@ export default {
 }
 
 ::v-deep #grants_1 {
-  padding: 0;
+  padding-bottom: 0;
 }
 
 ::v-deep #grants_accordion {

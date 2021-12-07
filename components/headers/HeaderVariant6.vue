@@ -135,6 +135,7 @@ $artifact_square_dimension: 2.5rem;
 .panel-right {
   width: calc(100% - 37%);
   padding-top: 3rem;
+  padding-bottom: $artifact_square_dimension * 2 + 2rem;
   padding-left: calc(#{math.div($containerWidth, 12)});
   padding-right: calc((100% - #{$containerWidth}) / 2);
 }

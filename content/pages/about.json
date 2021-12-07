@@ -14,7 +14,19 @@
     "theme": "red-purple",
     "heading": "Nurturing the growth of the decentralized web",
     "image_1": "/images/component-header/woman-on-phone.png",
-    "image_2": "/images/component-header/woman-painting-black-and-white.png"
+    "image_2": "/images/component-header/woman-painting-black-and-white.png",
+    "cta": {
+      "type": "D",
+      "theme": "white",
+      "action": "a",
+      "text": "Ada Lovelace",
+      "url": "/",
+      "icon_after": "arrow-down"
+    }
+  },
+  "careers": {
+    "heading": "Filecoin Foundation for the Decentralized Web is hiring for roles as we build, support, and fund projects advancing the DWeb.",
+    "theme": "purple"
   },
   "page_content": {
     "intro_1": {

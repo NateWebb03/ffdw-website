@@ -72,7 +72,7 @@ export default {
   computed: {
     textBlock () {
       return {
-        format: 'medium',
+        format: 'header',
         label: this.label,
         heading: this.text
       }
@@ -82,11 +82,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@mixin specialHeading {
-  font-size: 2.8125rem;
-  line-height: 4.0625rem;
-}
-
 // ///////////////////////////////////////////////////////////////////// General
 .home-callout {
   display: flex;
@@ -107,11 +102,11 @@ export default {
   @include gradient_Background_RedGreen;
   position: relative;
   width: 55%;
-  margin-top: -5rem;
+  margin-top: -2rem;
   margin-bottom: 5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  padding-left: calc(#{math.div($containerWidth, 12)});
+  padding-left: calc(#{math.div($containerWidth, 12)} + 2rem);
   padding-right: calc((100vw - #{$containerWidth}) / 2);
   &:before,
   &:after {
@@ -133,15 +128,6 @@ export default {
   }
 }
 
-::v-deep .text-block {
-  .label {
-    margin-bottom: 3.75rem;
-  }
-  .heading {
-    @include specialHeading;
-  }
-}
-
 .social-icons,
 .logo-list {
   margin-top: 3rem;
@@ -158,7 +144,7 @@ export default {
   flex-direction: row;
   align-items: center;
   width: calc(50% - 2rem);
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   &:nth-child(odd) {
     margin-right: 4rem;
   }

@@ -104,14 +104,14 @@ export default {
       content: '';
       position: absolute;
       left: 100%;
-      bottom: 60%;
+      bottom: 70%;
       width: 2rem;
       height: 100%;
       background-color: $perfume;
     }
   }
   .button {
-    .icon.arrow-down {
+    .icon-after.arrow-down {
       svg {
         width: 0.75rem;
         transform: rotate(-90deg);
@@ -121,5 +121,10 @@ export default {
       }
     }
   }
+}
+
+::v-deep #accordion_2 {
+  padding-top: 3rem;
+  padding-bottom: 0;
 }
 </style>

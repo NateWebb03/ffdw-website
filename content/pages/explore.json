@@ -14,7 +14,7 @@
     "heading": "Explore",
     "subheading": "The DWeb",
     "image_1": "/images/component-header/engineer-coding.png",
-    "font_theme": "light",
+    "nav_theme": "light",
     "sub_theme": "red-green"
   },
   "page_content": {
@@ -36,7 +36,7 @@
         "cols": {
           "num": "col-3"
         },
-        "src": "/images/page-index/woman-outside-holding-an-ipad-on-a-sunny-day.jpg"
+        "src": "/images/page-explore/person-sitting-on-chair-with-laptop-1.jpeg"
       },
       "text": {
         "type": "text_block",
@@ -53,7 +53,7 @@
         "cols": {
           "num": "col-3"
         },
-        "src": "/images/page-index/man-outside-holding-a-coffee-on-a-sunny-day.jpg"
+        "src": "/images/page-explore/person-leg.jpeg"
       }
     },
     "learn_3": {
@@ -130,94 +130,6 @@
             "tags": [
               "Intermediate"
             ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
           }
         ],
         "cta": {
@@ -240,7 +152,7 @@
           "careers": {
             "name": "ExploreCallout",
             "props": {
-              "img_left": "/images/page-index/man-sitting-in-a-boardroom-looking-in-the-camera.jpg",
+              "img_left": "/images/page-explore/person-sitting-on-chair-with-laptop-2.jpeg",
               "label": "Collaborators",
               "text": "Some of the groups we work with to grow Web3",
               "logos": [

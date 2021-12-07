@@ -147,7 +147,7 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
       }
       &:before {
         height: calc(20% + 4rem);
-        bottom: -4rem;
+        top: calc(100% - 2.5rem);
         left: 100%;
         background-color: $coralRed;
       }
@@ -167,6 +167,7 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
 }
 
 ::v-deep #videos_2 {
+  padding-top: 0;
   .card-list-block {
     position: relative;
     display: flex;
@@ -248,6 +249,9 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
         z-index: 10;
       }
     }
+    .metadata {
+      @include fontSize_Tiny;
+    }
   }
 }
 
@@ -266,13 +270,13 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
     }
     &:before {
       left: calc(100% + 5rem);
-      bottom: 2.5rem;
+      bottom: calc(2.5rem + 1rem);
       width: 2.5rem;
       background-color: $coralRed;
     }
     &:after {
       left: calc(100% + 5rem + 2.5rem);
-      bottom: 0;
+      bottom: 1rem;
       width: 25rem;
       background-color: $greenYellow;
     }
@@ -280,6 +284,8 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
 }
 
 ::v-deep #tutorials_2 {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
   .card-list-block {
     display: flex;
     flex-direction: row;

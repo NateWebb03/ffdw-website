@@ -13,8 +13,8 @@
     "type": "variant_4",
     "heading": "FFDW",
     "subheading": "Grants",
-    "image_1": "/images/component-header/engineer-coding.png",
-    "font_theme": "light",
+    "image_1": "/images/page-grants/person-showing-another-person-something-on-a-laptop.jpeg",
+    "nav_theme": "light",
     "sub_theme": "red-purple"
   },
   "page_content": {
@@ -35,7 +35,7 @@
         "cols": {
           "num": "col-4"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpeg"
+        "src": "/images/page-grants/person-saying-something-to-other-people-at-a-table.jpeg"
       },
       "col_2": {
         "type": "text_block",
@@ -46,7 +46,7 @@
         "format": "tiny",
         "label": "FFDW’s Operating Approach",
         "heading": "Filecoin Foundation for the Decentralized Web is the charitable sister organization to the Filecoin Foundation.",
-        "description": "As the charitable sister to the Filecoin Foundation, FFDW focuses its collaborations on charitable activities. Along with our core work providing grants and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships. Filecoin Foundation may elect to fund initiatives that fit the missions of both organizations (FFDW and FF)."
+        "description": "As the non-profitable sister to Filecoin Foundation, FFDW focuses it’s collaborations on charitable activities. Along with our core work providing grants and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships."
       }
     },
     "info_2": {
@@ -57,7 +57,7 @@
           "push_left": "off-1"
         },
         "format": "small",
-        "description": "As a private operating foundation, FFDW takes collaboration seriously.  Both our operating status and our ethos mean that we internally drive the development of ideas and projects.  When working with outside organizations, we approach all of our initiatives as collaborations in which both FFDW and its implementing organizations work together closely to ensure success.  Rather than being an organization that simply writes checks and monitors progress, we roll up our sleeves and work alongside our project partners.  Outside organizations can expect FFDW to help with program design, technical support, project management, and external communications, as well as other efforts."
+        "description": "As a private operating foundation, FFDW takes collaboration seriously.  Both our operating status and our ethos mean that we internally drive the development of ideas and projects.  When working with outside organizations, we approach all of our initiatives as collaborations in which both FFDW and its implementing organizations work together closely to ensure success. Rather than being an organization that simply writes checks and monitors progress, we roll up our sleeves and work alongside our project partners. Where useful, we assist our collaborators with program design, technical support, hiring, legal questions, and external communications."
       }
     },
     "project_areas": {
@@ -77,7 +77,7 @@
           "num": "col-4",
           "push_left": "off-2"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpeg"
+        "src": "/images/page-grants/person-showing-presentation-to-group.jpeg"
       }
     },
     "accordion_1": {
@@ -99,18 +99,19 @@
           },
           {
             "label": "Development",
-            "content": "These projects drive the creation and development of technologies that will enable decentralized file storage of humanity’s most important information. More broadly, these projects encourage and fund the essential interoperability “glue” connecting elements of the decentralized web. For instance, funding decentralized-storage integration for existing FLOSS flagship projects; funding security and privacy-enhancing additions to existing decentralized web projects; helping to shepherd decentralized solutions through established Internet standards bodies. "
+            "content": "These projects drive the creation and development of technologies that will enable decentralized file storage of humanity’s most important information. More broadly, these projects encourage and fund the essential interoperability “glue” connecting elements of the decentralized web. For instance, funding decentralized-storage integration for existing FLOSS flagship projects; funding security and privacy-enhancing additions to existing decentralized web projects; helping to shepherd decentralized solutions through established Internet standards bodies."
           }
         ]
       }
     },
     "application_process": {
+      "grid": ["middle"],
       "col_1": {
         "type": "image_block",
         "cols": {
           "num": "col-4"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpeg"
+        "src": "/images/page-grants/person-sitting-at-laptop-at-cafe.jpeg"
       },
       "col_2": {
         "type": "text_block",
@@ -152,7 +153,7 @@
           "num": "col-4",
           "push_left": "off-2"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpeg"
+        "src": "/images/page-grants/person-speaking-into-microphone-to-group.jpeg"
       }
     },
     "accordion_2": {

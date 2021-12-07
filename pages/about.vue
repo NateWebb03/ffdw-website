@@ -74,7 +74,7 @@ export default {
   padding-top: 12rem;
   .text-block {
     .heading {
-      font-size: 2.8125rem;
+      font-size: 3.0625rem;
     }
   }
   .image-block {

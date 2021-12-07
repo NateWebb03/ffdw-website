@@ -129,7 +129,7 @@ export default {
       background-color: $perfume;
     }
     &:after {
-      width: 20rem;
+      width: calc((100vw - #{math.div($containerWidth, 12) * 10}) / 2 + 2.5rem + 0.5rem); // 100vw - grid(10-col) + col gutter + :after width
       top: 3.5rem;
       left: calc(100% + 2.5rem);
       background-color: $greenYellow;
@@ -138,7 +138,8 @@ export default {
 }
 
 ::v-deep #intro_1 {
-  padding: 0;
+  padding-top: 2rem;
+  padding-bottom: 0;
   .image-block {
     padding: 0 3rem;
   }
@@ -146,6 +147,14 @@ export default {
 
 ::v-deep #intro_2 {
   padding-top: 2rem;
+}
+
+::v-deep #explore_1 {
+  .text-block {
+    .description {
+      padding-right: 4rem;
+    }
+  }
 }
 
 ::v-deep #accordion_1 {
@@ -157,7 +166,7 @@ export default {
       width: 20rem;
       height: 7rem;
       top: 20%;
-      right: calc(100% + #{math.div($containerWidth, 12) * 3} - 2rem);
+      right: calc(100% + #{math.div($containerWidth, 12) * 3});
       background-color: $perfume;
     }
   }
@@ -194,8 +203,8 @@ export default {
         width: 2.5rem;
       }
       &:before {
-        height: calc(20% + 4rem);
-        bottom: -4rem;
+        height: calc(20% + 3rem);
+        bottom: -3rem;
         left: 100%;
         background-color: $perfume;
       }
@@ -210,6 +219,8 @@ export default {
 }
 
 ::v-deep #spotlight {
+  padding-top: 7rem;
+  padding-bottom: 10rem;
   .video-block {
     .preview-container {
       &:before,

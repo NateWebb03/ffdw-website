@@ -1,12 +1,14 @@
 <template>
-  <div :class="['block nav-container']">
+  <div :class="`block nav-container theme__${theme}`">
 
     <div class="grid">
       <div class="col">
 
         <div class="content">
 
-          <FFDWLogo class="logo" />
+          <Button :button="logoButton" class="logo-button">
+            <FFDWLogo class="logo" />
+          </Button>
 
           <nav class="links">
             <Button
@@ -50,14 +52,26 @@ export default {
     Button
   },
 
+  props: {
+    theme: {
+      type: String,
+      required: false,
+      default: 'dark'
+    }
+  },
+
   computed: {
-    // Simple mapped variables
-    ...[].reduce((acc, val) => (acc[val] = function () { return this.block[val] }) && acc, {}),
     ...mapGetters({
       siteContent: 'global/siteContent'
     }),
+    content () {
+      return this.siteContent.general
+    },
     links () {
-      return this.siteContent.general.navigation
+      return this.content.navigation
+    },
+    logoButton () {
+      return this.content.logo_button
     }
   }
 }
@@ -71,6 +85,18 @@ $iconDimension: 1.5rem;
   position: relative;
   padding: 2.5rem 0;
   z-index: 1;
+  color: $haiti;
+  &.theme__light {
+    color: $cararra;
+    ::v-deep .nav-link {
+      .icon-before.star,
+      .icon-after.finger-up {
+        path {
+          fill: $cararra;
+        }
+      }
+    }
+  }
 }
 
 .logo {
@@ -115,7 +141,7 @@ $iconDimension: 1.5rem;
     width: $iconDimension;
     opacity: 0;
     path {
-      fill: $cararra;
+      fill: $haiti;
     }
   }
   .icon-before.star {

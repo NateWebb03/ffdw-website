@@ -134,7 +134,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 1.125rem;
+  padding: 2rem 0;
 }
 
 ::v-deep .zero-pagination-controls {

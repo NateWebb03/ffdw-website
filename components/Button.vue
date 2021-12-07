@@ -106,7 +106,7 @@ export default {
     url () {
       return this.button.url
     },
-    theme () { // 'purple-green', 'red-purple', 'red-green', 'black'
+    theme () { // 'purple-green', 'red-purple', 'red-green', 'black', 'white'
       return this.button.theme || 'purple-green'
     },
     artifacts () {
@@ -356,6 +356,9 @@ $artifact_b_dimension: 1.5rem;
   }
   &.theme__green {
     color: $greenYellow;
+  }
+  &.theme__white {
+    color: $cararra;
   }
   .text {
     margin-right: 1rem;

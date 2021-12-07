@@ -1,7 +1,7 @@
 <template>
-  <div :class="[`header-selector theme__${theme} font-theme__${fontTheme}`]">
+  <div :class="`header-selector theme__${theme}`">
 
-    <NavBlock />
+    <NavBlock :theme="navTheme" />
 
     <component :is="headerVariant" :header="header" />
 
@@ -46,8 +46,8 @@ export default {
     theme () { // 'purple-green', 'red-purple', 'red-green'
       return this.header.theme
     },
-    fontTheme () { // 'dark', 'light'
-      return this.header.font_theme || 'dark'
+    navTheme () { // 'dark' or 'light'
+      return this.header.nav_theme || 'dark'
     }
   }
 }
@@ -68,12 +68,6 @@ export default {
   }
   &.theme__red-green {
     @include gradient_Background_RedGreen;
-  }
-  &.font-theme__dark {
-    color: $haiti;
-  }
-  &.font-theme__light {
-    color: $cararra;
   }
 }
 </style>

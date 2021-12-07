@@ -22,7 +22,7 @@
         "cols": {
           "num": "col-10"
         },
-        "format": "header",
+        "format": "medium",
         "label": "About FFDW",
         "heading": "FFDW exists to advance humankind by furthering the future of the web through education, research and development."
       }
@@ -55,7 +55,7 @@
         },
         "format": "small",
         "heading": "We exist to build a better web",
-        "description": "The Filecoin Foundation for the Decentralized Web is a 501(c)(3) nonprofit organization committed to preserving humanity’s most important information by fostering the development of open-source software and open protocols."
+        "description": "Filecoin Foundation for the Decentralized Web is a 501(c)(3) nonprofit organization committed to preserving humanity’s most important information by fostering the development of open-source software and open protocols."
       },
       "col_3": {
         "type": "image_block",
@@ -71,18 +71,18 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-6"
+          "num": "col-7"
         },
-        "format": "medium",
+        "format": "header",
         "label": "Explore the Dweb",
         "heading": "Welcome to the next generation of the web",
-        "description": "We support programs that educate the public about how the internet works and what a decentralized future means for business, governments, and consumers alike. Learn more about the benefits of decentralization and the promise of Web3, through interactive tutorials, white papers, video resources, and more."
+        "description": "We support programs that educate the public about how the Internet works and what a decentralized future means for business, governments and consumers alike. Learn more about the benefits of decentralization and the promise of Web3, through interactive tutorials, white papers, video resources and more."
       },
       "col_2": {
         "type": "image_block",
         "cols": {
           "num": "col-4",
-          "push_left": "off-2"
+          "push_left": "off-1"
         },
         "src": "/images/page-index/woman-speaking-into-a-microphone.jpeg"
       }
@@ -113,7 +113,7 @@
           },
           {
             "label": "Frequently Asked Questions",
-            "content": "<strong>What is your non-profit status?</strong><br />FFDW has applied for 501(c)(3) tax exempt, private opening foundation status. Maintaining adherence to mission is important from source (FFDW) to destination (end recipient), no matter the type of funding instrument (contract, grant, donation) used to provide resources to end recipients.<br /><strong>What’s the relationship between the Filecoin Foundation for the Decentralized Web and the Filecoin Foundation?</strong><br />The creators of Filecoin envisioned an independent foundation that would serve as the long-term governance body for the Filecoin ecosystem. Its original mandate was to “grow an open ecosystem for decentralized storage” and to “give developers an open and sustainable platform to build, enhance and monetize those services.”<br />The Filecoin Foundation (FF) is an independent organization that facilitates governance of the Filecoin network, funds critical development projects, supports the growth of the Filecoin ecosystem, and advocates for Filecoin and the decentralized web. FF does this by coordinating and supporting the creation and improvement of open-source software and open protocols for decentralized data storage and retrieval networks.<br />The Filecoin Foundation for the Decentralized Web (FFDW) focuses on charitable activities related to preserving important datasets, such as building and supporting the decentralized web community, funding research and development, and educating the public about the decentralized web."
+            "content": "<strong>What is your non-profit status?</strong><br /><br />FFDW has applied for 501(c)(3) tax exempt, private opening foundation status. Maintaining adherence to mission is important from source (FFDW) to destination (end recipient), no matter the type of funding instrument (contract, grant, donation) used to provide resources to end recipients.<br /><br /><strong>What’s the relationship between the Filecoin Foundation for the Decentralized Web and the Filecoin Foundation?</strong><br /><br />The creators of Filecoin envisioned an independent foundation that would serve as the long-term governance body for the Filecoin ecosystem. Its original mandate was to “grow an open ecosystem for decentralized storage” and to “give developers an open and sustainable platform to build, enhance and monetize those services.”<br /><br />Filecoin Foundation (FF) is an independent organization that facilitates governance of the Filecoin network, funds critical development projects, supports the growth of Filecoin ecosystem, and advocates for Filecoin and the decentralized web. FF does this by coordinating and supporting the creation and improvement of open-source software and open protocols for decentralized data storage and retrieval networks.<br /><br />Filecoin Foundation for the Decentralized Web (FFDW) focuses on charitable activities related to preserving important datasets, such as building and supporting the decentralized web community, funding research and development, and educating the public about the decentralized web.<br /><br />"
           }
         ]
       },
@@ -173,7 +173,7 @@
         "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
         "url": "https://youtu.be/Sakannch1Dw",
         "subtext": {
-          "type": "D",
+          "type": "X",
           "action": "video",
           "icon": "play",
           "text": "Watch: introducting The Starling Lab",
@@ -189,7 +189,7 @@
         "format": "small",
         "theme": "green-purple",
         "heading": "The Starling Lab Grant Spotlight",
-        "description": "The Filecoin Foundation for the Decentralized Web announces a multi-year commitment to <a href='/'>The Starling Lab</a>, a research center developing a comprehensive set of tools and principles that empower organizations to securely capture, store, and verify human history."
+        "description": "Filecoin Foundation for the Decentralized Web announces a multi-year commitment to <a href=''>The Starling Lab</a>, a research center developing a comprehensive set of tools and principles that empower organizations to securely capture, store, and verify human history."
       }
     },
     "callout": {

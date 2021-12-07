@@ -51,6 +51,11 @@ export default {
       type: String,
       required: false,
       default: 'purple'
+    },
+    forceHeading: {
+      type: [String, Boolean],
+      required: false,
+      default: false
     }
   },
 
@@ -65,16 +70,23 @@ export default {
       return this.content.label
     },
     heading () {
-      return this.content.heading
+      return this.forceHeading || this.content.heading
     },
-    primaryCtas () {
-      return this.content.primary_ctas
+    primaryCta () {
+      const themes = {
+        purple: 'red-purple',
+        green: 'red-green'
+      }
+      return Object.assign(this.content.primary_cta, {
+        theme: themes[this.theme]
+      })
     },
     textBlock () {
       return {
         label: this.label,
         heading: this.heading,
-        ctas: this.primaryCtas
+        format: 'header',
+        ctas: [this.primaryCta]
       }
     },
     featuredImage () {
@@ -85,7 +97,7 @@ export default {
       cards.forEach((card) => {
         card.ctas = [{
           type: 'D',
-          theme: card.theme,
+          theme: this.theme,
           action: 'nuxt-link',
           text: 'Apply Now',
           url: '/',
@@ -116,7 +128,7 @@ export default {
       }
     }
   }
-  &.theme__red-green {
+  &.theme__green {
     ::v-deep .card {
       .icon.arrow-down {
         svg {
@@ -142,6 +154,12 @@ export default {
 }
 
 // ///////////////////////////////////////////////////////////////////// Content
+::v-deep .text-block {
+  .button-row {
+    margin-top: 4rem;
+  }
+}
+
 .image {
   width: 100%;
   padding-left: 2rem;

@@ -1,9 +1,7 @@
 sub-theme__<template>
   <header :class="['header', type, `sub-theme__${subTheme}`]">
     <div class="content grid-middle">
-      <div
-        data-push-left="off-1"
-        class="col-10">
+      <div class="col-10" data-push-left="off-1">
         <div class="background-double-artifacts">
           <img :src="image_1" />
           <div class="background-single-artifact" />
@@ -21,8 +19,6 @@ sub-theme__<template>
 </template>
 
 <script>
-// ===================================================================== Imports
-
 // ====================================================================== Export
 export default {
   name: 'HeaderVariant4',
@@ -237,5 +233,6 @@ img {
 .heading-2 {
   bottom: 0;
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 </style>

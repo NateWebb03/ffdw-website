@@ -156,7 +156,7 @@ export default {
 // ///////////////////////////////////////////////////////////////////// Content
 .subtext {
   @include label_3;
-  padding: 0.5rem 0 0 0.5rem;
+  padding: 0.5rem 0 0 0.75rem;
 }
 
 .metadata {

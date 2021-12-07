@@ -128,7 +128,7 @@ export default {
   }
 }
 
-.social-icons {
+.social-bar {
   margin-top: 3rem;
 }
 

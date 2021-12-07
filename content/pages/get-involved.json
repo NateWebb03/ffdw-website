@@ -12,9 +12,22 @@
   "header": {
     "type": "variant_1",
     "theme": "red-green",
-    "heading": "Nurturing the growth of the decentralized web",
-    "image_1": "/images/component-header/woman-on-phone.png",
-    "image_2": "/images/component-header/woman-painting-black-and-white.png"
+    "heading": "Together, let’s bring Web3 to life",
+    "image_1": "/images/page-get-involved/person-looking-over-shoulder-at-another-persons-laptop.jpeg",
+    "image_2": "/images/page-get-involved/person-working-at-ibm-vintage.jpeg",
+    "nav_theme": "dark",
+    "cta": {
+      "type": "D",
+      "theme": "white",
+      "action": "a",
+      "text": "Melba Roy Mouton, 1960",
+      "url": "/",
+      "icon_after": "arrow-down"
+    }
+  },
+  "careers": {
+    "heading": "We’re working to build a more robust, more resilient web. A place to store and safeguard humanity’s most important information. If you’re passionate about decentralization, we want to hear from you.",
+    "theme": "green"
   },
   "page_content": {
     "intro_1": {
@@ -34,7 +47,7 @@
           "num": "col-3",
           "push_left": "off-1"
         },
-        "src": "/images/page-about/woman-speaking-into-microphone.jpeg"
+        "src": "/images/page-get-involved/person-presenting-into-microphone.jpeg"
       }
     },
     "intro_2": {
@@ -44,7 +57,7 @@
         "cols": {
           "num": "col-5"
         },
-        "src": "/images/page-get-involved/man-presenting-slideshow-to-a-group.jpeg"
+        "src": "/images/page-get-involved/person-showing-presentation-to-group.jpeg"
       },
       "col_2": {
         "type": "text_block",
@@ -141,7 +154,7 @@
           "careers": {
             "name": "GetInvolvedCallout",
             "props": {
-              "img_left": "/images/page-get-involved/man-on-laptop-in-office.jpeg",
+              "img_left": "/images/page-get-involved/people-working-together-in-office.jpeg",
               "img_right": "/images/page-get-involved/man-on-laptop-in-office.jpeg",
               "label": "Grants and Project Proposals",
               "cta": {
@@ -173,7 +186,7 @@
           "num": "col-4",
           "push_left": "off-2"
         },
-        "src": "/images/page-get-involved/boy-on-laptop-showing-something-to-person-sitting-beside-him.jpeg"
+        "src": "/images/page-get-involved/people-in-audience-looking-at-a-laptop.jpeg"
       }
     },
     "grants_accordion": {
@@ -191,7 +204,7 @@
           },
           {
             "label": "Research",
-            "content": "Projects that support efforts to store research data using decentralized web storage and make that data easily shared and accessed."
+            "content": "Projects that support efforts to store research data using decentralized web storage, and make that data easily shared and accessed."
           },
           {
             "label": "Development",
