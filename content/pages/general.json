@@ -182,6 +182,17 @@
       }
     }
   ],
+  "breadcrumbs_mapping": {
+    "index": "Home",
+    "about": "About FFDW",
+    "blog": "Blog Index",
+    "contact": "Contact",
+    "explore": "Explore the DWeb",
+    "get-involved": "Get Involved",
+    "grants": "FFDW Grants",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy"
+  },
   "footer": {
     "links_primary": [
       {

@@ -158,7 +158,7 @@ img {
 }
 
 .image-1 {
-  margin-top: -5rem;
+  margin-top: -7rem;
 }
 
 .image-2 {

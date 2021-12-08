@@ -17,15 +17,13 @@
       </div>
     </div>
 
-    <!-- <div v-if="!!currentPage" class="grid">
-      <div class="col-6">
+    <div class="grid-noGutter">
+      <div class="col">
 
-        <div class="breadcrumbs">
-          Home > Lorem Ipsum
-        </div>
+        <Breadcrumbs />
 
       </div>
-    </div> -->
+    </div>
 
   </div>
 </template>
@@ -37,6 +35,7 @@ import { mapGetters } from 'vuex'
 import FFDWLogo from '@/components/icons/FFDWLogo'
 import Button from '@/components/Button'
 import Navigation from '@/components/Navigation'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 // ====================================================================== Export
 export default {
@@ -45,7 +44,8 @@ export default {
   components: {
     FFDWLogo,
     Button,
-    Navigation
+    Navigation,
+    Breadcrumbs
   },
 
   props: {

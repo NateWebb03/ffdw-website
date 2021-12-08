@@ -3,7 +3,10 @@
 
     <SiteNav :theme="navTheme" />
 
-    <component :is="headerVariant" :header="header" />
+    <component
+      :is="headerVariant"
+      v-if="!header.disable"
+      :header="header" />
 
   </div>
 </template>
@@ -42,6 +45,9 @@ export default {
   computed: {
     headerVariant () {
       return `HeaderVariant${this.header.type.split('_')[1]}`
+    },
+    disable () { // disabled on blog singular pages
+      return this.header.disable
     },
     theme () { // 'purple-green', 'red-purple', 'red-green'
       return this.header.theme
