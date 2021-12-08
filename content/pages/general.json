@@ -19,7 +19,7 @@
       "type": "X",
       "action": "a",
       "target": "_blank",
-      "url": "/",
+      "url": "https://twitter.com/ffdweb",
       "component": "TwitterIcon",
       "label": "Twitter",
       "icon_after": "arrow-down"
@@ -28,7 +28,7 @@
       "type": "X",
       "action": "a",
       "target": "_blank",
-      "url": "/",
+      "url": "https://www.youtube.com/channel/UCbj3Hck5cwKURkZKHjg_MKQ",
       "component": "YoutubeIcon",
       "label": "YouTube",
       "icon_after": "arrow-down"
@@ -37,7 +37,7 @@
       "type": "X",
       "action": "a",
       "target": "_blank",
-      "url": "/",
+      "url": "https://www.linkedin.com/in/filecoin-foundation-for-the-decentralized-web-482aa1225/",
       "component": "LinkedInIcon",
       "label": "LinkedIn",
       "icon_after": "arrow-down"
