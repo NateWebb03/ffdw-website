@@ -60,6 +60,7 @@ export default {
     await store.dispatch('global/getBaseData', 'general')
     await store.dispatch('global/getBaseData', { key: 'settings', data: SettingsData })
     await store.dispatch('global/getBaseData', { key: 'index', data: IndexPageData })
+    await store.dispatch('global/getSlateVideos')
   },
 
   head () {

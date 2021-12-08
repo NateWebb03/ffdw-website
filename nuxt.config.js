@@ -8,6 +8,7 @@ export default {
   publicRuntimeConfig: {
     nodeEnv: process.env.NODE_ENV,
     serverEnv: process.env.SERVER_ENV,
+    slateKey: process.env.SLATE_KEY,
     seo: {
       siteName: 'Filecoin Foundation for the Decentralized Web',
       siteUrl: ''
@@ -67,6 +68,8 @@ export default {
   modules: [
     // Doc: https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources',
+    // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/axios',
     // Doc: https://github.com/agency-undone/au-nuxt-module-zero
     '@agency-undone/au-nuxt-module-zero',
     // Doc: https://sitemap.nuxtjs.org
@@ -110,6 +113,10 @@ export default {
   // ------------------------------------------- Dox: https://sitemap.nuxtjs.org
   sitemap: {
     hostname: '/'
+  },
+  // //////////////////////////////////////////////////////////// [Module] Axios
+  // -------------------------------------- See https://axios.nuxtjs.org/options
+  axios: {
   },
   // /////////////////////////////////// Plugins to load before mounting the App
   // ---------------------------------------------------------------------------
