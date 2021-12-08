@@ -166,7 +166,7 @@
               "cta": {
                 "type": "X",
                 "action": "nuxt-link",
-                "url": "/about",
+                "url": "/about/#advisors_1",
                 "text": "Board & Advisors"
               }
             }
@@ -205,7 +205,7 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/content-addressing",
               "icon_after": "arrow-down"
             }]
           },
@@ -220,7 +220,7 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/anatomy-of-a-cid",
               "icon_after": "arrow-down"
             }]
           },
@@ -235,7 +235,7 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/merkle-dags",
               "icon_after": "arrow-down"
             }]
           },
@@ -250,7 +250,7 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/blog",
               "icon_after": "arrow-down"
             }]
           },
@@ -265,7 +265,7 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/basics",
               "icon_after": "arrow-down"
             }]
           },
@@ -280,7 +280,7 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/mutable-file-system",
               "icon_after": "arrow-down"
             }]
           }
