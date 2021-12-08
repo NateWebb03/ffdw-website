@@ -129,7 +129,7 @@
             "theme": "purple-green",
             "action": "nuxt-link",
             "text": "Explore the Dweb",
-            "url": "/"
+            "url": "/explore"
           }
         ]
       }
