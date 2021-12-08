@@ -1,5 +1,5 @@
 <template>
-  <div :class="`block nav-container theme__${theme}`">
+  <div :class="`site-nav theme__${theme}`">
 
     <div class="grid">
       <div class="col">
@@ -10,13 +10,7 @@
             <FFDWLogo class="logo" />
           </Button>
 
-          <nav class="links">
-            <Button
-              v-for="(link, index) in links"
-              :key="`nav-link-${index}`"
-              :button="link"
-              class="nav-link" />
-          </nav>
+          <Navigation :theme="theme" />
 
         </div>
 
@@ -42,6 +36,7 @@ import { mapGetters } from 'vuex'
 
 import FFDWLogo from '@/components/icons/FFDWLogo'
 import Button from '@/components/Button'
+import Navigation from '@/components/Navigation'
 
 // ====================================================================== Export
 export default {
@@ -49,7 +44,8 @@ export default {
 
   components: {
     FFDWLogo,
-    Button
+    Button,
+    Navigation
   },
 
   props: {
@@ -81,21 +77,13 @@ export default {
 $iconDimension: 1.5rem;
 
 // ///////////////////////////////////////////////////////////////////// General
-.nav-container {
+.site-nav {
   position: relative;
   padding: 2.5rem 0;
-  z-index: 1;
   color: $haiti;
+  z-index: 1000;
   &.theme__light {
     color: $cararra;
-    ::v-deep .nav-link {
-      .icon-before.star,
-      .icon-after.finger-up {
-        path {
-          fill: $cararra;
-        }
-      }
-    }
   }
 }
 
@@ -108,48 +96,6 @@ $iconDimension: 1.5rem;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-
-.links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-::v-deep .nav-link {
-  @include fontSize_Mini;
-  @include fontWeight_Semibold;
-  &:not(:last-child) {
-    margin-right: 1.875rem;
-  }
-  &:not(.nuxt-link-active ):hover {
-    padding-bottom: $iconDimension;
-    .icon-after.finger-up {
-      opacity: 1;
-      transform: translateY(-$iconDimension);
-    }
-  }
-  &.nuxt-link-active {
-    .icon-before.star {
-      opacity: 1;
-    }
-  }
-  .icon-before.star,
-  .icon-after.finger-up {
-    position: absolute;
-    left: calc(50% - #{math.div($iconDimension, 2)});
-    width: $iconDimension;
-    opacity: 0;
-    path {
-      fill: $haiti;
-    }
-  }
-  .icon-before.star {
-    bottom: 100%;
-  }
-  .icon-after.finger-up {
-    top: 100%;
-  }
 }
 
 .breadcrumbs {

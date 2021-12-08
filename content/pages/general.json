@@ -45,40 +45,141 @@
   ],
   "navigation": [
     {
-      "type": "E",
-      "theme": "dark",
-      "action": "nuxt-link",
-      "url": "/about",
-      "text": "About FFDW",
-      "icon_before": "star",
-      "icon_after": "finger-up"
+      "heading": "About FFDW",
+      "link": {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/about",
+        "text": "About FFDW",
+        "icon_before": "star",
+        "icon_after": "finger-up"
+      },
+      "links": [
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/",
+          "text": "About us",
+          "icon_before": "triple-arrow-right"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/",
+          "text": "Promise > Vision",
+          "icon_before": "triple-arrow-right"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/",
+          "text": "Board & Advisors",
+          "icon_before": "triple-arrow-right"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/",
+          "text": "Careers",
+          "icon_before": "triple-arrow-right"
+        }
+      ]
     },
     {
-      "type": "E",
-      "theme": "dark",
-      "action": "nuxt-link",
-      "url": "/explore",
-      "text": "Explore",
-      "icon_before": "star",
-      "icon_after": "finger-up"
+      "heading": "Explore Web3",
+      "link": {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/explore",
+        "text": "Explore",
+        "icon_before": "star",
+        "icon_after": "finger-up"
+      },
+      "links": [
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/",
+          "text": "Learn about Web3",
+          "icon_before": "triple-arrow-right"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/",
+          "text": "Educational Resources",
+          "icon_before": "triple-arrow-right"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/",
+          "text": "Partners",
+          "icon_before": "triple-arrow-right"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/blog",
+          "text": "Blog",
+          "icon_before": "triple-arrow-right"
+        }
+      ]
     },
     {
-      "type": "E",
-      "theme": "dark",
-      "action": "nuxt-link",
-      "url": "/get-involved",
-      "text": "Get Involved",
-      "icon_before": "star",
-      "icon_after": "finger-up"
+      "heading": "Get Involved",
+      "link": {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/get-involved",
+        "text": "Get Involved",
+        "icon_before": "star",
+        "icon_after": "finger-up"
+      },
+      "links": [
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/",
+          "text": "Events",
+          "icon_before": "triple-arrow-right"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/blog",
+          "text": "Blog",
+          "icon_before": "triple-arrow-right"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/",
+          "text": "How to Apply",
+          "icon_before": "triple-arrow-right"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/",
+          "text": "Careers",
+          "icon_before": "triple-arrow-right"
+        }
+      ]
     },
     {
-      "type": "E",
-      "theme": "dark",
-      "action": "nuxt-link",
-      "url": "/grants",
-      "text": "Grants",
-      "icon_before": "star",
-      "icon_after": "finger-up"
+      "link": {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/grants",
+        "text": "Grants",
+        "icon_before": "star",
+        "icon_after": "finger-up"
+      }
     }
   ],
   "footer": {

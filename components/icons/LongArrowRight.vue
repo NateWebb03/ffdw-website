@@ -11,7 +11,6 @@
       <rect width="5" height="5" transform="translate(758 1099.359)" fill="#090015" />
     </g>
   </svg>
-
 </template>
 
 <script>
