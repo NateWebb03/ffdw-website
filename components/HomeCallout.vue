@@ -72,8 +72,8 @@ export default {
   font-size: 2.8125rem;
   line-height: 4.0625rem;
   @include mini {
-    @include fontSize_Large;
-    @include leading_Large;
+    font-size: 1.375rem;
+    line-height: 2rem;
   }
 }
 
@@ -161,9 +161,5 @@ export default {
 .subheading {
   @include specialHeading;
   margin: 3rem 0;
-  @include mini {
-    font-size: 1.375rem;
-    line-height: 2rem;
-  }
 }
 </style>
