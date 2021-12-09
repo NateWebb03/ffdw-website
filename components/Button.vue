@@ -155,6 +155,7 @@ $artifact_b_size_2: 1.25rem;
 .text {
   display: block;
   position: relative;
+  white-space: nowrap;
   z-index: 15;
 }
 
