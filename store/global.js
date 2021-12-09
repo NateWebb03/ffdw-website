@@ -56,7 +56,6 @@ const actions = {
         }
       })
       const collections = response.data.collections
-      console.log(collections)
       commit('GET_SLATE_VIDEOS', collections)
     } catch (e) {
       console.log('========================================== [getSlateVideos]')

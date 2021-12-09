@@ -60,6 +60,7 @@ export default {
     await store.dispatch('global/getBaseData', 'general')
     await store.dispatch('global/getBaseData', { key: 'settings', data: SettingsData })
     await store.dispatch('global/getBaseData', { key: 'explore', data: ExplorePageData })
+    await store.dispatch('global/getSlateVideos')
   },
 
   head () {
@@ -168,26 +169,9 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
 
 ::v-deep #videos_2 {
   padding-top: 0;
-  .card-list-block {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    &:before {
-      content: '';
-      position: absolute;
-      bottom: 100%;
-      left: 100%;
-      width: 2.5rem;
-      height: 2.5rem;
-      background-color: $greenYellow;
-      z-index: 10;
-    }
-  }
-  .video-block {
+  .preview-container {
     position: relative;
     margin-bottom: 5.625rem;
-    width: calc(50% - 0.5rem);
     &:after {
       content: '';
       position: absolute;
@@ -197,36 +181,33 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
       height: 5px;
       background-color: $cararra;
     }
-    &:nth-child(odd) {
-      margin-right: 1rem;
-    }
     &:nth-child(4n+1),
     &:nth-child(4n+2),
     &:nth-child(4n+3) {
-      .preview-container:before {
+      .video-container:before {
         opacity: 1;
       }
     }
     &:nth-child(4n+1) {
-      .preview-container:before {
+      .video-container:before {
         top: 0;
         left: 0;
       }
     }
     &:nth-child(4n+2) {
-      .preview-container:before {
+      .video-container:before {
         bottom: 0;
         right: 0;
       }
     }
     &:nth-child(4n+3) {
-      .preview-container:before {
+      .video-container:before {
         top: 0;
         right: 0;
       }
     }
     &:nth-child(even):last-child {
-      .preview-container {
+      .video-container {
         &:after {
           content: '';
           position: absolute;
@@ -238,7 +219,7 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
         }
       }
     }
-    .preview-container {
+    .video-container {
       &:before {
         content: '';
         position: absolute;
