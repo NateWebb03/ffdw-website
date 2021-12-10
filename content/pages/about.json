@@ -20,7 +20,7 @@
       "theme": "white",
       "action": "a",
       "text": "Ada Lovelace",
-      "url": "/",
+      "url": "https://en.wikipedia.org/wiki/Ada_Lovelace",
       "icon_after": "arrow-down"
     }
   },
