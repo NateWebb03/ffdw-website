@@ -6,17 +6,14 @@ author: Filecoin Foundation
 date: November 20 2021
 image: '/images/page-blog/blog-post-placeholder-image.png'
 recommendedPosts: ['announcing-the-starling-lab', 'ffdw-and-witness', 'incididunt-ut-labore-2']
-tags: ['Tag Number One', 'Tag Number Two']
+tags: ['Lorem Ipsum Tag']
 ---
-![image alt left](/images/page-blog/post-placeholder-image.png)
 
 # Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
 
-![image alt right](/images/page-blog/post-placeholder-image.png)
+[Sed ut perspiciatis](https://example.com) unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-
-![image alt center](/images/page-blog/blog-post-banner.png)
+![image alt banner](/images/page-blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records.png)
 
 
 ## Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -27,9 +24,17 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
 
 ***
 
-## Sed ut perspiciatis unde omnis iste natus error sit
+```
+<ul v-if=“Array.isArray(link.links)”>
+  <li v-for=“sublink in link.links”
+    :key=“`${link.text}-${sublink.text}`”>
+    <div class=“first-level-wrapper”>
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      <component
+        :is=“sublink.hasOwnProperty(‘url’) ? ‘nuxt-link’ : ‘div’”
+        :to=“sublink.disabled ? ‘’ : sublink.url”
+        :disabled=“sublink.disabled”
+```
 
 ## Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
 
@@ -49,27 +54,25 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 
 - Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 
-![image alt right](/images/page-blog/post-placeholder-image.png)
-
 ## Error sit voluptatem accusantium doloremque
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 
-![image alt left](/images/page-blog/post-placeholder-image.png)
-
-## Sed ut perspiciatis unde omnis iste natus error sit
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+[![image alt video](/images/page-blog/post-placeholder-image.png)](https://www.youtube.com/)
 
 ## Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 
-| Lorem Ipsum    | Dolor sit amet | Cillum dolore eu fugiat |
-| :------------- | :----------: | -----------: |
-| Velit esse dolore | Sunt in culpa qui officia deserunt | Sunt in culpa qui officia deserunt|
-| Velit esse dolore | Sunt in culpa qui officia deserunt | Sunt in culpa qui officia deserunt|
-| Velit esse dolore | Sunt in culpa qui officia deserunt | Sunt in culpa qui officia deserunt|
-| Velit esse dolore | Sunt in culpa qui officia deserunt | Sunt in culpa qui officia deserunt|
+| Title   | No | Lorem | Ipsum |
+| :------------- | :---------- | :----------- | :----------- |
+| Velit esse dolore | 12 | Sunt in culpa qui officia deserunt | Sunt in culpa qui officia deserunt|
+| Velit esse dolore | 12 | Sunt in culpa qui officia deserunt | Sunt in culpa qui officia deserunt|
+| Velit esse dolore | 12 | Sunt in culpa qui officia deserunt | Sunt in culpa qui officia deserunt|
+| Velit esse dolore | 12 | Sunt in culpa qui officia deserunt | Sunt in culpa qui officia deserunt|
+| Velit esse dolore | 12 | Sunt in culpa qui officia deserunt | Sunt in culpa qui officia deserunt|
+| Velit esse dolore | 12 | Sunt in culpa qui officia deserunt | Sunt in culpa qui officia deserunt|
+| Velit esse dolore | 12 | Sunt in culpa qui officia deserunt | Sunt in culpa qui officia deserunt|
+| Velit esse dolore | 12 | Sunt in culpa qui officia deserunt | Sunt in culpa qui officia deserunt|
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.

@@ -7,17 +7,59 @@
 
     <BlockBuilder :sections="postHeading" />
 
+    <div class="grid-noGutter">
+      <div class="col">
+        <div class="socials-wrapper">
+          <div class="prompt">
+            Share
+          </div>
+          <SocialBar
+            :hide-social-icons="false"
+            :show-button-icons="false"
+            :show-labels="false" />
+        </div>
+      </div>
+    </div>
+
     <section id="post-body" class="content-section">
       <div class="grid">
 
-        <div class="col-10" data-push-left="off-1">
+        <div class="col-10_sm-12" data-push-left="off-1_sm-0">
           <nuxt-content :document="postBody" class="basic-template-block-format" />
         </div>
 
       </div>
     </section>
 
-    <BlockBuilder :sections="morePosts" />
+    <div class="grid-noGutter">
+      <div class="col-10_sm-12" data-push-left="off-1_sm-0">
+        <div class="bottom-links">
+          <div class="socials-wrapper">
+            <div class="prompt">
+              Share
+            </div>
+            <SocialBar
+              :hide-social-icons="false"
+              :show-button-icons="false"
+              :show-labels="false" />
+          </div>
+          <div class="tag-flex">
+            <div
+              v-for="item in tags"
+              :key="item"
+              class="tag">
+              {{ item }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section v-if="recommendedPosts" id="featured-post-list">
+      <BlockBuilder :sections="latestNews" />
+      <CardListBlock :block="{ cards: recommendedPosts }" />
+      <Button :button="viewAllButton" />
+    </section>
 
   </div>
 </template>
@@ -25,13 +67,15 @@
 <script>
 // ====================================================================== Import
 import { mapGetters } from 'vuex'
-import CloneDeep from 'lodash/cloneDeep'
 
 import BlogPageData from '@/content/pages/blog.json'
 
 import Modal from '@/components/Modal'
 import HeaderSelector from '@/components/HeaderSelector'
 import BlockBuilder from '@/components/BlockBuilder'
+import SocialBar from '@/components/SocialBar'
+import CardListBlock from '@/components/CardListBlock'
+import Button from '@/components/Button'
 
 // ====================================================================== Export
 export default {
@@ -40,7 +84,10 @@ export default {
   components: {
     Modal,
     HeaderSelector,
-    BlockBuilder
+    BlockBuilder,
+    SocialBar,
+    CardListBlock,
+    Button
   },
 
   async asyncData ({ $content, app, store, route, error }) {
@@ -75,14 +122,13 @@ export default {
       siteContent: 'global/siteContent'
     }),
     postHeading () {
-      const section = {
+      return {
         post_heading: {
           col_1: {
             type: 'text_block',
             layout: 'large',
             cols: {
-              num: 'col-7',
-              push_left: 'off-0'
+              num: 'col-7_sm-10'
             },
             date: this.markdown.date || this.markdown.createdAt,
             tags: this.markdown.tags,
@@ -92,13 +138,26 @@ export default {
             type: 'image_block',
             src: this.markdown.image,
             cols: {
-              num: 'col-4',
-              push_left: 'off-1'
+              num: 'col-4_sm-8',
+              push_left: 'off-1_sm-0'
             }
           }
         }
       }
-      return section
+    },
+    latestNews () {
+      return {
+        latest_news: {
+          col_1: {
+            type: 'text_block',
+            cols: {
+              num: 'col-9_sm-12'
+            },
+            label: 'Latest News From FFDW',
+            heading: 'Updates from our organization and across the Web3 universe.'
+          }
+        }
+      }
     },
     postBody () {
       return this.markdown
@@ -106,21 +165,24 @@ export default {
     allPosts () {
       return this.markdown.allPosts
     },
-    morePosts () {
-      const sections = CloneDeep(this.siteContent.blog.page_content)
-      delete sections.intro
-      sections.recommended_posts = {
-        col_1: {
-          type: 'card_list_block',
-          cols: {
-            num: 'col-12'
-          },
-          cards: this.recommendations
-        }
-      }
-      return sections
+    tags () {
+      return Array.isArray(this.markdown.tags) ? this.markdown.tags : []
     },
-    recommendations () {
+    // morePosts () {
+    //   const sections = CloneDeep(this.siteContent.blog.page_content)
+    //   delete sections.intro
+    //   sections.recommended_posts = {
+    //     col_1: {
+    //       type: 'card_list_block',
+    //       cols: {
+    //         num: 'col-12'
+    //       },
+    //       cards: this.recommendations
+    //     }
+    //   }
+    //   return sections
+    // },
+    recommendedPosts () {
       const recommendedPosts = []
       if (Array.isArray(this.markdown.recommendedPosts)) {
         const len = this.allPosts.length
@@ -135,17 +197,32 @@ export default {
               title: post.title,
               date: post.date || post.updatedAt,
               tags: post.tags,
-              divider: {
-                top: true,
-                bottom: (i === len - 1)
-              },
-              gradient: 'red-green',
+              theme: 'red-green',
               direction: i % 2 ? 'reverse' : 'forward'
             })
           }
         }
+        return recommendedPosts
       }
-      return recommendedPosts
+      return false
+    },
+    viewAllButton () {
+      return {
+        type: 'C',
+        action: 'nuxt-link',
+        text: 'View All',
+        url: '/blog'
+      }
+    }
+  },
+
+  mounted () {
+    const images = document.getElementsByTagName('img')
+    for (let i = 0; i < images.length; i++) {
+      const string = images[i].alt
+      if (string.includes('video')) {
+        images[i].parentNode.parentNode.classList.add('video-overlay')
+      }
     }
   }
 }
@@ -154,25 +231,120 @@ export default {
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
 ::v-deep #post_heading {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   .date {
     display: flex;
     flex-direction: row;
   }
   .image {
     position: relative;
-    margin-top: 9.5rem;
+    margin-top: 2rem;
   }
   .image-block {
     &:after {
       content: '';
       position: absolute;
       top: 0;
-      left: calc(100% - 0.5rem);
+      left: 100%;
       width: 2.3125rem;
       height: 2.3125rem;
       transform: translateY(-100%);
       background-color: $greenYellow;
     }
+  }
+  .text-block {
+    .tags {
+      &:before {
+        content: '|';
+        margin: 0 0.75rem;
+      }
+    }
+    .heading {
+      margin-top: 2.5rem;
+      @include small {
+        @include fontSize_Medium;
+        @include leading_Medium;
+      }
+    }
+    @include mini {
+      @include fontSize_Tiny;
+    }
+  }
+}
+
+.socials-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 1.5rem;
+  margin-bottom: 5rem;
+  .prompt {
+    @include fontSize_Small;
+    @include fontWeight_Semibold;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    line-height: 1.5rem;
+  }
+}
+
+::v-deep .social-bar {
+  a {
+    margin-right: 1.5rem !important;
+  }
+  a,
+  svg {
+    height: 100%
+  }
+  svg,
+  path {
+    stroke: $greenYellow;
+    fill: $greenYellow;
+  }
+}
+
+#post-body {
+  padding: 5rem 0;
+  @include small {
+    padding: 3rem 0;
+  }
+}
+
+.bottom-links,
+.tag-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .socials-wrapper {
+    margin: 0;
+  }
+}
+
+.bottom-links {
+  @include mini {
+    flex-direction: column;
+  }
+  .socials-wrapper {
+    margin-bottom: 1rem;
+    .prompt {
+      @include mini {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.tag {
+  position: relative;
+  @include fontSize_Small;
+  @include fontWeight_Semibold;
+  cursor: pointer;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    border: solid 1px white;
   }
 }
 
@@ -181,7 +353,11 @@ export default {
     @include fontSize_Large;
     @include fontWeight_Semibold;
     line-height: 1.4;
-    margin-bottom: 6.25rem;
+    margin-bottom: 4.25rem;
+    @include small {
+      @include fontSize_Medium;
+      @include leading_Medium;
+    }
   }
   h2 {
     @include fontSize_Medium;
@@ -196,21 +372,22 @@ export default {
     letter-spacing: $letterSpacing_Large;
     margin-bottom: 2.5rem;
   }
-  img[alt$="left"] {
-    float: left;
-    width: 27%;
-    margin: 0 9% 1.5rem 0;
+  a {
+    @include fontWeight_Bold;
   }
-  img[alt$="right"] {
-    float: right;
-    width: 45%;
-    margin: 0 0 1.5rem 9%;
+  img[alt$="small"] {
+    width: 50%;
   }
-  img[alt$="center"] {
+  img[alt$="banner"] {
+    width: calc(100% + 4rem);
+    transform: translateX(-2rem);
+  }
+  img {
     width: 100%;
     margin: 4.75rem 0;
   }
   hr {
+    position: relative;
     border: 10px solid;
     border-image-slice: 1;
     border-width: 4px;
@@ -219,10 +396,17 @@ export default {
     border-right: none;
     border-bottom: none;
     margin: 3.5rem 0;
+    left: -$singleColumn;
+    width: calc(100% + #{$singleColumn * 2});
+    @include small {
+      left: 0;
+      width: 100%;
+    }
   }
   blockquote {
     margin: 7.25rem 0;
     p {
+      @include h3;
       border: 10px solid;
       border-image-slice: 1;
       border-width: 4px;
@@ -231,9 +415,10 @@ export default {
       border-right: none;
       border-bottom: none;
       padding-left: 5.25rem;
-      @include fontSize_Large;
-      @include fontWeight_Semibold;
       line-height: 1.4;
+      @include mini {
+        padding-left: 2rem;
+      }
     }
   }
   li {
@@ -251,6 +436,48 @@ export default {
       @include gradient_Background_RedGreen;
     }
   }
+  table {
+    margin: 3rem 0;
+    border-top: solid 5px white;
+    border-bottom: solid 5px white;
+    th,
+    tr {
+      @include fontSize_Mini;
+    }
+    tr:nth-child(odd) {
+      background: #0F0E1C;
+    }
+    th {
+      @include fontSize_Small;
+      @include fontWeight_Semibold;
+      background: #070517;
+      padding: 0.75rem 1rem;
+    }
+    td {
+      padding: 0.5rem 1rem;
+    }
+  }
+  pre {
+    border: solid 1px #27234A;
+    background-color: #0F0E1C;
+    padding: 2rem 1rem;
+    margin-bottom: 5rem;
+  }
+  code {
+    color: #9AB6CE;
+  }
 }
 
+::v-deep #featured-post-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+  .card-list-block {
+    width: 100%;
+  }
+  .button {
+    margin-top: 3rem;
+  }
+}
 </style>

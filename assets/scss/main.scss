@@ -168,6 +168,38 @@ h4, .h4 {
 
 // ///////////////////////////////////////////////////////////// Basic Templates
 // -----------------------------------------------------------------------------
+
+.video-overlay {
+  position: relative;
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  a {
+    &:after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-30px, -26px);
+      z-index: 10;
+      opacity: 0.8;
+      content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='61' height='53.453' viewBox='0 0 61 53.453'%3e%3cg id='Group_3034' data-name='Group 3034' transform='translate(-0.047)'%3e%3cg id='Group_3033' data-name='Group 3033' transform='translate(22 11.344)'%3e%3crect id='Rectangle_1279' data-name='Rectangle 1279' width='5' height='5' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1280' data-name='Rectangle 1280' width='5' height='5' transform='translate(5 5)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1281' data-name='Rectangle 1281' width='5' height='5' transform='translate(5 20.766)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1282' data-name='Rectangle 1282' width='5' height='5' transform='translate(10 17.177)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1283' data-name='Rectangle 1283' width='5' height='5' transform='translate(15 12.883)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1284' data-name='Rectangle 1284' width='5' height='5' transform='translate(10 8.588)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1285' data-name='Rectangle 1285' width='5' height='5' transform='translate(0 25.766)' fill='%23e8e7e1'/%3e%3c/g%3e%3crect id='Rectangle_1311' data-name='Rectangle 1311' width='5' height='43' transform='translate(56.047 5.684)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1314' data-name='Rectangle 1314' width='5' height='43' transform='translate(0.047 5.684)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1312' data-name='Rectangle 1312' width='5' height='51' transform='translate(55.5 0) rotate(90)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1313' data-name='Rectangle 1313' width='5' height='51' transform='translate(55.5 48.453) rotate(90)' fill='%23e8e7e1'/%3e%3c/g%3e%3c/svg%3e ");
+    }
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
 // .basic-template-block-format {
 //   h1,
 //   h2 {

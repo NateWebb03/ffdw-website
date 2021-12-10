@@ -6,6 +6,9 @@
 $containerWidth: 61.25rem; // 980px
 $underlineSpacing: 0.1875rem;
 // $navigationHeight: 6.25rem;
+$gutter: calc((100vw - #{$containerWidth}) / 2);
+$gutterMobile: calc(100vw * 0.07);
+$singleColumn: math.div($containerWidth, 12);
 
 $borderRadius_Small: 0.3125rem;
 $borderRadius_Medium: 0.25rem;
