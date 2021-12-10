@@ -18,6 +18,7 @@
     <div
       v-if="iconBefore"
       :class="['icon-before', iconBefore]">
+      <IconArrowDown v-if="iconBefore === 'arrow-down'" />
       <IconFingerUp v-if="iconBefore === 'finger-up'" />
       <IconStar v-if="iconBefore === 'star'" />
       <IconTrippleArrowRight v-if="iconBefore === 'triple-arrow-right'" />

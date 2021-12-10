@@ -155,6 +155,7 @@
               "action": "a",
               "text": "Read More",
               "url": "https://proto.school/content-addressing",
+              "target": "_blank",
               "icon_after": "arrow-down"
             }]
           },
@@ -170,6 +171,7 @@
               "action": "a",
               "text": "Read More",
               "url": "https://proto.school/anatomy-of-a-cid",
+              "target": "_blank",
               "icon_after": "arrow-down"
             }]
           },
@@ -185,6 +187,7 @@
               "action": "a",
               "text": "Read More",
               "url": "https://proto.school/merkle-dags",
+              "target": "_blank",
               "icon_after": "arrow-down"
             }]
           },
@@ -200,6 +203,7 @@
               "action": "a",
               "text": "Read More",
               "url": "https://proto.school/blog",
+              "target": "_blank",
               "icon_after": "arrow-down"
             }]
           },
@@ -215,6 +219,7 @@
               "action": "a",
               "text": "Read More",
               "url": "https://proto.school/basics",
+              "target": "_blank",
               "icon_after": "arrow-down"
             }]
           },
@@ -230,6 +235,7 @@
               "action": "a",
               "text": "Read More",
               "url": "https://proto.school/mutable-file-system",
+              "target": "_blank",
               "icon_after": "arrow-down"
             }]
           }

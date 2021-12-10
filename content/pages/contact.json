@@ -34,7 +34,7 @@
           "num": "col-4_mi-8_ti-12"
         },
         "heading": "Social",
-        "description": "<a href='https://twitter.com/ffdweb' target='_blank'>Twitter</a><br /><a href='https://www.linkedin.com/in/filecoin-foundation-for-the-decentralized-web-482aa1225/' target='_blank'>LinkedIn</a><br /><a href='/blog' target='_blank'>Blog</a><br /><a href='https://www.youtube.com/channel/UCbj3Hck5cwKURkZKHjg_MKQ' target='_blank'>YouTube</a>",
+        "description": "<a href='https://twitter.com/ffdweb' target='_blank'>Twitter</a><br /><a href='https://www.linkedin.com/in/filecoin-foundation-for-the-decentralized-web-482aa1225/' target='_blank'>LinkedIn</a><br /><a href='/blog'>Blog</a><br /><a href='https://www.youtube.com/channel/UCbj3Hck5cwKURkZKHjg_MKQ' target='_blank'>YouTube</a>",
         "format": "small",
         "icon": "IconPixelTwitter"
       },

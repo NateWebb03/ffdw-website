@@ -138,6 +138,10 @@ export default {
     content: '';
   }
   &.open {
+    color: $haiti;
+    .background {
+      opacity: 1;
+    }
     .title-text {
       &:before, &:after {
         transform: rotate(90deg);

@@ -19,9 +19,9 @@
         <div
           v-if="section.links"
           class="subnav">
-          <div class="heading">
-            {{ section.heading }}
-          </div>
+          <Button
+            :button="{ type: 'X', action: 'nuxt-link', url: section.link.url, text: section.heading }"
+            class="heading" />
           <div class="sublinks">
             <Button
               v-for="(link, linkIndex) in section.links"
@@ -301,16 +301,16 @@ $squareArtifactDimension: 2.5rem;
 .heading {
   @include fontSize_Mini;
   @include leading_Small;
-  @include fontWeight_Semibold;
+  @include fontWeight_Bold;
   white-space: nowrap;
-  color: $electricViolet;
+  color: $haiti;
   margin-bottom: 0.5rem;
 }
 
 ::v-deep .subnav-link {
   padding: 0.75rem 0;
   &:hover {
-    .icon-before.triple-arrow-right {
+    .icon-before.arrow-down {
       margin-left: 0;
       opacity: 1;
     }
@@ -318,13 +318,17 @@ $squareArtifactDimension: 2.5rem;
   &:last-child {
     padding-bottom: 0;
   }
-  .icon-before.triple-arrow-right {
-    margin-left: -1.75rem;
+  .icon-before.arrow-down {
+    margin-left: -1.25rem;
     margin-right: 0.5rem;
     opacity: 0;
+    transform: rotate(-90deg);
     transition: 250ms ease-in-out;
     svg {
-      width: 1.25rem;
+      width: 0.75rem;
+      rect {
+        fill: $haiti;
+      }
     }
   }
   .text {

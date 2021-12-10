@@ -19,9 +19,9 @@
     "cta": {
       "type": "D",
       "theme": "white",
-      "action": "a",
+      "action": "nuxt-link",
       "text": "Melba Roy Mouton, 1960",
-      "url": "/",
+      "url": "/melba-roy-mouton-a-hidden-figure-whose-legacy-paved-the-way-for-web3",
       "icon_after": "arrow-down"
     }
   },
@@ -86,7 +86,7 @@
                 "action": "nuxt-link",
                 "theme": "green",
                 "text": "View open Roles",
-                "url": "https://jobs.lever.co/filecoin",
+                "url": "/get-involved/#career-block",
                 "icon_after": "arrow-down"
               }
             ]
@@ -99,10 +99,11 @@
             "ctas": [
               {
                 "type": "D",
-                "action": "nuxt-link",
+                "action": "a",
                 "theme": "green",
                 "text": "Follow us",
                 "url": "https://twitter.com/ffdweb",
+                "target": "_blank",
                 "icon_after": "arrow-down"
               }
             ]

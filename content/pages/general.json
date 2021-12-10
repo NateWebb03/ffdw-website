@@ -20,6 +20,7 @@
       "action": "a",
       "target": "_blank",
       "url": "https://twitter.com/ffdweb",
+      "target": "_blank",
       "component": "TwitterIcon",
       "label": "Twitter",
       "icon_after": "arrow-down"
@@ -29,6 +30,7 @@
       "action": "a",
       "target": "_blank",
       "url": "https://www.youtube.com/channel/UCbj3Hck5cwKURkZKHjg_MKQ",
+      "target": "_blank",
       "component": "YoutubeIcon",
       "label": "YouTube",
       "icon_after": "arrow-down"
@@ -38,6 +40,7 @@
       "action": "a",
       "target": "_blank",
       "url": "https://www.linkedin.com/in/filecoin-foundation-for-the-decentralized-web-482aa1225/",
+      "target": "_blank",
       "component": "LinkedInIcon",
       "label": "LinkedIn",
       "icon_after": "arrow-down"
@@ -61,28 +64,28 @@
           "action": "nuxt-link",
           "url": "/about/#intro_1",
           "text": "About us",
-          "icon_before": "triple-arrow-right"
+          "icon_before": "arrow-down"
         },
         {
           "type": "F",
           "action": "nuxt-link",
           "url": "/about/#vision_1",
           "text": "Promise > Vision",
-          "icon_before": "triple-arrow-right"
+          "icon_before": "arrow-down"
         },
         {
           "type": "F",
           "action": "nuxt-link",
           "url": "/about/#board_1",
           "text": "Board & Advisors",
-          "icon_before": "triple-arrow-right"
+          "icon_before": "arrow-down"
         },
         {
           "type": "F",
           "action": "nuxt-link",
           "url": "/about/#career-block",
           "text": "Careers",
-          "icon_before": "triple-arrow-right"
+          "icon_before": "arrow-down"
         }
       ]
     },
@@ -103,28 +106,28 @@
           "action": "nuxt-link",
           "url": "/explore/#learn_1",
           "text": "Learn about Web3",
-          "icon_before": "triple-arrow-right"
+          "icon_before": "arrow-down"
         },
         {
           "type": "F",
           "action": "nuxt-link",
           "url": "/explore/#videos_1",
           "text": "Educational Resources",
-          "icon_before": "triple-arrow-right"
+          "icon_before": "arrow-down"
         },
         {
           "type": "F",
           "action": "nuxt-link",
           "url": "/explore/#callout",
           "text": "Collaborators",
-          "icon_before": "triple-arrow-right"
+          "icon_before": "arrow-down"
         },
         {
           "type": "F",
           "action": "nuxt-link",
           "url": "/blog",
           "text": "Blog",
-          "icon_before": "triple-arrow-right"
+          "icon_before": "arrow-down"
         }
       ]
     },
@@ -145,21 +148,21 @@
           "action": "nuxt-link",
           "url": "/blog",
           "text": "Blog",
-          "icon_before": "triple-arrow-right"
+          "icon_before": "arrow-down"
         },
         {
           "type": "F",
           "action": "nuxt-link",
           "url": "/get-involved/#grants_1",
           "text": "How to Apply",
-          "icon_before": "triple-arrow-right"
+          "icon_before": "arrow-down"
         },
         {
           "type": "F",
           "action": "nuxt-link",
           "url": "/get-involved/#career-block",
           "text": "Careers",
-          "icon_before": "triple-arrow-right"
+          "icon_before": "arrow-down"
         }
       ]
     },

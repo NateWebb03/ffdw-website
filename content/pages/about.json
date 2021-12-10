@@ -21,6 +21,7 @@
       "action": "a",
       "text": "Ada Lovelace",
       "url": "https://en.wikipedia.org/wiki/Ada_Lovelace",
+      "target": "_blank",
       "icon_after": "arrow-down"
     }
   },

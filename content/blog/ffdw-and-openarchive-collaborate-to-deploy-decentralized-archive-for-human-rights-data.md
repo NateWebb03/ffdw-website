@@ -4,7 +4,7 @@ title: FFDW and OpenArchive Collaborate to Deploy Decentralized Archive for Huma
 description: Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our grant to OpenArchive, a nonprofit dedicated to advancing human rights by empowering people to collect, verify, and securely preserve mobile media using distributed backends. Through this collaboration, OpenArchive will be able to support decentralized backends for the Save app. This will enable people on the ground capturing images and footage of world events to leverage IPFS and Filecoin and other decentralized storage options via their mobile device.
 author: Filecoin Foundation for the Decentralized Web
 date: November 18 2021
-image: '/images/page-blog/ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data.png'
+image: '/images/page-blog/openarchive.png'
 recommendedPosts: []
 tags: ['Rights', 'Smartphones', 'Mobile media']
 ---

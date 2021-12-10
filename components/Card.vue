@@ -445,7 +445,8 @@ export default {
   &:hover {
     &.theme__purple-green {
       .tag {
-        @include gradient_Background_RedPurple;
+        // @include gradient_Background_RedPurple;
+        background: $haiti;
       }
     }
     .image {

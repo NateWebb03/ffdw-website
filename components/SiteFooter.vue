@@ -272,6 +272,9 @@ $iconFingerDimension: 1.5rem;
   }
   .button {
     @include secondaryButtonStyles;
+    &:hover {
+      transform: scale(1.1);
+    }
     &:not(:last-child) {
       margin-right: 1rem;
     }
