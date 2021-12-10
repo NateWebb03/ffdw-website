@@ -52,6 +52,7 @@ import TextBlock from '@/components/TextBlock'
 import ImageBlock from '@/components/ImageBlock'
 import VideoBlock from '@/components/VideoBlock'
 import AccordionBlock from '@/components/AccordionBlock'
+import AboutAccordionBlock from '@/components/AboutAccordionBlock'
 // import SliderBlock from '@/components/SliderBlock'
 import CardListBlock from '@/components/CardListBlock'
 import SlateVideoBlock from '@/components/SlateVideoBlock'
@@ -73,6 +74,7 @@ export default {
     ImageBlock,
     VideoBlock,
     AccordionBlock,
+    AboutAccordionBlock,
     // SliderBlock,
     CardListBlock,
     SlateVideoBlock,
@@ -118,6 +120,7 @@ export default {
         case 'image_block' : name = 'ImageBlock'; break
         case 'video_block' : name = 'VideoBlock'; break
         case 'accordion_block' : name = 'AccordionBlock'; break
+        case 'about_accordion_block' : name = 'AboutAccordionBlock'; break
         // case 'slider_block' : name = 'SliderBlock'; break
         case 'card_list_block' : name = 'CardListBlock'; break
         case 'slate_video_block' : name = 'SlateVideoBlock'; break

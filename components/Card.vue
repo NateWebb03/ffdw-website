@@ -376,19 +376,19 @@ export default {
     width: 50%;
     float: left;
     &:nth-child(odd) {
+      .content {
+        padding-left: calc((100vw - #{$containerWidth}) / 2 + 0.5rem);
+        padding-right: 1rem;
+      }
       &:before,
       &:after {
         width: 100vw;
       }
     }
-    &:first-child {
-      .content {
-        padding-left: calc((100vw - #{$containerWidth}) / 2 + 0.5rem);
-      }
-    }
-    &:last-child {
+    &:nth-child(even) {
       .content {
         padding-right: calc((100vw - #{$containerWidth}) / 2 + 0.5rem);
+        padding-left: 1rem;
       }
     }
     .content {
@@ -408,6 +408,13 @@ export default {
     }
     .title {
       @include p1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      white-space: normal;
+    }
+    .title-suffix {
+      @include fontWeight_Regular;
     }
   }
   .content {
