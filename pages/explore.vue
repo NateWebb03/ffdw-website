@@ -246,30 +246,30 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
     &:nth-child(4n+1),
     &:nth-child(4n+2),
     &:nth-child(4n+3) {
-      .video-container:before {
+      .preview-container:before {
         opacity: 1;
       }
     }
     &:nth-child(4n+1) {
-      .video-container:before {
+      .preview-container:before {
         top: 0;
         left: 0;
       }
     }
     &:nth-child(4n+2) {
-      .video-container:before {
+      .preview-container:before {
         bottom: 0;
         right: 0;
       }
     }
     &:nth-child(4n+3) {
-      .video-container:before {
+      .preview-container:before {
         top: 0;
         right: 0;
       }
     }
     &:nth-child(even):last-child {
-      .video-container {
+      .preview-container {
         &:after {
           content: '';
           position: absolute;
@@ -285,7 +285,7 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
         }
       }
     }
-    .video-container {
+    .preview-container {
       &:before {
         content: '';
         position: absolute;

@@ -332,6 +332,15 @@ export default {
         background-color: $perfume;
       }
     }
+    .metadata {
+      display: none;
+    }
+    .title {
+      @include fontSize_Tiny;
+      @include fontWeight_Regular;
+      @include leading_Regular;
+      padding-left: 1rem;
+    }
   }
 }
 
