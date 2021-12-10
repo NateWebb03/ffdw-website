@@ -84,13 +84,39 @@ export default {
 ::v-deep #intro_1 {
   padding-top: 12rem;
   padding-bottom: 0;
+  @include mini {
+    padding-top: 5rem;
+  }
   .text-block {
     margin-top: -10rem;
+    @include mini {
+      margin-top: 10rem;
+    }
+    @include tiny {
+      margin-top: 5rem;
+    }
+  }
+  .image-block {
+    @include mini {
+      margin-top: 0;
+    }
+    .image {
+      @include mini {
+        position: relative;
+        width: calc(100% + 2rem);
+        left: -1rem;
+      }
+    }
   }
 }
 
 ::v-deep #intro_2 {
   padding-top: 3rem;
+  .image-block {
+    @include mini {
+      margin-bottom: 3rem;
+    }
+  }
 }
 
 ::v-deep #intro_3 {
@@ -103,12 +129,22 @@ export default {
   .card {
     margin-bottom: 5rem;
     width: calc(50% - #{math.div($containerWidth, 24)});
+    @include mini {
+      width: 100%;
+    }
     &:nth-child(odd) {
       margin-right: math.div($containerWidth, 12);
+      @include mini {
+        margin-right: 0;
+      }
     }
     .title {
       @include fontSize_Medium;
       margin-bottom: 1rem;
+      @include mini {
+        @include fontSize_Regular;
+        @include leading_Regular;
+      }
     }
     .description {
       @include p3;
@@ -127,10 +163,26 @@ export default {
 
 ::v-deep #callout {
   padding-bottom: 0;
+  @include small {
+    padding-top: 0;
+  }
 }
 
 ::v-deep #grants_1 {
   padding-bottom: 0;
+  [class~="grid"],
+  [class*="grid-"],
+  [class*="grid_"] {
+    @include small {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+  .text-block {
+    @include small {
+      margin-top: 3rem;
+    }
+  }
 }
 
 ::v-deep #grants_accordion {

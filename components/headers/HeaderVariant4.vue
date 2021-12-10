@@ -1,18 +1,31 @@
 sub-theme__<template>
   <header :class="['header', type, `sub-theme__${subTheme}`]">
-    <div class="content grid-middle">
-      <div class="col-10" data-push-left="off-1">
-        <div class="background-double-artifacts">
-          <img :src="image_1" />
-          <div class="background-single-artifact" />
-          <div class="subheading-double-artifact" />
+    <div class="grid-middle-center">
+      <div class="col-10_md-12">
+        <div class="content">
+
+          <div class="heading heading-1">
+            {{ heading }}
+          </div>
+
+          <div class="heading heading-2">
+            <div class="heading-2-artifact" />
+            {{ subheading }}
+          </div>
+
+          <div class="content-artifacts-1" />
+
+          <div class="content-artifacts-2" />
+
+          <img
+            class="image desktop"
+            :src="image_1" />
+
+          <div
+            class="image mobile"
+            :style="{ backgroundImage: `url(${image_1})` }" />
+
         </div>
-      </div>
-      <div class="heading-1">
-        {{ heading }}
-      </div>
-      <div data-push-left="off-8" class="heading-2">
-        {{ subheading }}
       </div>
     </div>
   </header>
@@ -52,187 +65,202 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$artifact_square_dimension_1: 1.875rem;
-$artifact_square_dimension_2: 2.5rem;
-$artifact_rectangle_height: 7rem;
+$artifact_square_small: 1.875rem;
+$artifact_square_large: 2.5rem;
+
+$gutter: calc((100vw - #{$containerWidth}) / 2);
+$gutterMobile: calc(100vw * 0.07);
+$singleColumn: math.div($containerWidth, 12);
+
+@mixin artifactSquare_Small {
+  width: $artifact_square_small;
+  height: $artifact_square_small;
+  background-color: $haiti;
+}
+
+@mixin artifactSquare_Large {
+  width: $artifact_square_large;
+  height: $artifact_square_large;
+  background-color: $haiti;
+}
 
 // ///////////////////////////////////////////////////////////////////// General
 .header {
   padding-top: 3rem;
   padding-bottom: 4rem;
+  &.sub-theme__red-purple {
+    .content-artifacts-1:after {
+      background-color: $coralRed;
+    }
+    .heading-1:after {
+      @include gradient_Background_RedPurple;
+    }
+    .heading-2:after {
+      background-color: $perfume;
+    }
+    .heading-2-artifact {
+      @include gradient_Background_PurpleRed;
+      &:after {
+        background-color: $coralRed;
+      }
+    }
+  }
+  &.sub-theme__red-green {
+    .content-artifacts-1:after {
+      background-color: $coralRed;
+    }
+    .heading-1:after {
+      @include gradient_Background_RedGreen;
+    }
+    .heading-2:after {
+      background-color: $greenYellow;
+    }
+    .heading-2-artifact {
+      @include gradient_Background_GreenRed;
+      &:after {
+        background-color: $coralRed;
+      }
+    }
+  }
 }
 
-.content,
-.background-double-artifacts,
-.background-single-artifact,
-.subheading-double-artifact {
+.content {
   position: relative;
 }
 
-img {
+.heading {
+  @include fontSize_Huge;
+  @include fontWeight_Extrabold;
+  line-height: 1;
+  position: absolute;
+  padding: 1.5rem;
+  background-color: $haiti;
+  @include mini {
+    @include fontSize_MediumLarge;
+  }
+}
+
+.image {
   width: 100%;
-  height: 100%;
-}
-
-// /////////////////////////////////////////////////////////////////// Artifacts
-.heading-1:before,
-.heading-1:after,
-.heading-2:before,
-.heading-2:after,
-.subheading-double-artifact:before,
-.subheading-double-artifact:after,
-.background-double-artifacts:before,
-.background-double-artifacts:after,
-.background-single-artifact:before {
-  position: absolute;
-  content: "";
-}
-
-.heading-1:after,
-.heading-2:before,
-.background-double-artifacts:before,
-.background-double-artifacts:after {
-  background: $haiti;
-}
-
-.heading-1 {
-  &:before,
-  &:after {
-    top: 100%;
-  }
-  &:before {
-    width: calcToEdge(66%);
-    height: $artifact_square_dimension_2;
-    right: 34%;
-  }
-
-  &:after {
-    width: $artifact_square_dimension_1;
-    height: $artifact_square_dimension_1;
-    left: 125%;
-  }
-}
-
-.heading-2 {
-  &:before {
-    width: $artifact_square_dimension_1;
-    height: $artifact_square_dimension_1;
-    left: -$artifact_square_dimension_1;
-    top: -$artifact_square_dimension_1;
-  }
-  &:after {
-    width: calcToEdge(calc(45% + 0.5rem));
-    height: $artifact_square_dimension_2;
-    top: -$artifact_square_dimension_2;
-    left: calc(55%);
-  }
-}
-
-.subheading-double-artifact {
-  left: 25%;
-  bottom: 5.4375rem;
-  &:before {
-    height: $artifact_square_dimension_2;
-    width: $artifact_square_dimension_2;
-    left: calc(75%);
-    top: -($artifact_square_dimension_2 * 2 + $artifact_rectangle_height);
-  }
-  &:after {
-    height: $artifact_rectangle_height;
-    width: calcToEdge(calc(25% - #{$artifact_square_dimension_2}));
-    top: -($artifact_square_dimension_2 + $artifact_rectangle_height);
-    left: calc(75% + #{$artifact_square_dimension_2});
-  }
-}
-
-.background-double-artifacts {
-  &:before {
-    width: $artifact_square_dimension_2;
-    height: $artifact_square_dimension_2;
-    left: 0;
-    bottom: 0;
-  }
-  &:after {
-    width: $artifact_square_dimension_1;
-    height: $artifact_square_dimension_1;
-    top: 0;
-    right: 0;
-  }
-}
-
-.background-single-artifact:before {
-  width: $artifact_square_dimension_1;
-  height: $artifact_square_dimension_1;
-  left: -$artifact_square_dimension_1;
-  top: 100%;
-}
-// ///////////////////////////////////////////////////////////////////// Content
-
-.heading-1,
-.heading-2 {
-  @include title;
-  position: absolute;
-  background: $haiti;
-  padding-bottom: 0;
-}
-.header {
-  &.sub-theme__purple-green {
-    .heading-1:before,
-    .heading-2:after {
-      background-color: $greenYellow;
-    }
-
-    .subheading-double-artifact:before,
-    .background-single-artifact:before {
-      background-color: $perfume;
-    }
-
-    .subheading-double-artifact:after {
-      @include gradient_Background_PurpleGreen;
+  &.desktop {
+    @include small {
+      display: none;
     }
   }
-
-  &.sub-theme__red-purple {
-    .heading-2:after {
-      background-color: $perfume;
+  &.mobile {
+    display: none;
+    padding-top: 100%;
+    background-size: cover;
+    background-position: -10rem;
+    @include small {
+      display: block;
     }
-
-    .subheading-double-artifact:before,
-    .background-single-artifact:before {
-      background-color: $coralRed;
-    }
-    .heading-1:before {
-      @include gradient_Background_RedPurple;
-    }
-    .subheading-double-artifact:after {
-      @include gradient_Background_PurpleRed;
-    }
-  }
-
-  &.sub-theme__red-green {
-    .heading-2:after {
-      background-color: $greenYellow;
-    }
-
-    .subheading-double-artifact:before,
-    .background-single-artifact:before {
-      background-color: $coralRed;
-    }
-    .heading-1:before {
-      @include gradient_Background_RedGreen;
-    }
-    .subheading-double-artifact:after {
-      @include gradient_Background_GreenRed;
+    @include mini {
+      padding-top: 150%;
     }
   }
 }
+
 .heading-1 {
   top: 0;
-  padding-right: 1rem;
+  left: -3rem;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    width: calc(50% + #{$gutter} + #{$singleColumn} + 0.5rem - 3rem);
+    height: $artifact_square_large;
+    @include customMaxMQ ($containerWidth + 4rem) {
+      width: calc(50% + #{$gutterMobile} + #{$singleColumn} - 3rem);
+    }
+    @include medium {
+      width: calc(50% + #{$gutterMobile} + 0.5rem - 3rem);
+    }
+  }
 }
+
 .heading-2 {
   bottom: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  right: -3rem;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+  }
+  &:before {
+    @include artifactSquare_Small;
+    bottom: calc(100% - 0.5rem);
+    right: calc(100% - 0.5rem);
+  }
+  &:after {
+    bottom: 100%;
+    left: calc(100% - 7rem);
+    width: calc(7rem + #{$gutter} + #{$singleColumn} + 0.5rem - 3rem);
+    height: $artifact_square_large;
+    @include customMaxMQ ($containerWidth + 4rem) {
+      width: calc(7rem + #{$gutterMobile} + #{$singleColumn} - 3rem);
+    }
+    @include medium {
+      width: calc(7rem + #{$gutterMobile} + 0.5rem - 3rem);
+    }
+  }
+}
+
+.content-artifacts-1,
+.content-artifacts-2,
+.heading-2-artifact {
+  position: absolute;
+  &:after {
+    content: '';
+    position: absolute;
+  }
+}
+
+.content-artifacts-1 {
+  @include artifactSquare_Large;
+  bottom: 0;
+  left: 0;
+  &:after {
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.content-artifacts-2 {
+  @include artifactSquare_Small;
+  top: 0;
+  right: 0;
+  &:after {
+    top: 100%;
+    right: 100%;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+  }
+}
+
+.heading-2-artifact {
+  left: calc(100% - 0.5rem);
+  bottom: calc(100% + #{$artifact_square_large});
+  width: calc(#{$gutter} + #{$singleColumn} + 1rem - 3rem);
+  height: 7rem;
+  @include customMaxMQ ($containerWidth + 4rem) {
+    width: calc(#{$gutterMobile} + #{$singleColumn} + 0.5rem - 3rem);
+  }
+  @include medium {
+    width: calc(#{$gutterMobile} - 2rem);
+  }
+  @include small {
+    left: calc(100% - 3rem);
+    width: calc(#{$gutterMobile} + 0.5rem);
+  }
+  &:after {
+    @include artifactSquare_Large;
+    bottom: 100%;
+    right: 100%;
+  }
 }
 </style>

@@ -21,7 +21,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-4"
+          "num": "col-4_mi-8_ti-12"
         },
         "heading": "Contact",
         "description": "Questions? Ideas? Drop us a line <a href='mailto:hello@ffweb.org'>hello@ffweb.org</a>",
@@ -31,7 +31,7 @@
       "col_2": {
         "type": "text_block",
         "cols": {
-          "num": "col-4"
+          "num": "col-4_mi-8_ti-12"
         },
         "heading": "Social",
         "description": "<a href='' target='_blank'>FAQ</a><br /><a href='' target='_blank'>Twitter</a><br /><a href='' target='_blank'>LinkedIn</a><br /><a href='' target='_blank'>Blog</a><br /><a href='' target='_blank'>YouTube</a>",
@@ -41,7 +41,7 @@
       "col_3": {
         "type": "text_block",
         "cols": {
-          "num": "col-4"
+          "num": "col-4_mi-8_ti-12"
         },
         "heading": "Careers",
         "description": "Our team of thinkers and doers is growing. If you’re passionate about advancing technology forward, we want to hear from you.",
@@ -62,7 +62,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-7"
+          "num": "col-7_sm-8_mi-10_ti-12"
         },
         "label": "Reach out",
         "heading": "We’re working to foster and expand the decentralized web.",
@@ -71,8 +71,8 @@
       "col_2": {
         "type": "image_block",
         "cols": {
-          "num": "col-4",
-          "push_left": "off-1"
+          "num": "col-4_sm-6_mi-8",
+          "push_left": "off-1_sm-0"
         },
         "src": "/images/page-contact/person-with-laptop.png"
       }
@@ -81,8 +81,8 @@
       "col_1": {
         "type": "custom",
         "cols": {
-          "num": "col-8",
-          "push_left": "off-4"
+          "num": "col-8_sm-10_ti-12",
+          "push_left": "off-4_sm-2_ti-0"
         },
         "customizations": {
           "contactForm": {
