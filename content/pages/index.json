@@ -12,7 +12,6 @@
   "header": {
     "type": "variant_6",
     "theme": "purple-green-b",
-    "headingComponentName": "HomeHeaderSvg",
     "image_1": "/images/component-header/woman-on-phone.png"
   },
   "page_content": {
@@ -20,7 +19,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-10"
+          "num": "col-10_mi-12"
         },
         "format": "medium",
         "label": "About FFDW",
@@ -31,8 +30,8 @@
       "col_1": {
         "type": "image_block",
         "cols": {
-          "num": "col-10",
-          "push_left": "off-1"
+          "num": "col-10_mi-12",
+          "push_left": "off-1_mi-0"
         },
         "src": "/images/page-index/long-arrow-right.svg"
       }
@@ -42,7 +41,7 @@
       "col_1": {
         "type": "image_block",
         "cols": {
-          "num": "col-3"
+          "num": "col-3_mi-6"
         },
         "src": "/images/page-index/newtwork-image-1.svg",
         "label": "Centralized"
@@ -50,8 +49,8 @@
       "col_2": {
         "type": "text_block",
         "cols": {
-          "num": "col-4",
-          "push_left": "off-1"
+          "num": "col-4_mi-12",
+          "push_left": "off-1_mi-0"
         },
         "format": "small",
         "heading": "We exist to build a better web",
@@ -60,8 +59,8 @@
       "col_3": {
         "type": "image_block",
         "cols": {
-          "num": "col-3",
-          "push_left": "off-1"
+          "num": "col-3_mi-6",
+          "push_left": "off-1_mi-0"
         },
         "src": "/images/page-index/newtwork-image-2.svg",
         "label": "Decentralized"
@@ -71,7 +70,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-7"
+          "num": "col-7_mi-12"
         },
         "format": "header",
         "label": "Explore the Dweb",
@@ -81,8 +80,8 @@
       "col_2": {
         "type": "image_block",
         "cols": {
-          "num": "col-4",
-          "push_left": "off-1"
+          "num": "col-4_mi-12",
+          "push_left": "off-1_mi-0"
         },
         "src": "/images/page-index/woman-speaking-into-a-microphone.jpeg"
       }
@@ -91,8 +90,8 @@
       "col_1": {
         "type": "accordion_block",
         "cols": {
-          "num": "col-9",
-          "push_left": "off-3"
+          "num": "col-9_sm-10_mi-12",
+          "push_left": "off-3_sm-2_mi-0"
         },
         "sections": [
           {
@@ -139,14 +138,14 @@
       "image_left": {
         "type": "image_block",
         "cols": {
-          "num": "col-3"
+          "num": "col-3_sm-hidden"
         },
         "src": "/images/page-index/woman-outside-holding-an-ipad-on-a-sunny-day.jpg"
       },
       "text": {
         "type": "text_block",
         "cols": {
-          "num": "col-6"
+          "num": "col-6_sm-12"
         },
         "format": "small",
         "theme": "green-purple",
@@ -157,18 +156,18 @@
       "image_right": {
         "type": "image_block",
         "cols": {
-          "num": "col-3"
+          "num": "col-3_sm-hidden"
         },
         "src": "/images/page-index/man-outside-holding-a-coffee-on-a-sunny-day.jpg"
       }
     },
     "spotlight": {
-      "grid": ["middle"],
+      "grid": ["middle", "center"],
       "col_1": {
         "type": "video_block",
         "tint": true,
         "cols": {
-          "num": "col-7"
+          "num": "col-7_sm-11"
         },
         "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
         "url": "https://youtu.be/Sakannch1Dw",
@@ -183,8 +182,8 @@
       "col_2": {
         "type": "text_block",
         "cols": {
-          "num": "col-4",
-          "push_left": "off-1"
+          "num": "col-4_sm-12",
+          "push_left": "off-1_sm-0"
         },
         "format": "small",
         "theme": "green-purple",
@@ -217,7 +216,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-9"
+          "num": "col-9_sm-12"
         },
         "label": "Latest News From FFDW",
         "heading": "Updates from our organization and across the Web3 universe."

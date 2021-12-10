@@ -96,6 +96,9 @@ $iconDimension: 1.5rem;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  @include customMaxMQ (80rem) {
+    padding-right: 5rem;
+  }
 }
 
 .breadcrumbs {

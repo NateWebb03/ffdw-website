@@ -65,7 +65,13 @@ export default {
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
 ::v-deep #info_1 {
+  @include small {
+    padding-bottom: 2rem;
+  }
   .image-block {
+    @include small {
+      margin-bottom: 3rem;
+    }
     &:before {
       content: '';
       position: absolute;
@@ -74,6 +80,9 @@ export default {
       width: 2rem;
       height: calc(50% + 3rem);
       background-color: $coralRed;
+      @include tiny {
+        width: 1.25rem;
+      }
     }
   }
 }
@@ -81,6 +90,9 @@ export default {
 ::v-deep #info_2 {
   padding-top: 0;
   .text-block {
+    @include small {
+      padding-right: 1rem;
+    }
     &:after {
       content: '';
       position: absolute;
@@ -89,17 +101,67 @@ export default {
       width: 2rem;
       height: 160%;
       background-color: $perfume;
+      @include containerMaxMQ {
+        left: 100%;
+        width: 1.25rem;
+      }
+      @include small {
+        top: 90%;
+      }
+      @include mini {
+        height: 80%;
+      }
     }
   }
 }
 
 ::v-deep #project_areas {
   padding-top: 0;
+  [class~="grid"],
+  [class*="grid-"],
+  [class*="grid_"] {
+    @include mini {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+  }
+  .image-block {
+    @include mini {
+      margin: 5rem 0;
+    }
+  }
+}
+
+::v-deep #accordion_1 {
+  @include mini {
+    padding: 0;
+  }
+}
+
+::v-deep #application_process {
+  @include small {
+    padding-bottom: 0;
+  }
+  .text-block {
+    @include small {
+      margin-top: 3rem;
+    }
+  }
 }
 
 ::v-deep #proposal_template {
   padding-top: 0;
+  [class~="grid"],
+  [class*="grid-"],
+  [class*="grid_"] {
+    @include small {
+      flex-direction: column-reverse;
+    }
+  }
   .image-block {
+    @include small {
+      margin: 5rem 0;
+    }
     &:after {
       content: '';
       position: absolute;
@@ -108,6 +170,11 @@ export default {
       width: 2rem;
       height: 100%;
       background-color: $perfume;
+      @include mini {
+        bottom: 50%;
+        height: 80%;
+        width: 1.25rem;
+      }
     }
   }
   .button {

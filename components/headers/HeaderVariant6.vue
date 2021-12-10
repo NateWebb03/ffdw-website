@@ -11,7 +11,8 @@
 
     <div class="panel-right">
       <div class="panel-right-inner-content">
-        <component :is="headingComponentName" />
+        <HomeHeaderSvg class="desktop" />
+        <HomeHeaderSvgMobile class="mobile" />
         <Button :button="buttonBlock" />
       </div>
     </div>
@@ -21,7 +22,8 @@
 
 <script>
 // ===================================================================== Imports
-import HomeHeaderSvg from '@/components/svgs/HomeHeader'
+import HomeHeaderSvg from '@/components/svgs/HomeHeaderSvg'
+import HomeHeaderSvgMobile from '@/components/svgs/HomeHeaderSvgMobile'
 import Button from '@/components/Button'
 
 // ====================================================================== Export
@@ -30,6 +32,7 @@ export default {
 
   components: {
     HomeHeaderSvg,
+    HomeHeaderSvgMobile,
     Button
   },
 
@@ -79,6 +82,22 @@ $artifact_square_dimension: 2.5rem;
   max-width: 90rem;
   margin: 0 auto;
   color: $haiti;
+  @include small {
+    flex-direction: column;
+  }
+}
+
+.mobile {
+  display: none;
+  @include small {
+    display: block;
+  }
+}
+
+.desktop {
+  @include small {
+    display: none;
+  }
 }
 
 .artifact-1,
@@ -98,12 +117,22 @@ $artifact_square_dimension: 2.5rem;
     height: $artifact_1_dimension;
     top: 0;
     right: 0;
+    @include small {
+      width: 3.875rem;
+      height: 3.875rem;
+    }
   }
   &:after {
     width: $artifact_square_dimension;
     height: $artifact_square_dimension;
     top: $artifact_1_dimension;
     right: $artifact_1_dimension;
+    @include small {
+      width: 1.25rem;
+      height: 1.25rem;
+      top: 3.875rem;
+      right: 3.875rem;
+    }
   }
 }
 
@@ -127,6 +156,10 @@ $artifact_square_dimension: 2.5rem;
   width: 37%;
   margin-top: -2rem;
   margin-bottom: -3rem;
+  @include small {
+    width: 80%;
+    margin-bottom: 0;
+  }
   img {
     width: 100%;
   }
@@ -138,6 +171,11 @@ $artifact_square_dimension: 2.5rem;
   padding-bottom: $artifact_square_dimension * 2 + 2rem;
   padding-left: calc(#{math.div($containerWidth, 12)});
   padding-right: calc((100% - #{$containerWidth}) / 2);
+  @include small {
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 .panel-right-inner-content {
