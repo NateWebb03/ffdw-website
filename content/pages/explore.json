@@ -80,64 +80,11 @@
     },
     "videos_2": {
       "col_1": {
-        "type": "card_list_block",
+        "type": "slate_video_block",
         "cols": {
           "num": "col"
         },
-        "limit": 6,
-        "iterate": 6,
-        "cards": [
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          }
-        ],
-        "cta": {
-          "type": "C",
-          "action": "a",
-          "text": "See More",
-          "url": "/"
-        }
+        "slatename": "ffdw-website"
       }
     },
     "callout": {

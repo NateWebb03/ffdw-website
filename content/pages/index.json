@@ -164,20 +164,12 @@
     "spotlight": {
       "grid": ["middle", "center"],
       "col_1": {
-        "type": "video_block",
+        "type": "slate_video_block",
         "tint": true,
         "cols": {
           "num": "col-7_sm-11"
         },
-        "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-        "url": "https://youtu.be/Sakannch1Dw",
-        "subtext": {
-          "type": "X",
-          "action": "video",
-          "icon": "play",
-          "text": "Watch: introducting The Starling Lab",
-          "url": "https://youtu.be/6OY4xAs3Grg"
-        }
+        "slatename": "ffdw-vid"
       },
       "col_2": {
         "type": "text_block",
