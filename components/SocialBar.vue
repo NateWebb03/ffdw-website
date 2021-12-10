@@ -111,13 +111,22 @@ export default {
 
 .svg-twitter {
   width: 2.9375rem;
+  @include mini {
+    width: 2.625rem;
+  }
 }
 
 .svg-youtube {
   width: 3rem;
+  @include mini {
+    width: 2.75rem;
+  }
 }
 
 .svg-linkedin {
   width: 2.5625rem;
+  @include mini {
+    width: 2.375rem;
+  }
 }
 </style>

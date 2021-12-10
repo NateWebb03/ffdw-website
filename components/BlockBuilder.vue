@@ -131,5 +131,8 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 .sectional {
   padding: 6rem 0;
+  @include mini {
+    padding: 3rem 0;
+  }
 }
 </style>

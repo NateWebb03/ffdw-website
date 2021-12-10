@@ -33,15 +33,15 @@
       "col_1": {
         "type": "image_block",
         "cols": {
-          "num": "col-4"
+          "num": "col-4_sm-6_mi-9"
         },
         "src": "/images/page-grants/person-saying-something-to-other-people-at-a-table.jpeg"
       },
       "col_2": {
         "type": "text_block",
         "cols": {
-          "num": "col-6",
-          "push_left": "off-1"
+          "num": "col-6_sm-8_mi-12",
+          "push_left": "off-1_sm-0"
         },
         "format": "tiny",
         "label": "FFDW’s Operating Approach",
@@ -53,8 +53,8 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-10",
-          "push_left": "off-1"
+          "num": "col-10_sm-12",
+          "push_left": "off-1_sm-0"
         },
         "format": "small",
         "description": "As a private operating foundation, FFDW takes collaboration seriously.  Both our operating status and our ethos mean that we internally drive the development of ideas and projects.  When working with outside organizations, we approach all of our initiatives as collaborations in which both FFDW and its implementing organizations work together closely to ensure success. Rather than being an organization that simply writes checks and monitors progress, we roll up our sleeves and work alongside our project partners. Where useful, we assist our collaborators with program design, technical support, hiring, legal questions, and external communications."
@@ -64,7 +64,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-6"
+          "num": "col-6_sm-8_mi-12"
         },
         "format": "header",
         "label": "Project Areas",
@@ -74,8 +74,8 @@
       "col_2": {
         "type": "image_block",
         "cols": {
-          "num": "col-4",
-          "push_left": "off-2"
+          "num": "col-4_mi-8_ti-10",
+          "push_left": "off-2_sm-0"
         },
         "src": "/images/page-grants/person-showing-presentation-to-group.jpeg"
       }
@@ -84,8 +84,8 @@
       "col_1": {
         "type": "accordion_block",
         "cols": {
-          "num": "col-9",
-          "push_left": "off-3"
+          "num": "col-9_sm-10_mi-12",
+          "push_left": "off-3_sm-2_mi-0"
         },
         "theme": "red-purple",
         "sections": [
@@ -109,15 +109,15 @@
       "col_1": {
         "type": "image_block",
         "cols": {
-          "num": "col-4"
+          "num": "col-4_sm-6_mi-8"
         },
         "src": "/images/page-grants/person-sitting-at-laptop-at-cafe.jpeg"
       },
       "col_2": {
         "type": "text_block",
         "cols": {
-          "num": "col-6",
-          "push_left": "off-1"
+          "num": "col-6_sm-10_mi-12",
+          "push_left": "off-1_sm-0"
         },
         "format": "tiny",
         "label": "Application Process",
@@ -129,7 +129,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-6"
+          "num": "col-6_sm-10_mi-12"
         },
         "format": "medium",
         "label": "FFDW Proposal Template",
@@ -150,8 +150,8 @@
       "col_2": {
         "type": "image_block",
         "cols": {
-          "num": "col-4",
-          "push_left": "off-2"
+          "num": "col-4_sm-6_mi-8",
+          "push_left": "off-2_sm-6_mi-4"
         },
         "src": "/images/page-grants/person-speaking-into-microphone-to-group.jpeg"
       }
@@ -160,8 +160,8 @@
       "col_1": {
         "type": "accordion_block",
         "cols": {
-          "num": "col-9",
-          "push_left": "off-3"
+          "num": "col-9_sm-10_mi-12",
+          "push_left": "off-3_sm-2_mi-0"
         },
         "theme": "red-purple",
         "sections": [

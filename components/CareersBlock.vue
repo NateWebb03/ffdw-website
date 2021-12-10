@@ -10,13 +10,13 @@
     <section class="section-bottom">
       <div class="grid-middle">
 
-        <div class="col-6">
+        <div class="col-6_mi-12">
           <div class="panel-left">
             <img :src="featuredImage" class="image" />
           </div>
         </div>
 
-        <div class="col-5" data-push-left="off-1">
+        <div class="col-5_sm-8_mi-12" data-push-left="off-1_sm-0">
           <div class="panel-right">
             <CardListBlock :block="{ cards: cards }" />
             <TextBlock :block="{ ctas: secondaryCtas }" />
@@ -151,6 +151,12 @@ export default {
 
 .section-bottom {
   padding: 5rem 0;
+  @include small {
+    padding: 3rem 0;
+  }
+  @include mini {
+    padding-bottom: 0;
+  }
 }
 
 // ///////////////////////////////////////////////////////////////////// Content
@@ -163,6 +169,10 @@ export default {
 .image {
   width: 100%;
   padding-left: 2rem;
+  @include small {
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
 }
 
 ::v-deep .card {

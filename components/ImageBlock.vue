@@ -3,9 +3,7 @@
 
     <img :src="src" class="image" />
 
-    <div
-      v-if="label"
-      class="label">
+    <div v-if="label" class="label">
       {{ label }}
     </div>
 
@@ -50,5 +48,8 @@ export default {
   @include label_2;
   text-align: center;
   margin-top: 2rem;
+  @include mini {
+    font-size: 0.75rem;
+  }
 }
 </style>

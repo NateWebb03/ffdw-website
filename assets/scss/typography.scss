@@ -101,6 +101,7 @@ $letterSpacing_Large: 0.03em;
 // leading_Regular | 35pt
 // leading_Medium | 40pt
 // leading_Large | 50pt
+// leading_MediumLarge | 60pt
 // leading_ExtraLarge | 70pt
 // leading_Huge | 80pt
 // leading_Massive | 103pt
@@ -115,18 +116,30 @@ $letterSpacing_Large: 0.03em;
   @include fontSize_ExtraLarge;
   @include leading_ExtraLarge;
   @include fontWeight_Semibold;
+  @include mini {
+    font-size: 1.875rem; // 30pt
+    line-height: 2.8125rem; // 45pt
+  }
 }
 
 @mixin h2 {
   @include fontSize_MediumLarge;
   @include leading_MediumLarge;
   @include fontWeight_Semibold;
+  @include mini {
+    @include leading_Large;
+    font-size: 1.875rem; // 30pt
+  }
 }
 
 @mixin h3 {
   @include fontSize_Large;
   @include leading_Large;
   @include fontWeight_Semibold;
+  @include mini {
+    line-height: 2.8125rem; // 45pt
+    font-size: 1.875rem; // 30pt
+  }
 }
 
 @mixin h4 {
@@ -139,6 +152,10 @@ $letterSpacing_Large: 0.03em;
   @include fontSize_Medium;
   @include leading_Medium;
   @include fontWeight_Semibold;
+  @include mini {
+    @include fontSize_Regular;
+    @include leading_Medium;
+  }
 }
 
 @mixin p2 {
@@ -148,6 +165,10 @@ $letterSpacing_Large: 0.03em;
 @mixin p3 {
   @include fontSize_Regular;
   @include leading_Regular;
+  @include small {
+    @include fontSize_Mini;
+    line-height: 1.875rem; // 30pt
+  }
 }
 
 @mixin label_1 {
@@ -159,6 +180,10 @@ $letterSpacing_Large: 0.03em;
   @include fontSize_Small;
   @include leading_Regular;
   @include fontWeight_Semibold;
+  @include mini {
+    @include fontSize_Small;
+    line-height: 1.875rem; // 30pt
+  }
 }
 
 @mixin label_3 {

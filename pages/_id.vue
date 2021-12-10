@@ -3,6 +3,8 @@
 
     <Modal />
 
+    <HeaderSelector :header="{ disable: true, nav_theme: 'light' }" />
+
     <BlockBuilder :sections="postHeading" />
 
     <div class="grid-noGutter">
@@ -66,6 +68,7 @@ import CloneDeep from 'lodash/cloneDeep'
 import BlogPageData from '@/content/pages/blog.json'
 
 import Modal from '@/components/Modal'
+import HeaderSelector from '@/components/HeaderSelector'
 import BlockBuilder from '@/components/BlockBuilder'
 import SocialBar from '@/components/SocialBar'
 
@@ -75,6 +78,7 @@ export default {
 
   components: {
     Modal,
+    HeaderSelector,
     BlockBuilder,
     SocialBar
   },

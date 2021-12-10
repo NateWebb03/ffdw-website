@@ -2,7 +2,7 @@
   <header :class="['header', type]">
 
     <div class="grid-middle">
-      <div class="col" data-push-left="off-1">
+      <div class="col" data-push-left="off-1_sm-0">
         <component :is="headingComponentName" />
       </div>
     </div>
@@ -77,10 +77,17 @@ export default {
   color: $cararra;
 }
 
+svg {
+  width: 100%;
+}
+
 // ///////////////////////////////////////////////////////////////////// Content
 .image {
   width: 100%;
   margin-top: -10rem;
+  @include small {
+    margin-top: -20rem;
+  }
 }
 
 .text-block {

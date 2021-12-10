@@ -1,16 +1,19 @@
 <template>
   <div :class="`header-selector theme__${theme}`">
 
-    <NavBlock :theme="navTheme" />
+    <SiteNav :theme="navTheme" />
 
-    <component :is="headerVariant" :header="header" />
+    <component
+      :is="headerVariant"
+      v-if="!header.disable"
+      :header="header" />
 
   </div>
 </template>
 
 <script>
 // ===================================================================== Imports
-import NavBlock from '@/components/NavBlock'
+import SiteNav from '@/components/SiteNav'
 import HeaderVariant1 from '@/components/headers/HeaderVariant1'
 import HeaderVariant2 from '@/components/headers/HeaderVariant2'
 import HeaderVariant3 from '@/components/headers/HeaderVariant3'
@@ -23,7 +26,7 @@ export default {
   name: 'HeaderSelector',
 
   components: {
-    NavBlock,
+    SiteNav,
     HeaderVariant1,
     HeaderVariant2,
     HeaderVariant3,
@@ -42,6 +45,9 @@ export default {
   computed: {
     headerVariant () {
       return `HeaderVariant${this.header.type.split('_')[1]}`
+    },
+    disable () { // disabled on blog singular pages
+      return this.header.disable
     },
     theme () { // 'purple-green', 'red-purple', 'red-green'
       return this.header.theme

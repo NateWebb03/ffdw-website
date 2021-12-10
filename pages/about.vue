@@ -73,12 +73,32 @@ export default {
 ::v-deep #intro_1 {
   padding-top: 9rem;
   .text-block {
+    @include mini {
+      margin-top: 10rem;
+    }
     .heading {
       font-size: 3.0625rem;
+      @include mini {
+        font-size: 1.875rem; // 30pt
+        line-height: 2.8125rem; // 45pt
+      }
+      @include tiny {
+        width: calc(100vw - 100vw * 0.14);
+      }
     }
   }
   .image-block {
     margin-top: 3rem;
+    @include mini {
+      margin-top: 0;
+    }
+    .image {
+      @include mini {
+        position: relative;
+        width: calc(100% + 3rem);
+        left: -2rem;
+      }
+    }
   }
 }
 
@@ -87,6 +107,10 @@ export default {
   padding-bottom: 3rem;
   .image-block {
     margin-top: -5rem;
+    @include mini {
+      margin-top: 0;
+      margin-bottom: 3rem;
+    }
   }
 }
 
@@ -111,6 +135,10 @@ export default {
   [data-block-id="col_2"] {
     .text-block {
       padding: 0 2.5rem;
+      @include mini {
+        padding: 0;
+        margin: 3rem 0;
+      }
     }
   }
   [data-block-id="col_3"] {

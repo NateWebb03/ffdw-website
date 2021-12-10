@@ -27,6 +27,10 @@ html, body {
   scroll-behavior: smooth;
   ::-moz-selection { background: white; color: black; }
   ::selection { background: white; color: black; }
+  @include mini {
+    @include fontSize_Mini;
+    line-height: 1.875rem; // 30pt
+  }
   &.no-scroll {
     overflow-y: hidden;
   }
@@ -88,7 +92,7 @@ img {
   width: $containerWidth;
   margin: 0 auto;
   @include customMaxMQ ($containerWidth + 4rem) {
-    padding: 0 4.1665%;
+    padding: 0 7%;
     width: 100%;
   }
   &[class*="-noGutter"] {

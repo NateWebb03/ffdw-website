@@ -20,6 +20,7 @@
       :class="['icon-before', iconBefore]">
       <IconFingerUp v-if="iconBefore === 'finger-up'" />
       <IconStar v-if="iconBefore === 'star'" />
+      <IconTrippleArrowRight v-if="iconBefore === 'triple-arrow-right'" />
     </div>
 
     <span v-if="text" class="text">
@@ -45,6 +46,7 @@ import { mapActions } from 'vuex'
 import IconArrowDown from '@/components/icons/ArrowDown'
 import IconFingerUp from '@/components/icons/IconFingerUp'
 import IconStar from '@/components/icons/Star'
+import IconTrippleArrowRight from '@/components/icons/TrippleArrowRight'
 
 // ====================================================================== Export
 export default {
@@ -53,7 +55,8 @@ export default {
   components: {
     IconArrowDown,
     IconFingerUp,
-    IconStar
+    IconStar,
+    IconTrippleArrowRight
   },
 
   props: {
@@ -62,7 +65,8 @@ export default {
       (B) → Same as the Primary CTA except black artifacts (ex: CTA in Header of Home page)
       (C) → Secondary CTA, usually clear with a white border (ex: just above Footer on Home page)
       (D) → Tertiary CTA, almost no styling except font-weight and color (ex: careers list)
-      (E) → Navigation (Nav + Footer)
+      (E) → Navigation [top-level] (Nav + Footer)
+      (F) → Navigation [subnav] (Nav)
       (X) → No styling + slot
     */
     button: {
@@ -151,6 +155,7 @@ $artifact_b_size_2: 1.25rem;
 .text {
   display: block;
   position: relative;
+  white-space: nowrap;
   z-index: 15;
 }
 
@@ -379,5 +384,16 @@ $artifact_b_dimension: 1.5rem;
   .icon-before {
     position: relative;
   }
+}
+
+// -------------------------------------------------------------------- [Type] F
+.type__F {
+  @include fontSize_Tiny;
+  @include fontWeight_Bold;
+  line-height: 1;
+  white-space: nowrap;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
 }
 </style>

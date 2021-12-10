@@ -2,23 +2,23 @@
   <header :class="['header', type]">
     <div class="grid-middle">
 
-      <div class="col-5">
+      <div class="col-5_sm-10_ti-12">
         <div class="panel-left">
 
-          <h1 class="heading">
+          <h1 class="heading h1">
             {{ heading }}
           </h1>
 
         </div>
       </div>
 
-      <div class="col-4 image-1" data-push-left="off-1">
+      <div class="col-4_sm-6_ti-8 image-1" data-push-left="off-1_sm-0">
         <div class="image-1-container">
           <img :src="image_1" />
         </div>
       </div>
 
-      <div class="col-3 image-2">
+      <div class="col-3_sm-5_ti-7 image-2">
         <div class="image-2-container">
           <img :src="image_2" />
           <Button v-if="cta" :button="cta" />
@@ -79,6 +79,9 @@ $artifact_square_dimension: 2.5rem;
   padding-top: 3rem;
   padding-bottom: 5rem;
   color: $haiti;
+  @include tiny {
+    padding-top: 0;
+  }
 }
 
 // /////////////////////////////////////////////////////////////////// Artifacts
@@ -114,12 +117,19 @@ $artifact_square_dimension: 2.5rem;
     right: 100%;
     width: $artifact_square_dimension;
     height: $artifact_square_dimension;
+    @include small {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
   }
   &:after {
     top: 100%;
     right: calc(#{math.div($containerWidth, 12)} - 1rem); // same offset as margin-left of .image-2, -1rem for col padding
     height: calc(1rem + 5rem); // 1rem = pad-bottom of col, 4rem = pad-bottom of .header
     width: calc(1rem + 4rem); // make it square
+    @include medium {
+      height: 10rem;
+    }
   }
 }
 
@@ -129,6 +139,10 @@ $artifact_square_dimension: 2.5rem;
     left: 100%;
     width: $artifact_square_dimension;
     height: $artifact_square_dimension;
+    @include small {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
   }
 }
 
@@ -139,6 +153,14 @@ img {
 
 .heading {
   font-size: 3.75rem;
+  @include medium {
+    @include fontSize_ExtraLarge;
+    @include leading_ExtraLarge;
+  }
+  @include small {
+    @include fontSize_MediumLarge;
+    line-height: 3.125rem; // 50pt
+  }
 }
 
 .image-1-container,
@@ -158,7 +180,10 @@ img {
 }
 
 .image-1 {
-  margin-top: -5rem;
+  margin-top: -7rem;
+  @include small {
+    margin-top: 3rem;
+  }
 }
 
 .image-2 {
