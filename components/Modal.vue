@@ -32,7 +32,9 @@
           </iframe>
         </template>
 
-        <div :class="['slate-video-container', { display: type === 'slate-video'}]">
+        <div
+          v-if="type === 'slate-video'"
+          class="slate-video-container">
           <video
             id="slate-video-player"
             ref="slatePlayer"
@@ -92,7 +94,12 @@ export default {
   watch: {
     type (val) {
       if (val === 'slate-video') {
-        setTimeout(() => { this.player = new Plyr(this.$refs.slatePlayer) }, 1)
+        this.$nextTick(() => {
+          this.player = new Plyr(this.$refs.slatePlayer)
+          this.player.on('ready', (event) => {
+            this.player.play()
+          })
+        })
       }
     }
   },
@@ -198,13 +205,9 @@ export default {
 }
 
 .slate-video-container {
-  display: none;
   position: relative;
   cursor: pointer;
   width: 100%;
-  &.display {
-    display: block;
-  }
   video {
     width: 100%;
   }
