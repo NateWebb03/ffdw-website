@@ -86,7 +86,7 @@
                 "action": "nuxt-link",
                 "theme": "green",
                 "text": "View open Roles",
-                "url": "/",
+                "url": "https://jobs.lever.co/filecoin",
                 "icon_after": "arrow-down"
               }
             ]
@@ -102,7 +102,7 @@
                 "action": "nuxt-link",
                 "theme": "green",
                 "text": "Follow us",
-                "url": "/",
+                "url": "https://twitter.com/ffdweb",
                 "icon_after": "arrow-down"
               }
             ]
@@ -118,7 +118,7 @@
                 "action": "nuxt-link",
                 "theme": "green",
                 "text": "Learn more about grants",
-                "url": "/",
+                "url": "/grants",
                 "icon_after": "arrow-down"
               }
             ]
@@ -134,7 +134,7 @@
                 "action": "nuxt-link",
                 "theme": "green",
                 "text": "Explore the Dweb",
-                "url": "/",
+                "url": "/explore",
                 "icon_after": "arrow-down"
               }
             ]
@@ -161,7 +161,7 @@
                 "type": "B",
                 "action": "nuxt-link",
                 "text": "Meet our Grantees",
-                "url": "/about"
+                "url": "/grants"
               }
             }
           }
