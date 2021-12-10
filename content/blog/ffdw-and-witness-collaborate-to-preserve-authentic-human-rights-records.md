@@ -6,6 +6,7 @@ author: Filecoin Foundation for the Decentralized Web
 date: November 4 2021
 image: '/images/page-blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records.png'
 recommendedPosts: []
+tags: ['Freedom', 'Journalism', 'Press', 'Privacy']
 ---
 
 ![ffdw and witness collaborate to preserve authentic human rights records](/images/page-blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records.png)

@@ -68,10 +68,6 @@ export default {
 $artifact_square_small: 1.875rem;
 $artifact_square_large: 2.5rem;
 
-$gutter: calc((100vw - #{$containerWidth}) / 2);
-$gutterMobile: calc(100vw * 0.07);
-$singleColumn: math.div($containerWidth, 12);
-
 @mixin artifactSquare_Small {
   width: $artifact_square_small;
   height: $artifact_square_small;

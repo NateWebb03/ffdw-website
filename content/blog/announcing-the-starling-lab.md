@@ -6,6 +6,7 @@ author: Filecoin Foundation for the Decentralized Web
 date: September 22 2021
 image: '/images/page-blog/starling-lab-image.png'
 recommendedPosts: []
+tags: ['Governance', 'Innovation']
 ---
 
 [![Announcing The Starling Lab video preview image](https://i.ytimg.com/vi/szltLBFoQg0/hqdefault.jpg)](https://www.youtube.com/watch?v=szltLBFoQg0)

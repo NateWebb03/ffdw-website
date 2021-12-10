@@ -6,16 +6,16 @@
     <HeaderSelector :header="header" />
 
     <section id="section-search">
-      <div class="grid">
+      <div class="grid-middle">
 
-        <div class="col-6_sm-5">
+        <div class="col-6_sm-5_mi-12">
           <div class="search-query">
             <span v-if="filterValue">Showing results for </span>
             {{ searchString }}
           </div>
         </div>
 
-        <div class="col-5_sm-6" data-push-left="off-1">
+        <div class="col-5_sm-6_mi-12" data-push-left="off-1_mi-0">
           <Zero_Core__FilterBar
             id="zero-filter-bar"
             :filter-value="filterValue"
@@ -153,6 +153,7 @@ export default {
 
 #section-search {
   margin-top: 7.5rem;
+  margin-bottom: 2rem;
 }
 
 .search-query {
@@ -173,8 +174,10 @@ export default {
   position: relative;
   margin-left: auto;
   margin-right: 0 !important;
-  margin-bottom: 2rem;
   transition: 250ms ease;
+  @include mini {
+    margin-top: 2rem;
+  }
   &.focused {
     width: 100%;
   }

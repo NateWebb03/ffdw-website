@@ -6,6 +6,7 @@ author: Filecoin Foundation for the Decentralized Web
 date: November 18 2021
 image: '/images/page-blog/ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data.png'
 recommendedPosts: []
+tags: ['Rights', 'Smartphones', 'Mobile media']
 ---
 
 ![ffdw and openarchive collaborate to deploy decentralized archive](/images/page-blog/ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data.png)

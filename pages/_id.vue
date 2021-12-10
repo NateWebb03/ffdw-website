@@ -24,7 +24,7 @@
     <section id="post-body" class="content-section">
       <div class="grid">
 
-        <div class="col-10" data-push-left="off-1">
+        <div class="col-10_sm-12" data-push-left="off-1_sm-0">
           <nuxt-content :document="postBody" class="basic-template-block-format" />
         </div>
 
@@ -32,7 +32,7 @@
     </section>
 
     <div class="grid-noGutter">
-      <div class="col-10" data-push-left="off-1">
+      <div class="col-10_sm-12" data-push-left="off-1_sm-0">
         <div class="bottom-links">
           <div class="socials-wrapper">
             <div class="prompt">
@@ -55,7 +55,11 @@
       </div>
     </div>
 
-    <BlockBuilder :sections="morePosts" />
+    <section v-if="recommendedPosts" id="featured-post-list">
+      <BlockBuilder :sections="latestNews" />
+      <CardListBlock :block="{ cards: recommendedPosts }" />
+      <Button :button="viewAllButton" />
+    </section>
 
   </div>
 </template>
@@ -63,7 +67,6 @@
 <script>
 // ====================================================================== Import
 import { mapGetters } from 'vuex'
-import CloneDeep from 'lodash/cloneDeep'
 
 import BlogPageData from '@/content/pages/blog.json'
 
@@ -71,6 +74,8 @@ import Modal from '@/components/Modal'
 import HeaderSelector from '@/components/HeaderSelector'
 import BlockBuilder from '@/components/BlockBuilder'
 import SocialBar from '@/components/SocialBar'
+import CardListBlock from '@/components/CardListBlock'
+import Button from '@/components/Button'
 
 // ====================================================================== Export
 export default {
@@ -80,7 +85,9 @@ export default {
     Modal,
     HeaderSelector,
     BlockBuilder,
-    SocialBar
+    SocialBar,
+    CardListBlock,
+    Button
   },
 
   async asyncData ({ $content, app, store, route, error }) {
@@ -115,14 +122,13 @@ export default {
       siteContent: 'global/siteContent'
     }),
     postHeading () {
-      const section = {
+      return {
         post_heading: {
           col_1: {
             type: 'text_block',
             layout: 'large',
             cols: {
-              num: 'col-7_sm-10',
-              push_left: 'off-0'
+              num: 'col-7_sm-10'
             },
             date: this.markdown.date || this.markdown.createdAt,
             tags: this.markdown.tags,
@@ -132,13 +138,26 @@ export default {
             type: 'image_block',
             src: this.markdown.image,
             cols: {
-              num: 'col-4_sm-10',
-              push_left: 'off-1'
+              num: 'col-4_sm-8',
+              push_left: 'off-1_sm-0'
             }
           }
         }
       }
-      return section
+    },
+    latestNews () {
+      return {
+        latest_news: {
+          col_1: {
+            type: 'text_block',
+            cols: {
+              num: 'col-9_sm-12'
+            },
+            label: 'Latest News From FFDW',
+            heading: 'Updates from our organization and across the Web3 universe.'
+          }
+        }
+      }
     },
     postBody () {
       return this.markdown
@@ -149,21 +168,21 @@ export default {
     tags () {
       return Array.isArray(this.markdown.tags) ? this.markdown.tags : []
     },
-    morePosts () {
-      const sections = CloneDeep(this.siteContent.blog.page_content)
-      delete sections.intro
-      sections.recommended_posts = {
-        col_1: {
-          type: 'card_list_block',
-          cols: {
-            num: 'col-12'
-          },
-          cards: this.recommendations
-        }
-      }
-      return sections
-    },
-    recommendations () {
+    // morePosts () {
+    //   const sections = CloneDeep(this.siteContent.blog.page_content)
+    //   delete sections.intro
+    //   sections.recommended_posts = {
+    //     col_1: {
+    //       type: 'card_list_block',
+    //       cols: {
+    //         num: 'col-12'
+    //       },
+    //       cards: this.recommendations
+    //     }
+    //   }
+    //   return sections
+    // },
+    recommendedPosts () {
       const recommendedPosts = []
       if (Array.isArray(this.markdown.recommendedPosts)) {
         const len = this.allPosts.length
@@ -178,17 +197,22 @@ export default {
               title: post.title,
               date: post.date || post.updatedAt,
               tags: post.tags,
-              divider: {
-                top: true,
-                bottom: (i === len - 1)
-              },
-              gradient: 'red-green',
+              theme: 'red-green',
               direction: i % 2 ? 'reverse' : 'forward'
             })
           }
         }
+        return recommendedPosts
       }
-      return recommendedPosts
+      return false
+    },
+    viewAllButton () {
+      return {
+        type: 'C',
+        action: 'nuxt-link',
+        text: 'View All',
+        url: '/blog'
+      }
     }
   },
 
@@ -207,6 +231,7 @@ export default {
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
 ::v-deep #post_heading {
+  padding-top: 2rem;
   padding-bottom: 2rem;
   .date {
     display: flex;
@@ -279,6 +304,9 @@ export default {
 
 #post-body {
   padding: 5rem 0;
+  @include small {
+    padding: 3rem 0;
+  }
 }
 
 .bottom-links,
@@ -288,6 +316,20 @@ export default {
   justify-content: space-between;
   .socials-wrapper {
     margin: 0;
+  }
+}
+
+.bottom-links {
+  @include mini {
+    flex-direction: column;
+  }
+  .socials-wrapper {
+    margin-bottom: 1rem;
+    .prompt {
+      @include mini {
+        margin-left: 0;
+      }
+    }
   }
 }
 
@@ -311,7 +353,7 @@ export default {
     @include fontSize_Large;
     @include fontWeight_Semibold;
     line-height: 1.4;
-    margin-bottom: 6.25rem;
+    margin-bottom: 4.25rem;
     @include small {
       @include fontSize_Medium;
       @include leading_Medium;
@@ -345,6 +387,7 @@ export default {
     margin: 4.75rem 0;
   }
   hr {
+    position: relative;
     border: 10px solid;
     border-image-slice: 1;
     border-width: 4px;
@@ -353,10 +396,17 @@ export default {
     border-right: none;
     border-bottom: none;
     margin: 3.5rem 0;
+    left: -$singleColumn;
+    width: calc(100% + #{$singleColumn * 2});
+    @include small {
+      left: 0;
+      width: 100%;
+    }
   }
   blockquote {
     margin: 7.25rem 0;
     p {
+      @include h3;
       border: 10px solid;
       border-image-slice: 1;
       border-width: 4px;
@@ -365,9 +415,10 @@ export default {
       border-right: none;
       border-bottom: none;
       padding-left: 5.25rem;
-      @include fontSize_Large;
-      @include fontWeight_Semibold;
       line-height: 1.4;
+      @include mini {
+        padding-left: 2rem;
+      }
     }
   }
   li {
@@ -417,4 +468,16 @@ export default {
   }
 }
 
+::v-deep #featured-post-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+  .card-list-block {
+    width: 100%;
+  }
+  .button {
+    margin-top: 3rem;
+  }
+}
 </style>

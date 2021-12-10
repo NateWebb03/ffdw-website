@@ -6,6 +6,7 @@ author: Filecoin Foundation for the Decentralized Web
 date: Sept 28 2021
 image: '/images/page-blog/leveraging-the-dweb-to-enhance-free-speech.png'
 recommendedPosts: []
+tags: ['Freedom', 'Journalism', 'Press', 'Privacy']
 ---
 
 ![Leveraging the Dweb to Enhance Free Speech bannner](/images/page-blog/leveraging-the-dweb-to-enhance-free-speech.png)

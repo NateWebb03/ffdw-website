@@ -6,7 +6,6 @@ author: Filecoin Foundation for the Decentralized Web
 date: ''
 image: '/images/page-blog/ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage.png'
 recommendedPosts: []
-tags: []
 ---
 
 ![FFDW and Human Rights Data Analysis Group Collaborate](/images/page-blog/ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage.png)
