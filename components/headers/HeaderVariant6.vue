@@ -154,7 +154,6 @@ $artifact_square_dimension: 2.5rem;
 
 .panel-left {
   width: 37%;
-  margin-top: -2rem;
   margin-bottom: -3rem;
   @include small {
     width: 80%;

@@ -1,31 +1,38 @@
 <template>
   <nav :class="`navigation theme__${theme}`">
 
-    <div
-      v-for="(section, sectionIndex) in navigation"
-      :key="`section-${sectionIndex}`"
-      class="nav-link-wrapper">
+    <button class="mobile-nav-toggle-button">
+      <div class="line" />
+      <div class="line" />
+    </button>
 
-      <Button
-        :button="section.link"
-        class="nav-link" />
-
+    <div class="navigation-content">
       <div
-        v-if="section.links"
-        class="subnav">
-        <div class="heading">
-          {{ section.heading }}
-        </div>
-        <div class="sublinks">
-          <Button
-            v-for="(link, linkIndex) in section.links"
-            :key="`link-${linkIndex}`"
-            :button="link"
-            class="subnav-link" />
-        </div>
-        <div class="subnav-artifacts" />
-      </div>
+        v-for="(section, sectionIndex) in navigation"
+        :key="`section-${sectionIndex}`"
+        class="nav-link-wrapper">
 
+        <Button
+          :button="section.link"
+          :class="['nav-link', { 'has-subnav': section.links }]" />
+
+        <div
+          v-if="section.links"
+          class="subnav">
+          <div class="heading">
+            {{ section.heading }}
+          </div>
+          <div class="sublinks">
+            <Button
+              v-for="(link, linkIndex) in section.links"
+              :key="`link-${linkIndex}`"
+              :button="link"
+              class="subnav-link" />
+          </div>
+          <div class="subnav-artifacts" />
+        </div>
+
+      </div>
     </div>
 
   </nav>
@@ -81,10 +88,6 @@ $squareArtifactDimension: 2.5rem;
 
 // ///////////////////////////////////////////////////////////////////// General
 .navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
   z-index: 1000;
   &.theme__light {
     ::v-deep .nav-link {
@@ -98,14 +101,70 @@ $squareArtifactDimension: 2.5rem;
   }
 }
 
+.mobile-nav-toggle-button {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
+  margin-right: -1rem;
+  @include small {
+    display: flex;
+  }
+  .line {
+    height: 2px;
+    background-color: $haiti;
+    &:first-child {
+      position: relative;
+      width: 13px;
+      margin-bottom: 4px;
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        right: 100%;
+        width: 2px;
+        height: 2px;
+        background-color: inherit;
+      }
+    }
+    &:last-child {
+      width: 20px;
+    }
+  }
+}
+
+.navigation-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  @include small {
+    // flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    top: $navigationHeight_Mobile;
+    left: $gutterMobile;
+    width: calc(100vw - #{$gutterMobile * 2});
+    padding: 0 2rem;
+    background-color: $cararra;
+    z-index: 1000;
+  }
+}
+
 .nav-link-wrapper {
   position: relative;
+  @include small {
+    width: 50%;
+  }
   &:hover {
     .subnav {
       opacity: 1;
       visibility: visible;
       z-index: 100;
       transform: translate(-50%, -2rem);
+      @include small {
+        transform: translate(0, 0);
+      }
     }
     ::v-deep .nav-link {
       &:not(.nuxt-link-active ) {
@@ -119,12 +178,30 @@ $squareArtifactDimension: 2.5rem;
   }
   &:not(:last-child) {
     margin-right: 1.875rem;
+    @include small {
+      margin-right: 0;
+    }
   }
 }
 
 ::v-deep .nav-link {
   @include fontSize_Mini;
   @include fontWeight_Semibold;
+  &:not(.has-subnav) {
+    @include small {
+      @include fontSize_Mini;
+      @include leading_Small;
+      @include fontWeight_Semibold;
+      white-space: nowrap;
+      color: $electricViolet;
+      margin-bottom: 0.5rem;
+    }
+  }
+  &.has-subnav {
+    @include small {
+      display: none;
+    }
+  }
   &.nuxt-link-active {
     .icon-before.star {
       opacity: 1;
@@ -160,9 +237,20 @@ $squareArtifactDimension: 2.5rem;
   transform: translateX(-50%);
   z-index: -1;
   transition: 250ms ease-in-out;
+  @include small {
+    position: static;
+    opacity: 1;
+    background-color: transparent;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 10;
+  }
   &:before,
   &:after {
     @include squareArtifact;
+    @include small {
+      opacity: 0;
+    }
   }
   &:before {
     bottom: 100%;
@@ -182,6 +270,9 @@ $squareArtifactDimension: 2.5rem;
   width: 3.5rem;
   height: 67%;
   background-color: $cararra;
+  @include small {
+    display: none;
+  }
   &:before,
   &:after {
     content: '';

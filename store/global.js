@@ -8,7 +8,8 @@ import Settings from '@/content/data/settings.json'
 const state = () => ({
   siteContent: {},
   modal: false,
-  slateCollections: false
+  slateCollections: false,
+  navigationOpen: false
 })
 
 // ///////////////////////////////////////////////////////////////////// Getters
@@ -16,7 +17,8 @@ const state = () => ({
 const getters = {
   siteContent: state => state.siteContent,
   modal: state => state.modal,
-  slateCollections: state => state.slateCollections
+  slateCollections: state => state.slateCollections,
+  navigationOpen: state => state.navigationOpen
 }
 
 // ///////////////////////////////////////////////////////////////////// Actions
@@ -63,6 +65,10 @@ const actions = {
       console.log(e)
       return false
     }
+  },
+  // ///////////////////////////////////////////////////////// setNavigationOpen
+  setNavigationOpen ({ commit }, toggle) {
+    commit('SET_NAVIGATION_OPEN', toggle)
   }
 }
 
@@ -80,6 +86,9 @@ const mutations = {
   },
   GET_SLATE_VIDEOS (state, collections) {
     state.slateCollections = collections
+  },
+  SET_NAVIGATION_OPEN (state, toggle) {
+    state.navigationOpen = toggle
   }
 }
 

@@ -1,21 +1,23 @@
 <template>
   <div :class="`site-nav theme__${theme}`">
 
-    <div class="grid">
-      <div class="col">
+    <section class="navigation-wrapper">
+      <div class="grid-noGutter">
+        <div class="col">
 
-        <div class="content">
+          <div class="content">
 
-          <Button :button="logoButton" class="logo-button">
-            <FFDWLogo class="logo" />
-          </Button>
+            <Button :button="logoButton" class="logo-button">
+              <FFDWLogo class="logo" />
+            </Button>
 
-          <Navigation :theme="theme" />
+            <Navigation :theme="theme" />
+
+          </div>
 
         </div>
-
       </div>
-    </div>
+    </section>
 
     <div class="grid-noGutter">
       <div class="col">
@@ -79,16 +81,31 @@ $iconDimension: 1.5rem;
 // ///////////////////////////////////////////////////////////////////// General
 .site-nav {
   position: relative;
-  padding: 2.5rem 0;
   color: $haiti;
   z-index: 1000;
   &.theme__light {
     color: $cararra;
+    ::v-deep .mobile-nav-toggle-button {
+      background-color: $cararra;
+    }
+  }
+}
+
+.navigation-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: $navigationHeight;
+  @include small {
+    height: $navigationHeight_Mobile;
   }
 }
 
 .logo {
   width: 15.5rem;
+  @include small {
+    width: 9rem;
+  }
 }
 
 .content {
