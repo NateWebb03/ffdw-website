@@ -25,7 +25,7 @@
   &::-webkit-slider-thumb {
     @include plyr-range-thumb();
     -webkit-appearance: none; /* stylelint-disable-line */
-    margin-top: calc(((#{$plyr-range-thumb-height} - #{$plyr-range-track-height}) / 2) * -1);
+    // margin-top: calc(((#{$plyr-range-thumb-height} - #{$plyr-range-track-height}) / 2) * -1);
   }
 
   // Mozilla
