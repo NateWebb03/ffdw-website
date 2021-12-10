@@ -43,7 +43,7 @@ import Button from '@/components/Button'
 
 // ====================================================================== Export
 export default {
-  name: 'VideoBlock',
+  name: 'SlateVideoBlock',
 
   components: {
     IconPlay,
@@ -54,31 +54,50 @@ export default {
     block: {
       type: Object,
       required: true
+    },
+    type: {
+      type: String,
+      required: false,
+      default: 'video'
     }
   },
 
   computed: {
+    isSlateVideo () {
+      return this.type === 'slate-video'
+    },
     preview_image () {
+      if (this.isSlateVideo) {
+        if (this.block.data.coverImage) {
+          return `https://gateway.ipfs.io/ipfs/${this.block.data.coverImage.cid}`
+        }
+        if (this.block.data.link) {
+          return this.block.data.link.image
+        }
+        return false
+      }
       return this.block.preview_image
     },
     url () {
-      return this.block.url
+      return this.isSlateVideo ? `https://gateway.ipfs.io/ipfs/${this.block.cid}` : this.block.url
     },
     tint () {
       return this.block.tint
     },
     subtext () {
-      return this.block.subtext
-    },
-    date () {
-      return this.block.date
-    },
-    tags () {
-      const tags = this.block.tags
-      return tags && Array.isArray(tags) ? tags : false
+      return this.isSlateVideo ? '' : this.block.subtext
     },
     title () {
-      return this.block.title
+      return this.isSlateVideo ? this.block.data.name : this.block.title
+    },
+    date () {
+      return this.isSlateVideo ? this.block.createdAt : this.block.date
+    },
+    tags () {
+      return this.isSlateVideo ? this.block.data.tags : this.block.tags
+    },
+    slateVideoType () {
+      return this.isSlateVideo ? this.block.data.type : ''
     }
   },
 
@@ -89,7 +108,10 @@ export default {
     openModal () {
       this.setModal({
         action: 'video',
-        url: this.url
+        type: this.type,
+        url: this.url,
+        slateImage: this.preview_image,
+        slateVideoType: this.slateVideoType
       })
     },
     getDate (date) {

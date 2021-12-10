@@ -54,6 +54,7 @@ import VideoBlock from '@/components/VideoBlock'
 import AccordionBlock from '@/components/AccordionBlock'
 // import SliderBlock from '@/components/SliderBlock'
 import CardListBlock from '@/components/CardListBlock'
+import SlateVideoBlock from '@/components/SlateVideoBlock'
 // import SocialBar from '@/components/SocialBar'
 // import TabbedSlider from '@/components/TabbedSlider'
 // import PaginatedCards from '@/components/PaginatedCards'
@@ -74,6 +75,7 @@ export default {
     AccordionBlock,
     // SliderBlock,
     CardListBlock,
+    SlateVideoBlock,
     // SocialBar,
     // TabbedSlider,
     // PaginatedCards,
@@ -118,6 +120,7 @@ export default {
         case 'accordion_block' : name = 'AccordionBlock'; break
         // case 'slider_block' : name = 'SliderBlock'; break
         case 'card_list_block' : name = 'CardListBlock'; break
+        case 'slate_video_block' : name = 'SlateVideoBlock'; break
         case 'paginated_cards' : name = 'PaginatedCards'; break
         case 'custom' : name = block.component; break
       }

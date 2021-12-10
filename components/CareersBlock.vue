@@ -1,5 +1,5 @@
 <template>
-  <div :class="[`block careers-block theme__${theme}`]">
+  <div id="career-block" :class="[`block careers-block theme__${theme}`]">
 
     <div class="grid">
       <div class="col">

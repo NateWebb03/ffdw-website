@@ -96,6 +96,16 @@ export default {
         border-bottom: 0.25rem solid $cararra;
       }
     }
+    .col-4:first-child {
+      a {
+        @include gradient_Background_RedPurple ;
+        background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        text-fill-color: transparent;
+      }
+    }
   }
   .description {
     @include fontSize_Small;
@@ -109,6 +119,7 @@ export default {
       margin-bottom: 0;
     }
   }
+  
 }
 
 ::v-deep #reach_1 {

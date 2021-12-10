@@ -80,64 +80,11 @@
     },
     "videos_2": {
       "col_1": {
-        "type": "card_list_block",
+        "type": "slate_video_block",
         "cols": {
           "num": "col"
         },
-        "limit": 6,
-        "iterate": 6,
-        "cards": [
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          }
-        ],
-        "cta": {
-          "type": "C",
-          "action": "a",
-          "text": "See More",
-          "url": "/"
-        }
+        "slatename": "ffdw-website"
       }
     },
     "callout": {
@@ -157,16 +104,18 @@
               "text": "Some of the groups we work with to grow Web3",
               "logos": [
                 "/images/page-explore/freedom-of-the-press-foundation-logo.png",
-                "/images/page-explore/hrdag-logo.png",
-                "/images/page-explore/witness-logo.png",
-                "/images/page-explore/starling-logo.png",
+                "/images/page-explore/HRDAG-logo.png",
+                "/images/page-explore/guardian-project-logo.png",
+                "/images/page-explore/starling-lab-logo.png",
+                "/images/page-explore/DFC-logo.png",
                 "/images/page-explore/eff-logo.png",
-                "/images/page-explore/the-guardian-project-logo.png"
+                "/images/page-explore/open-archive-logo.png",
+                "/images/page-explore/witness-logo.png"
               ],
               "cta": {
                 "type": "X",
                 "action": "nuxt-link",
-                "url": "/about",
+                "url": "/about/#board_1",
                 "text": "Board & Advisors"
               }
             }
@@ -205,7 +154,7 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/content-addressing",
               "icon_after": "arrow-down"
             }]
           },
@@ -220,7 +169,7 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/anatomy-of-a-cid",
               "icon_after": "arrow-down"
             }]
           },
@@ -235,7 +184,7 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/merkle-dags",
               "icon_after": "arrow-down"
             }]
           },
@@ -250,7 +199,7 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/blog",
               "icon_after": "arrow-down"
             }]
           },
@@ -265,7 +214,7 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/basics",
               "icon_after": "arrow-down"
             }]
           },
@@ -280,7 +229,7 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/mutable-file-system",
               "icon_after": "arrow-down"
             }]
           }
