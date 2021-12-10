@@ -152,7 +152,7 @@
         "theme": "green-purple",
         "label": "Grants",
         "heading": "We exist to ensure the power of humanity’s most important information is never compromised, abused, or ruled by any single entity.",
-        "description": "If you’re working on a project that will help create a better DWeb, <a href=''>we want to hear from you</a>."
+        "description": "If you’re working on a project that will help create a better DWeb, <a href='/contact'>we want to hear from you</a>."
       },
       "image_right": {
         "type": "image_block",
@@ -189,7 +189,7 @@
         "format": "small",
         "theme": "green-purple",
         "heading": "The Starling Lab Grant Spotlight",
-        "description": "Filecoin Foundation for the Decentralized Web announces a multi-year commitment to <a href=''>The Starling Lab</a>, a research center developing a comprehensive set of tools and principles that empower organizations to securely capture, store, and verify human history."
+        "description": "Filecoin Foundation for the Decentralized Web announces a multi-year commitment to <a href='https://www.starlinglab.org/' target='_blank'>The Starling Lab</a>, a research center developing a comprehensive set of tools and principles that empower organizations to securely capture, store, and verify human history."
       }
     },
     "callout": {
