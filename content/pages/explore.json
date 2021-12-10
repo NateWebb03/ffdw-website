@@ -157,11 +157,13 @@
               "text": "Some of the groups we work with to grow Web3",
               "logos": [
                 "/images/page-explore/freedom-of-the-press-foundation-logo.png",
-                "/images/page-explore/hrdag-logo.png",
-                "/images/page-explore/witness-logo.png",
-                "/images/page-explore/starling-logo.png",
+                "/images/page-explore/HRDAG-logo.png",
+                "/images/page-explore/guardian-project-logo.png",
+                "/images/page-explore/starling-lab-logo.png",
+                "/images/page-explore/DFC-logo.png",
                 "/images/page-explore/eff-logo.png",
-                "/images/page-explore/the-guardian-project-logo.png"
+                "/images/page-explore/open-archive-logo.png",
+                "/images/page-explore/witness-logo.png"
               ],
               "cta": {
                 "type": "X",
