@@ -77,6 +77,16 @@ export default {
       border-right: 0.25rem solid $cararra;
       padding-right: 7.5rem;
     }
+    .col-4:first-child {
+      a {
+        @include gradient_Background_RedPurple ;
+        background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        text-fill-color: transparent;
+      }
+    }
   }
   .description {
     @include fontSize_Small;
@@ -87,6 +97,7 @@ export default {
   .button {
     margin-bottom: -4rem;
   }
+  
 }
 
 ::v-deep #reach_1 {
