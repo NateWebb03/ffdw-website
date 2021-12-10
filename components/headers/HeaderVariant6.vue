@@ -61,7 +61,7 @@ export default {
         type: 'B',
         action: 'nuxt-link',
         text: 'Learn More',
-        url: '/'
+        url: '/about'
       }
     }
   }

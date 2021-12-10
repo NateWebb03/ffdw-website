@@ -53,7 +53,7 @@
             "theme": "red-purple",
             "action": "nuxt-link",
             "text": "Learn More",
-            "url": "/"
+            "url": "/get-involved/#career-block"
           }
         ]
       }

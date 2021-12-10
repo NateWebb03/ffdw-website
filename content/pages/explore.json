@@ -166,7 +166,7 @@
               "cta": {
                 "type": "X",
                 "action": "nuxt-link",
-                "url": "/about/#advisors_1",
+                "url": "/about/#board_1",
                 "text": "Board & Advisors"
               }
             }
