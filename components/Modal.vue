@@ -1,27 +1,50 @@
 <template>
   <div
     id="modal"
+    ref="modal"
     :class="{ active: modal }"
-    @click="closeModal"
+    @click="closeModal($event)"
     @keyup.esc="closeModal">
 
     <section id="modal-video">
 
-      <div class="toolbar">
-        <button class="close-button" @click="closeModal">
+      <div
+        ref="toolbar"
+        class="toolbar">
+        <button
+          ref="closeButton"
+          class="close-button"
+          @click="closeModal">
           Close
         </button>
       </div>
 
       <div
-        v-if="action === 'video' && url && getEmbedUrl()"
+        v-if="action === 'video' && url"
         class="video-wrapper">
-        <iframe
-          :src="getEmbedUrl()"
-          class="video"
-          allow="autoplay; encrypted-media"
-          allowfullscreen>
-        </iframe>
+
+        <template v-if="type === 'video' && getEmbedUrl()">
+          <iframe
+            :src="getEmbedUrl()"
+            class="video"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+          </iframe>
+        </template>
+
+        <div :class="['slate-video-container', { display: type === 'slate-video'}]">
+          <video
+            id="slate-video-player"
+            ref="slatePlayer"
+            playsinline
+            controls
+            :data-poster="type === 'slate-video' ? slateImage : ''">
+            <source
+              :src="type === 'slate-video' ? url : ''"
+              :type="slateVideoType" />
+          </video>
+        </div>
+
       </div>
 
     </section>
@@ -32,6 +55,7 @@
 <script>
 // ====================================================================== Import
 import { mapGetters, mapActions } from 'vuex'
+import Plyr from 'plyr'
 
 // ====================================================================== Export
 export default {
@@ -39,7 +63,8 @@ export default {
 
   data () {
     return {
-      initialized: false
+      initialized: false,
+      player: false
     }
   },
 
@@ -50,8 +75,25 @@ export default {
     action () {
       return this.modal.action
     },
+    type () {
+      return this.modal.hasOwnProperty('type') ? this.modal.type : ''
+    },
     url () {
       return this.modal.url
+    },
+    slateImage () {
+      return this.modal.hasOwnProperty('slateImage') ? this.modal.slateImage : ''
+    },
+    slateVideoType () {
+      return this.modal.hasOwnProperty('slateVideoType') ? this.modal.slateVideoType : ''
+    }
+  },
+
+  watch: {
+    type (val) {
+      if (val === 'slate-video') {
+        setTimeout(() => { this.player = new Plyr(this.$refs.slatePlayer) }, 1)
+      }
     }
   },
 
@@ -68,9 +110,14 @@ export default {
     ...mapActions({
       setModal: 'global/setModal'
     }),
-    closeModal () {
-      if (this.modal) {
-        this.setModal(false)
+    closeModal (e) {
+      if (e.target === this.$refs.modal || e.target === this.$refs.closeButton || e.target === this.$refs.toolbar) {
+        if (this.modal) {
+          this.setModal(false)
+        }
+        if (this.player) {
+          this.player = false
+        }
       }
     },
     getEmbedUrl () {
@@ -147,6 +194,19 @@ export default {
   @include small {
     width: 100%;
     padding: 0 2rem;
+  }
+}
+
+.slate-video-container {
+  display: none;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  &.display {
+    display: block;
+  }
+  video {
+    width: 100%;
   }
 }
 </style>

@@ -201,7 +201,7 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
   @include mini {
     padding-bottom: 0;
   }
-  .card-list-block {
+  .slate-list-block {
     position: relative;
     display: flex;
     flex-direction: row;

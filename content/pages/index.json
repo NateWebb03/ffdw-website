@@ -164,11 +164,12 @@
     "spotlight": {
       "grid": ["middle", "center"],
       "col_1": {
-        "type": "video_block",
-        "slatename": "ffdw-vid",
+        "type": "slate_video_block",
+        "tint": true,
         "cols": {
           "num": "col-7_sm-11"
-        }
+        },
+        "slatename": "ffdw-vid"
       },
       "col_2": {
         "type": "text_block",

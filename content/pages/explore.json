@@ -80,14 +80,11 @@
     },
     "videos_2": {
       "col_1": {
-        "type": "video_block",
-        "slatename": "ffdw-website",
-        "title": true,
-        "date": true,
-        "tags": true,
+        "type": "slate_video_block",
         "cols": {
           "num": "col"
-        }
+        },
+        "slatename": "ffdw-website"
       }
     },
     "callout": {
