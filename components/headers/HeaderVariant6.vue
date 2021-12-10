@@ -117,12 +117,22 @@ $artifact_square_dimension: 2.5rem;
     height: $artifact_1_dimension;
     top: 0;
     right: 0;
+    @include small {
+      width: 3.875rem;
+      height: 3.875rem;
+    }
   }
   &:after {
     width: $artifact_square_dimension;
     height: $artifact_square_dimension;
     top: $artifact_1_dimension;
     right: $artifact_1_dimension;
+    @include small {
+      width: 1.25rem;
+      height: 1.25rem;
+      top: 3.875rem;
+      right: 3.875rem;
+    }
   }
 }
 

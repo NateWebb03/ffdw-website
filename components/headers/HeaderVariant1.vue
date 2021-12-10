@@ -2,7 +2,7 @@
   <header :class="['header', type]">
     <div class="grid-middle">
 
-      <div class="col-5_mi-10_ti-12">
+      <div class="col-5_sm-10_ti-12">
         <div class="panel-left">
 
           <h1 class="heading h1">
@@ -12,13 +12,13 @@
         </div>
       </div>
 
-      <div class="col-4_mi-6_ti-8 image-1" data-push-left="off-1_mi-0">
+      <div class="col-4_sm-6_ti-8 image-1" data-push-left="off-1_sm-0">
         <div class="image-1-container">
           <img :src="image_1" />
         </div>
       </div>
 
-      <div class="col-3_mi-5_ti-7 image-2">
+      <div class="col-3_sm-5_ti-7 image-2">
         <div class="image-2-container">
           <img :src="image_2" />
           <Button v-if="cta" :button="cta" />
@@ -117,7 +117,7 @@ $artifact_square_dimension: 2.5rem;
     right: 100%;
     width: $artifact_square_dimension;
     height: $artifact_square_dimension;
-    @include mini {
+    @include small {
       width: 1.25rem;
       height: 1.25rem;
     }
@@ -139,7 +139,7 @@ $artifact_square_dimension: 2.5rem;
     left: 100%;
     width: $artifact_square_dimension;
     height: $artifact_square_dimension;
-    @include mini {
+    @include small {
       width: 1.25rem;
       height: 1.25rem;
     }
@@ -157,7 +157,7 @@ img {
     @include fontSize_ExtraLarge;
     @include leading_ExtraLarge;
   }
-  @include mini {
+  @include small {
     @include fontSize_MediumLarge;
     line-height: 3.125rem; // 50pt
   }
@@ -181,7 +181,7 @@ img {
 
 .image-1 {
   margin-top: -7rem;
-  @include mini {
+  @include small {
     margin-top: 3rem;
   }
 }
