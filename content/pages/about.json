@@ -46,7 +46,7 @@
           "num": "col-3_mi-4",
           "push_left": "off-1_mi-0"
         },
-        "src": "/images/page-about/person-speaking-into-microphone.png"
+        "src": "/images/page-about/woman-with-microphone.png"
       }
     },
     "intro_2": {
@@ -56,7 +56,7 @@
         "cols": {
           "num": "col-6_mi-10"
         },
-        "src": "/images/page-about/people-sitting-in-office-a-same-desk-on-laptops.png"
+        "src": "/images/page-about/group-meeting.png"
       },
       "col_2": {
         "type": "text_block",

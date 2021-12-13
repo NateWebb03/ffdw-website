@@ -47,7 +47,7 @@
           "num": "col-3_mi-4_ti-hidden",
           "push_left": "off-1_mi-0"
         },
-        "src": "/images/page-get-involved/person-presenting-into-microphone.jpeg"
+        "src": "/images/page-get-involved/person-speaking-at-conference.png"
       }
     },
     "intro_2": {
@@ -57,7 +57,7 @@
         "cols": {
           "num": "col-5_mi-10"
         },
-        "src": "/images/page-get-involved/person-showing-presentation-to-group.jpeg"
+        "src": "/images/page-get-involved/person-presenting-to-group.png"
       },
       "col_2": {
         "type": "text_block",
@@ -187,7 +187,7 @@
           "num": "col-4_sm-6_mi-8",
           "push_left": "off-2_sm-0"
         },
-        "src": "/images/page-get-involved/people-in-audience-looking-at-a-laptop.jpeg"
+        "src": "/images/page-get-involved/people-in-audience-looking-at-a-computer.png"
       }
     },
     "grants_accordion": {
