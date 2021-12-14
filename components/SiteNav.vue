@@ -1,7 +1,7 @@
 <template>
   <div :class="`site-nav theme__${theme}`">
 
-    <section class="navigation-wrapper">
+    <section :class="['navigation-wrapper', { 'nav-open': navigationOpen }]">
       <div class="grid-noGutter">
         <div class="col">
 
@@ -60,7 +60,8 @@ export default {
 
   computed: {
     ...mapGetters({
-      siteContent: 'global/siteContent'
+      siteContent: 'global/siteContent',
+      navigationOpen: 'global/navigationOpen'
     }),
     content () {
       return this.siteContent.general
@@ -85,9 +86,6 @@ $iconDimension: 1.5rem;
   z-index: 1000;
   &.theme__light {
     color: $cararra;
-    ::v-deep .mobile-nav-toggle-button {
-      background-color: $cararra;
-    }
   }
 }
 
@@ -96,15 +94,25 @@ $iconDimension: 1.5rem;
   flex-direction: row;
   align-items: center;
   height: $navigationHeight;
+  transition: 250ms ease-in-out;
   @include small {
     height: $navigationHeight_Mobile;
+    &.nav-open {
+      background-color: $cararra;
+      .logo {
+        color: $haiti;
+      }
+    }
   }
 }
 
-.logo {
+::v-deep .logo {
   width: 15.5rem;
   @include small {
     width: 9rem;
+  }
+  path {
+    transition: 250ms ease-in-out;
   }
 }
 
@@ -115,6 +123,9 @@ $iconDimension: 1.5rem;
   justify-content: space-between;
   @include customMaxMQ (80rem) {
     padding-right: 5rem;
+  }
+  @include small {
+    padding-right: 0;
   }
 }
 
