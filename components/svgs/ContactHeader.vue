@@ -1,7 +1,7 @@
 <!-- eslint-disable -->
 
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="440.941" viewBox="0 0 900 440.941">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 440.941">
     <defs>
       <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 5000 3332">
         <image width="5000" height="3332" xlink:href="/images/component-header/contact-header-image-1.jpg"/>
@@ -10,7 +10,7 @@
     <g id="Group_3619" data-name="Group 3619" transform="translate(-276 -207.715)">
       <text id="Here_s_where_you_can_find_us_" data-name="Here’s where
   you          can
-                          find us " transform="translate(276 293.715)" fill="#070517" font-size="81" font-family="Manrope" font-weight="800" letter-spacing="0.03em"><tspan x="0" y="0">Here’s where</tspan><tspan x="0" y="104" xml:space="preserve">you          can</tspan><tspan x="0" y="208" xml:space="preserve">                        find us </tspan></text>
+                          find us " transform="translate(276 293.715)" fill="#070517" font-size="81" font-family="Manrope" font-weight="800" letter-spacing="0.03em" xml:space="preserve"><tspan x="0" y="0" xml:space="preserve">Here’s where</tspan><tspan x="0" y="104" xml:space="preserve">you          can</tspan><tspan x="0" y="208" xml:space="preserve">                        find us </tspan></text>
       <g id="Group_1557" data-name="Group 1557" transform="translate(733.016 572.688)">
         <g id="noun_Boxed_Arrow_Upper_Right_1289202" data-name="noun_Boxed Arrow Upper Right_1289202" transform="translate(0 0)">
           <g id="Group_664" data-name="Group 664" transform="translate(0 0)">
