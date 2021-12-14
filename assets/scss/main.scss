@@ -312,9 +312,11 @@ h4, .h4 {
       @include fontWeight_Semibold;
       background: #070517;
       padding: 0.75rem 1rem;
+      vertical-align: top;
     }
     td {
       padding: 0.5rem 1rem;
+      vertical-align: top;
     }
   }
   pre {
