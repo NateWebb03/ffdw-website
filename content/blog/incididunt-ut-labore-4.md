@@ -4,7 +4,7 @@ title: Incididunt ut labore
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 author: Filecoin Foundation
 date: November 20 2021
-image: '/images/page-blog/blog-post-placeholder-image.png'
+image: '/images/page-blog/blog-post-placeholder-image.jpg'
 recommendedPosts: []
 ---
 

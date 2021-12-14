@@ -4,7 +4,7 @@ title: Announcing The Starling Lab
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 author: Filecoin Foundation
 date: September 28 2021
-image: '/images/page-blog/starling-lab-image.png'
+image: '/images/page-blog/starling-lab-image.jpg'
 recommendedPosts: []
 ---
 

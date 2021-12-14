@@ -13,8 +13,8 @@
     "type": "variant_2",
     "theme": "red-purple",
     "headingComponentName": "ContactHeaderSvg",
-    "image_1": "/images/component-header/man-sitting-with-laptop.png",
-    "image_2": "/images/component-header/man-sitting-with-laptop.png",
+    "image_1": "/images/component-header/man-sitting-with-laptop.jpg",
+    "image_2": "/images/component-header/man-sitting-with-laptop.jpg",
     "description": "We support and fund research and development, and educate people about the decentralized web, in order to preserve humanity’s most important information. Interested in joining us in this mission? Reach out."
   },
   "page_content": {
@@ -75,7 +75,7 @@
           "num": "col-4",
           "push_left": "off-1"
         },
-        "src": "/images/page-contact/person-with-laptop.png"
+        "src": "/images/page-contact/person-with-laptop.jpg"
       }
     },
     "form": {

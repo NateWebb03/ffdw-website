@@ -13,7 +13,7 @@
     "type": "variant_4",
     "heading": "FFDW",
     "subheading": "Grants",
-    "image_1": "/images/component-header/engineer-coding.png",
+    "image_1": "/images/component-header/engineer-coding.jpg",
     "font_theme": "light",
     "sub_theme": "red-purple"
   },
@@ -35,7 +35,7 @@
         "cols": {
           "num": "col-4"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpeg"
+        "src": "/images/page-about/man-on-a-laptop.jpg"
       },
       "col_2": {
         "type": "text_block",
@@ -77,7 +77,7 @@
           "num": "col-4",
           "push_left": "off-2"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpeg"
+        "src": "/images/page-about/man-on-a-laptop.jpg"
       }
     },
     "accordion_1": {
@@ -110,7 +110,7 @@
         "cols": {
           "num": "col-4"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpeg"
+        "src": "/images/page-about/man-on-a-laptop.jpg"
       },
       "col_2": {
         "type": "text_block",
@@ -152,7 +152,7 @@
           "num": "col-4",
           "push_left": "off-2"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpeg"
+        "src": "/images/page-about/man-on-a-laptop.jpg"
       }
     },
     "accordion_2": {

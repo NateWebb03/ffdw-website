@@ -13,7 +13,7 @@
     "type": "variant_6",
     "theme": "purple-green-b",
     "headingComponentName": "HomeHeaderSvg",
-    "image_1": "/images/component-header/woman-on-phone.png"
+    "image_1": "/images/component-header/woman-on-phone.jpg"
   },
   "page_content": {
     "about_1": {
@@ -84,7 +84,7 @@
           "num": "col-4",
           "push_left": "off-2"
         },
-        "src": "/images/page-index/woman-speaking-into-a-microphone.jpeg"
+        "src": "/images/page-index/woman-speaking-into-a-microphone.jpg"
       }
     },
     "accordion_1": {

@@ -13,8 +13,8 @@
     "type": "variant_1",
     "theme": "red-green",
     "heading": "Nurturing the growth of the decentralized web",
-    "image_1": "/images/component-header/woman-on-phone.png",
-    "image_2": "/images/component-header/woman-painting-black-and-white.png"
+    "image_1": "/images/component-header/woman-on-phone.jpg",
+    "image_2": "/images/component-header/ada-lovelace-painting-monochromatic.jpg"
   },
   "page_content": {
     "intro_1": {
@@ -34,7 +34,7 @@
           "num": "col-3",
           "push_left": "off-1"
         },
-        "src": "/images/page-about/woman-speaking-into-microphone.jpeg"
+        "src": "/images/page-about/woman-speaking-into-microphone.jpg"
       }
     },
     "intro_2": {
@@ -44,7 +44,7 @@
         "cols": {
           "num": "col-5"
         },
-        "src": "/images/page-get-involved/man-presenting-slideshow-to-a-group.jpeg"
+        "src": "/images/page-get-involved/man-presenting-slideshow-to-a-group.jpg"
       },
       "col_2": {
         "type": "text_block",
@@ -141,8 +141,8 @@
           "careers": {
             "name": "GetInvolvedCallout",
             "props": {
-              "img_left": "/images/page-get-involved/man-on-laptop-in-office.jpeg",
-              "img_right": "/images/page-get-involved/man-on-laptop-in-office.jpeg",
+              "img_left": "/images/page-get-involved/man-on-laptop-in-office.jpg",
+              "img_right": "/images/page-get-involved/man-on-laptop-in-office.jpg",
               "label": "Grants and Project Proposals",
               "cta": {
                 "type": "B",
@@ -173,7 +173,7 @@
           "num": "col-4",
           "push_left": "off-2"
         },
-        "src": "/images/page-get-involved/boy-on-laptop-showing-something-to-person-sitting-beside-him.jpeg"
+        "src": "/images/page-get-involved/boy-on-laptop-showing-something-to-person-sitting-beside-him.jpg"
       }
     },
     "grants_accordion": {

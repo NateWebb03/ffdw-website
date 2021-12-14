@@ -13,8 +13,8 @@
     "type": "variant_1",
     "theme": "red-purple",
     "heading": "Nurturing the growth of the decentralized web",
-    "image_1": "/images/component-header/woman-on-phone.png",
-    "image_2": "/images/component-header/woman-painting-black-and-white.png"
+    "image_1": "/images/component-header/woman-on-phone.jpg",
+    "image_2": "/images/component-header/ada-lovelace-painting-monochromatic.jpg"
   },
   "page_content": {
     "intro_1": {
@@ -33,7 +33,7 @@
           "num": "col-3",
           "push_left": "off-1"
         },
-        "src": "/images/page-about/woman-speaking-into-microphone.jpeg"
+        "src": "/images/page-about/woman-speaking-into-microphone.jpg"
       }
     },
     "intro_2": {
@@ -43,7 +43,7 @@
         "cols": {
           "num": "col-6"
         },
-        "src": "/images/page-about/people-sitting-in-front-of-laptops.jpeg"
+        "src": "/images/page-about/people-sitting-in-front-of-laptops.jpg"
       },
       "col_2": {
         "type": "text_block",
@@ -71,7 +71,7 @@
         "cols": {
           "num": "col-3"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpeg"
+        "src": "/images/page-about/man-on-a-laptop.jpg"
       },
       "col_2": {
         "type": "text_block",
@@ -87,7 +87,7 @@
         "cols": {
           "num": "col-3"
         },
-        "src": "/images/page-about/woman-writing-in-a-notebook.jpeg"
+        "src": "/images/page-about/woman-writing-in-a-notebook.jpg"
       }
     },
     "board_1": {
