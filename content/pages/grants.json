@@ -46,7 +46,7 @@
         "format": "tiny",
         "label": "FFDW’s Operating Approach",
         "heading": "Filecoin Foundation for the Decentralized Web is the charitable sister organization to the Filecoin Foundation.",
-        "description": "As the non-profitable sister to Filecoin Foundation, FFDW focuses it’s collaborations on charitable activities. Along with our core work providing grants and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships."
+        "description": "As the non-profitable sister to Filecoin Foundation, FFDW focuses its collaborations on charitable activities. Along with our core work providing grants and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships."
       }
     },
     "info_2": {
@@ -170,7 +170,7 @@
             "content": "<ul><li>Name of your organization*:</li><li>EIN:</li><li>Organizational mission and who benefits from your work: (max 200 words)</li><li>What type of entity is your organization (individual, 501c3, LLC, university, etc):</li><li>Describe any key partnerships with other entities such as non-profit, government, and private sector organizations: (max 400 words)</li><li>Organizational website*:  (if applicable)</li></ul>"
           },
           {
-            "label": "Project Proposal",
+            "label": "Project proposal",
             "content": "<ul><li>Title of project*:</li><li>Short summary of project*: (max 300 words)</li><li>Scope of work: Describe the primary objectives of this project and what activities you will undertake to achieve those objectives (max 800 words)</li><li>Project website* (if applicable):</li><li>Project software licensing details: If your project includes software, how is it licensed? If your project is on Github, please provide a link to the project.</li></ul>"
           },
           {
@@ -178,11 +178,11 @@
             "content": "<ul><li>FFDW’s Mission is to “ensure the permanent preservation of humanity’s most important information by stewarding the development of open source software and open protocols for decentralized data storage and retrieval networks.” How will your proposed project further this mission? (Max 400 words)</li><li>How does this project connect to one of our larger objectives for the current year, including, for example, education about the importance of data storage, community engagement with the decentralized web, and innovative technical projects to further humanity’s access to knowledge? (Max 400 words)</li><li>Describe ways in which FFDW can collaborate with you in a meaningful way toward achieving your project goals? (Max 400 words)</li></ul>"
           },
           {
-            "label": "Amount Requested",
+            "label": "Amount requested",
             "content": "<ul><li>What are the annual and total amounts requested for this grant?  (Example: “$1 million per year over three years.  Total cost over the life of the grant will be $3 million.”)</li></ul>"
           },
           {
-            "label": "Time Period",
+            "label": "Time period",
             "content": "<ul><li>What time period will this grant period cover?</li></ul>"
           },
           {
@@ -198,11 +198,11 @@
             "content": "<ul><li>Attach your organizational operating budget for the current year.</li><li>Attach a budget for this project using the attached sample budget.</li></ul>"
           },
           {
-            "label": "Primary Contact information (to be listed in contract):",
+            "label": "Primary contact information (to be listed in contract)",
             "content": "<ul><li>Name</li><li>Title</li><li>Email</li><li>Phone</li><li>Mailing address</li><li>If you are sponsored by another organization, please list that org’s name and contact information</li></ul>"
           },
           {
-            "label": "Supporting Documentation:",
+            "label": "Supporting documentation",
             "content": "<ul><li>If you are a nonprofit, please provide your most recent tax return and a copy of your tax determination letter.<br><br>* denotes data that will be made public on our website if your project is funded.</li></ul>"
           }
         ]
