@@ -336,10 +336,13 @@ export default {
       display: none;
     }
     .title {
+      display: none;
+    }
+    .subtext {
       @include fontSize_Tiny;
       @include fontWeight_Regular;
       @include leading_Regular;
-      padding-left: 1rem;
+      text-transform: none;
     }
   }
 }

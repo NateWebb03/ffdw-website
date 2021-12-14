@@ -154,7 +154,7 @@
           "type": "F",
           "action": "nuxt-link",
           "url": "/get-involved/#grants_1",
-          "text": "How to Apply",
+          "text": "Apply for Grants",
           "icon_before": "arrow-down"
         },
         {
