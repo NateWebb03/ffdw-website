@@ -5,11 +5,11 @@
 
     <HeaderSelector :header="header" />
 
-    <section id="terms-body" class="content-section">
+    <section id="privacy-body" class="content-section">
       <div class="grid">
 
         <div class="col-10_sm-12" data-push-left="off-1_sm-0">
-          <nuxt-content :document="terms" class="basic-template-block-format" />
+          <nuxt-content :document="privacy" class="basic-template-block-format" />
         </div>
 
       </div>
@@ -22,14 +22,14 @@
 // ====================================================================== Import
 import { mapGetters } from 'vuex'
 
-import TermsPageData from '@/content/pages/terms.json'
+import PrivacyPageData from '@/content/pages/privacy.json'
 
 import Modal from '@/components/Modal'
 import HeaderSelector from '@/components/HeaderSelector'
 
 // ====================================================================== Export
 export default {
-  name: 'PageTerms',
+  name: 'PagePrivacy',
 
   components: {
     Modal,
@@ -37,19 +37,19 @@ export default {
   },
 
   async asyncData ({ $content }) {
-    const terms = await $content('terms-of-use').fetch()
-    return { terms }
+    const privacy = await $content('privacy-policy').fetch()
+    return { privacy }
   },
 
   data () {
     return {
-      tag: 'terms'
+      tag: 'privacy'
     }
   },
 
   async fetch ({ store }) {
     await store.dispatch('global/getBaseData', 'general')
-    await store.dispatch('global/getBaseData', { key: 'terms', data: TermsPageData })
+    await store.dispatch('global/getBaseData', { key: 'privacy', data: PrivacyPageData })
   },
 
   head () {
@@ -72,11 +72,11 @@ export default {
 
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
-#terms-body {
+#privacy-body {
   padding: 5rem 0;
 }
 
-.page-terms {
+.page-privacy {
   ::v-deep .header {
     .heading,
     .description {
