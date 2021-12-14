@@ -2,11 +2,11 @@
   <header :class="['header', type]">
     <div class="grid">
 
-      <div class="col">
+      <div class="col-6_sm-10_mi-12">
         <TextBlock :block="textBlock" />
       </div>
 
-      <div class="col-4" data-push-left="off-2">
+      <div class="col-4_sm-6_mi-8" data-push-left="off-2_sm-0">
         <div class="panel-right">
           <img :src="image_1" />
         </div>
@@ -62,9 +62,26 @@ $offset: calc(7rem + 35px); // margin-bottom + line-height from .text-block labe
   padding-top: 3rem;
 }
 
+[class~="grid"],
+[class*="grid-"],
+[class*="grid_"] {
+  @include small {
+    flex-direction: column-reverse;
+  }
+}
+
+.text-block {
+  @include small {
+    margin-top: 3rem;
+  }
+}
+
 .panel-right {
   position: relative;
   padding-top: $offset;
+  @include small {
+    padding-top: 0;
+  }
   &:after {
     content: '';
     position: absolute;

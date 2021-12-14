@@ -52,8 +52,10 @@ import TextBlock from '@/components/TextBlock'
 import ImageBlock from '@/components/ImageBlock'
 import VideoBlock from '@/components/VideoBlock'
 import AccordionBlock from '@/components/AccordionBlock'
+import AboutAccordionBlock from '@/components/AboutAccordionBlock'
 // import SliderBlock from '@/components/SliderBlock'
 import CardListBlock from '@/components/CardListBlock'
+import SlateVideoBlock from '@/components/SlateVideoBlock'
 // import SocialBar from '@/components/SocialBar'
 // import TabbedSlider from '@/components/TabbedSlider'
 // import PaginatedCards from '@/components/PaginatedCards'
@@ -72,8 +74,10 @@ export default {
     ImageBlock,
     VideoBlock,
     AccordionBlock,
+    AboutAccordionBlock,
     // SliderBlock,
     CardListBlock,
+    SlateVideoBlock,
     // SocialBar,
     // TabbedSlider,
     // PaginatedCards,
@@ -116,8 +120,10 @@ export default {
         case 'image_block' : name = 'ImageBlock'; break
         case 'video_block' : name = 'VideoBlock'; break
         case 'accordion_block' : name = 'AccordionBlock'; break
+        case 'about_accordion_block' : name = 'AboutAccordionBlock'; break
         // case 'slider_block' : name = 'SliderBlock'; break
         case 'card_list_block' : name = 'CardListBlock'; break
+        case 'slate_video_block' : name = 'SlateVideoBlock'; break
         case 'paginated_cards' : name = 'PaginatedCards'; break
         case 'custom' : name = block.component; break
       }
@@ -131,5 +137,8 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 .sectional {
   padding: 6rem 0;
+  @include mini {
+    padding: 3rem 0;
+  }
 }
 </style>

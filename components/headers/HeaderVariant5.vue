@@ -1,10 +1,9 @@
 <template>
   <header :class="['header', type, `subTheme__${subTheme}`]">
     <div class="grid">
-      <div class="col-9">
+      <div class="col-8_mi-12" data-push-left="off-2_mi-0">
         <div class="inner-wrapper">
           <TextBlock
-            data-push-left="off-1"
             class="content"
             v-bind="{
               block: {
@@ -66,7 +65,7 @@ $artifact_gradient_width: $artifact_rectangle_gap - $artifact_square_dimension_1
 
 // ///////////////////////////////////////////////////////////////////// General
 .header {
-  padding: 5.25rem 0 4rem;
+  padding: 9rem 0;
   position: relative;
 }
 
@@ -88,17 +87,22 @@ $artifact_gradient_width: $artifact_rectangle_gap - $artifact_square_dimension_1
 
 .inner-wrapper {
   &:before {
-    width: calcToEdge(calc(10% + 0.5rem));
+    width: calcToEdge(calc(30% + 1rem));
     min-width: 10%;
     height: $artifact_square_dimension_1;
-    right: 90%;
+    right: 100%;
     bottom: calc(100% + #{$artifact_square_dimension_1});
+  }
+  @include medium {
+    &:before {
+      width: 100%;
+    }
   }
 
   &:after {
     width: $artifact_square_dimension_1;
     height: $artifact_square_dimension_1;
-    right: calc(90% - #{$artifact_square_dimension_1});
+    right: calc(100% - #{$artifact_square_dimension_1});
     top: -$artifact_square_dimension_1 * 3;
   }
 }

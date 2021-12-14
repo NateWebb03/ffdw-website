@@ -12,9 +12,9 @@
   "header": {
     "type": "variant_4",
     "heading": "FFDW",
-    "subheading": "Grants",
-    "image_1": "/images/component-header/engineer-coding.jpg",
-    "font_theme": "light",
+    "subheading": "Grants and Programs",
+    "image_1": "/images/page-grants/person-showing-another-person-something-on-a-laptop.jpeg",
+    "nav_theme": "light",
     "sub_theme": "red-purple"
   },
   "page_content": {
@@ -33,38 +33,38 @@
       "col_1": {
         "type": "image_block",
         "cols": {
-          "num": "col-4"
+          "num": "col-4_sm-6_mi-9"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpg"
+        "src": "/images/page-grants/man-with-microphone-speaking-to-group.png"
       },
       "col_2": {
         "type": "text_block",
         "cols": {
-          "num": "col-6",
-          "push_left": "off-1"
+          "num": "col-6_sm-8_mi-12",
+          "push_left": "off-1_sm-0"
         },
         "format": "tiny",
         "label": "FFDW’s Operating Approach",
         "heading": "Filecoin Foundation for the Decentralized Web is the charitable sister organization to the Filecoin Foundation.",
-        "description": "As the charitable sister to the Filecoin Foundation, FFDW focuses its collaborations on charitable activities. Along with our core work providing grants and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships. Filecoin Foundation may elect to fund initiatives that fit the missions of both organizations (FFDW and FF)."
+        "description": "As the non-profitable sister to Filecoin Foundation, FFDW focuses it’s collaborations on charitable activities. Along with our core work providing grants and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships."
       }
     },
     "info_2": {
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-10",
-          "push_left": "off-1"
+          "num": "col-10_sm-12",
+          "push_left": "off-1_sm-0"
         },
         "format": "small",
-        "description": "As a private operating foundation, FFDW takes collaboration seriously.  Both our operating status and our ethos mean that we internally drive the development of ideas and projects.  When working with outside organizations, we approach all of our initiatives as collaborations in which both FFDW and its implementing organizations work together closely to ensure success.  Rather than being an organization that simply writes checks and monitors progress, we roll up our sleeves and work alongside our project partners.  Outside organizations can expect FFDW to help with program design, technical support, project management, and external communications, as well as other efforts."
+        "description": "As a private operating foundation, FFDW takes collaboration seriously.  Both our operating status and our ethos mean that we internally drive the development of ideas and projects.  When working with outside organizations, we approach all of our initiatives as collaborations in which both FFDW and its implementing organizations work together closely to ensure success. Rather than being an organization that simply writes checks and monitors progress, we roll up our sleeves and work alongside our project partners. Where useful, we assist our collaborators with program design, technical support, hiring, legal questions, and external communications."
       }
     },
     "project_areas": {
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-6"
+          "num": "col-6_sm-8_mi-12"
         },
         "format": "header",
         "label": "Project Areas",
@@ -74,18 +74,18 @@
       "col_2": {
         "type": "image_block",
         "cols": {
-          "num": "col-4",
-          "push_left": "off-2"
+          "num": "col-4_mi-8_ti-10",
+          "push_left": "off-2_sm-0"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpg"
+        "src": "/images/page-grants/person-showing-presentation-to-group.jpeg"
       }
     },
     "accordion_1": {
       "col_1": {
         "type": "accordion_block",
         "cols": {
-          "num": "col-9",
-          "push_left": "off-3"
+          "num": "col-9_sm-10_mi-12",
+          "push_left": "off-3_sm-2_mi-0"
         },
         "theme": "red-purple",
         "sections": [
@@ -99,24 +99,25 @@
           },
           {
             "label": "Development",
-            "content": "These projects drive the creation and development of technologies that will enable decentralized file storage of humanity’s most important information. More broadly, these projects encourage and fund the essential interoperability “glue” connecting elements of the decentralized web. For instance, funding decentralized-storage integration for existing FLOSS flagship projects; funding security and privacy-enhancing additions to existing decentralized web projects; helping to shepherd decentralized solutions through established Internet standards bodies. "
+            "content": "These projects drive the creation and development of technologies that will enable decentralized file storage of humanity’s most important information. More broadly, these projects encourage and fund the essential interoperability “glue” connecting elements of the decentralized web. For instance, funding decentralized-storage integration for existing FLOSS flagship projects; funding security and privacy-enhancing additions to existing decentralized web projects; helping to shepherd decentralized solutions through established Internet standards bodies."
           }
         ]
       }
     },
     "application_process": {
+      "grid": ["middle"],
       "col_1": {
         "type": "image_block",
         "cols": {
-          "num": "col-4"
+          "num": "col-4_sm-6_mi-8"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpg"
+        "src": "/images/page-grants/person-on-laptop-in-cafe.png"
       },
       "col_2": {
         "type": "text_block",
         "cols": {
-          "num": "col-6",
-          "push_left": "off-1"
+          "num": "col-6_sm-10_mi-12",
+          "push_left": "off-1_sm-0"
         },
         "format": "tiny",
         "label": "Application Process",
@@ -128,7 +129,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-6"
+          "num": "col-6_sm-10_mi-12"
         },
         "format": "medium",
         "label": "FFDW Proposal Template",
@@ -141,7 +142,7 @@
             "theme": "red",
             "target": "_blank",
             "text": "Download the proposal template PDF",
-            "url": "/",
+            "url": "/FFDW-proposal-narrative-template.zip",
             "icon_after": "arrow-down"
           }
         ]
@@ -149,18 +150,18 @@
       "col_2": {
         "type": "image_block",
         "cols": {
-          "num": "col-4",
-          "push_left": "off-2"
+          "num": "col-4_sm-6_mi-8",
+          "push_left": "off-2_sm-6_mi-4"
         },
-        "src": "/images/page-about/man-on-a-laptop.jpg"
+        "src": "/images/page-grants/person-speaking-into-microphone-to-group.jpeg"
       }
     },
     "accordion_2": {
       "col_1": {
         "type": "accordion_block",
         "cols": {
-          "num": "col-9",
-          "push_left": "off-3"
+          "num": "col-9_sm-10_mi-12",
+          "push_left": "off-3_sm-2_mi-0"
         },
         "theme": "red-purple",
         "sections": [

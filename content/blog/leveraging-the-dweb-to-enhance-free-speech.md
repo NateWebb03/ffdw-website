@@ -1,0 +1,33 @@
+---
+featured: false
+title: Leveraging the Dweb to Enhance Free Speech with the Latest FFDW Grant
+description: On September 28, the Filecoin Foundation for the Decentralized Web (FFDW) announced a $5.8 million grant to the Freedom of the Press Foundation (FPF) to support the further leveraging of the decentralized web to enhance freedom of speech for journalists.
+author: Filecoin Foundation for the Decentralized Web
+date: Sept 28 2021
+image: '/images/page-blog/leveraging-the-dweb-to-enhance-free-speech.png'
+recommendedPosts: []
+tags: ['Freedom', 'Journalism', 'Press', 'Privacy']
+---
+
+![Leveraging the Dweb to Enhance Free Speech bannner](/images/page-blog/leveraging-the-dweb-to-enhance-free-speech.png)
+
+On September 28, the Filecoin Foundation for the Decentralized Web (FFDW) announced a $5.8 million grant to the [Freedom of the Press Foundation](https://freedom.press/) (FPF) to support the further leveraging of the decentralized web to enhance freedom of speech for journalists.
+
+The three-year FFDW grant will support infrastructure, user experience, and security enhancements for tools used by journalists around the globe. It will also be used to explore a zero-trust architecture for SecureDrop, an open-source news and information submission system used by newsrooms worldwide for secure document exchange and communication between journalists and anonymous sources.
+Overall, the grant will further the organization’s efforts to preserve historically critical information, such as its comprehensive database of press freedom violations in the United States and government data that belongs in the public sphere.
+
+“With this grant, by far the largest our organization has ever received, we’ll be able to speed the introduction of new upgrades and features to SecureDrop and spur its adoption worldwide,” Freedom of the Press Foundation Executive Director Trevor Timm said in a statement. “We’re also extremely excited to explore how the decentralized web can help further press freedom and transparency in the coming years.”
+
+“Our mission is to permanently preserve humanity’s most important information,” said Marta Belcher, board chair of the Filecoin Foundation for the Decentralized Web. “FPF’s efforts are a natural fit for collaboration.”
+
+In addition to helping upgrade SecureDrop, FPF will leverage its collaboration with FFDW to support several other efforts critical to safeguarding free speech, a free press, and the preservation of critical information. Some of these projects include:
+
+- The FPF’s [U.S. Press Freedom Tracker](https://pressfreedomtracker.us/): The tracker provides exhaustive documentation of press freedom violations in the United States, including arrests and assaults of journalists, denials of access, surveillance orders and much more. Every year, FPF will publish all of the tracker’s data on the decentralized web in order to preserve it for future generations.
+- Preservation of FPF’s “Threatened Media Outlets” archive: FPF has created an archive comprised of backup versions of news websites that have been lost. FPF is exploring an effort to publish the full archive on the decentralized web, ensuring these outlets’ important reporting will be available and accessible indefinitely.
+- New privacy-conserving tools: FPF is also evaluating state-of-the-art privacy preserving tools within the decentralized web ecosystem that could provide network-level anonymity in decentralized web projects, in addition to its existing reliance on the Tor network.
+
+We’re proud to support FPF’s work as it explores new decentralized tools for journalists and their sources.
+
+More on the [Freedom of the Press Foundation](https://freedom.press/).
+More about [FFDW’s grants program](https://ffdweb.org/).
+[More from Marta and Trevor](https://www.youtube.com/watch?v=jKqtShwTU00) on this announcement.

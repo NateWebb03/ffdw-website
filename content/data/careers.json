@@ -1,30 +1,25 @@
 {
   "label": "Careers",
   "heading": "Filecoin Foundation for the Decentralized Web is hiring for roles as we build, support, and fund projects advancing the DWeb.",
-  "primary_ctas": [
-    {
-      "type": "A",
-      "theme": "red-purple",
-      "action": "nuxt-link",
-      "text": "Get In Touch",
-      "url": "/contact"
-    }
-  ],
-  "featured_image": "/images/page-about/two-women-on-a-laptop-and-a-tablet.jpg",
+  "primary_cta": {
+    "type": "A",
+    "action": "nuxt-link",
+    "text": "Get In Touch",
+    "url": "/contact"
+  },
+  "featured_image": "/images/careers/two-people-sitting-at-desk.png",
   "cards": [
     {
       "type": "C",
-      "theme": "purple",
-      "title": "Program Manager, Social Impact",
-      "description": "We’re hiring a program manager to help drive collaborative initiatives with our outside project partners. We aim to be active participants with these partners, so we help them with program design, technical support, project management, external communications, as well as other efforts.",
-      "date_before": "November 12, 2021"
-    },
-    {
-      "type": "C",
-      "theme": "purple",
       "title": "Communications Associate",
       "description": "We’re looking for a communications associate to help with developing and executing the organization’s growth and outreach strategy.",
       "date_before": "December 1, 2021"
+    },
+    {
+      "type": "C",
+      "title": "Program Manager, Social Impact",
+      "description": "We’re hiring a program manager to help drive collaborative initiatives with our outside project partners. We aim to be active participants with these partners, so we help them with program design, technical support, project management, external communications, as well as other efforts.",
+      "date_before": "November 12, 2021"
     }
   ],
   "secondary_ctas": [

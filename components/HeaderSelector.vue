@@ -1,16 +1,19 @@
 <template>
-  <div :class="[`header-selector theme__${theme} font-theme__${fontTheme}`]">
+  <div :class="`header-selector theme__${theme}`">
 
-    <NavBlock />
+    <SiteNav :theme="navTheme" />
 
-    <component :is="headerVariant" :header="header" />
+    <component
+      :is="headerVariant"
+      v-if="!header.disable"
+      :header="header" />
 
   </div>
 </template>
 
 <script>
 // ===================================================================== Imports
-import NavBlock from '@/components/NavBlock'
+import SiteNav from '@/components/SiteNav'
 import HeaderVariant1 from '@/components/headers/HeaderVariant1'
 import HeaderVariant2 from '@/components/headers/HeaderVariant2'
 import HeaderVariant3 from '@/components/headers/HeaderVariant3'
@@ -23,7 +26,7 @@ export default {
   name: 'HeaderSelector',
 
   components: {
-    NavBlock,
+    SiteNav,
     HeaderVariant1,
     HeaderVariant2,
     HeaderVariant3,
@@ -43,11 +46,14 @@ export default {
     headerVariant () {
       return `HeaderVariant${this.header.type.split('_')[1]}`
     },
+    disable () { // disabled on blog singular pages
+      return this.header.disable
+    },
     theme () { // 'purple-green', 'red-purple', 'red-green'
       return this.header.theme
     },
-    fontTheme () { // 'dark', 'light'
-      return this.header.font_theme || 'dark'
+    navTheme () { // 'dark' or 'light'
+      return this.header.nav_theme || 'dark'
     }
   }
 }
@@ -68,12 +74,6 @@ export default {
   }
   &.theme__red-green {
     @include gradient_Background_RedGreen;
-  }
-  &.font-theme__dark {
-    color: $haiti;
-  }
-  &.font-theme__light {
-    color: $cararra;
   }
 }
 </style>

@@ -13,8 +13,8 @@
     "type": "variant_4",
     "heading": "Explore",
     "subheading": "The DWeb",
-    "image_1": "/images/component-header/engineer-coding.jpg",
-    "font_theme": "light",
+    "image_1": "/images/component-header/engineer-coding.png",
+    "nav_theme": "light",
     "sub_theme": "red-green"
   },
   "page_content": {
@@ -34,14 +34,14 @@
       "image_left": {
         "type": "image_block",
         "cols": {
-          "num": "col-3"
+          "num": "col-3_sm-hidden"
         },
-        "src": "/images/page-index/woman-outside-holding-an-ipad-on-a-sunny-day.jpg"
+        "src": "/images/page-explore/person-sitting-on-chair-with-laptop-1.jpeg"
       },
       "text": {
         "type": "text_block",
         "cols": {
-          "num": "col-6"
+          "num": "col-6_sm-12"
         },
         "format": "small",
         "theme": "green-purple",
@@ -51,17 +51,17 @@
       "image_right": {
         "type": "image_block",
         "cols": {
-          "num": "col-3"
+          "num": "col-3_sm-hidden"
         },
-        "src": "/images/page-index/man-outside-holding-a-coffee-on-a-sunny-day.jpg"
+        "src": "/images/page-explore/person-leg.jpeg"
       }
     },
     "learn_3": {
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-10",
-          "push_left": "off-1"
+          "num": "col-10_sm-12",
+          "push_left": "off-1_sm-0"
         },
         "format": "small",
         "description": "After a period when a few large, centralized companies consolidated this environment into a handful of platforms, engineers and technologists are now building the next evolution of the Internet. New protocols and new applications will allow users to independently consume, create, and engage with digital content. These changes will radically transform the Internet as we now experience it, resulting in enormous potential to create a better Internet."
@@ -71,7 +71,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-6"
+          "num": "col-6_sm-8_mi-12"
         },
         "format": "header",
         "label": "Video Resources",
@@ -80,152 +80,11 @@
     },
     "videos_2": {
       "col_1": {
-        "type": "card_list_block",
+        "type": "slate_video_block",
         "cols": {
           "num": "col"
         },
-        "limit": 6,
-        "iterate": 6,
-        "cards": [
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          },
-          {
-            "type": "video",
-            "title": "Incididunt ut labore et dolo re magna aliqua big",
-            "tint": true,
-            "preview_image": "/images/page-index/man-in-an-office-giving-an-interview.jpg",
-            "url": "https://youtu.be/Sakannch1Dw",
-            "date": "November 12, 2021",
-            "tags": [
-              "Intermediate"
-            ]
-          }
-        ],
-        "cta": {
-          "type": "C",
-          "action": "a",
-          "text": "See More",
-          "url": "/"
-        }
+        "slatename": "ffdw-website"
       }
     },
     "callout": {
@@ -240,21 +99,23 @@
           "careers": {
             "name": "ExploreCallout",
             "props": {
-              "img_left": "/images/page-index/man-sitting-in-a-boardroom-looking-in-the-camera.jpg",
+              "img_left": "/images/page-explore/person-sitting-on-chair-with-laptop-2.jpeg",
               "label": "Collaborators",
               "text": "Some of the groups we work with to grow Web3",
               "logos": [
                 "/images/page-explore/freedom-of-the-press-foundation-logo.png",
-                "/images/page-explore/hrdag-logo.png",
-                "/images/page-explore/witness-logo.png",
-                "/images/page-explore/starling-logo.png",
+                "/images/page-explore/HRDAG-logo.png",
+                "/images/page-explore/guardian-project-logo.png",
+                "/images/page-explore/starling-lab-logo.png",
+                "/images/page-explore/DFC-logo.png",
                 "/images/page-explore/eff-logo.png",
-                "/images/page-explore/the-guardian-project-logo.png"
+                "/images/page-explore/open-archive-logo.png",
+                "/images/page-explore/witness-logo.png"
               ],
               "cta": {
                 "type": "X",
                 "action": "nuxt-link",
-                "url": "/about",
+                "url": "/about/#board_1",
                 "text": "Board & Advisors"
               }
             }
@@ -266,7 +127,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-9"
+          "num": "col-9_sm-12"
         },
         "format": "header",
         "label": "Interactive Tutorials",
@@ -293,7 +154,8 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/content-addressing",
+              "target": "_blank",
               "icon_after": "arrow-down"
             }]
           },
@@ -308,7 +170,8 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/anatomy-of-a-cid",
+              "target": "_blank",
               "icon_after": "arrow-down"
             }]
           },
@@ -323,7 +186,8 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/merkle-dags",
+              "target": "_blank",
               "icon_after": "arrow-down"
             }]
           },
@@ -338,7 +202,8 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/blog",
+              "target": "_blank",
               "icon_after": "arrow-down"
             }]
           },
@@ -353,7 +218,8 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/basics",
+              "target": "_blank",
               "icon_after": "arrow-down"
             }]
           },
@@ -368,7 +234,8 @@
               "theme": "green",
               "action": "a",
               "text": "Read More",
-              "url": "/",
+              "url": "https://proto.school/mutable-file-system",
+              "target": "_blank",
               "icon_after": "arrow-down"
             }]
           }
