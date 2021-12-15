@@ -50,43 +50,60 @@ export default {
 
   computed: {
     ...mapGetters({
-      siteContent: 'global/siteContent'
+      siteContent: 'global/siteContent',
+      page404: 'global/page404'
     }),
     breadcrumbsMapping () {
       return this.siteContent.general.breadcrumbs_mapping
     }
   },
 
-  mounted () {
-    const labels = this.breadcrumbsMapping
-    const route = this.$route
-    const routeName = route.name
-    const text = labels[routeName]
-    const links = [{ // contains index route by default
-      type: 'X',
-      action: 'nuxt-link',
-      url: '/',
-      text: labels.index
-    }]
-    if (routeName === 'index') { // hide from home page
-      this.hidden = true
-    } else if (routeName === 'id') { // only blog singular pages are nested right now
-      const blogRoute = this.$router.options.routes.find(obj => obj.name === 'blog')
-      links.push(
-        {
-          type: 'X',
-          action: 'nuxt-link',
-          url: blogRoute.path,
-          text: labels.blog
-        },
-        {
-          text: 'Blog Singular' // TODO: this should pull the blog page name?
-        }
-      )
-    } else { // all other regular non-nested pages
-      links.push({ text })
+  watch: {
+    page404 () {
+      this.setBreadcrumbLinks()
     }
-    this.links = links
+  },
+
+  mounted () {
+    this.setBreadcrumbLinks()
+  },
+
+  methods: {
+    setBreadcrumbLinks () {
+      const labels = this.breadcrumbsMapping
+      const route = this.$route
+      const routeName = route.name
+      const text = labels[routeName]
+      const links = [{ // contains index route by default
+        type: 'X',
+        action: 'nuxt-link',
+        url: '/',
+        text: labels.index
+      }]
+      if (!this.page404) {
+        if (routeName === 'index') { // hide from home page
+          this.hidden = true
+        } else if (routeName === 'id') { // only blog singular pages are nested right now
+          const blogRoute = this.$router.options.routes.find(obj => obj.name === 'blog')
+          links.push(
+            {
+              type: 'X',
+              action: 'nuxt-link',
+              url: blogRoute.path,
+              text: labels.blog
+            },
+            {
+              text: 'Blog Singular' // TODO: this should pull the blog page name?
+            }
+          )
+        } else { // all other regular non-nested pages
+          links.push({ text })
+        }
+      } else {
+        links.push({ text: labels.error })
+      }
+      this.links = links
+    }
   }
 }
 </script>

@@ -9,6 +9,8 @@
             {{ heading }}
           </h1>
 
+          <Button v-if="headerCta" :button="cta" />
+
         </div>
       </div>
 
@@ -21,7 +23,7 @@
       <div class="col-3_sm-5_ti-7 image-2">
         <div class="image-2-container">
           <img :src="image_2" />
-          <Button v-if="cta" :button="cta" />
+          <Button v-if="cta && !headerCta" :button="cta" />
         </div>
       </div>
 
@@ -63,6 +65,12 @@ export default {
     },
     cta () {
       return this.header.cta
+    },
+    headerCta () {
+      if (typeof this.cta === 'object') {
+        return this.cta.layout === 'heading-cta'
+      }
+      return false
     }
   }
 }
