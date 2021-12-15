@@ -40,16 +40,11 @@ export default {
       slateCollections: 'global/slateCollections'
     }),
     videos () {
-      return []
-      // const collection = this.slateCollections.find((col) => { return col.slatename === this.block.slatename })
-      // return collection.objects.filter((obj) => { return !obj.url })
+      const collection = this.slateCollections.find((col) => { return col.slatename === this.block.slatename })
+      return collection.objects.filter((obj) => { return !obj.url })
       // return collection.objects
     }
   }
-  //
-  // mounted () {
-  //   console.log(this.slateCollections)
-  // }
 }
 </script>
 
