@@ -48,6 +48,11 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 ::v-deep .header {
   margin-bottom: 13rem;
+  padding-bottom: 10rem;
+  @include small {
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+  }
   .heading {
     margin-bottom: 1rem;
   }

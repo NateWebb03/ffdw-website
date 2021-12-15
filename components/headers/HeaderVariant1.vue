@@ -87,9 +87,6 @@ $artifact_square_dimension: 2.5rem;
   padding-top: 3rem;
   padding-bottom: 5rem;
   color: $haiti;
-  @include tiny {
-    padding-top: 0;
-  }
 }
 
 // /////////////////////////////////////////////////////////////////// Artifacts
