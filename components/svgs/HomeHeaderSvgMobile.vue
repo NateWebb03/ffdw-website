@@ -2,22 +2,21 @@
 <template>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 237">
     <defs>
-      <pattern id="a" width="1" height="1" viewBox="43.511 14.426 25.137 25.137">
-        <image preserveAspectRatio="xMidYMid slice" width="117.012" height="78"
-          xlink:href="/images/component-header/header-1-image.jpg" />
+      <pattern id="ma" width="1" height="1" patternTransform="matrix(-1 0 0 1 0 0)" viewBox="25 10 30 30">
+        <image preserveAspectRatio="xMidYMid slice" width="100" xlink:href="/images/component-header/header-1-image.jpg" />
       </pattern>
-      <pattern id="b" width="1" height="1" patternTransform="matrix(-1 0 0 1 216.022 0)" viewBox="9.321 0 72.044 65.66">
-        <image preserveAspectRatio="xMidYMid slice" width="108.011" height="72" xlink:href="/images/component-header/header-1-image2.jpg"/>
+      <pattern id="mb" width="1" height="1" patternTransform="matrix(1 0 0 1 0 0)" viewBox="90 30 60 50">
+        <image preserveAspectRatio="xMidYMid slice" width="250" xlink:href="/images/component-header/header-1-image2.jpg" />
       </pattern>
     </defs>
     <g><text transform="translate(0 65)"
         fill="#070517" font-size="45" font-family="Manrope-SemiBold, Manrope" font-weight="600" letter-spacing=".01em">
         <tspan x="0" y="0">Rebuilding </tspan>
         <tspan x="0" y="61">the Internet. </tspan>
-        <tspan x="0" y="122" xml:space="preserve">
-        For good. </tspan>
+        <tspan x="0" y="122">
+           For good. </tspan>
       </text>
-      <path transform="translate(0 159)" fill="url(#a)" d="M0 0h78v78H0z" />
+      <path transform="translate(0 155)" fill="url(#ma)" d="M0 0h78v78H0z" />
       <g>
         <path
           d="M322.127 100.381v17.238h-.821v.821h-1.641v.82h-1.642v.821h-1.642v.821h-1.642v.821h-1.646v.821h-1.637v.816h-1.642v.821h-1.641v.821h-1.642v.821h-1.638v-.821h-1.645v-.821h-1.642v-.821h-1.642v-.821h-1.642v-.821h-1.641v-.821h-1.642v-.821h-1.646v-.816h-1.637v-.82h-1.642v-.821h-.821v-17.238h.821v-.821h1.642v.821h1.637v.821h1.642v.821h1.642v.821h1.642v.816h1.642v.821h1.642v.821h1.642v.821h1.648v.821h1.642v.821h-.821v1.645h.821v.821h-.821v1.642h.821v.821h-.821v1.642h.821v.824h-.821v1.642h.821v.821h-.821v1.637h.821v.821h-.821v1.642h.821v.821h-.821v1.642h1.642v-.826h1.637v-.821h1.642v-.821h1.642v-.821h1.642v-.821h1.642v-.816h1.642v-.82h1.642v-.821h1.642v-.821h.821v-1.638h-.821v-.821h.821v-1.645h-.821v-.821h.821v-1.642h-.821v-.821h.821v-1.641h-.821v-.821h.821v-1.642h-.821v-.821h.821v-1.642h-.821v-.821h.821v-1.641z" />
@@ -159,7 +158,7 @@
         <path d="M315.542 116.818h.802v.802h-.802z" />
         <path d="M316.344 117.62h.802v.802h-.802z" />
       </g>
-      <path transform="translate(249)" fill="url(#b)" d="M0 0h79v72H0z" />
+      <path transform="translate(249)" fill="url(#mb)" d="M0 0h79v72H0z" />
     </g>
   </svg>
 </template>
