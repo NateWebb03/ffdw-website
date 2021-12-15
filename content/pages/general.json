@@ -187,7 +187,8 @@
     "get-involved": "Get Involved",
     "grants": "FFDW Grants",
     "terms": "Terms & Conditions",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "error": "404 Page Not Found"
   },
   "footer": {
     "links_primary": [
@@ -262,5 +263,22 @@
         "text": "Terms of Use"
       }
     ]
+  },
+  "page_404": {
+    "header": {
+      "type": "variant_1",
+      "theme": "red-green",
+      "heading": "Whoops, this page doesn’t exist!",
+      "image_1": "/images/component-header/man-sitting-with-laptop.jpg",
+      "image_2": "/images/component-header/ada-lovelace-painting-monochromatic.jpg",
+      "cta": {
+        "type": "D",
+        "theme": "black",
+        "action": "nuxt-link",
+        "text": "< Back to Home",
+        "url": "/",
+        "layout": "heading-cta"
+      }
+    }
   }
 }
