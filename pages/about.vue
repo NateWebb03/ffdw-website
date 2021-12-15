@@ -166,4 +166,59 @@ export default {
 ::v-deep #advisors_1 {
   padding: 0;
 }
+
+::v-deep #advisors_2 {
+  .card-list-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .card {
+      width: 50%;
+      &:nth-child(even) {
+        &:after {
+          display: none;
+        }
+      }
+      &:nth-last-child(2) {
+        &:after {
+          height: 4px;
+        }
+      }
+      .content {
+        @include customMaxMQ ($containerWidth + 4rem) {
+          flex-direction: column;
+          align-items: center;
+          padding: 2rem;
+          .image {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 1rem;
+          }
+          .title {
+            align-items: center;
+          }
+          .title-text,
+          .title-suffix {
+            text-align: center;
+          }
+        }
+        @include small {
+          padding: 2rem 1rem;
+          .image {
+            width: 6.25rem;
+            height: 6.25rem;
+          }
+          .title-text {
+            @include fontSize_Small;
+            @include leading_Regular;
+          }
+          .title-suffix {
+            @include fontSize_Tiny;
+            @include leading_Small;
+          }
+        }
+      }
+    }
+  }
+}
 </style>
