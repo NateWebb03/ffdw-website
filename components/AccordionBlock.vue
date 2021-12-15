@@ -51,7 +51,6 @@ export default {
       return this.block.sections
     },
     theme () { // 'purple-green', 'red-purple', 'red-green'
-      console.log(this.block.theme)
       return this.block.theme || 'purple-green'
     }
   }
