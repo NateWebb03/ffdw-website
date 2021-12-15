@@ -38,7 +38,7 @@
 import { mapGetters } from 'vuex'
 import CloneDeep from 'lodash/cloneDeep'
 
-// import TextBlock from '@/components/TextBlock'
+import TextBlock from '@/components/TextBlock'
 import CardListBlock from '@/components/CardListBlock'
 
 // ====================================================================== Export
@@ -46,7 +46,7 @@ export default {
   name: 'CareersBlock',
 
   components: {
-    // TextBlock,
+    TextBlock,
     CardListBlock
   },
 

@@ -156,7 +156,7 @@
             "name": "GetInvolvedCallout",
             "props": {
               "img_left": "/images/page-get-involved/people-working-together-in-office.jpeg",
-              "img_right": "/images/page-get-involved/man-on-laptop-in-office.jpeg",
+              "img_right": "/images/page-get-involved/man-on-laptop-in-office.jpg",
               "label": "Grants and Project Proposals",
               "cta": {
                 "type": "B",
