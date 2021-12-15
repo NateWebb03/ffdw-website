@@ -11,7 +11,7 @@
         :placeholder="field.label" />
     </div>
 
-    <div class="submit-container col-2" data-push-left="off-10">
+    <div class="submit-container col">
       <input
         class="submit"
         type="submit"

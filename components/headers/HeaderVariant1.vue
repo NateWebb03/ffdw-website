@@ -194,6 +194,9 @@ img {
 .image-2 {
   margin-left: math.div(-$containerWidth, 12);
   margin-bottom: -25rem;
+  @include mini {
+    margin-left: calc(#{math.div(-$containerWidth, 12)} - 1rem);
+  }
 }
 
 ::v-deep .button.type__D {
