@@ -1,4 +1,4 @@
-sub-theme__<template>
+<template>
   <header :class="['header', type, `sub-theme__${subTheme}`]">
     <div class="grid-middle-center">
       <div class="col-10_md-12">
@@ -217,6 +217,9 @@ $artifact_square_large: 2.5rem;
   @include artifactSquare_Large;
   bottom: 0;
   left: 0;
+  @include mini {
+    background-color: transparent;
+  }
   &:after {
     top: 100%;
     left: 0;

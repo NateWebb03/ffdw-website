@@ -202,7 +202,7 @@ export default {
             })
           }
         }
-        return recommendedPosts
+        return recommendedPosts.length > 0 ? recommendedPosts : false
       }
       return false
     },

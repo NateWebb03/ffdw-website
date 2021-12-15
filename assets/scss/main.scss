@@ -328,4 +328,36 @@ h4, .h4 {
   code {
     color: #9AB6CE;
   }
+
+  &.red-purple {
+    hr {
+      border-image-source: $gradient_RedPurple;
+    }
+    li {
+      &:before {
+        @include gradient_Background_RedPurple;
+      }
+    }
+    blockquote {
+      p {
+        border-image-source: linear-gradient(180deg, $coralRed, $perfume);
+      }
+    }
+  }
+
+  &.purple-green {
+    hr {
+      border-image-source: $gradient_PurpleGreen;
+    }
+    li {
+      &:before {
+        @include gradient_Background_PurpleGreen;
+      }
+    }
+    blockquote {
+      p {
+        border-image-source: linear-gradient(180deg, $perfume, $greenYellow);
+      }
+    }
+  }
 }

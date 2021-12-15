@@ -159,6 +159,7 @@ export default {
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
         text-fill-color: transparent;
+        -webkit-box-decoration-break: clone;
       }
     }
   }

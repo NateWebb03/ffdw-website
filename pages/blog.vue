@@ -233,4 +233,8 @@ export default {
   width: 100%;
   height: 100%;
 }
+
+::v-deep .card-list-block {
+  width: 100%;
+}
 </style>

@@ -9,7 +9,8 @@ const state = () => ({
   siteContent: {},
   modal: false,
   slateCollections: false,
-  navigationOpen: false
+  navigationOpen: false,
+  page404: false
 })
 
 // ///////////////////////////////////////////////////////////////////// Getters
@@ -18,7 +19,8 @@ const getters = {
   siteContent: state => state.siteContent,
   modal: state => state.modal,
   slateCollections: state => state.slateCollections,
-  navigationOpen: state => state.navigationOpen
+  navigationOpen: state => state.navigationOpen,
+  page404: state => state.page404
 }
 
 // ///////////////////////////////////////////////////////////////////// Actions
@@ -68,6 +70,10 @@ const actions = {
   // ///////////////////////////////////////////////////////// setNavigationOpen
   setNavigationOpen ({ commit }, toggle) {
     commit('SET_NAVIGATION_OPEN', toggle)
+  },
+  // //////////////////////////////////////////////////////////////// setPage404
+  setPage404 ({ commit }, toggle) {
+    commit('SET_PAGE_404', toggle)
   }
 }
 
@@ -88,6 +94,9 @@ const mutations = {
   },
   SET_NAVIGATION_OPEN (state, toggle) {
     state.navigationOpen = toggle
+  },
+  SET_PAGE_404 (state, toggle) {
+    state.page404 = toggle
   }
 }
 
