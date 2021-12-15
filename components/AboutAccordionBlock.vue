@@ -160,8 +160,17 @@ export default {
   align-items: center;
   padding: 1rem calc((100% - #{$containerWidth}) / 2 + #{$singleColumn * 1.5} + 0.5rem);
   cursor: pointer;
+  @include small {
+    padding: 2rem;
+  }
+  @include mini {
+    flex-direction: column;
+  }
   &.reverse {
     flex-direction: row-reverse;
+    @include mini {
+      flex-direction: column;
+    }
     .title-text {
       padding-left: 0;
       &:before {
@@ -174,6 +183,9 @@ export default {
     .image {
       margin-right: 0;
       margin-left: 2rem;
+      @include mini {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -182,11 +194,19 @@ export default {
   width: 9rem;
   height: 9rem;
   margin-right: 2rem;
+  @include mini {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 .title {
   display: flex;
   flex-direction: column;
+  @include mini {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .title-text {
@@ -196,9 +216,17 @@ export default {
   position: relative;
   padding-left: 5rem;
   transition: 250ms ease-in-out;
+  @include medium {
+    font-size: 1.875rem; // 30pt
+    line-height: 2.8125rem; // 45pt
+  }
   &:before,
   &:after {
     content: '>';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 0;
     width: 2rem;
@@ -218,6 +246,14 @@ export default {
   font-size: 30px;
   line-height: 3.125rem;
   transition: 250ms ease-in-out;
+  @include medium {
+    @include fontSize_Medium;
+    @include leading_Medium;
+  }
+  @include mini {
+    @include fontSize_Small;
+    line-height: 1.875rem; // 30pt
+  }
 }
 
 // ///////////////////////////////////////////////////////////////////// Content
@@ -226,5 +262,9 @@ export default {
   padding: 1rem calc((100% - #{$containerWidth}) / 2 + #{$singleColumn * 1.5} + 0.5rem);
   padding-bottom: 2rem;
   transition: 250ms ease-in-out;
+  @include small {
+    padding: 2rem;
+    padding-top: 0;
+  }
 }
 </style>
