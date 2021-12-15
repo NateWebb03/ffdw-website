@@ -102,11 +102,11 @@ export default {
     },
     getValidationPattern (type) {
       switch (type) {
-        case 'email': return '[a-zA-Z0-9!#$%&\'*+-/=?^_`{|}~]{1,100}[@][w0-9-]{2,64}.[a-zA-Z.]{2,27}'
-        case 'phone': return '[0-9xs-()+{}#]{6,31}'
-        case 'name': return '[[A-Za-z\u00C0-\u1FFF\u2800-\uFFFDs-"\']{2,100}'
+        case 'email': return '[a-zA-Z0-9!#$%&\'*+\-/=?^_{|}~]{1,100}@[a-zA-Z0-9\-]{2,64}.[a-zA-Z.]{2,27}'
+        case 'phone': return '[-0-9xs()+{}#]{6,31}'
+        case 'name': return '[^0-9]{2,100}'
         case 'message': return '.{50,25000}'
-        case 'subject': return '.{1,100}'
+        case 'subject': return '.{1,200}'
         default : return null
       }
     }
