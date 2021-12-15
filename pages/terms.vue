@@ -5,7 +5,15 @@
 
     <HeaderSelector :header="header" />
 
-    <BlockBuilder :sections="sections" />
+    <section id="terms-body" class="content-section">
+      <div class="grid">
+
+        <div class="col-10_sm-12" data-push-left="off-1_sm-0">
+          <nuxt-content :document="terms" class="basic-template-block-format" />
+        </div>
+
+      </div>
+    </section>
 
   </div>
 </template>
@@ -18,7 +26,6 @@ import TermsPageData from '@/content/pages/terms.json'
 
 import Modal from '@/components/Modal'
 import HeaderSelector from '@/components/HeaderSelector'
-import BlockBuilder from '@/components/BlockBuilder'
 
 // ====================================================================== Export
 export default {
@@ -26,8 +33,12 @@ export default {
 
   components: {
     Modal,
-    BlockBuilder,
     HeaderSelector
+  },
+
+  async asyncData ({ $content }) {
+    const terms = await $content('terms-of-use').fetch()
+    return { terms }
   },
 
   data () {
@@ -52,9 +63,6 @@ export default {
     pageData () {
       return this.siteContent[this.tag]
     },
-    sections () {
-      return this.siteContent[this.tag].page_content
-    },
     header () {
       return this.pageData.header
     }
@@ -64,4 +72,17 @@ export default {
 
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
+#terms-body {
+  padding: 5rem 0;
+}
+
+.page-terms {
+  ::v-deep .header {
+    .heading,
+    .description {
+      text-align: center;
+      padding: 0 1.5rem;
+    }
+  }
+}
 </style>

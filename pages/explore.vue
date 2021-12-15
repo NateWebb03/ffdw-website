@@ -60,6 +60,7 @@ export default {
     await store.dispatch('global/getBaseData', 'general')
     await store.dispatch('global/getBaseData', { key: 'settings', data: SettingsData })
     await store.dispatch('global/getBaseData', { key: 'explore', data: ExplorePageData })
+    await store.dispatch('global/getSlateVideos')
   },
 
   head () {
@@ -136,6 +137,27 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
   }
   .text-block {
     padding: 0 2.25rem;
+    @include small {
+      padding: 0 1rem;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 1.25rem;
+        height: calc(50% + 3rem);
+        top: -3rem;
+        right: 100%;
+        background-color: $greenYellow;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 1.25rem;
+        height: calc(20% + 3rem);
+        bottom: -3rem;
+        left: 100%;
+        background-color: $coralRed;
+      }
+    }
   }
   [data-block-id="image_right"] {
     .image-block {
@@ -147,7 +169,7 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
       }
       &:before {
         height: calc(20% + 4rem);
-        bottom: -4rem;
+        top: calc(100% - 2.5rem);
         left: 100%;
         background-color: $coralRed;
       }
@@ -164,10 +186,22 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
 ::v-deep #learn_3 {
   padding-top: 4rem;
   padding-bottom: 2rem;
+  @include small {
+    padding-top: 2rem;
+  }
+  .text-block {
+    @include small {
+      padding: 0 1rem;
+    }
+  }
 }
 
 ::v-deep #videos_2 {
-  .card-list-block {
+  padding-top: 0;
+  @include mini {
+    padding-bottom: 0;
+  }
+  .slate-list-block {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -181,12 +215,19 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
       height: 2.5rem;
       background-color: $greenYellow;
       z-index: 10;
+      @include mini {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
     }
   }
   .video-block {
     position: relative;
     margin-bottom: 5.625rem;
     width: calc(50% - 0.5rem);
+    @include mini {
+      width: 100%;
+    }
     &:after {
       content: '';
       position: absolute;
@@ -198,6 +239,9 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
     }
     &:nth-child(odd) {
       margin-right: 1rem;
+      @include mini {
+        margin-right: 0;
+      }
     }
     &:nth-child(4n+1),
     &:nth-child(4n+2),
@@ -234,6 +278,10 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
           width: 2.5rem;
           height: 2.5rem;
           background-color: $coralRed;
+          @include mini {
+            width: 1.25rem;
+            height: 1.25rem;
+          }
         }
       }
     }
@@ -246,13 +294,29 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
         background-color: $haiti;
         opacity: 0;
         z-index: 10;
+        @include mini {
+          width: 1.25rem;
+          height: 1.25rem;
+        }
       }
+    }
+    .metadata {
+      @include fontSize_Tiny;
+    }
+    .subtext {
+      display: none;
     }
   }
 }
 
 ::v-deep #callout {
   padding-bottom: 0;
+  @include containerMaxMQ {
+    padding-bottom: 5rem;
+  }
+  @include mini {
+    padding-bottom: 3rem;
+  }
 }
 
 ::v-deep #tutorials_1 {
@@ -266,13 +330,13 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
     }
     &:before {
       left: calc(100% + 5rem);
-      bottom: 2.5rem;
+      bottom: calc(2.5rem + 1rem);
       width: 2.5rem;
       background-color: $coralRed;
     }
     &:after {
       left: calc(100% + 5rem + 2.5rem);
-      bottom: 0;
+      bottom: 1rem;
       width: 25rem;
       background-color: $greenYellow;
     }
@@ -280,6 +344,11 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
 }
 
 ::v-deep #tutorials_2 {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  @include small {
+    padding-bottom: 3rem;
+  }
   .card-list-block {
     display: flex;
     flex-direction: row;
@@ -288,8 +357,14 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
   .card {
     margin-bottom: 5rem;
     width: calc(50% - #{math.div($containerWidth, 12)});
+    @include mini {
+      width: 100%;
+    }
     &:nth-child(odd) {
       margin-right: math.div($containerWidth, 6);
+      @include mini {
+        margin-right: 0;
+      }
     }
     .icon-after.arrow-down {
       svg {
@@ -305,6 +380,9 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
 
 ::v-deep #latest_news {
   position: relative;
+  @include small {
+    padding-top: 0;
+  }
   &:before {
     @include gradient_Background_RedGreen;
     content: '';
@@ -313,6 +391,9 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
     left: calc(50% - #{math.div($containerWidth, 2)} - #{$gutter});
     width: $gutter;
     height: 7rem;
+    @include small {
+      display: none;
+    }
   }
 }
 

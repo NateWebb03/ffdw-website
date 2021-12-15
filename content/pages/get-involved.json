@@ -12,9 +12,22 @@
   "header": {
     "type": "variant_1",
     "theme": "red-green",
-    "heading": "Nurturing the growth of the decentralized web",
-    "image_1": "/images/component-header/woman-on-phone.png",
-    "image_2": "/images/component-header/woman-painting-black-and-white.png"
+    "heading": "Together, let’s bring Web3 to life",
+    "image_1": "/images/page-get-involved/three-people-looking-at-laptop.png",
+    "image_2": "/images/page-get-involved/person-working-at-ibm-vintage.jpeg",
+    "nav_theme": "dark",
+    "cta": {
+      "type": "D",
+      "theme": "white",
+      "action": "nuxt-link",
+      "text": "Melba Roy Mouton, 1960",
+      "url": "/melba-roy-mouton-a-hidden-figure-whose-legacy-paved-the-way-for-web3",
+      "icon_after": "arrow-down"
+    }
+  },
+  "careers": {
+    "heading": "We’re working to build a more robust, more resilient web. A place to store and safeguard humanity’s most important information. If you’re passionate about decentralization, we want to hear from you.",
+    "theme": "green"
   },
   "page_content": {
     "intro_1": {
@@ -22,7 +35,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-8"
+          "num": "col-8_ti-12"
         },
         "format": "header",
         "label": "Get Involved",
@@ -31,10 +44,10 @@
       "col_2": {
         "type": "image_block",
         "cols": {
-          "num": "col-3",
-          "push_left": "off-1"
+          "num": "col-3_mi-4_ti-hidden",
+          "push_left": "off-1_mi-0"
         },
-        "src": "/images/page-about/woman-speaking-into-microphone.jpeg"
+        "src": "/images/page-get-involved/person-speaking-at-conference.png"
       }
     },
     "intro_2": {
@@ -42,15 +55,15 @@
       "col_1": {
         "type": "image_block",
         "cols": {
-          "num": "col-5"
+          "num": "col-5_mi-10"
         },
-        "src": "/images/page-get-involved/man-presenting-slideshow-to-a-group.jpeg"
+        "src": "/images/page-get-involved/person-presenting-to-group.png"
       },
       "col_2": {
         "type": "text_block",
         "cols": {
-          "num": "col-5",
-          "push_left": "off-2"
+          "num": "col-5_mi-12",
+          "push_left": "off-1_mi-0"
         },
         "description": "FFDW’s mission is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open-source software and open protocols for decentralized data storage and retrieval networks. We work to build and support the decentralized web community, fund research and development, and educate the public about the decentralized web, in order to preserve humanity’s most important information."
       }
@@ -73,7 +86,7 @@
                 "action": "nuxt-link",
                 "theme": "green",
                 "text": "View open Roles",
-                "url": "/",
+                "url": "/get-involved/#career-block",
                 "icon_after": "arrow-down"
               }
             ]
@@ -86,10 +99,11 @@
             "ctas": [
               {
                 "type": "D",
-                "action": "nuxt-link",
+                "action": "a",
                 "theme": "green",
                 "text": "Follow us",
-                "url": "/",
+                "url": "https://twitter.com/ffdweb",
+                "target": "_blank",
                 "icon_after": "arrow-down"
               }
             ]
@@ -105,7 +119,7 @@
                 "action": "nuxt-link",
                 "theme": "green",
                 "text": "Learn more about grants",
-                "url": "/",
+                "url": "/grants",
                 "icon_after": "arrow-down"
               }
             ]
@@ -121,7 +135,7 @@
                 "action": "nuxt-link",
                 "theme": "green",
                 "text": "Explore the Dweb",
-                "url": "/",
+                "url": "/explore",
                 "icon_after": "arrow-down"
               }
             ]
@@ -141,14 +155,14 @@
           "careers": {
             "name": "GetInvolvedCallout",
             "props": {
-              "img_left": "/images/page-get-involved/man-on-laptop-in-office.jpeg",
-              "img_right": "/images/page-get-involved/man-on-laptop-in-office.jpeg",
+              "img_left": "/images/page-get-involved/people-working-together-in-office.jpeg",
+              "img_right": "/images/page-get-involved/man-on-laptop-in-office.jpg",
               "label": "Grants and Project Proposals",
               "cta": {
                 "type": "B",
                 "action": "nuxt-link",
                 "text": "Meet our Grantees",
-                "url": "/about"
+                "url": "/grants"
               }
             }
           }
@@ -160,7 +174,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-6"
+          "num": "col-6_sm-8_mi-10_ti-12"
         },
         "format": "header",
         "label": "Apply for a Grant or Project Proposals",
@@ -170,18 +184,18 @@
       "col_2": {
         "type": "image_block",
         "cols": {
-          "num": "col-4",
-          "push_left": "off-2"
+          "num": "col-4_sm-6_mi-8",
+          "push_left": "off-2_sm-0"
         },
-        "src": "/images/page-get-involved/boy-on-laptop-showing-something-to-person-sitting-beside-him.jpeg"
+        "src": "/images/page-get-involved/people-in-audience-looking-at-a-computer.png"
       }
     },
     "grants_accordion": {
       "col_1": {
         "type": "accordion_block",
         "cols": {
-          "num": "col-9",
-          "push_left": "off-3"
+          "num": "col-9_sm-10_mi-12",
+          "push_left": "off-3_sm-2_mi-0"
         },
         "theme": "red-green",
         "sections": [
@@ -191,7 +205,7 @@
           },
           {
             "label": "Research",
-            "content": "Projects that support efforts to store research data using decentralized web storage and make that data easily shared and accessed."
+            "content": "Projects that support efforts to store research data using decentralized web storage, and make that data easily shared and accessed."
           },
           {
             "label": "Development",

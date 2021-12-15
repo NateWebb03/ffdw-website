@@ -1,5 +1,6 @@
 <template>
   <form class="form grid-middle" @submit="onSubmit">
+
     <div
       v-for="field in fields"
       :key="field.label"
@@ -9,12 +10,14 @@
         v-model="formData.test"
         :placeholder="field.label" />
     </div>
-    <div data-push-left="off-10" class="submit-container col-2">
+
+    <div class="submit-container col">
       <input
         class="submit"
         type="submit"
         :value="submit" />
     </div>
+
   </form>
 </template>
 

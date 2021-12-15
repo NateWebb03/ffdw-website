@@ -12,9 +12,8 @@
   "header": {
     "type": "variant_2",
     "theme": "red-purple",
-    "headingComponentName": "ContactHeaderSvg",
-    "image_1": "/images/component-header/man-sitting-with-laptop.png",
-    "image_2": "/images/component-header/man-sitting-with-laptop.png",
+    "image_1": "/images/page-contact/person-standing-beside-another-person-at-desk.jpeg",
+    "image_mobile": "/images/page-contact/close-up-of-hands-typing-on-laptop.jpg",
     "description": "We support and fund research and development, and educate people about the decentralized web, in order to preserve humanity’s most important information. Interested in joining us in this mission? Reach out."
   },
   "page_content": {
@@ -22,27 +21,27 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-4"
+          "num": "col-4_mi-8_ti-12"
         },
         "heading": "Contact",
-        "description": "Questions? Ideas? Drop us a line hello@ffweb.org",
+        "description": "Questions? Ideas? Drop us a line <a href='mailto:hello@ffweb.org'>hello@ffweb.org</a>",
         "format": "small",
         "icon": "Phonebook"
       },
       "col_2": {
         "type": "text_block",
         "cols": {
-          "num": "col-4"
+          "num": "col-4_mi-8_ti-12"
         },
         "heading": "Social",
-        "description": "FAQ\nTwitter\nLinkedIn\nBlog\nYouTube",
+        "description": "<a href='https://twitter.com/ffdweb' target='_blank'>Twitter</a><br /><a href='https://www.linkedin.com/in/filecoin-foundation-for-the-decentralized-web-482aa1225/' target='_blank'>LinkedIn</a><br /><a href='/blog'>Blog</a><br /><a href='https://www.youtube.com/channel/UCbj3Hck5cwKURkZKHjg_MKQ' target='_blank'>YouTube</a>",
         "format": "small",
-        "icon": "Social"
+        "icon": "IconPixelTwitter"
       },
       "col_3": {
         "type": "text_block",
         "cols": {
-          "num": "col-4"
+          "num": "col-4_mi-8_ti-12"
         },
         "heading": "Careers",
         "description": "Our team of thinkers and doers is growing. If you’re passionate about advancing technology forward, we want to hear from you.",
@@ -54,7 +53,7 @@
             "theme": "red-purple",
             "action": "nuxt-link",
             "text": "Learn More",
-            "url": "/"
+            "url": "/get-involved/#career-block"
           }
         ]
       }
@@ -63,7 +62,7 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-7"
+          "num": "col-7_sm-8_mi-10_ti-12"
         },
         "label": "Reach out",
         "heading": "We’re working to foster and expand the decentralized web.",
@@ -72,18 +71,18 @@
       "col_2": {
         "type": "image_block",
         "cols": {
-          "num": "col-4",
-          "push_left": "off-1"
+          "num": "col-4_sm-6_mi-8",
+          "push_left": "off-1_sm-0"
         },
-        "src": "/images/page-contact/person-with-laptop.png"
+        "src": "/images/page-contact/person-working-at-computer.png"
       }
     },
     "form": {
       "col_1": {
         "type": "custom",
         "cols": {
-          "num": "col-8",
-          "push_left": "off-4"
+          "num": "col-8_sm-10_ti-12",
+          "push_left": "off-4_sm-2_ti-0"
         },
         "customizations": {
           "contactForm": {

@@ -71,14 +71,34 @@ export default {
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
 ::v-deep #intro_1 {
-  padding-top: 12rem;
+  padding-top: 9rem;
   .text-block {
+    @include mini {
+      margin-top: 10rem;
+    }
     .heading {
-      font-size: 2.8125rem;
+      font-size: 3.0625rem;
+      @include mini {
+        font-size: 1.875rem; // 30pt
+        line-height: 2.8125rem; // 45pt
+      }
+      @include tiny {
+        width: calc(100vw - 100vw * 0.14);
+      }
     }
   }
   .image-block {
     margin-top: 3rem;
+    @include mini {
+      margin-top: 0;
+    }
+    .image {
+      @include mini {
+        position: relative;
+        width: calc(100% + 3rem);
+        left: -2rem;
+      }
+    }
   }
 }
 
@@ -87,11 +107,15 @@ export default {
   padding-bottom: 3rem;
   .image-block {
     margin-top: -5rem;
+    @include mini {
+      margin-top: 0;
+      margin-bottom: 3rem;
+    }
   }
 }
 
 ::v-deep #vision_1 {
-  padding-top: 0;
+  padding: 0;
 }
 
 ::v-deep #vision_2 {
@@ -111,6 +135,10 @@ export default {
   [data-block-id="col_2"] {
     .text-block {
       padding: 0 2.5rem;
+      @include mini {
+        padding: 0;
+        margin: 3rem 0;
+      }
     }
   }
   [data-block-id="col_3"] {
@@ -129,6 +157,66 @@ export default {
         width: 2.5rem;
         height: 2.5rem;
         background-color: $haiti;
+      }
+    }
+  }
+}
+
+::v-deep #board_1,
+::v-deep #advisors_1 {
+  padding: 0;
+}
+
+::v-deep #advisors_2 {
+  .card-list-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .card {
+      width: 50%;
+      &:nth-child(even) {
+        &:after {
+          display: none;
+        }
+      }
+      &:nth-last-child(2) {
+        &:after {
+          height: 4px;
+        }
+      }
+      .content {
+        @include customMaxMQ ($containerWidth + 4rem) {
+          flex-direction: column;
+          align-items: center;
+          padding: 2rem;
+          .image {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 1rem;
+          }
+          .title {
+            align-items: center;
+          }
+          .title-text,
+          .title-suffix {
+            text-align: center;
+          }
+        }
+        @include small {
+          padding: 2rem 1rem;
+          .image {
+            width: 6.25rem;
+            height: 6.25rem;
+          }
+          .title-text {
+            @include fontSize_Small;
+            @include leading_Regular;
+          }
+          .title-suffix {
+            @include fontSize_Tiny;
+            @include leading_Small;
+          }
+        }
       }
     }
   }

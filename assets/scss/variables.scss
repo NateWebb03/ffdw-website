@@ -5,7 +5,11 @@
 // --------------------------------------------------------------------- General
 $containerWidth: 61.25rem; // 980px
 $underlineSpacing: 0.1875rem;
-// $navigationHeight: 6.25rem;
+$navigationHeight: 9rem;
+$navigationHeight_Mobile: 5.75rem;
+$gutter: calc((100vw - #{$containerWidth}) / 2);
+$gutterMobile: calc(100vw * 0.07);
+$singleColumn: math.div($containerWidth, 12);
 
 $borderRadius_Small: 0.3125rem;
 $borderRadius_Medium: 0.25rem;
@@ -26,6 +30,7 @@ $gray900: #212121;
 
 $cararra: #E8E7E1; // very pale matte gray (text color)
 $haiti: #070517; // almost black purple (site bg-color)
+$electricViolet: #4A22FC; // very bright purple
 
 // Gradients
 $perfume: #B5B5FA; // pale purple
@@ -160,11 +165,11 @@ $gradient_GreenRed: linear-gradient(to right, $greenYellow, $coralRed);
   @supports not (-webkit-overflow-scrolling: touch) { @content; }
 }
 
-// --------------------------------------------------------------------- Calculations
+// ---------------------------------------------------------------- Calculations
 
 // TODO: support $addGridGutterOffset
 @function calcToEdge($offset) {
-  @return calc(#{$offset} + 100vw / 2  - #{math.div($containerWidth, 2)});// offset, plus half of page width, minus half of container width
+  @return calc(#{$offset} + 100vw / 2  - #{math.div($containerWidth, 2)});
 }
 
 // --------------------------------------------------------------------- Styling

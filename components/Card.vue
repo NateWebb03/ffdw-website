@@ -272,8 +272,14 @@ export default {
   flex-direction: row;
   position: relative;
   z-index: 10;
+  @include mini {
+    flex-direction: column;
+  }
   &.reverse {
     flex-direction: row-reverse;
+    @include mini {
+      flex-direction: column;
+    }
   }
 }
 
@@ -341,6 +347,9 @@ export default {
     }
     .content {
       padding: 1rem calc((100% - #{$containerWidth}) / 2 + 0.5rem);
+      @include containerMaxMQ {
+        padding: 2rem calc(100vw * 0.07);
+      }
     }
     .title,
     .date,
@@ -364,22 +373,20 @@ export default {
 
 .card.type__A {
   &.size__compact {
-    width: 50%;
-    float: left;
     &:nth-child(odd) {
+      .content {
+        padding-left: calc((100vw - #{$containerWidth}) / 2 + 0.5rem);
+        padding-right: 1rem;
+      }
       &:before,
       &:after {
         width: 100vw;
       }
     }
-    &:first-child {
-      .content {
-        padding-left: calc((100vw - #{$containerWidth}) / 2 + 0.5rem);
-      }
-    }
-    &:last-child {
+    &:nth-child(even) {
       .content {
         padding-right: calc((100vw - #{$containerWidth}) / 2 + 0.5rem);
+        padding-left: 1rem;
       }
     }
     .content {
@@ -399,6 +406,13 @@ export default {
     }
     .title {
       @include p1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      white-space: normal;
+    }
+    .title-suffix {
+      @include fontWeight_Regular;
     }
   }
   .content {
@@ -427,9 +441,10 @@ export default {
 // -------------------------------------------------------------------- [Type] B
 .card.type__B {
   &:hover {
-    &.theme__purple-green {
+    &.theme__purple-green,
+    &.theme__red-green {
       .tag {
-        @include gradient_Background_RedPurple;
+        background: $haiti;
       }
     }
     .image {
@@ -446,6 +461,9 @@ export default {
       .image {
         margin-right: 0;
         margin-left: 3rem;
+        @include mini {
+          margin-left: 0;
+        }
       }
       .long-arrow-right {
         svg {
@@ -460,6 +478,10 @@ export default {
     align-self: center;
     width: 14.5rem;
     margin-right: 3rem;
+    @include mini {
+      align-self: flex-start;
+      margin-bottom: 1rem;
+    }
   }
   .panel-text {
     flex: 1;

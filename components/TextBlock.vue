@@ -29,8 +29,7 @@
       </div>
     </div>
 
-    <component
-      :is="headingLevel"
+    <div
       v-if="heading"
       :class="['heading', headingLevel]"
       v-html="heading" />
@@ -38,14 +37,12 @@
     <div
       v-if="subheading"
       class="subheading"
-      v-html="subheading">
-    </div>
+      v-html="subheading" />
 
     <div
       v-if="description"
       class="description"
-      v-html="description">
-    </div>
+      v-html="description" />
 
     <div
       v-if="ctas && Array.isArray(ctas)"
@@ -67,6 +64,7 @@ import Button from '@/components/Button'
 import Box from '@/components/icons/Box'
 import Social from '@/components/icons/Social'
 import Phonebook from '@/components/icons/Phonebook'
+import IconPixelTwitter from '@/components/icons/PixelTwitter'
 
 // ====================================================================== Export
 export default {
@@ -76,7 +74,8 @@ export default {
     Button,
     Box,
     Social,
-    Phonebook
+    Phonebook,
+    IconPixelTwitter
   },
 
   props: {
@@ -118,10 +117,10 @@ export default {
       const format = this.format
       let size
       switch (format) {
-        case 'header' : size = 'h1'; break
-        case 'medium' : size = 'h2'; break
-        case 'small' : size = 'h3'; break
-        case 'tiny' : size = 'h4'; break
+        case 'header' : size = 'h1'; break // 50pt
+        case 'medium' : size = 'h2'; break // 40pt
+        case 'small' : size = 'h3'; break // 35pt
+        case 'tiny' : size = 'h4'; break // 24pt
         default : size = 'h2'
       }
       return size
@@ -160,6 +159,7 @@ export default {
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
         text-fill-color: transparent;
+        -webkit-box-decoration-break: clone;
       }
     }
   }
@@ -168,12 +168,12 @@ export default {
 // ///////////////////////////////////////////////////////////////////// Content
 .label {
   @include label_2;
-  margin-bottom: 7rem;
+  margin-bottom: 6.25rem;
 }
 
 .heading {
   &:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 2.1875rem;
   }
 }
 
@@ -183,6 +183,7 @@ export default {
 
 .icon {
   color: $cararra;
+  width: 2.5rem;
   margin-bottom: 1.75rem;
   margin-top: 0.875rem;
 }
