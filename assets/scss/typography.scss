@@ -183,7 +183,6 @@ $letterSpacing_Large: 0.03em;
   @include leading_Regular;
   @include fontWeight_Semibold;
   @include mini {
-    @include fontSize_Small;
     line-height: 1.875rem; // 30pt
   }
 }

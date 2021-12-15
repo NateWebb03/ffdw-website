@@ -5,7 +5,7 @@
       <div class="overlay">
         <IconPlay class="play-icon" />
       </div>
-      <div v-if="tint" class="tint"></div>
+      <div class="tint"></div>
       <img :src="preview_image" class="preview-image" />
     </div>
 
@@ -142,15 +142,12 @@ export default {
 
 // ///////////////////////////////////////////////////////////////////// Overlay
 .overlay {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 0.6875rem 0 0 0.6875rem;
   z-index: 15;
   transition: 250ms ease-out;
 }

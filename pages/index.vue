@@ -114,6 +114,18 @@ export default {
 
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
+::v-deep .header-selector .content {
+  @include small {
+    padding-right: 2rem;
+  }
+  @include mini {
+    padding-right: 3rem;
+  }
+  @include tiny {
+    padding-right: 4rem;
+  }
+}
+
 ::v-deep #about_1 {
   padding-top: 12rem;
   @include small {

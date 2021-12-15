@@ -373,8 +373,6 @@ export default {
 
 .card.type__A {
   &.size__compact {
-    width: 50%;
-    float: left;
     &:nth-child(odd) {
       .content {
         padding-left: calc((100vw - #{$containerWidth}) / 2 + 0.5rem);

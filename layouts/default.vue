@@ -14,6 +14,16 @@ import { mapGetters, mapActions } from 'vuex'
 
 import SiteFooter from '@/components/SiteFooter'
 
+const scrollToAnchor = (instance) => {
+  const hash = instance.$route.hash.replace('#', '')
+  if (hash) {
+    const element = document.getElementById(hash) || document.querySelector(`[data-id='${hash}']`)
+    if (element) {
+      instance.$scrollToElement(element, 0, -50)
+    }
+  }
+}
+
 // ====================================================================== Export
 export default {
   name: 'LayoutDefault',
@@ -31,6 +41,7 @@ export default {
   watch: {
     '$route' () {
       this.setNavigationOpen(false)
+      scrollToAnchor(this)
     },
     navigationOpen (state) {
       if (state) {
@@ -42,13 +53,7 @@ export default {
   },
 
   mounted () {
-    const hash = this.$route.hash.replace('#', '')
-    if (hash) {
-      const element = document.getElementById(hash) || document.querySelector(`[data-id='${hash}']`)
-      if (element) {
-        this.$scrollToElement(element, 0, -50)
-      }
-    }
+    scrollToAnchor(this)
   },
 
   methods: {
