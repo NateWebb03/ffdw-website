@@ -11,7 +11,7 @@
         {{ label }}
       </div>
 
-      <img :src="img_right" />
+      <GetInvolvedCalloutSvg />
 
       <Button v-if="cta" :button="cta" />
 
@@ -23,13 +23,15 @@
 <script>
 // ===================================================================== Imports
 import Button from '@/components/Button'
+import GetInvolvedCalloutSvg from '@/components/svgs/GetInvolvedCalloutSvg'
 
 // ====================================================================== Export
 export default {
   name: 'GetInvolvedCallout',
 
   components: {
-    Button
+    Button,
+    GetInvolvedCalloutSvg
   },
 
   props: {
@@ -76,7 +78,8 @@ export default {
   color: $haiti;
 }
 
-img {
+img,
+svg {
   width: 100%;
 }
 

@@ -5,7 +5,7 @@
       <div class="overlay">
         <IconPlay class="play-icon" />
       </div>
-      <div v-if="tint" class="tint"></div>
+      <div class="tint"></div>
       <img :src="preview_image" class="preview-image" />
     </div>
 
