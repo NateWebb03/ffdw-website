@@ -12,8 +12,8 @@
   "header": {
     "type": "variant_2",
     "theme": "red-purple",
-    "headingComponentName": "ContactHeaderSvg",
-    "image_1": "/images/component-header/person-standing-beside-another-person-at-desk.png",
+    "image_1": "/images/page-contact/person-standing-beside-another-person-at-desk.jpeg",
+    "image_mobile": "/images/page-contact/close-up-of-hands-typing-on-laptop.jpg",
     "description": "We support and fund research and development, and educate people about the decentralized web, in order to preserve humanity’s most important information. Interested in joining us in this mission? Reach out."
   },
   "page_content": {

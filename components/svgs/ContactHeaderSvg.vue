@@ -4,7 +4,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="440.941" viewBox="0 0 900 440.941">
     <defs>
       <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 5000 3332">
-        <image width="5000" height="3332" xlink:href="/images/component-header/contact-header-image-1.jpg"/>
+        <image width="5000" height="3332" xlink:href="/images/page-contact/close-up-of-hands-typing-on-laptop.jpg"/>
       </pattern>
     </defs>
     <g id="Group_3619" data-name="Group 3619" transform="translate(-276 -207.715)">
@@ -56,7 +56,7 @@
 <script>
 // ====================================================================== Export
 export default {
-  name: 'ContactText'
+  name: 'ContactHeaderSvg'
 }
 </script>
 
