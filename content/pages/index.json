@@ -198,7 +198,18 @@
               "img_left": "/images/page-index/man-sitting-in-a-boardroom-looking-in-the-camera.jpg",
               "label": "Get Involved",
               "text_1": "Join the conversation and build a better Internet.",
-              "text_2": "Or, sign up to hear from us."
+              "text_2": "Or, sign up to hear from us",
+              "form": {
+                "name": "ContactForm",
+                "props": {
+                  "fields": [
+                    { "label": "Email", "for": "email", "validation": "*Must be a valid email" }
+                  ],
+                  "action": "https://fieldgoal.io/f/BRkVam",
+                  "message": "Email registered!",
+                  "submit": "Submit >"
+                }
+              }
             }
           }
         }

@@ -1,37 +1,50 @@
 <template>
-  <form class="form grid-middle" @submit="onSubmit">
+  <form
+    ref="contactForm"
+    :action="action"
+    method="POST"
+    class="form grid-middle">
 
     <div
-      v-for="field in fields"
+      v-for="(field, i) in fields"
       :key="field.label"
       :class="[(field.cols && field.cols.num) || 'col-12', 'field']">
       <component
         :is="field.component || 'input'"
-        v-model="formData.test"
-        :placeholder="field.label" />
+        ref="inputFields"
+        :name="field.for"
+        :type="getInputType(field.for)"
+        :pattern="getValidationPattern(field.for)"
+        :placeholder="field.label"
+        :validation-message="field.validation"
+        required="required"
+        aria-required="true" />
+      <span
+        v-if="field.validation"
+        :key="`validation-${i}-${componentKey}`"
+        :class="['validation-message', { display: !validMessages[i] }]">
+        {{ field.validation }}
+      </span>
     </div>
 
-    <div class="submit-container col">
+    <div class="submit-container col-5" data-push-left="off-7">
+      <div v-if="submitted" class="submit-message">
+        {{ message }}
+      </div>
       <input
         class="submit"
         type="submit"
-        :value="submit" />
+        :value="submit"
+        @click="onFormSubmit" />
     </div>
 
   </form>
 </template>
 
 <script>
-// ===================================================================== Imports
-// import TextBlock from '@/components/TextBlock'
-
 // ====================================================================== Export
 export default {
-  name: 'HomeCallout',
-
-  components: {
-    // TextBlock
-  },
+  name: 'ContactForm',
 
   props: {
     fields: {
@@ -43,18 +56,59 @@ export default {
       /* eslint-disable-line */
       type: String,
       required: true
+    },
+    message: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    action: {
+      /* eslint-disable-line */
+      type: String,
+      required: true
     }
   },
 
   data () {
     return {
-      formData: {}
+      validMessages: new Array(this.fields.length).fill(true),
+      componentKey: 0
     }
   },
 
+  computed: {
+    submitted () {
+      return this.$route.query.submit === 'success'
+    }
+  },
+
+  mounted () {
+    this.$nextTick(() => {
+      if (this.$route.query.submit === 'success' && this.$refs.contactForm) {
+        this.$scrollToElement(this.$refs.contactForm, 0, -50)
+      }
+    })
+  },
+
   methods: {
-    onSubmit (e) {
-      e.preventDefault()
+    onFormSubmit () {
+      this.$refs.inputFields.forEach((field, i) => {
+        this.validMessages[i] = field.checkValidity()
+      })
+      this.componentKey++
+    },
+    getInputType (type) {
+      return type === 'email' ? type : 'text'
+    },
+    getValidationPattern (type) {
+      switch (type) {
+        case 'email': return '[a-zA-Z0-9!#$%&\'*+\-/=?^_{|}~]{1,100}@[a-zA-Z0-9\-]{2,64}.[a-zA-Z.]{2,27}'
+        case 'phone': return '[-0-9xs()+{}#]{6,31}'
+        case 'name': return '[^0-9]{2,100}'
+        case 'message': return '.{50,25000}'
+        case 'subject': return '.{1,200}'
+        default : return null
+      }
     }
   }
 }
@@ -107,12 +161,31 @@ textarea {
 }
 
 .submit-container {
-  padding: 0.5rem 0;
+  padding: 1.5rem 0;
   position: relative;
   text-align: right;
 }
 
+.submit-message {
+  @include fontWeight_Semibold;
+  @include fontSize_Small;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.5rem;
+}
+
 .submit {
   width: auto;
+}
+
+.validation-message {
+  display: none;
+  position: absolute;
+  right: 0.5rem;
+  bottom: -1.5rem;
+  &.display {
+    display: inline;
+  }
+  color: red;
 }
 </style>

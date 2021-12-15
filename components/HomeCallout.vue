@@ -12,6 +12,14 @@
         <h2 class="subheading">
           {{ text_2 }}
         </h2>
+
+        <ContactForm
+          v-if="formProps"
+          :action="formProps.action"
+          :fields="formProps.fields"
+          :submit="formProps.submit"
+          :message="formProps.message" />
+
       </div>
     </div>
 
@@ -22,6 +30,7 @@
 // ===================================================================== Imports
 import TextBlock from '@/components/TextBlock'
 import SocialBar from '@/components/SocialBar'
+import ContactForm from '@/components/ContactForm'
 
 // ====================================================================== Export
 export default {
@@ -29,7 +38,8 @@ export default {
 
   components: {
     TextBlock,
-    SocialBar
+    SocialBar,
+    ContactForm
   },
 
   props: {
@@ -52,6 +62,10 @@ export default {
       type: [String, Boolean],
       required: false,
       default: false
+    },
+    form: {
+      type: Object,
+      required: true
     }
   },
 
@@ -62,6 +76,9 @@ export default {
         label: this.label,
         heading: this.text_1
       }
+    },
+    formProps () {
+      return typeof this.form.props === 'object' ? this.form.props : false
     }
   }
 }
@@ -161,5 +178,14 @@ export default {
 .subheading {
   @include specialHeading;
   margin: 3rem 0;
+}
+
+::v-deep .form {
+  input {
+    color: $haiti;
+  }
+  ::placeholder {
+    color: $haiti;
+  }
 }
 </style>

@@ -89,28 +89,41 @@
             "name": "ContactForm",
             "props": {
               "fields": [
-                { "label": "Name", "for": "name" },
-                { "label": "Subject", "for": "subject" },
+                {
+                  "label": "Name",
+                  "for": "name",
+                  "validation": "*Required"
+                },
+                {
+                  "label": "Subject",
+                  "for": "subject",
+                  "validation": "*Required"
+                },
                 {
                   "label": "Email",
                   "for": "email",
                   "cols": {
                     "num": "col-6"
-                  }
+                  },
+                  "validation": "*Must be a valid email"
                 },
                 {
                   "label": "Phone",
                   "for": "phone",
                   "cols": {
                     "num": "col-6"
-                  }
+                  },
+                  "validation": "*Must be a valid phone number"
                 },
                 {
                   "label": "Message",
                   "for": "message",
-                  "component": "textarea"
+                  "component": "textarea",
+                  "validation": "*Must be at least 50 characters"
                 }
               ],
+              "action": "https://fieldgoal.io/f/4eQbrg",
+              "message": "Thank you for your message!",
               "submit": "Submit >"
             }
           }
