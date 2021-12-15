@@ -135,20 +135,20 @@
           {
             "img": "/images/page-about/rainey-reitman.png",
             "title": "Rainey Reitman",
-            "subtitle": "CPO, Electronic Frontier Foundation",
+            "subtitle": "Internet Activist",
             "content": "Rainey Reitman is a digital rights activist and writer based in San Francisco, CA. A passionate advocate for individual privacy and government transparency, Reitman has worked for the civil liberties nonprofit the Electronic Frontier Foundation since 2010, first as their Activism Director and currently as Chief Program Officer. She is a board member and co-founder of the Freedom of the Press Foundation, a nonprofit organization that protects, defends, and empowers public-interest journalism in the 21st century.<br /><br />Previously, Reitman was a co-founder and steering committee member for the Chelsea Manning Support Network, served on the board of directors for the Bill of Rights Defense Committee and served as Director of Communications for the Privacy Rights Clearinghouse. Reitman has dedicated her career to creating informed and powerful movements of technology users who can organize to defend free expression, preserve privacy, oppose government overreach, and build a digital future that respects and upholds human rights."
           },
           {
             "img": "/images/page-about/brian-behlendorf.png",
             "title": "Brian Behlendorf",
-            "subtitle": "Executive Director, Hyperledger",
+            "subtitle": "General Manager, Open Source Security Foundation",
             "direction": "reverse",
-            "content": "Brian Behlendorf has been an advocate for open technologies and the role they can play in a more advanced and just society for nearly 30 years. He is Executive Director for Hyperledger, an initiative hosted at the Linux Foundation, and actively advising and growing other LF initiatives around supply chain traceability, public health, identity, and more. He serves on the boards of director for the Electronic Frontier Foundation (since 2013) and the Mozilla Foundation (since 2003), defending the fight for the open web and a human rights centered Internet.<br /><br />He also chairs the technical advisory council for ID2020. Previously he has served as the Chief Technology Officer for the World Economic Forum, advised the Obama administration through the White House’s Office of Science and Technology Policy, and co-founded a series of companies in the open source software domain. Oh, and many moons ago he co-founded the Apache web server project, which he shepherded into the 501c3 Apache Software Foundation."
+            "content": "Brian Behlendorf has been an advocate for open technologies and the role they can play in a more advanced and just society for nearly 30 years. He is general manager of the Open Source Security Foundation. Previously, he was executive director for Hyperledger, an initiative hosted at the Linux Foundation, and actively advising and growing other LF initiatives around supply chain traceability, public health, identity, and more. He serves on the boards of director for the Electronic Frontier Foundation (since 2013) and the Mozilla Foundation (since 2003), defending the fight for the open web and a human rights centered Internet.<br /><br />He also chairs the technical advisory council for ID2020. Previously he has served as the Chief Technology Officer for the World Economic Forum, advised the Obama administration through the White House’s Office of Science and Technology Policy, and co-founded a series of companies in the open source software domain. Oh, and many moons ago he co-founded the Apache web server project, which he shepherded into the 501c3 Apache Software Foundation."
           },
           {
             "img": "/images/page-about/kristin-smith.png",
             "title": "Kristin Smith",
-            "subtitle": "Executive Director, Blockchain Org.",
+            "subtitle": "Executive Director, Blockchain Association",
             "content": "Kristin is the Executive Director of the Blockchain Association, the Washington DC-based trade association representing the most prominent and reputable organizations in the crypto industry. The mission of the Blockchain Association is to improve the public policy environment so that blockchain networks can thrive in the United States. Kristin sets the association’s public policy strategy and leads engagement with industry and outreach to policymakers.<br /><br />Prior to leading the Blockchain Association, Kristin assisted blockchain and technology companies achieve their public policy objectives in Washington. She served as a Senate and congressional aide on Capitol Hill for nearly ten years, much of which was spent focusing on technology policy. She co-founded HODLpac and serves on the organization’s board of directors. Kristin is also featured on Fortune’s 2020 40 Under 40 list."
           }
         ]
@@ -181,7 +181,7 @@
             "theme": "red-purple",
             "img": "/images/page-about/sheila-warren.png",
             "title": "Sheila Warren",
-            "title_suffix": "Executive, World Economic Forum"
+            "title_suffix": "Head of Blockchain and DataPolicy, World Economic Forum"
           },
           {
             "type": "A",

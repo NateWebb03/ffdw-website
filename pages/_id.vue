@@ -338,6 +338,9 @@ export default {
   @include fontSize_Small;
   @include fontWeight_Semibold;
   cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
   &:after {
     content: '';
     position: absolute;
