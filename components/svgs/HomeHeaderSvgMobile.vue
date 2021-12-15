@@ -13,8 +13,7 @@
         fill="#070517" font-size="45" font-family="Manrope-SemiBold, Manrope" font-weight="600" letter-spacing=".01em">
         <tspan x="0" y="0">Rebuilding </tspan>
         <tspan x="0" y="61">the Internet. </tspan>
-        <tspan x="0" y="122">
-           For good. </tspan>
+        <tspan x="100" y="122">For good. </tspan>
       </text>
       <path transform="translate(0 155)" fill="url(#ma)" d="M0 0h78v78H0z" />
       <g>
