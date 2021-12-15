@@ -15,7 +15,10 @@
         </Zero_Core__Accordion_Header>
 
         <Zero_Core__Accordion_Content>
-          <div class="accordion-content-wrapper" v-html="section.content"></div>
+          <div
+            class="accordion-content-wrapper basic-template-block-format" 
+            v-html="section.content">
+          </div>
         </Zero_Core__Accordion_Content>
 
       </Zero_Core__Accordion_Section>
