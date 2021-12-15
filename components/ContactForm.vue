@@ -14,10 +14,11 @@
         ref="inputFields"
         :name="field.for"
         :type="getInputType(field.for)"
-        :minlength="getCharacterlimit(field.for, 'min')"
-        :maxlength="getCharacterlimit(field.for, 'max')"
+        :pattern="getValidationPattern(field.for)"
         :placeholder="field.label"
-        :validation-message="field.validation" />
+        :validation-message="field.validation"
+        required="required"
+        aria-required="true" />
       <span
         v-if="field.validation"
         :key="`validation-${i}-${componentKey}`"
@@ -95,29 +96,23 @@ export default {
         this.validMessages[i] = field.checkValidity()
       })
       this.componentKey++
-      console.log(this.validMessages)
     },
     getInputType (type) {
       return type === 'email' ? type : 'text'
     },
-    getCharacterlimit (type, key) {
-      let bounds = {}
+    getValidationPattern (type) {
       switch (type) {
-        case 'phone':
-          bounds = { min: 0, max: 15 }; break
-        case 'name':
-          bounds = { min: 2, max: 64 }; break
-        case 'message':
-          bounds = { min: 50, max: 25000 }; break
-        case 'subject':
-          bounds = { min: 1, max: 64 }; break
+        case 'email': return '[a-zA-Z0-9!#$%&\'*+-/=?^_`{|}~]{1,100}[@][w0-9-]{2,64}.[a-zA-Z.]{2,27}'
+        case 'phone': return '[0-9xs-()+{}#]{6,31}'
+        case 'name': return '[[A-Za-z\u00C0-\u1FFF\u2800-\uFFFDs-"\']{2,100}'
+        case 'message': return '.{50,25000}'
+        case 'subject': return '.{1,100}'
+        default : return null
       }
-      return bounds[key]
     }
   }
 }
 </script>
-        <!-- :pattern="getValidationPattern(field.for)" -->
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
