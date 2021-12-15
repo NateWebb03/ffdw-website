@@ -85,7 +85,12 @@ export default {
       return this.block.tint
     },
     subtext () {
-      return this.isSlateVideo ? '' : this.block.subtext
+      return this.isSlateVideo ? {
+        type: 'D',
+        theme: this.theme,
+        text: this.title,
+        icon_after: 'arrow-down'
+      } : this.block.subtext
     },
     title () {
       return this.isSlateVideo ? this.block.data.name : this.block.title
@@ -176,9 +181,18 @@ export default {
 }
 
 // ///////////////////////////////////////////////////////////////////// Content
-.subtext {
+::v-deep .subtext {
   @include label_3;
-  padding: 0.5rem 0 0 0.75rem;
+  padding: 0.5rem 0 0 1rem;
+  .icon-after.arrow-down {
+    svg {
+      width: 0.75rem;
+      transform: rotate(-90deg);
+      rect {
+        fill: $cararra;
+      }
+    }
+  }
 }
 
 .metadata {

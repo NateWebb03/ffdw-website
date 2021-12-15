@@ -165,10 +165,10 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: calc(50% - 2rem);
+  width: calc(50% - 4.5rem);
   margin-bottom: 4rem;
   &:nth-child(odd) {
-    margin-right: 4rem;
+    margin-right: 7rem;
   }
   img {
     width: 100%;

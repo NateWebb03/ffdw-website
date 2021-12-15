@@ -303,6 +303,9 @@ $gutter: calc((100% - #{$containerWidth}) / 2);
     .metadata {
       @include fontSize_Tiny;
     }
+    .subtext {
+      display: none;
+    }
   }
 }
 

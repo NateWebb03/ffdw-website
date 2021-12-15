@@ -338,6 +338,9 @@ export default {
   @include fontSize_Small;
   @include fontWeight_Semibold;
   cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
   &:after {
     content: '';
     position: absolute;
@@ -345,126 +348,6 @@ export default {
     left: 0;
     width: 100%;
     border: solid 1px white;
-  }
-}
-
-::v-deep .basic-template-block-format {
-  h1 {
-    @include fontSize_Large;
-    @include fontWeight_Semibold;
-    line-height: 1.4;
-    margin-bottom: 4.25rem;
-    @include small {
-      @include fontSize_Medium;
-      @include leading_Medium;
-    }
-  }
-  h2 {
-    @include fontSize_Medium;
-    @include fontWeight_Semibold;
-    line-height: 1.7;
-    margin-bottom: 2.5rem;
-  }
-  p {
-    @include fontSize_Regular;
-    @include fontWeight_Regular;
-    line-height: 1.8;
-    letter-spacing: $letterSpacing_Large;
-    margin-bottom: 2.5rem;
-  }
-  a {
-    @include fontWeight_Bold;
-  }
-  img[alt$="small"] {
-    width: 50%;
-  }
-  img[alt$="banner"] {
-    width: calc(100% + 4rem);
-    transform: translateX(-2rem);
-  }
-  img {
-    width: 100%;
-    margin: 4.75rem 0;
-  }
-  hr {
-    position: relative;
-    border: 10px solid;
-    border-image-slice: 1;
-    border-width: 4px;
-    border-image-source: $gradient_RedGreen;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    margin: 3.5rem 0;
-    left: -$singleColumn;
-    width: calc(100% + #{$singleColumn * 2});
-    @include small {
-      left: 0;
-      width: 100%;
-    }
-  }
-  blockquote {
-    margin: 7.25rem 0;
-    p {
-      @include h3;
-      border: 10px solid;
-      border-image-slice: 1;
-      border-width: 4px;
-      border-image-source: linear-gradient(180deg, $coralRed, $greenYellow);
-      border-top: none;
-      border-right: none;
-      border-bottom: none;
-      padding-left: 5.25rem;
-      line-height: 1.4;
-      @include mini {
-        padding-left: 2rem;
-      }
-    }
-  }
-  li {
-    margin-bottom: 1.5rem;
-    padding-left: 2.875rem;
-    list-style-type: none;
-    position: relative;
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0rem;
-      top: 0.625rem;
-      width: 0.625rem;
-      height: 0.625rem;
-      @include gradient_Background_RedGreen;
-    }
-  }
-  table {
-    margin: 3rem 0;
-    border-top: solid 5px white;
-    border-bottom: solid 5px white;
-    th,
-    tr {
-      @include fontSize_Mini;
-    }
-    tr:nth-child(odd) {
-      background: #0F0E1C;
-    }
-    th {
-      @include fontSize_Small;
-      @include fontWeight_Semibold;
-      background: #070517;
-      padding: 0.75rem 1rem;
-    }
-    td {
-      padding: 0.5rem 1rem;
-    }
-  }
-  pre {
-    border: solid 1px #27234A;
-    background-color: #0F0E1C;
-    padding: 2rem 1rem;
-    margin-bottom: 5rem;
-  }
-  code {
-    color: #9AB6CE;
   }
 }
 

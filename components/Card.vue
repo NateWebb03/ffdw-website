@@ -443,9 +443,9 @@ export default {
 // -------------------------------------------------------------------- [Type] B
 .card.type__B {
   &:hover {
-    &.theme__purple-green {
+    &.theme__purple-green,
+    &.theme__red-green {
       .tag {
-        // @include gradient_Background_RedPurple;
         background: $haiti;
       }
     }

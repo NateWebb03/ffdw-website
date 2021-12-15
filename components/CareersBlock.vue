@@ -19,7 +19,11 @@
         <div class="col-5_sm-8_mi-12" data-push-left="off-1_sm-0">
           <div class="panel-right">
             <CardListBlock :block="{ cards: cards }" />
-            <TextBlock :block="{ ctas: secondaryCtas }" />
+            <!--
+              Below CTA button is hidden per client request. Leaving for now in
+              case they want to re-enable it in the future.
+            -->
+            <!-- <TextBlock :block="{ ctas: secondaryCtas }" /> -->
           </div>
         </div>
 
@@ -34,7 +38,7 @@
 import { mapGetters } from 'vuex'
 import CloneDeep from 'lodash/cloneDeep'
 
-import TextBlock from '@/components/TextBlock'
+// import TextBlock from '@/components/TextBlock'
 import CardListBlock from '@/components/CardListBlock'
 
 // ====================================================================== Export
@@ -42,7 +46,7 @@ export default {
   name: 'CareersBlock',
 
   components: {
-    TextBlock,
+    // TextBlock,
     CardListBlock
   },
 
