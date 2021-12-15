@@ -16,7 +16,7 @@
 
         <Zero_Core__Accordion_Content>
           <div
-            class="accordion-content-wrapper basic-template-block-format"
+            :class="['accordion-content-wrapper', 'basic-template-block-format', theme]"
             v-html="section.content">
           </div>
         </Zero_Core__Accordion_Content>
@@ -51,6 +51,7 @@ export default {
       return this.block.sections
     },
     theme () { // 'purple-green', 'red-purple', 'red-green'
+      console.log(this.block.theme)
       return this.block.theme || 'purple-green'
     }
   }
