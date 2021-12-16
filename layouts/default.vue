@@ -53,7 +53,10 @@ export default {
   },
 
   mounted () {
-    scrollToAnchor(this)
+    const timeout = setTimeout(() => {
+      scrollToAnchor(this)
+      clearTimeout(timeout)
+    }, 500)
   },
 
   methods: {
