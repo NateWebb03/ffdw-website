@@ -1,5 +1,7 @@
 # Filecoin Foundation for the Decentralized Web 
 
+> Note: these docs will be expanded upon in a future iteration of the site
+
 ## Overview
 
 - This is the repository for the _Filecoin Foundation for the Decentralized Web_ website ([ffdweb.org](https://ffdweb.org))
@@ -9,7 +11,7 @@
 - While a static site, this app can be extended at any time to a full application by changing the `target` in settings
 
 ## Stack
-- Requires nodeJS and has been tested on node 14
+- Requires nodeJS and has been tested on node 16
 - Uses a Vue framework called nuxtJS, deployed in static mode
 
 ## Build
@@ -37,7 +39,7 @@ To build this site locally
 
 ## Components
 
-**Example Data Structure**
+### Example Data Structures for reference
 
 ```json
 {
