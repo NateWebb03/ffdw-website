@@ -2,11 +2,11 @@
 <template>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 583 347">
     <defs>
-      <pattern id="a" width="1" height="1" patternTransform="matrix(-1 0 0 1 387.039 0)" viewBox="11.791 9.23 142.245 110.54">
-        <image preserveAspectRatio="xMidYMid slice" width="193.519" height="129" xlink:href="/images/component-header/header-1-image.jpg" />
+      <pattern id="a" width="1" height="1" patternTransform="matrix(-1 0 0 1 10 0)" viewBox="11.791 9.23 142.245 110.54">
+        <image preserveAspectRatio="xMidYMid slice" width="190" height="160" xlink:href="/images/component-header/header-1-image.jpg" />
       </pattern>
-      <pattern id="b" width="1" height="1" viewBox="57.762 19.01 30.077 30.077">
-        <image preserveAspectRatio="xMidYMid slice" width="150.015" height="100" xlink:href="/images/component-header/header-1-image2.jpg" />
+      <pattern id="b" width="1" height="1" viewBox="57 19 30 30">
+        <image preserveAspectRatio="xMidYMid slice" width="150" height="100" xlink:href="/images/component-header/header-1-image2.jpg" />
       </pattern>
     </defs>
     <path transform="translate(417)" fill="url(#a)" d="M0 0h166v129H0z" />

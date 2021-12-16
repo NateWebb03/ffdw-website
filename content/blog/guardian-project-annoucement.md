@@ -5,7 +5,7 @@ description: FFDW’s commitment to Guardian Project will accelerate adoption of
 author: Filecoin Foundation for the Decentralized Web
 date: December 13 2021
 sortDate: 2021-12-13
-image: '/images/page-blog/guardian-project-announcement.png'
+image: '/images/page-blog/guardian-project.png'
 recommendedPosts: []
 tags: ['Grants', 'Community', 'Smartphones', 'Rights']
 ---

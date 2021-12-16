@@ -5,7 +5,7 @@ description: Collaboration will support outreach and training to accelerate mark
 author: Filecoin Foundation for the Decentralized Web
 date: December 7 2021
 sortDate: 2021-12-07
-image: '/images/page-blog/ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage.png'
+image: '/images/page-blog/hrdag.png'
 recommendedPosts: []
 tags: ['Rights', 'Grants']
 ---
