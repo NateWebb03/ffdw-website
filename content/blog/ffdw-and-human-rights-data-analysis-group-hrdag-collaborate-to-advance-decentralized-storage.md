@@ -3,7 +3,8 @@ featured: false
 title: FFDW and Human Rights Data Analysis Group (HRDAG) Collaborate to Advance Decentralized Storage for Human Rights Defenders
 description: Collaboration will support outreach and training to accelerate market research for and adoption of decentralized web technologies
 author: Filecoin Foundation for the Decentralized Web
-date: ''
+date: August 1 2021
+sortDate: 2021-08-01
 image: '/images/page-blog/ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage.png'
 recommendedPosts: []
 ---
