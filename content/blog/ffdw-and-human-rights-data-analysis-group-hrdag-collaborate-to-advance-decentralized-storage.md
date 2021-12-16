@@ -7,6 +7,7 @@ date: December 7 2021
 sortDate: 2021-12-07
 image: '/images/page-blog/ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage.png'
 recommendedPosts: []
+tags: ['Rights', 'Grants']
 ---
 
 ![FFDW and Human Rights Data Analysis Group Collaborate](/images/page-blog/ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage.png)
