@@ -1,0 +1,363 @@
+// ///////////////////////////////////////////////////////// Imports & Variables
+// -----------------------------------------------------------------------------
+@import 'normalize';
+@import 'grid/gridlex-2.7.1';
+@import 'plyr/plyr';
+
+$fontAssetPath: '~assets/fonts';
+
+//////////////////////////////////////////////////////////////////////// Manrope
+@font-face {
+  font-family: 'Manrope';
+  src: url('#{$fontAssetPath}/Manrope/Manrope-VariableFont_wght.ttf') format('truetype');
+  font-weight: 200 800;
+}
+
+// ///////////////////////////////////////////////////////////////////// General
+// -----------------------------------------------------------------------------
+html, body {
+  font-family: $font_Primary;
+  font-size: 16px;
+  font-weight: $fontWeight_Regular;
+  line-height: $leading_Regular;
+  letter-spacing: $letterSpacing_Large;
+  color: white;
+  background-color: $haiti;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  ::-moz-selection { background: white; color: black; }
+  ::selection { background: white; color: black; }
+  @include mini {
+    @include fontSize_Mini;
+    line-height: 1.875rem; // 30pt
+  }
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+  &.no-cursor {
+    cursor: none;
+  }
+  * {
+    box-sizing: border-box;
+    &:before,
+    &:after {
+      box-sizing: border-box;
+    }
+  }
+}
+
+a, button, ul {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+// ///////////////////////////////////////////////////////////////// Nuxt & Grid
+// -----------------------------------------------------------------------------
+#__nuxt {
+  position: relative;
+  z-index: 2;
+}
+
+#__layout {
+  overflow: hidden;
+  .master-container {
+    position: relative;
+  }
+}
+
+.layout {
+  position: relative;
+  z-index: 100;
+}
+
+[class~="grid"],
+[class*="grid-"],
+[class*="grid_"] {
+  width: $containerWidth;
+  margin: 0 auto;
+  @include customMaxMQ ($containerWidth + 4rem) {
+    padding: 0 7%;
+    width: 100%;
+  }
+  &[class*="-noGutter"] {
+    margin: 0 auto;
+  }
+  &.full {
+    width: 100%;
+    padding: 0 0.5rem;
+    &.maxed {
+      max-width: 90rem;
+    }
+  }
+  &.no-padding {
+    padding: 0;
+  }
+  [class~="grid"],
+  [class*="grid-"],
+  [class*="grid_"] {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+// ////////////////////////////////////////////////////////////////// Typography
+// -----------------------------------------------------------------------------
+h1, .h1 {
+  @include h1;
+  letter-spacing: 0px;
+}
+
+h2, .h2 {
+  @include h2;
+}
+
+h3, .h3 {
+  @include h3;
+}
+
+h4, .h4 {
+  @include h4;
+}
+
+// ////////////////////////////////////////////////////////////////// Components
+// -----------------------------------------------------------------------------
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+  @include tiny {
+    margin-top: 1.25rem;
+  }
+  .button {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
+
+// ///////////////////////////////////////////////////////////// Basic Templates
+// -----------------------------------------------------------------------------
+
+.video-overlay {
+  position: relative;
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  a {
+    &:after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-30px, -26px);
+      z-index: 10;
+      opacity: 0.8;
+      content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='61' height='53.453' viewBox='0 0 61 53.453'%3e%3cg id='Group_3034' data-name='Group 3034' transform='translate(-0.047)'%3e%3cg id='Group_3033' data-name='Group 3033' transform='translate(22 11.344)'%3e%3crect id='Rectangle_1279' data-name='Rectangle 1279' width='5' height='5' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1280' data-name='Rectangle 1280' width='5' height='5' transform='translate(5 5)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1281' data-name='Rectangle 1281' width='5' height='5' transform='translate(5 20.766)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1282' data-name='Rectangle 1282' width='5' height='5' transform='translate(10 17.177)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1283' data-name='Rectangle 1283' width='5' height='5' transform='translate(15 12.883)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1284' data-name='Rectangle 1284' width='5' height='5' transform='translate(10 8.588)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1285' data-name='Rectangle 1285' width='5' height='5' transform='translate(0 25.766)' fill='%23e8e7e1'/%3e%3c/g%3e%3crect id='Rectangle_1311' data-name='Rectangle 1311' width='5' height='43' transform='translate(56.047 5.684)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1314' data-name='Rectangle 1314' width='5' height='43' transform='translate(0.047 5.684)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1312' data-name='Rectangle 1312' width='5' height='51' transform='translate(55.5 0) rotate(90)' fill='%23e8e7e1'/%3e%3crect id='Rectangle_1313' data-name='Rectangle 1313' width='5' height='51' transform='translate(55.5 48.453) rotate(90)' fill='%23e8e7e1'/%3e%3c/g%3e%3c/svg%3e ");
+    }
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.basic-template-block-format {
+  h1 {
+    @include fontSize_Large;
+    @include fontWeight_Semibold;
+    line-height: 1.4;
+    margin-bottom: 4.25rem;
+    @include small {
+      @include fontSize_Medium;
+      @include leading_Medium;
+    }
+  }
+  h2 {
+    @include fontSize_Medium;
+    @include fontWeight_Semibold;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+  }
+  h4 {
+    @include fontSize_Medium;
+    @include fontWeight_Semibold;
+    line-height: 1.7;
+    padding-top: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  p {
+    @include fontSize_Regular;
+    @include fontWeight_Regular;
+    line-height: 1.8;
+    letter-spacing: $letterSpacing_Large;
+    margin-bottom: 2.5rem;
+  }
+  a {
+    @include fontWeight_Bold;
+  }
+  img[alt$="small"] {
+    width: 50%;
+  }
+  img[alt$="banner"] {
+    width: calc(100% + 4rem);
+    transform: translateX(-2rem);
+  }
+  img {
+    width: 100%;
+    margin: 4.75rem 0;
+  }
+  hr {
+    position: relative;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 4px;
+    border-image-source: $gradient_RedGreen;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 3.5rem 0;
+    left: -$singleColumn;
+    width: calc(100% + #{$singleColumn * 2});
+    @include small {
+      left: 0;
+      width: 100%;
+    }
+  }
+  blockquote {
+    margin: 7.25rem 0;
+    p {
+      @include h3;
+      border: 10px solid;
+      border-image-slice: 1;
+      border-width: 4px;
+      border-image-source: linear-gradient(180deg, $coralRed, $greenYellow);
+      border-top: none;
+      border-right: none;
+      border-bottom: none;
+      padding-left: 5.25rem;
+      line-height: 1.4;
+      @include mini {
+        padding-left: 2rem;
+      }
+    }
+  }
+  li {
+    margin-bottom: 1.5rem;
+    padding-left: 2.875rem;
+    list-style-type: none;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0rem;
+      top: 0.625rem;
+      width: 0.625rem;
+      height: 0.625rem;
+      @include gradient_Background_RedGreen;
+    }
+  }
+  table {
+    margin: 3rem 0;
+    border-top: solid 5px white;
+    border-bottom: solid 5px white;
+    th,
+    tr {
+      @include fontSize_Mini;
+    }
+    tr:nth-child(odd) {
+      background: #0F0E1C;
+    }
+    th {
+      @include fontSize_Small;
+      @include fontWeight_Semibold;
+      background: #070517;
+      padding: 0.75rem 1rem;
+      vertical-align: top;
+    }
+    td {
+      padding: 0.5rem 1rem;
+      vertical-align: top;
+    }
+  }
+  pre {
+    border: solid 1px #27234A;
+    background-color: #0F0E1C;
+    padding: 2rem 1rem;
+    margin-bottom: 5rem;
+  }
+  code {
+    color: #9AB6CE;
+  }
+
+  &.red-purple {
+    hr {
+      border-image-source: $gradient_RedPurple;
+    }
+    li {
+      &:before {
+        @include gradient_Background_RedPurple;
+      }
+    }
+    blockquote {
+      p {
+        border-image-source: linear-gradient(180deg, $coralRed, $perfume);
+      }
+    }
+  }
+
+  &.purple-green {
+    hr {
+      border-image-source: $gradient_PurpleGreen;
+    }
+    li {
+      &:before {
+        @include gradient_Background_PurpleGreen;
+      }
+    }
+    blockquote {
+      p {
+        border-image-source: linear-gradient(180deg, $perfume, $greenYellow);
+      }
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "seo": {
+    "title": "Grants - Filecoin Foundation for the Decentralized Web",
+    "description": ""
+  },
+  "og": {
+    "site_name": "Grants - Filecoin Foundation for the Decentralized Web",
+    "url": "",
+    "type": "website",
+    "image": "/images/page-index/open-graph.png"
+  },
+  "header": {
+    "type": "variant_4",
+    "heading": "FFDW",
+    "subheading": "Grants and Programs",
+    "image_1": "/images/page-grants/person-showing-another-person-something-on-a-laptop.jpeg",
+    "nav_theme": "light",
+    "sub_theme": "red-purple"
+  },
+  "page_content": {
+    "mission": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-12"
+        },
+        "format": "small",
+        "label": "FFDW’s Mission",
+        "heading": "FFDW’s mission is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open-source software and open protocols. In short, we foster and accelerate the growth of the decentralized web."
+      }
+    },
+    "info_1": {
+      "col_1": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-4_sm-6_mi-9"
+        },
+        "src": "/images/page-grants/man-with-microphone-speaking-to-group.png"
+      },
+      "col_2": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-6_sm-8_mi-12",
+          "push_left": "off-1_sm-0"
+        },
+        "format": "tiny",
+        "label": "FFDW’s Operating Approach",
+        "heading": "Filecoin Foundation for the Decentralized Web is the charitable sister organization to the Filecoin Foundation.",
+        "description": "As the non-profitable sister to Filecoin Foundation, FFDW focuses its collaborations on charitable activities. Along with our core work providing grants and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships."
+      }
+    },
+    "info_2": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-10_sm-12",
+          "push_left": "off-1_sm-0"
+        },
+        "format": "small",
+        "description": "As a private operating foundation, FFDW takes collaboration seriously.  Both our operating status and our ethos mean that we internally drive the development of ideas and projects.  When working with outside organizations, we approach all of our initiatives as collaborations in which both FFDW and its implementing organizations work together closely to ensure success. Rather than being an organization that simply writes checks and monitors progress, we roll up our sleeves and work alongside our project partners. Where useful, we assist our collaborators with program design, technical support, hiring, legal questions, and external communications."
+      }
+    },
+    "project_areas": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-6_sm-8_mi-12"
+        },
+        "format": "header",
+        "label": "Project Areas",
+        "heading": "FFDW’s Project Focuses",
+        "description": "FFDW collaborates with organizations that accelerate the adoption of open, decentralized technologies, help build communities that support and sustain open, decentralized technologies, and communicate to wider audiences the benefits of adopting open, decentralized technologies. Our projects all focus on one or more of the below lines of effort (LOEs)."
+      },
+      "col_2": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-4_mi-8_ti-10",
+          "push_left": "off-2_sm-0"
+        },
+        "src": "/images/page-grants/person-showing-presentation-to-group.jpeg"
+      }
+    },
+    "accordion_1": {
+      "col_1": {
+        "type": "accordion_block",
+        "cols": {
+          "num": "col-9_sm-10_mi-12",
+          "push_left": "off-3_sm-2_mi-0"
+        },
+        "theme": "red-purple",
+        "sections": [
+          {
+            "label": "Education",
+            "content": "These projects educate the public about how the internet works and how a decentralized web is a better web for businesses, citizens, and governments.  A vital part of this effort is informing existing developers of the possibilities of the decentralized web and educating the next generation of developers in alternatives to centralized solutions. Projects may seek to educate users directly of the benefits of greater autonomy, expressiveness, and political freedom of a decentralized digital environment; especially those who suffer the most from our current digital environment."
+          },
+          {
+            "label": "Research",
+            "content": "These projects support efforts to store research data using decentralized web storage and make that data easily shared and accessed. Additionally, projects may explore research into methods to improve and expand decentralized web data retrieval and storage with outputs that are freely and publicly accessible.  We are biased toward initiatives that demonstrate that decentralized solutions can be privacy-protecting, secure, and sustainable."
+          },
+          {
+            "label": "Development",
+            "content": "These projects drive the creation and development of technologies that will enable decentralized file storage of humanity’s most important information. More broadly, these projects encourage and fund the essential interoperability “glue” connecting elements of the decentralized web. For instance, funding decentralized-storage integration for existing FLOSS flagship projects; funding security and privacy-enhancing additions to existing decentralized web projects; helping to shepherd decentralized solutions through established Internet standards bodies."
+          }
+        ]
+      }
+    },
+    "application_process": {
+      "grid": ["middle"],
+      "col_1": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-4_sm-6_mi-8"
+        },
+        "src": "/images/page-grants/person-on-laptop-in-cafe.png"
+      },
+      "col_2": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-6_sm-10_mi-12",
+          "push_left": "off-1_sm-0"
+        },
+        "format": "medium",
+        "label": "Application Process",
+        "heading": "FFDW currently reviews grant and project applications quarterly.",
+        "description": "We may change this cadence in the future. Under the current quarterly process, deadlines for submissions are 11:59 PM Pacific Time on March 31, June 30, September 30, and December 31. Proposals should be submitted to proposals@FFDWeb.org as attachments to an email."
+      }
+    },
+    "proposal_template": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-6_sm-10_mi-12"
+        },
+        "format": "medium",
+        "label": "FFDW Proposal Template",
+        "heading": "Application Requirements",
+        "description": "We seek to support a wide range of diverse projects that will include education, research, community building, advocacy, as well as building, maintaining, and securing tools that advance our charitable mission.",
+        "ctas": [
+          {
+            "type": "D",
+            "action": "a",
+            "theme": "red",
+            "target": "_blank",
+            "text": "Download the proposal template PDF",
+            "url": "/FFDW-proposal-narrative-template.zip",
+            "icon_after": "arrow-down"
+          }
+        ]
+      },
+      "col_2": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-4_sm-6_mi-8",
+          "push_left": "off-2_sm-6_mi-4"
+        },
+        "src": "/images/page-grants/person-speaking-into-microphone-to-group.jpeg"
+      }
+    },
+    "accordion_2": {
+      "col_1": {
+        "type": "accordion_block",
+        "cols": {
+          "num": "col-9_sm-10_mi-12",
+          "push_left": "off-3_sm-2_mi-0"
+        },
+        "theme": "red-purple",
+        "sections": [
+          {
+            "label": "About your organization",
+            "content": "<ul><li>Name of your organization*:</li><li>EIN:</li><li>Organizational mission and who benefits from your work: (max 200 words)</li><li>What type of entity is your organization (individual, 501c3, LLC, university, etc):</li><li>Describe any key partnerships with other entities such as non-profit, government, and private sector organizations: (max 400 words)</li><li>Organizational website*:  (if applicable)</li></ul>"
+          },
+          {
+            "label": "Project proposal",
+            "content": "<ul><li>Title of project*:</li><li>Short summary of project*: (max 300 words)</li><li>Scope of work: Describe the primary objectives of this project and what activities you will undertake to achieve those objectives (max 800 words)</li><li>Project website* (if applicable):</li><li>Project software licensing details: If your project includes software, how is it licensed? If your project is on Github, please provide a link to the project.</li></ul>"
+          },
+          {
+            "label": "Fit with FFDW’s objectives",
+            "content": "<ul><li>FFDW’s Mission is to “ensure the permanent preservation of humanity’s most important information by stewarding the development of open source software and open protocols for decentralized data storage and retrieval networks.” How will your proposed project further this mission? (Max 400 words)</li><li>How does this project connect to one of our larger objectives for the current year, including, for example, education about the importance of data storage, community engagement with the decentralized web, and innovative technical projects to further humanity’s access to knowledge? (Max 400 words)</li><li>Describe ways in which FFDW can collaborate with you in a meaningful way toward achieving your project goals? (Max 400 words)</li></ul>"
+          },
+          {
+            "label": "Amount requested",
+            "content": "<ul><li>What are the annual and total amounts requested for this grant?  (Example: “$1 million per year over three years.  Total cost over the life of the grant will be $3 million.”)</li></ul>"
+          },
+          {
+            "label": "Time period",
+            "content": "<ul><li>What time period will this grant period cover?</li></ul>"
+          },
+          {
+            "label": "Describe your team",
+            "content": "<ul><li>Brief bios for your senior leadership. (Max five sentences per individual)</li><li>Do you anticipate any changes at the senior leadership level? If yes, please describe.</li><li>How many full-time staff members do you currently have? How many part-time staff members?</li><li>If you have a board, please include their names and brief bios. (Max 800 words)</li><li>What have you done to integrate diversity, equity, and inclusion in your organization and work? (max 500 words)</li><li>Who do you expect to devote significant time to this project? Please provide a brief bio.</li></ul>"
+          },
+          {
+            "label": "Past work",
+            "content": "<ul><li>Please share some of your relevant prior work.  (Max 800 words)</li></ul>"
+          },
+          {
+            "label": "Finances",
+            "content": "<ul><li>Attach your organizational operating budget for the current year.</li><li>Attach a budget for this project using the attached sample budget.</li></ul>"
+          },
+          {
+            "label": "Primary contact information (to be listed in contract)",
+            "content": "<ul><li>Name</li><li>Title</li><li>Email</li><li>Phone</li><li>Mailing address</li><li>If you are sponsored by another organization, please list that org’s name and contact information</li></ul>"
+          },
+          {
+            "label": "Supporting documentation",
+            "content": "<ul><li>If you are a nonprofit, please provide your most recent tax return and a copy of your tax determination letter.<br><br>* denotes data that will be made public on our website if your project is funded.</li></ul>"
+          }
+        ]
+      }
+    }
+  }
+}

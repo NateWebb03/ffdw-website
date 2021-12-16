@@ -1,0 +1,284 @@
+{
+  "seo": {
+    "title": "Filecoin Foundation for the Decentralized Web",
+    "description": ""
+  },
+  "og": {
+    "site_name": "Filecoin Foundation for the Decentralized Web",
+    "url": "",
+    "type": "website",
+    "image": "/images/open-graph.png"
+  },
+  "logo_button": {
+    "type": "X",
+    "action": "nuxt-link",
+    "url": "/"
+  },
+  "social": [
+    {
+      "type": "X",
+      "action": "a",
+      "target": "_blank",
+      "url": "https://twitter.com/ffdweb",
+      "target": "_blank",
+      "component": "TwitterIcon",
+      "label": "Twitter",
+      "icon_after": "arrow-down"
+    },
+    {
+      "type": "X",
+      "action": "a",
+      "target": "_blank",
+      "url": "https://www.youtube.com/channel/UCbj3Hck5cwKURkZKHjg_MKQ",
+      "target": "_blank",
+      "component": "YoutubeIcon",
+      "label": "YouTube",
+      "icon_after": "arrow-down"
+    },
+    {
+      "type": "X",
+      "action": "a",
+      "target": "_blank",
+      "url": "https://www.linkedin.com/in/filecoin-foundation-for-the-decentralized-web-482aa1225/",
+      "target": "_blank",
+      "component": "LinkedInIcon",
+      "label": "LinkedIn",
+      "icon_after": "arrow-down"
+    }
+  ],
+  "navigation": [
+    {
+      "heading": "About FFDW",
+      "link": {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/about",
+        "text": "About FFDW",
+        "icon_before": "star",
+        "icon_after": "finger-up"
+      },
+      "links": [
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/about/#intro_1",
+          "text": "About us",
+          "icon_before": "arrow-down"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/about/#vision_1",
+          "text": "Promise > Vision",
+          "icon_before": "arrow-down"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/about/#board_1",
+          "text": "Board & Advisors",
+          "icon_before": "arrow-down"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/about/#career-block",
+          "text": "Careers",
+          "icon_before": "arrow-down"
+        }
+      ]
+    },
+    {
+      "heading": "Explore Web3",
+      "link": {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/explore",
+        "text": "Explore",
+        "icon_before": "star",
+        "icon_after": "finger-up"
+      },
+      "links": [
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/explore/#learn_1",
+          "text": "Learn about Web3",
+          "icon_before": "arrow-down"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/explore/#videos_1",
+          "text": "Educational Resources",
+          "icon_before": "arrow-down"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/explore/#callout",
+          "text": "Collaborators",
+          "icon_before": "arrow-down"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/blog",
+          "text": "Blog",
+          "icon_before": "arrow-down"
+        }
+      ]
+    },
+    {
+      "heading": "Get Involved",
+      "link": {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/get-involved",
+        "text": "Get Involved",
+        "icon_before": "star",
+        "icon_after": "finger-up"
+      },
+      "links": [
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/blog",
+          "text": "Blog",
+          "icon_before": "arrow-down"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/get-involved/#grants_1",
+          "text": "Apply for Grants",
+          "icon_before": "arrow-down"
+        },
+        {
+          "type": "F",
+          "action": "nuxt-link",
+          "url": "/get-involved/#career-block",
+          "text": "Careers",
+          "icon_before": "arrow-down"
+        }
+      ]
+    },
+    {
+      "link": {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/grants",
+        "text": "Grants",
+        "icon_before": "star",
+        "icon_after": "finger-up"
+      }
+    }
+  ],
+  "breadcrumbs_mapping": {
+    "index": "Home",
+    "about": "About FFDW",
+    "blog": "Blog Index",
+    "contact": "Contact",
+    "explore": "Explore the DWeb",
+    "get-involved": "Get Involved",
+    "grants": "FFDW Grants",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "error": "404 Page Not Found"
+  },
+  "footer": {
+    "links_primary": [
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/explore",
+        "text": "Explore the DWeb",
+        "icon_before": "finger-up",
+        "orientation": "horizontal"
+      },
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/about",
+        "text": "About FFDW",
+        "icon_before": "finger-up",
+        "orientation": "horizontal"
+      },
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/get-involved",
+        "text": "Get Involved",
+        "icon_before": "finger-up",
+        "orientation": "horizontal"
+      },
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/blog",
+        "text": "Blog",
+        "icon_before": "finger-up",
+        "orientation": "horizontal"
+      },
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/grants",
+        "text": "Grants",
+        "icon_before": "finger-up",
+        "orientation": "horizontal"
+      },
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/contact",
+        "text": "Contact Us",
+        "icon_before": "finger-up",
+        "orientation": "horizontal"
+      }
+    ],
+    "links_secondary": [
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/privacy",
+        "text": "Privacy Policy"
+      },
+      {
+        "type": "E",
+        "theme": "dark",
+        "action": "nuxt-link",
+        "url": "/terms",
+        "text": "Terms of Use"
+      }
+    ]
+  },
+  "page_404": {
+    "header": {
+      "type": "variant_1",
+      "theme": "red-green",
+      "heading": "Whoops, this page doesn’t exist!",
+      "image_1": "/images/component-header/man-sitting-with-laptop.jpg",
+      "image_2": "/images/component-header/ada-lovelace-painting-monochromatic.jpg",
+      "cta": {
+        "type": "D",
+        "theme": "black",
+        "action": "nuxt-link",
+        "text": "< Back to Home",
+        "url": "/",
+        "layout": "heading-cta"
+      }
+    }
+  }
+}

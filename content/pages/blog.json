@@ -1,0 +1,20 @@
+{
+  "seo": {
+    "title": "Blog - Filecoin Foundation for the Decentralized Web",
+    "description": ""
+  },
+  "og": {
+    "site_name": "Blog - Filecoin Foundation for the Decentralized Web",
+    "url": "",
+    "type": "website",
+    "image": "/images/page-index/open-graph.png"
+  },
+  "header": {
+    "type": "variant_3",
+    "heading": "FFDW Blog",
+    "subheading": "Updates from our organization and across the Web3 universe.",
+    "image_1": "/images/page-blog-index/people-sitting-on-laptops-at-a-work-table.jpeg",
+    "nav_theme": "light"
+  },
+  "page_content": {}
+}
