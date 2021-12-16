@@ -19,6 +19,7 @@ const scrollToAnchor = (instance) => {
   if (hash) {
     const element = document.getElementById(hash) || document.querySelector(`[data-id='${hash}']`)
     if (element) {
+      console.log(element)
       instance.$scrollToElement(element, 0, -50)
     }
   }
@@ -39,9 +40,14 @@ export default {
   },
 
   watch: {
-    '$route' () {
+    '$route' (newVal, oldVal) {
       this.setNavigationOpen(false)
-      scrollToAnchor(this)
+      if (newVal.fullPath !== oldVal.fullPath) {
+        const timeout = setTimeout(() => {
+          scrollToAnchor(this)
+          clearTimeout(timeout)
+        }, 50)
+      }
     },
     navigationOpen (state) {
       if (state) {
@@ -56,7 +62,7 @@ export default {
     const timeout = setTimeout(() => {
       scrollToAnchor(this)
       clearTimeout(timeout)
-    }, 500)
+    }, 50)
   },
 
   methods: {
