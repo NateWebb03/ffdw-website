@@ -20,7 +20,7 @@
           <div class="panel-right">
             <CardListBlock :block="{ cards: cards }" />
             <!--
-              Below CTA button is hidden per client request. Leaving for now in
+              Below CTA button is hidden per stakeholder request. Leaving for now in
               case they want to re-enable it in the future.
             -->
             <!-- <TextBlock :block="{ ctas: secondaryCtas }" /> -->
@@ -102,9 +102,10 @@ export default {
         card.ctas = [{
           type: 'D',
           theme: this.theme,
-          action: 'nuxt-link',
-          text: 'Apply Now',
-          url: '/',
+          action: 'a',
+          target: '_blank',
+          text: card.link_label,
+          url: card.url,
           icon_after: 'arrow-down'
         }]
       })

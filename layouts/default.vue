@@ -20,7 +20,7 @@ const scrollToAnchor = (instance) => {
     const element = document.getElementById(hash) || document.querySelector(`[data-id='${hash}']`)
     if (element) {
       console.log(element)
-      instance.$scrollToElement(element, 0, -50)
+      instance.$scrollToElement(element, 0, -10)
     }
   }
 }
