@@ -4,6 +4,7 @@ title: FFDW and WITNESS Collaborate to Preserve Authentic Human Rights Records
 description: FFDW’s commitment to WITNESS will support the creation, authentication, and preservation of trusted documentation
 author: Filecoin Foundation for the Decentralized Web
 date: November 4 2021
+sortDate: 2021-11-04
 image: '/images/page-blog/witness.png'
 recommendedPosts: []
 tags: ['Freedom', 'Journalism', 'Press', 'Privacy']
