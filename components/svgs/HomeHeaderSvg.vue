@@ -2,7 +2,7 @@
 <template>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 583 347">
     <defs>
-      <pattern id="a" width="1" height="1" patternTransform="matrix(-1 0 0 1 10 0)" viewBox="11.791 9.23 142.245 110.54">
+      <pattern id="a" width="1" height="1" patternTransform="matrix(-1 0 0 1 0 0)" viewBox="12 9 142 130">
         <image preserveAspectRatio="xMidYMid slice" width="190" height="160" xlink:href="/images/component-header/header-1-image.jpg" />
       </pattern>
       <pattern id="b" width="1" height="1" viewBox="57 19 30 30">
