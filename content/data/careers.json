@@ -30,6 +30,7 @@
     {
       "type": "C",
       "action": "a",
+      "target": "_blank",
       "text": "View All",
       "url": "//jobs.lever.co/filecoin"
     }

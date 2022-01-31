@@ -23,7 +23,7 @@
               Below CTA button is hidden per stakeholder request. Leaving for now in
               case they want to re-enable it in the future.
             -->
-            <!-- <TextBlock :block="{ ctas: secondaryCtas }" /> -->
+            <TextBlock :block="{ ctas: secondaryCtas }" />
           </div>
         </div>
 
