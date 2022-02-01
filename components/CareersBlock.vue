@@ -8,7 +8,7 @@
     </div>
 
     <section class="section-bottom">
-      <div class="grid-middle">
+      <div class="grid">
 
         <div class="col-6_mi-12">
           <div class="panel-left">
