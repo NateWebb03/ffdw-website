@@ -13,23 +13,16 @@
       "type": "C",
       "title": "Communications Associate",
       "description": "We're looking for a communications associate to help with developing and executing the organization's growth and outreach strategy.",
-      "date_before": "December 1, 2021",
+      "date_before": "",
       "link_label": "Apply Now",
       "url": "//jobs.lever.co/filecoin/980b4d88-6cff-4221-9ebe-b1634ae8a516"
-    },
-    {
-      "type": "C",
-      "title": "Program Manager, Social Impact",
-      "description": "We're hiring a program manager to help drive collaborative initiatives with our outside project partners. We aim to be active participants with these partners, so we help them with program design, technical support, project management, external communications, as well as other efforts.",
-      "date_before": "November 12, 2021",
-      "link_label": "Apply Now",
-      "url": "//jobs.lever.co/filecoin"
     }
   ],
   "secondary_ctas": [
     {
       "type": "C",
       "action": "a",
+      "target": "_blank",
       "text": "View All",
       "url": "//jobs.lever.co/filecoin"
     }

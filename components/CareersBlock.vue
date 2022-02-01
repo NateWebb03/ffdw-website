@@ -8,7 +8,7 @@
     </div>
 
     <section class="section-bottom">
-      <div class="grid-middle">
+      <div class="grid">
 
         <div class="col-6_mi-12">
           <div class="panel-left">
@@ -23,7 +23,7 @@
               Below CTA button is hidden per stakeholder request. Leaving for now in
               case they want to re-enable it in the future.
             -->
-            <!-- <TextBlock :block="{ ctas: secondaryCtas }" /> -->
+            <TextBlock :block="{ ctas: secondaryCtas }" />
           </div>
         </div>
 
