@@ -95,7 +95,6 @@ $gradient_GreenRed: linear-gradient(to right, $greenYellow, $coralRed);
   background-repeat: no-repeat;
 }
 
-// --------------------------------------------------------------------- Styling
 @mixin borderRadius_Small { border-radius: $borderRadius_Small; }
 @mixin borderRadius_Medium { border-radius: $borderRadius_Medium; }
 @mixin borderRadius_Large { border-radius: $borderRadius_Large; }
@@ -166,13 +165,10 @@ $gradient_GreenRed: linear-gradient(to right, $greenYellow, $coralRed);
 }
 
 // ---------------------------------------------------------------- Calculations
-
 // TODO: support $addGridGutterOffset
 @function calcToEdge($offset) {
   @return calc(#{$offset} + 100vw / 2  - #{math.div($containerWidth, 2)});
 }
-
-// --------------------------------------------------------------------- Styling
 
 // ------------------------------------------------------------------- Animation
 @mixin animation ($animate...) {
@@ -219,6 +215,6 @@ $gradient_GreenRed: linear-gradient(to right, $greenYellow, $coralRed);
           transform-origin: $transformOrigin;
 }
 
-// ////////////////////////////////////////////////////////////// [Post] Imports
+// ///////////////////////////////////////////////////////////////////// Imports
 // =============================================================================
 @import 'typography';
