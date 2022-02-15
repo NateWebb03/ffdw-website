@@ -9,21 +9,74 @@ fields:
   hidden: true
   label: type
   default: text_block
-- name: layout
+- name: data_id_attribute
+  type: text
+  config:
+    required: false
+  label: Data ID Attribute
+  hidden: true
+- name: format
   type: select
-  default: []
+  default: medium
   config:
     required: false
     options:
-    - compact
+    - header
     - medium
-    - large
+    - small
+    - tiny
     source:
       type: simple
       section: 
       file: 
       path: 
-  label: Layout
+  label: Format
+- name: theme
+  type: select
+  default: purple-green
+  config:
+    required: false
+    options:
+    - purple-green
+    - green-purple
+    - red-purple
+    - red-green
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme
+- name: button_theme
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - purple-green
+    - red-purple
+    - red-green
+    - black
+    - white
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Button Theme
+- name: icon
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - IconPixelTwitter
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Icon
 - name: label
   type: text
   config:
@@ -38,6 +91,35 @@ fields:
     schema:
       format: markdown
   label: Heading
+- name: heading_level
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - header
+    - medium
+    - small
+    - tiny
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Heading Level
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
 - name: subheading
   type: textarea
   default: ''
@@ -56,3 +138,16 @@ fields:
     schema:
       format: markdown
   label: Description
+- name: ctas
+  type: field_group_list
+  fields:
+  - name: cta
+    type: include
+    config: {}
+    template: button
+    label: CTA
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: CTAs
