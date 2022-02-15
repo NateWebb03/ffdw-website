@@ -9,7 +9,6 @@ sections:
 - type: document
   path: content/pages/general.json
   label: General
-  match: "**/*"
 - type: heading
   label: Content
 - type: directory
@@ -17,16 +16,16 @@ sections:
   label: Blog
   create: all
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: directory
   path: content/pages
   label: Pages
   create: all
   match: "**/*"
   exclude: general.json
-  new_doc_ext: ".json"
-upload_dir: uploads
-public_path: "/uploads"
+  new_doc_ext: json
+upload_dir: static/images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
