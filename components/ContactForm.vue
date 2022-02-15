@@ -103,7 +103,7 @@ export default {
     },
     getValidationPattern (type) {
       switch (type) {
-        case 'email': return '[a-zA-Z0-9!#$%&\'*+\-/=?^_{|}~]{1,100}@[a-zA-Z0-9\-]{2,64}.[a-zA-Z.]{2,27}'
+        case 'email': return '[a-zA-Z0-9!#$%&\'*+\-/=?^_{|}~]{1,100}@[a-zA-Z0-9\-]{2,64}.[a-zA-Z.]{2,27}' /* eslint-disable-line */
         case 'phone': return '[-0-9xs()+{}#]{6,31}'
         case 'name': return '[^0-9]{2,100}'
         case 'message': return '.{50,25000}'
