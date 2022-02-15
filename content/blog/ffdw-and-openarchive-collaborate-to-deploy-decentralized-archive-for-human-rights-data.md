@@ -24,4 +24,4 @@ Additionally, as part of the grant, OpenArchive will embark on a campaign to edu
 
 “Our mission is to permanently preserve humanity’s most important information,” said Marta Belcher, board chair of the Filecoin Foundation for the Decentralized Web. “We are proud to support OpenArchive’s work to preserve critical human rights data using the decentralized web.”
 
-Learn more about FFDW grant programs [here](https://fil.org/grants/)!
+Learn more about FFDW grant programs [here](/grants)!
