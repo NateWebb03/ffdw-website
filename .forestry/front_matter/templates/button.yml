@@ -42,32 +42,51 @@ fields:
     label: Action
   - name: theme
     type: select
-    default: []
+    default: purple-green
     config:
       required: false
       options:
-      - light
-      - dark
+      - purple-green
+      - red-purple
+      - red-green
+      - black
+      - white
       source:
         type: simple
         section: 
         file: 
         path: 
     label: Theme
-  - name: icon
+  - name: icon_before
     type: select
     default: []
     config:
       required: false
       options:
-      - play
-      - info
+      - star
+      - arrow-down
+      - finger-up
       source:
         type: simple
         section: 
         file: 
         path: 
-    label: Icon
+    label: Icon - before
+  - name: icon_after
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - star
+      - arrow-down
+      - finger-up
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Icon - after
   - name: text
     type: text
     config:
