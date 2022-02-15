@@ -32,4 +32,4 @@ Among the key initiatives that will benefit is a [human rights archives](https:/
 
 “We’re proud to support WITNESS with this grant,” said FFDW Board Chair Marta Belcher. “FFDW’s mission is to preserve humanity’s most important information, and this collaboration with WITNESS is a natural fit to further these efforts.”
 
-Learn more about FFDW grant programs [here](https://fil.org/grants/)!
+Learn more about FFDW grant programs [here](/grants)!

@@ -28,4 +28,4 @@ said Marta Belcher, board chair of the Filecoin Foundation for the Decentralized
 
 > “We are proud to support Guardian Project’s work to preserve critical human rights data and empower greater access to applications using the decentralized web.”
 
-Learn more about FFDW grant programs [here](https://fil.org/grants)!
+Learn more about FFDW grant programs [here](/grants)!

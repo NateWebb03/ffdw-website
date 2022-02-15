@@ -24,4 +24,4 @@ In addition to enabling HRDAG to better understand the decentralized web landsca
 
 “We’re proud to support HRDAG with this grant,” said FFDW Board Chair Marta Belcher. “FFDW’s mission is to preserve humanity’s most important information, and this collaboration with HRDAG is a natural fit to further these efforts.”
 
-[Learn more](https://fil.org/grants/) about FFDW’s grant program.
+[Learn more](/grants) about FFDW’s grant program.
