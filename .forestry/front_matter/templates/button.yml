@@ -8,9 +8,9 @@ fields:
   fields:
   - name: type
     type: select
-    default: []
+    default: A
     config:
-      required: false
+      required: true
       options:
       - A
       - B
@@ -18,14 +18,28 @@ fields:
       - D
       - E
       - F
-      - H
-      - G
+      - X
       source:
         type: simple
         section: 
         file: 
         path: 
     label: Type
+  - name: action
+    type: select
+    default: ''
+    config:
+      required: false
+      options:
+      - button
+      - nuxt-link
+      - a
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Action
   - name: theme
     type: select
     default: []
@@ -40,22 +54,6 @@ fields:
         file: 
         path: 
     label: Theme
-  - name: action
-    type: select
-    default: []
-    config:
-      required: false
-      options:
-      - link
-      - button
-      - video
-      - nuxt-link
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Action
   - name: icon
     type: select
     default: []
