@@ -12,6 +12,7 @@ fields:
       required: false
     label: Type
     default: variant_1
+    hidden: true
   - name: theme
     type: select
     default: red-purple
