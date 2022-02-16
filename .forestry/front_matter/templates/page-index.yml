@@ -12,25 +12,11 @@ fields:
   config: {}
   template: data-open-graph-social
   label: Template → [Data] Open Graph & Social
-- type: field_group
-  name: header
-  label: Header
-  fields:
-  - type: text
-    name: type
-    label: Type
-    hidden: true
-    default: variant_6
-  - type: text
-    name: theme
-    label: Theme
-    default: purple-green-b
-    hidden: true
-  - type: file
-    name: image_1
-    label: Image
-    config:
-      maxSize: 0.75
+- name: header
+  type: include
+  config: {}
+  template: comp-header-variant-x
+  label: Template → [Comp] Header Variant 6
 - type: field_group
   name: page_content
   label: Page Content
