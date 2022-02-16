@@ -159,6 +159,16 @@ fields:
         template: block-accordion
         label: Template → [Block] Accordion
       label: Column 1
+    - name: col_2
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 2
   - type: field_group
     name: grants
     label: Grants
