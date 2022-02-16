@@ -239,7 +239,7 @@ fields:
       label: Column 2
   - type: field_group
     name: callout
-    label: callout
+    label: Callout
     fields:
     - name: grid
       type: include
@@ -251,32 +251,32 @@ fields:
       label: classNames
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
       - type: text
         name: type
-        label: type
+        label: Type
       - type: field_group
         name: cols
-        label: cols
+        label: Columns
         fields:
         - type: text
           name: num
-          label: num
+          label: Num
       - type: field_group
         name: customizations
-        label: customizations
+        label: Customizations
         fields:
         - type: field_group
           name: careers
-          label: careers
+          label: Careers
           fields:
           - type: text
             name: name
-            label: name
+            label: Name
           - type: field_group
             name: props
-            label: props
+            label: Props
             fields:
             - type: file
               name: img_left
@@ -296,14 +296,14 @@ fields:
               fields:
               - type: text
                 name: name
-                label: name
+                label: Name
               - type: field_group
                 name: props
-                label: props
+                label: Props
                 fields:
                 - type: field_group_list
                   name: fields
-                  label: fields
+                  label: Fields
                   fields:
                   - type: text
                     name: label
@@ -316,13 +316,13 @@ fields:
                     label: validation
                 - type: text
                   name: action
-                  label: action
+                  label: Action
                 - type: text
                   name: message
-                  label: message
+                  label: Message
                 - type: text
                   name: submit
-                  label: submit
+                  label: Submit
   - type: field_group
     name: latest_news
     label: Latest News
