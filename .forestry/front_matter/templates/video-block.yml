@@ -5,7 +5,7 @@ fields:
 - name: type
   type: text
   config:
-    required: false
+    required: true
   label: Type
   hidden: true
   default: video_block
