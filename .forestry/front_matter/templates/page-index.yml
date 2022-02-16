@@ -45,9 +45,14 @@ fields:
       template: grid-classes
       label: Grid Alignment
     - name: col_1
-      type: include
+      type: field_group
       config: {}
-      template: text-block
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Text Block
       label: Column 1
   - type: field_group
     name: intro_1
