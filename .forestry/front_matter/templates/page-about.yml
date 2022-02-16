@@ -2,418 +2,193 @@
 label: "[Page] About"
 hide_body: true
 fields:
-- type: field_group
-  name: seo
-  label: seo
-  fields:
-  - type: text
-    name: title
-    label: title
-  - type: text
-    name: description
-    label: description
-- type: field_group
-  name: og
-  label: og
-  fields:
-  - type: text
-    name: site_name
-    label: site_name
-  - type: text
-    name: url
-    label: url
-  - type: text
-    name: type
-    label: type
-  - type: file
-    name: image
-    label: image
-- type: field_group
-  name: header
-  label: header
-  fields:
-  - type: text
-    name: type
-    label: type
-  - type: text
-    name: theme
-    label: theme
-  - type: text
-    name: heading
-    label: heading
-  - type: file
-    name: image_1
-    label: image_1
-  - type: file
-    name: image_2
-    label: image_2
-  - type: field_group
-    name: cta
-    label: cta
-    fields:
-    - type: text
-      name: type
-      label: type
-    - type: text
-      name: theme
-      label: theme
-    - type: text
-      name: action
-      label: action
-    - type: text
-      name: text
-      label: text
-    - type: text
-      name: url
-      label: url
-    - type: text
-      name: target
-      label: target
-    - type: text
-      name: icon_after
-      label: icon_after
+- name: seo
+  type: include
+  config: {}
+  template: data-seo
+  label: Template → [Data] SEO
+- name: og
+  type: include
+  config: {}
+  template: data-open-graph-social
+  label: Template → [Data] Open Graph & Social
+- name: header
+  type: include
+  config: {}
+  template: comp-header-variant-1
+  label: Template → [Comp] Header Variant 1
 - type: field_group
   name: careers
-  label: careers
+  label: Careers
   fields:
   - type: textarea
     name: heading
-    label: heading
+    label: Heading
   - type: text
     name: theme
-    label: theme
+    label: Theme
 - type: field_group
   name: page_content
   label: page_content
   fields:
   - type: field_group
     name: intro_1
-    label: intro_1
+    label: Intro 1
     fields:
-    - type: field_group
-      name: col_1
-      label: col_1
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: text
-        name: heading
-        label: heading
-    - type: field_group
-      name: col_2
-      label: col_2
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 1
+    - name: col_2
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: file
-        name: src
-        label: src
-  - type: field_group
-    name: intro_2
-    label: intro_2
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Column 2
+  - name: intro_2
+    type: field_group
+    config: {}
     fields:
-    - type: list
-      name: grid
-      label: grid
-    - type: field_group
-      name: col_1
-      label: col_1
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: file
-        name: src
-        label: src
-    - type: field_group
-      name: col_2
-      label: col_2
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Column 1
+    - name: col_2
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: textarea
-        name: description
-        label: description
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 2
+    label: Intro 2
   - type: field_group
     name: vision_1
-    label: vision_1
+    label: Vision 1
     fields:
-    - type: field_group
-      name: col_1
-      label: col_1
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: text
-        name: heading
-        label: heading
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 1
   - type: field_group
     name: vision_2
-    label: vision_2
+    label: Vision 2
     fields:
-    - type: field_group
-      name: col_1
-      label: col_1
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: file
-        name: src
-        label: src
-    - type: field_group
-      name: col_2
-      label: col_2
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Column 1
+    - name: col_2
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: heading
-        label: heading
-      - type: textarea
-        name: description
-        label: description
-    - type: field_group
-      name: col_3
-      label: col_3
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 2
+    - name: column_3
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: file
-        name: src
-        label: src
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Text
+      label: Column 3
   - type: field_group
     name: board_1
     label: board_1
     fields:
-    - type: field_group
-      name: col_1
-      label: col_1
-      fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: textarea
-        name: heading
-        label: heading
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
   - type: field_group
     name: board_2
     label: board_2
     fields:
-    - type: list
-      name: grid
-      label: grid
-    - type: text
-      name: classNames
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: classNames
+      type: text
+      config:
+        required: false
       label: classNames
-    - type: field_group
-      name: col_1
-      label: col_1
-      fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: theme
-        label: theme
-      - type: field_group_list
-        name: sections
-        label: sections
-        fields:
-        - type: file
-          name: img
-          label: img
-        - type: text
-          name: title
-          label: title
-        - type: text
-          name: subtitle
-          label: subtitle
-        - type: text
-          name: direction
-          label: direction
-        - type: textarea
-          name: content
-          label: content
   - type: field_group
     name: advisors_1
     label: advisors_1
     fields:
-    - type: field_group
-      name: col_1
-      label: col_1
-      fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: text
-        name: heading
-        label: heading
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
   - type: field_group
     name: advisors_2
     label: advisors_2
     fields:
-    - type: list
-      name: grid
-      label: grid
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
     - type: text
       name: classNames
       label: classNames
-    - type: field_group
-      name: col_1
-      label: col_1
-      fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: layout
-        label: layout
-      - type: field_group_list
-        name: cards
-        label: cards
-        fields:
-        - type: text
-          name: type
-          label: type
-        - type: text
-          name: size
-          label: size
-        - type: text
-          name: theme
-          label: theme
-        - type: file
-          name: img
-          label: img
-        - type: text
-          name: title
-          label: title
-        - type: text
-          name: title_suffix
-          label: title_suffix
