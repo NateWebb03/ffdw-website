@@ -1,5 +1,5 @@
 ---
-label: "[Comp] Text Block"
+label: "[Block] Text"
 hide_body: false
 fields:
 - name: type
