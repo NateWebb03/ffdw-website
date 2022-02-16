@@ -142,71 +142,23 @@ fields:
       label: Column 2
   - type: field_group
     name: accordion_1
-    label: accordion_1
+    label: Accordion
     fields:
-    - type: field_group
-      name: col_1
-      label: col_1
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: field_group_list
-        name: sections
-        label: sections
-        fields:
-        - type: text
-          name: label
-          label: label
-        - type: textarea
-          name: content
-          label: content
-    - type: field_group
-      name: col_2
-      label: col_2
-      fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: field_group_list
-        name: ctas
-        label: ctas
-        fields:
-        - type: text
-          name: type
-          label: type
-        - type: text
-          name: theme
-          label: theme
-        - type: text
-          name: action
-          label: action
-        - type: text
-          name: text
-          label: text
-        - type: text
-          name: url
-          label: url
+      - name: accordion_block
+        type: include
+        config: {}
+        template: block-accordion
+        label: Template → [Block] Accordion
+      label: Column 1
   - type: field_group
     name: grants
     label: Grants
