@@ -8,15 +8,10 @@ fields:
   fields:
   - type: text
     name: title
-    label: title
+    label: Title
   - type: text
     name: description
-    label: description
-  - name: test
-    type: text
-    config:
-      required: false
-    label: Test
+    label: Description
 - type: field_group
   name: og
   label: og
