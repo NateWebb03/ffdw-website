@@ -9,6 +9,11 @@ fields:
   label: Type
   hidden: true
   default: image_block
+- name: cols
+  type: include
+  config: {}
+  template: columns
+  label: Columns
 - name: src
   type: file
   config:
