@@ -3,8 +3,8 @@ label: "[Page] Index"
 hide_body: true
 fields:
 - type: field_group
-  name: SEO
-  label: seo
+  name: seo
+  label: SEO
   fields:
   - name: template_data_seo
     type: include
@@ -13,7 +13,6 @@ fields:
     label: Template → [Data] SEO
 - type: field_group
   name: og
-  label: og
   fields:
   - type: text
     name: site_name
@@ -27,6 +26,7 @@ fields:
   - type: file
     name: image
     label: image
+  label: Open Graph & Social
 - type: field_group
   name: header
   label: header
