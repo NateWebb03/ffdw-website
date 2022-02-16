@@ -16,4 +16,9 @@ fields:
     config:
       required: false
     label: Push Left
+  - name: push_right
+    type: text
+    config:
+      required: false
+    label: Push Right
   label: Columns
