@@ -7,22 +7,11 @@ fields:
   config: {}
   template: data-seo
   label: Template → [Data] SEO
-- type: field_group
-  name: og
-  fields:
-  - type: text
-    name: site_name
-    label: site_name
-  - type: text
-    name: url
-    label: url
-  - type: text
-    name: type
-    label: type
-  - type: file
-    name: image
-    label: image
-  label: Open Graph & Social
+- name: og
+  type: include
+  config: {}
+  template: data-open-graph-social
+  label: Template → [Data] Open Graph & Social
 - type: field_group
   name: header
   label: header
