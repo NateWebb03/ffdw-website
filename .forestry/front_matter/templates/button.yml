@@ -2,99 +2,94 @@
 label: "[Comp] Button"
 hide_body: true
 fields:
-- name: cta
-  type: field_group
-  config: {}
-  fields:
-  - name: type
-    type: select
-    default: A
-    config:
-      required: true
-      options:
-      - A
-      - B
-      - C
-      - D
-      - E
-      - F
-      - X
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Type
-  - name: action
-    type: select
-    default: ''
-    config:
-      required: false
-      options:
-      - button
-      - nuxt-link
-      - a
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Action
-  - name: theme
-    type: select
-    default: purple-green
-    config:
-      required: false
-      options:
-      - purple-green
-      - red-purple
-      - red-green
-      - black
-      - white
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Theme
-  - name: icon_before
-    type: select
-    default: []
-    config:
-      required: false
-      options:
-      - star
-      - arrow-down
-      - finger-up
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Icon - before
-  - name: icon_after
-    type: select
-    default: []
-    config:
-      required: false
-      options:
-      - star
-      - arrow-down
-      - finger-up
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Icon - after
-  - name: text
-    type: text
-    config:
-      required: false
-    label: Text
-  - name: url
-    type: text
-    config:
-      required: false
-    label: URL
-  label: CTA
+- name: type
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - A
+    - B
+    - C
+    - D
+    - E
+    - F
+    - X
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+- name: action
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - button
+    - nuxt-link
+    - a
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Action
+- name: theme
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - purple-green
+    - red-purple
+    - red-green
+    - black
+    - white
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme
+- name: icon_before
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - star
+    - arrow-down
+    - finger-up
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Icon - Before
+- name: icon_after
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - star
+    - arrow-down
+    - finger-up
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Icon - After
+- name: text
+  type: text
+  config:
+    required: false
+  label: Text
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
