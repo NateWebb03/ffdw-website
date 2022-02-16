@@ -113,54 +113,33 @@ fields:
       label: Column 3
   - type: field_group
     name: explore_1
-    label: explore_1
+    label: Explore
     fields:
-    - type: field_group
-      name: col_1
-      label: col_1
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: text
-        name: heading
-        label: heading
-      - type: textarea
-        name: description
-        label: description
-    - type: field_group
-      name: col_2
-      label: col_2
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 1
+    - name: col_2
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: file
-        name: src
-        label: src
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Column 2
   - type: field_group
     name: accordion_1
     label: accordion_1
@@ -230,137 +209,81 @@ fields:
           label: url
   - type: field_group
     name: grants
-    label: grants
+    label: Grants
     fields:
-    - type: list
-      name: grid
-      label: grid
-    - type: field_group
-      name: image_left
-      label: image_left
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: image__left
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: file
-        name: src
-        label: src
-    - type: field_group
-      name: text
-      label: text
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: "[Image] Left"
+    - name: text
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: theme
-        label: theme
-      - type: text
-        name: label
-        label: label
-      - type: textarea
-        name: heading
-        label: heading
-      - type: textarea
-        name: description
-        label: description
-    - type: field_group
-      name: image_right
-      label: image_right
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Text
+    - name: image__right
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: file
-        name: src
-        label: src
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: "[Image] Right"
   - type: field_group
     name: spotlight
-    label: spotlight
+    label: Spotlight
     fields:
-    - type: list
-      name: grid
-      label: grid
-    - type: field_group
-      name: col_1
-      label: col_1
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: boolean
-        name: tint
-        label: tint
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: slatename
-        label: slatename
-    - type: field_group
-      name: col_2
-      label: col_2
+      - name: slate_video_block
+        type: include
+        config: {}
+        template: comp-slate-video-block
+        label: Template → [Block] Slate Video
+      label: Column 1
+    - name: col_2
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: theme
-        label: theme
-      - type: text
-        name: heading
-        label: heading
-      - type: textarea
-        name: description
-        label: description
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 2
   - type: field_group
     name: callout
     label: callout
     fields:
-    - type: list
-      name: grid
-      label: grid
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
     - type: text
       name: classNames
       label: classNames
@@ -440,25 +363,20 @@ fields:
                   label: submit
   - type: field_group
     name: latest_news
-    label: latest_news
+    label: Latest News
     fields:
-    - type: field_group
-      name: col_1
-      label: col_1
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: label
-        label: label
-      - type: text
-        name: heading
-        label: heading
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 1
