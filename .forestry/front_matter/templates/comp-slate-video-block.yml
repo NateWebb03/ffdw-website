@@ -1,5 +1,5 @@
 ---
-label: "[Comp] Slate Video Block"
+label: "[Block] Slate Video"
 hide_body: true
 fields:
 - name: type
