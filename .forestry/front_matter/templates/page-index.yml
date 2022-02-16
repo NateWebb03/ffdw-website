@@ -178,7 +178,7 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-    - name: image__left
+    - name: image_left
       type: field_group
       config: {}
       fields:
@@ -198,7 +198,7 @@ fields:
         template: text-block
         label: Template → [Block] Text
       label: Text
-    - name: image__right
+    - name: image_right
       type: field_group
       config: {}
       fields:
