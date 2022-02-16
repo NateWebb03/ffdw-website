@@ -1,5 +1,5 @@
 ---
-label: "[Comp] Sub Section"
+label: "[Layout] Sub Section"
 hide_body: true
 fields:
 - name: id
@@ -43,7 +43,7 @@ fields:
   type: blocks
   label: Custom
   template_types:
-  - events-hackathons
+  - video-block
   config:
     min: 
     max: 
