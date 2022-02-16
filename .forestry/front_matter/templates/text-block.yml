@@ -9,6 +9,11 @@ fields:
   hidden: true
   label: Type
   default: text_block
+- name: cols
+  type: include
+  config: {}
+  template: columns
+  label: Columns
 - name: data_id_attribute
   type: text
   config:
@@ -91,22 +96,6 @@ fields:
     schema:
       format: markdown
   label: Heading
-- name: heading_level
-  type: select
-  default: medium
-  config:
-    required: false
-    options:
-    - header
-    - medium
-    - small
-    - tiny
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Heading Level
 - name: date
   type: datetime
   label: Date
