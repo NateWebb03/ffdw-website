@@ -14,17 +14,22 @@ fields:
   label: Template → [Data] Open Graph & Social
 - type: field_group
   name: header
-  label: header
+  label: Header
   fields:
   - type: text
     name: type
-    label: type
+    label: Type
+    hidden: true
+    default: variant_6
   - type: text
     name: theme
-    label: theme
+    label: Theme
+    default: purple-green-b
   - type: file
     name: image_1
-    label: image_1
+    label: Image
+    config:
+      maxSize: 0.75
 - type: field_group
   name: page_content
   label: page_content
