@@ -1,5 +1,5 @@
 ---
-label: "[Comp] Video Block"
+label: "[Block] Video"
 hide_body: true
 fields:
 - name: type
