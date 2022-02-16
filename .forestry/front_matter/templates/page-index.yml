@@ -33,15 +33,20 @@ fields:
       maxSize: 0.75
 - type: field_group
   name: page_content
-  label: page_content
+  label: Page Content
   fields:
   - type: field_group
     name: about_1
-    label: about_1
+    label: About 1
     fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Grid Alignment
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
       - type: text
         name: type
