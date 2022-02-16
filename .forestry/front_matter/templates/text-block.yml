@@ -5,9 +5,9 @@ fields:
 - name: type
   type: text
   config:
-    required: false
+    required: true
   hidden: true
-  label: type
+  label: Type
   default: text_block
 - name: data_id_attribute
   type: text
