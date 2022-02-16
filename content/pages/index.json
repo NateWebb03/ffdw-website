@@ -24,7 +24,9 @@
         },
         "format": "header",
         "label": "About FFDW",
-        "heading": "FFDW exists to advance humankind by furthering the future of the web through education, research, and development."
+        "heading": "FFDW exists to advance humankind by furthering the future of the web through education, research, and development.",
+        "data_id_attribute": "test",
+        "icon": "IconPixelTwitter"
       }
     },
     "intro_1": {
