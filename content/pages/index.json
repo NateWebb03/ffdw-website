@@ -1,7 +1,8 @@
 {
   "seo": {
     "title": "Home - Filecoin Foundation for the Decentralized Web",
-    "description": ""
+    "description": "",
+    "test": "test"
   },
   "og": {
     "site_name": "Home - Filecoin Foundation for the Decentralized Web",
@@ -37,7 +38,9 @@
       }
     },
     "intro_2": {
-      "grid": ["middle"],
+      "grid": [
+        "middle"
+      ],
       "col_1": {
         "type": "image_block",
         "cols": {
@@ -134,7 +137,9 @@
       }
     },
     "grants": {
-      "grid": ["middle"],
+      "grid": [
+        "middle"
+      ],
       "image_left": {
         "type": "image_block",
         "cols": {
@@ -162,7 +167,10 @@
       }
     },
     "spotlight": {
-      "grid": ["middle", "center"],
+      "grid": [
+        "middle",
+        "center"
+      ],
       "col_1": {
         "type": "slate_video_block",
         "tint": true,
@@ -184,7 +192,10 @@
       }
     },
     "callout": {
-      "grid": ["center", "noGutter"],
+      "grid": [
+        "center",
+        "noGutter"
+      ],
       "classNames": "full no-padding",
       "col_1": {
         "type": "custom",
@@ -203,7 +214,11 @@
                 "name": "ContactForm",
                 "props": {
                   "fields": [
-                    { "label": "Email", "for": "email", "validation": "*Must be a valid email" }
+                    {
+                      "label": "Email",
+                      "for": "email",
+                      "validation": "*Must be a valid email"
+                    }
                   ],
                   "action": "https://fieldgoal.io/f/BRkVam",
                   "message": "Email registered!",
