@@ -1,4 +1,9 @@
 ---
 label: "[Comp] Slate Video Block"
 hide_body: true
-fields: []
+fields:
+- name: slatename
+  type: text
+  config:
+    required: true
+  label: Slate Name
