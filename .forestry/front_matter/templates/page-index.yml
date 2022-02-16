@@ -44,29 +44,11 @@ fields:
       config: {}
       template: grid-classes
       label: Grid Alignment
-    - type: field_group
-      name: col_1
+    - name: col_1
+      type: include
+      config: {}
+      template: text-block
       label: Column 1
-      fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: textarea
-        name: heading
-        label: heading
   - type: field_group
     name: intro_1
     label: intro_1
