@@ -2,15 +2,11 @@
 label: "[Page] Index"
 hide_body: true
 fields:
-- type: field_group
-  name: seo
-  label: SEO
-  fields:
-  - name: template_data_seo
-    type: include
-    config: {}
-    template: data-seo
-    label: Template → [Data] SEO
+- name: seo
+  type: include
+  config: {}
+  template: data-seo
+  label: Template → [Data] SEO
 - type: field_group
   name: og
   fields:
