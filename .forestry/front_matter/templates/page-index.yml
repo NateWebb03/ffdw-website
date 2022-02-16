@@ -74,80 +74,43 @@ fields:
         label: Template → [Block] Image
   - type: field_group
     name: intro_2
-    label: intro_2
+    label: Intro 2
     fields:
-    - type: list
-      name: grid
-      label: grid
-    - type: field_group
-      name: col_1
-      label: col_1
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: file
-        name: src
-        label: src
-      - type: text
-        name: label
-        label: label
-    - type: field_group
-      name: col_2
-      label: col_2
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Column 1
+    - name: col_2
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: heading
-        label: heading
-      - type: textarea
-        name: description
-        label: description
-    - type: field_group
-      name: col_3
-      label: col_3
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 2
+    - name: col_3
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: file
-        name: src
-        label: src
-      - type: text
-        name: label
-        label: label
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Column 3
   - type: field_group
     name: explore_1
     label: explore_1
