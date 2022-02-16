@@ -58,3 +58,27 @@ fields:
       required: false
     label: URL
   label: Button
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+- name: slate_video_type
+  type: text
+  config:
+    required: false
+  label: Slate Video Type
+  hidden: true
