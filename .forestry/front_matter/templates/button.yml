@@ -2,6 +2,11 @@
 label: "[Comp] Button"
 hide_body: true
 fields:
+- name: text
+  type: text
+  config:
+    required: false
+  label: Text
 - name: type
   type: select
   default: []
@@ -83,11 +88,6 @@ fields:
       file: 
       path: 
   label: Icon - After
-- name: text
-  type: text
-  config:
-    required: false
-  label: Text
 - name: url
   type: text
   config:
