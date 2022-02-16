@@ -14,7 +14,7 @@ fields:
   config:
     required: false
   label: Data ID Attribute
-  hidden: true
+  hidden: false
 - name: format
   type: select
   default: medium
