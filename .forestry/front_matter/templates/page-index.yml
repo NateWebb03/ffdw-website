@@ -25,6 +25,7 @@ fields:
     name: theme
     label: Theme
     default: purple-green-b
+    hidden: true
   - type: file
     name: image_1
     label: Image
