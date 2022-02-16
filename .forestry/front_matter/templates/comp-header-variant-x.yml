@@ -1,11 +1,18 @@
 ---
-label: "[Comp] Header Variant 1"
+label: "[Comp] Header Variant 6"
 hide_body: true
 fields:
 - name: header
   type: field_group
   config: {}
   fields:
+  - name: type
+    type: text
+    config:
+      required: false
+    label: Type
+    default: variant_6
+    hidden: true
   - name: theme
     type: select
     default: red-purple
@@ -22,11 +29,6 @@ fields:
         file: 
         path: 
     label: Theme
-  - name: heading
-    type: text
-    config:
-      required: false
-    label: Heading
   - name: image_1
     type: file
     config:
