@@ -1,5 +1,5 @@
 ---
-label: "[Comp] Columns"
+label: "[Layout] Columns"
 hide_body: true
 fields:
 - name: cols
