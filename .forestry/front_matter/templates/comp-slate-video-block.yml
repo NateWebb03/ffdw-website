@@ -2,6 +2,13 @@
 label: "[Comp] Slate Video Block"
 hide_body: true
 fields:
+- name: type
+  type: text
+  config:
+    required: false
+  label: Type
+  hidden: true
+  default: slate_video_block
 - name: slatename
   type: text
   config:
