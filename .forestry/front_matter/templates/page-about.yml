@@ -29,7 +29,7 @@ fields:
     label: Theme
 - type: field_group
   name: page_content
-  label: page_content
+  label: Page Content
   fields:
   - type: field_group
     name: intro_1
