@@ -17,3 +17,5 @@ fields:
   config: {}
   template: comp-header-variant-5
   label: Template → [Comp] Header Variant 5
+pages:
+- content/pages/terms.json
