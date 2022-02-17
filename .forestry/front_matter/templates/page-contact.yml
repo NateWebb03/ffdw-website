@@ -1,0 +1,259 @@
+---
+label: "[Page] Contact"
+hide_body: true
+fields:
+- type: field_group
+  name: seo
+  label: seo
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+- type: field_group
+  name: og
+  label: og
+  fields:
+  - type: text
+    name: site_name
+    label: site_name
+  - type: text
+    name: url
+    label: url
+  - type: text
+    name: type
+    label: type
+  - type: file
+    name: image
+    label: image
+- type: field_group
+  name: header
+  label: header
+  fields:
+  - type: text
+    name: type
+    label: type
+  - type: text
+    name: theme
+    label: theme
+  - type: file
+    name: image_1
+    label: image_1
+  - type: file
+    name: image_mobile
+    label: image_mobile
+  - type: textarea
+    name: description
+    label: description
+- type: field_group
+  name: page_content
+  label: page_content
+  fields:
+  - type: field_group
+    name: learn_1
+    label: learn_1
+    fields:
+    - type: field_group
+      name: col_1
+      label: col_1
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: text
+        name: heading
+        label: heading
+      - type: text
+        name: description
+        label: description
+      - type: text
+        name: format
+        label: format
+      - type: text
+        name: icon
+        label: icon
+    - type: field_group
+      name: col_2
+      label: col_2
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: text
+        name: heading
+        label: heading
+      - type: textarea
+        name: description
+        label: description
+      - type: text
+        name: format
+        label: format
+      - type: text
+        name: icon
+        label: icon
+    - type: field_group
+      name: col_3
+      label: col_3
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: text
+        name: heading
+        label: heading
+      - type: textarea
+        name: description
+        label: description
+      - type: text
+        name: format
+        label: format
+      - type: text
+        name: icon
+        label: icon
+      - type: field_group_list
+        name: ctas
+        label: ctas
+        fields:
+        - type: text
+          name: type
+          label: type
+        - type: text
+          name: theme
+          label: theme
+        - type: text
+          name: action
+          label: action
+        - type: text
+          name: text
+          label: text
+        - type: text
+          name: url
+          label: url
+  - type: field_group
+    name: reach_1
+    label: reach_1
+    fields:
+    - type: field_group
+      name: col_1
+      label: col_1
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: text
+        name: label
+        label: label
+      - type: text
+        name: heading
+        label: heading
+      - type: text
+        name: format
+        label: format
+    - type: field_group
+      name: col_2
+      label: col_2
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+        - type: text
+          name: push_left
+          label: push_left
+      - type: file
+        name: src
+        label: src
+  - type: field_group
+    name: form
+    label: form
+    fields:
+    - type: field_group
+      name: col_1
+      label: col_1
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+        - type: text
+          name: push_left
+          label: push_left
+      - type: field_group
+        name: customizations
+        label: customizations
+        fields:
+        - type: field_group
+          name: contactForm
+          label: contactForm
+          fields:
+          - type: text
+            name: name
+            label: name
+          - type: field_group
+            name: props
+            label: props
+            fields:
+            - type: field_group_list
+              name: fields
+              label: fields
+              fields:
+              - type: text
+                name: label
+                label: label
+              - type: text
+                name: for
+                label: for
+              - type: text
+                name: validation
+                label: validation
+            - type: text
+              name: action
+              label: action
+            - type: text
+              name: message
+              label: message
+            - type: text
+              name: submit
+              label: submit
