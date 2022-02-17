@@ -287,3 +287,5 @@ fields:
       config: {}
       template: block-card-list
       label: Template → [Block] Card List
+pages:
+- content/pages/about.json
