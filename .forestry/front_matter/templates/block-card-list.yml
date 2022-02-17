@@ -1,4 +1,8 @@
 ---
 label: "[Block] Card List"
 hide_body: true
-fields: []
+fields:
+- name: card_list_block
+  type: field_group
+  config: {}
+  label: Card List Block
