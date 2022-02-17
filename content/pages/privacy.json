@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Privacy Policy - Filecoin Foundation for the Decentralized Web",
-    "description": ""
+    "description": "Privacy Policy - Filecoin Foundation for the Decentralized Web"
   },
   "og": {
     "site_name": "Privacy Policy - Filecoin Foundation for the Decentralized Web",
@@ -16,5 +16,6 @@
     "nav_theme": "light",
     "sub_theme": "red-green"
   },
-  "page_content": {}
+  "page_content": {
+  }
 }
