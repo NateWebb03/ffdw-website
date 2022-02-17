@@ -138,7 +138,7 @@ fields:
         template: text-block
         label: Template → [Block] Text
       label: Column 2
-    - name: column_3
+    - name: col_3
       type: field_group
       config: {}
       fields:
