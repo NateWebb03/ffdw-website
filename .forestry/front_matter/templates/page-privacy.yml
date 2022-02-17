@@ -2,51 +2,18 @@
 label: "[Page] Privacy"
 hide_body: true
 fields:
-- type: field_group
-  name: seo
-  label: seo
-  fields:
-  - type: text
-    name: title
-    label: title
-  - type: text
-    name: description
-    label: description
-- type: field_group
-  name: og
-  label: og
-  fields:
-  - type: text
-    name: site_name
-    label: site_name
-  - type: text
-    name: url
-    label: url
-  - type: text
-    name: type
-    label: type
-  - type: file
-    name: image
-    label: image
-- type: field_group
-  name: header
-  label: header
-  fields:
-  - type: text
-    name: type
-    label: type
-  - type: text
-    name: heading
-    label: heading
-  - type: textarea
-    name: description
-    label: description
-  - type: text
-    name: nav_theme
-    label: nav_theme
-  - type: text
-    name: sub_theme
-    label: sub_theme
-- type: field_group
-  name: page_content
-  label: page_content
+- name: seo
+  type: include
+  config: {}
+  template: data-seo
+  label: Template → [Data] SEO
+- name: og
+  type: include
+  config: {}
+  template: data-open-graph-social
+  label: Template → [Data] Open Graph & Social
+- name: header
+  type: include
+  config: {}
+  template: comp-header-variant-5
+  label: Template → [Comp] Header Variant 5
