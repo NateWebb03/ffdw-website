@@ -17,3 +17,5 @@ fields:
   config: {}
   template: comp-header-variant-3
   label: Template → [Comp] Header Variant 1
+pages:
+- content/pages/blog.json
