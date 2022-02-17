@@ -173,7 +173,6 @@
         "cols": {
           "num": "col"
         },
-        "layout": "double",
         "cards": [
           {
             "type": "A",

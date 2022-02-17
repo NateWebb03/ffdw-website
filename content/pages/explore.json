@@ -140,8 +140,6 @@
         "cols": {
           "num": "col-12"
         },
-        "limit": 6,
-        "iterate": 6,
         "cards": [
           {
             "type": "C",
