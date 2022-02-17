@@ -2,6 +2,18 @@
 label: "[Page] Blog"
 hide_body: true
 fields:
-- type: field_group
-  name: page_content
-  label: page_content
+- name: seo
+  type: include
+  config: {}
+  template: data-seo
+  label: Template → [Data] SEO
+- name: og
+  type: include
+  config: {}
+  template: data-open-graph-social
+  label: Template → [Data] Open Graph & Social
+- name: header
+  type: include
+  config: {}
+  template: comp-header-variant-3
+  label: Template → [Comp] Header Variant 1
