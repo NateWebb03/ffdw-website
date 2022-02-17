@@ -253,13 +253,23 @@ fields:
       label: Column 1
   - type: field_group
     name: advisors_1
-    label: advisors_1
+    label: Advisors 1
     fields:
     - name: grid
       type: include
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 1
   - type: field_group
     name: advisors_2
     label: advisors_2
