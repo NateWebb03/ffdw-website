@@ -272,7 +272,7 @@ fields:
       label: Column 1
   - type: field_group
     name: advisors_2
-    label: advisors_2
+    label: Advisors 2
     fields:
     - name: grid
       type: include
@@ -282,3 +282,8 @@ fields:
     - type: text
       name: classNames
       label: classNames
+    - name: card_list_block
+      type: include
+      config: {}
+      template: block-card-list
+      label: Template → [Block] Card List
