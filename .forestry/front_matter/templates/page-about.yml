@@ -150,16 +150,26 @@ fields:
       label: Column 3
   - type: field_group
     name: board_1
-    label: board_1
+    label: Board 1
     fields:
     - name: grid
       type: include
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 1
   - type: field_group
     name: board_2
-    label: board_2
+    label: Board 2
     fields:
     - name: grid
       type: include
@@ -171,6 +181,76 @@ fields:
       config:
         required: false
       label: classNames
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: type
+        type: text
+        config:
+          required: false
+        label: Type
+        default: about_accordion_block
+        hidden: true
+      - name: cols
+        type: include
+        config: {}
+        template: columns
+        label: Columns
+      - name: theme
+        type: text
+        config:
+          required: false
+        label: Theme
+        default: red-purple
+        hidden: true
+      - name: sections
+        type: field_group_list
+        fields:
+        - name: img
+          type: file
+          config:
+            maxSize: 0.75
+          label: Image
+        - name: title
+          type: text
+          config:
+            required: false
+          label: Title
+        - name: subtitle
+          type: text
+          config:
+            required: false
+          label: Subtitle
+        - name: direction
+          type: select
+          default: []
+          config:
+            required: false
+            options:
+            - forward
+            - reverse
+            source:
+              type: simple
+              section: 
+              file: 
+              path: 
+          label: Direction
+        - name: content
+          type: textarea
+          default: ''
+          config:
+            required: false
+            wysiwyg: false
+            schema:
+              format: markdown
+          label: Content
+        config:
+          min: 
+          max: 
+          labelField: 
+        label: Sections
+      label: Column 1
   - type: field_group
     name: advisors_1
     label: advisors_1
