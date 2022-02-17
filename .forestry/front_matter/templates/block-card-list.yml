@@ -2,7 +2,28 @@
 label: "[Block] Card List"
 hide_body: true
 fields:
-- name: card_list_block
-  type: field_group
+- name: type
+  type: text
+  config:
+    required: false
+  label: Type
+  default: card_list_block
+  hidden: true
+- name: cols
+  type: include
   config: {}
-  label: Card List Block
+  template: columns
+  label: Columns
+- name: cards
+  type: field_group_list
+  fields:
+  - name: card_component
+    type: include
+    config: {}
+    template: card
+    label: Template → [Comp] Card
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Cards
