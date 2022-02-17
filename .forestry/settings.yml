@@ -1,8 +1,8 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
-webhook_url: 
+admin_path:
+webhook_url:
 sections:
 - type: heading
   label: Site Data
@@ -27,18 +27,15 @@ sections:
   exclude: general.json
   new_doc_ext: json
   templates:
-  - page-index
-  - page-grants
-  - page-terms
-  - page-policy
-  - page-governance
   - page-about
-  - page-ecosystem
   - page-blog
-  - page-events
-  - page-basic-template-1
-  - page-basic-template-2
-  - page-get-involved
+  - page-contact
+  - page-explore
+  - page-getinvolved
+  - page-grants
+  - page-index
+  - page-privacy
+  - page-terms
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
