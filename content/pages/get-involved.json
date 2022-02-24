@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Get Involved - Filecoin Foundation for the Decentralized Web",
-    "description": ""
+    "description": " "
   },
   "og": {
     "site_name": "Get Involved - Filecoin Foundation for the Decentralized Web",
@@ -10,7 +10,7 @@
     "image": "/images/page-index/open-graph.png"
   },
   "header": {
-    "type": "variant_1",
+    "type": "",
     "theme": "red-green",
     "heading": "Together, let’s bring Web3 to life",
     "image_1": "/images/page-get-involved/three-people-looking-at-laptop.png",
@@ -23,7 +23,12 @@
       "text": "Melba Roy Mouton, 1960",
       "url": "/melba-roy-mouton-a-hidden-figure-whose-legacy-paved-the-way-for-web3",
       "icon_after": "arrow-down"
-    }
+    },
+    "text": "",
+    "action": "",
+    "icon_before": "",
+    "icon_after": "",
+    "url": ""
   },
   "careers": {
     "heading": "We’re working to build a more robust, more resilient web. A place to store and safeguard humanity’s most important information. If you’re passionate about decentralization, we want to hear from you.",
@@ -31,48 +36,90 @@
   },
   "page_content": {
     "intro_1": {
-      "grid": ["middle"],
+      "grid": [
+        "middle"
+      ],
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-8_ti-12"
+          "num": "col-8_ti-12",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "header",
         "label": "Get Involved",
-        "heading": "Working with the community to advance Web3 through education, research, and development."
+        "heading": "Working with the community to advance Web3 through education, research, and development.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "description": "",
+        "ctas": [
+
+        ]
       },
       "col_2": {
         "type": "image_block",
         "cols": {
           "num": "col-3_mi-4_ti-hidden",
-          "push_left": "off-1_mi-0"
+          "push_left": "off-1_mi-0",
+          "push_right": ""
         },
-        "src": "/images/page-get-involved/person-speaking-at-conference.png"
+        "src": "/images/page-get-involved/person-speaking-at-conference.png",
+        "label": ""
       }
     },
     "intro_2": {
-      "grid": ["middle"],
+      "grid": [
+        "middle"
+      ],
       "col_1": {
         "type": "image_block",
         "cols": {
-          "num": "col-5_mi-10"
+          "num": "col-5_mi-10",
+          "push_left": "",
+          "push_right": ""
         },
-        "src": "/images/page-get-involved/person-presenting-to-group.png"
+        "src": "/images/page-get-involved/person-presenting-to-group.png",
+        "label": ""
       },
       "col_2": {
         "type": "text_block",
         "cols": {
           "num": "col-5_mi-12",
-          "push_left": "off-1_mi-0"
+          "push_left": "off-1_mi-0",
+          "push_right": ""
         },
-        "description": "FFDW’s mission is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open-source software and open protocols for decentralized data storage and retrieval networks. We work to build and support the decentralized web community, fund research and development, and educate the public about the decentralized web, in order to preserve humanity’s most important information."
+        "description": "FFDW’s mission is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open-source software and open protocols for decentralized data storage and retrieval networks. We work to build and support the decentralized web community, fund research and development, and educate the public about the decentralized web, in order to preserve humanity’s most important information.",
+        "data_id": "",
+        "format": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "label": "",
+        "heading": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "ctas": [
+
+        ]
       }
     },
     "intro_3": {
       "col_1": {
         "type": "card_list_block",
         "cols": {
-          "num": "col"
+          "num": "col",
+          "push_left": "",
+          "push_right": ""
         },
         "cards": [
           {
@@ -87,9 +134,19 @@
                 "theme": "green",
                 "text": "View open Roles",
                 "url": "/get-involved/#career-block",
-                "icon_after": "arrow-down"
+                "icon_after": "arrow-down",
+                "icon_before": ""
               }
-            ]
+            ],
+            "size": "",
+            "action": "",
+            "url": "",
+            "img": "",
+            "label": "",
+            "title_suffix": "",
+            "date": "",
+            "date_before": "",
+            "theme": ""
           },
           {
             "type": "C",
@@ -104,9 +161,19 @@
                 "text": "Follow us",
                 "url": "https://twitter.com/ffdweb",
                 "target": "_blank",
-                "icon_after": "arrow-down"
+                "icon_after": "arrow-down",
+                "icon_before": ""
               }
-            ]
+            ],
+            "size": "",
+            "action": "",
+            "url": "",
+            "img": "",
+            "label": "",
+            "title_suffix": "",
+            "date": "",
+            "date_before": "",
+            "theme": ""
           },
           {
             "type": "C",
@@ -120,9 +187,19 @@
                 "theme": "green",
                 "text": "Learn more about grants",
                 "url": "/grants",
-                "icon_after": "arrow-down"
+                "icon_after": "arrow-down",
+                "icon_before": ""
               }
-            ]
+            ],
+            "size": "",
+            "action": "",
+            "url": "",
+            "img": "",
+            "label": "",
+            "title_suffix": "",
+            "date": "",
+            "date_before": "",
+            "theme": ""
           },
           {
             "type": "C",
@@ -136,20 +213,35 @@
                 "theme": "green",
                 "text": "Explore the Dweb",
                 "url": "/explore",
-                "icon_after": "arrow-down"
+                "icon_after": "arrow-down",
+                "icon_before": ""
               }
-            ]
+            ],
+            "size": "",
+            "action": "",
+            "url": "",
+            "img": "",
+            "label": "",
+            "title_suffix": "",
+            "date": "",
+            "date_before": "",
+            "theme": ""
           }
         ]
       }
     },
     "callout": {
-      "grid": ["center", "noGutter"],
+      "grid": [
+        "center",
+        "noGutter"
+      ],
       "classNames": "full no-padding",
       "col_1": {
         "type": "custom",
         "cols": {
-          "num": "col"
+          "num": "col",
+          "push_left": "",
+          "push_right": ""
         },
         "customizations": {
           "careers": {
@@ -163,31 +255,56 @@
                 "action": "nuxt-link",
                 "text": "Meet our Grantees",
                 "url": "/grants"
-              }
+              },
+              "text": "",
+              "type": "",
+              "action": "",
+              "theme": "",
+              "icon_before": "",
+              "icon_after": "",
+              "url": ""
             }
           }
         }
       }
     },
     "grants_1": {
-      "grid": ["bottom"],
+      "grid": [
+        "bottom"
+      ],
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-6_sm-8_mi-10_ti-12"
+          "num": "col-6_sm-8_mi-10_ti-12",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "header",
         "label": "Apply for a Grant or Project Proposals",
         "heading": "We’re here to build Web3 with you.",
-        "description": "FFDW collaborates with organizations that accelerate the adoption of open, decentralized technologies, help build communities that support and sustain open, decentralized technologies, and communicate to wider audiences the benefits of adopting open, decentralized technologies."
+        "description": "FFDW collaborates with organizations that accelerate the adoption of open, decentralized technologies, help build communities that support and sustain open, decentralized technologies, and communicate to wider audiences the benefits of adopting open, decentralized technologies.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "ctas": [
+
+        ]
       },
       "col_2": {
         "type": "image_block",
         "cols": {
           "num": "col-4_sm-6_mi-8",
-          "push_left": "off-2_sm-0"
+          "push_left": "off-2_sm-0",
+          "push_right": ""
         },
-        "src": "/images/page-get-involved/people-in-audience-looking-at-a-computer.png"
+        "src": "/images/page-get-involved/people-in-audience-looking-at-a-computer.png",
+        "label": ""
       }
     },
     "grants_accordion": {
@@ -195,7 +312,8 @@
         "type": "accordion_block",
         "cols": {
           "num": "col-9_sm-10_mi-12",
-          "push_left": "off-3_sm-2_mi-0"
+          "push_left": "off-3_sm-2_mi-0",
+          "push_right": ""
         },
         "theme": "red-green",
         "sections": [

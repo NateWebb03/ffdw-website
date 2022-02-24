@@ -197,3 +197,5 @@ fields:
   - type: text
     name: theme
     label: Theme
+pages:
+- content/pages/get-involved.json
