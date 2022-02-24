@@ -28,7 +28,7 @@
         "heading": "Contact",
         "description": "Questions? Ideas? Drop us a line <a href='mailto:hello@ffdweb.org'>hello@ffdweb.org</a>",
         "format": "small",
-        "icon": "",
+        "icon": "Phonebook",
         "data_id": "",
         "theme": "",
         "button_theme": "",

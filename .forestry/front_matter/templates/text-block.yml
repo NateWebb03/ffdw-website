@@ -76,6 +76,8 @@ fields:
     required: false
     options:
     - IconPixelTwitter
+    - Phonebook
+    - Box
     source:
       type: simple
       section: 
