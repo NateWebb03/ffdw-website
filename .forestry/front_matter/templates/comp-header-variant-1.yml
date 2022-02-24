@@ -44,9 +44,14 @@ fields:
     config:
       maxSize: 0.75
     label: Image 2
+  label: Header
+- name: cta
+  type: field_group
+  config: {}
+  fields:
   - name: cta
     type: include
     config: {}
     template: button
-    label: CTA
-  label: Header
+    label: Template → [Comp] Button
+  label: CTA
