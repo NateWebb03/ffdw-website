@@ -143,10 +143,15 @@ fields:
               name: label
               label: Label
             - name: cta
-              type: include
+              type: field_group
               config: {}
-              template: button
-              label: Template → [Comp] Button
+              fields:
+              - name: cta
+                type: include
+                config: {}
+                template: button
+                label: Template → [Comp] Button
+              label: CTA
   - type: field_group
     name: grants_1
     label: Grants 1
