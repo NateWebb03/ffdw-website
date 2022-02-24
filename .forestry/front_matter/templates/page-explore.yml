@@ -1,0 +1,424 @@
+---
+label: "[Page] Explore"
+hide_body: true
+fields:
+- type: field_group
+  name: seo
+  label: seo
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+- type: field_group
+  name: og
+  label: og
+  fields:
+  - type: text
+    name: site_name
+    label: site_name
+  - type: text
+    name: url
+    label: url
+  - type: text
+    name: type
+    label: type
+  - type: file
+    name: image
+    label: image
+- type: field_group
+  name: header
+  label: header
+  fields:
+  - type: text
+    name: type
+    label: type
+  - type: text
+    name: heading
+    label: heading
+  - type: text
+    name: subheading
+    label: subheading
+  - type: file
+    name: image_1
+    label: image_1
+  - type: text
+    name: nav_theme
+    label: nav_theme
+  - type: text
+    name: sub_theme
+    label: sub_theme
+- type: field_group
+  name: page_content
+  label: page_content
+  fields:
+  - type: field_group
+    name: learn_1
+    label: learn_1
+    fields:
+    - type: field_group
+      name: col_1
+      label: col_1
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: text
+        name: format
+        label: format
+      - type: text
+        name: label
+        label: label
+      - type: textarea
+        name: heading
+        label: heading
+  - type: field_group
+    name: learn_2
+    label: learn_2
+    fields:
+    - type: list
+      name: grid
+      label: grid
+    - type: field_group
+      name: image_left
+      label: image_left
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: file
+        name: src
+        label: src
+    - type: field_group
+      name: text
+      label: text
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: text
+        name: format
+        label: format
+      - type: text
+        name: theme
+        label: theme
+      - type: text
+        name: heading
+        label: heading
+      - type: textarea
+        name: description
+        label: description
+    - type: field_group
+      name: image_right
+      label: image_right
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: file
+        name: src
+        label: src
+  - type: field_group
+    name: learn_3
+    label: learn_3
+    fields:
+    - type: field_group
+      name: col_1
+      label: col_1
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+        - type: text
+          name: push_left
+          label: push_left
+      - type: text
+        name: format
+        label: format
+      - type: textarea
+        name: description
+        label: description
+  - type: field_group
+    name: videos_1
+    label: videos_1
+    fields:
+    - type: field_group
+      name: col_1
+      label: col_1
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: text
+        name: format
+        label: format
+      - type: text
+        name: label
+        label: label
+      - type: text
+        name: heading
+        label: heading
+  - type: field_group
+    name: videos_2
+    label: videos_2
+    fields:
+    - type: field_group
+      name: col_1
+      label: col_1
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: text
+        name: slatename
+        label: slatename
+  - type: field_group
+    name: callout
+    label: callout
+    fields:
+    - type: list
+      name: grid
+      label: grid
+    - type: text
+      name: classNames
+      label: classNames
+    - type: field_group
+      name: col_1
+      label: col_1
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: field_group
+        name: customizations
+        label: customizations
+        fields:
+        - type: field_group
+          name: careers
+          label: careers
+          fields:
+          - type: text
+            name: name
+            label: name
+          - type: field_group
+            name: props
+            label: props
+            fields:
+            - type: file
+              name: img_left
+              label: img_left
+            - type: text
+              name: label
+              label: label
+            - type: text
+              name: text
+              label: text
+            - type: image_gallery
+              name: logos
+              label: logos
+            - type: field_group
+              name: cta
+              label: cta
+              fields:
+              - type: text
+                name: type
+                label: type
+              - type: text
+                name: action
+                label: action
+              - type: text
+                name: url
+                label: url
+              - type: text
+                name: text
+                label: text
+  - type: field_group
+    name: tutorials_1
+    label: tutorials_1
+    fields:
+    - type: field_group
+      name: col_1
+      label: col_1
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: text
+        name: format
+        label: format
+      - type: text
+        name: label
+        label: label
+      - type: textarea
+        name: heading
+        label: heading
+  - type: field_group
+    name: tutorials_2
+    label: tutorials_2
+    fields:
+    - type: field_group
+      name: col_1
+      label: col_1
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: field_group_list
+        name: cards
+        label: cards
+        fields:
+        - type: text
+          name: type
+          label: type
+        - type: text
+          name: theme
+          label: theme
+        - type: text
+          name: label
+          label: label
+        - type: text
+          name: title
+          label: title
+        - type: textarea
+          name: description
+          label: description
+        - type: field_group_list
+          name: ctas
+          label: ctas
+          fields:
+          - type: text
+            name: type
+            label: type
+          - type: text
+            name: theme
+            label: theme
+          - type: text
+            name: action
+            label: action
+          - type: text
+            name: text
+            label: text
+          - type: text
+            name: url
+            label: url
+          - type: text
+            name: target
+            label: target
+          - type: text
+            name: icon_after
+            label: icon_after
+      - type: field_group
+        name: cta
+        label: cta
+        fields:
+        - type: text
+          name: type
+          label: type
+        - type: text
+          name: action
+          label: action
+        - type: text
+          name: text
+          label: text
+        - type: text
+          name: url
+          label: url
+  - type: field_group
+    name: latest_news
+    label: latest_news
+    fields:
+    - type: field_group
+      name: col_1
+      label: col_1
+      fields:
+      - type: text
+        name: type
+        label: type
+      - type: field_group
+        name: cols
+        label: cols
+        fields:
+        - type: text
+          name: num
+          label: num
+      - type: text
+        name: format
+        label: format
+      - type: text
+        name: label
+        label: label
+      - type: text
+        name: heading
+        label: heading
