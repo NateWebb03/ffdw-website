@@ -169,9 +169,14 @@ fields:
               name: logos
               label: Logos
             - name: cta
-              type: include
+              type: field_group
               config: {}
-              template: button
+              fields:
+              - name: cta
+                type: include
+                config: {}
+                template: button
+                label: CTA
               label: CTA
             hidden: false
   - type: field_group
