@@ -176,7 +176,7 @@ fields:
                 type: include
                 config: {}
                 template: button
-                label: CTA
+                label: Template → [Comp] Button
               label: CTA
             hidden: false
   - type: field_group
