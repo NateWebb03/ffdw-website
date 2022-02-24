@@ -31,10 +31,9 @@ sections:
   - page-blog
   - page-contact
   - page-explore
-  - page-getinvolved
+  - page-get-involved
   - page-grants
   - page-index
-  - page-privacy
   - page-terms
 upload_dir: uploads
 public_path: "/uploads"
