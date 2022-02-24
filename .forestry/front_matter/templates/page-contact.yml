@@ -2,258 +2,164 @@
 label: "[Page] Contact"
 hide_body: true
 fields:
-- type: field_group
-  name: seo
-  label: seo
-  fields:
-  - type: text
-    name: title
-    label: title
-  - type: text
-    name: description
-    label: description
-- type: field_group
-  name: og
-  label: og
-  fields:
-  - type: text
-    name: site_name
-    label: site_name
-  - type: text
-    name: url
-    label: url
-  - type: text
-    name: type
-    label: type
-  - type: file
-    name: image
-    label: image
-- type: field_group
-  name: header
-  label: header
-  fields:
-  - type: text
-    name: type
-    label: type
-  - type: text
-    name: theme
-    label: theme
-  - type: file
-    name: image_1
-    label: image_1
-  - type: file
-    name: image_mobile
-    label: image_mobile
-  - type: textarea
-    name: description
-    label: description
+- name: seo
+  type: include
+  config: {}
+  template: data-seo
+  label: Template → [Data] SEO
+- name: og
+  type: include
+  config: {}
+  template: data-open-graph-social
+  label: Template → [Data] Open Graph & Social
+- name: header
+  type: include
+  config: {}
+  template: comp-header-variant-2
+  label: Template → [Comp] Header Variant 2
 - type: field_group
   name: page_content
-  label: page_content
+  label: Page Content
   fields:
   - type: field_group
     name: learn_1
-    label: learn_1
+    label: Learn 1
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: heading
-        label: heading
-      - type: text
-        name: description
-        label: description
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: icon
-        label: icon
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
     - type: field_group
       name: col_2
-      label: col_2
+      label: Column 2
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: heading
-        label: heading
-      - type: textarea
-        name: description
-        label: description
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: icon
-        label: icon
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
     - type: field_group
       name: col_3
-      label: col_3
+      label: Column 3
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: heading
-        label: heading
-      - type: textarea
-        name: description
-        label: description
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: icon
-        label: icon
-      - type: field_group_list
-        name: ctas
-        label: ctas
-        fields:
-        - type: text
-          name: type
-          label: type
-        - type: text
-          name: theme
-          label: theme
-        - type: text
-          name: action
-          label: action
-        - type: text
-          name: text
-          label: text
-        - type: text
-          name: url
-          label: url
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
   - type: field_group
     name: reach_1
-    label: reach_1
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: label
-        label: label
-      - type: text
-        name: heading
-        label: heading
-      - type: text
-        name: format
-        label: format
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
     - type: field_group
       name: col_2
-      label: col_2
+      label: Column 2
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: file
-        name: src
-        label: src
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+    label: Reach 1
   - type: field_group
     name: form
-    label: form
+    label: Form
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
       - type: text
         name: type
         label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
+        hidden: true
+        default: custom
+      - name: cols
+        type: include
+        config: {}
+        template: columns
+        label: Template → [Layout] Columns
       - type: field_group
         name: customizations
-        label: customizations
+        label: Customizations
         fields:
         - type: field_group
           name: contactForm
-          label: contactForm
           fields:
           - type: text
             name: name
             label: name
+            hidden: true
+            default: ContactForm
           - type: field_group
             name: props
-            label: props
+            label: Props
             fields:
             - type: field_group_list
               name: fields
-              label: fields
+              label: Fields
               fields:
               - type: text
                 name: label
-                label: label
-              - type: text
-                name: for
-                label: for
+                label: Label
               - type: text
                 name: validation
-                label: validation
+                label: Validation Message
+              - name: for
+                type: select
+                default: []
+                config:
+                  required: false
+                  options:
+                  - email
+                  - " subject"
+                  - " name"
+                  - " phone"
+                  - message
+                  source:
+                    type: simple
+                    section: 
+                    file: 
+                    path: 
+                label: For
+              - name: component
+                type: text
+                config:
+                  required: false
+                label: Component
+                description: Leave blank to create a regular input element. Text must
+                  be an existing html element.
+                default: ''
+              - name: cols
+                type: field_group
+                config: {}
+                fields:
+                - name: num
+                  type: text
+                  config:
+                    required: false
+                  label: Number
+                label: Columns
             - type: text
               name: action
-              label: action
+              label: Action
             - type: text
               name: message
-              label: message
+              label: Submission Message
             - type: text
               name: submit
-              label: submit
+              label: Submit Button Text
+          label: Contact Form
