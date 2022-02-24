@@ -2,405 +2,167 @@
 label: "[Page] Grants"
 hide_body: true
 fields:
-- type: field_group
-  name: seo
-  label: seo
-  fields:
-  - type: text
-    name: title
-    label: title
-  - type: text
-    name: description
-    label: description
-- type: field_group
-  name: og
-  label: og
-  fields:
-  - type: text
-    name: site_name
-    label: site_name
-  - type: text
-    name: url
-    label: url
-  - type: text
-    name: type
-    label: type
-  - type: file
-    name: image
-    label: image
-- type: field_group
-  name: header
-  label: header
-  fields:
-  - type: text
-    name: type
-    label: type
-  - type: text
-    name: heading
-    label: heading
-  - type: text
-    name: subheading
-    label: subheading
-  - type: file
-    name: image_1
-    label: image_1
-  - type: text
-    name: nav_theme
-    label: nav_theme
-  - type: text
-    name: sub_theme
-    label: sub_theme
+- name: seo
+  type: include
+  config: {}
+  template: data-seo
+  label: Template → [Data] SEO
+- name: og
+  type: include
+  config: {}
+  template: data-open-graph-social
+  label: Template → [Data] Open Graph & Social
+- name: header
+  type: include
+  config: {}
+  template: comp-header-variant-4
+  label: Template → [Comp] Header Variant 4
 - type: field_group
   name: page_content
-  label: page_content
+  label: Page Content
   fields:
   - type: field_group
     name: mission
-    label: mission
+    label: Mission
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: textarea
-        name: heading
-        label: heading
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
   - type: field_group
     name: info_1
-    label: info_1
+    label: Info 1
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: file
-        name: src
-        label: src
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
     - type: field_group
       name: col_2
-      label: col_2
+      label: Column 2
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: textarea
-        name: heading
-        label: heading
-      - type: textarea
-        name: description
-        label: description
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
   - type: field_group
     name: info_2
-    label: info_2
+    label: Info 2
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: text
-        name: format
-        label: format
-      - type: textarea
-        name: description
-        label: description
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
   - type: field_group
     name: project_areas
-    label: project_areas
+    label: Project Areas
     fields:
     - type: field_group
       name: col_1
-      label: col_1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: text
-        name: heading
-        label: heading
-      - type: textarea
-        name: description
-        label: description
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 1
     - type: field_group
       name: col_2
-      label: col_2
+      label: Column 2
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: file
-        name: src
-        label: src
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
   - type: field_group
     name: accordion_1
-    label: accordion_1
+    label: Accordion 1
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: text
-        name: theme
-        label: theme
-      - type: field_group_list
-        name: sections
-        label: sections
-        fields:
-        - type: text
-          name: label
-          label: label
-        - type: textarea
-          name: content
-          label: content
+      - name: accordion_block
+        type: include
+        config: {}
+        template: block-accordion
+        label: Template → [Block] Accordion
   - type: field_group
     name: application_process
-    label: application_process
+    label: Application Process
     fields:
-    - type: list
-      name: grid
-      label: grid
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: file
-        name: src
-        label: src
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
     - type: field_group
       name: col_2
-      label: col_2
+      label: Column 2
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: text
-        name: heading
-        label: heading
-      - type: textarea
-        name: description
-        label: description
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
   - type: field_group
     name: proposal_template
-    label: proposal_template
+    label: Proposal Template
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: text
-        name: heading
-        label: heading
-      - type: textarea
-        name: description
-        label: description
-      - type: field_group_list
-        name: ctas
-        label: ctas
-        fields:
-        - type: text
-          name: type
-          label: type
-        - type: text
-          name: action
-          label: action
-        - type: text
-          name: theme
-          label: theme
-        - type: text
-          name: target
-          label: target
-        - type: text
-          name: text
-          label: text
-        - type: text
-          name: url
-          label: url
-        - type: text
-          name: icon_after
-          label: icon_after
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
     - type: field_group
       name: col_2
-      label: col_2
+      label: Column 2
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: file
-        name: src
-        label: src
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
   - type: field_group
     name: accordion_2
-    label: accordion_2
+    label: Accordion 2
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: text
-        name: theme
-        label: theme
-      - type: field_group_list
-        name: sections
-        label: sections
-        fields:
-        - type: text
-          name: label
-          label: label
-        - type: textarea
-          name: content
-          label: content
+      - name: accordion_block
+        type: include
+        config: {}
+        template: block-accordion
+        label: Template → [Block] Accordion
