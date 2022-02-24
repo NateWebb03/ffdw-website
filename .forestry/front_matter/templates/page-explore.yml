@@ -2,423 +2,214 @@
 label: "[Page] Explore"
 hide_body: true
 fields:
-- type: field_group
-  name: seo
-  label: seo
-  fields:
-  - type: text
-    name: title
-    label: title
-  - type: text
-    name: description
-    label: description
-- type: field_group
-  name: og
-  label: og
-  fields:
-  - type: text
-    name: site_name
-    label: site_name
-  - type: text
-    name: url
-    label: url
-  - type: text
-    name: type
-    label: type
-  - type: file
-    name: image
-    label: image
-- type: field_group
-  name: header
-  label: header
-  fields:
-  - type: text
-    name: type
-    label: type
-  - type: text
-    name: heading
-    label: heading
-  - type: text
-    name: subheading
-    label: subheading
-  - type: file
-    name: image_1
-    label: image_1
-  - type: text
-    name: nav_theme
-    label: nav_theme
-  - type: text
-    name: sub_theme
-    label: sub_theme
+- name: seo
+  type: include
+  config: {}
+  template: data-seo
+  label: Template → [Data] SEO
+- name: og
+  type: include
+  config: {}
+  template: data-open-graph-social
+  label: Template → [Data] Open Graph & Social
+- name: header
+  type: include
+  config: {}
+  template: comp-header-variant-4
+  label: Template → [Comp] Header Variant 4
 - type: field_group
   name: page_content
-  label: page_content
+  label: Page Content
   fields:
   - type: field_group
     name: learn_1
-    label: learn_1
+    label: Learn 1
     fields:
-    - type: field_group
-      name: col_1
-      label: col_1
+    - name: col_1
+      type: field_group
+      config: {}
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: textarea
-        name: heading
-        label: heading
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 1
   - type: field_group
     name: learn_2
-    label: learn_2
+    label: Learn 2
     fields:
-    - type: list
-      name: grid
-      label: grid
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
     - type: field_group
       name: image_left
-      label: image_left
+      label: Image Left
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: file
-        name: src
-        label: src
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
     - type: field_group
       name: text
-      label: text
+      label: Text
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: theme
-        label: theme
-      - type: text
-        name: heading
-        label: heading
-      - type: textarea
-        name: description
-        label: description
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
     - type: field_group
       name: image_right
-      label: image_right
+      label: Image Right
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: file
-        name: src
-        label: src
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
   - type: field_group
     name: learn_3
-    label: learn_3
+    label: Learn 3
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-        - type: text
-          name: push_left
-          label: push_left
-      - type: text
-        name: format
-        label: format
-      - type: textarea
-        name: description
-        label: description
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
   - type: field_group
     name: videos_1
-    label: videos_1
+    label: Videos 1
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: text
-        name: heading
-        label: heading
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
   - type: field_group
     name: videos_2
-    label: videos_2
+    label: Videos 2
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: slatename
-        label: slatename
+      - name: slate_video_block
+        type: include
+        config: {}
+        template: comp-slate-video-block
+        label: Template → [Block] Slate Video
   - type: field_group
     name: callout
-    label: callout
+    label: Callout
     fields:
-    - type: list
-      name: grid
-      label: grid
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
     - type: text
       name: classNames
       label: classNames
+      hidden: true
+      default: full no-padding
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
       - type: text
         name: type
         label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
+        hidden: true
+        default: custom
+      - name: cols
+        type: include
+        config: {}
+        template: columns
+        hidden: false
+        label: Columns
       - type: field_group
         name: customizations
-        label: customizations
+        label: Customizations
         fields:
         - type: field_group
           name: careers
-          label: careers
+          label: Careers
           fields:
           - type: text
             name: name
             label: name
+            hidden: true
+            default: ExploreCallout
           - type: field_group
             name: props
-            label: props
+            label: Props
             fields:
             - type: file
               name: img_left
-              label: img_left
+              label: Image Left
             - type: text
               name: label
-              label: label
+              label: Label
             - type: text
               name: text
-              label: text
+              label: Text
             - type: image_gallery
               name: logos
-              label: logos
-            - type: field_group
-              name: cta
-              label: cta
-              fields:
-              - type: text
-                name: type
-                label: type
-              - type: text
-                name: action
-                label: action
-              - type: text
-                name: url
-                label: url
-              - type: text
-                name: text
-                label: text
+              label: Logos
+            - name: cta
+              type: include
+              config: {}
+              template: button
+              label: CTA
+            hidden: false
   - type: field_group
     name: tutorials_1
-    label: tutorials_1
+    label: Tutorials 1
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: textarea
-        name: heading
-        label: heading
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
   - type: field_group
     name: tutorials_2
-    label: tutorials_2
     fields:
     - type: field_group
       name: col_1
-      label: col_1
+      label: Column 1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: field_group_list
-        name: cards
-        label: cards
-        fields:
-        - type: text
-          name: type
-          label: type
-        - type: text
-          name: theme
-          label: theme
-        - type: text
-          name: label
-          label: label
-        - type: text
-          name: title
-          label: title
-        - type: textarea
-          name: description
-          label: description
-        - type: field_group_list
-          name: ctas
-          label: ctas
-          fields:
-          - type: text
-            name: type
-            label: type
-          - type: text
-            name: theme
-            label: theme
-          - type: text
-            name: action
-            label: action
-          - type: text
-            name: text
-            label: text
-          - type: text
-            name: url
-            label: url
-          - type: text
-            name: target
-            label: target
-          - type: text
-            name: icon_after
-            label: icon_after
-      - type: field_group
-        name: cta
-        label: cta
-        fields:
-        - type: text
-          name: type
-          label: type
-        - type: text
-          name: action
-          label: action
-        - type: text
-          name: text
-          label: text
-        - type: text
-          name: url
-          label: url
+      - name: card_list_block
+        type: include
+        config: {}
+        template: block-card-list
+        label: Template → [Block] Card List
+    label: Tutorials 2
   - type: field_group
     name: latest_news
-    label: latest_news
+    label: Latest News
     fields:
     - type: field_group
       name: col_1
-      label: col_1
       fields:
-      - type: text
-        name: type
-        label: type
-      - type: field_group
-        name: cols
-        label: cols
-        fields:
-        - type: text
-          name: num
-          label: num
-      - type: text
-        name: format
-        label: format
-      - type: text
-        name: label
-        label: label
-      - type: text
-        name: heading
-        label: heading
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 1
