@@ -328,3 +328,5 @@ fields:
         template: text-block
         label: Template → [Block] Text
       label: Column 1
+pages:
+- content/pages/index.json
