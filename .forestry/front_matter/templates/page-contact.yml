@@ -163,3 +163,5 @@ fields:
               name: submit
               label: Submit Button Text
           label: Contact Form
+pages:
+- content/pages/contact.json
