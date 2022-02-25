@@ -166,3 +166,5 @@ fields:
         config: {}
         template: block-accordion
         label: Template → [Block] Accordion
+pages:
+- content/pages/grants.json
