@@ -10,7 +10,7 @@
     "image": "/images/page-index/open-graph.png"
   },
   "header": {
-    "type": "",
+    "type": "variant_1",
     "theme": "red-green",
     "heading": "Together, let’s bring Web3 to life",
     "image_1": "/images/page-get-involved/three-people-looking-at-laptop.png",
@@ -23,12 +23,7 @@
       "text": "Melba Roy Mouton, 1960",
       "url": "/melba-roy-mouton-a-hidden-figure-whose-legacy-paved-the-way-for-web3",
       "icon_after": "arrow-down"
-    },
-    "text": "",
-    "action": "",
-    "icon_before": "",
-    "icon_after": "",
-    "url": ""
+    }
   },
   "careers": {
     "heading": "We’re working to build a more robust, more resilient web. A place to store and safeguard humanity’s most important information. If you’re passionate about decentralization, we want to hear from you.",
