@@ -9,17 +9,20 @@ fields:
   hidden: true
   label: Type
   default: text_block
+  description: Do not change. This field is only visible to Forestry admins.
 - name: cols
   type: include
   config: {}
   template: columns
   label: Columns
+  description: DO NOT EDIT
 - name: data_id
   type: text
   config:
     required: false
   label: Data ID Attribute
   hidden: false
+  description: ''
 - name: format
   type: select
   default: medium
@@ -52,6 +55,7 @@ fields:
       file: 
       path: 
   label: Theme
+  description: Select the colors of the background gradient
 - name: button_theme
   type: select
   default: []
@@ -69,6 +73,7 @@ fields:
       file: 
       path: 
   label: Button Theme
+  description: Select the background color(s) for the buttons
 - name: icon
   type: select
   default: []
@@ -84,6 +89,7 @@ fields:
       file: 
       path: 
   label: Icon
+  description: Optionally select an icon from the dropdown menu which will be displayed above the header
   showOnly:
     field: format
     value: small
@@ -92,6 +98,7 @@ fields:
   config:
     required: false
   label: Label
+  description: text displayed above the heading and below the icon
 - name: heading
   type: textarea
   default: ''
@@ -101,10 +108,11 @@ fields:
     schema:
       format: markdown
   label: Heading
+  description: text block heading
 - name: date
   type: datetime
   label: Date
-  description: ''
+  description: Optionally select a date that will be displayed below the label
   config:
     required: false
     date_format: 
@@ -115,6 +123,7 @@ fields:
   type: tag_list
   default: []
   label: Tags
+  description: Optionally add tags that will be displayed below the label
 - name: subheading
   type: textarea
   default: ''
@@ -124,6 +133,7 @@ fields:
     schema:
       format: markdown
   label: Subheading
+  description: Text block subheading
 - name: description
   type: textarea
   default: ''
@@ -133,6 +143,7 @@ fields:
     schema:
       format: markdown
   label: Description
+  description: Text block paragraph content
 - name: ctas
   type: field_group_list
   fields:
@@ -146,3 +157,4 @@ fields:
     max: 
     labelField: 
   label: CTAs
+  description: Click "Add CTA" to add a button to the text block
