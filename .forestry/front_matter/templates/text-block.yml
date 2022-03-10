@@ -39,6 +39,7 @@ fields:
       file: 
       path: 
   label: Format
+  description: Edit the size of the heading text (header- h1, medium - h2(default), small - h3, tiny - h4)
 - name: theme
   type: select
   default: purple-green
