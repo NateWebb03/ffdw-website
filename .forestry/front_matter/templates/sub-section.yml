@@ -1,5 +1,6 @@
 ---
 label: "[Layout] Sub Section"
+description: The fields in this section affect page layouts. DO NOT EDIT
 hide_body: true
 fields:
 - name: id
@@ -14,11 +15,13 @@ fields:
     min: 
     max: 
   label: Grid Classes
+  description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
 - name: classNames
   type: text
   config:
     required: false
   label: Class Names
+  description: description: Changes in this field can affect the section layout. DO NOT EDIT
 - name: left
   type: blocks
   label: Left Block
