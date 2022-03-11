@@ -29,7 +29,6 @@ fields:
     config:
       maxSize: 0.75
     label: Image 1
-    description: add the image that will appear int he header
   - name: nav_theme
     type: select
     default: []
@@ -44,5 +43,4 @@ fields:
         file: 
         path: 
     label: Nav Theme
-    description: Select the navigation text color from the dropdown menu - "dark" will make the text in the nav black | "light" will make the text in the nav white
   label: Header

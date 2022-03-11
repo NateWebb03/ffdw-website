@@ -7,23 +7,19 @@ fields:
   config: {}
   template: data-seo
   label: Template → [Data] SEO
-  description: SEO and metadata
 - name: og
   type: include
   config: {}
   template: data-open-graph-social
   label: Template → [Data] Open Graph & Social
-  descritpion: Open Graph Metadata
 - name: header
   type: include
   config: {}
   template: comp-header-variant-2
   label: Template → [Comp] Header Variant 2
-  description: The header content of the page is editable within this section
 - type: field_group
   name: page_content
   label: Page Content
-  description: The visible content on the page is editable within this section
   fields:
   - type: field_group
     name: learn_1
@@ -31,88 +27,74 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Left column
-      description: The left column content is editable within this section
+      label: Column 1
       fields:
       - name: text_block
         type: include
         config: {}
         template: text-block
         label: Template → [Block] Text
-        description: The text block content is editable within this section
     - type: field_group
       name: col_2
-      label: Middle column
-      descritpion: The middle column content is editable within this section
+      label: Column 2
       fields:
       - name: text_block
         type: include
         config: {}
         template: text-block
         label: Template → [Block] Text
-        description: The text block content is editable within this section
     - type: field_group
       name: col_3
-      label: Right column
-      description: The right column content is editable within this section
+      label: Column 3
       fields:
       - name: text_block
         type: include
         config: {}
         template: text-block
         label: Template → [Block] Text
-        description: The text block content is editable within this section
   - type: field_group
     name: reach_1
     fields:
     - type: field_group
       name: col_1
-      label: Left column
-      description: The left column content is editable within this section
+      label: Column 1
       fields:
       - name: text_block
         type: include
         config: {}
         template: text-block
         label: Template → [Block] Text
-        description: The text block content is editable within this section
     - type: field_group
       name: col_2
-      label: Right column
-      description: The right column content is editable within this section
+      label: Column 2
       fields:
       - name: image_block
         type: include
         config: {}
         template: image-block
         label: Template → [Block] Image
-        description: The image block content is editable within this section
-    label: Form Header Section
-    description: The form header is editable within this section
+    label: Reach 1
   - type: field_group
     name: form
     label: Form
     fields:
     - type: field_group
       name: col_1
-      label: Content
+      label: Column 1
       fields:
       - type: text
         name: type
         label: type
         hidden: true
         default: custom
-        description: Do not change. This field is only visible to Forestry admins.
       - name: cols
         type: include
         config: {}
         template: columns
         label: Template → [Layout] Columns
-        description: DO NOT EDIT
       - type: field_group
         name: customizations
-        label: Form Customizations
-        description: The contact form is editable within this section
+        label: Customizations
         fields:
         - type: field_group
           name: contactForm
@@ -124,21 +106,18 @@ fields:
             default: ContactForm
           - type: field_group
             name: props
-            label: Form Builder
+            label: Props
             fields:
             - type: field_group_list
               name: fields
               label: Fields
-              description: Click "Add Field" to add another input field to the contact form
               fields:
               - type: text
                 name: label
                 label: Label
-                description: Input-field label/description
               - type: text
                 name: validation
                 label: Validation Message
-                description: Input-field prompt (ex. *Required, if the field must be filled to send the form)
               - name: for
                 type: select
                 default: []
@@ -156,7 +135,6 @@ fields:
                     file: 
                     path: 
                 label: For
-                description: Optionally select what the field is intended for from the dropdown menu
               - name: component
                 type: text
                 config:
@@ -175,20 +153,15 @@ fields:
                     required: false
                   label: Number
                 label: Columns
-                description: DO NOT EDIT
             - type: text
               name: action
               label: Action
-              description: The address or endpoint the form will be sent to when submitted
             - type: text
               name: message
               label: Submission Message
-              description: The message displayed when a form is successfully submitted
             - type: text
               name: submit
               label: Submit Button Text
-              description: The text of the for submit button
           label: Contact Form
-          descritpion: The contact form is editable within this section
 pages:
 - content/pages/contact.json
