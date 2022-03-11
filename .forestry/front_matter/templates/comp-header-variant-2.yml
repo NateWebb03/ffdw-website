@@ -29,16 +29,19 @@ fields:
         file: 
         path: 
     label: Theme
+    description: Select the colors of the background gradient
   - name: image_1
     type: file
     config:
       maxSize: 0.75
     label: Image 1
+    description: Add the image that will appear to the left and under the heading text
   - name: image_mobile
     type: file
     config:
       maxSize: 0.75
     label: Image Mobile
+    description: Add the image that will appear to the right and above the heading text (this image will appear first on mobile devices)
   - name: description
     type: textarea
     default: ''
@@ -48,4 +51,5 @@ fields:
       schema:
         format: markdown
     label: Description
+    description: Header text
   label: Header

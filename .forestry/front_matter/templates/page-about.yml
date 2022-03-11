@@ -7,16 +7,19 @@ fields:
   config: {}
   template: data-seo
   label: Template → [Data] SEO
+  description: SEO and Metadata
 - name: og
   type: include
   config: {}
   template: data-open-graph-social
   label: Template → [Data] Open Graph & Social
+  description: Open Graph Metadata
 - name: header
   type: include
   config: {}
   template: comp-header-variant-1
   label: Template → [Comp] Header Variant 1
+  description: The page's header content is edited in this section
 - type: field_group
   name: careers
   label: Careers
@@ -30,6 +33,7 @@ fields:
 - type: field_group
   name: page_content
   label: Page Content
+  description: The visible content on the page is editable within this section.
   fields:
   - type: field_group
     name: intro_1
@@ -49,7 +53,8 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Column 1
+      label: Left Column
+      description: Left column content is editable within this section
     - name: col_2
       type: field_group
       config: {}
@@ -59,7 +64,8 @@ fields:
         config: {}
         template: image-block
         label: Template → [Block] Image
-      label: Column 2
+      label: Right Column
+      description: Right column content is editable within this section
   - name: intro_2
     type: field_group
     config: {}
@@ -78,7 +84,8 @@ fields:
         config: {}
         template: image-block
         label: Template → [Block] Image
-      label: Column 1
+      label: Left Column
+      description: Left column content is editable within this section
     - name: col_2
       type: field_group
       config: {}
@@ -88,7 +95,8 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Column 2
+      label: Right column
+      description: Right column content is editable within this section
     label: Intro 2
   - type: field_group
     name: vision_1
@@ -108,7 +116,8 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Column 1
+        description: The text block is editable within this section.
+      label: Content
   - type: field_group
     name: vision_2
     label: Vision 2
@@ -127,7 +136,8 @@ fields:
         config: {}
         template: image-block
         label: Template → [Block] Image
-      label: Column 1
+      label: Left Column
+      description: Left column content editable in this section
     - name: col_2
       type: field_group
       config: {}
@@ -137,7 +147,8 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Column 2
+      label: Middle column
+      description: Middle column content is editable within this section
     - name: col_3
       type: field_group
       config: {}
@@ -147,7 +158,8 @@ fields:
         config: {}
         template: image-block
         label: Template → [Block] Text
-      label: Column 3
+      label: Right column
+      description: Right column content it editable within this section
   - type: field_group
     name: board_1
     label: Board 1
@@ -166,7 +178,8 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Column 1
+      label: Content
+      descritpion: Board of Directors heading is editable within this section
   - type: field_group
     name: board_2
     label: Board 2
@@ -250,7 +263,8 @@ fields:
           max: 
           labelField: 
         label: Sections
-      label: Column 1
+      label: Content
+      description: Board of Directors list is editable within this section
   - type: field_group
     name: advisors_1
     label: Advisors 1
@@ -269,10 +283,12 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Column 1
+      label: Content
+      description: Advisors header is editable in this section
   - type: field_group
     name: advisors_2
     label: Advisors 2
+    description: Advisors list is editable in this section
     fields:
     - name: grid
       type: include
@@ -282,10 +298,12 @@ fields:
     - type: text
       name: classNames
       label: classNames
+      description: Class names that will be applied to the page HTML
     - name: card_list_block
       type: include
       config: {}
       template: block-card-list
       label: Template → [Block] Card List
+      description: Click "Add card" to populate another card in the list
 pages:
 - content/pages/about.json

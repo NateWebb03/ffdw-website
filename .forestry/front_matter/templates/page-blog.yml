@@ -7,15 +7,18 @@ fields:
   config: {}
   template: data-seo
   label: Template → [Data] SEO
+  description: SEO and metadata
 - name: og
   type: include
   config: {}
   template: data-open-graph-social
   label: Template → [Data] Open Graph & Social
+  description: Open Graph Metadata
 - name: header
   type: include
   config: {}
   template: comp-header-variant-3
   label: Template → [Comp] Header Variant 1
+  description: Header content of the blog index page is editable in this section
 pages:
 - content/pages/blog.json
