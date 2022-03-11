@@ -7,23 +7,19 @@ fields:
   config: {}
   template: data-seo
   label: Template → [Data] SEO
-  description: SEO and metadata
 - name: og
   type: include
   config: {}
   template: data-open-graph-social
   label: Template → [Data] Open Graph & Social
-  description: Open Graph Metadata
 - name: header
   type: include
   config: {}
   template: comp-header-variant-x
   label: Template → [Comp] Header Variant 6
-  description: This page's header content is editable within this section
 - type: field_group
   name: page_content
   label: Page Content
-  description: The visible content on the page is editable within this section.
   fields:
   - type: field_group
     name: about_1
@@ -34,7 +30,6 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
     - name: col_1
       type: field_group
       config: {}
@@ -44,10 +39,10 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Content
+      label: Column 1
   - type: field_group
     name: intro_1
-    label: Intro Section Top Image
+    label: Intro 1
     fields:
     - name: grid
       type: include
@@ -56,7 +51,7 @@ fields:
       label: Template → [Layout] Grid Alignment
     - type: field_group
       name: col_1
-      label: Content
+      label: Column 1
       fields:
       - name: image_block
         type: include
@@ -65,14 +60,13 @@ fields:
         label: Template → [Block] Image
   - type: field_group
     name: intro_2
-    label: Intro Section Main Content
+    label: Intro 2
     fields:
     - name: grid
       type: include
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
     - name: col_1
       type: field_group
       config: {}
@@ -82,8 +76,7 @@ fields:
         config: {}
         template: image-block
         label: Template → [Block] Image
-      label: Left column
-      description: Left column content is editable within this section
+      label: Column 1
     - name: col_2
       type: field_group
       config: {}
@@ -93,8 +86,7 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Middle column
-      description: Middle column content is editable within this section
+      label: Column 2
     - name: col_3
       type: field_group
       config: {}
@@ -104,8 +96,7 @@ fields:
         config: {}
         template: image-block
         label: Template → [Block] Image
-      label: Right column
-      description: Right column content is editable within this section
+      label: Column 3
   - type: field_group
     name: explore_1
     label: Explore
@@ -115,7 +106,6 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
     - name: col_1
       type: field_group
       config: {}
@@ -125,8 +115,7 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Left column
-      description: Left column content is editable within this section
+      label: Column 1
     - name: col_2
       type: field_group
       config: {}
@@ -136,18 +125,16 @@ fields:
         config: {}
         template: image-block
         label: Template → [Block] Image
-      label: Right column
-      description: Right column content is editable within this section
+      label: Column 2
   - type: field_group
     name: accordion_1
-    label: Sectors Accordion
+    label: Accordion
     fields:
     - name: grid
       type: include
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
     - name: col_1
       type: field_group
       config: {}
@@ -157,8 +144,7 @@ fields:
         config: {}
         template: block-accordion
         label: Template → [Block] Accordion
-      label: Left Column
-      description: Accordion content is editable within this section
+      label: Column 1
     - name: col_2
       type: field_group
       config: {}
@@ -168,8 +154,7 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Right Column
-      description: Right column content is editable within this section
+      label: Column 2
   - type: field_group
     name: grants
     label: Grants
@@ -179,7 +164,6 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
     - name: image_left
       type: field_group
       config: {}
@@ -189,7 +173,7 @@ fields:
         config: {}
         template: image-block
         label: Template → [Block] Image
-      label: "Image Left"
+      label: "[Image] Left"
     - name: text
       type: field_group
       config: {}
@@ -209,7 +193,7 @@ fields:
         config: {}
         template: image-block
         label: Template → [Block] Image
-      label: "Image Right"
+      label: "[Image] Right"
   - type: field_group
     name: spotlight
     label: Spotlight
@@ -219,7 +203,6 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
     - name: col_1
       type: field_group
       config: {}
@@ -229,8 +212,7 @@ fields:
         config: {}
         template: comp-slate-video-block
         label: Template → [Block] Slate Video
-      label: Left Column
-      description: Left column content is editable within this section
+      label: Column 1
     - name: col_2
       type: field_group
       config: {}
@@ -240,8 +222,7 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Right Column
-      description: Right column content is editable within this section
+      label: Column 2
   - type: field_group
     name: callout
     label: Callout
@@ -251,14 +232,12 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
     - type: text
       name: classNames
       label: classNames
-      description: Changes in this field can affect the section layout. DO NOT EDIT
     - type: field_group
       name: col_1
-      label: Content
+      label: Column 1
       fields:
       - type: text
         name: type
@@ -266,7 +245,6 @@ fields:
       - type: field_group
         name: cols
         label: Columns
-        description: DO NOT EDIT
         fields:
         - type: text
           name: num
@@ -282,10 +260,9 @@ fields:
           - type: text
             name: name
             label: Name
-            description: Descriptive name for the section. This will not be visible on the page
           - type: field_group
             name: props
-            label: Options
+            label: Props
             fields:
             - type: file
               name: img_left
@@ -293,57 +270,45 @@ fields:
             - type: text
               name: label
               label: label
-              description: This text will appear at the top of the right side of the section
             - type: text
               name: text_1
               label: text_1
-              description: Heading text that will show above the social icons
             - type: text
               name: text_2
               label: text_2
-              description: Heading text that will show below the social icons
             - type: field_group
               name: form
               label: form
-              description: Click to edit the contact form
               fields:
               - type: text
                 name: name
                 label: Name
-                description: Descriptive name for the form. This will not be visible on the page
               - type: field_group
                 name: props
-                label: Form Builder
+                label: Props
                 fields:
                 - type: field_group_list
                   name: fields
                   label: Fields
-                  description: Click "Add Field" to add another input field to the contact form
                   fields:
                   - type: text
                     name: label
                     label: label
-                    description: Input-field label/description
                   - type: text
                     name: for
                     label: for
-                    description: Optionally write what the field is intended for
                   - type: text
                     name: validation
                     label: validation
-                    description: Input-field prompt (ex. *Required, if the field must be filled to send the form)
                 - type: text
                   name: action
                   label: Action
-                  description: The address or endpoint the form will be sent to when submitted
                 - type: text
                   name: message
                   label: Message
-                  description: The message displayed when a form is successfully submitted
                 - type: text
                   name: submit
                   label: Submit
-                  description: The text of the for submit button
   - type: field_group
     name: latest_news
     label: Latest News
@@ -353,7 +318,6 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
     - name: col_1
       type: field_group
       config: {}
@@ -363,6 +327,6 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Content
+      label: Column 1
 pages:
 - content/pages/index.json

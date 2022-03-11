@@ -7,23 +7,19 @@ fields:
   config: {}
   template: data-seo
   label: Template → [Data] SEO
-  description: SEO and metadata
 - name: og
   type: include
   config: {}
   template: data-open-graph-social
   label: Template → [Data] Open Graph & Social
-  description: Open Graph Metadata
 - name: header
   type: include
   config: {}
   template: comp-header-variant-4
   label: Template → [Comp] Header Variant 4
-  description: The page's header content is editable within this section
 - type: field_group
   name: page_content
   label: Page Content
-  description: The visible content on the page is editable within this section.
   fields:
   - type: field_group
     name: mission
@@ -31,7 +27,7 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Content
+      label: Column 1
       fields:
       - name: text_block
         type: include
@@ -44,8 +40,7 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Left column
-      description: The left column content is editable within this section
+      label: Column 1
       fields:
       - name: image_block
         type: include
@@ -54,8 +49,7 @@ fields:
         label: Template → [Block] Image
     - type: field_group
       name: col_2
-      label: Right column
-      description: The right column content is editable within this section
+      label: Column 2
       fields:
       - name: text_block
         type: include
@@ -68,7 +62,7 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Content
+      label: Column 1
       fields:
       - name: text_block
         type: include
@@ -80,8 +74,7 @@ fields:
     label: Project Areas
     fields:
     - type: field_group
-      name: Left column
-      description: The left column content is editable within this section
+      name: col_1
       fields:
       - name: text_block
         type: include
@@ -91,8 +84,7 @@ fields:
       label: Column 1
     - type: field_group
       name: col_2
-      label: Right column
-      description: The right column content is editable within this section
+      label: Column 2
       fields:
       - name: image_block
         type: include
@@ -101,11 +93,11 @@ fields:
         label: Template → [Block] Image
   - type: field_group
     name: accordion_1
-    label: Sectors Accordion
+    label: Accordion 1
     fields:
     - type: field_group
       name: col_1
-      label: Content
+      label: Column 1
       fields:
       - name: accordion_block
         type: include
@@ -121,11 +113,9 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
     - type: field_group
       name: col_1
-      label: Left column
-      description: Left column content is editable within this section
+      label: Column 1
       fields:
       - name: image_block
         type: include
@@ -134,8 +124,7 @@ fields:
         label: Template → [Block] Image
     - type: field_group
       name: col_2
-      label: Right column
-      description: Right column content is editable within this section
+      label: Column 2
       fields:
       - name: text_block
         type: include
@@ -148,8 +137,7 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Left column
-      description: Left column content is editable within this section
+      label: Column 1
       fields:
       - name: text_block
         type: include
@@ -158,8 +146,7 @@ fields:
         label: Template → [Block] Text
     - type: field_group
       name: col_2
-      label: Right column
-      description: Right column content is editable within this section
+      label: Column 2
       fields:
       - name: image_block
         type: include
@@ -168,11 +155,11 @@ fields:
         label: Template → [Block] Image
   - type: field_group
     name: accordion_2
-    label: Application Guidance Accordion
+    label: Accordion 2
     fields:
     - type: field_group
       name: col_1
-      label: Content
+      label: Column 1
       fields:
       - name: accordion_block
         type: include

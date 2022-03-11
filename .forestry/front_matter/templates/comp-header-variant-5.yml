@@ -26,7 +26,6 @@ fields:
       schema:
         format: markdown
     label: Description
-    description: Enter the page description of subheading
   - name: nav_theme
     type: select
     default: dark
@@ -41,7 +40,6 @@ fields:
         file: 
         path: 
     label: Nav Theme
-    description: Select the navigation text color from the dropdown menu - "dark" will make the text in the nav black | "light" will make the text in the nav white
   - name: sub_theme
     type: select
     default: purple-green
@@ -56,5 +54,4 @@ fields:
         file: 
         path: 
     label: Sub Theme
-    description: Select the gradient colors of the shapes in the header
   label: Header

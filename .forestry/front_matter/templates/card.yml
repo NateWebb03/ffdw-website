@@ -17,7 +17,6 @@ fields:
       file: 
       path: 
   label: Type
-  description: Select the card type from the dropdwon menu.     (A) →  | (B) →  (ex. Latest News section on Explore page) | (C) → (ex. Interactive Tutorials seciton on Explore page)
 - name: size
   type: select
   default: full
@@ -32,7 +31,6 @@ fields:
       file: 
       path: 
   label: Size
-  description: Full is the default size for cards. For card type A, you have the option to select compact as the size - this will reduce the size of the content and image as well as reduce font sizes
 - name: action
   type: select
   default: div
@@ -48,25 +46,21 @@ fields:
       file: 
       path: 
   label: Action
-  description: The HTML tag of the card. Select "a" for the card to link to a page outside of the site | "nuxt-link" for the card to link to an internal page | "div" if the card is not clickable
 - name: url
   type: text
   config:
     required: false
   label: URL
-  description: If action is set to "a" or "nuxt-link" enter the link that the user is taken to when the card is clicked
 - name: img
   type: file
   config:
     maxSize: 0.75
   label: Image
-  description: Choose the image displayed in the card
 - name: label
   type: text
   config:
     required: false
   label: Label
-  description: Text displayed above the title 
 - name: icon
   type: select
   default: []
@@ -83,19 +77,16 @@ fields:
       file: 
       path: 
   label: Icon
-  description: Optionally select an icon that will be displayed to the left of the title
 - name: title
   type: text
   config:
     required: false
   label: Title
-  description: Title for card content
 - name: title_suffix
   type: text
   config:
     required: false
   label: Title Suffix
-  description: Text that will appear after the title, inline and unbolded
 - name: description
   type: textarea
   default: ''
@@ -105,11 +96,10 @@ fields:
     schema:
       format: markdown
   label: Description
-  description: Main text content of card
 - name: date
   type: datetime
   label: Date
-  description: Select date - this date will be displayed below the text content
+  description: ''
   config:
     required: false
     date_format: 
@@ -124,7 +114,6 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-    description: Select date - this date will be displayed above the text content
 - name: theme
   type: select
   default: purple-green
@@ -140,7 +129,6 @@ fields:
       file: 
       path: 
   label: Theme
-  description: Select the colors of the background gradient
 - name: ctas
   type: field_group_list
   fields:
@@ -154,4 +142,3 @@ fields:
     max: 
     labelField: text
   label: CTAs
-  description: Click "Add CTA" to add and populate a button in the card
