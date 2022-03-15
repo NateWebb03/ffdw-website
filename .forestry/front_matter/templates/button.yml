@@ -28,7 +28,21 @@ fields:
       file: 
       path: 
   label: Type
-  description: Select the button's type from the dropdown menu. (A) → Primary CTA, with gradients (ex. Accordion on Home page) | (B) → Same as the Primary CTA except black artifacts (ex. CTA in Header of Home page) | (C) → Secondary CTA, usually clear with a white border (ex. just above Footer on Home page) | (D) → Tertiary CTA, almost no styling except font-weight and color (ex. careers list) | (E) → Navigation [top-level] (Nav + Footer) | (F) → Navigation [subnav] (Nav) | (X) → No styling + slot
+  description: |
+  Select the button's type from the dropdown menu.       
+  A:  Primary CTA, with gradients (ex. Accordion on Home page) 
+
+  B: Same as the Primary CTA except black artifacts (ex. CTA in Header of Home page) 
+
+  C: Secondary CTA, usually clear with a white border (ex. just above Footer on Home page) 
+
+  D: Tertiary CTA, almost no styling except font-weight and color (ex. careers list) 
+
+  E: Navigation [top-level] (Nav + Footer) 
+
+  F: Navigation [subnav] (Nav) 
+
+  X: No styling + slot
 - name: action
   type: select
   default: []

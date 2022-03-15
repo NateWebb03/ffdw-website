@@ -25,7 +25,7 @@ fields:
 - name: tint
   type: boolean
   label: Tint
-  description: 
+  description: Toggle this on to add a darker blue overlay over preview image (this toggle will be green when the tint is enabled and grey when disabled).
 - name: button
   type: field_group
   config: {}
@@ -59,13 +59,13 @@ fields:
     config:
       required: false
     label: Text
-    description: Button text
+    description: Do not change. This field is only visible to Forestry admins.
   - name: url
     type: text
     config:
       required: false
     label: URL
-    description: Enter the link that the user is taken to, when the button is clicked
+    description: Do not change. This field is only visible to Forestry admins.
   label: Button
 - name: title
   type: text
