@@ -15,7 +15,7 @@ fields:
   config: {}
   template: columns
   label: Columns
-  description: DO NOT EDIT
+  description: Changes to this field may affect the section layout. DO NOT EDIT
 - name: data_id
   type: text
   config:
