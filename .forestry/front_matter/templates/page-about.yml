@@ -23,6 +23,7 @@ fields:
 - type: field_group
   name: careers
   label: Careers
+  description: The Careers section is displayed above the footer. The header text and button for the Careers section is editable here.
   fields:
   - type: textarea
     name: heading
@@ -37,7 +38,8 @@ fields:
   fields:
   - type: field_group
     name: intro_1
-    label: Intro 1
+    label: About FFDW
+    description: This section appears directly below the header and consist of a text-block on the left and image block on the right.
     fields:
     - name: grid
       type: include
@@ -97,10 +99,12 @@ fields:
         label: Template → [Block] Text
       label: Right column
       description: Right column content is editable within this section
-    label: Intro 2
+    label: Introduction
+    description: This section appears directly below the About FFDW section and consists of an image-block on the left and a text-block on the right
   - type: field_group
     name: vision_1
-    label: Vision 1
+    label: Vision Header
+    description: This section consists of a large centered text-block and acts as the header for the Vision section
     fields:
     - name: grid
       type: include
@@ -120,7 +124,8 @@ fields:
       label: Content
   - type: field_group
     name: vision_2
-    label: Vision 2
+    label: Vision Content
+    description: This section is a continuation of the one above (Vision Header) and consists of a text-block between two image-blocks
     fields:
     - name: grid
       type: include
@@ -137,7 +142,7 @@ fields:
         template: image-block
         label: Template → [Block] Image
       label: Left Column
-      description: Left column content editable in this section
+      description: Left image is editable in this section (portrait images will work best)
     - name: col_2
       type: field_group
       config: {}
@@ -157,12 +162,12 @@ fields:
         type: include
         config: {}
         template: image-block
-        label: Template → [Block] Text
+        label: Template → [Block] Image
       label: Right column
-      description: Right column content it editable within this section
+      description: Right image is editable within this section (portrait images will work best)
   - type: field_group
     name: board_1
-    label: Board 1
+    label: Board Header
     fields:
     - name: grid
       type: include
@@ -182,7 +187,7 @@ fields:
       descritpion: Board of Directors heading is editable within this section
   - type: field_group
     name: board_2
-    label: Board 2
+    label: Board Profiles
     fields:
     - name: grid
       type: include
@@ -267,7 +272,8 @@ fields:
       description: Board of Directors list is editable within this section
   - type: field_group
     name: advisors_1
-    label: Advisors 1
+    label: Advisors Header
+    descritpion: Board of Directors heading is editable within this section
     fields:
     - name: grid
       type: include
@@ -287,7 +293,7 @@ fields:
       description: Advisors header is editable in this section
   - type: field_group
     name: advisors_2
-    label: Advisors 2
+    label: Advisor Profiles
     description: Advisors list is editable in this section
     fields:
     - name: grid

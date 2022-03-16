@@ -53,10 +53,12 @@ fields:
         config: {}
         template: image-block
         label: Template → [Block] Image
-    label: Intro 1
+    label: Intro
+    description: The first content section on the page. The section consists of a large text-block on the left and an image-block on the right
   - type: field_group
     name: intro_2
-    label: Intro 2
+    label: Mission
+    description: The section appears directly below intro and consists of an image-block on the left and a text-block on the right
     fields:
     - name: grid
       type: include
@@ -99,6 +101,7 @@ fields:
   - type: field_group
     name: callout
     label: Callout
+    description: This section appears directly below the card section and consists of an image-block on the left and text with a gradient background on the right. The image, label and button are editable here.
     fields:
     - name: grid
       type: include
@@ -167,7 +170,8 @@ fields:
               description: Click to edit section button
   - type: field_group
     name: grants_1
-    label: Grants 1
+    label: Grants
+    description: This section appears above the careers section and consist of a text-block on the left, image-block on the right and an accordion
     fields:
     - name: grid
       type: include
@@ -210,6 +214,7 @@ fields:
 - type: field_group
   name: careers
   label: Careers
+  description: This section appears after the Grants accordion. The heading and color theme are editable here.
   fields:
   - type: textarea
     name: heading

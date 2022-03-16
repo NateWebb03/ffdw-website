@@ -41,6 +41,7 @@ fields:
   - type: field_group
     name: info_1
     label: Info 1
+    description: Directly follows the Mission section, consist of an image-block in left column and a text-block in the right column.
     fields:
     - type: field_group
       name: col_1
@@ -65,6 +66,7 @@ fields:
   - type: field_group
     name: info_2
     label: Info 2
+    description: Full width text block section with purple rectangle down right side
     fields:
     - type: field_group
       name: col_1
@@ -101,7 +103,8 @@ fields:
         label: Template → [Block] Image
   - type: field_group
     name: accordion_1
-    label: Sectors Accordion
+    label: Lines of Effort Accordion
+    description: Edit the accordion that highlights the various types of projects FFDW works with
     fields:
     - type: field_group
       name: col_1

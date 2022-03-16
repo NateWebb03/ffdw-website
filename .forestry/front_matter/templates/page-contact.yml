@@ -27,7 +27,8 @@ fields:
   fields:
   - type: field_group
     name: learn_1
-    label: Learn 1
+    label: Points of Contact
+    description: This seciton consist of three columns divided by white lines
     fields:
     - type: field_group
       name: col_1
@@ -88,7 +89,7 @@ fields:
         label: Template → [Block] Image
         description: The image block content is editable within this section
     label: Form Header Section
-    description: The form header is editable within this section
+    description: The form header and description is editable within this section
   - type: field_group
     name: form
     label: Form

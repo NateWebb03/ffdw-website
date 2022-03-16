@@ -28,6 +28,7 @@ fields:
   - type: field_group
     name: about_1
     label: About
+    description: Hero section of home page
     fields:
     - name: grid
       type: include
@@ -48,6 +49,7 @@ fields:
   - type: field_group
     name: intro_1
     label: Intro Section Top Image
+    description: The top image of the intro section depicting centralization vs decentralization
     fields:
     - name: grid
       type: include
@@ -66,6 +68,7 @@ fields:
   - type: field_group
     name: intro_2
     label: Intro Section Main Content
+    descritpion: The three columns introducing FFDW and depicting centralization vs. decralization are editable within this section
     fields:
     - name: grid
       type: include
@@ -109,6 +112,7 @@ fields:
   - type: field_group
     name: explore_1
     label: Explore
+    description: Explore the Dweb section 
     fields:
     - name: grid
       type: include
@@ -141,6 +145,7 @@ fields:
   - type: field_group
     name: accordion_1
     label: Sectors Accordion
+    description: Edit the accordion that highlights the various sectors in which FFDW is involved
     fields:
     - name: grid
       type: include
@@ -173,6 +178,7 @@ fields:
   - type: field_group
     name: grants
     label: Grants
+    description: The three columns of the grants section (image, text-block, image) are editable here
     fields:
     - name: grid
       type: include
@@ -213,6 +219,7 @@ fields:
   - type: field_group
     name: spotlight
     label: Spotlight
+    description: This section highlights a current partnership (contains a video block and text block)
     fields:
     - name: grid
       type: include
@@ -244,7 +251,8 @@ fields:
       description: Right column content is editable within this section
   - type: field_group
     name: callout
-    label: Callout
+    label: Get Involved
+    description: This section contains the social links and a contact form
     fields:
     - name: grid
       type: include
@@ -347,6 +355,7 @@ fields:
   - type: field_group
     name: latest_news
     label: Latest News
+    description: The header and descriptions for the featured blog posts section is editable here.
     fields:
     - name: grid
       type: include

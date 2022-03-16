@@ -28,6 +28,7 @@ fields:
   - type: field_group
     name: learn_1
     label: Learn 1
+    description: First content section on the page. Section consists of a large centered text-block
     fields:
     - name: col_1
       type: field_group
@@ -43,6 +44,7 @@ fields:
   - type: field_group
     name: learn_2
     label: Learn 2
+    description: This section appears directly below the large text block and consists of a text-block between two image-blocks
     fields:
     - name: grid
       type: include
@@ -80,6 +82,7 @@ fields:
   - type: field_group
     name: learn_3
     label: Learn 3
+    description: This section is a continuation of Learn 2 and consists of a small centered text-block
     fields:
     - type: field_group
       name: col_1
@@ -92,7 +95,8 @@ fields:
         label: Template → [Block] Text
   - type: field_group
     name: videos_1
-    label: Videos Section Header
+    label: Videos Resources Header
+    description: The header and description for the video is editable within this section
     fields:
     - type: field_group
       name: col_1
@@ -106,7 +110,8 @@ fields:
         description: The text block content is editable within this section
   - type: field_group
     name: videos_2
-    label: Videos Section Content
+    label: Videos Resources Content
+    description: The video being displayed is editable within this section
     fields:
     - type: field_group
       name: col_1
@@ -119,7 +124,8 @@ fields:
         label: Template → [Block] Slate Video
   - type: field_group
     name: callout
-    label: Callout
+    label: Partnerships Callout
+    description: This section consists of an image-block on the left and a text-block with logo grid on the right
     fields:
     - name: grid
       type: include
@@ -153,7 +159,7 @@ fields:
         fields:
         - type: field_group
           name: careers
-          label: Careers
+          label: Callout Content
           fields:
           - type: text
             name: name
@@ -193,7 +199,8 @@ fields:
             hidden: false
   - type: field_group
     name: tutorials_1
-    label: Tutorials 1
+    label: Tutorials Header
+    description: The header and description for the tutorial cards is editable within this section
     fields:
     - type: field_group
       name: col_1
@@ -216,10 +223,12 @@ fields:
         config: {}
         template: block-card-list
         label: Template → [Block] Card List
-    label: Tutorials 2
+    label: Tutorial Cards
+    description: Edit existing/add new tutorial card(s) within this section
   - type: field_group
     name: latest_news
     label: Latest News
+    description: The header and description for the featured blog posts section is editable here.
     fields:
     - type: field_group
       name: col_1
