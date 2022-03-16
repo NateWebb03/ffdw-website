@@ -53,7 +53,8 @@ fields:
       label: Template → [Layout] Grid Alignment
     - type: field_group
       name: image_left
-      label: Image Left
+      label: Image Left 
+      description: Portrait images will work best
       fields:
       - name: image_block
         type: include
@@ -73,6 +74,7 @@ fields:
     - type: field_group
       name: image_right
       label: Image Right
+      description: Portrait images will work best
       fields:
       - name: image_block
         type: include

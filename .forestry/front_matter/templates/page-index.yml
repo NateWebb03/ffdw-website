@@ -49,7 +49,7 @@ fields:
   - type: field_group
     name: intro_1
     label: Intro Section Top Image
-    description: The top image of the intro section depicting centralization vs decentralization
+    description: The top image of the intro section depicting centralization vs decentralization 
     fields:
     - name: grid
       type: include
@@ -59,6 +59,7 @@ fields:
     - type: field_group
       name: col_1
       label: Content
+      description: The image-block is editable within this section (landscape orientation is best)
       fields:
       - name: image_block
         type: include
@@ -86,7 +87,7 @@ fields:
         template: image-block
         label: Template → [Block] Image
       label: Left column
-      description: Left column content is editable within this section
+      description: Left image-block is editable within this section (portrait orientation is best)
     - name: col_2
       type: field_group
       config: {}
@@ -108,7 +109,7 @@ fields:
         template: image-block
         label: Template → [Block] Image
       label: Right column
-      description: Right column content is editable within this section
+      description: Right image-block is editable within this section (portrait orientation is best)
   - type: field_group
     name: explore_1
     label: Explore
@@ -141,7 +142,7 @@ fields:
         template: image-block
         label: Template → [Block] Image
       label: Right column
-      description: Right column content is editable within this section
+      description: The image-block is editable within this section (portrait orientation is best)
   - type: field_group
     name: accordion_1
     label: Sectors Accordion
@@ -178,7 +179,7 @@ fields:
   - type: field_group
     name: grants
     label: Grants
-    description: The three columns of the grants section (image, text-block, image) are editable here
+    description: The three columns of the Grants section are editable here. The section consist of a text-block between two image-blocks
     fields:
     - name: grid
       type: include
@@ -196,6 +197,7 @@ fields:
         template: image-block
         label: Template → [Block] Image
       label: "Image Left"
+      description: The left image-block is editable within this section (portrait orientation is best)
     - name: text
       type: field_group
       config: {}
@@ -216,6 +218,7 @@ fields:
         template: image-block
         label: Template → [Block] Image
       label: "Image Right"
+      description: The right image-block is editable within this section (portrait orientation is best)
   - type: field_group
     name: spotlight
     label: Spotlight

@@ -56,7 +56,7 @@ fields:
     - type: field_group
       name: col_2
       label: Right column
-      description: The right column content is editable within this section
+      description: The image-block content is editable within this section (portrait images will work best)
       fields:
       - name: text_block
         type: include
@@ -94,7 +94,7 @@ fields:
     - type: field_group
       name: col_2
       label: Right column
-      description: The right column content is editable within this section
+      description: The image-block is editable within this section (portrait images will work best)
       fields:
       - name: image_block
         type: include
@@ -128,7 +128,7 @@ fields:
     - type: field_group
       name: col_1
       label: Left column
-      description: Left column content is editable within this section
+      description: The image-block is editable within this section (portrait images will work best)
       fields:
       - name: image_block
         type: include
@@ -162,7 +162,7 @@ fields:
     - type: field_group
       name: col_2
       label: Right column
-      description: Right column content is editable within this section
+      description: The image-block is editable within this section (portrait images will work best)
       fields:
       - name: image_block
         type: include

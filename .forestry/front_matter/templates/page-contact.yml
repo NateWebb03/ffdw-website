@@ -80,7 +80,7 @@ fields:
     - type: field_group
       name: col_2
       label: Right column
-      description: The right column content is editable within this section
+      description: The image-block is editable within this section (portrait images will work best)
       fields:
       - name: image_block
         type: include

@@ -67,7 +67,7 @@ fields:
         template: image-block
         label: Template → [Block] Image
       label: Right Column
-      description: Right column content is editable within this section
+      description: The image-block is editable within this section (portrait images will work best)
   - name: intro_2
     type: field_group
     config: {}
@@ -87,7 +87,7 @@ fields:
         template: image-block
         label: Template → [Block] Image
       label: Left Column
-      description: Left column content is editable within this section
+      description: The image block is editable within this section (portrait images will work best)
     - name: col_2
       type: field_group
       config: {}
@@ -142,7 +142,7 @@ fields:
         template: image-block
         label: Template → [Block] Image
       label: Left Column
-      description: Left image is editable in this section (portrait images will work best)
+      description: The left image is editable in this section (portrait images will work best)
     - name: col_2
       type: field_group
       config: {}
@@ -164,7 +164,7 @@ fields:
         template: image-block
         label: Template → [Block] Image
       label: Right column
-      description: Right image is editable within this section (portrait images will work best)
+      description: The right image is editable within this section (portrait images will work best)
   - type: field_group
     name: board_1
     label: Board Header
