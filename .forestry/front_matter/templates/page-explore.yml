@@ -19,7 +19,8 @@ fields:
   config: {}
   template: comp-header-variant-4
   label: Template → [Comp] Header Variant 4
-  description: The page's header content is edited in this section
+  description: >
+    The page's header content is edited in this section
 - type: field_group
   name: page_content
   label: Page Content

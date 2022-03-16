@@ -19,7 +19,8 @@ fields:
   config: {}
   template: comp-header-variant-1
   label: Template → [Comp] Header Variant 1
-  description: The page's header content is editable within this section
+  description: >
+    The page's header content is editable within this section
 - type: field_group
   name: page_content
   label: Page Content
