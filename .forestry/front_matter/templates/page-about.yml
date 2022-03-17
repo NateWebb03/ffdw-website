@@ -35,7 +35,6 @@ fields:
 - type: field_group
   name: page_content
   label: Page Content
-  description: The visible content on the page is editable within this section.
   fields:
   - type: field_group
     name: intro_1
@@ -56,8 +55,7 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Left Column
-      description: Left column content is editable within this section
+      label: Column 1
     - name: col_2
       type: field_group
       config: {}
@@ -121,8 +119,7 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-        description: The text block is editable within this section.
-      label: Content
+      label: Column 1
   - type: field_group
     name: vision_2
     label: Vision Content
@@ -153,8 +150,7 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Middle column
-      description: Middle column content is editable within this section
+      label: Column 2
     - name: col_3
       type: field_group
       config: {}
@@ -184,8 +180,7 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Content
-      descritpion: Board of Directors heading is editable within this section
+      label: Column 1
   - type: field_group
     name: board_2
     label: Board Profiles
@@ -269,8 +264,7 @@ fields:
           max: 
           labelField: 
         label: Sections
-      label: Content
-      description: Board of Directors list is editable within this section
+      label: Column 1
   - type: field_group
     name: advisors_1
     label: Advisors Header
@@ -290,8 +284,7 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Content
-      description: Advisors header is editable in this section
+      label: Column 1
   - type: field_group
     name: advisors_2
     label: Advisor Profiles
@@ -305,12 +298,10 @@ fields:
     - type: text
       name: classNames
       label: classNames
-      description: Class names that will be applied to the page HTML
     - name: card_list_block
       type: include
       config: {}
       template: block-card-list
       label: Template → [Block] Card List
-      description: Click "Add card" to populate another card in the list
 pages:
 - content/pages/about.json

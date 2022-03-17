@@ -23,7 +23,6 @@ fields:
     config:
       required: false
     label: Label
-    description: The text that will show when the accordion seciton is closed
   - name: content
     type: textarea
     default: ''
@@ -33,10 +32,8 @@ fields:
       schema:
         format: markdown
     label: Content
-    description: The content that will appear when the section is clicked and expands
   config:
     min: 
     max: 
     labelField: 
   label: Sections
-  description: Click "Add Section" to add another section to the accordion

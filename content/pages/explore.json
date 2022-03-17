@@ -12,7 +12,7 @@
   "header": {
     "type": "variant_4",
     "heading": "Explore",
-    "subheading": "The DWeb",
+    "subheading": "the DWeb",
     "image_1": "/images/component-header/engineer-coding.jpg",
     "nav_theme": "light",
     "sub_theme": "red-green"
@@ -176,7 +176,7 @@
               "text": "Some of the groups we work with to grow Web3",
               "logos": [
                 "/images/page-explore/freedom-of-the-press-foundation-logo.png",
-                "/images/page-explore/hrdag-logo.png",
+                "/images/page-explore/HRDAG-logo.png",
                 "/images/page-explore/guardian-project-logo.png",
                 "/images/page-explore/starling-lab-logo.png",
                 "/images/page-explore/DFC-logo.png",

@@ -9,7 +9,6 @@ fields:
   label: Type
   hidden: true
   default: slate_video_block
-  description: Do not change. This field is only visible to Forestry admins.
 - name: slatename
   type: text
   config:

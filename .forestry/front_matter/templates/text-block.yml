@@ -9,7 +9,6 @@ fields:
   hidden: true
   label: Type
   default: text_block
-  description: Do not change. This field is only visible to Forestry admins.
 - name: cols
   type: include
   config: {}
@@ -39,7 +38,6 @@ fields:
       file: 
       path: 
   label: Format
-  description: Edit the size of the heading text (header- h1, medium - h2(default), small - h3, tiny - h4)
 - name: theme
   type: select
   default: purple-green
@@ -74,7 +72,6 @@ fields:
       file: 
       path: 
   label: Button Theme
-  description: Select the background color(s) for the buttons
 - name: icon
   type: select
   default: []
@@ -90,7 +87,6 @@ fields:
       file: 
       path: 
   label: Icon
-  description: Optionally select an icon from the dropdown menu which will be displayed above the header
   showOnly:
     field: format
     value: small
@@ -99,7 +95,6 @@ fields:
   config:
     required: false
   label: Label
-  description: text displayed above the heading and below the icon
 - name: heading
   type: textarea
   default: ''
@@ -109,11 +104,10 @@ fields:
     schema:
       format: markdown
   label: Heading
-  description: text block heading
 - name: date
   type: datetime
   label: Date
-  description: Optionally select a date that will be displayed below the label
+  description: ''
   config:
     required: false
     date_format: 
@@ -134,7 +128,6 @@ fields:
     schema:
       format: markdown
   label: Subheading
-  description: Text block subheading
 - name: description
   type: textarea
   default: ''
@@ -144,7 +137,6 @@ fields:
     schema:
       format: markdown
   label: Description
-  description: Text block paragraph content
 - name: ctas
   type: field_group_list
   fields:
@@ -158,4 +150,3 @@ fields:
     max: 
     labelField: 
   label: CTAs
-  description: Click "Add CTA" to add a button to the text block

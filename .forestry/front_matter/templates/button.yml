@@ -1,6 +1,5 @@
 ---
 label: "[Comp] Button"
-description: A clickable element that can be linked to internal or external pages
 hide_body: true
 fields:
 - name: text
@@ -8,7 +7,6 @@ fields:
   config:
     required: false
   label: Text
-  description: The button's text
 - name: type
   type: select
   default: []
@@ -58,7 +56,6 @@ fields:
       file: 
       path: 
   label: Action
-  description: The HTML tag of the element. Select "a" to link to a page outside of the site and "nuxt-link" to link to an internal page. "Button" is reserved for advanced functionality.
 - name: theme
   type: select
   default: []
@@ -76,7 +73,6 @@ fields:
       file: 
       path: 
   label: Theme
-  description: Select the color/gradient for the button
 - name: icon_before
   type: select
   default: []
@@ -92,7 +88,6 @@ fields:
       file: 
       path: 
   label: Icon - Before
-  descrpiton: Select the icon that will appear above or to the left of the button on hover
 - name: icon_after
   type: select
   default: []
@@ -108,10 +103,8 @@ fields:
       file: 
       path: 
   label: Icon - After
-  description: Select the icon that will appear below or to the right of the button on hover
 - name: url
   type: text
   config:
     required: false
   label: URL
-  description: Enter the link that the user is taken to, when the button is clicked
