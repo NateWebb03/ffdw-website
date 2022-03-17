@@ -17,6 +17,16 @@ fields:
       file: 
       path: 
   label: Type
+  description: |
+    There are several card formats to choose from, each of which has a different visual appaerance, and may be content-specific (i.e., not all cards will always fit correctly in every section).
+
+    For this block, we recommend card type _
+
+    A: (deprecated)
+
+    B: A full width card format that appears as a row, like the blog and news links throughout the site.
+
+    C: A rectangular card which typically appears in a two-per-row format on desktop screen sizes. This is visible on the Tutorials section of the Explore page.
 - name: size
   type: select
   default: full
