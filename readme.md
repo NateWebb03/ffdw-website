@@ -1,4 +1,4 @@
-# Filecoin Foundation for the Decentralized Web 
+# Filecoin Foundation for the Decentralized Web
 
 > Note: these docs will be expanded upon in a future iteration of the site
 
