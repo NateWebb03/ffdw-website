@@ -1,8 +1,8 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
-webhook_url: 
+admin_path:
+webhook_url:
 sections:
 - type: heading
   label: Site Data
@@ -35,14 +35,19 @@ sections:
   - page-grants
   - page-index
   - page-terms
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: static/images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  install_dependencies_command: npm install
+  preview_env:
+  - NODE_ENV=production
+  - SERVER_ENV=production
+  - SLATE_KEY=SLAbf984977-fba2-4989-881d-5af21f29f777TE
+  preview_output_directory: dist
+  install_dependencies_command: npm ci
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm run develop
+  instant_preview_command: npm run generate
