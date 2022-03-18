@@ -19,5 +19,6 @@ fields:
   config: {}
   template: comp-header-variant-3
   label: Template → [Comp] Header Variant 1
+  description: Header content of the blog index page is editable in this section
 pages:
 - content/pages/blog.json

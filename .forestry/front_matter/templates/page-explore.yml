@@ -24,6 +24,7 @@ fields:
 - type: field_group
   name: page_content
   label: Page Content
+  description: The visible content on the page is editable within this section.
   fields:
   - type: field_group
     name: learn_1
@@ -39,7 +40,8 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Column 1
+        description: The text block content is editable within this section
+      label: Content
   - type: field_group
     name: learn_2
     label: Learn 2
@@ -63,6 +65,7 @@ fields:
     - type: field_group
       name: text
       label: Text
+      description: The text block is editable within this section
       fields:
       - name: text_block
         type: include
@@ -86,7 +89,7 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Content
       fields:
       - name: text_block
         type: include
@@ -100,13 +103,14 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Content
       fields:
       - name: text_block
         type: include
         config: {}
         template: text-block
         label: Template → [Block] Text
+        description: The text block content is editable within this section
   - type: field_group
     name: videos_2
     label: Videos Resources Content
@@ -114,7 +118,7 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Content
       fields:
       - name: slate_video_block
         type: include
@@ -138,7 +142,7 @@ fields:
       default: full no-padding
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Content
       fields:
       - type: text
         name: type
@@ -165,9 +169,10 @@ fields:
             label: name
             hidden: true
             default: ExploreCallout
+            description: Do not change. This field is only visible to Forestry admins.
           - type: field_group
             name: props
-            label: Props
+            label: Fields
             fields:
             - type: file
               name: img_left
@@ -175,9 +180,11 @@ fields:
             - type: text
               name: label
               label: Label
+              description: Text will appear at the top of the right side of the section
             - type: text
               name: text
-              label: Text
+              label: Header
+              description: Section header
             - type: image_gallery
               name: logos
               label: Logos
@@ -191,6 +198,7 @@ fields:
                 template: button
                 label: Template → [Comp] Button
               label: CTA
+              description: Click to edit section button
             hidden: false
   - type: field_group
     name: tutorials_1
@@ -199,7 +207,7 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Content
       fields:
       - name: text_block
         type: include
@@ -211,7 +219,7 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Content
       fields:
       - name: card_list_block
         type: include
@@ -223,7 +231,6 @@ fields:
   - type: field_group
     name: latest_news
     label: Latest News
-    description: The header and description for the featured blog posts section is editable here.
     fields:
     - type: field_group
       name: col_1
@@ -233,6 +240,6 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Column 1
+      label: Content
 pages:
 - content/pages/explore.json

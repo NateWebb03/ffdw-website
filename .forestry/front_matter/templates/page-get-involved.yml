@@ -24,6 +24,7 @@ fields:
 - type: field_group
   name: page_content
   label: Page Content
+  description: The visible content on the page (except the careers section) is editable within this section.
   fields:
   - type: field_group
     name: intro_1
@@ -35,7 +36,8 @@ fields:
       label: Template → [Layout] Grid Alignment
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Left column
+      description: The left column content is editable within this section
       fields:
       - name: text_block
         type: include
@@ -76,7 +78,8 @@ fields:
         label: Template → [Block] Image
     - type: field_group
       name: col_2
-      label: Column 2
+      label: Right column
+      description: The right column content is editable within this section
       fields:
       - name: text_block
         type: include
@@ -85,11 +88,11 @@ fields:
         label: Template → [Block] Text
   - type: field_group
     name: intro_3
-    label: Intro 3
+    label: Link Cards
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Content
       fields:
       - name: card_list_block
         type: include
@@ -111,15 +114,17 @@ fields:
       label: classNames
       hidden: true
       default: full no-padding
+      description: Do not change. This field is only visible to Forestry admins.
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Content
       fields:
       - type: text
         name: type
         label: type
         hidden: true
         default: custom
+        description: Do not change. This field is only visible to Forestry admins.
       - name: cols
         type: include
         config: {}
@@ -141,7 +146,7 @@ fields:
             default: GetInvolvedCallout
           - type: field_group
             name: props
-            label: Props
+            label: Options
             fields:
             - type: file
               name: img_left
@@ -152,6 +157,7 @@ fields:
             - type: text
               name: label
               label: Label
+              description: Text that will display above the section's header text
             - name: cta
               type: field_group
               config: {}
@@ -162,6 +168,7 @@ fields:
                 template: button
                 label: Template → [Comp] Button
               label: CTA
+              description: Click to edit section button
   - type: field_group
     name: grants_1
     label: Grants
@@ -174,7 +181,8 @@ fields:
       label: Template → [Layout] Grid Alignment
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Left column
+      description: Left column content is editable within this section
       fields:
       - name: text_block
         type: include
@@ -197,7 +205,7 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Content
       fields:
       - name: accordion_block
         type: include
@@ -215,5 +223,6 @@ fields:
   - type: text
     name: theme
     label: Theme
+    description: Some elements in the section will reflect your color choice (Options - Green or Purple)
 pages:
 - content/pages/get-involved.json

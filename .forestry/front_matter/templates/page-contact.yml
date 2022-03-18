@@ -19,9 +19,11 @@ fields:
   config: {}
   template: comp-header-variant-2
   label: Template → [Comp] Header Variant 2
+  description: The header content of the page is editable within this section
 - type: field_group
   name: page_content
   label: Page Content
+  description: The visible content on the page is editable within this section
   fields:
   - type: field_group
     name: learn_1
@@ -30,47 +32,55 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Left column
+      description: The left text-block is editable within this section
       fields:
       - name: text_block
         type: include
         config: {}
         template: text-block
         label: Template → [Block] Text
+        description: The text block content is editable within this section
     - type: field_group
       name: col_2
-      label: Column 2
+      label: Middle column
+      descritpion: The middle text-block is editable within this section
       fields:
       - name: text_block
         type: include
         config: {}
         template: text-block
         label: Template → [Block] Text
+        description: The text block content is editable within this section
     - type: field_group
       name: col_3
-      label: Column 3
+      label: Right column
+      description: The right text-block is editable within this section
       fields:
       - name: text_block
         type: include
         config: {}
         template: text-block
         label: Template → [Block] Text
+        description: The text block content is editable within this section
   - type: field_group
     name: reach_1
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Left column
+      description: The form header text is editable within this section
       fields:
       - name: text_block
         type: include
         config: {}
         template: text-block
         label: Template → [Block] Text
+        description: The text block content is editable within this section
     - type: field_group
       name: col_2
       label: Right column
-      description: The image-block is editable within this section (portrait images will work best)
+      description: The form header image is editable within this section
       fields:
       - name: image_block
         type: include
@@ -93,6 +103,7 @@ fields:
         label: type
         hidden: true
         default: custom
+        description: Do not change. This field is only visible to Forestry admins.
       - name: cols
         type: include
         config: {}
@@ -101,7 +112,8 @@ fields:
         description: Changes to this field may affect the section layout. DO NOT EDIT
       - type: field_group
         name: customizations
-        label: Customizations
+        label: Form Customizations
+        description: The contact form is editable within this section
         fields:
         - type: field_group
           name: contactForm
@@ -113,18 +125,21 @@ fields:
             default: ContactForm
           - type: field_group
             name: props
-            label: Props
+            label: Form Builder
             fields:
             - type: field_group_list
               name: fields
               label: Fields
+              description: Click "Add Field" to add another input field to the contact form
               fields:
               - type: text
                 name: label
                 label: Label
+                description: Input-field label/description
               - type: text
                 name: validation
                 label: Validation Message
+                description: Input-field prompt (ex. *Required, if the field must be filled to send the form)
               - name: for
                 type: select
                 default: []
@@ -142,6 +157,7 @@ fields:
                     file: 
                     path: 
                 label: For
+                description: Optionally select what the field is intended for from the dropdown menu
               - name: component
                 type: text
                 config:
@@ -164,12 +180,16 @@ fields:
             - type: text
               name: action
               label: Action
+              description: The address or endpoint the form will be sent to when submitted
             - type: text
               name: message
               label: Submission Message
+              description: The message displayed when a form is successfully submitted
             - type: text
               name: submit
               label: Submit Button Text
+              description: The text of the for submit button
           label: Contact Form
+          descritpion: The contact form is editable within this section
 pages:
 - content/pages/contact.json
