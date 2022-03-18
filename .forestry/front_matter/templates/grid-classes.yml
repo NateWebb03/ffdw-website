@@ -27,4 +27,4 @@ fields:
     - equalHeight
     - noBottom
   label: Grid Classes
-  description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+  description: These options change CSS classes and will affect the site layout. DO NOT EDIT.
