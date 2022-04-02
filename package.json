@@ -14,7 +14,7 @@
     "generate": "node_modules/.bin/nuxt generate --fail-on-error"
   },
   "engines": {
-    "node": ">=16.13.0"
+    "node": ">=16.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.3",
