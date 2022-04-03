@@ -176,6 +176,16 @@ export default {
 
 ::v-deep .description {
   @include p3;
+  a {
+    border-bottom: 1px solid $perfume;
+    padding-bottom: 0.25rem;
+    transition: all 0.125s ease;
+    &:hover {
+      padding-bottom: 0.125rem;
+      border-bottom: 1px dashed $perfume;
+      color: $perfume;
+    }
+  }
   ul {
     padding: 0.5rem 0 2rem 2rem;
     li {
