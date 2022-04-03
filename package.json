@@ -14,7 +14,7 @@
     "generate": "node_modules/.bin/nuxt generate --fail-on-error"
   },
   "engines": {
-    "node": ">=16.13.0"
+    "node": ">=16.0.0"
   },
   "dependencies": {
     "@agency-undone/au-nuxt-module-zero": "^1.0.17",
