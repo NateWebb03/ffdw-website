@@ -233,6 +233,14 @@ h4, .h4 {
   }
   a {
     @include fontWeight_Bold;
+    border-bottom: 1px solid $perfume;
+    padding-bottom: 0.25rem;
+    transition: all 0.125s ease;
+    &:hover {
+      padding-bottom: 0.125rem;
+      border-bottom: 1px dashed $perfume;
+      color: $perfume;
+    }
   }
   img[alt$="small"] {
     width: 50%;
@@ -281,18 +289,32 @@ h4, .h4 {
     }
   }
   li {
-    margin-bottom: 1.5rem;
-    padding-left: 2.875rem;
+    margin: 0 0 1.5rem 1rem;
+    padding-left: 2.25rem;
     list-style-type: none;
     position: relative;
+    line-height: 1.75;
     &:before {
       content: '';
       position: absolute;
       left: 0rem;
-      top: 0.625rem;
+      top: 0.5rem;
       width: 0.625rem;
       height: 0.625rem;
       @include gradient_Background_RedGreen;
+    }
+    li {
+      padding-left: 1.5rem;
+      margin: 0 0 0.75rem 0.75rem;
+      @include fontSize_Mini;
+      &:before {
+        top: 0.625rem;
+        width: 0.5rem;
+        height: 0.5rem;
+      }
+      &:first-child {
+        margin-top: 0.25rem;
+      }
     }
   }
   table {
@@ -317,6 +339,9 @@ h4, .h4 {
       padding: 0.5rem 1rem;
       vertical-align: top;
     }
+    @include mini {
+      transform: scale(0.75) translate(-30%,-20%);
+    }
   }
   pre {
     border: solid 1px #27234A;
@@ -336,6 +361,11 @@ h4, .h4 {
       &:before {
         @include gradient_Background_RedPurple;
       }
+      li {
+        &:before {
+          @include gradient_Background_PurpleGreen;
+        }
+      }
     }
     blockquote {
       p {
@@ -351,6 +381,11 @@ h4, .h4 {
     li {
       &:before {
         @include gradient_Background_PurpleGreen;
+      }
+      li {
+        &:before {
+          @include gradient_Background_RedPurple;
+        }
       }
     }
     blockquote {
