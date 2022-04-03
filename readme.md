@@ -26,7 +26,7 @@ To build this site locally
     - The site will be available in real time via a localhost URL
 
 ## URLs
-- Staging - `develop` builds to N/A
+- Staging - `develop` builds to `a non public url`
 - Production - `main` builds to `ffdweb.org`
 - Each PR will also generate an IPFS build preview link, so it can be validated before being merged
 
