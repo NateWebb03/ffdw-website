@@ -12,7 +12,7 @@
 
 ## Stack
 - Requires nodeJS and has been tested on node 16
-- Uses a Vue framework called nuxtJS, deployed in static mode
+- Uses a Vue framework, [nuxtJS](https://nuxtjs.org/), deployed in static mode
 
 ## Build
 To build this site locally
