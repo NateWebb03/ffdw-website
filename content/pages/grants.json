@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Grants - Filecoin Foundation for the Decentralized Web",
-    "description": ""
+    "description": "FFDW focuses its collaborations on charitable activities. Along with our core work providing grants and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships."
   },
   "og": {
     "site_name": "Grants - Filecoin Foundation for the Decentralized Web",
@@ -26,7 +26,7 @@
           "push_left": "off-1_sm-0"
         },
         "format": "small",
-        "description": "<p>The Filecoin Foundation for the Decentralized Web (FFDW) is launching a request for proposals (RFP) to identify the most compelling initiatives to partner with in four key areas: <ul><li><strong>Native Web3 Trainings</strong> — FFDW seeks to collaborate with initiatives training the next generation of native Web3 developers and builders in the decentralized ecosystem through virtual courses, seminars, bootcamps, and  hackathons.</li><li><strong>Web2 to Web3 Trainings</strong> — FFDW supports the creation of tools, programs, and learning materials aiming to welcome Web2 developers into the Web3 space. FFDW seeks to help existing developers bridge the web2-to-web3 skills gaps to help these developers participate and contribute within the greater decentralized ecosystem.</li><li><strong>Public Education</strong> — FFDW seeks to introduce the general public to the decentralized web, informing diverse audiences on the values, benefits and compelling use cases of decentralized technologies through accessible, open formats and various learning channels.</li><li><strong>Universities or GLAM institutions</strong> — FFDW endeavors to create a decentralized, digital library of humanity’s most important information. FFDW seeks to support initiatives that drive the development and use of technologies that enable decentralized storage, as well as cultural or academic institutions looking to preserve datasets or archives on the decentralized web that are available to, and in the interest of, the public.</li></ul></p><p>If your project or initiative would be a good fit for any of these areas, submit a completed proposal template by the dates listed below. Please submit your full proposal (including attachments) in word document(s) if possible. Let us know if you have any questions! Both questions and proposals should be sent to <a href='mailto:proposals@ffdweb.org?subject=Proposal' alt='Email proposal to FFDW'>proposals@ffdweb.org</a>.</p><ul><li>RFP Launch Date: April 8th, 2022</li><li>RFP Questions Due: April 22nd, 2022</li><li>RFP Answers Posted: April 27th, 2022</li><li>RFP Review Begins: May 16th, 2022</li><li>RFP Review Closes: May 31st, 2022</li></ul>"
+        "description": "<p>The Filecoin Foundation for the Decentralized Web (FFDW) is launching a request for proposals (RFP) to identify the most compelling initiatives to partner with in four key areas: <ul><li><strong>Native Web3 Trainings</strong> — FFDW seeks to collaborate with initiatives training the next generation of native Web3 developers and builders in the decentralized ecosystem through virtual courses, seminars, bootcamps, and  hackathons.</li><li><strong>Web2 to Web3 Trainings</strong> — FFDW supports the creation of tools, programs, and learning materials aiming to welcome Web2 developers into the Web3 space. FFDW seeks to help existing developers bridge the web2-to-web3 skills gaps to help these developers participate and contribute within the greater decentralized ecosystem.</li><li><strong>Public Education</strong> — FFDW seeks to introduce the general public to the decentralized web, informing diverse audiences on the values, benefits and compelling use cases of decentralized technologies through accessible, open formats and various learning channels.</li><li><strong>Universities or GLAM institutions</strong> — FFDW endeavors to create a decentralized, digital library of humanity’s most important information. FFDW seeks to support initiatives that drive the development and use of technologies that enable decentralized storage, as well as cultural or academic institutions looking to preserve datasets or archives on the decentralized web that are available to, and in the interest of, the public.</li></ul></p><p>If your project or initiative would be a good fit for any of these areas, submit a completed <a href='#proposal_template' alt='FFDW proposal template'>proposal template</a> by the dates listed below. Please submit your full proposal (including attachments) in word document(s) if possible. Let us know if you have any questions! Both questions and proposals should be sent to <a href='mailto:proposals@ffdweb.org?subject=Proposal' alt='Email proposal to FFDW'>proposals@ffdweb.org</a>.</p><ul><li>RFP Launch Date: April 8th, 2022</li><li>RFP Questions Due: April 22nd, 2022</li><li>RFP Answers Posted: April 27th, 2022</li><li>RFP Review Begins: May 16th, 2022</li><li>RFP Review Closes: May 31st, 2022</li></ul>"
       }
     },
     "mission": {
@@ -186,19 +186,19 @@
           },
           {
             "label": "Fit with FFDW’s objectives",
-            "content": "<ul><li>FFDW’s Mission is to “ensure the permanent preservation of humanity’s most important information by stewarding the development of open source software and open protocols for decentralized data storage and retrieval networks.” How will your proposed project further this mission? (Max 400 words)</li><li>How does this project connect to one of our larger objectives for the current year, including, for example, education about the importance of data storage, community engagement with the decentralized web, and innovative technical projects to further humanity’s access to knowledge? (Max 400 words)</li><li>Describe ways in which FFDW can collaborate with you in a meaningful way toward achieving your project goals? (Max 400 words)</li></ul>"
+            "content": "<ul><li>FFDW’s Mission is to “ensure the permanent preservation of humanity’s most important information by stewarding the development of open source software and open protocols for decentralized data storage and retrieval networks.” How will your proposed project further this mission? (max 400 words)</li><li>How does this project connect to one of our larger objectives for the current year, including, for example, education about the importance of data storage, community engagement with the decentralized web, and innovative technical projects to further humanity’s access to knowledge? (Max 400 words)</li><li>Describe ways in which FFDW can collaborate with you in a meaningful way toward achieving your project goals? (Max 400 words)</li></ul>"
           },
           {
             "label": "Describe your team",
-            "content": "<ul><li>Brief bios for your senior leadership. (Max five sentences per individual)</li><li>Do you anticipate any changes at the senior leadership level? If yes, please describe.</li><li>How many full-time staff members do you currently have? How many part-time staff members?</li><li>If you have a board, please include their names and brief bios. (Max 800 words)</li><li>What have you done to integrate diversity, equity, and inclusion in your organization and work? (max 500 words)</li><li>Who do you expect to devote significant time to this project? Please provide a brief bio.</li></ul>"
+            "content": "<ul><li>Brief bios for your senior leadership and your project’s key team members. What will be their roles and responsibilities for this project? (max four sentences per individual)</li><li>Do you anticipate any changes at the senior leadership level? If yes, please describe.</li><li>How many full-time staff members do you currently have? How many part-time staff members?</li><li>Please describe how your board of directors and staff reflect the people and communities this project serves in terms of race, ethnicity, class, gender, and/or lived experiences. If the board and/or staff currently do not reflect the people and communities this project serves, please share the policies and procedures you have in place to promote equity, diversity, and inclusion in your organization. (max 300 words)</li><li>Additionally, how have you included the same kinds of people in the planning of your initiatives as those this proposed project is serving? (max 300 words)</li></ul>"
           },
           {
             "label": "Past work",
-            "content": "<ul><li>Please share some of your relevant prior work.  (Max 800 words)</li></ul>"
+            "content": "<ul><li>Please share some of your relevant prior work. (max 500 words)</li></ul>"
           },
           {
             "label": "Finances",
-            "content": "<ul><li>Attach your organizational operating budget for the current year.</li><li>Attach a budget for this project using the attached sample budget.</li></ul>"
+            "content": "<ul><li>Attach your organizational operating budget for the current year.</li></ul>"
           },
           {
             "label": "Primary contact information (to be listed in contract)",
@@ -206,7 +206,7 @@
           },
           {
             "label": "Supporting documentation",
-            "content": "<ul><li>If you are a nonprofit, please provide your most recent tax return and a copy of your tax determination letter.<br><br>* denotes data that will be made public on our website if your project is funded.</li></ul>"
+            "content": "<ul><li>If you are a nonprofit, please provide your most recent tax return and a copy of your tax determination letter.<br><br>* denotes data that will be made public on our website if your project is funded. If your organization is sponsored by a nonprofit organization, please provide proof of fiscal sponsorship.</li></ul>"
           }
         ]
       }
