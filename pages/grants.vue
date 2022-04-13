@@ -66,7 +66,6 @@ export default {
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
 ::v-deep #info_0 {
-  display: none;
   padding-bottom: 3rem;
   @include small {
     padding-bottom: 2rem;
