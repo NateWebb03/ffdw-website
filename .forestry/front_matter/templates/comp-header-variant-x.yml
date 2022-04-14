@@ -1,0 +1,37 @@
+---
+label: "[Comp] Header Variant 6"
+hide_body: true
+fields:
+- name: header
+  type: field_group
+  config: {}
+  fields:
+  - name: type
+    type: text
+    config:
+      required: false
+    label: Type
+    default: variant_6
+    hidden: true
+  - name: theme
+    type: select
+    default: red-purple
+    config:
+      required: true
+      options:
+      - purple-green-a
+      - purple-green-b
+      - red-purple
+      - red-green
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Theme
+  - name: image_1
+    type: file
+    config:
+      maxSize: 0.75
+    label: Image 1
+  label: Header

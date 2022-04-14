@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Blog - Filecoin Foundation for the Decentralized Web",
-    "description": ""
+    "description": "Blog - Filecoin Foundation for the Decentralized Web"
   },
   "og": {
     "site_name": "Blog - Filecoin Foundation for the Decentralized Web",
@@ -16,5 +16,6 @@
     "image_1": "/images/page-blog-index/people-sitting-on-laptops-at-a-work-table.jpeg",
     "nav_theme": "light"
   },
-  "page_content": {}
+  "page_content": {
+  }
 }

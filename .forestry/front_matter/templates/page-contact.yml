@@ -1,0 +1,175 @@
+---
+label: "[Page] Contact"
+hide_body: true
+fields:
+- name: seo
+  type: include
+  config: {}
+  template: data-seo
+  label: Template → [Data] SEO
+  description: Populate the metadata associated with this content, like the page title and description.
+- name: og
+  type: include
+  config: {}
+  template: data-open-graph-social
+  label: Template → [Data] Open Graph & Social
+  description: Populate these fields to create a preview that will be displayed when this page is shared on social media.
+- name: header
+  type: include
+  config: {}
+  template: comp-header-variant-2
+  label: Template → [Comp] Header Variant 2
+- type: field_group
+  name: page_content
+  label: Page Content
+  fields:
+  - type: field_group
+    name: learn_1
+    label: Points of Contact
+    description: This seciton consist of three columns divided by white lines
+    fields:
+    - type: field_group
+      name: col_1
+      label: Column 1
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+    - type: field_group
+      name: col_2
+      label: Column 2
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+    - type: field_group
+      name: col_3
+      label: Column 3
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+  - type: field_group
+    name: reach_1
+    fields:
+    - type: field_group
+      name: col_1
+      label: Column 1
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+    - type: field_group
+      name: col_2
+      label: Right column
+      description: The image-block is editable within this section (portrait images will work best)
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+        description: The image block content is editable within this section
+    label: Form Header Section
+    description: The form header and description is editable within this section
+  - type: field_group
+    name: form
+    label: Form
+    fields:
+    - type: field_group
+      name: col_1
+      label: Column 1
+      fields:
+      - type: text
+        name: type
+        label: type
+        hidden: true
+        default: custom
+      - name: cols
+        type: include
+        config: {}
+        template: columns
+        label: Template → [Layout] Columns
+        description: Changes to this field may affect the section layout. DO NOT EDIT
+      - type: field_group
+        name: customizations
+        label: Customizations
+        fields:
+        - type: field_group
+          name: contactForm
+          fields:
+          - type: text
+            name: name
+            label: name
+            hidden: true
+            default: ContactForm
+          - type: field_group
+            name: props
+            label: Props
+            fields:
+            - type: field_group_list
+              name: fields
+              label: Fields
+              fields:
+              - type: text
+                name: label
+                label: Label
+              - type: text
+                name: validation
+                label: Validation Message
+              - name: for
+                type: select
+                default: []
+                config:
+                  required: false
+                  options:
+                  - email
+                  - " subject"
+                  - " name"
+                  - " phone"
+                  - message
+                  source:
+                    type: simple
+                    section: 
+                    file: 
+                    path: 
+                label: For
+              - name: component
+                type: text
+                config:
+                  required: false
+                label: Component
+                description: Leave blank to create a regular input element. Text must
+                  be an existing html element.
+                default: ''
+              - name: cols
+                type: field_group
+                config: {}
+                fields:
+                - name: num
+                  type: text
+                  config:
+                    required: false
+                  label: Number
+                label: Columns
+                description: Changes to this field may affect the section layout. DO NOT EDIT
+            - type: text
+              name: action
+              label: Action
+            - type: text
+              name: message
+              label: Submission Message
+            - type: text
+              name: submit
+              label: Submit Button Text
+          label: Contact Form
+pages:
+- content/pages/contact.json

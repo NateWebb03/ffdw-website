@@ -93,6 +93,7 @@ sw.*
 
 # Server side processing files
 awk
+.awk
 
 # Mac OSX
 .DS_Store

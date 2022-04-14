@@ -1,0 +1,33 @@
+---
+label: "[Data] Open Graph & Social"
+hide_body: true
+fields:
+- name: og
+  type: field_group
+  config: {}
+  fields:
+  - name: site_name
+    type: text
+    config:
+      required: false
+    label: Site Name
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+    description: >
+      The page's full URL/path.
+  - name: type
+    type: text
+    config:
+      required: false
+    label: Type
+  - name: image
+    type: file
+    config:
+      maxSize: 0.75
+    label: Image
+  label: Open Graph & Social
+  description: Populate these fields to create a preview that will be displayed when this page is shared on social media.
+

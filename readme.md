@@ -1,4 +1,4 @@
-# Filecoin Foundation for the Decentralized Web 
+# Filecoin Foundation for the Decentralized Web
 
 > Note: these docs will be expanded upon in a future iteration of the site
 
@@ -12,7 +12,7 @@
 
 ## Stack
 - Requires nodeJS and has been tested on node 16
-- Uses a Vue framework called nuxtJS, deployed in static mode
+- Uses a Vue framework, [nuxtJS](https://nuxtjs.org/), deployed in static mode
 
 ## Build
 To build this site locally
@@ -26,7 +26,7 @@ To build this site locally
     - The site will be available in real time via a localhost URL
 
 ## URLs
-- Staging - `develop` builds to N/A
+- Staging - `develop` builds to `a non public url`
 - Production - `main` builds to `ffdweb.org`
 - Each PR will also generate an IPFS build preview link, so it can be validated before being merged
 

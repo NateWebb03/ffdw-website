@@ -1,0 +1,110 @@
+---
+label: "[Comp] Button"
+hide_body: true
+fields:
+- name: text
+  type: text
+  config:
+    required: false
+  label: Text
+- name: type
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - A
+    - B
+    - C
+    - D
+    - E
+    - F
+    - X
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+  description: |
+    Select the button's type from the dropdown menu.       
+    A:  Primary CTA, with gradients (ex. Accordion on Home page) 
+
+    B: Same as the Primary CTA except black artifacts (ex. CTA in Header of Home page) 
+
+    C: Secondary CTA, usually clear with a white border (ex. just above Footer on Home page) 
+
+    D: Tertiary CTA, almost no styling except font-weight and color (ex. careers list) 
+
+    E: Navigation [top-level] (Nav + Footer) 
+
+    F: Navigation [subnav] (Nav) 
+
+    X: No styling + slot
+- name: action
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - button
+    - nuxt-link
+    - a
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Action
+- name: theme
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - purple-green
+    - red-purple
+    - red-green
+    - black
+    - white
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme
+- name: icon_before
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - star
+    - arrow-down
+    - finger-up
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Icon - Before
+- name: icon_after
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - star
+    - arrow-down
+    - finger-up
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Icon - After
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL

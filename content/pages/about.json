@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "About - Filecoin Foundation for the Decentralized Web",
-    "description": ""
+    "description": "About - Filecoin Foundation for the Decentralized Web"
   },
   "og": {
     "site_name": "About - Filecoin Foundation for the Decentralized Web",
@@ -23,7 +23,12 @@
       "url": "https://en.wikipedia.org/wiki/Ada_Lovelace",
       "target": "_blank",
       "icon_after": "arrow-down"
-    }
+    },
+    "text": "",
+    "action": "",
+    "icon_before": "",
+    "icon_after": "",
+    "url": ""
   },
   "careers": {
     "heading": "Filecoin Foundation for the Decentralized Web is hiring for roles as we build, support, and fund projects advancing the DWeb.",
@@ -34,94 +39,199 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-7"
+          "num": "col-7",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "header",
         "label": "About FFDW",
-        "heading": "Building and supporting the decentralized community"
+        "heading": "Building and supporting the decentralized community",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "description": "",
+        "ctas": [
+
+        ]
       },
       "col_2": {
         "type": "image_block",
         "cols": {
           "num": "col-3_mi-4",
-          "push_left": "off-1_mi-0"
+          "push_left": "off-1_mi-0",
+          "push_right": ""
         },
-        "src": "/images/page-about/woman-with-microphone.png"
-      }
+        "src": "/images/page-about/woman-with-microphone.png",
+        "label": ""
+      },
+      "grid": [
+
+      ]
     },
     "intro_2": {
-      "grid": ["middle"],
+      "grid": [
+        "middle"
+      ],
       "col_1": {
         "type": "image_block",
         "cols": {
-          "num": "col-6_mi-10"
+          "num": "col-6_mi-10",
+          "push_left": "",
+          "push_right": ""
         },
-        "src": "/images/page-about/group-meeting.png"
+        "src": "/images/page-about/group-meeting.png",
+        "label": ""
       },
       "col_2": {
         "type": "text_block",
         "cols": {
           "num": "col-5_mi-12",
-          "push_left": "off-1_mi-0"
+          "push_left": "off-1_mi-0",
+          "push_right": ""
         },
-        "description": "Filecoin Foundation for the Decentralized Web (FFDW) is a 501(c)(3) non-profit whose mission is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open-source software and open protocols for decentralized data storage and retrieval networks."
+        "description": "Filecoin Foundation for the Decentralized Web (FFDW) is a 501(c)(3) non-profit whose mission is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open-source software and open protocols for decentralized data storage and retrieval networks.",
+        "data_id": "",
+        "format": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "label": "",
+        "heading": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "ctas": [
+
+        ]
       }
     },
     "vision_1": {
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col"
+          "num": "col",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "header",
         "label": "Promise > Vision",
-        "heading": "We exist to advance humankind by bringing Web3 to life through education, research, and development."
-      }
+        "heading": "We exist to advance humankind by bringing Web3 to life through education, research, and development.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "description": "",
+        "ctas": [
+
+        ]
+      },
+      "grid": [
+
+      ]
     },
     "vision_2": {
       "col_1": {
         "type": "image_block",
         "cols": {
-          "num": "col-3_mi-10"
+          "num": "col-3_mi-10",
+          "push_left": "",
+          "push_right": ""
         },
-        "src": "/images/page-about/person-working-on-laptop.png"
+        "src": "/images/page-about/person-working-on-laptop.png",
+        "label": ""
       },
       "col_2": {
         "type": "text_block",
         "cols": {
-          "num": "col-6_mi-12"
+          "num": "col-6_mi-12",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "small",
         "heading": "Where open minds, open source, and open protocols, meet.",
-        "description": "On today’s centralized web, a handful of corporations own the majority of the global cloud data storage market. But humanity’s most important information should never be compromised, abused, or ruled by any single entity.<br /><br />We want the web to continue to grow and flourish and we believe that the more people, teams, organizations support a project, the more likely it is to succeed. FFDW sees Filecoin as a foundational technology for the broader decentralized web ecosystem and seeks to support that entire decentralized web community."
+        "description": "On today’s centralized web, a handful of corporations own the majority of the global cloud data storage market. But humanity’s most important information should never be compromised, abused, or ruled by any single entity.<br /><br />We want the web to continue to grow and flourish and we believe that the more people, teams, organizations support a project, the more likely it is to succeed. FFDW sees Filecoin as a foundational technology for the broader decentralized web ecosystem and seeks to support that entire decentralized web community.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "label": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "ctas": [
+
+        ]
       },
       "col_3": {
         "type": "image_block",
         "cols": {
           "num": "col-3_mi-10",
-          "push_left": "off-0_mi-2"
+          "push_left": "off-0_mi-2",
+          "push_right": ""
         },
-        "src": "/images/page-about/person-writing-in-notebook.png"
-      }
+        "src": "/images/page-about/person-writing-in-notebook.png",
+        "label": ""
+      },
+      "grid": [
+
+      ]
     },
     "board_1": {
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col"
+          "num": "col",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "header",
         "label": "Board of Directors",
-        "heading": "Determined to bring Web3 to life, FFDW’s board brings a wealth of experience and expertise to guide our work."
-      }
+        "heading": "Determined to bring Web3 to life, FFDW’s board brings a wealth of experience and expertise to guide our work.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "description": "",
+        "ctas": [
+
+        ]
+      },
+      "grid": [
+
+      ]
     },
     "board_2": {
-      "grid": ["center", "noGutter"],
+      "grid": [
+        "center",
+        "noGutter"
+      ],
       "classNames": "full no-padding",
       "col_1": {
         "type": "about_accordion_block",
         "cols": {
-          "num": "col-12"
+          "num": "col-12",
+          "push_left": "",
+          "push_right": ""
         },
         "theme": "red-purple",
         "sections": [
@@ -136,7 +246,8 @@
             "img": "/images/page-about/rainey-reitman.png",
             "title": "Rainey Reitman",
             "subtitle": "Internet Activist",
-            "content": "Rainey Reitman is a digital rights activist and writer based in San Francisco, CA. A passionate advocate for individual privacy and government transparency, Reitman has worked for the civil liberties nonprofit the Electronic Frontier Foundation since 2010, first as their Activism Director and currently as Chief Program Officer. She is a board member and co-founder of the Freedom of the Press Foundation, a nonprofit organization that protects, defends, and empowers public-interest journalism in the 21st century.<br /><br />Previously, Reitman was a co-founder and steering committee member for the Chelsea Manning Support Network, served on the board of directors for the Bill of Rights Defense Committee and served as Director of Communications for the Privacy Rights Clearinghouse. Reitman has dedicated her career to creating informed and powerful movements of technology users who can organize to defend free expression, preserve privacy, oppose government overreach, and build a digital future that respects and upholds human rights."
+            "content": "Rainey Reitman is a digital rights activist and writer based in San Francisco, CA. A passionate advocate for individual privacy and government transparency, Reitman has worked for the civil liberties nonprofit the Electronic Frontier Foundation since 2010, first as their Activism Director and currently as Chief Program Officer. She is a board member and co-founder of the Freedom of the Press Foundation, a nonprofit organization that protects, defends, and empowers public-interest journalism in the 21st century.<br /><br />Previously, Reitman was a co-founder and steering committee member for the Chelsea Manning Support Network, served on the board of directors for the Bill of Rights Defense Committee and served as Director of Communications for the Privacy Rights Clearinghouse. Reitman has dedicated her career to creating informed and powerful movements of technology users who can organize to defend free expression, preserve privacy, oppose government overreach, and build a digital future that respects and upholds human rights.",
+            "direction": ""
           },
           {
             "img": "/images/page-about/brian-behlendorf.png",
@@ -149,7 +260,8 @@
             "img": "/images/page-about/kristin-smith.png",
             "title": "Kristin Smith",
             "subtitle": "Executive Director, Blockchain Association",
-            "content": "Kristin is the Executive Director of the Blockchain Association, the Washington DC-based trade association representing the most prominent and reputable organizations in the crypto industry. The mission of the Blockchain Association is to improve the public policy environment so that blockchain networks can thrive in the United States. Kristin sets the association’s public policy strategy and leads engagement with industry and outreach to policymakers.<br /><br />Prior to leading the Blockchain Association, Kristin assisted blockchain and technology companies achieve their public policy objectives in Washington. She served as a Senate and congressional aide on Capitol Hill for nearly ten years, much of which was spent focusing on technology policy. She co-founded HODLpac and serves on the organization’s board of directors. Kristin is also featured on Fortune’s 2020 40 Under 40 list."
+            "content": "Kristin is the Executive Director of the Blockchain Association, the Washington DC-based trade association representing the most prominent and reputable organizations in the crypto industry. The mission of the Blockchain Association is to improve the public policy environment so that blockchain networks can thrive in the United States. Kristin sets the association’s public policy strategy and leads engagement with industry and outreach to policymakers.<br /><br />Prior to leading the Blockchain Association, Kristin assisted blockchain and technology companies achieve their public policy objectives in Washington. She served as a Senate and congressional aide on Capitol Hill for nearly ten years, much of which was spent focusing on technology policy. She co-founded HODLpac and serves on the organization’s board of directors. Kristin is also featured on Fortune’s 2020 40 Under 40 list.",
+            "direction": ""
           }
         ]
       }
@@ -158,22 +270,42 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col"
+          "num": "col",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "header",
         "label": "Advisors",
-        "heading": "FFDW has assembled an outstanding group of advisors."
-      }
+        "heading": "FFDW has assembled an outstanding group of advisors.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "description": "",
+        "ctas": [
+
+        ]
+      },
+      "grid": [
+
+      ]
     },
     "advisors_2": {
-      "grid": ["center", "noGutter"],
+      "grid": [
+        "center",
+        "noGutter"
+      ],
       "classNames": "full no-padding",
       "col_1": {
         "type": "card_list_block",
         "cols": {
           "num": "col"
         },
-        "layout": "double",
         "cards": [
           {
             "type": "A",

@@ -1,0 +1,57 @@
+---
+label: "[Comp] Header Variant 5"
+hide_body: true
+fields:
+- name: header
+  type: field_group
+  config: {}
+  fields:
+  - name: type
+    type: text
+    config:
+      required: false
+    label: Type
+    default: variant_5
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+  - name: nav_theme
+    type: select
+    default: dark
+    config:
+      required: false
+      options:
+      - light
+      - dark
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Nav Theme
+  - name: sub_theme
+    type: select
+    default: purple-green
+    config:
+      required: false
+      options:
+      - purple-green
+      - red-green
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Sub Theme
+  label: Header

@@ -1,0 +1,17 @@
+---
+label: "[Block] Slate Video"
+hide_body: true
+fields:
+- name: type
+  type: text
+  config:
+    required: true
+  label: Type
+  hidden: true
+  default: slate_video_block
+- name: slatename
+  type: text
+  config:
+    required: true
+  label: Slate Name
+  description: The Slate name identifies which video should be pulled from Slate.host, which is being used to host the videos on IPFS. This will usually be in kebab-case format, e.g., "ffdw-home-page-video
