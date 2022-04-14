@@ -1,69 +1,82 @@
 <template>
   <div :class="[`page page-${tag}`]">
-
     <Modal />
 
     <HeaderSelector :header="header" />
 
     <BlockBuilder :sections="sections" />
-
   </div>
 </template>
 
 <script>
 // ====================================================================== Import
-import { mapGetters } from 'vuex'
+import { mapGetters } from "vuex";
 
-import GrantsPageData from '@/content/pages/grants.json'
+import GrantsPageData from "@/content/pages/grants.json";
 
-import Modal from '@/components/Modal'
-import HeaderSelector from '@/components/HeaderSelector'
-import BlockBuilder from '@/components/BlockBuilder'
+import Modal from "@/components/Modal";
+import HeaderSelector from "@/components/HeaderSelector";
+import BlockBuilder from "@/components/BlockBuilder";
 
 // ====================================================================== Export
 export default {
-  name: 'PageGrants',
+  name: "PageGrants",
 
   components: {
     Modal,
     HeaderSelector,
-    BlockBuilder
+    BlockBuilder,
   },
 
-  data () {
+  data() {
     return {
-      tag: 'grants'
-    }
+      tag: "grants",
+    };
   },
 
-  async fetch ({ store }) {
-    await store.dispatch('global/getBaseData', 'general')
-    await store.dispatch('global/getBaseData', { key: 'grants', data: GrantsPageData })
+  async fetch({ store }) {
+    await store.dispatch("global/getBaseData", "general");
+    await store.dispatch("global/getBaseData", {
+      key: "grants",
+      data: GrantsPageData,
+    });
   },
 
-  head () {
-    return this.$CompileSeo(this.$GetSeo(this.tag))
+  head() {
+    return this.$CompileSeo(this.$GetSeo(this.tag));
   },
 
   computed: {
     ...mapGetters({
-      siteContent: 'global/siteContent'
+      siteContent: "global/siteContent",
     }),
-    pageData () {
-      return this.siteContent[this.tag]
+    pageData() {
+      return this.siteContent[this.tag];
     },
-    sections () {
-      return this.siteContent[this.tag].page_content
+    sections() {
+      return this.siteContent[this.tag].page_content;
     },
-    header () {
-      return this.pageData.header
-    }
-  }
-}
+    header() {
+      return this.pageData.header;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 // /////////////////////////////////////////////////////////////////// Specifics
+::v-deep #info_0 {
+  padding-bottom: 3rem;
+  @include small {
+    padding-bottom: 2rem;
+  }
+  .image-block {
+    @include small {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
 ::v-deep #info_1 {
   @include small {
     padding-bottom: 2rem;
@@ -73,7 +86,7 @@ export default {
       margin-bottom: 3rem;
     }
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       right: 100%;
       top: -3rem;
@@ -94,7 +107,7 @@ export default {
       padding-right: 1rem;
     }
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       left: calc(100% + #{math.div($containerWidth, 12)});
       top: 2rem;
@@ -163,7 +176,7 @@ export default {
       margin: 5rem 0;
     }
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 100%;
       bottom: 70%;
