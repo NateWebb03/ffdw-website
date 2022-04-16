@@ -7,20 +7,23 @@ fields:
   config: {}
   template: data-seo
   label: Template → [Data] SEO
-  description: Populate the metadata associated with this content, like the page title and description.
+  description: Populate the metadata associated with this content, like the page title
+    and description.
 - name: og
   type: include
   config: {}
   template: data-open-graph-social
   label: Template → [Data] Open Graph & Social
-  description: Populate these fields to create a preview that will be displayed when this page is shared on social media.
+  description: Populate these fields to create a preview that will be displayed when
+    this page is shared on social media.
 - name: header
   type: include
   config: {}
   template: comp-header-variant-x
   label: Template → [Comp] Header Variant 6
-  description: >
-    This page's header content is editable within this section
+  description: 'This page''s header content is editable within this section
+
+    '
 - type: field_group
   name: page_content
   label: Page Content
@@ -48,7 +51,7 @@ fields:
   - type: field_group
     name: intro_1
     label: Intro Section Top Image
-    description: The top image of the intro section depicting centralization vs decentralization 
+    description: The top image of the intro section depicting centralization vs decentralization
     fields:
     - name: grid
       type: include
@@ -58,7 +61,8 @@ fields:
     - type: field_group
       name: col_1
       label: Content
-      description: The image-block is editable within this section (landscape orientation is best)
+      description: The image-block is editable within this section (landscape orientation
+        is best)
       fields:
       - name: image_block
         type: include
@@ -68,7 +72,8 @@ fields:
   - type: field_group
     name: intro_2
     label: Intro Section Main Content
-    descritpion: The three columns introducing FFDW and depicting centralization vs. decralization are editable within this section
+    descritpion: The three columns introducing FFDW and depicting centralization vs.
+      decralization are editable within this section
     fields:
     - name: grid
       type: include
@@ -85,7 +90,8 @@ fields:
         template: image-block
         label: Template → [Block] Image
       label: Left column
-      description: Left image-block is editable within this section (portrait orientation is best)
+      description: Left image-block is editable within this section (portrait orientation
+        is best)
     - name: col_2
       type: field_group
       config: {}
@@ -106,11 +112,12 @@ fields:
         template: image-block
         label: Template → [Block] Image
       label: Right column
-      description: Right image-block is editable within this section (portrait orientation is best)
+      description: Right image-block is editable within this section (portrait orientation
+        is best)
   - type: field_group
     name: explore_1
     label: Explore
-    description: Explore the Dweb section 
+    description: Explore the Dweb section
     fields:
     - name: grid
       type: include
@@ -137,11 +144,13 @@ fields:
         template: image-block
         label: Template → [Block] Image
       label: Right column
-      description: The image-block is editable within this section (portrait orientation is best)
+      description: The image-block is editable within this section (portrait orientation
+        is best)
   - type: field_group
     name: accordion_1
     label: Sectors Accordion
-    description: Edit the accordion that highlights the various sectors in which FFDW is involved
+    description: Edit the accordion that highlights the various sectors in which FFDW
+      is involved
     fields:
     - name: grid
       type: include
@@ -171,7 +180,8 @@ fields:
   - type: field_group
     name: grants
     label: Grants
-    description: The three columns of the Grants section are editable here. The section consist of a text-block between two image-blocks
+    description: The three columns of the Grants section are editable here. The section
+      consist of a text-block between two image-blocks
     fields:
     - name: grid
       type: include
@@ -187,8 +197,9 @@ fields:
         config: {}
         template: image-block
         label: Template → [Block] Image
-      label: "Image Left"
-      description: The left image-block is editable within this section (portrait orientation is best)
+      label: Image Left
+      description: The left image-block is editable within this section (portrait
+        orientation is best)
     - name: text
       type: field_group
       config: {}
@@ -208,12 +219,14 @@ fields:
         config: {}
         template: image-block
         label: Template → [Block] Image
-      label: "Image Right"
-      description: The right image-block is editable within this section (portrait orientation is best)
+      label: Image Right
+      description: The right image-block is editable within this section (portrait
+        orientation is best)
   - type: field_group
     name: spotlight
     label: Spotlight
-    description: This section highlights a current partnership (contains a video block and text block)
+    description: This section highlights a current partnership (contains a video block
+      and text block)
     fields:
     - name: grid
       type: include
@@ -331,7 +344,8 @@ fields:
   - type: field_group
     name: latest_news
     label: Latest News
-    description: The header and descriptions for the featured blog posts section is editable here.
+    description: The header and descriptions for the featured blog posts section is
+      editable here.
     fields:
     - name: grid
       type: include

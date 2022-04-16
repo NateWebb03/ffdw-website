@@ -44,6 +44,9 @@ fields:
         file: 
         path: 
     label: Nav Theme
-    description: >
-      Select the navigation text color from the dropdown menu - "dark" will make the text in the nav black | "light" will make the text in the nav white
+    description: 'Select the navigation text color from the dropdown menu - "dark"
+      will make the text in the nav black | "light" will make the text in the nav
+      white
+
+      '
   label: Header

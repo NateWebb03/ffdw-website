@@ -22,7 +22,8 @@ fields:
 - name: tint
   type: boolean
   label: Tint
-  description: Toggle this on to add a darker blue overlay over preview image (this toggle will be green when the tint is enabled and grey when disabled).
+  description: Toggle this on to add a darker blue overlay over preview image (this
+    toggle will be green when the tint is enabled and grey when disabled).
 - name: button
   type: field_group
   config: {}
