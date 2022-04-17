@@ -153,8 +153,9 @@
             "theme": "red",
             "target": "_blank",
             "text": "Download the proposal template PDF",
-            "url": "/FFDW-proposal-narrative-template.zip",
-            "icon_after": "arrow-down"
+            "url": "/FFDW-proposal-narrative-template-2022.zip",
+            "icon_after": "arrow-down",
+            "icon_before": ""
           }
         ]
       },
