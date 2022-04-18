@@ -1,7 +1,7 @@
 ---
 featured: false
-title: Leveraging the Dweb to Enhance Free Speech with the Latest FFDW Grant
-description: On September 28, the Filecoin Foundation for the Decentralized Web (FFDW) announced a $5.8 million grant to the Freedom of the Press Foundation (FPF) to support the further leveraging of the decentralized web to enhance freedom of speech for journalists.
+title: Leveraging the Dweb to Enhance Free Speech with the Latest FFDW Award
+description: On September 28, the Filecoin Foundation for the Decentralized Web (FFDW) announced a $5.8 million award to the Freedom of the Press Foundation (FPF) to support the further leveraging of the decentralized web to enhance freedom of speech for journalists.
 author: Filecoin Foundation for the Decentralized Web
 date: Sept 28 2021
 sortDate: 2021-09-28
@@ -12,12 +12,12 @@ tags: ['Freedom', 'Journalism', 'Press', 'Privacy']
 
 ![Leveraging the Dweb to Enhance Free Speech bannner](/images/page-blog/leveraging-the-dweb-to-enhance-free-speech.png)
 
-On September 28, the Filecoin Foundation for the Decentralized Web (FFDW) announced a $5.8 million grant to the [Freedom of the Press Foundation](https://freedom.press/) (FPF) to support the further leveraging of the decentralized web to enhance freedom of speech for journalists.
+On September 28, the Filecoin Foundation for the Decentralized Web (FFDW) announced a $5.8 million award to the [Freedom of the Press Foundation](https://freedom.press/) (FPF) to support the further leveraging of the decentralized web to enhance freedom of speech for journalists.
 
-The three-year FFDW grant will support infrastructure, user experience, and security enhancements for tools used by journalists around the globe. It will also be used to explore a zero-trust architecture for SecureDrop, an open-source news and information submission system used by newsrooms worldwide for secure document exchange and communication between journalists and anonymous sources.
-Overall, the grant will further the organization’s efforts to preserve historically critical information, such as its comprehensive database of press freedom violations in the United States and government data that belongs in the public sphere.
+The three-year FFDW award will support infrastructure, user experience, and security enhancements for tools used by journalists around the globe. It will also be used to explore a zero-trust architecture for SecureDrop, an open-source news and information submission system used by newsrooms worldwide for secure document exchange and communication between journalists and anonymous sources.
+Overall, the award will further the organization’s efforts to preserve historically critical information, such as its comprehensive database of press freedom violations in the United States and government data that belongs in the public sphere.
 
-“With this grant, by far the largest our organization has ever received, we’ll be able to speed the introduction of new upgrades and features to SecureDrop and spur its adoption worldwide,” Freedom of the Press Foundation Executive Director Trevor Timm said in a statement. “We’re also extremely excited to explore how the decentralized web can help further press freedom and transparency in the coming years.”
+“With this award, by far the largest our organization has ever received, we’ll be able to speed the introduction of new upgrades and features to SecureDrop and spur its adoption worldwide,” Freedom of the Press Foundation Executive Director Trevor Timm said in a statement. “We’re also extremely excited to explore how the decentralized web can help further press freedom and transparency in the coming years.”
 
 “Our mission is to permanently preserve humanity’s most important information,” said Marta Belcher, board chair of the Filecoin Foundation for the Decentralized Web. “FPF’s efforts are a natural fit for collaboration.”
 
@@ -30,5 +30,5 @@ In addition to helping upgrade SecureDrop, FPF will leverage its collaboration w
 We’re proud to support FPF’s work as it explores new decentralized tools for journalists and their sources.
 
 More on the [Freedom of the Press Foundation](https://freedom.press/).
-More about [FFDW’s grants program](https://ffdweb.org/).
+More about [FFDW’s awards program](https://ffdweb.org/).
 [More from Marta and Trevor](https://www.youtube.com/watch?v=jKqtShwTU00) on this announcement.

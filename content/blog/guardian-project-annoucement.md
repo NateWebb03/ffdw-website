@@ -12,7 +12,7 @@ tags: ['Grants', 'Community', 'Smartphones', 'Rights']
 
 ![Leveraging the Dweb to Enhance Free Speech bannner](/images/page-blog/guardian-project-announcement.png)
 
-Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our grant to [Guardian Project](https://guardianproject.info/), to support their efforts to integrate decentralized storage into their free and open-source solutions for distribution, authentication, and preservation of essential multimedia and software. Guardian Project is a global collective that develops privacy-focused mobile apps and free licensed, open-source software libraries that can be used by anyone looking to protect data and communications from unjust intrusion, interception, and monitoring. The Decentralizing Veracity and Distribution (DVD) project will focus on preserving content and expanding access for the human rights defenders, frontline journalists, and everyday activists that Guardian Project has sought to empower for over a decade.
+Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our award to [Guardian Project](https://guardianproject.info/), to support their efforts to integrate decentralized storage into their free and open-source solutions for distribution, authentication, and preservation of essential multimedia and software. Guardian Project is a global collective that develops privacy-focused mobile apps and free licensed, open-source software libraries that can be used by anyone looking to protect data and communications from unjust intrusion, interception, and monitoring. The Decentralizing Veracity and Distribution (DVD) project will focus on preserving content and expanding access for the human rights defenders, frontline journalists, and everyday activists that Guardian Project has sought to empower for over a decade.
 
 "Many aspects of our modern smartphone-driven lives are in the hands of giant internet platforms that practically mandate centralized services for downloading apps and sharing photos. While they claim security and safety as their motivation, the underlying goal is more often control and monetization, and not preservation or privacy,” said Nathan Freitas, founder of Guardian Project. “A decentralized web – a web that’s in the hands of many – paves the way for a world where people can have greater trust in where they store their data and more open access to the applications they need. Our work with FFDW to implement decentralized storage in our apps and code libraries will bring real value to millions of real people around the world.”
 
@@ -28,4 +28,4 @@ said Marta Belcher, board chair of the Filecoin Foundation for the Decentralized
 
 > “We are proud to support Guardian Project’s work to preserve critical human rights data and empower greater access to applications using the decentralized web.”
 
-Learn more about FFDW grant programs [here](/grants)!
+Learn more about FFDW award programs [here](/awards)!

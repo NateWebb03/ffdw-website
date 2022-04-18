@@ -154,7 +154,7 @@
           "type": "F",
           "action": "nuxt-link",
           "url": "/get-involved/#grants_1",
-          "text": "Apply for Grants",
+          "text": "Apply for Awards",
           "icon_before": "arrow-down"
         },
         {
@@ -171,8 +171,8 @@
         "type": "E",
         "theme": "dark",
         "action": "nuxt-link",
-        "url": "/grants",
-        "text": "Grants",
+        "url": "/awards",
+        "text": "Awards",
         "icon_before": "star",
         "icon_after": "finger-up"
       }
@@ -185,7 +185,7 @@
     "contact": "Contact",
     "explore": "Explore the DWeb",
     "get-involved": "Get Involved",
-    "grants": "FFDW Grants",
+    "awards": "FFDW Awards",
     "terms": "Terms & Conditions",
     "privacy": "Privacy Policy",
     "error": "404 Page Not Found"
@@ -232,8 +232,8 @@
         "type": "E",
         "theme": "dark",
         "action": "nuxt-link",
-        "url": "/grants",
-        "text": "Grants",
+        "url": "/awards",
+        "text": "Awards",
         "icon_before": "finger-up",
         "orientation": "horizontal"
       },

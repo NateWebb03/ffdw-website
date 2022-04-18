@@ -12,7 +12,7 @@
 // ====================================================================== Import
 import { mapGetters } from "vuex";
 
-import GrantsPageData from "@/content/pages/grants.json";
+import AwardsPageData from "@/content/pages/awards.json";
 
 import Modal from "@/components/Modal";
 import HeaderSelector from "@/components/HeaderSelector";
@@ -20,7 +20,7 @@ import BlockBuilder from "@/components/BlockBuilder";
 
 // ====================================================================== Export
 export default {
-  name: "PageGrants",
+  name: "PageAwards",
 
   components: {
     Modal,
@@ -30,15 +30,15 @@ export default {
 
   data() {
     return {
-      tag: "grants",
+      tag: "awards",
     };
   },
 
   async fetch({ store }) {
     await store.dispatch("global/getBaseData", "general");
     await store.dispatch("global/getBaseData", {
-      key: "grants",
-      data: GrantsPageData,
+      key: "awards",
+      data: AwardsPageData,
     });
   },
 
