@@ -1,10 +1,10 @@
 {
   "seo": {
-    "title": "Grants - Filecoin Foundation for the Decentralized Web",
-    "description": "FFDW focuses its collaborations on charitable activities. Along with our core work providing grants and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships."
+    "title": "Awards - Filecoin Foundation for the Decentralized Web",
+    "description": "FFDW focuses its collaborations on charitable activities. Along with our core work providing awards and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships."
   },
   "og": {
-    "site_name": "Grants - Filecoin Foundation for the Decentralized Web",
+    "site_name": "Awards - Filecoin Foundation for the Decentralized Web",
     "url": "",
     "type": "website",
     "image": "/images/page-index/open-graph.png"
@@ -12,8 +12,8 @@
   "header": {
     "type": "variant_4",
     "heading": "FFDW",
-    "subheading": "Grants and Programs",
-    "image_1": "/images/page-grants/person-showing-another-person-something-on-a-laptop.jpeg",
+    "subheading": "Awards and Programs",
+    "image_1": "/images/page-awards/person-showing-another-person-something-on-a-laptop.jpeg",
     "nav_theme": "light",
     "sub_theme": "red-purple"
   },
@@ -46,7 +46,7 @@
         "cols": {
           "num": "col-4_sm-6_mi-9"
         },
-        "src": "/images/page-grants/man-with-microphone-speaking-to-group.png"
+        "src": "/images/page-awards/man-with-microphone-speaking-to-group.png"
       },
       "col_2": {
         "type": "text_block",
@@ -57,7 +57,7 @@
         "format": "tiny",
         "label": "FFDW’s Operating Approach",
         "heading": "Filecoin Foundation for the Decentralized Web is the charitable sister organization to the Filecoin Foundation.",
-        "description": "As the non-profitable sister to Filecoin Foundation, FFDW focuses its collaborations on charitable activities. Along with our core work providing grants and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships."
+        "description": "As the non-profitable sister to Filecoin Foundation, FFDW focuses its collaborations on charitable activities. Along with our core work providing awards and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships."
       }
     },
     "info_2": {
@@ -88,7 +88,7 @@
           "num": "col-4_mi-8_ti-10",
           "push_left": "off-2_sm-0"
         },
-        "src": "/images/page-grants/person-showing-presentation-to-group.jpeg"
+        "src": "/images/page-awards/person-showing-presentation-to-group.jpeg"
       }
     },
     "accordion_1": {
@@ -122,7 +122,7 @@
         "cols": {
           "num": "col-4_sm-6_mi-8"
         },
-        "src": "/images/page-grants/person-on-laptop-in-cafe.png"
+        "src": "/images/page-awards/person-on-laptop-in-cafe.png"
       },
       "col_2": {
         "type": "text_block",
@@ -153,8 +153,9 @@
             "theme": "red",
             "target": "_blank",
             "text": "Download the proposal template PDF",
-            "url": "/FFDW-proposal-narrative-template.zip",
-            "icon_after": "arrow-down"
+            "url": "/FFDW-proposal-narrative-template-2022.zip",
+            "icon_after": "arrow-down",
+            "icon_before": ""
           }
         ]
       },
@@ -164,7 +165,7 @@
           "num": "col-4_sm-6_mi-8",
           "push_left": "off-2_sm-6_mi-4"
         },
-        "src": "/images/page-grants/person-speaking-into-microphone-to-group.jpeg"
+        "src": "/images/page-awards/person-speaking-into-microphone-to-group.jpeg"
       }
     },
     "accordion_2": {
