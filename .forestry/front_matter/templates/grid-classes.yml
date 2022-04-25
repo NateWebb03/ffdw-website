@@ -1,14 +1,13 @@
 ---
 label: "[Layout] Grid Alignment"
-description: Changes in this section will affect the site layout. DO NOT EDIT.
 hide_body: true
 fields:
 - name: grid
   type: list
   config:
     use_select: true
-    min: 
-    max: 
+    min:
+    max:
     source:
       type: simple
     options:
