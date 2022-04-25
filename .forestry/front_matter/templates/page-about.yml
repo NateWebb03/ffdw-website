@@ -1,0 +1,334 @@
+---
+label: "[Page] About"
+hide_body: true
+fields:
+- name: seo
+  type: include
+  config: {}
+  template: data-seo
+  label: Template → [Data] SEO
+  description: Populate the metadata associated with this content, like the page title
+    and description.
+- name: og
+  type: include
+  config: {}
+  template: data-open-graph-social
+  label: Template → [Data] Open Graph & Social
+  description: Populate these fields to create a preview that will be displayed when
+    this page is shared on social media.
+- name: header
+  type: include
+  config: {}
+  template: comp-header-variant-1
+  label: Template → [Comp] Header Variant 1
+  description: 'The page''s header content is edited in this section
+
+    '
+- type: field_group
+  name: careers
+  label: Careers
+  description: The Careers section is displayed above the footer. The header text
+    and button for the Careers section is editable here.
+  fields:
+  - type: textarea
+    name: heading
+    label: Heading
+  - type: text
+    name: theme
+    label: Theme
+- type: field_group
+  name: page_content
+  label: Page Content
+  description: The visible content on the page is editable within this section.
+  fields:
+  - type: field_group
+    name: intro_1
+    label: About FFDW
+    description: This section appears directly below the header and consist of a text-block
+      on the left and image block on the right.
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Left Column
+      description: The text-block is editable within this section
+    - name: col_2
+      type: field_group
+      config: {}
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Right Column
+      description: The image-block is editable within this section (portrait images
+        will work best)
+  - name: intro_2
+    type: field_group
+    config: {}
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Left Column
+      description: The image block is editable within this section (portrait images
+        will work best)
+    - name: col_2
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Right column
+      description: The text-block is editable within this section
+    label: Introduction
+    description: This section appears directly below the About FFDW section and consists
+      of an image-block on the left and a text-block on the right
+  - type: field_group
+    name: vision_1
+    label: Vision Header
+    description: This section consists of a large centered text-block and acts as
+      the header for the Vision section
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+        description: The text block is editable within this section.
+      label: Content
+  - type: field_group
+    name: vision_2
+    label: Vision Content
+    description: This section is a continuation of the one above (Vision Header) and
+      consists of a text-block between two image-blocks
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Left Column
+      description: The left image is editable in this section (portrait images will
+        work best)
+    - name: col_2
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Middle column
+      description: The tex-block is editable within this section
+    - name: col_3
+      type: field_group
+      config: {}
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Right column
+      description: The right image is editable within this section (portrait images
+        will work best)
+  - type: field_group
+    name: board_1
+    label: Board Header
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Content
+      descritpion: Board of Directors heading is editable within this section
+  - type: field_group
+    name: board_2
+    label: Board Profiles
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: classNames
+      type: text
+      config:
+        required: false
+      label: classNames
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: type
+        type: text
+        config:
+          required: false
+        label: Type
+        default: about_accordion_block
+        hidden: true
+      - name: cols
+        type: include
+        config: {}
+        template: columns
+        label: Columns
+      - name: theme
+        type: text
+        config:
+          required: false
+        label: Theme
+        default: red-purple
+        hidden: true
+      - name: sections
+        type: field_group_list
+        fields:
+        - name: img
+          type: file
+          config:
+            maxSize: 0.75
+          label: Image
+        - name: title
+          type: text
+          config:
+            required: false
+          label: Title
+        - name: subtitle
+          type: text
+          config:
+            required: false
+          label: Subtitle
+        - name: direction
+          type: select
+          default: []
+          config:
+            required: false
+            options:
+            - forward
+            - reverse
+            source:
+              type: simple
+              section: 
+              file: 
+              path: 
+          label: Direction
+        - name: content
+          type: textarea
+          default: ''
+          config:
+            required: false
+            wysiwyg: false
+            schema:
+              format: markdown
+          label: Content
+        config:
+          min: 
+          max: 
+          labelField: 
+        label: Sections
+      label: Content
+      description: Board of Directors list is editable within this section
+  - type: field_group
+    name: advisors_1
+    label: Advisors Header
+    descritpion: Board of Directors heading is editable within this section
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Content
+      description: Advisors header is editable in this section
+  - type: field_group
+    name: advisors_2
+    label: Advisor Profiles
+    description: Advisors list is editable in this section
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - type: text
+      name: classNames
+      label: classNames
+      description: Class names that will be applied to the page HTML
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: card_list_block
+        type: include
+        config: {}
+        template: block-card-list
+        label: Template → [Block] Card List
+        description: Click "Add card" to populate another card in the list
+      label: Content
+      description: Edit the Advisor cards in this section
+pages:
+- content/pages/about.json

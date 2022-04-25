@@ -1,0 +1,25 @@
+---
+label: "[Layout] Columns"
+hide_body: true
+fields:
+- name: cols
+  type: field_group
+  config: {}
+  fields:
+  - name: num
+    type: text
+    config:
+      required: false
+    label: Number
+  - name: push_left
+    type: text
+    config:
+      required: false
+    label: Push Left
+  - name: push_right
+    type: text
+    config:
+      required: false
+    label: Push Right
+  label: Columns
+  description: Changes to this field may affect the section layout. DO NOT EDIT

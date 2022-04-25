@@ -1,0 +1,43 @@
+---
+label: "[Block] Accordion"
+hide_body: true
+fields:
+- name: type
+  type: text
+  config:
+    required: false
+  label: Type
+  default: accordion_block
+  hidden: true
+- name: cols
+  type: include
+  config: {}
+  template: columns
+  label: Columns
+  description: Changes to this field may affect the section layout. DO NOT EDIT
+- name: sections
+  type: field_group_list
+  fields:
+  - name: label
+    type: text
+    config:
+      required: false
+    label: Label
+    description: The text that will show when the accordion seciton is closed
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Content
+    description: The content that will appear when the section is clicked and expands
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Sections
+  description: Click "Add Section" to add another section to the accordion
+  

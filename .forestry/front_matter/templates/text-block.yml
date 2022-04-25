@@ -1,0 +1,164 @@
+---
+label: "[Block] Text"
+hide_body: false
+fields:
+- name: type
+  type: text
+  config:
+    required: true
+  hidden: true
+  label: Type
+  default: text_block
+  description: Do not change. This field is only visible to Forestry admins.
+- name: cols
+  type: include
+  config: {}
+  template: columns
+  label: Columns
+  description: Changes to this field may affect the section layout. DO NOT EDIT
+- name: data_id
+  type: text
+  config:
+    required: false
+  label: Data ID Attribute
+  hidden: false
+  description: Add a data attribute for targeting this element. This will likely only
+    be used in advanced functionality.
+- name: format
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - header
+    - medium
+    - small
+    - tiny
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Format
+  description: Edit the size of the heading text (header- h1, medium - h2(default), small - h3, tiny - h4)
+- name: theme
+  type: select
+  default: purple-green
+  config:
+    required: false
+    options:
+    - purple-green
+    - green-purple
+    - red-purple
+    - red-green
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme
+  description: Select the visual theme for this block. This impacts the gradients used to style it.
+- name: button_theme
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - purple-green
+    - red-purple
+    - red-green
+    - black
+    - white
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Button Theme
+  description: Select the background color(s) for the buttons
+- name: icon
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - IconPixelTwitter
+    - Phonebook
+    - Box
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Icon
+  description: Optionally select an icon from the dropdown menu which will be displayed above the header
+  showOnly:
+    field: format
+    value: small
+- name: label
+  type: text
+  config:
+    required: false
+  label: Label
+  description: text displayed above the heading and below the icon
+- name: heading
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Heading
+  description: text block heading
+- name: date
+  type: datetime
+  label: Date
+  description: Optionally select a date that will be displayed below the label
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: ''
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Optionally add tags that will be displayed below the label. These are
+    intended for posts and other structured content as a way to classify the content.
+    Tags should appear exactly the way they appear in their target post, e.g., "Community"
+- name: subheading
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Subheading
+  description: Text block subheading
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Text block paragraph content
+- name: ctas
+  type: field_group_list
+  fields:
+  - name: cta
+    type: include
+    config: {}
+    template: button
+    label: CTA
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: CTAs
+  description: Click "Add CTA" to add a button to the text block

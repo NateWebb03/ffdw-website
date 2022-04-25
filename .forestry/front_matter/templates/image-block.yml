@@ -1,0 +1,29 @@
+---
+label: "[Block] Image"
+hide_body: true
+fields:
+- name: type
+  type: text
+  config:
+    required: true
+  label: Type
+  hidden: true
+  default: image_block
+- name: cols
+  type: include
+  config: {}
+  template: columns
+  label: Columns
+  description: Changes to this field may affect the section layout. DO NOT EDIT
+- name: src
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  description: Add an image that will appear in this section
+- name: label
+  type: text
+  config:
+    required: false
+  label: Label
+  description: Text that will appear below the image

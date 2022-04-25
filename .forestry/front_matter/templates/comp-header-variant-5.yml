@@ -1,0 +1,61 @@
+---
+label: "[Comp] Header Variant 5"
+hide_body: true
+fields:
+- name: header
+  type: field_group
+  config: {}
+  fields:
+  - name: type
+    type: text
+    config:
+      required: false
+    label: Type
+    default: variant_5
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+    description: Enter the page description of subheading
+  - name: nav_theme
+    type: select
+    default: dark
+    config:
+      required: false
+      options:
+      - light
+      - dark
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Nav Theme
+    description: Select the navigation text color from the dropdown menu - "dark" will make the text in the nav black | "light" will make the text in the nav white
+  - name: sub_theme
+    type: select
+    default: purple-green
+    config:
+      required: false
+      options:
+      - purple-green
+      - red-green
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Sub Theme
+    description: Select the gradient colors of the shapes in the header
+  label: Header
+  

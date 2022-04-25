@@ -1,0 +1,48 @@
+---
+label: "[Comp] Header Variant 3"
+hide_body: true
+fields:
+- name: header
+  type: field_group
+  config: {}
+  fields:
+  - name: type
+    type: text
+    config:
+      required: false
+    label: Type
+    default: variant_3
+    hidden: true
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+    hidden: false
+  - name: subheading
+    type: text
+    config:
+      required: false
+    label: Subheading
+  - name: image_1
+    type: file
+    config:
+      maxSize: 0.75
+    label: Image 1
+    description: Add the image that will appear in the header (Portrait orientation will work best)
+  - name: nav_theme
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - dark
+      - light
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Nav Theme
+    description: Select the navigation text color from the dropdown menu - "dark" will make the text in the nav black | "light" will make the text in the nav white
+  label: Header

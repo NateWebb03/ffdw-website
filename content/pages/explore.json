@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Explore - Filecoin Foundation for the Decentralized Web",
-    "description": ""
+    "description": " "
   },
   "og": {
     "site_name": "Explore - Filecoin Foundation for the Decentralized Web",
@@ -12,7 +12,7 @@
   "header": {
     "type": "variant_4",
     "heading": "Explore",
-    "subheading": "The DWeb",
+    "subheading": "the DWeb",
     "image_1": "/images/component-header/engineer-coding.jpg",
     "nav_theme": "light",
     "sub_theme": "red-green"
@@ -22,38 +22,75 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-12"
+          "num": "col-12",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "header",
         "label": "Learn About Web3",
-        "heading": "We support programs that educate the public about how the internet works and what a decentralized future means for business, governments, and consumers alike."
+        "heading": "We support programs that educate the public about how the internet works and what a decentralized future means for business, governments, and consumers alike.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "description": "",
+        "ctas": [
+
+        ]
       }
     },
     "learn_2": {
-      "grid": ["middle"],
+      "grid": [
+        "middle"
+      ],
       "image_left": {
         "type": "image_block",
         "cols": {
-          "num": "col-3_sm-hidden"
+          "num": "col-3_sm-hidden",
+          "push_left": "",
+          "push_right": ""
         },
-        "src": "/images/page-explore/person-sitting-on-chair-with-laptop-1.jpeg"
+        "src": "/images/page-explore/person-sitting-on-chair-with-laptop-1.jpeg",
+        "label": ""
       },
       "text": {
         "type": "text_block",
         "cols": {
-          "num": "col-6_sm-12"
+          "num": "col-6_sm-12",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "small",
         "theme": "green-purple",
         "heading": "The Internet has always been inherently about decentralization.",
-        "description": "The first Internet protocols decentralized computing and allowed users to consume digital content. The second iteration ushered in the World Wide Web by enabling users to consume, create and share digital content together."
+        "description": "The first Internet protocols decentralized computing and allowed users to consume digital content. The second iteration ushered in the World Wide Web by enabling users to consume, create and share digital content together.",
+        "data_id": "",
+        "button_theme": "",
+        "icon": "",
+        "label": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "ctas": [
+
+        ]
       },
       "image_right": {
         "type": "image_block",
         "cols": {
-          "num": "col-3_sm-hidden"
+          "num": "col-3_sm-hidden",
+          "push_left": "",
+          "push_right": ""
         },
-        "src": "/images/page-explore/person-leg.jpeg"
+        "src": "/images/page-explore/person-leg.jpeg",
+        "label": ""
       }
     },
     "learn_3": {
@@ -61,21 +98,51 @@
         "type": "text_block",
         "cols": {
           "num": "col-10_sm-12",
-          "push_left": "off-1_sm-0"
+          "push_left": "off-1_sm-0",
+          "push_right": ""
         },
         "format": "small",
-        "description": "After a period when a few large, centralized companies consolidated this environment into a handful of platforms, engineers and technologists are now building the next evolution of the Internet. New protocols and new applications will allow users to independently consume, create, and engage with digital content. These changes will radically transform the Internet as we now experience it, resulting in enormous potential to create a better Internet."
+        "description": "After a period when a few large, centralized companies consolidated this environment into a handful of platforms, engineers and technologists are now building the next evolution of the Internet. New protocols and new applications will allow users to independently consume, create, and engage with digital content. These changes will radically transform the Internet as we now experience it, resulting in enormous potential to create a better Internet.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "label": "",
+        "heading": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "ctas": [
+
+        ]
       }
     },
     "videos_1": {
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-6_sm-8_mi-12"
+          "num": "col-6_sm-8_mi-12",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "header",
         "label": "Video Resources",
-        "heading": "Exploring the Decentralized Web"
+        "heading": "Exploring the Decentralized Web",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "description": "",
+        "ctas": [
+
+        ]
       }
     },
     "videos_2": {
@@ -88,12 +155,17 @@
       }
     },
     "callout": {
-      "grid": ["center", "noGutter"],
+      "grid": [
+        "center",
+        "noGutter"
+      ],
       "classNames": "full no-padding",
       "col_1": {
         "type": "custom",
         "cols": {
-          "num": "col"
+          "num": "col",
+          "push_left": "",
+          "push_right": ""
         },
         "customizations": {
           "careers": {
@@ -104,7 +176,7 @@
               "text": "Some of the groups we work with to grow Web3",
               "logos": [
                 "/images/page-explore/freedom-of-the-press-foundation-logo.png",
-                "/images/page-explore/HRDAG-logo.png",
+                "/images/page-explore/hrdag-logo.png",
                 "/images/page-explore/guardian-project-logo.png",
                 "/images/page-explore/starling-lab-logo.png",
                 "/images/page-explore/DFC-logo.png",
@@ -116,8 +188,12 @@
                 "type": "X",
                 "action": "nuxt-link",
                 "url": "/about/#board_1",
-                "text": "Board & Advisors"
-              }
+                "text": "Board & Advisors",
+                "theme": "",
+                "icon_before": "",
+                "icon_after": ""
+              },
+              "type": "X"
             }
           }
         }
@@ -127,37 +203,63 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-9_sm-12"
+          "num": "col-9_sm-12",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "header",
         "label": "Interactive Tutorials",
-        "heading": "ProtoSchool’s self-guided interactive tutorials introduce you to DWeb concepts, protocols, and tools."
+        "heading": "ProtoSchool’s self-guided interactive tutorials introduce you to DWeb concepts, protocols, and tools.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "description": "",
+        "ctas": [
+
+        ]
       }
     },
     "tutorials_2": {
       "col_1": {
         "type": "card_list_block",
         "cols": {
-          "num": "col-12"
+          "num": "col-12",
+          "push_left": "",
+          "push_right": ""
         },
-        "limit": 6,
-        "iterate": 6,
         "cards": [
           {
             "type": "C",
-            "theme": "green",
+            "theme": "",
             "label": "Beginner",
             "title": "Content Addressing on the Decentralized Web",
             "description": "Learn how hashing and content addressing enable verifiable data sharing with peers on the decentralized web.",
-            "ctas": [{
-              "type": "D",
-              "theme": "green",
-              "action": "a",
-              "text": "Read More",
-              "url": "https://proto.school/content-addressing",
-              "target": "_blank",
-              "icon_after": "arrow-down"
-            }]
+            "ctas": [
+              {
+                "type": "D",
+                "theme": "",
+                "action": "a",
+                "text": "Read More",
+                "url": "https://proto.school/content-addressing",
+                "target": "_blank",
+                "icon_after": "arrow-down",
+                "icon_before": ""
+              }
+            ],
+            "size": "",
+            "action": "",
+            "url": "",
+            "img": "",
+            "icon": "",
+            "title_suffix": "",
+            "date": "",
+            "date_before": ""
           },
           {
             "type": "C",
@@ -165,15 +267,26 @@
             "label": "Beginner",
             "title": "Anatomy of a CID",
             "description": "Explore the ins and outs of CIDs (Content Identifiers), the unique labels used to point to data stored on distributed information systems including IPFS, IPLD, libp2p, and…",
-            "ctas": [{
-              "type": "D",
-              "theme": "green",
-              "action": "a",
-              "text": "Read More",
-              "url": "https://proto.school/anatomy-of-a-cid",
-              "target": "_blank",
-              "icon_after": "arrow-down"
-            }]
+            "ctas": [
+              {
+                "type": "D",
+                "theme": "green",
+                "action": "a",
+                "text": "Read More",
+                "url": "https://proto.school/anatomy-of-a-cid",
+                "target": "_blank",
+                "icon_after": "arrow-down",
+                "icon_before": ""
+              }
+            ],
+            "size": "",
+            "action": "",
+            "url": "",
+            "img": "",
+            "icon": "",
+            "title_suffix": "",
+            "date": "",
+            "date_before": ""
           },
           {
             "type": "C",
@@ -181,15 +294,26 @@
             "label": "Beginner",
             "title": "Merkle DAGs: Structuring Data for the Distributed Web",
             "description": "Learn how we can use CIDs to create content-addressable data structures for the distributed web!",
-            "ctas": [{
-              "type": "D",
-              "theme": "green",
-              "action": "a",
-              "text": "Read More",
-              "url": "https://proto.school/merkle-dags",
-              "target": "_blank",
-              "icon_after": "arrow-down"
-            }]
+            "ctas": [
+              {
+                "type": "D",
+                "theme": "green",
+                "action": "a",
+                "text": "Read More",
+                "url": "https://proto.school/merkle-dags",
+                "target": "_blank",
+                "icon_after": "arrow-down",
+                "icon_before": ""
+              }
+            ],
+            "size": "",
+            "action": "",
+            "url": "",
+            "img": "",
+            "icon": "",
+            "title_suffix": "",
+            "date": "",
+            "date_before": ""
           },
           {
             "type": "C",
@@ -197,15 +321,26 @@
             "label": "Beginner",
             "title": "Blogging on the Decentralized Web",
             "description": "Cool content addresses don’t change. Create a chain of links from one CID to another with the IPFS DAG API.",
-            "ctas": [{
-              "type": "D",
-              "theme": "green",
-              "action": "a",
-              "text": "Read More",
-              "url": "https://proto.school/blog",
-              "target": "_blank",
-              "icon_after": "arrow-down"
-            }]
+            "ctas": [
+              {
+                "type": "D",
+                "theme": "green",
+                "action": "a",
+                "text": "Read More",
+                "url": "https://proto.school/blog",
+                "target": "_blank",
+                "icon_after": "arrow-down",
+                "icon_before": ""
+              }
+            ],
+            "size": "",
+            "action": "",
+            "url": "",
+            "img": "",
+            "icon": "",
+            "title_suffix": "",
+            "date": "",
+            "date_before": ""
           },
           {
             "type": "C",
@@ -213,15 +348,26 @@
             "label": "Beginner",
             "title": "P2P Data Links with Content Addressing",
             "description": "Store, fetch, and create verifiable links between peer-hosted datasets using the IPFS DAG API and CIDs. It’s graphs with friends!",
-            "ctas": [{
-              "type": "D",
-              "theme": "green",
-              "action": "a",
-              "text": "Read More",
-              "url": "https://proto.school/basics",
-              "target": "_blank",
-              "icon_after": "arrow-down"
-            }]
+            "ctas": [
+              {
+                "type": "D",
+                "theme": "green",
+                "action": "a",
+                "text": "Read More",
+                "url": "https://proto.school/basics",
+                "target": "_blank",
+                "icon_after": "arrow-down",
+                "icon_before": ""
+              }
+            ],
+            "size": "",
+            "action": "",
+            "url": "",
+            "img": "",
+            "icon": "",
+            "title_suffix": "",
+            "date": "",
+            "date_before": ""
           },
           {
             "type": "C",
@@ -229,15 +375,26 @@
             "label": "Beginner",
             "title": "Mutable File System",
             "description": "The Mutable File System (MFS) lets you work with files and directories as if you were using a traditional name-based file system.",
-            "ctas": [{
-              "type": "D",
-              "theme": "green",
-              "action": "a",
-              "text": "Read More",
-              "url": "https://proto.school/mutable-file-system",
-              "target": "_blank",
-              "icon_after": "arrow-down"
-            }]
+            "ctas": [
+              {
+                "type": "D",
+                "theme": "green",
+                "action": "a",
+                "text": "Read More",
+                "url": "https://proto.school/mutable-file-system",
+                "target": "_blank",
+                "icon_after": "arrow-down",
+                "icon_before": ""
+              }
+            ],
+            "size": "",
+            "action": "",
+            "url": "",
+            "img": "",
+            "icon": "",
+            "title_suffix": "",
+            "date": "",
+            "date_before": ""
           }
         ],
         "cta": {
@@ -252,11 +409,26 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-10"
+          "num": "col-10",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "header",
         "label": "Latest News From FFDW",
-        "heading": "Updates from our organization and across the Web3 universe."
+        "heading": "Updates from our organization and across the Web3 universe.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "description": "",
+        "ctas": [
+
+        ]
       }
     }
   }

@@ -1,0 +1,395 @@
+---
+label: "[Page] Index"
+hide_body: true
+fields:
+- name: seo
+  type: include
+  config: {}
+  template: data-seo
+  label: Template → [Data] SEO
+  description: Populate the metadata associated with this content, like the page title
+    and description.
+- name: og
+  type: include
+  config: {}
+  template: data-open-graph-social
+  label: Template → [Data] Open Graph & Social
+  description: Populate these fields to create a preview that will be displayed when
+    this page is shared on social media.
+- name: header
+  type: include
+  config: {}
+  template: comp-header-variant-x
+  label: Template → [Comp] Header Variant 6
+  description: 'This page''s header content is editable within this section
+
+    '
+- type: field_group
+  name: page_content
+  label: Page Content
+  description: The visible content on the page is editable within this section.
+  fields:
+  - type: field_group
+    name: about_1
+    label: About
+    description: Hero section of home page
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Content
+  - type: field_group
+    name: intro_1
+    label: Intro Section Top Image
+    description: The top image of the intro section depicting centralization vs decentralization
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+    - type: field_group
+      name: col_1
+      label: Content
+      description: The image-block is editable within this section (landscape orientation
+        is best)
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+  - type: field_group
+    name: intro_2
+    label: Intro Section Main Content
+    descritpion: The three columns introducing FFDW and depicting centralization vs.
+      decralization are editable within this section
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Left column
+      description: Left image-block is editable within this section (portrait orientation
+        is best)
+    - name: col_2
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Middle column
+      description: Middle column content is editable within this section
+    - name: col_3
+      type: field_group
+      config: {}
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Right column
+      description: Right image-block is editable within this section (portrait orientation
+        is best)
+  - type: field_group
+    name: explore_1
+    label: Explore
+    description: Explore the Dweb section
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Left column
+      description: Left column content is editable within this section
+    - name: col_2
+      type: field_group
+      config: {}
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Right column
+      description: The image-block is editable within this section (portrait orientation
+        is best)
+  - type: field_group
+    name: accordion_1
+    label: Sectors Accordion
+    description: Edit the accordion that highlights the various sectors in which FFDW
+      is involved
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: accordion_block
+        type: include
+        config: {}
+        template: block-accordion
+        label: Template → [Block] Accordion
+      label: Left Column
+      description: Accordion content is editable within this section
+    - name: col_2
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Right Column
+      description: Right column content is editable within this section
+  - type: field_group
+    name: grants
+    label: Grants
+    description: The three columns of the Grants section are editable here. The section
+      consist of a text-block between two image-blocks
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+    - name: image_left
+      type: field_group
+      config: {}
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Image Left
+      description: The left image-block is editable within this section (portrait
+        orientation is best)
+    - name: text
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Text
+    - name: image_right
+      type: field_group
+      config: {}
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+      label: Image Right
+      description: The right image-block is editable within this section (portrait
+        orientation is best)
+  - type: field_group
+    name: spotlight
+    label: Spotlight
+    description: This section highlights a current partnership (contains a video block
+      and text block)
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: slate_video_block
+        type: include
+        config: {}
+        template: comp-slate-video-block
+        label: Template → [Block] Slate Video
+      label: Left Column
+      description: The slate-video is editable within this section
+    - name: col_2
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Right Column
+      description: The text-block is editable within this section
+  - type: field_group
+    name: callout
+    label: Get Involved
+    description: This section contains the social links and a contact form
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+    - type: text
+      name: classNames
+      label: classNames
+      description: Changes in this field can affect the section layout. DO NOT EDIT
+    - type: field_group
+      name: col_1
+      label: Content
+      fields:
+      - type: text
+        name: type
+        label: Type
+      - type: field_group
+        name: cols
+        label: Columns
+        description: Changes to this field may affect the section layout. DO NOT EDIT
+        fields:
+        - type: text
+          name: num
+          label: Num
+      - type: field_group
+        name: customizations
+        label: Customizations
+        fields:
+        - type: field_group
+          name: careers
+          label: Careers
+          fields:
+          - type: text
+            name: name
+            label: Name
+            description: Descriptive name for the section. This will not be visible on the page
+          - type: field_group
+            name: props
+            label: Options
+            fields:
+            - type: file
+              name: img_left
+              label: img_left
+            - type: text
+              name: label
+              label: label
+              description: This text will appear at the top of the right side of the section
+            - type: text
+              name: text_1
+              label: text_1
+              description: Heading text that will show above the social icons
+            - type: text
+              name: text_2
+              label: text_2
+              description: Heading text that will show below the social icons
+            - type: field_group
+              name: form
+              label: form
+              description: Click to edit the contact form
+              fields:
+              - type: text
+                name: name
+                label: Name
+                description: Descriptive name for the form. This will not be visible on the page
+              - type: field_group
+                name: props
+                label: Form Builder
+                fields:
+                - type: field_group_list
+                  name: fields
+                  label: Fields
+                  description: Click "Add Field" to add another input field to the contact form
+                  fields:
+                  - type: text
+                    name: label
+                    label: label
+                    description: Input-field label/description
+                  - type: text
+                    name: for
+                    label: for
+                    description: Optionally write what the field is intended for
+                  - type: text
+                    name: validation
+                    label: validation
+                    description: Input-field prompt (ex. *Required, if the field must be filled to send the form)
+                - type: text
+                  name: action
+                  label: Action
+                  description: The address or endpoint the form will be sent to when submitted
+                - type: text
+                  name: message
+                  label: Message
+                  description: The message displayed when a form is successfully submitted
+                - type: text
+                  name: submit
+                  label: Submit
+                  description: The text of the for submit button
+  - type: field_group
+    name: latest_news
+    label: Latest News
+    description: The header and descriptions for the featured blog posts section is
+      editable here.
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+    - name: col_1
+      type: field_group
+      config: {}
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Content
+pages:
+- content/pages/index.json

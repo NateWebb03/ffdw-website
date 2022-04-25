@@ -1,0 +1,167 @@
+---
+label: "[Comp] Card"
+hide_body: true
+fields:
+- name: type
+  type: select
+  default: ''
+  config:
+    required: true
+    options:
+    - A
+    - B
+    - C
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+  description: |
+    There are several card formats to choose from, each of which has a different visual appaerance, and may be content-specific (i.e., not all cards will always fit correctly in every section).
+
+    For this block, we recommend card type _
+
+    A: (deprecated)
+
+    B: A full width card format that appears as a row, like the blog and news links throughout the site.
+
+    C: A rectangular card which typically appears in a two-per-row format on desktop screen sizes. This is visible on the Tutorials section of the Explore page.
+- name: size
+  type: select
+  default: full
+  config:
+    required: false
+    options:
+    - full
+    - compact
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Size
+  description: Full is the default size for cards. For card type A, you have the option to select compact as the size - this will reduce the size of the content and image as well as reduce font sizes
+- name: action
+  type: select
+  default: div
+  config:
+    required: false
+    options:
+    - a
+    - nuxt-link
+    - div
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Action
+  description: The HTML tag of the card. Select "a" for the card to link to a page outside of the site | "nuxt-link" for the card to link to an internal page | "div" if the card is not clickable
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+  description: If action is set to "a" or "nuxt-link" enter the link that the user is taken to when the card is clicked
+- name: img
+  type: file
+  config:
+    maxSize: 0.75
+  label: Image
+  description: Choose the image displayed in the card
+- name: label
+  type: text
+  config:
+    required: false
+  label: Label
+  description: Text displayed above the title 
+- name: icon
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - pixel-heart
+    - pixel-twitter
+    - pixel-ghost
+    - pixel-dino
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Icon
+  description: Optionally select an icon that will be displayed to the left of the title
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Title for card content
+- name: title_suffix
+  type: text
+  config:
+    required: false
+  label: Title Suffix
+  description: Text that will appear after the title, inline and unbolded
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Main text content of card
+- name: date
+  type: datetime
+  label: Date
+  description: Select date - this date will be displayed below the text content
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: date_before
+  type: datetime
+  label: Date - Before
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+    description: Select date - this date will be displayed above the text content
+- name: theme
+  type: select
+  default: purple-green
+  config:
+    required: false
+    options:
+    - purple-green
+    - red-purple
+    - red-green
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme
+  description: Select the colors of the background gradient
+- name: ctas
+  type: field_group_list
+  fields:
+  - name: cta
+    type: include
+    config: {}
+    template: button
+    label: CTA
+  config:
+    min: 
+    max: 
+    labelField: text
+  label: CTAs
+  description: Click "Add CTA" to add and populate a button in the card
+  
