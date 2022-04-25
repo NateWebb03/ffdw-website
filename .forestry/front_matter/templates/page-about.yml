@@ -39,6 +39,7 @@ fields:
 - type: field_group
   name: page_content
   label: Page Content
+  description: The visible content on the page is editable within this section.
   fields:
   - type: field_group
     name: intro_1
@@ -60,7 +61,8 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Column 1
+      label: Left Column
+      description: The text-block is editable within this section
     - name: col_2
       type: field_group
       config: {}
@@ -104,7 +106,7 @@ fields:
         template: text-block
         label: Template → [Block] Text
       label: Right column
-      description: Right column content is editable within this section
+      description: The text-block is editable within this section
     label: Introduction
     description: This section appears directly below the About FFDW section and consists
       of an image-block on the left and a text-block on the right
@@ -128,7 +130,8 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Column 1
+        description: The text block is editable within this section.
+      label: Content
   - type: field_group
     name: vision_2
     label: Vision Content
@@ -161,7 +164,8 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Column 2
+      label: Middle column
+      description: The tex-block is editable within this section
     - name: col_3
       type: field_group
       config: {}
@@ -192,7 +196,8 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Column 1
+      label: Content
+      descritpion: Board of Directors heading is editable within this section
   - type: field_group
     name: board_2
     label: Board Profiles
@@ -276,7 +281,8 @@ fields:
           max: 
           labelField: 
         label: Sections
-      label: Column 1
+      label: Content
+      description: Board of Directors list is editable within this section
   - type: field_group
     name: advisors_1
     label: Advisors Header
@@ -296,7 +302,8 @@ fields:
         config: {}
         template: text-block
         label: Template → [Block] Text
-      label: Column 1
+      label: Content
+      description: Advisors header is editable in this section
   - type: field_group
     name: advisors_2
     label: Advisor Profiles
@@ -310,6 +317,7 @@ fields:
     - type: text
       name: classNames
       label: classNames
+      description: Class names that will be applied to the page HTML
     - name: col_1
       type: field_group
       config: {}
@@ -319,6 +327,8 @@ fields:
         config: {}
         template: block-card-list
         label: Template → [Block] Card List
-      label: Column 1
+        description: Click "Add card" to populate another card in the list
+      label: Content
+      description: Edit the Advisor cards in this section
 pages:
 - content/pages/about.json

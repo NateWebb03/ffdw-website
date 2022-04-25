@@ -27,6 +27,7 @@ fields:
 - type: field_group
   name: page_content
   label: Page Content
+  description: The visible content on the page is editable within this section.
   fields:
   - type: field_group
     name: mission
@@ -34,7 +35,7 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Content
       fields:
       - name: text_block
         type: include
@@ -49,7 +50,8 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Left column
+      description: The left column content is editable within this section
       fields:
       - name: image_block
         type: include
@@ -70,11 +72,11 @@ fields:
   - type: field_group
     name: info_2
     label: Info 2
-    description: Full width text block section with purple rectangle down right side
+    description: Full width text block section with purple rectangle down right side    
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Content
       fields:
       - name: text_block
         type: include
@@ -86,7 +88,8 @@ fields:
     label: Project Areas
     fields:
     - type: field_group
-      name: col_1
+      name: Left column
+      description: The left column content is editable within this section
       fields:
       - name: text_block
         type: include
@@ -113,7 +116,7 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Content
       fields:
       - name: accordion_block
         type: include
@@ -129,6 +132,7 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
+      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
     - type: field_group
       name: col_1
       label: Left column
@@ -142,7 +146,8 @@ fields:
         label: Template → [Block] Image
     - type: field_group
       name: col_2
-      label: Column 2
+      label: Right column
+      description: The image-block is editable within this section
       fields:
       - name: text_block
         type: include
@@ -155,7 +160,8 @@ fields:
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Left column
+      description: The text-block is editable within this section
       fields:
       - name: text_block
         type: include
@@ -175,11 +181,11 @@ fields:
         label: Template → [Block] Image
   - type: field_group
     name: accordion_2
-    label: Accordion 2
+    label: Application Guidance Accordion
     fields:
     - type: field_group
       name: col_1
-      label: Column 1
+      label: Content
       fields:
       - name: accordion_block
         type: include

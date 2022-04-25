@@ -9,16 +9,19 @@ fields:
   label: Type
   hidden: true
   default: video_block
+  description: Do not change. This field is only visible to Forestry admins.
 - name: preview_image
   type: file
   config:
     maxSize: 64
   label: Preview Image
+  description: Add a still image that will be a preview image for video 
 - name: url
   type: text
   config:
     required: false
   label: Video Link
+  description: input video URL
 - name: tint
   type: boolean
   label: Tint
@@ -35,6 +38,7 @@ fields:
     hidden: true
     label: Type
     default: D
+    description: Do not change. This field is only visible to Forestry admins.
   - name: action
     type: text
     config:
@@ -42,6 +46,7 @@ fields:
     label: Action
     hidden: true
     default: video
+    description: Do not change. This field is only visible to Forestry admins.
   - name: icon
     type: text
     config:
@@ -49,6 +54,7 @@ fields:
     label: Icon
     hidden: true
     default: play
+    description: Do not change. This field is only visible to Forestry admins.
   - name: text
     type: text
     config:
@@ -67,10 +73,11 @@ fields:
   config:
     required: false
   label: Title
+  description: Title of the video
 - name: date
   type: datetime
   label: Date
-  description: ''
+  description: Optionally select a date that will be displayed above the title
   config:
     required: false
     date_format: 
@@ -80,9 +87,12 @@ fields:
   type: tag_list
   default: []
   label: Tags
+  description: Optionally enter tags that will be displayed above the title
 - name: slate_video_type
   type: text
   config:
     required: false
   label: Slate Video Type
   hidden: true
+  description: Do not change. This field is only visible to Forestry admins.
+  
