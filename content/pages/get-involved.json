@@ -172,16 +172,16 @@
           },
           {
             "type": "C",
-            "title": "Apply for a grant",
-            "description": "FFDW currently reviews grant and project applications quarterly. Proposals should be submitted as attachments to an email.",
+            "title": "Apply for an award",
+            "description": "FFDW currently reviews project applications quarterly. Proposals should be submitted as attachments to an email.",
             "icon": "pixel-ghost",
             "ctas": [
               {
                 "type": "D",
                 "action": "nuxt-link",
                 "theme": "green",
-                "text": "Learn more about grants",
-                "url": "/grants",
+                "text": "Learn more about awards",
+                "url": "/awards",
                 "icon_after": "arrow-down",
                 "icon_before": ""
               }
@@ -244,12 +244,12 @@
             "props": {
               "img_left": "/images/page-get-involved/people-working-together-in-office.jpeg",
               "img_right": "/images/page-get-involved/man-on-laptop-in-office.jpg",
-              "label": "Grants and Project Proposals",
+              "label": "Project Proposals and Awards",
               "cta": {
                 "type": "B",
                 "action": "nuxt-link",
-                "text": "Meet our Grantees",
-                "url": "/grants"
+                "text": "Meet our Awardees",
+                "url": "/awards"
               },
               "text": "",
               "type": "",
@@ -275,7 +275,7 @@
           "push_right": ""
         },
         "format": "header",
-        "label": "Apply for a Grant or Project Proposals",
+        "label": "Apply for Awards or Project Proposals",
         "heading": "We’re here to build Web3 with you.",
         "description": "FFDW collaborates with organizations that accelerate the adoption of open, decentralized technologies, help build communities that support and sustain open, decentralized technologies, and communicate to wider audiences the benefits of adopting open, decentralized technologies.",
         "data_id": "",

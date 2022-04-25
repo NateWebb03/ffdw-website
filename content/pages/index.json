@@ -175,7 +175,7 @@
           },
           {
             "label": "Frequently Asked Questions",
-            "content": "<strong>What is your non-profit status?</strong><br /><br />FFDW has applied for 501(c)(3) tax exempt, private opening foundation status. Maintaining adherence to mission is important from source (FFDW) to destination (end recipient), no matter the type of funding instrument (contract, grant, donation) used to provide resources to end recipients.<br /><br /><strong>What’s the relationship between the Filecoin Foundation for the Decentralized Web and the Filecoin Foundation?</strong><br /><br />The creators of Filecoin envisioned an independent foundation that would serve as the long-term governance body for the Filecoin ecosystem. Its original mandate was to “grow an open ecosystem for decentralized storage” and to “give developers an open and sustainable platform to build, enhance and monetize those services.”<br /><br />Filecoin Foundation (FF) is an independent organization that facilitates governance of the Filecoin network, funds critical development projects, supports the growth of Filecoin ecosystem, and advocates for Filecoin and the decentralized web. FF does this by coordinating and supporting the creation and improvement of open-source software and open protocols for decentralized data storage and retrieval networks.<br /><br />Filecoin Foundation for the Decentralized Web (FFDW) focuses on charitable activities related to preserving important datasets, such as building and supporting the decentralized web community, funding research and development, and educating the public about the decentralized web.<br /><br />"
+            "content": "<strong>What is your non-profit status?</strong><br /><br />FFDW has applied for 501(c)(3) tax exempt, private opening foundation status. Maintaining adherence to mission is important from source (FFDW) to destination (end recipient), no matter the type of funding instrument (contract, award, grant, donation) used to provide resources to end recipients.<br /><br /><strong>What’s the relationship between the Filecoin Foundation for the Decentralized Web and the Filecoin Foundation?</strong><br /><br />The creators of Filecoin envisioned an independent foundation that would serve as the long-term governance body for the Filecoin ecosystem. Its original mandate was to “grow an open ecosystem for decentralized storage” and to “give developers an open and sustainable platform to build, enhance and monetize those services.”<br /><br />Filecoin Foundation (FF) is an independent organization that facilitates governance of the Filecoin network, funds critical development projects, supports the growth of Filecoin ecosystem, and advocates for Filecoin and the decentralized web. FF does this by coordinating and supporting the creation and improvement of open-source software and open protocols for decentralized data storage and retrieval networks.<br /><br />Filecoin Foundation for the Decentralized Web (FFDW) focuses on charitable activities related to preserving important datasets, such as building and supporting the decentralized web community, funding research and development, and educating the public about the decentralized web.<br /><br />"
           }
         ]
       },
@@ -238,7 +238,7 @@
         },
         "format": "small",
         "theme": "green-purple",
-        "label": "Grants",
+        "label": "Awards",
         "heading": "We exist to ensure the power of humanity’s most important information is never compromised, abused, or ruled by any single entity.",
         "description": "If you’re working on a project that will help create a better DWeb, <a href='/contact'>we want to hear from you</a>.",
         "data_id": "",
@@ -286,7 +286,7 @@
         },
         "format": "small",
         "theme": "green-purple",
-        "heading": "The Starling Lab Grant Spotlight",
+        "heading": "The Starling Lab Award Spotlight",
         "description": "Filecoin Foundation for the Decentralized Web announced a multi-year commitment to <a href='https://www.starlinglab.org/' target='_blank'>The Starling Lab</a>, a research center developing a comprehensive set of tools and principles that empower organizations to securely capture, store, and verify human history.",
         "data_id": "",
         "button_theme": "",

@@ -1,10 +1,10 @@
 {
   "seo": {
-    "title": "Grants - Filecoin Foundation for the Decentralized Web",
-    "description": "FFDW focuses its collaborations on charitable activities. Along with our core work providing grants and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships."
+    "title": "Awards - Filecoin Foundation for the Decentralized Web",
+    "description": "FFDW focuses its collaborations on charitable activities. Along with our core work providing awards and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships."
   },
   "og": {
-    "site_name": "Grants - Filecoin Foundation for the Decentralized Web",
+    "site_name": "Awards - Filecoin Foundation for the Decentralized Web",
     "url": "",
     "type": "website",
     "image": "/images/page-index/open-graph.png"
@@ -12,8 +12,8 @@
   "header": {
     "type": "variant_4",
     "heading": "FFDW",
-    "subheading": "Grants and Programs",
-    "image_1": "/images/page-grants/person-showing-another-person-something-on-a-laptop.jpeg",
+    "subheading": "Awards and Programs",
+    "image_1": "/images/page-awards/person-showing-another-person-something-on-a-laptop.jpeg",
     "nav_theme": "light",
     "sub_theme": "red-purple"
   },
@@ -26,7 +26,7 @@
           "push_left": "off-1_sm-0"
         },
         "format": "small",
-        "description": "<p>The Filecoin Foundation for the Decentralized Web (FFDW) is launching a request for proposals (RFP) to identify the most compelling initiatives to partner with in four key areas: <ul><li><strong>Native Web3 Trainings</strong> — FFDW seeks to collaborate with initiatives training the next generation of native Web3 developers and builders in the decentralized ecosystem through virtual courses, seminars, bootcamps, and  hackathons.</li><li><strong>Web2 to Web3 Trainings</strong> — FFDW supports the creation of tools, programs, and learning materials aiming to welcome Web2 developers into the Web3 space. FFDW seeks to help existing developers bridge the web2-to-web3 skills gaps to help these developers participate and contribute within the greater decentralized ecosystem.</li><li><strong>Public Education</strong> — FFDW seeks to introduce the general public to the decentralized web, informing diverse audiences on the values, benefits and compelling use cases of decentralized technologies through accessible, open formats and various learning channels.</li><li><strong>Universities or GLAM institutions</strong> — FFDW endeavors to create a decentralized, digital library of humanity’s most important information. FFDW seeks to support initiatives that drive the development and use of technologies that enable decentralized storage, as well as cultural or academic institutions looking to preserve datasets or archives on the decentralized web that are available to, and in the interest of, the public.</li></ul></p><p>If your project or initiative would be a good fit for any of these areas, submit a completed <a href='#proposal_template' alt='FFDW proposal template'>proposal template</a> by the dates listed below. Please submit your full proposal (including attachments) in word document(s) if possible. Let us know if you have any questions! Both questions and proposals should be sent to <a href='mailto:proposals@ffdweb.org?subject=Proposal' alt='Email proposal to FFDW'>proposals@ffdweb.org</a>.</p><ul><li>RFP Launch Date: April 8th, 2022</li><li>RFP Questions Due: April 22nd, 2022</li><li>RFP Answers Posted: April 27th, 2022</li><li>RFP Review Begins: May 16th, 2022</li><li>RFP Review Closes: May 31st, 2022</li></ul>"
+        "description": "<p>The Filecoin Foundation for the Decentralized Web (FFDW) is launching a request for proposals (RFP) to identify the most compelling initiatives to partner with in four key areas: <ul><li><strong>Native Web3 Trainings</strong> — FFDW seeks to collaborate with initiatives training the next generation of native Web3 developers and builders in the decentralized ecosystem through virtual courses, seminars, bootcamps, and hackathons.</li><li><strong>Web2 to Web3 Trainings</strong> — FFDW supports the creation of tools, programs, and learning materials aiming to welcome Web2 developers into the Web3 space. FFDW seeks to help existing developers bridge the web2-to-web3 skills gaps to help these developers participate and contribute within the greater decentralized ecosystem.</li><li><strong>Public Education</strong> — FFDW seeks to introduce the general public to the decentralized web, informing diverse audiences on the values, benefits and compelling use cases of decentralized technologies through accessible, open formats and various learning channels.</li><li><strong>Universities or GLAM institutions</strong> — FFDW endeavors to create a decentralized, digital library of humanity’s most important information. FFDW seeks to support initiatives that drive the development and use of technologies that enable decentralized storage, as well as cultural or academic institutions looking to preserve datasets or archives on the decentralized web that are available to, and in the interest of, the public.</li></ul></p><p>If your project or initiative would be a good fit for any of these areas, submit a completed <a href='#proposal_template' alt='FFDW proposal template'>proposal template</a> by the dates listed below. Please submit your full proposal (including attachments) in word document(s) if possible. Let us know if you have any questions! Both questions and proposals should be sent to <a href='mailto:proposals@ffdweb.org?subject=Proposal' alt='Email proposal to FFDW'>proposals@ffdweb.org</a>.</p><ul><li>RFP Launch Date: April 18th, 2022</li><li>RFP Questions Due: April 29th, 2022</li><li>RFP Answers Posted: May 6th, 2022</li><li>RFP Review Begins: May 30th, 2022</li><li>RFP Review Closes: June 20th, 2022</li></ul>"
       }
     },
     "mission": {
@@ -63,7 +63,7 @@
           "push_left": "",
           "push_right": ""
         },
-        "src": "/images/page-grants/man-with-microphone-speaking-to-group.png",
+        "src": "/images/page-awards/man-with-microphone-speaking-to-group.png",
         "label": ""
       },
       "col_2": {
@@ -76,7 +76,7 @@
         "format": "tiny",
         "label": "FFDW’s Operating Approach",
         "heading": "Filecoin Foundation for the Decentralized Web is the charitable sister organization to the Filecoin Foundation.",
-        "description": "As the non-profitable sister to Filecoin Foundation, FFDW focuses its collaborations on charitable activities. Along with our core work providing grants and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships.",
+        "description": "As the non-profitable sister to Filecoin Foundation, FFDW focuses its collaborations on charitable activities. Along with our core work providing awards and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships.",
         "data_id": "",
         "theme": "",
         "button_theme": "",
@@ -100,7 +100,7 @@
           "push_right": ""
         },
         "format": "small",
-        "description": "As a private operating foundation, FFDW takes collaboration seriously.  Both our operating status and our ethos mean that we internally drive the development of ideas and projects.  When working with outside organizations, we approach all of our initiatives as collaborations in which both FFDW and its implementing organizations work together closely to ensure success. Rather than being an organization that simply writes checks and monitors progress, we roll up our sleeves and work alongside our project partners. Where useful, we assist our collaborators with program design, technical support, hiring, legal questions, and external communications.",
+        "description": "As a private operating foundation, FFDW takes collaboration seriously. We work together closely with our project partners to drive the development of ideas and projects and ensure success, and love to roll up our sleeves and work alongside you. Where useful, we assist our collaborators with program design, technical support, hiring, external communications, and other issues.",
         "data_id": "",
         "theme": "",
         "button_theme": "",
@@ -149,7 +149,7 @@
           "push_left": "off-2_sm-0",
           "push_right": ""
         },
-        "src": "/images/page-grants/person-showing-presentation-to-group.jpeg",
+        "src": "/images/page-awards/person-showing-presentation-to-group.jpeg",
         "label": ""
       }
     },
@@ -189,7 +189,7 @@
           "push_left": "",
           "push_right": ""
         },
-        "src": "/images/page-grants/person-on-laptop-in-cafe.png",
+        "src": "/images/page-awards/person-on-laptop-in-cafe.png",
         "label": ""
       },
       "col_2": {
@@ -234,7 +234,7 @@
             "theme": "red",
             "target": "_blank",
             "text": "Download the proposal template PDF",
-            "url": "/FFDW-proposal-narrative-template.zip",
+            "url": "/FFDW-proposal-narrative-template-2022.zip",
             "icon_after": "arrow-down",
             "icon_before": ""
           }
@@ -256,7 +256,7 @@
           "push_left": "off-2_sm-6_mi-4",
           "push_right": ""
         },
-        "src": "/images/page-grants/person-speaking-into-microphone-to-group.jpeg",
+        "src": "/images/page-awards/person-speaking-into-microphone-to-group.jpeg",
         "label": ""
       }
     },
