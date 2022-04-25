@@ -1,6 +1,5 @@
 ---
 label: "[Comp] Button"
-description: A clickable element that can be linked to internal or external pages
 hide_body: true
 fields:
 - name: text
@@ -24,11 +23,11 @@ fields:
     - X
     source:
       type: simple
-      section: 
-      file: 
-      path: 
+      section:
+      file:
+      path:
   label: Type
-  description: "Select the button's type from the dropdown menu.       \nA:  Primary
+  description: "Select the button's type from the dropdown menu. \nA:  Primary
     CTA, with gradients (ex. Accordion on Home page) \n\nB: Same as the Primary CTA
     except black artifacts (ex. CTA in Header of Home page) \n\nC: Secondary CTA,
     usually clear with a white border (ex. just above Footer on Home page) \n\nD:
@@ -46,9 +45,9 @@ fields:
     - a
     source:
       type: simple
-      section: 
-      file: 
-      path: 
+      section:
+      file:
+      path:
   label: Action
   description: The HTML tag of the element. Select "a" to link to a page outside of the site and "nuxt-link" to link to an internal page. "Button" is reserved for advanced functionality.
 - name: theme
@@ -64,9 +63,9 @@ fields:
     - white
     source:
       type: simple
-      section: 
-      file: 
-      path: 
+      section:
+      file:
+      path:
   label: Theme
   description: Select the color/gradient for the button
 - name: icon_before
@@ -80,11 +79,11 @@ fields:
     - finger-up
     source:
       type: simple
-      section: 
-      file: 
-      path: 
+      section:
+      file:
+      path:
   label: Icon - Before
-  descrpiton: Select the icon that will appear above or to the left of the button on hover
+  description: Select the icon that will appear above or to the left of the button on hover
 - name: icon_after
   type: select
   default: []
@@ -96,9 +95,9 @@ fields:
     - finger-up
     source:
       type: simple
-      section: 
-      file: 
-      path: 
+      section:
+      file:
+      path:
   label: Icon - After
   description: Select the icon that will appear below or to the right of the button on hover
 - name: url
@@ -107,4 +106,3 @@ fields:
     required: false
   label: URL
   description: Enter the link that the user is taken to, when the button is clicked
-  

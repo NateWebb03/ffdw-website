@@ -1,6 +1,5 @@
 ---
 label: "[Layout] Grid Alignment"
-description: Changes in this section will affect the site layout. DO NOT EDIT1.
 hide_body: true
 fields:
 - name: grid
@@ -27,4 +26,4 @@ fields:
     - equalHeight
     - noBottom
   label: Grid Classes
-  description: These options change CSS classes and will affect the site layout. DO NOT EDIT2.
+  description: These options change CSS classes and will affect the site layout. DO NOT EDIT.
