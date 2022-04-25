@@ -7,20 +7,23 @@ fields:
   config: {}
   template: data-seo
   label: Template → [Data] SEO
-  description: Populate the metadata associated with this content, like the page title and description.
+  description: Populate the metadata associated with this content, like the page title
+    and description.
 - name: og
   type: include
   config: {}
   template: data-open-graph-social
   label: Template → [Data] Open Graph & Social
-  description: Populate these fields to create a preview that will be displayed when this page is shared on social media.
+  description: Populate these fields to create a preview that will be displayed when
+    this page is shared on social media.
 - name: header
   type: include
   config: {}
   template: comp-header-variant-5
   label: Template → [Comp] Header Variant 5
-  description: >
-    This page's header content is editable within this section
+  description: 'This page''s header content is editable within this section
+
+    '
 pages:
 - content/pages/privacy.json
 - content/pages/terms.json

@@ -7,13 +7,15 @@ fields:
   config: {}
   template: data-seo
   label: Template → [Data] SEO
-  description: Populate the metadata associated with this content, like the page title and description.
+  description: Populate the metadata associated with this content, like the page title
+    and description.
 - name: og
   type: include
   config: {}
   template: data-open-graph-social
   label: Template → [Data] Open Graph & Social
-  description: Populate these fields to create a preview that will be displayed when this page is shared on social media.
+  description: Populate these fields to create a preview that will be displayed when
+    this page is shared on social media.
 - name: header
   type: include
   config: {}
@@ -80,7 +82,8 @@ fields:
     - type: field_group
       name: col_2
       label: Right column
-      description: The form header image is editable within this section
+      description: The form header image is editable within this section (portrait images
+        will work best)
       fields:
       - name: image_block
         type: include
@@ -176,7 +179,8 @@ fields:
                     required: false
                   label: Number
                 label: Columns
-                description: Changes to this field may affect the section layout. DO NOT EDIT
+                description: Changes to this field may affect the section layout.
+                  DO NOT EDIT
             - type: text
               name: action
               label: Action
