@@ -33,31 +33,62 @@
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-12"
+          "num": "col-12",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "small",
         "label": "FFDW’s Mission",
-        "heading": "FFDW’s mission is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open-source software and open protocols. In short, we foster and accelerate the growth of the decentralized web."
+        "heading": "FFDW’s mission is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open-source software and open protocols. In short, we foster and accelerate the growth of the decentralized web.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "description": "",
+        "ctas": [
+
+        ]
       }
     },
     "info_1": {
       "col_1": {
         "type": "image_block",
         "cols": {
-          "num": "col-4_sm-6_mi-9"
+          "num": "col-4_sm-6_mi-9",
+          "push_left": "",
+          "push_right": ""
         },
-        "src": "/images/page-awards/man-with-microphone-speaking-to-group.png"
+        "src": "/images/page-awards/man-with-microphone-speaking-to-group.png",
+        "label": ""
       },
       "col_2": {
         "type": "text_block",
         "cols": {
           "num": "col-6_sm-8_mi-12",
-          "push_left": "off-1_sm-0"
+          "push_left": "off-1_sm-0",
+          "push_right": ""
         },
         "format": "tiny",
         "label": "FFDW’s Operating Approach",
         "heading": "Filecoin Foundation for the Decentralized Web is the charitable sister organization to the Filecoin Foundation.",
-        "description": "As the non-profitable sister to Filecoin Foundation, FFDW focuses its collaborations on charitable activities. Along with our core work providing awards and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships."
+        "description": "As the non-profitable sister to Filecoin Foundation, FFDW focuses its collaborations on charitable activities. Along with our core work providing awards and working alongside our collaborators, FFDW also funds other initiatives through donations and sponsorships.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "ctas": [
+
+        ]
       }
     },
     "info_2": {
@@ -65,30 +96,61 @@
         "type": "text_block",
         "cols": {
           "num": "col-10_sm-12",
-          "push_left": "off-1_sm-0"
+          "push_left": "off-1_sm-0",
+          "push_right": ""
         },
         "format": "small",
-        "description": "As a private operating foundation, FFDW takes collaboration seriously. We work together closely with our project partners to drive the development of ideas and projects and ensure success, and love to roll up our sleeves and work alongside you. Where useful, we assist our collaborators with program design, technical support, hiring, external communications, and other issues."
+        "description": "As a private operating foundation, FFDW takes collaboration seriously. We work together closely with our project partners to drive the development of ideas and projects and ensure success, and love to roll up our sleeves and work alongside you. Where useful, we assist our collaborators with program design, technical support, hiring, external communications, and other issues.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "label": "",
+        "heading": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "ctas": [
+
+        ]
       }
     },
     "project_areas": {
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-6_sm-8_mi-12"
+          "num": "col-6_sm-8_mi-12",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "header",
         "label": "Project Areas",
         "heading": "FFDW’s Project Focuses",
-        "description": "FFDW collaborates with organizations that accelerate the adoption of open, decentralized technologies, help build communities that support and sustain open, decentralized technologies, and communicate to wider audiences the benefits of adopting open, decentralized technologies. Our projects all focus on one or more of the below lines of effort (LOEs)."
+        "description": "FFDW collaborates with organizations that accelerate the adoption of open, decentralized technologies, help build communities that support and sustain open, decentralized technologies, and communicate to wider audiences the benefits of adopting open, decentralized technologies. Our projects all focus on one or more of the below lines of effort (LOEs).",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "ctas": [
+
+        ]
       },
       "col_2": {
         "type": "image_block",
         "cols": {
           "num": "col-4_mi-8_ti-10",
-          "push_left": "off-2_sm-0"
+          "push_left": "off-2_sm-0",
+          "push_right": ""
         },
-        "src": "/images/page-awards/person-showing-presentation-to-group.jpeg"
+        "src": "/images/page-awards/person-showing-presentation-to-group.jpeg",
+        "label": ""
       }
     },
     "accordion_1": {
@@ -96,7 +158,8 @@
         "type": "accordion_block",
         "cols": {
           "num": "col-9_sm-10_mi-12",
-          "push_left": "off-3_sm-2_mi-0"
+          "push_left": "off-3_sm-2_mi-0",
+          "push_right": ""
         },
         "theme": "red-purple",
         "sections": [
@@ -116,31 +179,49 @@
       }
     },
     "application_process": {
-      "grid": ["middle"],
+      "grid": [
+        "middle"
+      ],
       "col_1": {
         "type": "image_block",
         "cols": {
-          "num": "col-4_sm-6_mi-8"
+          "num": "col-4_sm-6_mi-8",
+          "push_left": "",
+          "push_right": ""
         },
-        "src": "/images/page-awards/person-on-laptop-in-cafe.png"
+        "src": "/images/page-awards/person-on-laptop-in-cafe.png",
+        "label": ""
       },
       "col_2": {
         "type": "text_block",
         "cols": {
           "num": "col-6_sm-10_mi-12",
-          "push_left": "off-1_sm-0"
+          "push_left": "off-1_sm-0",
+          "push_right": ""
         },
         "format": "medium",
         "label": "Application Process",
         "heading": "FFDW currently reviews project applications monthly.",
-        "description": "We may change this cadence in the future. Proposals should be submitted to <a alt='Email proposal to FFDW' href='mailto:proposals@ffdweb.org?subject=Proposal'>proposals@ffdweb.org</a> as attachments to an email."
+        "description": "We may change this cadence in the future. Proposals should be submitted to <a alt='Email proposal to FFDW' href='mailto:proposals@ffdweb.org?subject=Proposal'>proposals@ffdweb.org</a> as attachments to an email.",
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": "",
+        "ctas": []
       }
     },
     "proposal_template": {
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-6_sm-10_mi-12"
+          "num": "col-6_sm-10_mi-12",
+          "push_left": "",
+          "push_right": ""
         },
         "format": "medium",
         "label": "FFDW Proposal Template",
@@ -157,15 +238,26 @@
             "icon_after": "arrow-down",
             "icon_before": ""
           }
-        ]
+        ],
+        "data_id": "",
+        "theme": "",
+        "button_theme": "",
+        "icon": "",
+        "date": "",
+        "tags": [
+
+        ],
+        "subheading": ""
       },
       "col_2": {
         "type": "image_block",
         "cols": {
           "num": "col-4_sm-6_mi-8",
-          "push_left": "off-2_sm-6_mi-4"
+          "push_left": "off-2_sm-6_mi-4",
+          "push_right": ""
         },
-        "src": "/images/page-awards/person-speaking-into-microphone-to-group.jpeg"
+        "src": "/images/page-awards/person-speaking-into-microphone-to-group.jpeg",
+        "label": ""
       }
     },
     "accordion_2": {
@@ -173,7 +265,8 @@
         "type": "accordion_block",
         "cols": {
           "num": "col-9_sm-10_mi-12",
-          "push_left": "off-3_sm-2_mi-0"
+          "push_left": "off-3_sm-2_mi-0",
+          "push_right": ""
         },
         "theme": "red-purple",
         "sections": [

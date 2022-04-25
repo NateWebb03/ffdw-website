@@ -1,0 +1,33 @@
+---
+label: "[Block] Card List"
+hide_body: true
+fields:
+- name: type
+  type: text
+  config:
+    required: false
+  label: Type
+  default: card_list_block
+  hidden: true
+  description: Do not change. This field is only visible to Forestry admins.
+- name: cols
+  type: include
+  config: {}
+  template: columns
+  label: Columns
+  description: Changes to this field may affect the section layout. DO NOT EDIT
+- name: cards
+  type: field_group_list
+  fields:
+  - name: card_component
+    type: include
+    config: {}
+    template: card
+    label: Template → [Comp] Card
+  config:
+    min: 
+    max: 
+    labelField: title
+  label: Cards
+  description: Click "Add Card" to add and populate a new card that will appear in the card list
+  

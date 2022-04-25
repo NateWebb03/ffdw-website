@@ -49,7 +49,7 @@ export default {
     disable () { // disabled on blog singular pages
       return this.header.disable
     },
-    theme () { // 'purple-green', 'red-purple', 'red-green'
+    theme () { // 'purple-green-a', 'purple-green-b', 'red-purple', 'red-green'
       return this.header.theme
     },
     navTheme () { // 'dark' or 'light'

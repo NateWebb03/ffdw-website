@@ -1,0 +1,21 @@
+---
+label: "[Layout] Layout"
+description: The fields in this section affect page and element layouts. DO NOT EDIT
+hide_body: true
+fields:
+- name: layout
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - compact
+    - medium
+    - large
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: "[Comp] Layout"
+  description: Selections from this dropdown can affect the the section or element layout. DO NOT EDIT.

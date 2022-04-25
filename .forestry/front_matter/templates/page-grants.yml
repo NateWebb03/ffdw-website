@@ -1,0 +1,196 @@
+---
+label: "[Page] Grants"
+hide_body: true
+fields:
+- name: seo
+  type: include
+  config: {}
+  template: data-seo
+  label: Template → [Data] SEO
+  description: Populate the metadata associated with this content, like the page title
+    and description.
+- name: og
+  type: include
+  config: {}
+  template: data-open-graph-social
+  label: Template → [Data] Open Graph & Social
+  description: Populate these fields to create a preview that will be displayed when
+    this page is shared on social media.
+- name: header
+  type: include
+  config: {}
+  template: comp-header-variant-4
+  label: Template → [Comp] Header Variant 4
+  description: 'The page''s header content is editable within this section
+
+    '
+- type: field_group
+  name: page_content
+  label: Page Content
+  description: The visible content on the page is editable within this section.
+  fields:
+  - type: field_group
+    name: mission
+    label: Mission
+    fields:
+    - type: field_group
+      name: col_1
+      label: Content
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+  - type: field_group
+    name: info_1
+    label: Info 1
+    description: Directly follows the Mission section, consist of an image-block in
+      left column and a text-block in the right column.
+    fields:
+    - type: field_group
+      name: col_1
+      label: Left column
+      description: The left column content is editable within this section
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+    - type: field_group
+      name: col_2
+      label: Right column
+      description: The image-block content is editable within this section (portrait
+        images will work best)
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+  - type: field_group
+    name: info_2
+    label: Info 2
+    description: Full width text block section with purple rectangle down right side    
+    fields:
+    - type: field_group
+      name: col_1
+      label: Content
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+  - type: field_group
+    name: project_areas
+    label: Project Areas
+    fields:
+    - type: field_group
+      name: Left column
+      description: The left column content is editable within this section
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+      label: Column 1
+    - type: field_group
+      name: col_2
+      label: Right column
+      description: The image-block is editable within this section (portrait images
+        will work best)
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+  - type: field_group
+    name: accordion_1
+    label: Lines of Effort Accordion
+    description: Edit the accordion that highlights the various types of projects
+      FFDW works with
+    fields:
+    - type: field_group
+      name: col_1
+      label: Content
+      fields:
+      - name: accordion_block
+        type: include
+        config: {}
+        template: block-accordion
+        label: Template → [Block] Accordion
+  - type: field_group
+    name: application_process
+    label: Application Process
+    fields:
+    - name: grid
+      type: include
+      config: {}
+      template: grid-classes
+      label: Template → [Layout] Grid Alignment
+      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+    - type: field_group
+      name: col_1
+      label: Left column
+      description: The image-block is editable within this section (portrait images
+        will work best)
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+    - type: field_group
+      name: col_2
+      label: Right column
+      description: The image-block is editable within this section
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+  - type: field_group
+    name: proposal_template
+    label: Proposal Template
+    fields:
+    - type: field_group
+      name: col_1
+      label: Left column
+      description: The text-block is editable within this section
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
+    - type: field_group
+      name: col_2
+      label: Right column
+      description: The image-block is editable within this section (portrait images
+        will work best)
+      fields:
+      - name: image_block
+        type: include
+        config: {}
+        template: image-block
+        label: Template → [Block] Image
+  - type: field_group
+    name: accordion_2
+    label: Application Guidance Accordion
+    fields:
+    - type: field_group
+      name: col_1
+      label: Content
+      fields:
+      - name: accordion_block
+        type: include
+        config: {}
+        template: block-accordion
+        label: Template → [Block] Accordion
+pages:
+- content/pages/grants.json

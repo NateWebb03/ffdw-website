@@ -1,0 +1,110 @@
+---
+label: "[Comp] Button"
+description: A clickable element that can be linked to internal or external pages
+hide_body: true
+fields:
+- name: text
+  type: text
+  config:
+    required: false
+  label: Text
+  description: The button's text
+- name: type
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - A
+    - B
+    - C
+    - D
+    - E
+    - F
+    - X
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+  description: "Select the button's type from the dropdown menu.       \nA:  Primary
+    CTA, with gradients (ex. Accordion on Home page) \n\nB: Same as the Primary CTA
+    except black artifacts (ex. CTA in Header of Home page) \n\nC: Secondary CTA,
+    usually clear with a white border (ex. just above Footer on Home page) \n\nD:
+    Tertiary CTA, almost no styling except font-weight and color (ex. careers list)
+    \n\nE: Navigation [top-level] (Nav + Footer) \n\nF: Navigation [subnav] (Nav)
+    \n\nX: No styling + slot\n"
+- name: action
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - button
+    - nuxt-link
+    - a
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Action
+  description: The HTML tag of the element. Select "a" to link to a page outside of the site and "nuxt-link" to link to an internal page. "Button" is reserved for advanced functionality.
+- name: theme
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - purple-green
+    - red-purple
+    - red-green
+    - black
+    - white
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme
+  description: Select the color/gradient for the button
+- name: icon_before
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - star
+    - arrow-down
+    - finger-up
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Icon - Before
+  descrpiton: Select the icon that will appear above or to the left of the button on hover
+- name: icon_after
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - star
+    - arrow-down
+    - finger-up
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Icon - After
+  description: Select the icon that will appear below or to the right of the button on hover
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+  description: Enter the link that the user is taken to, when the button is clicked
+  
