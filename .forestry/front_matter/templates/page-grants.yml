@@ -72,7 +72,7 @@ fields:
   - type: field_group
     name: info_2
     label: Info 2
-    description: Full width text block section with purple rectangle down right side    
+    description: Full width text block section with purple rectangle down right side
     fields:
     - type: field_group
       name: col_1
@@ -132,7 +132,8 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+      description: Selections from this dropdown will affect the section layout. DO
+        NOT EDIT.
     - type: field_group
       name: col_1
       label: Left column
@@ -192,5 +193,3 @@ fields:
         config: {}
         template: block-accordion
         label: Template → [Block] Accordion
-pages:
-- content/pages/grants.json

@@ -240,7 +240,8 @@ fields:
   - type: field_group
     name: latest_news
     label: Latest News
-    description: The header and description for the featured blog posts section is editable here.
+    description: The header and description for the featured blog posts section is
+      editable here.
     fields:
     - type: field_group
       name: col_1

@@ -29,7 +29,8 @@ fields:
     config:
       maxSize: 0.75
     label: Image 1
-    description: Add the image that will appear in the center of the header (landscape image is best)
+    description: Add the image that will appear in the center of the header (landscape
+      image is best)
   - name: sub_theme
     type: select
     default: red-green
@@ -59,6 +60,7 @@ fields:
         file: 
         path: 
     label: Nav Theme
-    description: Select the navigation text color from the dropdown menu - "dark" will make the text in the nav black | "light" will make the text in the nav white
+    description: Select the navigation text color from the dropdown menu - "dark"
+      will make the text in the nav black | "light" will make the text in the nav
+      white
   label: Header
-  

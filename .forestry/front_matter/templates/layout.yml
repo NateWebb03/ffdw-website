@@ -13,8 +13,9 @@ fields:
     - large
     source:
       type: simple
-      section:
-      file:
-      path:
+      section: 
+      file: 
+      path: 
   label: "[Comp] Layout"
-  description: Selections from this dropdown can affect the the section or element layout. DO NOT EDIT.
+  description: Selections from this dropdown can affect the the section or element
+    layout. DO NOT EDIT.
