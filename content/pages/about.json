@@ -22,7 +22,8 @@
       "text": "Ada Lovelace",
       "url": "https://en.wikipedia.org/wiki/Ada_Lovelace",
       "target": "_blank",
-      "icon_after": "arrow-down"
+      "icon_after": "arrow-down",
+      "icon_before": ""
     },
     "text": "",
     "action": "",
@@ -304,7 +305,9 @@
       "col_1": {
         "type": "card_list_block",
         "cols": {
-          "num": "col"
+          "num": "col",
+          "push_left": "",
+          "push_right": ""
         },
         "cards": [
           {
@@ -313,7 +316,17 @@
             "theme": "red-purple",
             "img": "/images/page-about/sheila-warren.png",
             "title": "Sheila Warren",
-            "title_suffix": "Head of Blockchain and Data Policy, World Economic Forum"
+            "title_suffix": "Head of Blockchain and Data Policy, World Economic Forum",
+            "action": "",
+            "url": "",
+            "label": "",
+            "icon": "",
+            "description": "",
+            "date": "",
+            "date_before": "",
+            "ctas": [
+
+            ]
           },
           {
             "type": "A",
@@ -321,7 +334,17 @@
             "theme": "red-purple",
             "img": "/images/page-about/brewster-kahle.png",
             "title": "Brewster Kahle",
-            "title_suffix": "Founder, Internet Archive"
+            "title_suffix": "Founder, Internet Archive",
+            "action": "",
+            "url": "",
+            "label": "",
+            "icon": "",
+            "description": "",
+            "date": "",
+            "date_before": "",
+            "ctas": [
+
+            ]
           },
           {
             "type": "A",
@@ -330,7 +353,17 @@
             "direction": "reverse",
             "img": "/images/page-about/joe-lubin.png",
             "title": "Joe Lubin",
-            "title_suffix": "Founder of ConsenSys, Cofounder of Ethereum"
+            "title_suffix": "Founder of ConsenSys, Cofounder of Ethereum",
+            "action": "",
+            "url": "",
+            "label": "",
+            "icon": "",
+            "description": "",
+            "date": "",
+            "date_before": "",
+            "ctas": [
+
+            ]
           },
           {
             "type": "A",
@@ -339,15 +372,35 @@
             "direction": "reverse",
             "img": "/images/page-about/wendy-hanamura.png",
             "title": "Wendy Hanamura",
-            "title_suffix": "Director of Partnerships, Internet Archive"
+            "title_suffix": "Director of Partnerships, Internet Archive",
+            "action": "",
+            "url": "",
+            "label": "",
+            "icon": "",
+            "description": "",
+            "date": "",
+            "date_before": "",
+            "ctas": [
+
+            ]
           },
           {
             "type": "A",
             "size": "compact",
             "theme": "red-purple",
-            "img": "/images/page-about/georgia-quinn.png",
+            "img": "/images/georgia_quinn_updated.jpg",
             "title": "Georgia Quinn",
-            "title_suffix": "General Counsel, Anchorage"
+            "title_suffix": "General Counsel, Anchorage",
+            "action": "",
+            "url": "",
+            "label": "",
+            "icon": "",
+            "description": "",
+            "date": "",
+            "date_before": "",
+            "ctas": [
+
+            ]
           },
           {
             "type": "A",
@@ -355,7 +408,17 @@
             "theme": "red-purple",
             "img": "/images/page-about/alex-feerst.png",
             "title": "Alex Feerst",
-            "title_suffix": "CEO, Murmuration Labs"
+            "title_suffix": "CEO, Murmuration Labs",
+            "action": "",
+            "url": "",
+            "label": "",
+            "icon": "",
+            "description": "",
+            "date": "",
+            "date_before": "",
+            "ctas": [
+
+            ]
           },
           {
             "type": "A",
@@ -364,7 +427,17 @@
             "direction": "reverse",
             "img": "/images/page-about/sandra-ro.png",
             "title": "Sandra Ro",
-            "title_suffix": "CEO, Global Blockchain Business Council"
+            "title_suffix": "CEO, Global Blockchain Business Council",
+            "action": "",
+            "url": "",
+            "label": "",
+            "icon": "",
+            "description": "",
+            "date": "",
+            "date_before": "",
+            "ctas": [
+
+            ]
           },
           {
             "type": "A",
@@ -373,7 +446,17 @@
             "direction": "reverse",
             "img": "/images/page-about/katie-biber.png",
             "title": "Katie Biber",
-            "title_suffix": "General Counsel, Brex"
+            "title_suffix": "General Counsel, Brex",
+            "action": "",
+            "url": "",
+            "label": "",
+            "icon": "",
+            "description": "",
+            "date": "",
+            "date_before": "",
+            "ctas": [
+
+            ]
           }
         ]
       }

@@ -27,7 +27,8 @@ fields:
 - type: field_group
   name: page_content
   label: Page Content
-  description: The visible content on the page (except the careers section) is editable within this section.
+  description: The visible content on the page (except the careers section) is editable
+    within this section.
   fields:
   - type: field_group
     name: intro_1
@@ -235,6 +236,7 @@ fields:
   - type: text
     name: theme
     label: Theme
-    description: Some elements in the section will reflect your color choice (Options - Green or Purple)
+    description: Some elements in the section will reflect your color choice (Options
+      - Green or Purple)
 pages:
 - content/pages/get-involved.json

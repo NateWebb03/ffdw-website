@@ -26,7 +26,7 @@ fields:
 - type: boolean
   name: featured
   label: Featured
-  description: Click if you would like this post to be the featured post 
+  description: Click if you would like this post to be the featured post
 - type: list
   name: recommendedPosts
   label: Recommended Posts
@@ -35,11 +35,11 @@ fields:
   type: tag_list
   default: []
   label: Tags
-  description: Add associated concepts or words that can be used to search for this post
+  description: Add associated concepts or words that can be used to search for this
+    post
 - name: image
   type: file
   config:
     maxSize: 64
   label: Post Header Image
   description: Add an image that will appear in the header for this post
-  

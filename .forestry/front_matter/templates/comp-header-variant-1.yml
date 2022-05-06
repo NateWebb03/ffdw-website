@@ -40,13 +40,15 @@ fields:
     config:
       maxSize: 0.75
     label: Image 1
-    description: Add the main(larger) image for the header - portrait images will look best
+    description: Add the main(larger) image for the header - portrait images will
+      look best
   - name: image_2
     type: file
     config:
       maxSize: 0.75
     label: Image 2
-    description: Add the secondary(smaller) image for the header - portrait images will look best
+    description: Add the secondary(smaller) image for the header - portrait images
+      will look best
   - name: cta
     type: field_group
     config: {}
@@ -57,5 +59,6 @@ fields:
       template: button
       label: Template → [Comp] Button
     label: CTA
-    description: Populate fields to create a clickable element that can be linked to internal or external pages
+    description: Populate fields to create a clickable element that can be linked
+      to internal or external pages
   label: Header
