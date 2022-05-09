@@ -39,7 +39,8 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+      description: Selections from this dropdown will affect the section layout. DO
+        NOT EDIT.
     - name: col_1
       type: field_group
       config: {}
@@ -82,7 +83,8 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+      description: Selections from this dropdown will affect the section layout. DO
+        NOT EDIT.
     - name: col_1
       type: field_group
       config: {}
@@ -128,7 +130,8 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+      description: Selections from this dropdown will affect the section layout. DO
+        NOT EDIT.
     - name: col_1
       type: field_group
       config: {}
@@ -163,7 +166,8 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+      description: Selections from this dropdown will affect the section layout. DO
+        NOT EDIT.
     - name: col_1
       type: field_group
       config: {}
@@ -197,7 +201,8 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+      description: Selections from this dropdown will affect the section layout. DO
+        NOT EDIT.
     - name: image_left
       type: field_group
       config: {}
@@ -243,7 +248,8 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+      description: Selections from this dropdown will affect the section layout. DO
+        NOT EDIT.
     - name: col_1
       type: field_group
       config: {}
@@ -276,7 +282,8 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+      description: Selections from this dropdown will affect the section layout. DO
+        NOT EDIT.
     - type: text
       name: classNames
       label: classNames
@@ -307,7 +314,8 @@ fields:
           - type: text
             name: name
             label: Name
-            description: Descriptive name for the section. This will not be visible on the page
+            description: Descriptive name for the section. This will not be visible
+              on the page
           - type: field_group
             name: props
             label: Options
@@ -318,7 +326,8 @@ fields:
             - type: text
               name: label
               label: label
-              description: This text will appear at the top of the right side of the section
+              description: This text will appear at the top of the right side of the
+                section
             - type: text
               name: text_1
               label: text_1
@@ -335,7 +344,8 @@ fields:
               - type: text
                 name: name
                 label: Name
-                description: Descriptive name for the form. This will not be visible on the page
+                description: Descriptive name for the form. This will not be visible
+                  on the page
               - type: field_group
                 name: props
                 label: Form Builder
@@ -343,7 +353,8 @@ fields:
                 - type: field_group_list
                   name: fields
                   label: Fields
-                  description: Click "Add Field" to add another input field to the contact form
+                  description: Click "Add Field" to add another input field to the
+                    contact form
                   fields:
                   - type: text
                     name: label
@@ -356,11 +367,13 @@ fields:
                   - type: text
                     name: validation
                     label: validation
-                    description: Input-field prompt (ex. *Required, if the field must be filled to send the form)
+                    description: Input-field prompt (ex. *Required, if the field must
+                      be filled to send the form)
                 - type: text
                   name: action
                   label: Action
-                  description: The address or endpoint the form will be sent to when submitted
+                  description: The address or endpoint the form will be sent to when
+                    submitted
                 - type: text
                   name: message
                   label: Message
@@ -380,7 +393,8 @@ fields:
       config: {}
       template: grid-classes
       label: Template → [Layout] Grid Alignment
-      description: Selections from this dropdown will affect the section layout. DO NOT EDIT.
+      description: Selections from this dropdown will affect the section layout. DO
+        NOT EDIT.
     - name: col_1
       type: field_group
       config: {}
