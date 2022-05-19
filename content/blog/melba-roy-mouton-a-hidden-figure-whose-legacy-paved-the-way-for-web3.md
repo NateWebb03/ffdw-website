@@ -13,7 +13,7 @@ recommendedPosts:
 - Innovation
 
 ---
-## Early Life - test
+## Early Life
 
 Born in [Fairfax, VA](https://www.washingtonpost.com/archive/local/1990/06/29/william-davies-retired-us-geological-official-dies/7dba2dd4-a762-4d89-bd96-e98612a579d4/) in 1929, Mouton studied math at Howard University, where she received a Bachelor’s and a Master’s degree in Mathematics. After graduation, she began a career focused in applied mathematics, starting with [statistical analysis](https://massivesci.com/articles/science-heroes-melba-roy-mouton-nasa/) in the Army Map Service and the Census Bureau. In this position, she analyzed large data sets from the U.S. Census, and assisted the US government in plotting future neighborhoods and population centers.
 
