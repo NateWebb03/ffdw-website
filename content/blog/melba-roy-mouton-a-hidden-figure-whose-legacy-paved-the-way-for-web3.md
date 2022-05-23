@@ -6,7 +6,7 @@ description: Melba Roy Mouton was a statistician and computer scientist whose co
   uses and documentation practices, but also how it is taught to future generations.
 author: Filecoin Foundation for the Decentralized Web
 date: June 01 2021
-sortDate: '2021-06-01'
+sortDate: 2021-06-01
 image: "/images/page-blog/melba-roy.jpeg"
 recommendedPosts:
 - History
