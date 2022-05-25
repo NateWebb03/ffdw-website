@@ -1,7 +1,7 @@
 ---
 tags: []
 title: test post
-date: 2022-05-26T04:00:00Z
+date: 2022-05-26
 author: ''
 description: test post for forestry date formatting
 featured: false
