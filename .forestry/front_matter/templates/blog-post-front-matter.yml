@@ -46,3 +46,4 @@ fields:
   description: Add an image that will appear in the header for this post
 pages:
 - content/blog/announcing-filecoin-foundation-for-the-decentralized-web-s-first-open-request-for-proposals.md
+- content/blog/test-post-2.md
