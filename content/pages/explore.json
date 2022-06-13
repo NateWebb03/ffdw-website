@@ -236,14 +236,14 @@
         "cards": [
           {
             "type": "C",
-            "theme": "",
+            "theme": "green",
             "label": "Beginner",
             "title": "Content Addressing on the Decentralized Web",
             "description": "Learn how hashing and content addressing enable verifiable data sharing with peers on the decentralized web.",
             "ctas": [
               {
                 "type": "D",
-                "theme": "",
+                "theme": "green",
                 "action": "a",
                 "text": "Read More",
                 "url": "https://proto.school/content-addressing",
