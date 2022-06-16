@@ -4,7 +4,6 @@
     <template v-for="(video, index) in videos">
 
       <VideoBlock
-        v-if="video.isPublic"
         :key="index"
         type="slate-video"
         :block="video" />
@@ -42,10 +41,15 @@ export default {
     videos () {
       if (this.slateCollections) {
         const collection = this.slateCollections.find((col) => { return col.slatename === this.block.slatename })
-        return collection.objects.filter((obj) => { return !obj.url })
+        // console.log(collection)
+        return collection.objects //.filter((obj) => { return !obj.url })
       }
       return []
     }
+  },
+
+  mounted () {
+    console.log(this.videos)
   }
 }
 </script>

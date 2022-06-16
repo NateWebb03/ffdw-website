@@ -71,15 +71,15 @@ export default {
         if (this.block.data.coverImage) {
           return `https://gateway.ipfs.io/ipfs/${this.block.data.coverImage.cid}`
         }
-        if (this.block.data.link) {
-          return this.block.data.link.image
+        if (this.block.data.linkImage) {
+          return this.block.data.linkImage
         }
         return false
       }
       return this.block.preview_image
     },
     url () {
-      return this.isSlateVideo ? `https://gateway.ipfs.io/ipfs/${this.block.cid}` : this.block.url
+      return !this.isSlateVideo ? this.block.url : `https://gateway.ipfs.io/ipfs/${this.block.cid}`
     },
     tint () {
       return this.block.tint
@@ -104,6 +104,10 @@ export default {
     slateVideoType () {
       return this.isSlateVideo ? this.block.data.type : ''
     }
+  },
+
+  mounted () {
+    console.log(this.block)
   },
 
   methods: {
