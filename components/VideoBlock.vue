@@ -2,11 +2,22 @@
   <div class="block video-block">
 
     <div class="preview-container" @click="openModal">
-      <div class="overlay">
+
+      <div :class="['overlay', { fallback: !preview_image }]">
         <IconPlay class="play-icon" />
       </div>
-      <div class="tint"></div>
-      <img :src="preview_image" class="preview-image" />
+      <div :class="['tint', { fallback: !preview_image }]"></div>
+
+      <img
+        v-if="preview_image"
+        :src="preview_image"
+        class="preview-image" />
+
+      <VideoPreviewImage
+        v-if="!preview_image"
+        variant="C"
+        class="preview-image" />
+
     </div>
 
     <div v-if="date" class="metadata">
@@ -40,6 +51,7 @@ import { mapActions } from 'vuex'
 
 import IconPlay from '@/components/icons/Play'
 import Button from '@/components/Button'
+import VideoPreviewImage from '@/components/svgs/VideoPreviewImage'
 
 // ====================================================================== Export
 export default {
@@ -47,7 +59,8 @@ export default {
 
   components: {
     IconPlay,
-    Button
+    Button,
+    VideoPreviewImage
   },
 
   props: {
@@ -106,10 +119,6 @@ export default {
     }
   },
 
-  mounted () {
-    console.log(this.block)
-  },
-
   methods: {
     ...mapActions({
       setModal: 'global/setModal'
@@ -139,7 +148,7 @@ export default {
   &:hover {
     ::v-deep .play-icon {
       transition: 250ms ease-in;
-      transform: scale(1.1);
+      transform: translate(-50%, -50%) scale(1.15);
     }
   }
 }
@@ -154,9 +163,18 @@ export default {
   padding: 0.6875rem 0 0 0.6875rem;
   z-index: 15;
   transition: 250ms ease-out;
+  &.fallback {
+    ::v-deep rect {
+      fill: $haiti;
+    }
+  }
 }
 
 ::v-deep .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 3.75rem;
   transition: 250ms ease-out;
 }
@@ -172,6 +190,9 @@ export default {
   background-color: $haiti;
   opacity: 0.3;
   z-index: 10;
+  &.fallback {
+    display: none;
+  }
 }
 
 .preview-image {
