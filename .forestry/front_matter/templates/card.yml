@@ -130,6 +130,7 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
+    export_format: YYYY-MM-DD
 - name: date_before
   type: datetime
   label: Date - Before
@@ -140,6 +141,7 @@ fields:
     time_format: 
     display_utc: false
     description: Select date - this date will be displayed above the text content
+    export_format: YYYY-MM-DD
 - name: theme
   type: select
   default: purple-green
