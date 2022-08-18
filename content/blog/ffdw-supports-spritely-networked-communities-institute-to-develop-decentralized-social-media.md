@@ -1,9 +1,12 @@
 ---
-tags: []
+tags:
+- social media
+- decentralized
+- award
 title: FFDW Supports Spritely Networked Communities Institute to Develop Decentralized
   Social Media
 date: 2022-08-16
-author: ''
+author: Filecoin Foundation for the Decentralized Web
 description: Award will further efforts to give people control over identity and relationships
   online
 featured: false
@@ -11,9 +14,7 @@ recommendedPosts: []
 image: "/images/0816-ffdw-spritely.png"
 
 ---
-# FFDW Supports Spritely Networked Communities Institute to Develop Decentralized Social Media
-
-###### _Award will further efforts to give people control over identity and relationships online_
+![](/images/0816-ffdw-spritely.png)
 
 Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce an award to [Spritely Networked Communities Institute](https://spritely.institute/) (Spritely Institute) to support the creation of decentralized social media. Spritley’s mission is to put people directly in control of their online identities and relationships. This award will further the organization’s efforts on projects ranging from decentralized identity to decentralized social networks to encrypted and portable storage. This technology is open, free, and built to enable a gatekeeper-free path, where users and social content are not tied to a specific server or company.
 
