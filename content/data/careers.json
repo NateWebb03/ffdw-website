@@ -8,16 +8,11 @@
     "url": "/contact"
   },
   "featured_image": "/images/component-careers/two-people-sitting-at-desk.png",
-  "cards": [
-    {
-      "type": "C",
-      "title": "Communications Associate",
-      "description": "We're looking for a communications associate to help with developing and executing the organization's growth and outreach strategy.",
-      "date_before": "",
-      "link_label": "Apply Now",
-      "url": "//jobs.lever.co/filecoin/980b4d88-6cff-4221-9ebe-b1634ae8a516"
-    }
-  ],
+  "card_customizations": {
+    "number_job_postings": 3,
+    "type": "C",
+    "link_label": "Apply Now"
+  },
   "secondary_ctas": [
     {
       "type": "C",

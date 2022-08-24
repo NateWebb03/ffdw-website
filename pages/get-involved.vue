@@ -47,6 +47,7 @@ export default {
     await store.dispatch('global/getBaseData', 'general')
     await store.dispatch('global/getBaseData', { key: 'get-involved', data: GetInvolvedPageData })
     await store.dispatch('global/getBaseData', { key: 'careers_data', data: CareersData })
+    await store.dispatch('global/getLeverPostings')
   },
 
   head () {
