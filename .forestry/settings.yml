@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: content/data/careers.json
+  label: Careers
+  match: "**/*"
 - type: heading
   label: Site Data
 - type: document
