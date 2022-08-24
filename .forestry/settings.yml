@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: content/data/careers.json
-  label: Careers
-  match: "**/*"
 - type: heading
   label: Site Data
 - type: document
@@ -39,6 +35,9 @@ sections:
   - page-grants
   - page-index
   - page-terms
+- type: document
+  path: content/data/careers.json
+  label: Careers
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
