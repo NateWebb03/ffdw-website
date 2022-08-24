@@ -55,28 +55,6 @@ fields:
       step: 
   label: Card Customizations
 - type: field_group_list
-  name: cards
-  label: cards
-  fields:
-  - type: text
-    name: type
-    label: type
-  - type: text
-    name: title
-    label: title
-  - type: textarea
-    name: description
-    label: description
-  - type: text
-    name: date_before
-    label: date_before
-  - type: text
-    name: link_label
-    label: link_label
-  - type: text
-    name: url
-    label: url
-- type: field_group_list
   name: secondary_ctas
   label: secondary_ctas
   fields:
