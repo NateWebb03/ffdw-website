@@ -27,6 +27,33 @@ fields:
 - type: file
   name: featured_image
   label: featured_image
+- name: card_customizations
+  type: field_group
+  config: {}
+  fields:
+  - name: type
+    type: text
+    config:
+      required: false
+    label: Type
+    default: C
+  - name: link_label
+    type: text
+    config:
+      required: false
+    label: Link Label
+    default: Apply Now
+  - name: number_job_postins
+    type: number
+    label: Number of Job Postings
+    description: ''
+    default: 2
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  label: Card Customizations
 - type: field_group_list
   name: cards
   label: cards
