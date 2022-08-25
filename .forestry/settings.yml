@@ -9,6 +9,9 @@ sections:
 - type: document
   path: content/pages/general.json
   label: General
+- type: document
+  path: content/data/shared.json
+  label: Shared
 - type: heading
   label: Content
 - type: directory
@@ -35,9 +38,6 @@ sections:
   - page-grants
   - page-index
   - page-terms
-- type: document
-  path: content/data/careers.json
-  label: Careers
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
