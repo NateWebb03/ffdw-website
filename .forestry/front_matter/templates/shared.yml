@@ -1,0 +1,65 @@
+---
+label: Shared
+hide_body: true
+fields:
+- type: field_group
+  name: careers
+  label: careers
+  fields:
+  - type: text
+    name: label
+    label: label
+  - type: textarea
+    name: heading
+    label: heading
+  - type: field_group
+    name: primary_cta
+    label: primary_cta
+    fields:
+    - type: text
+      name: type
+      label: type
+    - type: text
+      name: action
+      label: action
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: url
+      label: url
+  - type: file
+    name: featured_image
+    label: featured_image
+  - type: field_group
+    name: card_customizations
+    label: card_customizations
+    fields:
+    - type: number
+      name: number_job_postings
+      label: number_job_postings
+    - type: text
+      name: type
+      label: type
+    - type: text
+      name: link_label
+      label: link_label
+  - type: field_group_list
+    name: secondary_ctas
+    label: secondary_ctas
+    fields:
+    - type: text
+      name: type
+      label: type
+    - type: text
+      name: action
+      label: action
+    - type: text
+      name: target
+      label: target
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: url
+      label: url
