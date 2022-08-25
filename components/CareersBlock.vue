@@ -206,6 +206,15 @@ export default {
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+  @supports (-webkit-line-clamp: 2) {
+    .description {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      height: auto;
+      position: relative;
+    }
+  }
   &:not(:last-child) {
     margin-bottom: 2rem;
   }
