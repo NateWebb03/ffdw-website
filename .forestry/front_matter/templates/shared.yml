@@ -4,62 +4,111 @@ hide_body: true
 fields:
 - type: field_group
   name: careers
-  label: careers
+  label: Careers Block
   fields:
   - type: text
     name: label
-    label: label
+    label: Label
+    description: Edit the section label (appears as small text in the top left corner
+      of the section)
   - type: textarea
     name: heading
-    label: heading
+    label: Heading
+    description: The section heading text
   - type: field_group
     name: primary_cta
-    label: primary_cta
+    label: Primary
     fields:
     - type: text
       name: type
-      label: type
+      label: CTA Type
+      description: 'Edit the button''s type. <br>A: Primary CTA, with gradients (ex.
+        Accordion on Home page) <br>B: Same as the Primary CTA except black artifacts
+        (ex. CTA in Header of Home page) <br>C: Secondary CTA, usually clear with
+        a white border (ex. just above Footer on Home page) <br>D: Tertiary CTA, almost
+        no styling except font-weight and color (ex. careers list) <br>E: Navigation
+        [top-level] (Nav + Footer) <br>F: Navigation [subnav] (Nav) <br>X: No styling
+        + slot'
     - type: text
       name: action
-      label: action
+      label: Action
+      description: The HTML tag of the element. Type "a" to link to a page outside
+        of the site and "nuxt-link" to link to an internal page. "Button" is reserved
+        for advanced functionality.
     - type: text
       name: text
-      label: text
+      label: Text
+      description: That button's text
     - type: text
       name: url
-      label: url
+      description: Enter the link that the user is taken to, when the button is clicked
+      label: URL
+    description: Edit the button/cta that appears directly below the heading text.
   - type: file
     name: featured_image
-    label: featured_image
+    label: Featured Image
+    description: Edit/upload a feature image for the section. It will appear on the
+      left side of the careers section
   - type: field_group
     name: card_customizations
-    label: card_customizations
     fields:
     - type: number
       name: number_job_postings
-      label: number_job_postings
+      label: Number of Job Postings
+      description: Edit the number of postings that are show to the right of the featured
+        image
     - type: text
       name: type
-      label: type
+      label: Type
+      description: 'There are several card formats to choose from, each of which has
+        a different visual appaerance, and may be content-specific (i.e., not all
+        cards will always fit correctly in every section).<br> For this block, we
+        recommend card type C<br> A: (deprecated)<br> B: A full width card format
+        that appears as a row, like the blog and news links throughout the site.<br>
+        C: A rectangular card which typically appears in a two-per-row format on desktop
+        screen sizes. This is visible on the Tutorials section of the Explore page.<br><br>Editing
+        this element can change the section''s design [ADMIN USE ONLY]'
     - type: text
       name: link_label
-      label: link_label
+      label: Link Label
+      description: Edit the text for the button that appears under the job description
+    label: Job Posting Card Customizations
+    description: Customize elements of the job posting cards.  The job title and description
+      are retrieved from the Filecoin Lever job board
   - type: field_group_list
     name: secondary_ctas
-    label: secondary_ctas
+    label: Secondary CTAs
     fields:
     - type: text
       name: type
-      label: type
+      label: CTA Type
+      description: 'Edit the button''s type. <br>A: Primary CTA, with gradients (ex.
+        Accordion on Home page) <br>B: Same as the Primary CTA except black artifacts
+        (ex. CTA in Header of Home page) <br>C: Secondary CTA, usually clear with
+        a white border (ex. just above Footer on Home page) <br>D: Tertiary CTA, almost
+        no styling except font-weight and color (ex. careers list) <br>E: Navigation
+        [top-level] (Nav + Footer) <br>F: Navigation [subnav] (Nav) <br>X: No styling
+        + slot'
     - type: text
       name: action
-      label: action
+      label: Action
+      description: The HTML tag of the element. Type "a" to link to a page outside
+        of the site and "nuxt-link" to link to an internal page. "Button" is reserved
+        for advanced functionality.
     - type: text
       name: target
       label: target
+      description: Edit the target of the CTA/button.  "_blank" will cause the link
+        to open in a new tab.  Leaving this field blank will cause the link to open
+        in the same tab.
     - type: text
       name: text
-      label: text
+      label: Text
+      description: The button's text
     - type: text
       name: url
-      label: url
+      label: URL
+      description: Enter the link that the user is taken to, when the button is clicked
+    description: Edit the button(s) that appear below the job posting cards
+  description: Content for the careers block (appearing on the Get Involved and About
+    pages) is editable within this section
