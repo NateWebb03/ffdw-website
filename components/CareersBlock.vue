@@ -173,9 +173,10 @@ export default {
 }
 
 .section-bottom {
-  padding: 5rem 0;
+  display: none;
+  padding: 5rem 0 10rem;
   @include small {
-    padding: 3rem 0;
+    padding: 3rem 0 6rem;
   }
   @include mini {
     padding-bottom: 0;
