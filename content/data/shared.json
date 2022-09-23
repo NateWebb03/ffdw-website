@@ -1,0 +1,27 @@
+{
+  "careers": {
+    "label": "Careers",
+    "heading": "Filecoin Foundation for the Decentralized Web is hiring for roles as we build, support, and fund projects advancing the DWeb.",
+    "primary_cta": {
+      "type": "A",
+      "action": "nuxt-link",
+      "text": "Get In Touch",
+      "url": "/contact"
+    },
+    "featured_image": "/images/component-careers/two-people-sitting-at-desk.png",
+    "card_customizations": {
+      "number_job_postings": 3,
+      "type": "C",
+      "link_label": "Apply Now"
+    },
+    "secondary_ctas": [
+      {
+        "type": "C",
+        "action": "a",
+        "target": "_blank",
+        "text": "View All",
+        "url": "//jobs.lever.co/filecoin"
+      }
+    ]
+  }
+}
