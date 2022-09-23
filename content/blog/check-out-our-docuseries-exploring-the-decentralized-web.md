@@ -1,7 +1,8 @@
 ---
 tags: []
 title: Check out our Docuseries “Exploring the Decentralized Web”
-date: 2022-01-21
+date: January 21 2022
+sortDate: 2022-01-21
 author: Filecoin Foundation for the Decentralized Web
 description: We recently launched Exploring the Decentralized Web, a 12-part documentary
   series produced by Filecoin Foundation for the Decentralized Web (FFDW). Featuring

@@ -1,7 +1,8 @@
 ---
 tags: []
 title: Exploring the Decentralized Web (Episodes 9–12)
-date: 2022-03-10
+date: March 3 2022
+sortDate: 2022-03-10
 author: Filecoin Foundation for the Decentralized Web
 description: Decentralized web technology is enabling web developers and users alike
   to solve some of the issues that arose during the Web2 era, such as a lack of community

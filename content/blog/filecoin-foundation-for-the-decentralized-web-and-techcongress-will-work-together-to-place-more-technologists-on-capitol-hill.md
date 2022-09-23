@@ -2,7 +2,8 @@
 tags: []
 title: Filecoin Foundation for the Decentralized Web and TechCongress Will Work Together
   to Place More Technologists on Capitol Hill
-date: 2022-06-30
+date: June 30 2022
+sortDate: 2022-06-30
 author: Filecoin Foundation for the Decentralized Web
 description: Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce
   our award to TechCongress, an organization that provides fellowships to bridge the
