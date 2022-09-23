@@ -2,7 +2,8 @@
 tags: []
 title: FFDW and MuckRock Collaborate to Bring Flagship Web Resource to the Decentralized
   Web
-date: 2022-05-04
+date: May 04 2022
+sortDate: 2022-05-04
 author: Filecoin Foundation for the Decentralized Web
 description: 'Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce
   its award to MuckRock, a non-profit, collaborative news site that gives people the

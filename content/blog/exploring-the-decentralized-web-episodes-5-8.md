@@ -1,7 +1,8 @@
 ---
 tags: []
 title: 'Exploring the Decentralized Web: Episodes 5–8'
-date: 2022-02-15
+date: February 15 2022
+sortDate: 2022-02-15
 author: Filecoin Foundation for the Decentralized Web
 description: Episodes 5–8 dive into some of the most impactful topics in the Web3
   space –from privacy, identity, and user control, to blockchain economics, dApps,
