@@ -9,6 +9,9 @@ sections:
 - type: document
   path: content/pages/general.json
   label: General
+- type: document
+  path: content/data/shared.json
+  label: Shared
 - type: heading
   label: Content
 - type: directory

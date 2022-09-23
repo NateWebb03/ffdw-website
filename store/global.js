@@ -8,6 +8,7 @@ import Settings from '@/content/data/settings.json'
 const state = () => ({
   siteContent: {},
   modal: false,
+  jobPostings: {},
   slateCollections: false,
   navigationOpen: false,
   page404: false
@@ -18,6 +19,7 @@ const state = () => ({
 const getters = {
   siteContent: state => state.siteContent,
   modal: state => state.modal,
+  jobPostings: state => state.jobPostings,
   slateCollections: state => state.slateCollections,
   navigationOpen: state => state.navigationOpen,
   page404: state => state.page404
@@ -41,6 +43,18 @@ const actions = {
     }
     if (data) {
       await this.dispatch('global/setSiteContent', { key, data })
+    }
+  },
+  // ////////////////////////////////////////////////////////// getLeverPostings
+  async getLeverPostings ({ commit }) {
+    const response = await fetch('https://api.lever.co/v0/postings/filecoin?mode=json')
+    try {
+      const postings = await response.json()
+      if (postings) {
+        await this.dispatch('global/setJobPostings', postings)
+      }
+    } catch (error) {
+      console.log(error)
     }
   },
   // //////////////////////////////////////////////////////////// setSiteContent
@@ -67,6 +81,10 @@ const actions = {
       return false
     }
   },
+  // //////////////////////////////////////////////////////////// setJobPostings
+  setJobPostings ({ commit }, payload) {
+    commit('SET_JOB_POSTINGS', payload)
+  },
   // ///////////////////////////////////////////////////////// setNavigationOpen
   setNavigationOpen ({ commit }, toggle) {
     commit('SET_NAVIGATION_OPEN', toggle)
@@ -88,6 +106,9 @@ const mutations = {
   },
   SET_MODAL (state, payload) {
     state.modal = payload
+  },
+  SET_JOB_POSTINGS (state, payload) {
+    state.jobPostings = payload
   },
   GET_SLATE_VIDEOS (state, collections) {
     state.slateCollections = collections

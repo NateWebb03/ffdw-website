@@ -18,7 +18,8 @@
 
         <div class="col-5_sm-8_mi-12" data-push-left="off-1_sm-0">
           <div class="panel-right">
-            <CardListBlock :block="{ cards: cards }" />
+            <CardListBlock
+              :block="{ cards: cards }" />
             <!--
               Below CTA button is hidden per stakeholder request. Leaving for now in
               case they want to re-enable it in the future.
@@ -65,10 +66,27 @@ export default {
 
   computed: {
     ...mapGetters({
-      siteContent: 'global/siteContent'
+      siteContent: 'global/siteContent',
+      postings: 'global/jobPostings'
     }),
     content () {
-      return this.siteContent.careers_data
+      const content = CloneDeep(this.siteContent.careers_data)
+      const jobs = this.postings
+      const cardCustomizations = content.card_customizations
+      content.cards = []
+      const cards = content.cards
+      const cardsLength = jobs.length > cardCustomizations.number_job_postings ? cardCustomizations.number_job_postings : jobs.length
+      for (let i = 0; i < cardsLength; i++) {
+        const cardObj = {
+          type: cardCustomizations.type,
+          title: jobs[i].text,
+          description: (jobs[i].description.split('Job Description</span></div>', 2))[1],
+          link_label: cardCustomizations.link_label,
+          url: jobs[i].hostedUrl
+        }
+        cards.push(cardObj)
+      }
+      return content
     },
     label () {
       return this.content.label
@@ -155,9 +173,10 @@ export default {
 }
 
 .section-bottom {
-  padding: 5rem 0;
+  display: none;
+  padding: 5rem 0 10rem;
   @include small {
-    padding: 3rem 0;
+    padding: 3rem 0 6rem;
   }
   @include mini {
     padding-bottom: 0;
@@ -181,6 +200,22 @@ export default {
 }
 
 ::v-deep .card {
+  .description {
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  @supports (-webkit-line-clamp: 2) {
+    .description {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      height: auto;
+      position: relative;
+    }
+  }
   &:not(:last-child) {
     margin-bottom: 2rem;
   }
