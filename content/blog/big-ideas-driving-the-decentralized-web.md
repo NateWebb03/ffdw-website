@@ -1,7 +1,8 @@
 ---
 tags: []
-title: 'Big Ideas Driving the Decentralized Web '
-date: 2022-09-28
+title: 'Big Ideas Driving the Decentralized Web'
+date: September 28 2022
+sortDate: 2022-09-28
 author: ''
 description: We are at a fork in the road when it comes to building an internet that
   enhances trust, allows users to maintain privacy, incentivizes entrepreneurs to
