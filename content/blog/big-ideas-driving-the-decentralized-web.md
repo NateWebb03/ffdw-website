@@ -1,8 +1,9 @@
 ---
-tags: []
-title: 'Big Ideas Driving the Decentralized Web'
+tags:
+- DWeb
+- Web3
+title: Big Ideas Driving the Decentralized Web
 date: September 28 2022
-sortDate: 2022-09-28
 author: ''
 description: We are at a fork in the road when it comes to building an internet that
   enhances trust, allows users to maintain privacy, incentivizes entrepreneurs to
@@ -14,9 +15,10 @@ description: We are at a fork in the road when it comes to building an internet 
 featured: true
 recommendedPosts: []
 image: "/images/0928-ffdw-glossary.png"
+sortDate: '2022-09-28'
 
 ---
-We are at a fork in the road when it comes to building an internet that enhances trust, allows users to maintain privacy, incentivizes entrepreneurs to build safe and secure systems, and enables the preservation of the world’s most important information for future generations. At Filecoin Foundation for the Decentralized Web (FFDW), we believe that the Internet must return to its original – more decentralized – architecture. Some call this direction “Web3”; some call it the decentralized web or “DWeb.”
+We are at a fork in the road when it comes to building an internet that enhances trust, allows users to maintain privacy, incentivizes entrepreneurs to build safe and secure systems, and enables the preservation of the world’s most important information for future generations. At Filecoin Foundation for the Decentralized Web (FFDW), we believe that the Internet must return to its original – more decentralized – architecture. Some call this direction “Web3”; some call it the decentralized web or“DWeb.”
 
 The first internet protocols decentralized computer networks and allowed users to share and collaborate directly, without a central service or computer. Out of all the net’s early protocols – including email and file transfer protocols – the World Wide Web quickly became the most popular. The web was originally based on the idea of interlinked documents. As web browsers became more sophisticated, websites began to offer more services, including hosted applications like Google’s Gmail and Facebook’s social feed. During this time, we also saw the rise of a few large, centralized companies that consolidated this environment into a handful of platforms. Today, the essential internet infrastructure needed for most web applications is controlled by three companies: [Amazon, Facebook, and Google](https://www.inc.com/magazine/201805/jeff-bercovici/big-tech-monopoly-startup-competition.html).
 
@@ -24,7 +26,9 @@ Now we’re entering an era where there is a rising interest in alternatives to 
 
 Below we’ve outlined some of the big ideas that are shaping the future of the web.
 
-![A diagram showing a centralized, decentralized and a distributed network.](/images/0928-ffdw-glossary2.png "Network centralization diagram")
+!\[A close up of text on a black background
+
+Description automatically generated\](https://lh3.googleusercontent.com/S_u7SqSSqH79TyeQSRul3jyAvMz0UvAcuy0ztzHdod0C5OIzW7opaqg6qng8zWdh1fdzeLgVbvAbVKcNZFL_fU8p5IfEAQFgiwT_lZ9pMlvCKMlHOeMoX7FdDkWie5dW0-842D7I2imZJR9809SO4As4C3q-6N7d5Ml4PBnebXU3KUTZCUumluhj2Q =612x306.5083056478405)
 
 **Decentralization**
 
