@@ -1,7 +1,8 @@
 ---
 tags:
-- government
-- fellowship
+- Governance
+- Fellowship
+- TechCongress
 title: Filecoin Foundation for the Decentralized Web and TechCongress Will Work Together
   to Place More Technologists on Capitol Hill
 date: June 30 2022
