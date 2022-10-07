@@ -1,8 +1,8 @@
 ---
 tags:
-- decentralized
-- archive
-- film
+- Archive
+- Film
+- Culture
 title: FFDW Works with Prelinger Archives to Make Rare Historic Films More Accessible
   Using the Decentralized Web
 date: August 24 2022
