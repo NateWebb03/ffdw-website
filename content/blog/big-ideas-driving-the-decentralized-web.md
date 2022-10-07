@@ -2,6 +2,8 @@
 tags:
 - DWeb
 - Web3
+- Open Source
+- Decentralized Data Storage
 title: Big Ideas Driving the Decentralized Web
 date: September 28 2022
 author: ''
