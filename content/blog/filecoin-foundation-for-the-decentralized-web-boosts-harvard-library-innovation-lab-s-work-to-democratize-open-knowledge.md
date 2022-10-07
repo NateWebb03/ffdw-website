@@ -1,8 +1,9 @@
 ---
 tags:
-- decentralized
-- social media
-- award
+- Award
+- Social Media
+- Open Knowledge
+- Library Innovation Lab
 title: Filecoin Foundation for the Decentralized Web Boosts Harvard Library Innovation
   Lab’s Work to Democratize Open Knowledge
 date: July 07 2022
