@@ -1,9 +1,13 @@
 ---
-tags: []
+tags:
+- Another World
+- Frieze Week
+- The Finesse
+- Contemporary art
 title: 'Web3 Sci-Fi: Christopher Kulendran Thomas''s ''Another World'' to Debut at
   London''s Institute of Contemporary Arts'
 date: September 23 2022
-sortDate: 2022-09-23
+sortDate: '2022-09-23'
 author: ''
 description: 'Filecoin Foundation for the Decentralized Web (FFDW) and the Institute
   of Contemporary Arts (ICA) London today announced that Christopher Kulendran Thomas''s
@@ -33,10 +37,10 @@ A talks program will accompany _Another World_, developed in conjunction with KW
 
 “We are thrilled to play a role in helping to bring this important new work to the world,” said Marta Belcher, President and Chair of Filecoin Foundation for the Decentralized Web. “We are dedicated to building a better internet and permanently preserving humanity’s most important information — two key themes of this work.”
 
-_Another World_ by Christopher Kulendran Thomas is initiated by Stefan Kalmár, produced in partnership with Kunsthalle Zürich and KW Institute for Contemporary Art, Berlin and realized with the generous support of Filecoin Foundation and Filecoin Foundation for the Decentralized Web, Medienboard Berlin-Brandenburg, the Graham Foundation for Advanced Studies in Fine Arts and Henry Moore Foundation with additional support from Adam Hall Group. With special thanks to Samir Bantal, OMA|AMO, RadicalxChange Foundation and satis&fy.
+_Another World_ by Christopher Kulendran Thomas is initiated by Stefan Kalmár, produced in partnership with Kunsthalle Zürich and KW Institute for Contemporary Art, Berlin and realized with the generous support of Filecoin Foundation and Filecoin Foundation for the Decentralized Web, Medienboard Berlin-Brandenburg, the Graham Foundation for Advanced Studies in Fine Arts and Henry Moore Foundation with additional support from Adam Hall Group. With special thanks to Samir Bantal, OMA|AMO, RadicalxChange Foundation and satis&fy.
 
 To learn more, [https://www.ica.art/](https://www.ica.art/ "https://www.ica.art/")
 
 **About Christopher Kulendran Thomas**
 
-Christopher Kulendran Thomas is an artist, of Tamil descent, who spent his formative years in London after his family left escalating civil unrest in Sri Lanka. Seeing, mostly from a distance, how an ascendent contemporary art scene in Sri Lanka blossomed from the ashes of ethnic cleansing on the island, Christopher began examining the structural processes by which art produces reality — by which art transforms cities and builds nations. Often utilizing advanced technologies, Christopher’s work looks at various, as yet unrealized, possibilities at the intersection of culture, technology and citizenship. His work is represented in major collections, like that of the Museum of Modern Art in New York and recent exhibitions include _Oh, Gods of Dust And Rainbows_, Cleveland Triennial for Contemporary Art (2022); _Uncanny Valley: Being Human in the Age of AI_, de Young Museum San Francisco (2020); and _Time, Forward!_, V–A–C Zattere for the 58th Venice Biennale (2019); as well as solo shows at Schinkel Pavillon, Berlin (2019); Institute for Modern Art, Brisbane (2019); Spike Island, Bristol (2019); and Tensta konsthall, Stockholm (2017). Kulendran Thomas’ work has been included in the 7th Bi City Biennale, Shenzhen (2017); the 11th Gwangju Biennale; the 9th Berlin Biennale; and the 3rd Dhaka Art Summit (all 2016); as well as in _Alternatives for Living_, Kunstmuseen Krefeld (2019); _I was raised on the internet_, Museum of Contemporary Art, Chicago (2018); _moving is in every direction_, Hamburger Bahnhof, Museum für Gegenwart, Berlin (2017); _Bread and Roses_, Museum of Modern Art in Warsaw (2016); _Co-Workers: Network As Artist_, Musée d’Art Moderne de la Ville de Paris (2015); and _Art Turning Left: How Values Changed Making_, Tate Liverpool (2013).
+Christopher Kulendran Thomas is an artist, of Tamil descent, who spent his formative years in London after his family left escalating civil unrest in Sri Lanka. Seeing, mostly from a distance, how an ascendent contemporary art scene in Sri Lanka blossomed from the ashes of ethnic cleansing on the island, Christopher began examining the structural processes by which art produces reality — by which art transforms cities and builds nations. Often utilizing advanced technologies, Christopher’s work looks at various, as yet unrealized, possibilities at the intersection of culture, technology and citizenship. His work is represented in major collections, like that of the Museum of Modern Art in New York and recent exhibitions include _Oh, Gods of Dust And Rainbows_, Cleveland Triennial for Contemporary Art (2022); _Uncanny Valley: Being Human in the Age of AI_, de Young Museum San Francisco (2020); and _Time, Forward!_, V–A–C Zattere for the 58th Venice Biennale (2019); as well as solo shows at Schinkel Pavillon, Berlin (2019); Institute for Modern Art, Brisbane (2019); Spike Island, Bristol (2019); and Tensta konsthall, Stockholm (2017). Kulendran Thomas’ work has been included in the 7th Bi City Biennale, Shenzhen (2017); the 11th Gwangju Biennale; the 9th Berlin Biennale; and the 3rd Dhaka Art Summit (all 2016); as well as in _Alternatives for Living_, Kunstmuseen Krefeld (2019); _I was raised on the internet_, Museum of Contemporary Art, Chicago (2018); _moving is in every direction_, Hamburger Bahnhof, Museum für Gegenwart, Berlin (2017); _Bread and Roses_, Museum of Modern Art in Warsaw (2016); _Co-Workers: Network As Artist_, Musée d’Art Moderne de la Ville de Paris (2015); and _Art Turning Left: How Values Changed Making_, Tate Liverpool (2013).
