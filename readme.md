@@ -24,6 +24,19 @@ To build this site locally
     - Run `npm ci && npm run dev`
     - The site will be available in real time via a localhost URL
     - Resources are compiled in this process; for example, all SCSS styles are converted to CSS and tree-shaken
+- The root directory of the repo should have a self-signed certificate (which is `.gitignore`d). Below is an example of how to create one in the MacOS shell with `mkcert`.
+
+```zsh
+cd ~/.ssh
+brew install mkcert
+mkcert -install
+mkcert -key-file localhost_key.pem -cert-file localhost_cert.pem localhost 127.0.0.1
+cat localhost_cert.pem > localhost_fullchain.pem
+cat "$(mkcert -CAROOT)/rootCA.pem" >> localhost_fullchain.pem
+
+# go to the current project root directory and run
+cp -v ~/.ssh/localhost_cert.pem ~/.ssh/localhost_key.pem .
+```
 
 ## URLs and branches
 - Staging - `develop` builds to `a non public url`
@@ -51,4 +64,5 @@ Key areas of this repo include
   - Global site content, like default metadata, is editable in the `general` section
   - Structured content is shown in blocks on a per-page basis (see `pages` section)
   - Blog content is fully editable in a wysiwyg markdown editor
-  - Media can be uploaded directly to the repository via the `media` section, after which point it can be used in any rich media field
+  - Media, such as images or videos*, can be uploaded directly to the repository via the `media` section, after which point it can be used in any rich media field
+    - Uploaded vidoes on this site can be rendered in markdown, but it's recommended to use the media service that's integrated for the site's videos instead, [Slate](https://slate.host/), which stores content on IPFS
