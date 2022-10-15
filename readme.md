@@ -64,4 +64,5 @@ Key areas of this repo include
   - Global site content, like default metadata, is editable in the `general` section
   - Structured content is shown in blocks on a per-page basis (see `pages` section)
   - Blog content is fully editable in a wysiwyg markdown editor
-  - Media can be uploaded directly to the repository via the `media` section, after which point it can be used in any rich media field
+  - Media, such as images or videos*, can be uploaded directly to the repository via the `media` section, after which point it can be used in any rich media field
+    - Uploaded vidoes on this site can be rendered in markdown, but it's recommended to use the media service that's integrated for the site's videos instead, [Slate](https://slate.host/), which stores content on IPFS
