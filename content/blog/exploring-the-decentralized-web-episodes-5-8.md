@@ -6,7 +6,7 @@ tags:
 - Economies of Trust
 - Browsers and dApps
 title: 'Exploring the Decentralized Web: Episodes 5–8'
-date: February 15 2022
+date: 2022-02-15
 sortDate: '2022-02-15'
 author: Filecoin Foundation for the Decentralized Web
 description: Episodes 5–8 dive into some of the most impactful topics in the Web3
