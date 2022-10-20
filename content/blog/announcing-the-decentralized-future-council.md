@@ -4,7 +4,7 @@ tags:
 - Advocacy
 - Education
 title: Announcing the Decentralized Future Council
-date: March 11 2022
+date: 2022-03-11
 sortDate: '2022-03-11'
 author: Filecoin Foundation for the Decentralized Web
 description: The Decentralized Future Council (DFC) is a new organization dedicated

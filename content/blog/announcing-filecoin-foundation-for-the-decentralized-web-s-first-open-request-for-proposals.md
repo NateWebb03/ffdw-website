@@ -6,7 +6,7 @@ tags:
 - Research
 title: Announcing Filecoin Foundation for the Decentralized Web’s First Open Request
   for Proposals
-date: April 19 2022
+date: 2022-04-19
 sortDate: '2022-04-19'
 author: Filecoin Foundation for the Decentralized Web
 description: Filecoin Foundation for the Decentralized Web (FFDW) is launching an
