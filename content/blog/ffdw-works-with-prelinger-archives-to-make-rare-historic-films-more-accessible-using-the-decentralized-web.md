@@ -5,7 +5,7 @@ tags:
 - Decentralized Archive
 title: FFDW Works with Prelinger Archives to Make Rare Historic Films More Accessible
   Using the Decentralized Web
-date: August 24 2022
+date: 2022-08-24
 sortDate: '2022-08-24'
 author: Filecoin Foundation for the Decentralized Web
 description: 'Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce
