@@ -5,7 +5,6 @@ description: FFDW’s commitment to WITNESS will support the creation, authentic
   and preservation of trusted documentation
 author: Filecoin Foundation for the Decentralized Web
 date: 2021-11-04
-sortDate: '2021-11-04'
 image: "/images/page-blog/witness.png"
 recommendedPosts: []
 tags:

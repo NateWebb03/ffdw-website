@@ -6,7 +6,6 @@ description: Collaboration will support outreach and training to accelerate mark
   research for and adoption of decentralized web technologies
 author: Filecoin Foundation for the Decentralized Web
 date: 2021-12-07
-sortDate: '2021-12-07'
 image: "/images/page-blog/hrdag.png"
 recommendedPosts: []
 tags:

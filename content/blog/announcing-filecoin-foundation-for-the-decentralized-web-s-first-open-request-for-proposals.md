@@ -7,7 +7,6 @@ tags:
 title: Announcing Filecoin Foundation for the Decentralized Web’s First Open Request
   for Proposals
 date: 2022-04-19
-sortDate: '2022-04-19'
 author: Filecoin Foundation for the Decentralized Web
 description: Filecoin Foundation for the Decentralized Web (FFDW) is launching an
   open request for proposals (RFP). We’re looking for projects that support our core

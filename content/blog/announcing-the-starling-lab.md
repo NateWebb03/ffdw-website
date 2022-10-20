@@ -7,7 +7,6 @@ description: The Filecoin Foundation for the Decentralized Web (FFDW) and Protoc
   in the most sensitive digital records of our human history.
 author: Filecoin Foundation for the Decentralized Web
 date: 2022-06-10
-sortDate: '2021-06-10'
 image: "/images/page-blog/starling-lab-image.jpg"
 recommendedPosts: []
 tags:

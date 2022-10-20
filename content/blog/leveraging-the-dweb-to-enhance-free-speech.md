@@ -7,7 +7,6 @@ description: On September 28, the Filecoin Foundation for the Decentralized Web 
   journalists.
 author: Filecoin Foundation for the Decentralized Web
 date: 2021-09-28
-sortDate: '2021-09-28'
 image: "/images/page-blog/leveraging-the-dweb-to-enhance-free-speech.png"
 recommendedPosts: []
 tags:

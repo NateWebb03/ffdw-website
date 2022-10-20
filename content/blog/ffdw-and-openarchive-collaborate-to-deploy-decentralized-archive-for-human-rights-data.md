@@ -11,7 +11,6 @@ description: Filecoin Foundation for the Decentralized Web (FFDW) is proud to an
   storage options via their mobile device.
 author: Filecoin Foundation for the Decentralized Web
 date: 2021-11-18
-sortDate: '2021-11-18'
 image: "/images/page-blog/openarchive.png"
 recommendedPosts: []
 tags:
