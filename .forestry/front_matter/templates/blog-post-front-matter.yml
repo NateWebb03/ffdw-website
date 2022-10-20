@@ -11,7 +11,7 @@ fields:
   label: Date
   description: The date on which the post was created
   config:
-    required: false
+    required: true
     date_format: 
     time_format: 
     display_utc: false
