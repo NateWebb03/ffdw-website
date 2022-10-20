@@ -2,8 +2,8 @@
 tags: []
 title: FFDW and EASIER Data Initiative Collaborate to Upload Spatial Data to Filecoin
   Network
-date: October 12 2022
-sortDate: 2022-10-12
+date: 2022-10-12
+sortDate: '2022-10-12'
 author: ''
 description: Filecoin Foundation for the Decentralized Web (FFDW) is excited to announce
   our collaboration with the EASIER Data Initiative at the University of Maryland,
