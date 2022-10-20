@@ -1,15 +1,21 @@
 ---
 featured: false
-title: FFDW and Guardian Project Team Up to Bring Decentralized Storage to Content Verification and Distribution on Smartphones
-description: FFDW’s commitment to Guardian Project will accelerate adoption of decentralized storage technology on smartphones through ProofMode and F-Droid 
+title: FFDW and Guardian Project Team Up to Bring Decentralized Storage to Content
+  Verification and Distribution on Smartphones
+description: FFDW’s commitment to Guardian Project will accelerate adoption of decentralized
+  storage technology on smartphones through ProofMode and F-Droid
 author: Filecoin Foundation for the Decentralized Web
-date: December 13 2021
-sortDate: 2021-12-13
-image: '/images/page-blog/guardian-project.png'
+date: 2021-12-13
+sortDate: '2021-12-13'
+image: "/images/page-blog/guardian-project.png"
 recommendedPosts: []
-tags: ['Grants', 'Community', 'Smartphones', 'Rights']
----
+tags:
+- Grants
+- Community
+- Smartphones
+- Rights
 
+---
 ![Leveraging the Dweb to Enhance Free Speech bannner](/images/page-blog/guardian-project-announcement.png)
 
 Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our award to [Guardian Project](https://guardianproject.info/), to support their efforts to integrate decentralized storage into their free and open-source solutions for distribution, authentication, and preservation of essential multimedia and software. Guardian Project is a global collective that develops privacy-focused mobile apps and free licensed, open-source software libraries that can be used by anyone looking to protect data and communications from unjust intrusion, interception, and monitoring. The Decentralizing Veracity and Distribution (DVD) project will focus on preserving content and expanding access for the human rights defenders, frontline journalists, and everyday activists that Guardian Project has sought to empower for over a decade.
