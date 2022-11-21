@@ -293,6 +293,11 @@ $squareArtifactDimension: 2.5rem;
   }
   &.active,
   &:hover {
+    .nav-link {
+      &:not(.nuxt-link-active) {
+        transform: translateY(-0.75rem);
+      }
+    }
     .subnav {
       opacity: 1;
       visibility: visible;
@@ -304,16 +309,14 @@ $squareArtifactDimension: 2.5rem;
     }
     ::v-deep .nav-link {
       &:not(.nuxt-link-active) {
-        padding-bottom: $iconDimension;
         .icon-after.finger-up {
           opacity: 1;
-          transform: translateY(-$iconDimension);
         }
       }
     }
   }
   &:not(:last-child) {
-    margin-right: 1.875rem;
+    margin-right: 0.875rem;
     @include small {
       margin-right: 0;
     }
@@ -321,6 +324,7 @@ $squareArtifactDimension: 2.5rem;
 }
 
 ::v-deep .nav-link {
+  padding: 1.375rem 0.5rem;
   @include fontSize_Mini;
   @include fontWeight_Semibold;
   &:not(.has-subnav) {
@@ -356,16 +360,16 @@ $squareArtifactDimension: 2.5rem;
     }
   }
   .icon-before.star {
-    bottom: 100%;
+    top: 0;
   }
   .icon-after.finger-up {
-    top: 100%;
+    bottom: 0;
   }
 }
 
 .subnav {
   position: absolute;
-  top: calc(100% + #{$squareArtifactDimension} + 3rem);
+  top: calc(100% + #{$squareArtifactDimension} + 2rem);
   left: 50%;
   padding: 2rem 2.25rem;
   padding-right: 4rem;
