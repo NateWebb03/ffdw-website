@@ -324,7 +324,7 @@ $squareArtifactDimension: 2.5rem;
 }
 
 ::v-deep .nav-link {
-  padding: 1.375rem 0.5rem;
+  padding: 1.875rem 0.5rem;
   @include fontSize_Mini;
   @include fontWeight_Semibold;
   &:not(.has-subnav) {
@@ -363,7 +363,7 @@ $squareArtifactDimension: 2.5rem;
     top: 0;
   }
   .icon-after.finger-up {
-    bottom: 0;
+    bottom: 0.5rem;
   }
 }
 
@@ -371,8 +371,9 @@ $squareArtifactDimension: 2.5rem;
   position: absolute;
   top: calc(100% + #{$squareArtifactDimension} + 2rem);
   left: 50%;
-  padding: 2rem 2.25rem;
-  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+  padding-right: 1.75rem;
   background-color: $cararra;
   opacity: 0;
   visibility: hidden;
@@ -450,19 +451,19 @@ $squareArtifactDimension: 2.5rem;
   @include fontWeight_Bold;
   white-space: nowrap;
   color: $haiti;
+  padding: 0rem 1.5rem;
+  margin: 0 0.75rem;
   margin-bottom: 0.5rem;
 }
 
 ::v-deep .subnav-link {
-  padding: 0.75rem 0;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.75rem;
   &:hover {
     .icon-before.arrow-down {
       margin-left: 0;
       opacity: 1;
     }
-  }
-  &:last-child {
-    padding-bottom: 0;
   }
   .icon-before.arrow-down {
     margin-left: -1.25rem;
