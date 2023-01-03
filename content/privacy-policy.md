@@ -57,17 +57,17 @@ We may disclose your personal information in the following circumstances:
 
 - **Affiliates & Related Entities:** We may disclose your personal information between and among affiliates, subsidiaries, and related companies.
 
-- **Filecoin Foundation Working Group Participants:  **We may disclose personal information, such as identifiers like real name and email, with members of working groups that Filecoin Foundation or Filecoin Foundation for the Decentralized Web participates in.
+- **Filecoin Foundation Working Group Participants:** We may disclose personal information, such as identifiers like real name and email, with members of working groups that Filecoin Foundation or Filecoin Foundation for the Decentralized Web participates in.
 
-- **Funding Programs: **We may disclose personal information, such as identifiers, financial information, and demographic information with entities with whom we co-administer grants or other funding programs, in order to evaluate funding applications and administer funding, including to review materials submitted and to provide the appropriate financing for selected proposals.
+- **Funding Programs:** We may disclose personal information, such as identifiers, financial information, and demographic information with entities with whom we co-administer grants or other funding programs, in order to evaluate funding applications and administer funding, including to review materials submitted and to provide the appropriate financing for selected proposals.
 
-- **Service Providers & Business Partners: **We may disclose your personal information, including identifiers, commercial information, electronic and network activity, geolocation data, demographic information, and inferences to support a variety of business purposes. These business purposes include product and service delivery, customer service, marketing, analytics services, security and performance monitoring, maintaining and servicing accounts, processing or fulfilling orders and transactions, verifying customer information, research, verifying customer information, data hosting, auditing, and data processing.
+- **Service Providers & Business Partners:** We may disclose your personal information, including identifiers, commercial information, electronic and network activity, geolocation data, demographic information, and inferences to support a variety of business purposes. These business purposes include product and service delivery, customer service, marketing, analytics services, security and performance monitoring, maintaining and servicing accounts, processing or fulfilling orders and transactions, verifying customer information, research, verifying customer information, data hosting, auditing, and data processing.
 
 - **Business transactions:** If we become involved with a merger, reorganization, corporate transaction, or another situation involving the transfer of some or all of our business assets, we may disclose your personal information with business entities or people involved in the negotiation or transfer.
 
-- **As Required by Law: **We may also collect, use, and disclose your personal information as necessary to comply with the law, respond to subpoenas, court orders, or other legal process, law enforcement requests, legal claims or government inquiries, detect fraud, and to protect and defend the rights, interests, safety and security of our Websites, Services, users, a third-party, or the public. For instance, we may disclose your personal information if we have reason to believe doing so is necessary to identify, contact or bring legal action against someone who may be causing interference with our rights or properties, or has breached an agreement, or if anyone else could be harmed by such activities or interference, if we determine an ad posted on our Services violates our terms of use or the rights of a third party, or if there is an emergency involving danger to any person.
+- **As Required by Law:** We may also collect, use, and disclose your personal information as necessary to comply with the law, respond to subpoenas, court orders, or other legal process, law enforcement requests, legal claims or government inquiries, detect fraud, and to protect and defend the rights, interests, safety and security of our Websites, Services, users, a third-party, or the public. For instance, we may disclose your personal information if we have reason to believe doing so is necessary to identify, contact or bring legal action against someone who may be causing interference with our rights or properties, or has breached an agreement, or if anyone else could be harmed by such activities or interference, if we determine an ad posted on our Services violates our terms of use or the rights of a third party, or if there is an emergency involving danger to any person.
 
-- **With your consent: **We may also disclose personal information about you with other entities if you give us permission.
+- **With your consent:** We may also disclose personal information about you with other entities if you give us permission.
 
 Please note that if you post any of your personal information via the Services, such personal information may be viewed, collected, and used by others over whom we have no control. We are not responsible for the use by third parties of personal information you post or otherwise make public.
 
@@ -79,11 +79,11 @@ We do not sell personal information to third parties for monetary or other valua
 #### VI. Your Rights
 Depending on where you reside, you may be entitled to request access to, portability, correction, and deletion of your personal information.
 
-- **Right to Know: **You may have the right to know what personal information we have collected about you, including the categories of personal information, the categories of sources from which it is collected, the business or commercial purposes for collecting, selling, or sharing it, and the categories of third parties to whom we disclose it.
+- **Right to Know:** You may have the right to know what personal information we have collected about you, including the categories of personal information, the categories of sources from which it is collected, the business or commercial purposes for collecting, selling, or sharing it, and the categories of third parties to whom we disclose it.
 
-- **Right to Access & Data Portability: **Subject to certain exceptions, you may have the right to request a copy of the personal information we collected about you.
+- **Right to Access & Data Portability:** Subject to certain exceptions, you may have the right to request a copy of the personal information we collected about you.
 
-- **Right to Correction and Deletion: **You may have the right to request that we correct or delete personal information that we collected from you and retain, subject to certain exceptions.
+- **Right to Correction and Deletion:** You may have the right to request that we correct or delete personal information that we collected from you and retain, subject to certain exceptions.
 
 To exercise your access, portability, correction, and deletion rights, you may submit a request by e-mail at [privacypolicy@fil.org](mailto:privacypolicy@fil.org) or by leaving a message at (302) 440-4493. Once we receive your request, we may verify it by requesting information sufficient to confirm your identity. You may also be entitled, in accordance with applicable law, to appeal a refusal to take action on your request; to do so please respond to the email denying your request.
 
@@ -92,9 +92,9 @@ Only you, or a person authorized by you to act on your behalf, may make a verifi
 Note that while some of the personal information that we collect about you may be considered sensitive personal information, we process such information for only those purposes detailed in this Privacy Policy and as authorized by law. For example, we might process your sensitive personal information in order to provide the services you request from us.
 
 #### VII. Other California Rights
-- **Do Not Track: **Our systems do not at this time have the necessary programming to honor "Do Not Track" or "DNT" browser signals. Please return to this Privacy Policy in future for further updates on this topic.
+- **Do Not Track:** Our systems do not at this time have the necessary programming to honor "Do Not Track" or "DNT" browser signals. Please return to this Privacy Policy in future for further updates on this topic.
 
-- **Shine the Light: **California residents who provide certain personal information in connection with obtaining products or services for personal, family or household use are entitled to request and obtain from us once a calendar year information about the customer information we disclosed, if any, with other businesses for their own direct marketing uses. If applicable, this information would include the categories of customer information and the names and addresses of those businesses with which we disclosed customer information for the immediately prior calendar year.
+- **Shine the Light:** California residents who provide certain personal information in connection with obtaining products or services for personal, family or household use are entitled to request and obtain from us once a calendar year information about the customer information we disclosed, if any, with other businesses for their own direct marketing uses. If applicable, this information would include the categories of customer information and the names and addresses of those businesses with which we disclosed customer information for the immediately prior calendar year.
 
 #### VIII. Communication from Us
 From time to time, we may send you information with announcements and updates about the Websites and the Services. You may elect to opt-out of ongoing e-mail communication from us, such as newsletters, subscriptions, and inquiries.
