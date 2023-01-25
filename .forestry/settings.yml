@@ -30,13 +30,13 @@ sections:
   exclude: general.json
   new_doc_ext: json
   templates:
+  - page-index
   - page-about
   - page-blog
   - page-contact
   - page-explore
   - page-get-involved
   - page-awards
-  - page-index
   - page-terms
 upload_dir: static/images
 public_path: "/images"
