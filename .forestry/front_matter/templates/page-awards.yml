@@ -34,16 +34,16 @@ fields:
     label: Info 0
     description: The first text block on the page, effectively the 0th section.
     fields:
-      - type: field_group
-        name: col_1
-        label: Wide column
-        description: A column that contains the editable content within this section
-        fields:
-        - name: text_block
-          type: include
-          config: {}
-          template: text-block
-          label: Template → [Block] Text
+    - type: field_group
+      name: col_1
+      label: Wide column
+      description: A column that contains the editable content within this section
+      fields:
+      - name: text_block
+        type: include
+        config: {}
+        template: text-block
+        label: Template → [Block] Text
   - type: field_group
     name: mission
     label: Mission
@@ -208,5 +208,3 @@ fields:
         config: {}
         template: block-accordion
         label: Template → [Block] Accordion
-pages:
-- content/pages/awards.json
