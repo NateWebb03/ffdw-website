@@ -11,6 +11,8 @@ recommendedPosts: []
 image: "/images/0208-distributedpress.png"
 
 ---
+**_FFDW works with Hypha Worker Co-operative and Sutty to foster decentralized web publishing tools that offer creators an alternative to centralized publishing platforms._**
+
 Filecoin Foundation for the Decentralized Web (FFDW) is excited to announce our collaboration with [Hypha Worker Co-operative](https://hypha.coop/) and [Sutty](https://sutty.nl/en/) to develop [Distributed Press](https://distributed.press/), a free and open source tool for publishing text and other multimedia works to the decentralized web (DWeb). This award will enable these two organizations to work together to build a dWeb-native, no-code publishing platform that is both scalable and easy to adopt.
 
 Hypha Worker Co-operative is a worker-owned co-op based in Toronto, Canada, whose mission is to collaborate with mission-driven communities to build better relationships with technology. Sutty is also a worker owned co-op, based in Buenos Aires, Argentina, that builds websites and a content management system (CMS) with the mission to empower presence, safety and freedom to activist organizations and collectives.
