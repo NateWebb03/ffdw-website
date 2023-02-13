@@ -106,6 +106,10 @@ $iconDimension: 1.5rem;
   }
 }
 
+.logo-button {
+  min-height: 98px;
+}
+
 ::v-deep .logo {
   width: 15.5rem;
   @include small {
@@ -113,6 +117,11 @@ $iconDimension: 1.5rem;
   }
   path {
     transition: 250ms ease-in-out;
+  }
+  &:hover {
+    path.blocks {
+      transform: scale(1.05);
+    }
   }
 }
 
