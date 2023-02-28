@@ -7,7 +7,7 @@ description: A Q&A series with an FFDW project partner focusing on different asp
   of the building blocks of the decentralized web
 featured: false
 recommendedPosts: []
-image: ''
+image: "/images/0228-guardian-qa.png"
 
 ---
 **The Future of Decentralized Apps: A Q&A with Guardian Project**
