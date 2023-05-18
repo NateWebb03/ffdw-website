@@ -9,9 +9,9 @@ featured: false
 recommendedPosts: []
 image: "/images/051723-Techsoup.png"
 
+---
 By Marnie Webb, Chief Community Impact Officer, TechSoup
 
----
 TechSoup has been working with civil society organizations of all sizes, all mission areas, and in all parts of the world, for more than 30 years. As a result, we know that innovating with even well-established technology is difficult for many — much less emerging tech solutions built on the decentralized web (DWeb). With often limited time, training, and resources, most organizations will always make the choice in favor of providing service to the people around them.
 
 Yet, the values of civil society and DWeb technology align in many ways. Recordkeeping is transparent and (can be) immutable; systems can be set up to support community decision-making; data can be a part of a historical record; and any changes can be captured in that record.
