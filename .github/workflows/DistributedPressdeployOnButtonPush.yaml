@@ -12,7 +12,7 @@ jobs:
         publish_dir: "."
         dp_url: https://api.distributed.press
         refresh_token: ${{ secrets.DISTPRESS_TOKEN }}
-        site_url: distpress.ffdweb.org
+        site_url: ffdweb.org
         deploy_http: true
         deploy_hyper: true
         deploy_ipfs: true
