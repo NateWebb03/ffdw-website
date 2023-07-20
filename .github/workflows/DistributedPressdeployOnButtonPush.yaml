@@ -9,7 +9,7 @@ jobs:
     - name: Publish to Distributed Press
       uses: hyphacoop/actions-distributed-press@v1.1.0
       with:
-        publish_dir: "."
+        publish_dir: "./dist"
         dp_url: https://api.distributed.press
         refresh_token: ${{ secrets.DISTPRESS_TOKEN }}
         site_url: ffdweb.org
